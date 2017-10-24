@@ -1,0 +1,40 @@
+/*
+ * Component: Sidebar
+ * ------------------
+ */
+//Main Sidebar
+
+.main-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background: #4F596A;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.main-menu.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav-toggle {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
