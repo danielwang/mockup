@@ -9,27 +9,62 @@
  * Core: General Layout Style
  * -------------------------
  */
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
 /*
  * Component: Sidebar
  * ------------------
  */
 .main-menu {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 300px;
   background: #4F596A;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
   -webkit-transition: -webkit-transform 3s ease;
   transition: -webkit-transform 0.3s ease;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  z-index: 1;
 }
 .main-menu.open {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+}
+.main-menu menu {
+  margin-top: 50px;
+  padding: 0 45px;
+}
+.main-menu menu ul {
+  margin: 0;
+  padding: 0;
+}
+.main-menu menu ul > li.submenu {
+  margin-bottom: 30px;
+}
+.main-menu menu ul > li.submenu h4 {
+  color: #0AC8FF;
+}
+.main-menu menu ul > li.submenu li {
+  margin-bottom: 10px;
+}
+.main-menu menu ul > li.submenu li a {
+  color: #DFDFDF;
+  font-size: 16px;
+}
+.main-menu menu ul > li.submenu li a:hover {
+  color: #0AC8FF;
 }
 .nav-toggle {
   padding: 10px;

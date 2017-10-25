@@ -5,23 +5,51 @@
 //Main Sidebar
 
 .main-menu {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 300px;
   background: #4F596A;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
   -webkit-transition: -webkit-transform 3s ease;
-  transition: -webkit-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
-}
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  z-index: 1;
 
-.main-menu.open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  &.open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  menu {
+    margin-top: 50px;
+    padding: 0 45px;
+    ul {
+      margin: 0;
+      padding: 0;
+      > li.submenu{
+        margin-bottom: 30px;
+        h4 {
+          color: #0AC8FF;
+        }
+        li{
+          margin-bottom: 10px;
+          a {
+            color: #DFDFDF;
+            font-size: 16px;
+            &:hover{
+              color: #0AC8FF;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
 }
 
 .nav-toggle {
