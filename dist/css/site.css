@@ -9,8 +9,8 @@
  * Core: General Layout Style
  * -------------------------
  */
-html,
-body {
+body,
+html {
   height: 100%;
 }
 .wrapper {
@@ -18,6 +18,70 @@ body {
   min-height: 100%;
   width: 100%;
   position: relative;
+}
+/* GEL update */
+.main-header .navbar-form {
+  border: 0;
+  box-shadow: none;
+}
+.main-header .navbar-form input {
+  background-color: #1E3B6A;
+  border: 0;
+}
+.main-header .navbar-form input:focus {
+  background-color: #dddddd;
+}
+.jumbotron {
+  background: #01A4C9;
+  padding: 30px 0;
+}
+.jumbotron h1 {
+  font-size: 26px;
+}
+.jumbotron h6 {
+  font-size: 12px;
+}
+.jumbotron .page-action a {
+  padding: 0 15px;
+}
+.jumbotron .sub-page .nav {
+  margin: 0 0 -25px;
+  display: inline-block;
+}
+.jumbotron .sub-page .nav li {
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.jumbotron .sub-page .nav li.active a {
+  background: #0980A5;
+  border-radius: 30px;
+}
+.jumbotron .sub-page .nav li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.jumbotron .sub-page .nav li a:hover {
+  color: #fff;
+}
+.jumbotron.affix {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  background-color: #142c52;
+  color: white;
+  opacity: 0.9;
+}
+@media (max-width: 768px) {
+  .navbar-right {
+    float: right !important;
+    margin: 0;
+  }
+  .navbar-right > li {
+    float: left;
+  }
 }
 /*
  * Component: Sidebar
@@ -36,14 +100,14 @@ body {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  z-index: 1;
+  z-index: 2;
 }
 .main-menu.open {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 .main-menu menu {
-  margin-top: 50px;
+  margin-top: 60px;
   padding: 0 45px;
 }
 .main-menu menu ul {
@@ -52,12 +116,14 @@ body {
 }
 .main-menu menu ul > li.submenu {
   margin-bottom: 30px;
+  list-style: none;
 }
 .main-menu menu ul > li.submenu h4 {
   color: #0AC8FF;
 }
 .main-menu menu ul > li.submenu li {
   margin-bottom: 10px;
+  list-style: none;
 }
 .main-menu menu ul > li.submenu li a {
   color: #DFDFDF;
@@ -67,15 +133,14 @@ body {
   color: #0AC8FF;
 }
 .nav-toggle {
-  padding: 10px;
+  margin: 0;
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  left: 0;
+  left: 20px;
+  top: 0;
+  color: white;
 }
-.close {
-  color: #fff;
-  position: absolute;
-  top: 5px;
-  right: 5px;
+.nav-toggle.close {
+  top: 20px;
 }

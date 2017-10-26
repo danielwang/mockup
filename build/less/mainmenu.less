@@ -17,7 +17,7 @@
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  z-index: 1;
+  z-index: 2;
 
   &.open {
     -webkit-transform: translateX(0);
@@ -25,18 +25,20 @@
   }
 
   menu {
-    margin-top: 50px;
+    margin-top: 60px;
     padding: 0 45px;
     ul {
       margin: 0;
       padding: 0;
       > li.submenu{
         margin-bottom: 30px;
+        list-style: none;
         h4 {
           color: #0AC8FF;
         }
         li{
           margin-bottom: 10px;
+          list-style: none;
           a {
             color: #DFDFDF;
             font-size: 16px;
@@ -53,16 +55,15 @@
 }
 
 .nav-toggle {
-  padding: 10px;
+  margin: 0;
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  left: 0;
-}
+  left: 20px;
+  top: 0;
+  color: white;
 
-.close {
-  color: #fff;
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  &.close {
+    top: 20px;
+  }
 }

@@ -10,7 +10,7 @@
     <title>PUI - PageUp </title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="description" content="Where Daniel plays the concept design">
+    <meta name="description" content="PageUp UI Template">
     <meta name="author" content="daniel.wang" >
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,60 +24,47 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
-    <!--
-    BODY TAG OPTIONS:
-    =================
-    Apply one or more of the following classes to get the
-    desired effect
-    |---------------------------------------------------------|
-    |LAYOUT OPTIONS | fixed                                   |
-    |               | layout-boxed                            |
-    |               | layout-top-nav                          |
-    |               | sidebar-collapse                        |
-    |               | sidebar-mini                            |
-    |---------------------------------------------------------|
-    -->
 <body>
   <div class="wrapper">
 <header class="main-header">
   <nav class="navbar navbar-default">
     <div class="container">
-      <div class="nav-toggle"> <i class="fa fa-bars fa-1x"></i></div>
-      <div class="collapse navbar-collapse">
-        <div class="navbar-header">
-          <a href="#"><img src="img/pageup-logo-white.png" width="100"/></a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Page 1 <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Page 1-1</a></li>
-              <li><a href="#">Page 1-2</a></li>
-              <li><a href="#">Page 1-3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
-          <li>
-            <!-- <form class="navbar-form navbar-left" role="search" _lpchecked="1">
-              <div class="form-group">
-                <input class="form-control" placeholder="Search" type="text">
-              </div>
-            </form> -->
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <!-- <li><button class="btn btn-info btn-sm margin-right">Action</button></li> -->
-          <li><img class="pu-avatar pu-avatar-sm" src="img/avatar/avatar.svg"></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><span class="fa fa-info-circle"></span></a>
+      <div class="nav-toggle"> <i class="fa fa-bars"></i></div>
+      <!-- <div class="navbar-header hidden-xs hidden-sm">
+        <a href="#"><img src="img/pageup-logo-white.png" width="100"/></a>
+      </div> -->
+      <ul class="nav navbar-nav hidden-xs">
+        <li><a href="#"><i class="pu-icon pu-icon-logo pu-icon-lg"></i></a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Applicants</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown hidden-xs hidden-sm">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recent items <span class="caret"></span></a>
             <ul class="dropdown-menu dropdown-menu-right">
-             <li><a href="#"> Action 1</a> </li>
-             <li><a href="#"> Action 2</a> </li>
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
             </ul>
           </li>
-        </ul>
-      </div>
+          <li>
+            <form class="navbar-form navbar-left" role="search" _lpchecked="1">
+              <div class="form-group">
+                <input class="form-control" placeholder="Quick search" type="text" />
+              </div>
+            </form>
+          </li>
+        <!-- <li><button class="btn btn-info btn-sm margin-right">Action</button></li> -->
+        <li><img class="pu-avatar pu-avatar-sm" src="img/avatar/avatar.svg"></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><span class="fa fa-info-circle"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#"> Action 1</a> </li>
+            <li><a href="#"> Action 2</a> </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </nav>
 </header>
@@ -157,23 +144,98 @@
 </aside>
 		<main class="content-wrapper">
       <!-- jumbotron -->
-              <div class="jumbotron">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-md-7 col-lg-9">
-                  Page Title
+            <div class="jumbotron affix" data-spy="affix" data-offset-top="204">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-7 col-lg-9">
+              <h1>Template heading</h1>
+            </div>
+            <div class="page-action hidden-xs col-sm-6 col-md-5 col-lg-3">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a class="text-center" href="#_">
+                      <i class="pu-icon pu-icon-lg pu-icon-printer"></i>
+                      <h6>Print</h6>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-center" href="#_">
+                      <i class="pu-icon pu-icon-lg pu-icon-feedback"></i>
+                      <h6>Feedback</h6>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-center" href="#_">
+                      <i class="pu-icon pu-icon-lg pu-icon-info"></i>
+                      <h6>Help</h6>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="page-action hidden-xs col-sm-6 col-md-5 col-lg-3">
-                              </div>
             </div>
             <div class="sub-page">
-                          </div>
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#">Tab one</a></li>
+                <li><a href="#">Tab two</a></li>
+                <li><a href="#">Tab three </a></li>
+                <li><a href="#">Tab four </a></li>
+                <li><a href="#">Tab five</a></li>
+              </ul>
           </div>
         </div>
+      </div>
             <!-- page body -->
 			<section class="container">
 				<div class="row">
-  <div class="col-sm-8 col-sm-offset-2">
+  <div class="col-sm-4">
+    <h1>Heading 1
+        <small>36px</small>
+      </h1>
+      <h2>Heading 2
+        <small>30px</small>
+      </h2>
+      <h3>Heading 3
+        <small>24px</small>
+      </h3>
+      <h4>Heading 4
+        <small>18px</small>
+      </h4>
+      <h5>Heading 5
+        <small>16px</small>
+      </h5>
+      <h6>Heading 6
+        <small>14px</small>
+      </h6>
+      <dl>
+        <dt>Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+        <dt>Euismod</dt>
+        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+      </dl>
+      <p class="lead">This is an example of leading paragragh.</p>
+      <p class="text-muted">This is an example of muted text.</p>
+      <p class="text-primary">This is an example of primary text.</p>
+      <p class="text-success">This is an example of success text.</p>
+      <p class="text-info">This is an example of info text.</p>
+      <p class="text-warning">This is an example of warning text.</p>
+      <p class="text-danger">This is an example of danger text.</p>
+      <p class="text-sm">This is an example of small text.</p>
+      <p>Use the mark tag to
+        <mark>highlight</mark>
+        text.</p>
+      <p>Use the b tag to
+        <b>bold</b>
+        text, or use strong tag to
+        <strong>emphasize</strong>
+        text.
+      </p>
+      <p>
+        <del>This line of text is meant to be treated as deleted text.</del>
+      </p>
+  </div>
+  <div class="col-sm-8">
     <h3>Paragraphs heading</h3>
     <p>Ut wisi enim ad minim veniam, <a href="#">quis nostrud exerci tation ullamcorper</a> suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
     	feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
