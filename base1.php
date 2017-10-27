@@ -10,7 +10,7 @@
 		<main class="content-wrapper">
       <!-- jumbotron -->
       <?php startblock('top') ?>
-      <div class="jumbotron affix" data-spy="affix" data-offset-top="204">
+      <div class="jumbotron" data-spy="affix" data-offset-top="70">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-7 col-lg-9">
@@ -19,21 +19,18 @@
             <div class="page-action hidden-xs col-sm-6 col-md-5 col-lg-3">
                 <ul class="nav navbar-nav navbar-right">
                   <li>
-                    <a class="text-center" href="#_">
+                    <a class="text-center" href="#_" data-toggle="tooltip" data-placement="bottom" title="Print">
                       <i class="pu-icon pu-icon-lg pu-icon-printer"></i>
-                      <h6>Print</h6>
                     </a>
                   </li>
                   <li>
-                    <a class="text-center" href="#_">
+                    <a class="text-center" href="#_" data-toggle="tooltip" data-placement="bottom" title="Feedback">
                       <i class="pu-icon pu-icon-lg pu-icon-feedback"></i>
-                      <h6>Feedback</h6>
                     </a>
                   </li>
                   <li>
-                    <a class="text-center" href="#_">
+                    <a class="text-center" href="#_" data-toggle="tooltip" data-placement="bottom" title="Help">
                       <i class="pu-icon pu-icon-lg pu-icon-info"></i>
-                      <h6>Help</h6>
                     </a>
                   </li>
                 </ul>
