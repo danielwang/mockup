@@ -13,7 +13,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="<?php echo ($resURL) ?>vendor/pu-gel/pageup.css">-->
-    <link rel="stylesheet" href="http://styleguide.pageuppeople.com/dist/css/pageup.css">
+    <link rel="stylesheet" href="<?php echo ($resURL) ?>dist/css/pageup.min.css">
     <link rel="stylesheet" href="<?php echo ($resURL) ?>dist/css/site.css">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
