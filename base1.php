@@ -14,7 +14,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-7 col-lg-9">
-              <h1>Template heading</h1>
+              <h1>Page title</h1>
             </div>
             <div class="page-action hidden-xs col-sm-6 col-md-5 col-lg-3">
                 <ul class="nav navbar-nav navbar-right">

@@ -14,7 +14,7 @@ html {
   .navbar-form {
     border: 0;
     box-shadow: none;
-
+    display: inline-block;
     input {
       background-color: #1E3B6A;
       border: 0;
@@ -90,12 +90,14 @@ html {
     color: white;
     opacity: 0.9;
     position: sticky;
-    padding: 20px 0 10px;
+    padding: 20px 0 5px;
 
     h1 {
       font-size: 22px;
     }
-
+     .sub-page{
+       display: none;
+     }
     + .container {
       padding-top: 114px;
       margin-top: -114px;
@@ -109,6 +111,11 @@ html {
 
     > li {
       float: left;
+    }
+
+    .open .dropdown-menu {
+      position: absolute;
+      background-color: white;
     }
   }
 }
