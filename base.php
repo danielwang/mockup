@@ -8,7 +8,7 @@
   <nav id="gel-navbar" class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index"><img src="<?php echo ($resURL) ?>images/gel-logo.png" width="80"></a>
+        <a class="navbar-brand" href="index"><img src="<?php echo ($resURL) ?>assets/images/pu-logo.png" width="80"></a>
       </div>
     </div>
   </nav>

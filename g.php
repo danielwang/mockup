@@ -1,10 +1,23 @@
 <?php
-//generate static index page
-ob_start();
-include_once 'index.php';
-file_put_contents("index.html", ob_get_contents());
-ob_end_clean(); // clear the buffer
-echo "<p>Latest <a href='index.html'>homepage</a> has been generated</p>";
+ // genetate index
+ compileIndex();
+
+ function compileIndex(){
+   $url = 'http://localhost:9000/mockup/index.php';
+   $ch = curl_init();
+   // tell cURL what the URL is
+   curl_setopt($ch, CURLOPT_URL, $url);
+   // tell cURL that you want the data back from that URL
+   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+   // run cURL
+   $output = curl_exec($ch);
+   // end the cURL call (this also cleans up memory so it is
+   // important)
+   curl_close($ch);
+   // display the output
+   file_put_contents("index.html", $output);
+   echo "<h3>Index is done</h3>";
+ }
 
 /* read php files from folders */
 $folders = array("tpl", "p");
