@@ -1,17 +1,6 @@
- <?php
- // $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
- // $lastSegment = basename(parse_url($url, PHP_URL_PATH));
- // $rootfolder = array("index", "index.php");
- // if (in_array($lastSegment, $rootfolder)) {
- // 	$resURL = '';
- // } else {
- // 	$resURL = '../';
-// }
-
-
-
+<?php
+// Get relative url
  $resURL = getRelativeUrl();
-
  function getRelativeUrl(){
    $uri = $_SERVER['REQUEST_URI'];
    $path = trim(parse_url($uri, PHP_URL_PATH), '/');
@@ -28,58 +17,16 @@
    return $resURL;
  }
 
+ // Reset this to compile large nesting level of less
+ ini_set('xdebug.max_nesting_level', 500);
+ // remove old pageup css if it exists, every time refresh page
+ $cssfile = $resURL . 'dist/css/pageup.css';
+ if (file_exists($cssfile)) {
+ 	unlink($cssfile);
+ }
 
-// Reset this to compile large nesting level of less
-ini_set('xdebug.max_nesting_level', 500);
-//remove old mockup css if it exists, every time refresh page
-$cssfile = $resURL .'dist/css/site.css';
-if (file_exists($cssfile)) {
- unlink($cssfile);
-}
-
-//Compile less to output a css file
-$lesspath = $resURL . 'build/less/site.less';
-$csspath = $resURL . 'dist/css/site.css';
-require "lessc.inc.php";
-$less = new lessc;
-$less->checkedCompile($lesspath, $csspath);
-
-function buildMenu() {
-    return  [
-      ["apply","job"],
-      ["recruitment","recruitment"],
-      ["learning","learning"],
-      ["performance","performance"],
-      ["analytics","analytics"],
-      ["settings","settings"],
-      ["admin","team"]
-    ];
-}
-
-// Display pages as links from a folder
-function listElementsAsOptions($type) {
-  // $ext = "";
-  // if ($_SERVER['SERVER_NAME'] == 'localhost') {
-  //  $ext = ".php";
-  // } else {
-  //  $ext = '.html';
-  // }
-	$files = array();
-	$handle = opendir($type . '/');
-	while (false !== ($file = readdir($handle))):
-		if (stristr($file, '.php')):
-			$files[] = $file;
-		endif;
-	endwhile;
-	sort($files);
-	foreach ($files as $file):
-		$filename = preg_replace("/\.php$/i", "", $file);
-		$title = preg_replace("/\-/i", " ", $filename);
-		$title = ucwords($title);
-    $filepath = $filename;
-  //  echo $filepath;
-	  echo '<li><a href="' . $type . '/' . $filepath . '">' . $title . '</a></li>';
-	endforeach;
-}
-
+ // Compile less to output a css file
+ require $resURL . "lessc.inc.php";
+ $less = new lessc;
+ $less->checkedCompile($resURL . "assets/css/site.less", $resURL . "assets/css/site.css");
 ?>

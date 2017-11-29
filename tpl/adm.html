@@ -1,9 +1,41 @@
+<!-- ******************
+*** T1 template ***
+******************  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>Templates - PageUp </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="PageUp GEL Templates">
+    <meta name="author" content="daniel.wang" >
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/gel/css/pageup.css">
+    <link rel="stylesheet" href="../assets/css/site.css">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+<body>
+
+    <div id="gel-notification" class="gel-notification-error">
+      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> An error occurred while importing Job file last night. One or more mandatory fields were not provided.
+      <button class="btn btn-sm btn-round">Find more info</button>
+      <button href="#" type="button" class="close"><i class="glyphicon glyphicon-remove"></i></button>
+    </div>
 
   <nav id="gel-navbar" class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="nav-toggle"> <i class="fa fa-bars"></i></div>
       <ul class="nav navbar-nav hidden-xs hidden-sm">
-        <li><a href="#" class="logo"> <img src="assets/images/pu-logo.png" width="100"/></a></li>
+        <li><a href="#" class="logo"> <img src="../assets/images/pu-logo.png" width="100"/></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <!-- <li>
@@ -15,7 +47,7 @@
           </li> -->
         <!-- <li><button class="btn btn-info btn-sm margin-right">Action</button></li> -->
         <li class="dropdown">
-          <a class="avatar dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="gel-avatar gel-avatar-sm" src="assets/images/avatar.svg" alt="John's profile"> John <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <a class="avatar dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="gel-avatar gel-avatar-sm" src="../assets/images/avatar.svg" alt="John's profile"> John <i class="fa fa-angle-down" aria-hidden="true"></i></a>
           <ul class="dropdown-menu dropdown-menu-right user-menu">
             <!-- User name -->
             <li class="user-header">
@@ -221,18 +253,87 @@
 <!-- page body -->
 		<main id="gel-main" role="main">
 			<section class="container">
-											</section>
+				<div class="alert alert-info">
+  <strong>Info Message!</strong> Consequatur facere deleniti cumque <a class="alert-link" href="">link</a> ducimus maiores nemo.
+  <button href="#" type="button" class="close"><i class="glyphicon glyphicon-remove"></i></button>
+</div>
+<div class="row blokk">
+  <div class="col-sm-8">
+    <div class="gel-box">
+      <h3>Paragraphs heading</h3>
+      <p>Utwisi enimad minimveniam, <a href="#">quisnostrud exerci tation ullamcorper</a> suscipitlobortis nisl utaliquipexeacommodo consequat. Duis autemveleum iriuredolor inendrerit invulputate velit essemolestie consequat, velillum doloreeu
+        feugiat nullafacilisis accumsan dignissim quiblandit praesent luptatum zzrildelenit augueduisdolore tefeugait nullafacilisi. Loremipsum dolorsitamet, consectetuerdipiscing elit, sed diam nonummy nibh euismod
+        tincidunt utlaoreetdolore magna aliquam erat volutpat.</p>
+      <hr>
+
+      <h3>Buttons</h3>
+      <p>Youcan applytheclassto anyelement thatequiresa buttonstyle.</p>
+      <p><a href="#" class="btn btn-primary">Submit</a> or <a href="#" class="btn btn-success">Save as draft</a> <button type="button" class="btn btn-round btn-primary">Round button</button></p>
+      <!-- Tables -->
+      <h3>Tables</h3>
+      <p>Tables should be given the class of <code>table</code>.</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th></th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><img class="gel-avatar gel-avatar-sm" src="../assets/images/avatar/users-1.svg"></td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><img class="gel-avatar gel-avatar-sm" src="../assets/images/avatar/users-2.svg"></td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><img class="gel-avatar gel-avatar-sm" src="../assets/images/avatar/users-3.svg"></td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <!-- Responsive images -->
+      <h3>Responsive images</h3>
+      <p>For images to be responsive (so that they will rescale to suit the width of the parent, use the <code>.img-responsive</code> class.</p>
+      <p><img class="img-responsive" src="http://placehold.it/750x375/ABE0F4/57C0E9?text=image" alt=""></p>
+      <p>Duisautem veleum iriuredolorin hendreritvulputate velitesse molestie consequat, velillumolore eufeugiat nullafacilisis atveroeros etaccumsan etiustoodio dignissim quiblandit praesent luptatum zzrildelenit augueduis doloretefeugait
+        nullafacilisi. Loremipsum dolorsitamet, consectetuer adipiscing elit, seddiam nonummynibh euismod tinciduntutlaoreet doloremagnaaliquam erat lutpat. Utisienim adminim veniam, quisnostrud exerci tation ullamcorper suscipitlobortis nisl
+        utaliquip exeaommodo consequat.</p>
+    <hr>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <h2 class="blokk">Phasellu</h2>
+    <p class="blokk">Phasellushendrerit tellusfel ismollisluctus. Aenean aliquetAliq uamcommodoid, bibendumnullaut lacus. Aliquamul triciesodio, fermentum utnequeSed mattisPelle ntesquetellus.</p>
+    <p class="blokk">Cumsociisnatoque penatibus etassa. Integerconvallis ligulabi bendumelnibh. Etiam congueringilla urpis. Nullaratmauris.</p>
+    <hr>
+    <h2 class="blokk">Psellu</h2>
+    <p class="blokk">Pellent esque facilisi ssodales. Aeneancommo dodio fermentumleo mollis consectetuer. Curabitur obortisuis, venenatislor emegettempus purus. Clas saptenttac itisociosqu</p>
+  </div>
+</div>
+			</section>
 		</main>
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="assets/js/site.js"></script>
+<script src="../assets/js/site.js"></script>
 
 </body>
 </html>
-
-  Page Title
-
-

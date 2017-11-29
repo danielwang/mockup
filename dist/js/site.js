@@ -1,9 +1,0 @@
-$(document).ready(function(){
-  console.log('v');
-  $('[data-toggle="tooltip"]').tooltip();
-  console.log('s');
-  $('.nav-toggle').on('click',function(){
-      console.log('p');
-    $('.main-menu').toggleClass('open');
-  });
-});

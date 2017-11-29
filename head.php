@@ -1,20 +1,21 @@
-<?php require_once 'functions.php';?>
+<?php
+  include_once('functions.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex">
-    <title>PUI - PageUp </title>
+    <title>Templates - PageUp </title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="description" content="PageUp UI Template">
+    <meta name="description" content="PageUp GEL Templates">
     <meta name="author" content="daniel.wang" >
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="<?php echo ($resURL) ?>vendor/pu-gel/pageup.css">-->
-    <link rel="stylesheet" href="<?php echo ($resURL) ?>dist/css/pageup.min.css">
-    <link rel="stylesheet" href="<?php echo ($resURL) ?>dist/css/site.css">
+    <link rel="stylesheet" href="<?php echo ($resURL) ?>vendor/gel/css/pageup.css">
+    <link rel="stylesheet" href="<?php echo ($resURL) ?>assets/css/site.css">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -23,4 +24,3 @@
       <![endif]-->
     </head>
 <body>
-  <div class="wrapper">

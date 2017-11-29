@@ -4,7 +4,7 @@ if (file_exists("index.html")){
 }
 
 
-$folders = array("layouts", "modules", "patterns", "tuneup");
+$folders = array("tpl", "p");
 for ($i = 0; $i < count($folders); $i++) {
 	recurseDir($folders[$i]);
 }

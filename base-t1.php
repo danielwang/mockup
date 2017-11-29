@@ -1,9 +1,17 @@
+<!-- ******************
+*** T1 template ***
+******************  -->
+<?php
+  require_once 'ti.php';
+  include_once 'head.php'; ?>
+
+<?php emptyblock('page-notification') ?>
 
   <nav id="gel-navbar" class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="nav-toggle"> <i class="fa fa-bars"></i></div>
       <ul class="nav navbar-nav hidden-xs hidden-sm">
-        <li><a href="#" class="logo"> <img src="assets/images/pu-logo.png" width="100"/></a></li>
+        <li><?php startblock('logo') ?><a href="#" class="logo"> <img src="<?php echo ($resURL) ?>assets/images/pu-logo.png" width="100"/></a><?php endblock() ?></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <!-- <li>
@@ -15,7 +23,7 @@
           </li> -->
         <!-- <li><button class="btn btn-info btn-sm margin-right">Action</button></li> -->
         <li class="dropdown">
-          <a class="avatar dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="gel-avatar gel-avatar-sm" src="assets/images/avatar.svg" alt="John's profile"> John <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <a class="avatar dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="gel-avatar gel-avatar-sm" src="<?php echo ($resURL) ?>assets/images/avatar.svg" alt="John's profile"> John <i class="fa fa-angle-down" aria-hidden="true"></i></a>
           <ul class="dropdown-menu dropdown-menu-right user-menu">
             <!-- User name -->
             <li class="user-header">
@@ -70,95 +78,14 @@
           </ul>
         </li> -->
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-  <li class="hidden-xs hidden-sm"><a href="#">Jobs</a></li>
-  <li class="hidden-xs hidden-sm"><a href="#">Applicants</a></li>
-  <li class="hidden-xs hidden-sm"><a href="#">Reports</a></li>
-  <li class="hidden-xs hidden-sm"><a href="#">Settings</a></li>
-  <li class="dropdown hidden-xs hidden-sm">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recent items <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-    <ul class="dropdown-menu dropdown-menu-right">
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Item 2</a></li>
-      <li><a href="#">Item 3</a></li>
-    </ul>
-  </li>
-</ul>
+      <?php include ("partials/nav-${parent}.html");?>
     </div>
   </nav>
 
   <aside id="gel-menu" role='menu'>
     <menu>
       <span class="nav-toggle close"><i class="fa fa-times fa-lg"></i></span>
-      <ul>
-  <li class="submenu">
-    <h4>Dashboard</h4>
-    <ul>
-      <li><a href="recruitment-dashboard">Recruiter Dashboard</a></li>
-      <li><a href="#">CRM Dashboard</a></li>
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>Jobs</h4>
-    <ul>
-      <li><a href="#">New job</a></li>
-      <li><a href="#">New contractor job</a></li>
-      <li><a href="#">My panel jobs</a></li>
-      <li><a href="#">Manage jobs</a></li>
-      <li><a href="#">My jobs</a></li>
-      <li><a href="#">My sourced jobs</a></li>
-      <li><a href="#">My job approvals</a></li>
-      <li><a href="#">Manage job templates</a></li>
-      <li><a href="#">Manage forms</a></li>
-
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>Applicants</h4>
-    <ul>
-      <li><a href="#">New applicant</a></li>
-      <li><a href="#">Applicant search</a></li>
-      <li><a href="#">Talent search</a></li>
-      <li><a href="#">Manage applicant pool</a></li>
-      <li><a href="#">Manage applications</a></li>
-      <li><a href="#">My applicants</a></li>
-      <li><a href="#">Shortlisted applicants</a></li>
-      <li><a href="#">Manage offer approvals</a></li>
-      <li><a href="#">My new starters</a></li>
-      <li><a href="#">My new starter tasks</a></li>
-      <li><a href="#">My contracts</a></li>
-      <li><a href="#">Manage reference check requests</a></li>
-      <li><a href="#">Communication centre</a></li>
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>Assessments</h4>
-    <ul>
-      <li><a href="#">Menu item one</a></li>
-      <li><a href="#">Menu item two</a></li>
-      <li><a href="#">Menu item three</a></li>
-      <li><a href="#">Menu item four</a></li>
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>Event</h4>
-    <ul>
-      <li><a href="#">Menu item one</a></li>
-      <li><a href="#">Menu item two</a></li>
-      <li><a href="#">Menu item three</a></li>
-      <li><a href="#">Menu item four</a></li>
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>More</h4>
-    <ul>
-      <li><a href="#">Menu item one</a></li>
-      <li><a href="#">Menu item two</a></li>
-      <li><a href="#">Menu item three</a></li>
-      <li><a href="#">Menu item four</a></li>
-    </ul>
-  </li>
-</ul>
+      <?php include ("partials/menu-${parent}.html");?>
     </menu>
   </aside>
 <!-- page header -->
@@ -166,7 +93,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-7 col-lg-9">
-              <h1 class="page-title"> Page title </h1>
+              <h1 class="page-title"><?php startblock('page-title') ?> Page title <?php endblock() ?></h1>
             </div>
             <div class="page-actions hidden-xs col-sm-6 col-md-5 col-lg-3">
                 <ul class="nav navbar-nav navbar-right">
@@ -199,7 +126,8 @@
           </div>
           <div class="row">
             <div class="col-sm-12">
-                              <div class="page-tabs">
+              <?php startblock('page-tabs') ?>
+                <div class="page-tabs">
                   <ul class="nav navbar-nav" >
                     <li class="active"><a href="#">Tab one</a></li>
                     <li><a href="#">Tab two</a></li>
@@ -209,30 +137,23 @@
                     <li><a href="#">Tab six</a></li>
                   </ul>
                 </div>
-                          </div>
+              <?php endblock() ?>
+            </div>
             <!-- <div class="hidden-xs col-sm-6 col-md-5 col-lg-3">
-                              <form class="page-search">
+              <?php startblock('page-search') ?>
+                <form class="page-search">
                   <input class="form-control search-input" placeholder="Search for jobs or candidates" type="text" />
                   <span class="search-icon"><i class="fa fa-lg fa-search"></i></span>
                 </form>
-                          </div> -->
+              <?php endblock() ?>
+            </div> -->
         </div>
     </header>
 <!-- page body -->
 		<main id="gel-main" role="main">
 			<section class="container">
-											</section>
+				<?php startblock('page-body')?>
+				<?php endblock()?>
+			</section>
 		</main>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-latest.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<script src="assets/js/site.js"></script>
-
-</body>
-</html>
-
-  Page Title
-
-
+<?php include 'foot.html';?>
