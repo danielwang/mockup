@@ -11,7 +11,7 @@
     <div class="container">
       <div class="nav-toggle"> <i class="fa fa-bars"></i></div>
       <ul class="nav navbar-nav hidden-xs hidden-sm">
-        <li><?php startblock('logo') ?><a href="#" class="logo"> <img src="<?php echo ($resURL) ?>assets/images/pu-logo.png" width="100"/></a><?php endblock() ?></li>
+        <li><?php startblock('logo') ?><a href="<?php echo ($resURL) ?>" class="logo"> <img src="<?php echo ($resURL) ?>assets/images/mockup-logo.png" width="120"/></a><?php endblock() ?></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <!-- <li>
@@ -99,12 +99,12 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li>
                     <a class="text-center" href="#_" data-placement="bottom" title="Print">
-                      <i class="gel-icon gel-icon-lg gel-icon-printer" data-tooltip="tooltip" title="Print"></i>
+                      <i class="fa fa-lg fa-print" data-tooltip="tooltip" title="Print"></i>
                     </a>
                   </li>
                   <li>
                     <a class="text-center" href="#_" data-placement="bottom" title="Feedback">
-                      <i class="gel-icon gel-icon-lg gel-icon-feedback" data-tooltip="tooltip" title="Feedback"></i>
+                      <i class="fa fa-lg fa-comments" data-tooltip="tooltip" title="Feedback"></i>
                     </a>
                   </li>
                   <li>

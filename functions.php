@@ -20,7 +20,7 @@
  // Reset this to compile large nesting level of less
  ini_set('xdebug.max_nesting_level', 500);
  // remove old pageup css if it exists, every time refresh page
- $cssfile = $resURL . 'dist/css/pageup.css';
+ $cssfile = $resURL . 'assets/css/site.css';
  if (file_exists($cssfile)) {
  	unlink($cssfile);
  }

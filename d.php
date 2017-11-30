@@ -1,9 +1,4 @@
 <?php
-if (file_exists("index.html")){
-	unlink("index.html");
-}
-
-
 $folders = array("tpl", "p");
 for ($i = 0; $i < count($folders); $i++) {
 	recurseDir($folders[$i]);

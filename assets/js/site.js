@@ -22,5 +22,5 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
-    //$('[data-dropdown="dropdown"]').dropdown();
+  $('[data-toggle="popover"]').popover();
 });

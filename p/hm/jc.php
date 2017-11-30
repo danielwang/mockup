@@ -1,4 +1,4 @@
-<?php $parent = "hm"; include '../base-t1.php';   ?>
+<?php $parent = "hm"; include '../../base-t1.php';   ?>
 
 <?php emptyblock('page-notification') ?>
 <?php emptyblock('quick-nav') ?>
