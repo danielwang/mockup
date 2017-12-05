@@ -33,7 +33,7 @@
   border-radius: 20em;
   box-sizing: border-box;
   user-select: none;
-  transition-duration: 0.7s;
+  transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition-property: none;
   -webkit-tap-highlight-color: transparent;

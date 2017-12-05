@@ -13,8 +13,7 @@
     <meta name="description" content="PageUp GEL MockUp">
     <meta name="author" content="daniel.wang" >
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo ($resURL) ?>vendor/gel/css/pageup.css">
+    <link rel="stylesheet" href="https://ui.pageuppeople.com/gel/css/pageup-gel.min.css">
     <link rel="stylesheet" href="<?php echo ($resURL) ?>assets/css/site.css">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
