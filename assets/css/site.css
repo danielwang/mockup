@@ -431,3 +431,15 @@
 .segmented-control .line-through {
   text-decoration: line-through;
 }
+.table-fix {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+.table-fix thead th,
+.table-fix tbody td {
+  white-space: nowrap;
+}
+.table-fix .btn-group {
+  display: flex;
+}

@@ -31,3 +31,18 @@
 }
 
 @import (less) "segmented-controls.css";
+
+// table fix
+
+.table-fix {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+
+  thead th, tbody td{
+    white-space: nowrap;
+  }
+  .btn-group {
+    display: flex;
+  }
+}

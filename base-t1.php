@@ -10,9 +10,9 @@
   <nav id="gel-navbar" class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="nav-toggle"> <i class="fa fa-bars"></i></div>
-      <ul class="nav navbar-nav hidden-xs hidden-sm">
-        <li><?php startblock('logo') ?><a href="<?php echo ($resURL) ?>" class="logo"> <img src="<?php echo ($resURL) ?>assets/images/mockup-logo.png" width="120"/></a><?php endblock() ?></li>
-      </ul>
+      <div class="navbar-header">
+        <?php startblock('logo') ?><a href="<?php echo ($resURL) ?>" class="logo"> <img src="<?php echo ($resURL) ?>assets/images/mockup-logo.png" width="120"/></a><?php endblock() ?>
+      </div>
       <ul class="nav navbar-nav navbar-right">
           <!-- <li>
             <form class="navbar-form navbar-left" role="search">
