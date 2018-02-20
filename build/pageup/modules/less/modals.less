@@ -1,0 +1,43 @@
+/*
+ * Component: modal
+ * ----------------
+ */
+
+.modal {
+  background: rgba(0, 0, 0, .3);
+}
+
+.modal-dialog {
+  .modal-content {
+    .box-shadow(0 2px 3px rgba(0, 0, 0, .125));
+    border: 0;
+    @media (min-width: @screen-sm-min) {
+      .box-shadow(0 2px 3px rgba(0, 0, 0, .125));
+    }
+  }
+
+  .modal-header {
+    border-bottom: 1px solid @border-color;
+    position: relative;
+  }
+
+  .modal-body {
+    background: @body-bg;
+  }
+
+  .modal-footer {
+    border-top: 1px solid @border-color;
+  }
+
+  &.modal-success {
+    .modal-title {
+      color: @green;
+    }
+  }
+
+  &.modal-danger {
+    .modal-title {
+      color: @red;
+    }
+  }
+}

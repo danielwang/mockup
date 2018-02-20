@@ -1,0 +1,115 @@
+/* main content */
+#@{prefix}-main {
+  padding: 30px 0;
+
+  // anchor for in page nav
+  [data-attr="anchor"]:before {
+    display: block;
+    content: " ";
+    margin-top: -90px;
+    height: 90px;
+    visibility: hidden;
+  }
+
+}
+
+#@{prefix}-pagenav {
+  &.affix {
+    top:70px;
+  }
+}
+
+.footer-sticky {
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 54px;
+  padding: 10px 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 98;
+}
+
+/* *********************************\
+  break point 768
+\***********************************/
+@media (max-width: 768px) {
+  svg {
+    width: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #@{prefix}-main {
+    padding: 15px 0;
+
+    article{
+      text-align: left;
+    }
+  }
+}
+/* *********************************\
+  responsive table
+\***********************************/
+
+@media (max-width: 768px) {
+  table.responsive-table {
+    width: 100%;
+    margin-bottom: 1.5em;
+    background: transparent;
+    border: 0;
+
+    tbody,
+    td,
+    th,
+    thead,
+    tr {
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+    }
+
+    thead {
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0;
+      border: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+
+      th:first-of-type {
+        text-align: left;
+      }
+    }
+
+    tbody {
+      tr {
+        margin-bottom: 2em;
+        border: 1px solid #ddd;
+      }
+
+      tr:last-of-type {
+        margin-bottom: 0;
+      }
+
+      th[scope="row"] {
+        background-color: white;
+      }
+
+      td {
+        text-align: right;
+        background: white;
+      }
+
+      td[data-title]:before {
+        content: attr(data-title);
+        float: left;
+        color: #999;
+      }
+    }
+  }
+}

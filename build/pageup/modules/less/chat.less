@@ -1,0 +1,120 @@
+/*
+ * Component: pu Chat
+ * ----------------------
+ */
+.@{prefix}-chat-messages {
+  .translate(0, 0);
+  padding: 10px;
+  height: 300px;
+  overflow: auto;
+}
+
+.@{prefix}-chat-msg,
+.@{prefix}-chat-text {
+  display: block;
+}
+
+.@{prefix}-chat-msg {
+  .clearfix();
+  margin-bottom: 15px;
+
+  .@{prefix}-avatar {
+    float: left;
+  }
+
+  &.me .@{prefix}-avatar {
+    float: right;
+  }
+}
+
+.@{prefix}-chat-text {
+  .border-radius(5px);
+  position: relative;
+  padding: 5px 10px;
+  background: @body-bg;
+  border: 1px solid @body-bg;
+  margin: 5px 50px;
+  //Create the arrow
+  &:after,
+  &:before {
+    position: absolute;
+    right: 100%;
+    top: 15px;
+    border: solid transparent;
+    border-right-color: @body-bg;
+    content: ' ';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-width: 5px;
+    margin-top: -5px;
+  }
+
+  &:before {
+    border-width: 6px;
+    margin-top: -6px;
+  }
+
+  .me & {
+    background: @brand-info-tint;
+    border-color: @brand-info-tint;
+
+    &:after,
+    &:before {
+      right: auto;
+      left: 100%;
+      border-right-color: transparent;
+      border-left-color: @brand-info-tint;
+    }
+  }
+}
+
+.@{prefix}-chat-info {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+.@{prefix}-chat-name {
+  font-weight: 600;
+}
+
+.@{prefix}-chat-timestamp {
+  .timestamp();
+}
+/*
+ * Component:  Comments
+ * ----------------------
+ */
+//Comment Box
+
+.@{prefix}-comments {
+  .@{prefix}-comment {
+    .clearfix();
+    padding: 8px 10px;
+    border-bottom: 1px solid @border-color;
+    background: #f7f7f7;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+
+    img {
+      &:extend(.img-sm);
+      float: left;
+    }
+  }
+
+  .@{prefix}-comment-text {
+    margin-left: 60px;
+  }
+
+  .@{prefix}-comment-username {
+    display: block;
+  }
+
+  .@{prefix}-comment-input {}
+}

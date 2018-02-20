@@ -1,0 +1,32 @@
+//
+// Avatar
+// --------------------------------------------------
+
+.#{$prefix}-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+
+@mixin avatar-variant($width, $border-thick) {
+  width: $width;
+  height: $width;
+  border-width: $border-thick;
+}
+
+.#{$prefix}-avatar-xs {
+  @include avatar-variant(35px, 0)
+}
+
+.#{$prefix}-avatar-sm {
+  @include avatar-variant(40px, 2px)
+}
+
+.#{$prefix}-avatar-md {
+  @include avatar-variant(80px, 4px)
+}
+
+.#{$prefix}-avatar-lg {
+  @include avatar-variant(100px, 4px)
+}

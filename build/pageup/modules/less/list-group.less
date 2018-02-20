@@ -1,0 +1,72 @@
+// List Groups
+
+.list-group-item {
+  .heading-font();
+}
+// sidenav
+
+.sidenav {
+  .nav li a {
+    color: @brand-grey;
+    font-family: @font-family-headings;
+  }
+
+  > .nav > li > a {
+    font-size: 16px;
+    padding: 4px 15px;
+
+    &:hover {
+      background: none;
+    }
+  }
+
+  .nav .nav {
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+
+    > li > a {
+      padding: 5px 0;
+    }
+  }
+
+  .nav .nav > .active > a,
+  .nav > .active > a {
+    color: @active-blue;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  .nav ul.nav {
+    display: none;
+  }
+
+  .nav > .active > ul.nav {
+    display: block;
+    margin-left: 18px;
+  }
+
+  .nav {
+    li.parent {
+      &:after {
+        content: "\f107";
+        font-family: "FontAwesome";
+        right: 0;
+        position: absolute;
+        top: 4px;
+      }
+
+      &.active:after {
+        content: "\f106";
+        color: @active-blue;
+      }
+    }
+  }
+
+  &.toc {
+    border-left: 4px solid @border-color;
+
+    h6 {
+      margin-left: 15px;
+    }
+  }
+}

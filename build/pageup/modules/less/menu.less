@@ -1,0 +1,119 @@
+//Main Sidebar
+
+#@{prefix}-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  width: 300px;
+  background: #4F596A;
+  box-shadow: 0 0 8px 0 #0000007f;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  z-index: 100;
+
+  &.open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .logo {
+    display: none;
+  }
+  .user-menu{
+    color: white;
+    margin-top: 30px;
+    padding: 0 45px;
+    border-bottom: 1px solid #8998AE;
+    .gel-toggle-btn input + span:before {
+      background: #7C8BA4;
+    }
+  }
+
+  menu {
+    margin-top: 60px;
+    padding: 0 45px;
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      > li.submenu{
+        margin-bottom: 30px;
+        list-style: none;
+        h4 {
+          color: #0AC8FF;
+        }
+        li{
+          margin-bottom: 10px;
+          list-style: none;
+          a {
+            color: #DFDFDF;
+            font-size: 16px;
+            margin-left: 0;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            &:hover{
+              color: #11b1ee;
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-toggle {
+  margin: 0;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline;
+  color: white;
+  padding: 15px;
+  margin-left: -15px;
+
+  &.close {
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+}
+
+/* Small devices (moible, 768px and down) */
+@media (max-width: @screen-sm-min) {
+  #@{prefix}-menu {
+    .logo {
+      margin-left: 52px;
+      margin-top: 12px;
+      display: block;
+    }
+    menu {
+      margin-top: 30px;
+    }
+    // user menu
+    #user-menu-hd{
+      margin-bottom: 20px;
+      &:after{
+        content: "\f106";
+        font-family: @fontawesome;
+        float: right;
+        margin-top: 8px;
+      }
+      &.collapsed:after {
+        content: "\f107";
+        font-family: @fontawesome;
+        float: right;
+        margin-top: 8px;
+      }
+    }
+    #user-menu-ft {
+      a {
+        color: white;
+      }
+    }
+  }
+}

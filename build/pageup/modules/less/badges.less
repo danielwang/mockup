@@ -1,0 +1,47 @@
+.badge {
+  background-color: @grey;
+
+  &.badge-green {
+    .badge-variant(@green);
+  }
+
+  &.badge-blue {
+    .badge-variant(@blue);
+  }
+
+  &.badge-red {
+    .badge-variant(@red);
+  }
+}
+
+.badge-variant(@color) {
+  background-color: @color;
+}
+
+.@{prefix}-dot {
+  background-color: @grey;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+
+  &.@{prefix}-dot-green {
+    .dot-variant(@green);
+  }
+
+  &.@{prefix}-dot-red {
+    .dot-variant(@red);
+  }
+
+  &.@{prefix}-dot-orange {
+    .dot-variant(@orange);
+  }
+
+  &.@{prefix}-dot-blue {
+    .dot-variant(@blue);
+  }
+}
+
+.dot-variant(@color) {
+  background-color: @color;
+}

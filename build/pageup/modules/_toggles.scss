@@ -1,0 +1,303 @@
+/*******************************************************
+Variables
+*******************************************************/
+$white: #FFF;
+// Sizes
+$scrubber-width-default: 20px;
+$scrubber-width-sm: 10px;
+$scrubber-width-md: 30px;
+$scrubber-width-lg: 40px;
+
+// Scrubber text
+// - off
+$slider-text-unchecked: "Off";
+$slider-text-unchecked-color: #000;
+// - on
+$slider-text-checked: "On";
+$slider-text-checked-color: #fff;
+
+/*******************************************************
+Animation
+*******************************************************/
+
+@keyframes popIn {
+  0% { transform: scale(1, 1); }
+  25% { transform: scale(1.2, 1); }
+  50% { transform: scale(1.4, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes popOut {
+  0% { transform: scale(1, 1); }
+  25% { transform: scale(1.2, 1); }
+  50% { transform: scale(1.4, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes splashIn {
+  0% { transform: scale(1); opacity: 1; }
+  25% { transform: scale(1.1); opacity: .8 }
+  50% { transform: scale(1.1); opacity: .9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes splashOut {
+  0% { transform: scale(1); opacity: 1; }
+  25% { transform: scale(1); opacity: .8 }
+  50% { transform: scale(1); opacity: .9; }
+  100% { transform: scale(.5); opacity: 1; }
+}
+
+/*******************************************************
+Main Slider basics
+*******************************************************/
+
+%toggle,
+.toggle {
+  position: relative;
+
+  input[type="checkbox"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    margin: 0 0;
+    cursor: pointer;
+    opacity: 0;
+
+
+    &:focus + *:before
+    {
+      outline:solid $input-focus-border-color 2px;
+    }
+  }
+
+  input + span {
+    cursor: pointer;
+    user-select: none;
+
+    &:before {
+      position: absolute;
+      left: 0px;
+      display: inline-block;
+    }
+
+    > h4 {
+      display: inline;
+    }
+  }
+}
+
+.form-horizontal [class^='checkbox'] {
+  input + span:after {
+    top: 7px;
+  }
+}
+
+/*******************************************************
+Main Slider
+*******************************************************/
+
+%toggle {
+  @extend %toggle;
+
+  input {
+
+    + span {
+      padding-left: $scrubber-width-default * 2;
+
+      &:before {
+        content: "";
+        height: $scrubber-width-default;
+        width: $scrubber-width-default * 2;
+        background: rgba(100, 100, 100, .2);
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .8);
+        transition: background .2s ease-out;
+      }
+      // Off State
+      &:after {
+        width: $scrubber-width-default;
+        height: $scrubber-width-default;
+        position: absolute;
+        left: 0px;
+        top: 0;
+        display: block;
+        background: $white;
+        transition: margin-left 0.1s ease-in-out;
+        text-align: center;
+        font-weight: bold;
+        content: "";
+      }
+    }
+    // On state
+    &:checked + span:after {
+      margin-left: $scrubber-width-default;
+      content: "";
+    }
+    &:checked + span:before {
+      transition: background .2s ease-in;
+    }
+
+  }
+
+}
+
+
+// .checkbox-slider {
+//   @extend %checkbox-toggle;
+//   @extend %checkbox-slider;
+// }
+
+
+
+/*******************************************************
+Slider B
+*******************************************************/
+
+%toggle {
+  @extend %toggle;
+
+  input {
+
+    + span {
+      padding-left: $scrubber-width-default * 2;
+    }
+
+    + span:before {
+      border-radius: $scrubber-width-default;
+      width: $scrubber-width-default * 2;
+      box-shadow: none;
+    }
+
+    + span:after {
+      background: $white;
+      content: "";
+      width: $scrubber-width-default;
+      border: solid transparent 2px;
+      background-clip: padding-box;
+      border-radius: $scrubber-width-default;
+    }
+    &:not(:checked) + span:after {
+      animation: popOut ease-in .3s normal;
+    }
+    &:checked + span:after {
+      content: "";
+      margin-left: $scrubber-width-default;
+      border: solid transparent 2px;
+      background-clip: padding-box;
+      animation: popIn ease-in .3s normal;
+    }
+
+    &:checked + span:before {
+      background: $info;
+    }
+  }
+
+}
+
+.toggle {
+  @extend %toggle;
+}
+
+
+/*******************************************************
+Sizes
+*******************************************************/
+
+// Small
+.toggle-sm {
+  line-height: $scrubber-width-sm;
+
+  input + span {
+    padding-left: $scrubber-width-sm * 2;
+  }
+
+  input + span:before {
+    width: $scrubber-width-sm * 2;
+  }
+
+  input + span:after,
+  input + span:before {
+    height: $scrubber-width-sm;
+    line-height: $scrubber-width-sm;
+  }
+
+  input + span:after {
+    width: $scrubber-width-sm;
+    vertical-align: middle;
+  }
+
+  input:checked + span:after {
+    margin-left: $scrubber-width-sm;
+  }
+}
+
+// Medium
+.toggle-md {
+  line-height: $scrubber-width-md;
+
+  input + span {
+    padding-left: $scrubber-width-md * 2;
+  }
+
+  input + span:before {
+    width: $scrubber-width-md * 2;
+  }
+
+  input + span:after,
+  input + span:before {
+    height: $scrubber-width-md;
+    line-height: $scrubber-width-md;
+  }
+
+  input + span:after {
+    width: $scrubber-width-md;
+    vertical-align: middle;
+  }
+
+  input:checked + span:after {
+    margin-left: $scrubber-width-md;
+  }
+}
+
+// Large
+.toggle-lg {
+  line-height: $scrubber-width-lg;
+
+  input + span {
+    padding-left: $scrubber-width-lg * 2;
+  }
+
+  input + span:before {
+    width: $scrubber-width-lg * 2;
+  }
+
+  input + span:after,
+  input + span:before {
+    height: $scrubber-width-lg;
+    line-height: $scrubber-width-lg;
+  }
+  input + span:after {
+    width: $scrubber-width-lg;
+    vertical-align: middle;
+  }
+
+  input:checked + span:after {
+    margin-left: $scrubber-width-lg;
+  }
+}
+
+/*******************************************************
+Variations
+*******************************************************/
+@each $color, $value in $colors {
+    .toggle-#{$color} {
+      input:checked + span:before {
+      background: $value;
+    }
+  }
+}

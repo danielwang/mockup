@@ -1,0 +1,15 @@
+
+@mixin font-heading() {
+	font-weight: 400;
+	font-family: $font-family-headings;
+}
+
+@mixin font-bold() {
+	font-weight: 400;
+	font-family: 'Proxima Nova Bold';
+}
+
+// @mixin dropdown-menu (){
+// 	max-width: 16rem;
+// 	@include border-radius(0.5rem);
+// }

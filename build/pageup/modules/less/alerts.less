@@ -1,0 +1,145 @@
+.alert {
+  padding: 15px 45px;
+  position: relative;
+  .icon {
+    margin-right: 10px;
+  }
+}
+//Alert Variants
+
+.alert-success {
+  .alert-variant(@green);
+
+  &:before {
+    content: "\f058";
+  }
+}
+
+.alert-control {
+  .alert-variant(@yellow);
+
+  &:before {
+    content: "\f058";
+  }
+}
+
+.alert-danger,
+.alert-error {
+  .alert-variant(@red);
+  &:before {
+    content: "\f071";
+  }
+}
+
+.alert-warning {
+  .alert-variant(@orange);
+
+  &:before {
+    content: "\f06a";
+  }
+}
+
+.alert-info {
+  .alert-variant(@blue);
+
+  &:before {
+    content: "\f05a";
+  }
+}
+
+.alert-hint {
+  border-color: @purple;
+  color: @purple;
+  &:extend(.bg-purple-tint);
+  .alert-variant(@purple);
+
+  &:before {
+    content: "\f0d0";
+  }
+}
+
+.alert-variant(@color) {
+  .alert-link {
+    font-weight: 700;
+    text-decoration: underline;
+    color: darken(@color, 10%);
+  }
+
+  .close {
+    color: @muted;
+    font-size: @font-size-base + 4;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-shadow: none;
+  }
+
+  &:before {
+    font-family: @fontawesome;
+    content: "\f05a";
+    margin-left: -30px;
+    margin-right: 5px;
+  }
+}
+
+// notification banner that goes on the top of the page
+#@{prefix}-notification{
+  padding: 15px 45px;
+  border:0;
+  text-align: center;
+}
+
+.@{prefix}-notification-danger, .@{prefix}-notification-error{
+  .notification-variant(@red);
+}
+
+.@{prefix}-notification-info{
+  .notification-variant(@blue);
+}
+
+.@{prefix}-notification-control{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  .notification-variant(@orange);
+
+  ~ #@{prefix}-navbar {
+    margin-top: 60px;
+  }
+
+  ~ #@{prefix}-header.affix {
+    margin-top: 60px;
+  }
+
+}
+
+.@{prefix}-notification-success{
+  .notification-variant(@green);
+}
+
+.notification-variant(@color) {
+  background-color: @color;
+  color: white;
+
+  .notification-link {
+    font-weight: 700;
+    text-decoration: underline;
+    color: darken(@color, 10%);
+  }
+
+  .btn{
+    color: @color;
+  }
+  .close {
+    color: @muted;
+    font-size: @font-size-base + 4;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-shadow: none;
+  }
+}

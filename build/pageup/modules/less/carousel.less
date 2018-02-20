@@ -1,0 +1,91 @@
+/*
+ * Component: Carousel
+ * -------------------
+ */
+
+.carousel-indicators {
+  bottom: -10px;
+
+  li {
+    border-color: @border-color;
+    background-color: @border-color;
+  }
+
+  .active {
+    background-color: @active-blue;
+    border-color: @active-blue;
+  }
+}
+
+.carousel-control {
+  color: @muted;
+  text-shadow: none;
+
+  &:focus,
+  &:hover {
+    color: @active-blue;
+  }
+
+  &.left {
+    background-image: none;
+    left: -95px;
+  }
+
+  &.right {
+    background-image: none;
+    right: -80px;
+  }
+
+  > .fa {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+  }
+}
+/*
+ * Component: Muti item Carousel
+ * -------------------
+ */
+.multi-item-carousel {
+  .carousel-inner {
+    > .item {
+      transition: 500ms ease-in-out left;
+    }
+
+    .active {
+      &.left {
+        left: -33%;
+      }
+
+      &.right {
+        left: 33%;
+      }
+    }
+
+    .next {
+      left: 33%;
+    }
+
+    .prev {
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item {
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+
+  .carouse-control {
+    &.left,
+    &.right {
+      background-image: none;
+    }
+  }
+}

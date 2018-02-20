@@ -1,0 +1,32 @@
+.tooltip {
+  font-size: @font-size-base - 1;
+  .heading-font();
+
+  .tooltip-inner {
+    background-color: @brand-grey
+  }
+
+  &.left {
+    .tooltip-arrow {
+      border-left-color: @brand-grey
+    }
+  }
+
+  &.right {
+    .tooltip-arrow {
+      border-right-color: @brand-grey
+    }
+  }
+
+  &.top {
+    .tooltip-arrow {
+      border-top-color: @brand-grey
+    }
+  }
+
+  &.bottom {
+    .tooltip-arrow {
+      border-bottom-color: @brand-grey
+    }
+  }
+}

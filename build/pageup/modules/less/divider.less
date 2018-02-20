@@ -1,0 +1,50 @@
+.@{prefix}-hdivider, .@{prefix}-vdivider {
+  &:before {
+    position: absolute;
+    content: 'OR';
+    width: 30px;
+    height: 30px;
+    border: 1px solid @border-color;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    background: #fff;
+    margin-top: -15px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+/**
+  horizontal divider
+**/
+.@{prefix}-hdivider {
+  position: relative;
+  border-bottom: 1px solid @border-color;
+  margin-bottom: 45px;
+  margin-top: 45px;
+}
+
+/**
+  vertical divider
+**/
+.row-divided {
+  position: relative;
+}
+
+.row-divided > [class*=" col-"],
+.row-divided > [class^="col-"] {
+  padding-left: 45px;
+  /* gutter width (give a little extra room) 2x default */
+  padding-right: 45px;
+  /* gutter width (give a little extra room) 2x default */
+}
+.@{prefix}-vdivider{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-left: 1px solid #ddd;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}

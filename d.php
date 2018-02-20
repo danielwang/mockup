@@ -1,5 +1,10 @@
 <?php
-$folders = array("tpl", "p");
+if (file_exists("index.html")){
+	unlink("index.html");
+}
+
+
+$folders = array("tpl/t");
 for ($i = 0; $i < count($folders); $i++) {
 	recurseDir($folders[$i]);
 }

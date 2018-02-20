@@ -1,0 +1,96 @@
+//
+// Diamond
+// --------------------------------------------------
+
+.@{prefix}-diamond {
+    background: white;
+    border-radius: 10px;
+    color: #fff;
+    height: 60px;
+    font-size: 22px;
+    padding: 13px 18px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: transform 0.3s ease 0s;
+    -webkit-transition: transform 0.3s ease 0s;
+    width: 60px;
+    display: inline-block;
+    margin: 40px auto 20px;
+
+    &:before {
+        border-radius: inherit;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: scale3d(0.9, 0.9, 1);
+        transition: box-shadow 0.3s ease 0s, transform 0.3s ease 0s;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &.@{prefix}-diamond-orange {
+        .diamond-variant(@orange);
+    }
+
+    &.@{prefix}-diamond-green {
+        .diamond-variant(@green);
+    }
+
+    &.@{prefix}-diamond-blue {
+        .diamond-variant(@blue);
+    }
+
+    &.@{prefix}-diamond-red {
+        .diamond-variant(@red);
+    }
+
+    &.@{prefix}-diamond-yellow {
+        .diamond-variant(@yellow);
+    }
+
+    &.@{prefix}-diamond-purple {
+        .diamond-variant(@purple);
+    }
+
+    &.@{prefix}-diamond-sm {
+        .diamond-size(45px; 14px)
+    }
+
+    &.@{prefix}-diamond-lg {
+        .diamond-size(80px; 38px)
+    }
+
+    &.@{prefix}-diamond i {
+        .rotate(-45deg);
+        transition: transform 0.3s ease 0s;
+        -webkit-transition: transform 0.3s ease 0s;
+    }
+
+    & + span {
+        display: block;
+    }
+}
+
+.diamond-variant(@color) {
+    &:before {
+        box-shadow: 0 0 0 50px @color inset;
+    }
+
+    &:hover {
+        color: @color;
+        background-color: #fff;
+
+        &:before {
+            box-shadow: 0 0 0 2px @color inset;
+            transform: scale3d(1, 1, 1);
+        }
+    }
+}
+
+.diamond-size(@width; @font-size) {
+    height: @width;
+    width: @width;
+    font-size: @font-size;
+}

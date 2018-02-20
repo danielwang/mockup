@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('fonts/ProximaNova-Semibold.otf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('fonts/ProximaNova-Bold.otf');
+}
+
+html{
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: auto;
+  letter-spacing: 0.0128em;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+}
+// Typography
+// --------------------------------------------------
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-headings;
+}
+##{$prefix}-main {
+  padding: 30px 0;
+}
+
+/* Code for Firefox */
+// ::-moz-selection {
+//   color: $white;
+//   background: $blue;
+// }
+//
+// ::selection {
+//   color: $white;
+//   background: $blue;
+// }

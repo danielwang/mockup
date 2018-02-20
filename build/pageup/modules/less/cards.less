@@ -1,0 +1,121 @@
+//
+// Card model
+// --------------------------------------------------
+
+.@{prefix}-card {
+  .box-model();
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  &.stack {
+    border-bottom: 0 none;
+    box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 0 0.5em 0 -0.25em #ffffff, 0 0.5em 0.1875em -0.25em rgba(0, 0, 0, 0.2), 0 1em 0 -0.5em #ffffff, 0 1em 0.1875em -0.5em rgba(0, 0, 0, 0.1);
+  }
+
+  .@{prefix}-card-header {
+    padding: 20px;
+
+    h4 {
+      margin-top: 0;
+    }
+
+    .@{prefix}-card-header-aside {
+      display: table-cell;
+      vertical-align: top;
+
+      .app {
+        font-size: 28px;
+      }
+
+      + main {
+        padding-left: 10px;
+      }
+
+      img.featured{
+        width: 236px;
+        margin: -20px 15px -20px -20px;
+      }
+    }
+
+    .@{prefix}-card-header-main {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .actions {
+      height: 15px;
+      position: relative;
+
+      .more {
+        position: absolute;
+        right: 0;
+        top: -10px;
+
+        & > a {
+          color: @brand-grey-light;
+        }
+      }
+
+      .checkbox {
+        left: -10px;
+        margin: 0;
+        position: absolute;
+        top: -10px;
+      }
+    }
+  }
+
+  .@{prefix}-card-figure {
+    img.featured {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+
+    + .@{prefix}-card-content {
+      border-top: 0;
+    }
+  }
+
+  .@{prefix}-card-content {
+    border-top: 1px dashed @border-color;
+    padding: 20px;
+  }
+
+  .@{prefix}-card-footer {
+    padding: 20px;
+  }
+}
+// cards stack
+
+.@{prefix}-cards {
+  .@{prefix}-card {
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+    border-top: 1px solid @border-color;
+    border-radius: 0;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.current {
+      background-color: tint(@active-blue, 90%);
+      border-left: 3px solid @active-blue;
+    }
+
+    .thumbnail {
+      width: 100px;
+      margin: 0;
+    }
+
+    .@{prefix}-card-footer {
+      padding-top: 0;
+    }
+  }
+}
+// end card model
