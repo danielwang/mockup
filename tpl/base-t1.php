@@ -42,18 +42,18 @@
     <header id="gel-header" role="banner">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-md-9 col-lg-8">
+            <div class="col-md-9 col-lg-8">
               <h1 class="page-title"><?php startblock('page-title') ?> Page title consequatur facere deleniti cumque <?php endblock() ?></h1>
             </div>
-            <div class="page-actions hidden-xs col-sm-4 col-md-3 col-lg-4">
+            <div class="page-actions col-md-3 col-lg-4">
               <span class="item">
                   <a class="text-center" href="#_" title="Print">
-                    <i class="gel-icon-lg gel-icon-print" title="Print"></i> <span class="hidden-xs hidden-sm hidden-md">Print</span>
+                    <i class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
                   </a>
               </span>
               <span class="item">
                   <a class="text-center" href="#_" title="Feedback">
-                    <i class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span class="hidden-xs hidden-sm hidden-md">Feedback</span>
+                    <i class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
                   </a>
               </span>
                 <span class="item">
@@ -64,36 +64,25 @@
                      data-toggle="dropdown">
                     <i class="gel-icon-lg gel-icon-help" aria-hidden="true" title="More"></i> <span class="hidden-xs hidden-sm hidden-md">Help</span>
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a> </li>
-                    <li><a href="#"><i class="gel-icon-knowledge-portal" aria-hidden="true" title="More"></i> Knowledge Portal</a> </li>
-                    <li><a href="#"><i class="gel-icon-bullhorn" aria-hidden="true" title="More"></i> Raise support case</a> </li>
-                  </ul>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a>
+                    <a class="dropdown-item" href="#"><i class="gel-icon-knowledge-portal" aria-hidden="true" title="More"></i> Knowledge Portal</a>
+                    <a class="dropdown-item" href="#"><i class="gel-icon-bullhorn" aria-hidden="true" title="More"></i> Raise support case</a>
+                  </div>
                 </span>
               </div>
           </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <?php startblock('page-tabs') ?>
-                <div class="page-tabs">
-                    <span class="item active"><a href="#">Tab ducimus</a></span>
-                    <span class="item"><a href="#">Tab consequatur</a></span>
-                    <span class="item"><a href="#">Tab facere</a></span>
-                    <span class="item"><a href="#">Tab cumque</a></span>
-                    <span class="item"><a href="#">Tab maiores</a></span>
-                    <span class="item"><a href="#">Tab nemo</a></span>
-                </div>
-              <?php endblock() ?>
+
+          <?php startblock('page-tabs') ?>
+            <div class="page-tabs"  role="tablist">
+                <span class="item active"><a href="#">Tab ducimus</a></span>
+                <span class="item"><a href="#">Tab consequatur</a></span>
+                <span class="item"><a href="#">Tab facere</a></span>
+                <span class="item"><a href="#">Tab cumque</a></span>
+                <span class="item"><a href="#">Tab maiores</a></span>
+                <span class="item"><a href="#">Tab nemo</a></span>
             </div>
-            <!-- <div class="hidden-xs col-sm-6 col-md-5 col-lg-3">
-              <?php startblock('page-search') ?>
-                <form class="page-search">
-                  <input class="form-control search-input" placeholder="Search for jobs or candidates" type="text" />
-                  <span class="search-icon"><i class="fa fa-lg fa-search"></i></span>
-                </form>
-              <?php endblock() ?>
-            </div> -->
-        </div>
+          <?php endblock() ?>
     </header>
 <?php endblock()?>
 

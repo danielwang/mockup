@@ -14,73 +14,146 @@
   <button href="#" type="button" class="close"><i class="fa fa-times"></i></button>
 </div> -->
 
-<div class="row blokk">
-  <div class="col-sm-8">
-    <div class="gel-box">
-      <h3>Paragraphs heading</h3>
-      <p>Utwisi enimad minimveniam, <a href="#">quisnostrud exerci tation ullamcorper</a> suscipitlobortis nisl utaliquipexeacommodo consequat. Duis autemveleum iriuredolor inendrerit invulputate velit essemolestie consequat, velillum doloreeu
-        feugiat nullafacilisis accumsan dignissim quiblandit praesent luptatum zzrildelenit augueduisdolore tefeugait nullafacilisi. Loremipsum dolorsitamet, consectetuerdipiscing elit, sed diam nonummy nibh euismod
-        tincidunt utlaoreetdolore magna aliquam erat volutpat.</p>
-      <hr>
-
-      <h3>Buttons</h3>
-      <p>Youcan applytheclassto anyelement thatequiresa buttonstyle.</p>
-      <p><a href="#" class="btn btn-primary">Submit</a> or <a href="#" class="btn btn-success">Save as draft</a> <button type="button" class="btn btn-round btn-primary">Round button</button></p>
-      <!-- Tables -->
-      <h3>Tables</h3>
-      <p>Tables should be given the class of <code>table</code>.</p>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th></th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td><img class="gel-avatar gel-avatar-sm" src="<?php echo ($resURL)?>images/avatar/users-1.svg"></td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td><img class="gel-avatar gel-avatar-sm" src="<?php echo ($resURL)?>images/avatar/users-2.svg"></td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td><img class="gel-avatar gel-avatar-sm" src="<?php echo ($resURL)?>images/avatar/users-3.svg"></td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-      <hr>
-      <!-- Responsive images -->
-      <h3>Responsive images</h3>
-      <p>For images to be responsive (so that they will rescale to suit the width of the parent, use the <code>.img-responsive</code> class.</p>
-      <p><img class="img-responsive" src="http://placehold.it/750x375/ABE0F4/57C0E9?text=image" alt=""></p>
-      <p>Duisautem veleum iriuredolorin hendreritvulputate velitesse molestie consequat, velillumolore eufeugiat nullafacilisis atveroeros etaccumsan etiustoodio dignissim quiblandit praesent luptatum zzrildelenit augueduis doloretefeugait
-        nullafacilisi. Loremipsum dolorsitamet, consectetuer adipiscing elit, seddiam nonummynibh euismod tinciduntutlaoreet doloremagnaaliquam erat lutpat. Utisienim adminim veniam, quisnostrud exerci tation ullamcorper suscipitlobortis nisl
-        utaliquip exeaommodo consequat.</p>
-    <hr>
+    <h3 class="mb-4">Typography</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>
+          <code>Proxima Nova</code>
+        </h5>
+          <h3 style="font-family:Proxima Nova; font-weight:400">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
+          <h3 style="font-family:Proxima Nova; font-weight:400; text-transform: lowercase;">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
+          <h3 style="font-family:Proxima Nova; font-weight:400">0 1 2 3 4 5 6 7 8 9</h3>
+          <p class="lead">This is an example of leading paragragh.</p>
+          <p class="text-muted">This is an example of muted text.</p>
+          <p class="text-primary">This is an example of primary text.</p>
+          <p class="text-success">This is an example of success text.</p>
+          <p class="text-info">This is an example of info text.</p>
+          <p class="text-warning">This is an example of warning text.</p>
+          <p class="text-danger">This is an example of danger text.</p>
+          <p class="text-sm">This is an example of small text.</p>
+          <p>Use the mark tag to
+            <mark>highlight</mark>
+            text.</p>
+          <p>Use the b tag to
+            <b>bold</b>
+            text, or use strong tag to
+            <strong>emphasize</strong>
+            text.
+          </p>
+      </div>
+      <div class="col-md-6">
+        <h5>
+          <code>Nunito</code>
+        </h5>
+        <h3>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
+        <h3 style="text-transform: lowercase;">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
+        <h3>0 1 2 3 4 5 6 7 8 9</h3>
+        <h1>h1. Bootstrap heading</h1>
+        <h2>h2. Bootstrap heading</h2>
+        <h3>h3. Bootstrap heading</h3>
+        <h4>h4. Bootstrap heading</h4>
+        <h5>h5. Bootstrap heading</h5>
+        <h6>h6. Bootstrap heading</h6>
+      </div>
     </div>
-  </div>
-  <div class="col-sm-4">
-    <h2 class="blokk">Phasellu</h2>
-    <p class="blokk">Phasellushendrerit tellusfel ismollisluctus. Aenean aliquetAliq uamcommodoid, bibendumnullaut lacus. Aliquamul triciesodio, fermentum utnequeSed mattisPelle ntesquetellus.</p>
-    <p class="blokk">Cumsociisnatoque penatibus etassa. Integerconvallis ligulabi bendumelnibh. Etiam congueringilla urpis. Nullaratmauris.</p>
-    <hr>
-    <h2 class="blokk">Psellu</h2>
-    <p class="blokk">Pellent esque facilisi ssodales. Aeneancommo dodio fermentumleo mollis consectetuer. Curabitur obortisuis, venenatislor emegettempus purus. Clas saptenttac itisociosqu</p>
-  </div>
-</div>
+    <h3 class="mt-5 mb-4">Buttons</h3>
+    <p>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+     </p>
+     <p>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+      </p>
+      <?php
+
+      function buildSolidIcons(){
+        return  [
+          ["print", "print"],
+          ["feedback", "feedback"],
+          ["help", "help-pointer"],
+          ["info", "info-pointer"],
+          ["beta", "beta"],
+          ["search", "search"],
+          ["bullhorn", "bullhorn"],
+          ["right", "right"],
+          ["left", "left"],
+          ["upload", "upload"],
+          ["download", "download"],
+          ["dropdown", "dropdown"],
+          ["foldup", "foldup"],
+          ["share", "share"],
+          ["tick", "tick-circle"],
+          ["close", "close-circle"],
+          ["trash", "trash"],
+          ["notes", "notes"],
+          ["new", "new"],
+          ["eye", "eye"],
+          ["logo", "logo"],
+          ["user", "user"],
+          ["job", "job"],
+          ["knowledge portal", "knowledge-portal"],
+          ["refresh", "refresh"],
+          ["lock", "lock"],
+          ["analytics", "analytics"],
+          ["menu", "menu"],
+          ["support", "support"],
+          ["employee", "employee"],
+          ["add-user", "add-user"],
+          ["preview", "preview"],
+          ["copy", "copy"],
+          ["close", "close"],
+          ["tick", "tick"],
+          ["help", "help"]
+        ];
+      }
+
+      $solidIcons = buildSolidIcons();
+
+      function buildLineIcons(){
+        return  [
+          ["logo", "logo"],["menu","menu"],["close","close"],["beta","beta"],["bullhorn","bullhorn"],["print","print"],
+          ["feedback","feedback"],["support","support"],["profile","profile"],["search","search"],["applicant","applicant"],
+          ["control","control"],["team","team"],["job","job"],["employee","employee"],
+          ["recruitment","recruitment"],["learning","learning"],["analytics","analytics"],["orgchart","orgchart"],
+          ["onboarding","onboarding"],["journal","journal"],["copy","copy"],["history","history"],["salary","salary"],
+          ["add","add"],["unlock","unlock"],["view","view"],["resume","application"]
+        ];
+      }
+
+      $lineIcons = buildLineIcons();
+
+      ?>
+
+        <h3 class="mt-5 mb-4">Icons</h3>
+        <div class="row">
+            <?php for($i = 0; $i < ceil(count($solidIcons)) ; $i++){ ?>
+              <div class="col-4 col-sm-3 col-lg-1 text-center mb-4">
+                    <h6><?php echo ucfirst($solidIcons[$i][0]);?></h6>
+                    <p><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></p>
+              </div>
+            <?php } ?>
+          </div>
+
+          <div class="row">
+          <?php for($i = 0; $i < ceil(count($lineIcons)) ; $i++){ ?>
+            <div class="col-4 col-sm-3 col-md-2 col-lg-1 text-center mb-4">
+                  <h6><?php echo ucfirst($lineIcons[$i][0]);?></h6>
+                  <p><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></p>
+            </div>
+          <?php } ?>
+          </div>
 <?php endblock()?>

@@ -48,7 +48,7 @@
     </header>
     <footer>
       <p>
-        <button type="button" class="btn btn-sm btn-primary btn-block"> Log out</button>
+        <button type="button" class="btn btn-sm btn-light btn-block">Log out</button>
       </p>
       <p>
         <span>BETA</span>
@@ -87,7 +87,7 @@
     <strong> John Smith </strong>
   </header>
   <footer id="user-menu-ft" class="collapse">
-    <p><button type="button" class="btn btn-sm btn-info btn-block btn-round"> View Profile</button></p>
+    <p><button type="button" class="btn btn-sm btn-primary btn-block"> View Profile</button></p>
     <p><i class="fa fa-lg fa-sign-out"></i> <a class="no-padding" href="#"> Log out </a></p>
     <p>
       <i class="gel-icon-beta"></i> <a class="no-padding" href="#">Beta feedback</a>
@@ -151,19 +151,19 @@
     <header id="gel-header" role="banner">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-md-9 col-lg-8">
+            <div class="col-md-9 col-lg-8">
               <h1 class="page-title">  Chloe Williams - My development plan
 </h1>
             </div>
-            <div class="page-actions hidden-xs col-sm-4 col-md-3 col-lg-4">
+            <div class="page-actions col-md-3 col-lg-4">
               <span class="item">
                   <a class="text-center" href="#_" title="Print">
-                    <i class="gel-icon-lg gel-icon-print" title="Print"></i> <span class="hidden-xs hidden-sm hidden-md">Print</span>
+                    <i class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
                   </a>
               </span>
               <span class="item">
                   <a class="text-center" href="#_" title="Feedback">
-                    <i class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span class="hidden-xs hidden-sm hidden-md">Feedback</span>
+                    <i class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
                   </a>
               </span>
                 <span class="item">
@@ -174,17 +174,16 @@
                      data-toggle="dropdown">
                     <i class="gel-icon-lg gel-icon-help" aria-hidden="true" title="More"></i> <span class="hidden-xs hidden-sm hidden-md">Help</span>
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a> </li>
-                    <li><a href="#"><i class="gel-icon-knowledge-portal" aria-hidden="true" title="More"></i> Knowledge Portal</a> </li>
-                    <li><a href="#"><i class="gel-icon-bullhorn" aria-hidden="true" title="More"></i> Raise support case</a> </li>
-                  </ul>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a>
+                    <a class="dropdown-item" href="#"><i class="gel-icon-knowledge-portal" aria-hidden="true" title="More"></i> Knowledge Portal</a>
+                    <a class="dropdown-item" href="#"><i class="gel-icon-bullhorn" aria-hidden="true" title="More"></i> Raise support case</a>
+                  </div>
                 </span>
               </div>
           </div>
-          <div class="row">
-            <div class="col-sm-12">
-                <div class="page-tabs">
+
+            <div class="page-tabs">
       <span class="item active"><a href="#">In progress / Upcoming</a></span>
       <span class="item"><a href="#">Completed</a></span>
       <span class="item"><a href="#">Pending approval <span class="badge">1</span></a></span>
@@ -192,14 +191,6 @@
       <!-- <span class="item"><button type="button" class="pull-right btn btn-ghost btn-primary">
           Explore Library</button></span> -->
   </div>
-            </div>
-            <!-- <div class="hidden-xs col-sm-6 col-md-5 col-lg-3">
-                              <form class="page-search">
-                  <input class="form-control search-input" placeholder="Search for jobs or candidates" type="text" />
-                  <span class="search-icon"><i class="fa fa-lg fa-search"></i></span>
-                </form>
-                          </div> -->
-        </div>
     </header>
 
 <!-- ************  page body ************ -->

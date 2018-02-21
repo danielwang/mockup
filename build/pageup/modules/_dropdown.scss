@@ -1,0 +1,30 @@
+.dropdown-menu{
+  padding: 1.25rem;
+  margin-top: 1.5rem;
+  border: 0;
+
+  &:after {
+    position: absolute;
+    top: -10px;
+    left: auto;
+    right: 10px;
+    display: inline-block;
+    content: "";
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    border-left: 10px solid transparent;
+  }
+
+  .dropdown-item {
+    color: #607d9e;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #11b1ee;
+    }
+
+    [class^="gel-icon-"] {
+      color: $gray-500;
+    }
+  }
+}
