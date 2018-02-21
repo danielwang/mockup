@@ -5,16 +5,18 @@
   require_once 'ti.php';
   include_once 'head.php';
   ?>
-  <nav id="gel-navbar" class="navbar navbar-default">
+  <nav id="gel-navbar" class="navbar navbar-expand-lg navbar-dark bg-navy" role="navigation">
     <div class="container">
-        <a href="<?php echo ($resURL) ?>" class="logo"><img src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"></a>
+        <a href="<?php echo ($resURL) ?>" class="logo"><img alt="logo" src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"></a>
     </div>
   </nav>
 <!-- page header -->
-
-<?php startblock('page-header') ?>
-<?php endblock() ?>
-
+<header id="gel-header" role="banner">
+    <div class="container">
+      <h1 class="page-title"><?php startblock('page-title') ?>
+      <?php endblock() ?></h1>
+    </div>
+</header>
 <!-- page body -->
 		<main id="gel-main">
 			<section class="container">

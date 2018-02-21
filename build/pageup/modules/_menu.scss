@@ -74,7 +74,7 @@
     padding-top: .5rem;
     overflow-x: hidden;
     overflow-y: auto;
-
+    -webkit-overflow-scrolling: touch;
 
     ul {
       margin: 0;
@@ -82,7 +82,7 @@
       > li.submenu{
         margin-bottom: 30px;
         list-style: none;
-        h4 {
+        h5 {
           color: #0AC8FF;
         }
         li{

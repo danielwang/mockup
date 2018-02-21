@@ -1,16 +1,7 @@
 <?php $pageTitle = "Iconography"; include '../base.php';?>
 
-<?php startblock('page-header');?>
-<section class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <h1 class="jumbotron-heading"><?php echo ($pageTitle) ?></h1>
-      </div>
-      <div class="col-md-5">
-      </div>
-    </div>
-  </section>
+<?php startblock('page-title') ?>
+  Iconography
 <?php endblock()?>
 <?php startblock('page-body');?>
 
@@ -129,8 +120,8 @@ $lineIcons = buildLineIcons();
   <div class="col-sm-10">
     <div class="row">
       <?php for($i = 0; $i < ceil(count($solidIcons)) ; $i++){ ?>
-        <div class="col-xs-6 col-sm-4 col-lg-3 text-center">
-            <div class="gel-box">
+        <div class="col-xs-6 col-sm-4 col-lg-3 text-center mb-4">
+            <div class="card">
               <h6><?php echo ucfirst($solidIcons[$i][0]);?></h6>
               <p><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></p>
               <small><code>.gel-icon-<?php echo $solidIcons[$i][1];?></code></small>
@@ -149,8 +140,8 @@ $lineIcons = buildLineIcons();
   <div class="col-sm-10">
     <div class="row">
     <?php for($i = 0; $i < ceil(count($lineIcons)) ; $i++){ ?>
-      <div class="col-xs-6 col-sm-4 col-lg-3 text-center">
-          <div class="gel-box">
+      <div class="col-xs-6 col-sm-4 col-lg-3 text-center mb-4">
+          <div class="card">
             <h6><?php echo ucfirst($lineIcons[$i][0]);?></h6>
             <p><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></p>
             <small><code>.gel-icon-<?php echo $lineIcons[$i][1];?>-o</code></small>

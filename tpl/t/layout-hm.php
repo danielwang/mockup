@@ -11,7 +11,7 @@
 <?php emptyblock('page-tabs') ?>
 
 <?php startblock('page-body');?>
-<h3>Welcome John</h3>
+<h2>Welcome John</h2>
 <p class="lead">
   This is your Manager Dashboard where you will see all your tasks organized in various stages.
   You will also see how many actions are required per task. Please attend to these tasks accordingly.</p>
@@ -20,9 +20,9 @@
     <div class="row">
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description">
           <div class="card-body">
-            <h4 class="mb-4">Position Description</h4>
+            <h5 class="mb-4">Position Description</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -30,9 +30,9 @@
       </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Jobs">
           <div class="card-body">
-            <h4 class="mb-4">Jobs</h4>
+            <h5 class="mb-4">Jobs</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
             <p><button type="button" class="btn btn-primary">Create a job</button></p>
@@ -41,9 +41,9 @@
       </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/approval.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/approval.svg" alt="Approval">
           <div class="card-body">
-            <h4 class="mb-4">Approval</h4>
+            <h5 class="mb-4">Approval</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -51,9 +51,9 @@
       </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/sourcing.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/sourcing.svg" alt="Advertising">
           <div class="card-body">
-            <h4 class="mb-4">Advertising</h4>
+            <h5 class="mb-4">Advertising</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -61,9 +61,9 @@
       </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/list.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/list.svg" alt="Shortlisting">
           <div class="card-body">
-            <h4 class="mb-4">Shortlisting</h4>
+            <h5 class="mb-4">Shortlisting</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -71,9 +71,9 @@
       </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/panel.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/panel.svg" alt="Panel">
           <div class="card-body">
-            <h4 class="mb-4">Panel</h4>
+            <h5 class="mb-4">Panel</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -81,9 +81,9 @@
       </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/interview.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/interview.svg" alt="Interview">
           <div class="card-body">
-            <h4 class="mb-4">Interview</h4>
+            <h5 class="mb-4">Interview</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -91,9 +91,9 @@
       </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/offer.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/offer.svg" alt="Offer">
           <div class="card-body">
-            <h4 class="mb-4">Offer</h4>
+            <h5 class="mb-4">Offer</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -101,9 +101,9 @@
       </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/contract.svg" alt="Card image cap">
+          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/contract.svg" alt="Contract">
           <div class="card-body">
-            <h4 class="mb-4">Contract</h4>
+            <h5 class="mb-4">Contract</h5>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -119,3 +119,8 @@
   </div>
 </div>
 <?php endblock()?>
+
+<style>
+.card a { font-size: 1.25rem;}
+.card {font-size: 1rem;}
+</style>
