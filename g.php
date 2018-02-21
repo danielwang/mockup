@@ -43,7 +43,7 @@ function recurseDir($folderpath) {
 function viewSource($folderpath, $page){
   chdir($folderpath); // go to the dir
   // define the URL to load
-  $url = 'http://localhost:9000/pu-sg/'. $folderpath . '/' . $page;
+  $url = 'http://localhost:9000/mockup/'. $folderpath . '/' . $page;
   $url = str_replace('\\', '/',$url);
   //echo $url;
   //start cURL
