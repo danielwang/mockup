@@ -1,4 +1,82 @@
-<br />
-<b>Warning</b>:  include_once(index.php): failed to open stream: No such file or directory in <b>/Applications/MAMP/htdocs/mockup/g.php</b> on line <b>4</b><br />
-<br />
-<b>Warning</b>:  include_once(): Failed opening 'index.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.1.6/lib/php') in <b>/Applications/MAMP/htdocs/mockup/g.php</b> on line <b>4</b><br />
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex">
+  <title>MockUp - PageUp </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta name="description" content="PageUp GEL MockUp">
+  <meta name="author" content="daniel.wang">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i" rel="stylesheet">
+  <style>
+    body,
+    html {
+      height: 100vh;
+      margin: 0;
+      color: white;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 200;
+      line-height: 1.4;
+    }
+
+    h2 {
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    .bg {
+      /* The image used */
+      /* background-image: url("http://danielwang.github.io/zing/img/pattern.svg"); */
+      background: linear-gradient(100deg, #172b5299, #2abfc099), url('https://source.unsplash.com/collection/190727/1600x900');
+
+      /* Full height */
+      height: 100vh;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    main {
+      width: 30%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ghost-btn {
+      background: transparent;
+      color: #ddd;
+      border: 1px solid currentColor;
+      border-radius: 1em;
+      padding: 0.15em 1.25em;
+      text-decoration: none;
+      transition: all 0.3s ease-in;
+      width: 110px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .ghost-btn:hover {
+      color: #06b2e4;
+      border: 1px solid currentColor;
+    }
+  </style>
+</head>
+
+<body class="bg">
+  <main>
+    <img src="assets/images/mockup-logo.png" width="188" />
+    <h2>Transform the way our customers use and interact with our product by creating experiences that are simple and delightful.</h2>
+    <p>
+      <a class="ghost-btn" href="p/hm/rc">Hiring Manager</a> <a class="ghost-btn" href="p/emp/p">Employee</a>
+    </p>
+  </main>
+</body>
+
+</html>

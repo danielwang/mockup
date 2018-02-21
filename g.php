@@ -1,10 +1,10 @@
  <?php
  //generate static index page
-ob_start();
-include_once 'index.php';
-file_put_contents("index.html", ob_get_contents());
-ob_end_clean(); // clear the buffer
-echo "<p>latest <a href='index.html'>Styleguide</a> has been generated</p>";
+// ob_start();
+// include_once 'index.php';
+// file_put_contents("index.html", ob_get_contents());
+// ob_end_clean(); // clear the buffer
+// echo "<p>latest <a href='index.html'>Styleguide</a> has been generated</p>";
 
 /* read php files from folders */
 $folders = array("tpl/t");
