@@ -32,7 +32,7 @@
       <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="logo" src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"/><?php endblock() ?></a>
       <?php include ("partials/menu/user-panel.html");?>
 
-      <menu>
+      <menu class="scroll">
         <?php include ("partials/menu/${parent}.html");?>
       </menu>
     </aside>
@@ -87,15 +87,10 @@
 <?php endblock()?>
 
 <!-- ************  page body ************ -->
-		<main id="gel-main" role="main" class="<?php echo ($layout) ?>">
-      <?php if ($layout) {
-        startblock('page-body');
-        endblock();
-       } else { ?>
+		<main id="gel-main" role="main">
 			<section class="container">
 				<?php startblock('page-body')?>
 				<?php endblock()?>
 			</section>
-    <?php } ?>
 		</main>
 <?php include 'foot.html';?>

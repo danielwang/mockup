@@ -6,8 +6,7 @@
   top: 0;
   min-height: 100%;
   width: 300px;
-  background: #4F596A;
-  box-shadow: 0 0 8px 0 #000000;
+  background: $menu-bg;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.5s;
@@ -19,6 +18,7 @@
   &.open {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    box-shadow: 0 0 8px 0 #000000;
   }
 
   .logo {
@@ -75,6 +75,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    @include scroll-y($menu-bg);
 
     ul {
       margin: 0;

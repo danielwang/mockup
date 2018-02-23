@@ -13,3 +13,26 @@
 // 	max-width: 16rem;
 // 	@include border-radius(0.5rem);
 // }
+
+
+// .scroll-horizontal {
+//   width: 20em;
+//   height: 20em;
+//   overflow-x: auto;
+//   background-image: -webkit-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), -webkit-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), -webkit-linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), -webkit-linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+//   background-position: 0 0, 100% 0, 0 0, 100% 0;
+//   background-repeat: no-repeat;
+//   background-color: white;
+//   background-size: 4em 100%, 4em 100%, 1em 100%, 1em 100%;
+//   background-attachment: local, local, scroll, scroll;
+// }
+//
+
+@mixin scroll-y($bg-color) {
+    overflow-y: auto;
+    background: linear-gradient($bg-color 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), $bg-color 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+    background-color: transparent;
+}

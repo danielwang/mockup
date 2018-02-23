@@ -1,4 +1,4 @@
-<?php $layout=""; $pageTitle = "Page template"; $parent = "hm"; include '../base-t1.php';?>
+<?php $pageTitle = "Hiring manager dashboard"; $parent = "hm"; include '../base-t1.php';?>
 
 <?php startblock('page-title') ?>
   Hiring manager dashboard

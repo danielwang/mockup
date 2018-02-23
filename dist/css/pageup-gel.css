@@ -7598,29 +7598,58 @@ body {
 
 #gel-main {
   padding: 30px 0; }
-/* Code for Firefox */
-.gel-avatar {
+/* selection styles */
+::-moz-selection {
+  color: #fff;
+  background: #57c0e9; }
+
+::selection {
+  color: #fff;
+  background: #57c0e9; }
+/*  Scroll bar styles
+ * See Lea Verou's explanation background-attachment:
+ * http://lea.verou.me/2012/04/background-attachment-local/
+ */
+.scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; }
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(147, 149, 151, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(178, 178, 178, .75);
+  -webkit-box-shadow: inset 0 0 6px rgba(178, 178, 178, .75); }
+
+.scroll::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(78, 78, 78, ); }
+
+.avatar {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 3px solid transparent; }
 
-.gel-avatar-xs {
+.avatar-xs {
   width: 35px;
   height: 35px;
   border-width: 0; }
 
-.gel-avatar-sm {
+.avatar-sm {
   width: 40px;
   height: 40px;
   border-width: 2px; }
 
-.gel-avatar-md {
+.avatar-md {
   width: 80px;
   height: 80px;
   border-width: 4px; }
 
-.gel-avatar-lg {
+.avatar-lg {
   width: 100px;
   height: 100px;
   border-width: 4px; }
@@ -7743,7 +7772,6 @@ body {
   min-height: 100%;
   width: 300px;
   background: #4f596a;
-  box-shadow: 0 0 8px 0 #000;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.5s;
@@ -7753,7 +7781,8 @@ body {
   z-index: 1030; }
   #gel-menu.open {
     -webkit-transform: translateX(0);
-    transform: translateX(0); }
+    transform: translateX(0);
+    box-shadow: 0 0 8px 0 #000; }
   #gel-menu .logo {
     margin-left: 52px;
     margin-top: 12px;
@@ -7794,7 +7823,13 @@ body {
     padding-top: 0.5rem;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch; }
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    background: linear-gradient(#4f596a 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #4f596a 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+    background-color: transparent; }
   #gel-menu menu ul {
     margin: 0;
     padding: 0; }
@@ -7843,11 +7878,11 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    padding-right: 1rem;
+    margin-right: 1rem;
     height: 3.75rem; }
   .navbar .navbar-nav .dropdown-menu {
     top: 2.75rem;
-    right: 0;
+    right: -0.5rem;
     left: auto;
     max-width: 20rem;
     position: absolute; }
@@ -7864,12 +7899,17 @@ body {
     display: none; }
   @media (min-width: 768px) {
       .navbar .navbar-nav .user-panel {
-        display: flex; } }
+        display: flex;
+        margin-right: 0; }
+        .navbar .navbar-nav .user-panel .nav-link {
+          padding-right: 0; } }
   .navbar .navbar-nav .recent-items {
     display: none; }
   @media (min-width: 576px) {
       .navbar .navbar-nav .recent-items {
         display: flex; } }
+  .navbar .navbar-nav .nav-help {
+    margin-right: -1rem; }
   @media (min-width: 768px) {
       .navbar .navbar-nav .nav-help {
         display: none; } }
@@ -7879,7 +7919,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    height: 60px; }
+    height: 3.75rem; }
   .navbar .navbar-nav .search-group input[type=search] {
     border-radius: 10em;
     transition: all 0.5s;

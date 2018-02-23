@@ -13,13 +13,13 @@
       position: relative;
       display: flex;
       align-items: center;
-      padding-right: 1rem;
+      margin-right: 1rem;
       height: $navbar-height;
     }
 
     .dropdown-menu {
       top: $navbar-height - 1 ;
-      right: 0;
+      right: -0.5rem;
       left: auto;
       max-width: 20rem;
       position: absolute;
@@ -44,6 +44,11 @@
       @include media-breakpoint-up(md) {
         // larger than md: 768px
         display: flex;
+        margin-right: 0;
+
+        .nav-link {
+          padding-right: 0;
+        }
       }
     }
     // recent items
@@ -57,6 +62,7 @@
     }
     // nav help
     .nav-help {
+      margin-right: -1rem;
       @include media-breakpoint-up(md) {
         // larger than md: 768px
         display: none;
@@ -70,7 +76,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      height: 60px;
+      height: $navbar-height;
 
       input[type=search] {
         border-radius: 10em;

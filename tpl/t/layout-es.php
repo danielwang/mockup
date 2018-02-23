@@ -1,4 +1,4 @@
-<?php $layout=""; $pageTitle = "Page template"; $parent = "es"; include '../base-t1.php';?>
+<?php $layout=""; $pageTitle = "ES Page template"; $parent = "es"; include '../base-t1.php';?>
 
 <!-- <?php emptyblock('page-notification') ?>
     <div id="gel-notification" class="gel-notification-control">
