@@ -12,6 +12,7 @@ $menu-bg:               #4F596A;
 $header-bg-start:       #0053a3;
 $header-bg-end:         #018cd1;
 
+$control-color:         #98b8c9;
 //== Additional font icons
 //
 //** gel icons
@@ -93,6 +94,7 @@ $colors: map-merge((
   "navy":       $navy
 ), $colors);
 
+$default:       $control-color !default;
 $primary:       $azure !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
@@ -105,6 +107,7 @@ $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
+  "default":    $default;
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,

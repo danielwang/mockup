@@ -108,7 +108,7 @@ Main Slider
   input {
 
     + span {
-      padding-left: $scrubber-width-default * 2;
+      padding-left: $scrubber-width-default * 2.25;
 
       &:before {
         content: "";
@@ -164,7 +164,7 @@ Slider B
   input {
 
     + span {
-      padding-left: $scrubber-width-default * 2;
+      padding-left: $scrubber-width-default * 2.25;
     }
 
     + span:before {
@@ -213,7 +213,7 @@ Sizes
   line-height: $scrubber-width-sm;
 
   input + span {
-    padding-left: $scrubber-width-sm * 2;
+    padding-left: $scrubber-width-sm * 2.25;
   }
 
   input + span:before {
@@ -241,7 +241,7 @@ Sizes
   line-height: $scrubber-width-md;
 
   input + span {
-    padding-left: $scrubber-width-md * 2;
+    padding-left: $scrubber-width-md * 2.25;
   }
 
   input + span:before {
@@ -269,7 +269,7 @@ Sizes
   line-height: $scrubber-width-lg;
 
   input + span {
-    padding-left: $scrubber-width-lg * 2;
+    padding-left: $scrubber-width-lg * 2.25;
   }
 
   input + span:before {

@@ -66,11 +66,11 @@
   }
 
   menu {
-    margin-top: 45px;
-    padding: 0 45px;
+    margin-top: $navbar-height;
+    padding: 0 2.8125rem;
     position: sticky;
-    top: 45px;
-    height: calc(100vh - 45px);
+    top: $navbar-height;
+    height: calc(100vh - #{$navbar-height});
     padding-top: .5rem;
     overflow-x: hidden;
     overflow-y: auto;

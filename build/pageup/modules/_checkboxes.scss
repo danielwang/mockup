@@ -40,7 +40,7 @@ $check-icon: $fa-var-check !default;
 
   label{
     cursor: pointer;
-    display: inline;
+    display: inline-block;
     vertical-align: top;
     position: relative;
     padding-left: 5px;
@@ -131,6 +131,7 @@ $check-icon: $fa-var-check !default;
   }
 }
 
+@include checkbox-variant('.checkbox-default', $control-color);
 @include checkbox-variant('.checkbox-primary', theme-color(primary));
 @include checkbox-variant('.checkbox-danger', theme-color(danger));
 @include checkbox-variant('.checkbox-info', theme-color(info));
@@ -172,7 +173,7 @@ $check-icon: $fa-var-check !default;
 
   label{
     cursor: pointer;
-    display: inline;
+    display: inline-block;
     vertical-align: top;
     position: relative;
     padding-left: 5px;
@@ -247,7 +248,7 @@ $check-icon: $fa-var-check !default;
     margin-top: 0;
   }
 }
-
+@include radio-variant('.radio-default', $control-color);
 @include radio-variant('.radio-primary', theme-color(primary));
 @include radio-variant('.radio-danger', theme-color(danger));
 @include radio-variant('.radio-info', theme-color(info));
