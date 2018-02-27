@@ -13,7 +13,7 @@
       <div class="container">
         <!-- logo  -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu gel-icon-2x"></i></span></li>
+          <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu-o gel-icon-2x"></i></span></li>
           <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="logo" src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"/><?php endblock() ?></a></li>
         </ul>
         <ul class="navbar-nav">

@@ -90,9 +90,6 @@
           width: 150px;
           background-color: #4f617d;
         }
-        &::placeholder {
-          color: rgba(255, 255, 255, .5);
-        }
 
         &:focus {
           width: 150px;
@@ -112,7 +109,7 @@
           top: 15px;
           z-index: 1;
           cursor: pointer;
-          color: rgba(255, 255, 255, .5)
+          color: white;
         }
       }
     }

@@ -213,12 +213,7 @@
     <h5>
       Basic
     </h5>
-    <div class="checkbox checkbox-default">
-      <input type="checkbox" checked="" id="checkbox2">
-      <label for="checkbox2">
-        Default
-      </label>
-    </div>
+
     <div class="checkbox checkbox-primary">
       <input type="checkbox" checked="" id="checkbox2">
       <label for="checkbox2">
@@ -301,11 +296,11 @@
 <div class="row">
   <div class="col-sm-3">
     <h5>Basic</h5>
-    <div class="radio radio-default">
+    <div class="radio radio-info">
       <input type="radio" value="option1" id="radio3" name="radio2">
       <label for="radio3">Option 1</label>
     </div>
-    <div class="radio radio-default">
+    <div class="radio radio-info">
       <input type="radio" checked="" value="option2" id="radio4" name="radio2">
       <label for="radio4">Option 2</label>
     </div>
