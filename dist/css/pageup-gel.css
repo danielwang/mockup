@@ -7822,7 +7822,7 @@ body {
   #gel-menu menu {
     margin-top: 3.75rem;
     padding: 0 2.8125rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     #gel-menu menu {
       position: sticky;
       top: 3.75rem;

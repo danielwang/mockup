@@ -71,7 +71,7 @@
   menu {
     margin-top: $navbar-height;
     padding: 0 2.8125rem;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       position: sticky;
       top: $navbar-height;
       height: calc(100vh - #{$navbar-height});
