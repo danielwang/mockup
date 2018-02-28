@@ -7822,7 +7822,7 @@ body {
   #gel-menu menu {
     margin-top: 3.75rem;
     padding: 0 2.8125rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     #gel-menu menu {
       position: sticky;
       top: 3.75rem;
@@ -7833,6 +7833,7 @@ body {
       -webkit-overflow-scrolling: touch;
       overflow-y: auto;
       background: linear-gradient(#4f596a 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #4f596a 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background: -webkit-linear-gradient(#4f596a 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #4f596a 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
       background-repeat: no-repeat;
       background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
       background-attachment: local, local, scroll, scroll;
