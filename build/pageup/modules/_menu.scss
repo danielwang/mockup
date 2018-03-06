@@ -71,7 +71,7 @@
   menu {
     margin-top: $navbar-height;
     padding: 0 2.8125rem;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       position: sticky;
       top: $navbar-height;
       height: calc(100vh - #{$navbar-height});
@@ -123,5 +123,8 @@
     position: absolute;
     top: 0;
     left: 10px;
+    :hover{
+      color: white;
+    }
   }
 }

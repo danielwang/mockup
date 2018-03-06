@@ -43,7 +43,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8">
-              <h1 class="page-title"><?php startblock('page-title') ?> Page title consequatur facere deleniti cumque <?php endblock() ?></h1>
+              <h1 class="page-title"><?php echo $pageTitle  ?></h1>
             </div>
             <div class="page-actions col-md-3 col-lg-4">
               <span class="item">

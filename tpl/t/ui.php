@@ -63,6 +63,7 @@
 <!-- ************ buttons ******************-->
 <h3 class="mt-5 mb-4">Buttons</h3>
 <p>
+  <button type="button" class="btn btn-default">Default</button>
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-secondary">Secondary</button>
   <button type="button" class="btn btn-success">Success</button>

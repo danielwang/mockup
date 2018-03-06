@@ -12,6 +12,7 @@ $menu-bg:               #4F596A;
 $header-bg-start:       #0053a3;
 $header-bg-end:         #018cd1;
 
+$ctrl:               #63778b;
 //== Additional font icons
 //
 //** gel icons
@@ -94,7 +95,7 @@ $colors: map-merge((
 ), $colors);
 
 $primary:       $azure !default;
-$secondary:     $gray-600 !default;
+$secondary:     $ctrl !default;
 $success:       $green !default;
 $info:          $blue !default;
 $warning:       $yellow !default;
@@ -105,6 +106,7 @@ $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
+  "default":    $ctrl,
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
@@ -173,7 +175,7 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #f1f5f9 !default;
+$body-bg:                   #ebeff3 !default;
 $body-color:                $gray-900 !default;
 
 // Links
@@ -335,7 +337,7 @@ $table-cell-padding-sm:       .3rem !default;
 
 $table-bg:                    transparent !default;
 $table-accent-bg:             rgba($black, .05) !default;
-$table-hover-bg:              rgba($black, .075) !default;
+$table-hover-bg:              lighten($ctrl, 40%);
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          $border-width !default;
@@ -781,7 +783,7 @@ $modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
 
 $modal-backdrop-bg:           $black !default;
-$modal-backdrop-opacity:      .5 !default;
+$modal-backdrop-opacity:      .75 !default;
 $modal-header-border-color:   $gray-200 !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 $modal-header-border-width:   $modal-content-border-width !default;

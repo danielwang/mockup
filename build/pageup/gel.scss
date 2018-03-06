@@ -5,8 +5,8 @@
  *
 \* *************************************** */
 //google fonts
-@import url(https://fonts.googleapis.com/css?family=Nunito:600); // fontawesome
-@import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css?family=Nunito:600,700'); // fontawesome
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css');
 
 //Bootstrap Variables & Mixins
 //@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css);
@@ -25,13 +25,15 @@
 @import "modules/avatars";
 @import "modules/buttons";
 @import "modules/card";
+@import "modules/checkboxes";
 @import "modules/dropdown";
 @import "modules/header";
 @import "modules/menu";
 @import "modules/navbar";
+@import "modules/table";
 @import "modules/toggles";
 @import "modules/utility";
-@import "modules/checkboxes";
+
 
 
 // @import "app.less";

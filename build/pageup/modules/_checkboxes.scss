@@ -40,7 +40,7 @@ $check-icon: $fa-var-check !default;
 
   label{
     cursor: pointer;
-    display: inline;
+    display: inline-block;
     vertical-align: top;
     position: relative;
     padding-left: 5px;
@@ -131,13 +131,14 @@ $check-icon: $fa-var-check !default;
   }
 }
 
+@include checkbox-variant('.checkbox-default', theme-color(default));
 @include checkbox-variant('.checkbox-primary', theme-color(primary));
 @include checkbox-variant('.checkbox-danger', theme-color(danger));
 @include checkbox-variant('.checkbox-info', theme-color(info));
 @include checkbox-variant('.checkbox-warning', theme-color(warning));
 @include checkbox-variant('.checkbox-success', theme-color(success));
 
-
+@include checkbox-variant-indeterminate('.checkbox-default', theme-color(default));
 @include checkbox-variant-indeterminate('.checkbox-primary', theme-color(primary));
 @include checkbox-variant-indeterminate('.checkbox-danger', theme-color(danger));
 @include checkbox-variant-indeterminate('.checkbox-info', theme-color(info));
@@ -172,7 +173,7 @@ $check-icon: $fa-var-check !default;
 
   label{
     cursor: pointer;
-    display: inline;
+    display: inline-block;
     vertical-align: top;
     position: relative;
     padding-left: 5px;
@@ -248,6 +249,7 @@ $check-icon: $fa-var-check !default;
   }
 }
 
+@include radio-variant('.radio-default', theme-color(default));
 @include radio-variant('.radio-primary', theme-color(primary));
 @include radio-variant('.radio-danger', theme-color(danger));
 @include radio-variant('.radio-info', theme-color(info));

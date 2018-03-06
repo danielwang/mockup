@@ -74,7 +74,7 @@ function viewSource($folderpath, $page){
 // generate minified pageup css
 include_once("vendor/minifier.php");
 $css = array(
-    "dist/css/pageup-gel.css" => "dist/css/pageup-gel.min.css"
+    "dist/css/pageup-gel.css" => "dist/css/gel.min.css"
 );
 minifyCSS($css);
 ?>

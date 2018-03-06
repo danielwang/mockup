@@ -60,10 +60,6 @@ $lineIcons = buildLineIcons();
 
 ?>
 
-<?php startblock('page-title') ?>
-  Iconography
-<?php endblock()?>
-
 <?php startblock('page-tabs') ?>
   <!-- <div class="page-tabs" role="tablist">
       <span class="item"><a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Font icons</a></span>
