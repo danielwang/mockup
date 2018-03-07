@@ -26,7 +26,7 @@
  // 	unlink($cssfile);
  // }
 
- $cssfile = $resURL . 'dist/css/pageup-gel.css';
+ $cssfile = $resURL . 'dist/css/gel.css';
  if (file_exists($cssfile)) {
  	unlink($cssfile);
  }
@@ -36,10 +36,10 @@
  use Leafo\ScssPhp\Compiler;
 
  $scss = new Compiler();
- $scss->setImportPaths($resURL ."build/pageup/");
+ $scss->setImportPaths($resURL ."build/gel/");
  //$scssIn = file_get_contents('build/bootstrap/bootstrap.scss');
- $cssOut = $scss->compile('@import "gel.scss"');
- file_put_contents($resURL . '/dist/css/pageup-gel.css', $cssOut);
+ $cssOut = $scss->compile('@import "custom.scss"');
+ file_put_contents($resURL . '/dist/css/gel.css', $cssOut);
 
  // Compile less to output a css file
  // require $resURL . "lessc.inc.php";

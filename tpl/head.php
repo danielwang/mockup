@@ -13,7 +13,7 @@
     <meta name="description" content="PageUp GEL Templates">
     <meta name="author" content="daniel.wang" >
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="<?php echo ($resURL) ?>dist/css/pageup-gel.css">
+    <link rel="stylesheet" href="<?php echo ($resURL) ?>dist/css/gel.css">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
 @import url('https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css');
 /* *************************************** *\
- *   PageUp Bootstrap Theme 2.0.1
+ *   PageUp GEL - Bootstrap Theme 2.0.1
  *   Author: Daniel Wang
- *	 Date: 5/12/2017
+ *	 Date: 05/03/2018
  *
  \* *************************************** */
 /*!
@@ -7810,15 +7810,6 @@ body {
   .checkbox input[type="checkbox"]:checked + label::after, .checkbox input[type="radio"]:checked + label::after {
     font-family: 'FontAwesome';
     content: "\f00c"; }
-  .checkbox input[type="checkbox"]:indeterminate + label::after, .checkbox input[type="radio"]:indeterminate + label::after {
-    display: block;
-    content: "";
-    width: 10px;
-    height: 3px;
-    background-color: #555;
-    border-radius: 2px;
-    margin-left: -16.5px;
-    margin-top: 7px; }
   .checkbox input[type="checkbox"]:disabled + label, .checkbox input[type="radio"]:disabled + label {
     opacity: 0.65; }
   .checkbox input[type="checkbox"]:disabled + label::before, .checkbox input[type="radio"]:disabled + label::before {
@@ -7866,42 +7857,6 @@ body {
   border-color: #339989; }
   .checkbox-success input[type="checkbox"]:checked + label::after, .checkbox-success input[type="radio"]:checked + label::after {
     color: #fff; }
-
-.checkbox-default input[type="checkbox"]:indeterminate + label::before, .checkbox-default input[type="radio"]:indeterminate + label::before {
-  background-color: #63778b;
-  border-color: #63778b; }
-  .checkbox-default input[type="checkbox"]:indeterminate + label::after, .checkbox-default input[type="radio"]:indeterminate + label::after {
-    background-color: #fff; }
-
-.checkbox-primary input[type="checkbox"]:indeterminate + label::before, .checkbox-primary input[type="radio"]:indeterminate + label::before {
-  background-color: #10bbf3;
-  border-color: #10bbf3; }
-  .checkbox-primary input[type="checkbox"]:indeterminate + label::after, .checkbox-primary input[type="radio"]:indeterminate + label::after {
-    background-color: #fff; }
-
-.checkbox-danger input[type="checkbox"]:indeterminate + label::before, .checkbox-danger input[type="radio"]:indeterminate + label::before {
-  background-color: #ee3d4b;
-  border-color: #ee3d4b; }
-  .checkbox-danger input[type="checkbox"]:indeterminate + label::after, .checkbox-danger input[type="radio"]:indeterminate + label::after {
-    background-color: #fff; }
-
-.checkbox-info input[type="checkbox"]:indeterminate + label::before, .checkbox-info input[type="radio"]:indeterminate + label::before {
-  background-color: #57c0e9;
-  border-color: #57c0e9; }
-  .checkbox-info input[type="checkbox"]:indeterminate + label::after, .checkbox-info input[type="radio"]:indeterminate + label::after {
-    background-color: #fff; }
-
-.checkbox-warning input[type="checkbox"]:indeterminate + label::before, .checkbox-warning input[type="radio"]:indeterminate + label::before {
-  background-color: #e1a931;
-  border-color: #e1a931; }
-  .checkbox-warning input[type="checkbox"]:indeterminate + label::after, .checkbox-warning input[type="radio"]:indeterminate + label::after {
-    background-color: #fff; }
-
-.checkbox-success input[type="checkbox"]:indeterminate + label::before, .checkbox-success input[type="radio"]:indeterminate + label::before {
-  background-color: #339989;
-  border-color: #339989; }
-  .checkbox-success input[type="checkbox"]:indeterminate + label::after, .checkbox-success input[type="radio"]:indeterminate + label::after {
-    background-color: #fff; }
 
 .radio {
   cursor: default;
@@ -8319,7 +8274,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     background: white; }
   .table.table-striped tbody tr:nth-of-type(even) {
     background: #fafafa; }
-  .table tbody th, .table tbody td {
+  .table tbody td, .table tbody th {
     vertical-align: middle; }
 /* *********************************\
  responsive table viewport < 768
@@ -8365,6 +8320,41 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
         font-weight: 700;
         font-family: 'Nunito', sans-serif;
         width: 50%; } }
+/* *********************************\
+ sticky header and column
+ \***********************************/
+.table-scroll {
+  color: #000;
+  width: 100%;
+  height: 70vh;
+  overflow: scroll; }
+  .table-scroll table {
+    position: relative;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    background: white; }
+  .table-scroll .thead-col {
+    position: absolute;
+    margin-top: 3rem;
+    z-index: 998;
+    background: #f8f9fa; }
+  .table-scroll .thead-row {
+    position: absolute;
+    margin-left: 9rem;
+    z-index: 999;
+    background: #7e91a3;
+    color: white;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif; }
+  .table-scroll tbody {
+    display: block;
+    margin-left: 9rem;
+    margin-top: 3rem; }
+  .table-scroll td, .table-scroll th {
+    min-width: 9rem;
+    height: 3rem;
+    box-sizing: border-box; }
 /*******************************************************
  Variables
  *******************************************************/

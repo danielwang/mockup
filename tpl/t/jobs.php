@@ -4,7 +4,8 @@
 
 <?php startblock('page-body');?>
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-3">
+    <h6>Visibility</h6>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn btn-ctrl active">
         <input type="radio" name="options" id="option1" autocomplete="off" checked> My jobs
@@ -17,7 +18,21 @@
       </label>
     </div>
   </div>
-  <div class="col-sm-6 d-flex justify-content-end">
+  <div class="col-sm-3">
+    <h6>Status</h6>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-ctrl active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Current
+      </label>
+      <label class="btn btn-ctrl">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Archived
+      </label>
+      <label class="btn btn-ctrl">
+        <input type="radio" name="options" id="option3" autocomplete="off"> All 
+      </label>
+    </div>
+  </div>
+  <div class="col-sm-6 d-flex justify-content-end align-items-end">
       <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-cog fa-lg"></i> Settings </button>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

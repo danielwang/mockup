@@ -1,0 +1,32 @@
+/* *************************************** *\
+ *   PageUp GEL - Bootstrap Theme 2.0.1
+ *   Author: Daniel Wang
+ *	 Date: 05/03/2018
+ *
+\* *************************************** */
+//google fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:600,700'); // fontawesome
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css');
+
+
+@import "functions";
+@import "variables";
+@import "../bootstrap-4.0.0/bootstrap";
+
+//----
+@import "mixins";
+@import "gel-icon";
+@import "core";
+@import "misc";
+
+@import "avatars";
+@import "buttons";
+@import "card";
+@import "checkboxes";
+@import "dropdown";
+@import "header";
+@import "menu";
+@import "navbar";
+@import "table";
+@import "toggles";
+@import "utility";
