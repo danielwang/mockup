@@ -1146,7 +1146,7 @@ pre {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
-  background-color: transparent; }
+  background-color: white; }
   .table th, .table td {
     padding: 0.75rem;
     vertical-align: top;
@@ -1292,19 +1292,19 @@ pre {
     background-color: #c8d0d8; }
 
 .table .thead-dark th {
-  color: #ebeff3;
-  background-color: #212529;
-  border-color: #32383e; }
+  color: white;
+  background-color: #63778b;
+  border-color: #63778b; }
   .table .thead-light th {
     color: #495057;
     background-color: #e9ecef;
     border-color: #dee2e6; }
 
 .table-dark {
-  color: #ebeff3;
-  background-color: #212529; }
+  color: white;
+  background-color: #63778b; }
   .table-dark th, .table-dark td, .table-dark thead th {
-    border-color: #32383e; }
+    border-color: #63778b; }
   .table-dark.table-bordered {
     border: 0; }
   .table-dark.table-striped tbody tr:nth-of-type(odd) {
@@ -8255,25 +8255,19 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     color: rgba(255, 255, 255, .5); }
 
 .table {
+  border-collapse: separate;
+  border-spacing: 0;
   border-radius: 0.5rem;
-  background: #7e91a3;
-  border: 1px solid #7e91a3;
   overflow: hidden; }
   .table thead th {
-    background: #7e91a3;
-    color: white;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
-    border: none;
-    vertical-align: middle; }
-  .table thead th:first-child {
-    border-top-left-radius: 0.5rem; }
-  .table thead th:last-child {
-    border-top-right-radius: 0.5rem; }
+    vertical-align: middle;
+    border: 0; }
   .table.table-striped tbody tr:nth-of-type(odd) {
     background: white; }
   .table.table-striped tbody tr:nth-of-type(even) {
-    background: #fafafa; }
+    background: #f8f9fa; }
   .table tbody td, .table tbody th {
     vertical-align: middle; }
 /* *********************************\
@@ -8323,38 +8317,37 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 /* *********************************\
  sticky header and column
  \***********************************/
-.table-scroll {
-  color: #000;
+.table-sticky {
+  overflow: scroll;
   width: 100%;
-  height: 70vh;
-  overflow: scroll; }
-  .table-scroll table {
+  margin: 20px 0;
+  max-height: 70vh;
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid #7e91a3; }
+  .table-sticky table {
+    width: 100%;
+    max-height: 70vh;
     position: relative;
-    border-collapse: collapse;
-    table-layout: fixed;
-    text-align: center;
-    background: white; }
-  .table-scroll .thead-col {
-    position: absolute;
-    margin-top: 3rem;
-    z-index: 998;
+    overflow: scroll; }
+  .table-sticky table thead th {
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 2; }
+  .table-sticky table tbody th:first-child {
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1; }
+  .table-sticky table tbody tr:nth-of-type(even) th {
     background: #f8f9fa; }
-  .table-scroll .thead-row {
-    position: absolute;
-    margin-left: 9rem;
-    z-index: 999;
-    background: #7e91a3;
-    color: white;
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif; }
-  .table-scroll tbody {
-    display: block;
-    margin-left: 9rem;
-    margin-top: 3rem; }
-  .table-scroll td, .table-scroll th {
-    min-width: 9rem;
-    height: 3rem;
-    box-sizing: border-box; }
+  .table-sticky table tbody tr:nth-of-type(odd) th {
+    background: white; }
+  .table-sticky table tbody tr:hover th, .table-sticky table tbody tr:hover td {
+    background-color: #d7dde3 !important; }
+  .table-sticky table td, .table-sticky table th {
+    white-space: nowrap; }
 /*******************************************************
  Variables
  *******************************************************/

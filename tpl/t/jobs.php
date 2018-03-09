@@ -70,7 +70,7 @@
       </div>
   </div>
 </div>
-<div class="table-responsive mt-3">
+<div class="table-sticky mt-3">
   <table class="table table-striped table-hover">
     <thead>
       <tr>
