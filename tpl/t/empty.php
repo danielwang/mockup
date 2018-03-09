@@ -31,7 +31,7 @@
         </g>
     </g>
 </svg>
-<h4 class="mt-5 mb-3">You currently have no live jobs. Would you like to raise a job? </h4>
+<h5 class="mt-4 mb-3 text-muted">There is no jobs, would you like to raise one? </h5>
 <button class="btn btn-primary">Create new job</button>
 </div>
 <?php endblock()?>
