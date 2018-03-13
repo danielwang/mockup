@@ -8324,7 +8324,10 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   max-height: 70vh;
   position: relative;
   border-radius: 0.5rem;
-  border: 1px solid #7e91a3; }
+  border: 1px solid #9caab8; }
+  @media (max-width: 767.98px) {
+  .table-sticky {
+    border: 0; } }
   .table-sticky table {
     width: 100%;
     max-height: 70vh;

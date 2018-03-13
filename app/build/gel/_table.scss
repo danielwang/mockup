@@ -102,7 +102,10 @@
   max-height: 70vh;
   position: relative;
   border-radius: .5rem;
-  border: 1px solid lighten($ctrl, 10%);
+  border: 1px solid lighten($ctrl, 20%);
+  @include media-breakpoint-down(sm) {
+    border:0;
+  }
 
   table {
     width: 100%;

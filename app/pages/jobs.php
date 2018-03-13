@@ -19,7 +19,7 @@
     </div>
   </div>
   <div class="col-sm-6 col-md-5 col-lg-4">
-    <h6>Status</h6>
+    <h6 class="mt-2 mt-sm-0">Status</h6>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn btn-ctrl active">
         <input type="radio" name="options" id="option1" autocomplete="off" checked> Current
@@ -72,7 +72,7 @@
 </div>
 <div class="table-sticky mt-3">
   <table class="table table-striped table-hover">
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th scope="col">Job Title</th>
         <th scope="col">Job ID</th>
