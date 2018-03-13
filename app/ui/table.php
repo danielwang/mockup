@@ -73,5 +73,5 @@
 	</div>
 </div>
 	<h5 class="mt-5">Larg table <small class="text-muted">scroll vertically and horizonally in side table</small></h5>
-  <?php include ("../partials/components/table-sticky.html");?>
+  <?php include ("../_partials/components/table-sticky.html");?>
 <?php endblock() ?>
