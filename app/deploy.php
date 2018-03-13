@@ -10,8 +10,11 @@
 $folders = array("pages", "ui");
 for ($i = 0; $i < count($folders); $i++) {
   echo "<ul><li>";
+  //generate files
   recurseDir($folders[$i]);
   echo "</li></ul>";
+  //move files to docs dir
+  moveFilesToDocs($folders[$i]);
 }
 
 function recurseDir($folderpath) {
@@ -37,7 +40,6 @@ function recurseDir($folderpath) {
   // chdir("../");
   // echo getcwd();
 }
-
 
 /* read php files then output html */
 function viewSource($folderpath, $page){
@@ -71,13 +73,30 @@ function viewSource($folderpath, $page){
 
 }
 
+// move files docs dir
+function moveFilesToDocs($src){
+  // Get array of all source files
+  $files = scandir($src);
+  // Identify directories
+  $source = $src . "/";
+  $files = glob($source . "*.html");
+  //echo $source;
+  $dest = "../docs/";
+  // Cycle through all source files
+  foreach ($files as $fname) {
+    if($fname != '.' && $fname != '..') {
+      rename($fname, $dest.$fname);
+    }
+  }
+}
+
 
 // generate minified pageup css
 include_once("vendor/minifier.php");
 $css = array(
-    "css/gel.css" => "docs/css/gel.min.css"
+    "css/gel.css" => "../docs/css/gel.min.css"
 );
 minifyCSS($css);
-?>
 
-echo "<a href='d.php'>Delete</a> html files";
+
+?>
