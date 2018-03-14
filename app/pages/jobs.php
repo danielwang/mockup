@@ -63,7 +63,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-light mr-auto" data-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary">Apply</button>
             </div>
           </div>
