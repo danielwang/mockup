@@ -8318,16 +8318,18 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
  sticky header and column
  \***********************************/
 .table-sticky {
-  overflow: scroll;
   width: 100%;
   margin: 20px 0;
   max-height: 70vh;
   position: relative;
   border-radius: 0.5rem;
-  border: 1px solid #9caab8; }
+  border: 1px solid #9caab8;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
   @media (max-width: 767.98px) {
   .table-sticky {
-    border: 0; } }
+    border: 0;
+    max-height: none; } }
   .table-sticky table {
     width: 100%;
     max-height: 70vh;

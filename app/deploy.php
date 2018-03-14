@@ -13,7 +13,7 @@ for ($i = 0; $i < count($folders); $i++) {
   //generate files
   recurseDir($folders[$i]);
   echo "</li></ul>";
-  //move files to docs dir
+  //move html files to docs dir
   moveFilesToDocs($folders[$i]);
 }
 
@@ -91,12 +91,16 @@ function moveFilesToDocs($src){
 }
 
 
-// generate minified pageup css
+// generate minified gel.css output to dist dir
 include_once("vendor/minifier.php");
 $css = array(
-    "css/gel.css" => "../docs/css/gel.min.css"
+    "css/gel.css" => "css/gel.min.css"
 );
 minifyCSS($css);
 
+copy('css/gel.css', '../docs/css/gel.css');
+copy('css/gel.min.css', '../dist/css/gel.min.css');
+copy('js/gel.js', '../docs/js/gel.js');
+copy('js/gel.js', '../dist/js/gel.js');
 
 ?>
