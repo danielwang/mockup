@@ -51,9 +51,9 @@
                 <?php for ($c =1; $c <= 2; $c++) {?>
                     <div class="col-6">
                       <?php for ($i =1; $i <= 10; $i++) {?>
-                        <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="<?php echo $c . '-' .$i ?>">
-                          <label for="<?php echo $c . '-' . $i ?>">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="<?php echo $c . '-' .$i ?>">
+                          <label class="custom-control-label" for="<?php echo $c . '-' . $i ?>">
                             Column <?php echo $c . '-' . $i ?>
                           </label>
                         </div>

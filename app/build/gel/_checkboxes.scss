@@ -245,7 +245,8 @@ $check-icon: $fa-var-check !default;
   }
 
   &.radio-inline{
-    margin-top: 0;
+    margin-right: 1rem;
+    display: inline;
   }
 }
 

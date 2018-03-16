@@ -1,8 +1,4 @@
-<?php $pageTitle = "UI elements"; include '../base.php';?>
-
-<?php startblock('page-title') ?>
-  UI elements
-<?php endblock()?>
+<?php $pageTitle = "GEL"; include '../base-ui.php';?>
 
 <?php startblock('page-body');?>
 

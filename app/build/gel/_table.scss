@@ -75,6 +75,7 @@
       th[scope="row"] {
         @include font-heading();
         border: 0;
+        background: white;
       }
 
       td {
@@ -87,6 +88,7 @@
         float: left;
         @include font-heading();
         width: 50%;
+        color: $body-color;
       }
     }
   }

@@ -3,7 +3,7 @@
 ******************  -->
 <?php
   require_once 'ti.php';
-  include_once 'head.php';
+  include_once '_head.php';
   ?>
   <nav id="gel-navbar" class="navbar navbar-expand-lg navbar-dark bg-navy" role="navigation">
     <div class="container">
@@ -11,17 +11,16 @@
     </div>
   </nav>
 <!-- page header -->
-<header id="gel-header" role="banner">
-    <div class="container">
-      <h1 class="page-title"><?php startblock('page-title') ?>
-      <?php endblock() ?></h1>
-    </div>
-</header>
+  <header id="gel-header" role="banner">
+      <div class="container">
+        <h1 class="page-title"><?php echo $pageTitle  ?></h1>
+      </div>
+  </header>
 <!-- page body -->
-		<main id="gel-main">
-			<section class="container">
-				<?php startblock('page-body')?>
-				<?php endblock()?>
-			</section>
-		</main>
-<?php include 'foot.html';?>
+	<main id="gel-main">
+		<section class="container">
+			<?php startblock('page-body')?>
+			<?php endblock()?>
+		</section>
+	</main>
+<?php include '_foot.html';?>
