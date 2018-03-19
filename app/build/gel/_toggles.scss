@@ -72,7 +72,7 @@ Main Slider basics
 
     &:focus + *:before
     {
-      outline:solid $input-focus-border-color 2px;
+      outline:0;
     }
   }
 

@@ -7485,30 +7485,21 @@ body {
   background: rgba(0, 0, 0, ); }
 
 .avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 3px solid transparent; }
-
-.avatar-xs {
-  width: 35px;
-  height: 35px;
-  border-width: 0; }
+  width: 36px;
+  height: 36px;
+  border-radius: 50%; }
 
 .avatar-sm {
-  width: 40px;
-  height: 40px;
-  border-width: 2px; }
+  width: 24px;
+  height: 24px; }
 
 .avatar-md {
-  width: 80px;
-  height: 80px;
-  border-width: 4px; }
+  width: 48px;
+  height: 48px; }
 
 .avatar-lg {
-  width: 100px;
-  height: 100px;
-  border-width: 4px; }
+  width: 80px;
+  height: 80px; }
 
 .btn {
   font-weight: 700;
@@ -8014,7 +8005,7 @@ body {
     cursor: pointer;
     opacity: 0; }
   .toggle input[type="checkbox"]:focus + *:before {
-    outline: solid #abb7c3 2px; }
+    outline: 0; }
   .toggle input + span {
     cursor: pointer;
     user-select: none; }

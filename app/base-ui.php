@@ -4,6 +4,7 @@
 <?php
   require_once 'ti.php';
   include_once '_head.php';
+  include_once 'ui/func.php';
   ?>
   <nav id="gel-navbar" class="navbar navbar-expand-lg navbar-dark bg-navy" role="navigation">
     <div class="container">

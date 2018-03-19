@@ -3,30 +3,24 @@
 // --------------------------------------------------
 
 .avatar {
-  width: 60px;
-  height: 60px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  border: 3px solid transparent;
 }
 
-@mixin avatar-variant($width, $border-thick) {
+@mixin avatar-variant($width) {
   width: $width;
   height: $width;
-  border-width: $border-thick;
-}
-
-.avatar-xs {
-  @include avatar-variant(35px, 0)
 }
 
 .avatar-sm {
-  @include avatar-variant(40px, 2px)
+  @include avatar-variant(24px)
 }
 
 .avatar-md {
-  @include avatar-variant(80px, 4px)
+  @include avatar-variant(48px)
 }
 
 .avatar-lg {
-  @include avatar-variant(100px, 4px)
+  @include avatar-variant(80px)
 }
