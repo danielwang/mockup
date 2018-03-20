@@ -1,0 +1,64 @@
+<table class="table table-striped table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th></th>
+      <th>Submitted</th>
+      <th>Status</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Gender</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Nationality</th>
+      <th>Age</th>
+      <th>Internal/External</th>
+      <th>Score</th>
+      <th>Employee</th>
+      <th>Source</th>
+      <th>Flags</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php for ($i =1; $i <= 50; $i++) {?>
+    <tr>
+      <th>
+        <span class="checkbox checkbox-default">
+          <input type="checkbox" id="checkbox-<?php echo $i ?>">
+          <label for="checkbox-<?php echo $i ?>"></label>
+        </span>
+      </th>
+      <td>17 Nov 2017</td>
+      <td>
+        <a href="#">Not shortlisted</a>
+      </td>
+      <td>
+        <a href="#">Achamyeleh</a>
+      </td>
+      <td>
+        <a href="#">Berhanu</a>
+      </td>
+      <td>M</td>
+      <td>+61 411 111 0<?php echo $i+35 ?></td>
+      <td>Achamyeleh.Berhanu@dreamworld.com</td>
+      <td>United Arab Emirates</td>
+      <td><?php echo $i+35 ?></td>
+      <td>Internal</td>
+      <td><?php echo random_int(1, 100) ?></td>
+      <td>N</td>
+      <td>website</td>
+      <td>
+        <i class="fa fa-car"></i>
+        <i class="fa fa-flag"></i>
+        <i class="fa fa-globe"></i>
+        <i class="fa fa-question-circle"></i>
+      </td>
+      <td>
+        <a href="#">
+          <i class="gel-icon-lg gel-icon-eye"></i>
+        </a>
+      </td>
+    </tr>
+    <?php } ?>
+  </tbody>
+</table>

@@ -41,7 +41,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <?php include ("../_partials/components/form-sm.html");?>
+                <?php include ("../ui/_partials/form-sm.html");?>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-light mr-auto" data-dismiss="modal">Cancel</button>

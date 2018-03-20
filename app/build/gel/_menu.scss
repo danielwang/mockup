@@ -24,6 +24,26 @@
     box-shadow: 0 0 8px 0 #000000;
   }
 
+  .nav-toggle {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline;
+    color: white;
+    padding: 15px;
+    margin-left: -15px;
+
+    &.close {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      :hover{
+        color: white;
+      }
+    }
+  }
+
+
   .logo {
     margin-left: 52px;
     margin-top: 12px;
@@ -106,25 +126,6 @@
           }
         }
       }
-    }
-  }
-}
-
-.nav-toggle {
-  margin: 0;
-  cursor: pointer;
-  font-size: 20px;
-  display: inline;
-  color: white;
-  padding: 15px;
-  margin-left: -15px;
-
-  &.close {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    :hover{
-      color: white;
     }
   }
 }

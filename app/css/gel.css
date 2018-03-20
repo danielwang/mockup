@@ -7651,6 +7651,20 @@ body {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     box-shadow: 0 0 8px 0 #000; }
+  #gel-menu .nav-toggle {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline;
+    color: white;
+    padding: 15px;
+    margin-left: -15px; }
+  #gel-menu .nav-toggle.close {
+    position: absolute;
+    top: 0;
+    left: 10px; }
+  #gel-menu .nav-toggle.close :hover {
+    color: white; }
   #gel-menu .logo {
     margin-left: 52px;
     margin-top: 12px;
@@ -7721,21 +7735,6 @@ body {
       #gel-menu menu ul > li.submenu li a:hover {
         color: #11b1ee;
         margin-left: 8px; }
-
-.nav-toggle {
-  margin: 0;
-  cursor: pointer;
-  font-size: 20px;
-  display: inline;
-  color: white;
-  padding: 15px;
-  margin-left: -15px; }
-  .nav-toggle.close {
-    position: absolute;
-    top: 0;
-    left: 10px; }
-  .nav-toggle.close :hover {
-    color: white; }
 
 .navbar {
   position: sticky;

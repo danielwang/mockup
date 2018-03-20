@@ -34,7 +34,7 @@
   </div>
   <div class="col-md-2 col-lg-4 d-flex justify-content-end align-items-end">
       <span class="mb-2 mr-2">133 results</span>
-      <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-cog fa-lg"></i> Settings </button>
+      <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"> Settings </button>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -71,8 +71,7 @@
       </div>
   </div>
 </div>
-<div class="table-sticky mt-3">
-  <table class="table table-striped table-hover">
+<table class="table table-striped table-hover mt-3">
     <thead class="thead-dark">
       <tr>
         <th scope="col">Job Title</th>
@@ -84,13 +83,13 @@
         <th scope="col">Applications</th>
         <th scope="col">Opening date</th>
         <th scope="col">Closing date</th>
-        <th scope="col"></th>
+        <!-- <th scope="col"></th> -->
       </tr>
     </thead>
     <tbody>
       <?php for ($x =1; $x <= 15; $x++) {?>
       <tr>
-        <th scope="row">Human Resources Manager <?php echo $x ?></th>
+        <th scope="row"><a href="#<?php echo $x ?>">Human Resources Manager <?php echo $x ?></a> </th>
         <td data-title="Job ID">
           <?php echo $x * 2  + 53302042 ?>
         </td>
@@ -102,12 +101,12 @@
         <td data-title="Applications"><a href="cl"><?php echo random_int(1, 100) ?></a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer <?php echo $x ?></a></th>
+        <th scope="row"><a href="#<?php echo $x ?>">Retail Customer Service Officer <?php echo $x ?></a></th>
         <td data-title="Job ID">
           <?php echo $x + 53302042 ?>
         </td>
@@ -119,12 +118,12 @@
         <td data-title="Applications"><a href="cl"><?php echo random_int(1, 100) ?></a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
     <?php } ?>
     </tbody>
   </table>
-</div>
+
 <?php endblock() ?>
