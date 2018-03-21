@@ -7,7 +7,7 @@
 <?php emptyblock('page-tabs') ?>
 
 <?php startblock('page-body');?>
-<h3>Welcome John</h3>
+<h2>Welcome John</h2>
 <p class="lead">
   This is your Manager Dashboard where you will see all your tasks organized in various stages.
   You will also see how many actions are required per task. Please attend to these tasks accordingly.</p>

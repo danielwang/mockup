@@ -22,6 +22,7 @@
       <![endif]-->
     </head>
 <body>
+<a href="#gel-main" class="sr-only">Skip to main content</a>
 
    
 
@@ -30,32 +31,54 @@
       <div class="container">
         <!-- logo  -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu gel-icon-2x"></i></span></li>
-          <li class="nav-item"><a class="logo" href="../"> <img alt="logo" src="../images/pu-logo.png" width="100"/></a></li>
+          <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
+          <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../images/pu-logo.png" width="100"/></a></li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item recent-items">
   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recent items</a>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#"><i class="gel-icon-user"></i> Mr Daniel Appllicant</a>
-    <a class="dropdown-item" href="#"><i class="gel-icon-user"></i> Miss Elizabeth Appllicant</a>
-    <a class="dropdown-item" href="#"><i class="gel-icon-job"></i> Senior project manager</a>
-    <a class="dropdown-item" href="#"><i class="gel-icon-job"></i> Administrator - Head Office</a>
-    <a class="dropdown-item" href="#"><i class="gel-icon-employee"></i> Bobby Employee</a>
-    <a class="dropdown-item" href="#"><i class="gel-icon-user"></i> Miss Elizabeth Appllicant</a>
-    <a class="dropdown-item" href="#"><i class="gel-icon-employee"></i> Frank Employee</a>
-    <a class="dropdown-item" href="#"><i class="gel-icon-job"></i> Business Development Executive</a>
-    <a class="dropdown-item" href="#"><i class="gel-icon-employee"></i> Alexsander Employee</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Mr Daniel Appllicant</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Miss Elizabeth Appllicant</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
+      Senior project manager</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
+      Administrator - Head Office</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Bobby Employee</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Miss Elizabeth Appllicant</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Frank Employee</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
+      Business Development Executive</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Alexsander Employee</a>
   </div>
 </li>
 <li class="nav-item">
   <form class="search-group form-inline" role="search">
     <input id="quick-search" class="form-control" placeholder="Quick search" type="search">
-    <label for="quick-search"><i class="gel-icon-search gel-icon-lg"></i></label>
+    <label for="quick-search" aria-label="Search">
+      <i aria-hidden="true" class="gel-icon-search gel-icon-lg"></i>
+      <span class="sr-only">
+        Search</span>
+    </label>
   </form>
 </li>          <!-- user panel -->
           <li id="nav-user-panel" class="nav-item user-panel">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar avatar-sm" src="../images/avatar.svg" alt="John's profile">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="../images/avatar.svg" alt="John's profile">
     John
   </a>
   <div class="dropdown-menu user-menu">
@@ -75,36 +98,47 @@
         <button type="button" class="btn btn-sm btn-light btn-block">Log out</button>
       </p>
       <p>
-        <span>BETA</span>
         <span class="toggle toggle-purple d-inline-block">
           <label>
             <input type="checkbox">
-            <span></span>
+            <span>
+              Switch to Beta</span>
           </label>
         </span>
-        <a class="d-block no-padding" href="#">
-          Give beta feedback</a>
       </p>
     </footer>
   </div>
 </li>          <!-- help -->
           <li id="nav-help" class="nav-help nav-item">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i></a>
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-label="Help">
+    <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
+    <span class="sr-only">Help</span></a>
   <div class="dropdown-menu">
-    <a href="#" class="dropdown-item" title="Print"><i class="gel-icon-print"></i> Print </a>
-    <a href="#" class="dropdown-item" title="Feedback"><i class="gel-icon-feedback" ></i> Feedback</a>
-    <a href="#" class="dropdown-item" title="Knowledge portal"><i class="gel-icon-knowledge-portal"></i> Knowledge portal</a>
-    <a href="#" class="dropdown-item" title="Live support"><i class="gel-icon-support"></i> Live Support</a>
-    <a href="#" class="dropdown-item" title="Raise support case"><i class="gel-icon-bullhorn"></i> Raise support case</a>
+    <a href="#" class="dropdown-item" title="Print">
+      <i class="gel-icon-print" aria-hidden="true"></i>
+      Print
+    </a>
+    <a href="#" class="dropdown-item" title="Feedback">
+      <i class="gel-icon-feedback" aria-hidden="true"></i>
+      Feedback</a>
+    <a href="#" class="dropdown-item" title="Knowledge portal">
+      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i>
+      Knowledge portal</a>
+    <a href="#" class="dropdown-item" title="Live support">
+      <i class="gel-icon-support" aria-hidden="true"></i>
+      Live Support</a>
+    <a href="#" class="dropdown-item" title="Raise support case">
+      <i class="gel-icon-bullhorn" aria-hidden="true"></i>
+      Raise support case</a>
   </div>
 </li>        </ul>
       </div>
     </nav>
 <!-- ************ menu ************  -->
     <aside id="gel-menu" role='menu'>
-      <span class="nav-toggle close"><i class="gel-icon-close-o gel-icon-2x"></i></span>
+      <a href="#" aria-label="Close menu" class="nav-toggle close"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
 
-      <a href="../" class="logo"> <img alt="logo" src="../images/pu-logo.png" width="100"/></a>
+      <a href="../" class="logo"> <img alt="brand logo" src="../images/pu-logo.png" width="100"/></a>
       <article class="user-menu">
   <header id="user-menu-hd" class="margin-bottom-none collapsed" data-toggle="collapse" data-target="#user-menu-ft">
     <img class="avatar avatar-sm" src="../images/avatar.svg" alt="John's profile"/>
@@ -122,15 +156,12 @@
         Log out</button>
     </p>
     <p>
-      <span>BETA</span>
       <span class="toggle toggle-purple d-inline-block">
         <label>
           <input type="checkbox">
-          <span></span>
+          <span>Switch to Beta</span>
         </label>
       </span>
-      <a class="d-block no-padding" href="#">
-        Give beta feedback</a>
     </p>
   </footer>
 </article>
@@ -202,26 +233,26 @@
             <div class="page-actions col-md-3 col-lg-4">
               <span class="item">
                   <a class="text-center" href="#_" title="Print">
-                    <i class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
+                    <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
                   </a>
               </span>
               <span class="item">
                   <a class="text-center" href="#_" title="Feedback">
-                    <i class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
+                    <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
                   </a>
               </span>
                 <span class="item">
                   <a class="dropdown-toggle text-center"
                      href="#_"
-                     title="More"
+                     title="Help"
                      data-html="true"
                      data-toggle="dropdown">
-                    <i class="gel-icon-lg gel-icon-help" aria-hidden="true" title="More"></i> <span class="hidden-xs hidden-sm hidden-md">Help</span>
+                    <i class="gel-icon-lg gel-icon-help" aria-hidden="true"></i> <span>Help</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a>
-                    <a class="dropdown-item" href="#"><i class="gel-icon-knowledge-portal" aria-hidden="true" title="More"></i> Knowledge Portal</a>
-                    <a class="dropdown-item" href="#"><i class="gel-icon-bullhorn" aria-hidden="true" title="More"></i> Raise support case</a>
+                    <a class="dropdown-item" href="#1" title="Live support"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a>
+                    <a class="dropdown-item" href="#2" title="Knowledge portal"><i class="gel-icon-knowledge-portal" aria-hidden="true" ></i> Knowledge Portal</a>
+                    <a class="dropdown-item" href="#3" title="Raise support case"><i class="gel-icon-bullhorn" aria-hidden="true"></i> Raise support case</a>
                   </div>
                 </span>
               </div>
@@ -263,7 +294,7 @@
   </div>
   <div class="col-md-2 col-lg-4 d-flex justify-content-end align-items-end">
       <span class="mb-2 mr-2">133 results</span>
-      <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-cog fa-lg"></i> Settings </button>
+      <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"> Settings </button>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -278,113 +309,113 @@
               <p class="lead">Select the columns you wish to add/remove</p>
               <div class="row">
                                     <div class="col-6">
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-1">
-                          <label for="1-1">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-1">
+                          <label class="custom-control-label" for="1-1">
                             Column 1-1                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-2">
-                          <label for="1-2">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-2">
+                          <label class="custom-control-label" for="1-2">
                             Column 1-2                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-3">
-                          <label for="1-3">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-3">
+                          <label class="custom-control-label" for="1-3">
                             Column 1-3                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-4">
-                          <label for="1-4">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-4">
+                          <label class="custom-control-label" for="1-4">
                             Column 1-4                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-5">
-                          <label for="1-5">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-5">
+                          <label class="custom-control-label" for="1-5">
                             Column 1-5                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-6">
-                          <label for="1-6">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-6">
+                          <label class="custom-control-label" for="1-6">
                             Column 1-6                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-7">
-                          <label for="1-7">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-7">
+                          <label class="custom-control-label" for="1-7">
                             Column 1-7                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-8">
-                          <label for="1-8">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-8">
+                          <label class="custom-control-label" for="1-8">
                             Column 1-8                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-9">
-                          <label for="1-9">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-9">
+                          <label class="custom-control-label" for="1-9">
                             Column 1-9                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="1-10">
-                          <label for="1-10">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="1-10">
+                          <label class="custom-control-label" for="1-10">
                             Column 1-10                          </label>
                         </div>
                                           </div>
                                     <div class="col-6">
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-1">
-                          <label for="2-1">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-1">
+                          <label class="custom-control-label" for="2-1">
                             Column 2-1                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-2">
-                          <label for="2-2">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-2">
+                          <label class="custom-control-label" for="2-2">
                             Column 2-2                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-3">
-                          <label for="2-3">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-3">
+                          <label class="custom-control-label" for="2-3">
                             Column 2-3                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-4">
-                          <label for="2-4">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-4">
+                          <label class="custom-control-label" for="2-4">
                             Column 2-4                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-5">
-                          <label for="2-5">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-5">
+                          <label class="custom-control-label" for="2-5">
                             Column 2-5                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-6">
-                          <label for="2-6">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-6">
+                          <label class="custom-control-label" for="2-6">
                             Column 2-6                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-7">
-                          <label for="2-7">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-7">
+                          <label class="custom-control-label" for="2-7">
                             Column 2-7                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-8">
-                          <label for="2-8">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-8">
+                          <label class="custom-control-label" for="2-8">
                             Column 2-8                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-9">
-                          <label for="2-9">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-9">
+                          <label class="custom-control-label" for="2-9">
                             Column 2-9                          </label>
                         </div>
-                                              <div class="checkbox checkbox-default">
-                          <input type="checkbox" checked="" id="2-10">
-                          <label for="2-10">
+                                              <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class ="custom-control-input" checked id="2-10">
+                          <label class="custom-control-label" for="2-10">
                             Column 2-10                          </label>
                         </div>
                                           </div>
                               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-light mr-auto" data-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary">Apply</button>
             </div>
           </div>
@@ -392,8 +423,7 @@
       </div>
   </div>
 </div>
-<div class="table-sticky mt-3">
-  <table class="table table-striped table-hover">
+<table class="table table-striped table-hover mt-3">
     <thead class="thead-dark">
       <tr>
         <th scope="col">Job Title</th>
@@ -405,12 +435,12 @@
         <th scope="col">Applications</th>
         <th scope="col">Opening date</th>
         <th scope="col">Closing date</th>
-        <th scope="col"></th>
+        <!-- <th scope="col"></th> -->
       </tr>
     </thead>
     <tbody>
             <tr>
-        <th scope="row">Human Resources Manager 1</th>
+        <th scope="row"><a href="#1">Human Resources Manager 1</a> </th>
         <td data-title="Job ID">
           53302044        </td>
 
@@ -418,15 +448,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">29</a></td>
+        <td data-title="Applications"><a href="cl">25</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 1</a></th>
+        <th scope="row"><a href="#1">Retail Customer Service Officer 1</a></th>
         <td data-title="Job ID">
           53302043        </td>
 
@@ -434,15 +464,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">71</a></td>
+        <td data-title="Applications"><a href="cl">81</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 2</th>
+        <th scope="row"><a href="#2">Human Resources Manager 2</a> </th>
         <td data-title="Job ID">
           53302046        </td>
 
@@ -450,15 +480,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">96</a></td>
+        <td data-title="Applications"><a href="cl">10</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 2</a></th>
+        <th scope="row"><a href="#2">Retail Customer Service Officer 2</a></th>
         <td data-title="Job ID">
           53302044        </td>
 
@@ -466,15 +496,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">43</a></td>
+        <td data-title="Applications"><a href="cl">46</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 3</th>
+        <th scope="row"><a href="#3">Human Resources Manager 3</a> </th>
         <td data-title="Job ID">
           53302048        </td>
 
@@ -482,15 +512,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">81</a></td>
+        <td data-title="Applications"><a href="cl">37</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 3</a></th>
+        <th scope="row"><a href="#3">Retail Customer Service Officer 3</a></th>
         <td data-title="Job ID">
           53302045        </td>
 
@@ -498,15 +528,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">91</a></td>
+        <td data-title="Applications"><a href="cl">23</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 4</th>
+        <th scope="row"><a href="#4">Human Resources Manager 4</a> </th>
         <td data-title="Job ID">
           53302050        </td>
 
@@ -514,15 +544,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">19</a></td>
+        <td data-title="Applications"><a href="cl">12</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 4</a></th>
+        <th scope="row"><a href="#4">Retail Customer Service Officer 4</a></th>
         <td data-title="Job ID">
           53302046        </td>
 
@@ -530,15 +560,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">75</a></td>
+        <td data-title="Applications"><a href="cl">10</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 5</th>
+        <th scope="row"><a href="#5">Human Resources Manager 5</a> </th>
         <td data-title="Job ID">
           53302052        </td>
 
@@ -546,15 +576,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">21</a></td>
+        <td data-title="Applications"><a href="cl">55</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 5</a></th>
+        <th scope="row"><a href="#5">Retail Customer Service Officer 5</a></th>
         <td data-title="Job ID">
           53302047        </td>
 
@@ -562,15 +592,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">26</a></td>
+        <td data-title="Applications"><a href="cl">83</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 6</th>
+        <th scope="row"><a href="#6">Human Resources Manager 6</a> </th>
         <td data-title="Job ID">
           53302054        </td>
 
@@ -578,15 +608,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">28</a></td>
+        <td data-title="Applications"><a href="cl">84</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 6</a></th>
+        <th scope="row"><a href="#6">Retail Customer Service Officer 6</a></th>
         <td data-title="Job ID">
           53302048        </td>
 
@@ -594,15 +624,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">12</a></td>
+        <td data-title="Applications"><a href="cl">5</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 7</th>
+        <th scope="row"><a href="#7">Human Resources Manager 7</a> </th>
         <td data-title="Job ID">
           53302056        </td>
 
@@ -610,17 +640,49 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">48</a></td>
+        <td data-title="Applications"><a href="cl">39</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 7</a></th>
+        <th scope="row"><a href="#7">Retail Customer Service Officer 7</a></th>
         <td data-title="Job ID">
           53302049        </td>
+
+        <td data-title="Recruiter"> Michael Jackson </td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Applications"><a href="cl">82</a></td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <!-- <td data-title="View">
+          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td> -->
+      </tr>
+          <tr>
+        <th scope="row"><a href="#8">Human Resources Manager 8</a> </th>
+        <td data-title="Job ID">
+          53302058        </td>
+
+        <td data-title="Recruiter"> Peter Smith  </td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Applications"><a href="cl">32</a></td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <!-- <td data-title="View">
+          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td> -->
+      </tr>
+      <tr>
+        <th scope="row"><a href="#8">Retail Customer Service Officer 8</a></th>
+        <td data-title="Job ID">
+          53302050        </td>
 
         <td data-title="Recruiter"> Michael Jackson </td>
         <td data-title="Status">
@@ -629,44 +691,12 @@
         <td data-title="Applications"><a href="cl">65</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 8</th>
-        <td data-title="Job ID">
-          53302058        </td>
-
-        <td data-title="Recruiter"> Peter Smith  </td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <td data-title="Applications"><a href="cl">33</a></td>
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Retail Customer Service Officer 8</a></th>
-        <td data-title="Job ID">
-          53302050        </td>
-
-        <td data-title="Recruiter"> Michael Jackson </td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <td data-title="Applications"><a href="cl">69</a></td>
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
-      </tr>
-          <tr>
-        <th scope="row">Human Resources Manager 9</th>
+        <th scope="row"><a href="#9">Human Resources Manager 9</a> </th>
         <td data-title="Job ID">
           53302060        </td>
 
@@ -674,113 +704,17 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">2</a></td>
+        <td data-title="Applications"><a href="cl">65</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 9</a></th>
+        <th scope="row"><a href="#9">Retail Customer Service Officer 9</a></th>
         <td data-title="Job ID">
           53302051        </td>
-
-        <td data-title="Recruiter"> Michael Jackson </td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <td data-title="Applications"><a href="cl">72</a></td>
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
-      </tr>
-          <tr>
-        <th scope="row">Human Resources Manager 10</th>
-        <td data-title="Job ID">
-          53302062        </td>
-
-        <td data-title="Recruiter"> Peter Smith  </td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <td data-title="Applications"><a href="cl">30</a></td>
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Retail Customer Service Officer 10</a></th>
-        <td data-title="Job ID">
-          53302052        </td>
-
-        <td data-title="Recruiter"> Michael Jackson </td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <td data-title="Applications"><a href="cl">30</a></td>
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
-      </tr>
-          <tr>
-        <th scope="row">Human Resources Manager 11</th>
-        <td data-title="Job ID">
-          53302064        </td>
-
-        <td data-title="Recruiter"> Peter Smith  </td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <td data-title="Applications"><a href="cl">91</a></td>
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Retail Customer Service Officer 11</a></th>
-        <td data-title="Job ID">
-          53302053        </td>
-
-        <td data-title="Recruiter"> Michael Jackson </td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <td data-title="Applications"><a href="cl">53</a></td>
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
-      </tr>
-          <tr>
-        <th scope="row">Human Resources Manager 12</th>
-        <td data-title="Job ID">
-          53302066        </td>
-
-        <td data-title="Recruiter"> Peter Smith  </td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <td data-title="Applications"><a href="cl">75</a></td>
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Retail Customer Service Officer 12</a></th>
-        <td data-title="Job ID">
-          53302054        </td>
 
         <td data-title="Recruiter"> Michael Jackson </td>
         <td data-title="Status">
@@ -789,12 +723,108 @@
         <td data-title="Applications"><a href="cl">8</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 13</th>
+        <th scope="row"><a href="#10">Human Resources Manager 10</a> </th>
+        <td data-title="Job ID">
+          53302062        </td>
+
+        <td data-title="Recruiter"> Peter Smith  </td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Applications"><a href="cl">10</a></td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <!-- <td data-title="View">
+          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td> -->
+      </tr>
+      <tr>
+        <th scope="row"><a href="#10">Retail Customer Service Officer 10</a></th>
+        <td data-title="Job ID">
+          53302052        </td>
+
+        <td data-title="Recruiter"> Michael Jackson </td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Applications"><a href="cl">4</a></td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <!-- <td data-title="View">
+          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td> -->
+      </tr>
+          <tr>
+        <th scope="row"><a href="#11">Human Resources Manager 11</a> </th>
+        <td data-title="Job ID">
+          53302064        </td>
+
+        <td data-title="Recruiter"> Peter Smith  </td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Applications"><a href="cl">20</a></td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <!-- <td data-title="View">
+          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td> -->
+      </tr>
+      <tr>
+        <th scope="row"><a href="#11">Retail Customer Service Officer 11</a></th>
+        <td data-title="Job ID">
+          53302053        </td>
+
+        <td data-title="Recruiter"> Michael Jackson </td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Applications"><a href="cl">57</a></td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <!-- <td data-title="View">
+          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td> -->
+      </tr>
+          <tr>
+        <th scope="row"><a href="#12">Human Resources Manager 12</a> </th>
+        <td data-title="Job ID">
+          53302066        </td>
+
+        <td data-title="Recruiter"> Peter Smith  </td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Applications"><a href="cl">50</a></td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <!-- <td data-title="View">
+          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td> -->
+      </tr>
+      <tr>
+        <th scope="row"><a href="#12">Retail Customer Service Officer 12</a></th>
+        <td data-title="Job ID">
+          53302054        </td>
+
+        <td data-title="Recruiter"> Michael Jackson </td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Applications"><a href="cl">76</a></td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <!-- <td data-title="View">
+          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td> -->
+      </tr>
+          <tr>
+        <th scope="row"><a href="#13">Human Resources Manager 13</a> </th>
         <td data-title="Job ID">
           53302068        </td>
 
@@ -802,15 +832,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">15</a></td>
+        <td data-title="Applications"><a href="cl">26</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 13</a></th>
+        <th scope="row"><a href="#13">Retail Customer Service Officer 13</a></th>
         <td data-title="Job ID">
           53302055        </td>
 
@@ -818,15 +848,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">65</a></td>
+        <td data-title="Applications"><a href="cl">13</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 14</th>
+        <th scope="row"><a href="#14">Human Resources Manager 14</a> </th>
         <td data-title="Job ID">
           53302070        </td>
 
@@ -834,15 +864,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">1</a></td>
+        <td data-title="Applications"><a href="cl">84</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 14</a></th>
+        <th scope="row"><a href="#14">Retail Customer Service Officer 14</a></th>
         <td data-title="Job ID">
           53302056        </td>
 
@@ -850,15 +880,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">87</a></td>
+        <td data-title="Applications"><a href="cl">74</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
           <tr>
-        <th scope="row">Human Resources Manager 15</th>
+        <th scope="row"><a href="#15">Human Resources Manager 15</a> </th>
         <td data-title="Job ID">
           53302072        </td>
 
@@ -866,15 +896,15 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">81</a></td>
+        <td data-title="Applications"><a href="cl">9</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer 15</a></th>
+        <th scope="row"><a href="#15">Retail Customer Service Officer 15</a></th>
         <td data-title="Job ID">
           53302057        </td>
 
@@ -882,16 +912,16 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl">18</a></td>
+        <td data-title="Applications"><a href="cl">19</a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
+        <!-- <td data-title="View">
           <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td>
+        </td> -->
       </tr>
         </tbody>
   </table>
-</div>
+
 			</section>
 		</main>
 <!-- jQuery -->

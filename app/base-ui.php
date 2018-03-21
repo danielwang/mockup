@@ -28,6 +28,12 @@
 <header id="gel-header" role="banner">
     <div class="container">
       <h1 class="page-title"><?php echo $pageTitle  ?></h1>
+
+      <div class="page-tabs nav nav-tabs" role="tablist">
+          <?php startblock('page-tabs') ?>
+          <?php endblock() ?>
+      </div>
+
     </div>
 </header>
 <!-- page body -->

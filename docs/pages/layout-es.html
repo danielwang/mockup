@@ -22,6 +22,7 @@
       <![endif]-->
     </head>
 <body>
+<a href="#gel-main" class="sr-only">Skip to main content</a>
 
    
 
@@ -30,13 +31,13 @@
       <div class="container">
         <!-- logo  -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu gel-icon-2x"></i></span></li>
-          <li class="nav-item"><a class="logo" href="../"> <img alt="logo" src="../images/pu-logo.png" width="100"/></a></li>
+          <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
+          <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../images/pu-logo.png" width="100"/></a></li>
         </ul>
         <ul class="navbar-nav">
                     <!-- user panel -->
           <li id="nav-user-panel" class="nav-item user-panel">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar avatar-sm" src="../images/avatar.svg" alt="John's profile">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="../images/avatar.svg" alt="John's profile">
     John
   </a>
   <div class="dropdown-menu user-menu">
@@ -56,34 +57,45 @@
         <button type="button" class="btn btn-sm btn-light btn-block">Log out</button>
       </p>
       <p>
-        <span>BETA</span>
         <span class="toggle toggle-purple d-inline-block">
           <label>
             <input type="checkbox">
-            <span></span>
+            <span>
+              Switch to Beta</span>
           </label>
         </span>
-        <a class="d-block no-padding" href="#">
-          Give beta feedback</a>
       </p>
     </footer>
   </div>
 </li>          <!-- help -->
           <li id="nav-help" class="nav-help nav-item">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i></a>
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-label="Help">
+    <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
+    <span class="sr-only">Help</span></a>
   <div class="dropdown-menu">
-    <a href="#" class="dropdown-item" title="Print"><i class="gel-icon-print"></i> Print </a>
-    <a href="#" class="dropdown-item" title="Feedback"><i class="gel-icon-feedback" ></i> Feedback</a>
-    <a href="#" class="dropdown-item" title="Knowledge portal"><i class="gel-icon-knowledge-portal"></i> Knowledge portal</a>
-    <a href="#" class="dropdown-item" title="Live support"><i class="gel-icon-support"></i> Live Support</a>
-    <a href="#" class="dropdown-item" title="Raise support case"><i class="gel-icon-bullhorn"></i> Raise support case</a>
+    <a href="#" class="dropdown-item" title="Print">
+      <i class="gel-icon-print" aria-hidden="true"></i>
+      Print
+    </a>
+    <a href="#" class="dropdown-item" title="Feedback">
+      <i class="gel-icon-feedback" aria-hidden="true"></i>
+      Feedback</a>
+    <a href="#" class="dropdown-item" title="Knowledge portal">
+      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i>
+      Knowledge portal</a>
+    <a href="#" class="dropdown-item" title="Live support">
+      <i class="gel-icon-support" aria-hidden="true"></i>
+      Live Support</a>
+    <a href="#" class="dropdown-item" title="Raise support case">
+      <i class="gel-icon-bullhorn" aria-hidden="true"></i>
+      Raise support case</a>
   </div>
 </li>        </ul>
       </div>
     </nav>
 <!-- ************ menu ************  -->
     <aside id="gel-menu" role='menu'>
-      <span class="nav-toggle close"><i class="gel-icon-close-o gel-icon-2x"></i></span>
+      <a href="#" aria-label="Close menu" class="nav-toggle close"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
 
       <a href="../" class="logo">   <img alt="Client logo" src="https://www.pageuppeople.com/wp-content/uploads/2016/02/Telstra-Logo-v2.png" width="100"/>
 </a>
@@ -104,15 +116,12 @@
         Log out</button>
     </p>
     <p>
-      <span>BETA</span>
       <span class="toggle toggle-purple d-inline-block">
         <label>
           <input type="checkbox">
-          <span></span>
+          <span>Switch to Beta</span>
         </label>
       </span>
-      <a class="d-block no-padding" href="#">
-        Give beta feedback</a>
     </p>
   </footer>
 </article>
@@ -173,26 +182,26 @@
             <div class="page-actions col-md-3 col-lg-4">
               <span class="item">
                   <a class="text-center" href="#_" title="Print">
-                    <i class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
+                    <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
                   </a>
               </span>
               <span class="item">
                   <a class="text-center" href="#_" title="Feedback">
-                    <i class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
+                    <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
                   </a>
               </span>
                 <span class="item">
                   <a class="dropdown-toggle text-center"
                      href="#_"
-                     title="More"
+                     title="Help"
                      data-html="true"
                      data-toggle="dropdown">
-                    <i class="gel-icon-lg gel-icon-help" aria-hidden="true" title="More"></i> <span class="hidden-xs hidden-sm hidden-md">Help</span>
+                    <i class="gel-icon-lg gel-icon-help" aria-hidden="true"></i> <span>Help</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a>
-                    <a class="dropdown-item" href="#"><i class="gel-icon-knowledge-portal" aria-hidden="true" title="More"></i> Knowledge Portal</a>
-                    <a class="dropdown-item" href="#"><i class="gel-icon-bullhorn" aria-hidden="true" title="More"></i> Raise support case</a>
+                    <a class="dropdown-item" href="#1" title="Live support"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a>
+                    <a class="dropdown-item" href="#2" title="Knowledge portal"><i class="gel-icon-knowledge-portal" aria-hidden="true" ></i> Knowledge Portal</a>
+                    <a class="dropdown-item" href="#3" title="Raise support case"><i class="gel-icon-bullhorn" aria-hidden="true"></i> Raise support case</a>
                   </div>
                 </span>
               </div>

@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex">
-    <title>Hiring manager dashboard - MockUp</title>
+    <title>New Starter Tasks - MockUp</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="description" content="PageUp GEL Templates">
@@ -228,7 +228,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8">
-              <h1 class="page-title">Hiring manager dashboard</h1>
+              <h1 class="page-title">New Starter Tasks</h1>
             </div>
             <div class="page-actions col-md-3 col-lg-4">
               <span class="item">
@@ -263,113 +263,239 @@
 <!-- ************  page body ************ -->
 		<main id="gel-main" role="main">
 			<section class="container">
-				<h2>Welcome John</h2>
-<p class="lead">
-  This is your Manager Dashboard where you will see all your tasks organized in various stages.
-  You will also see how many actions are required per task. Please attend to these tasks accordingly.</p>
-<div class="row">
-  <div class="col-md-9">
+				<div class="row">
+  <div class="col-md-4">
+    <h3>Emily Johnson</h3>
+    <h6>Position:</h6>
+    <p>Sennior project manager - Customer Services</p>
+    <h6>Start Date:</h6>
+    <p>31 March 2018</p>
+  </div>
+  <div class="col-md-8">
     <div class="row">
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/pd.svg" alt="Position Description">
-          <div class="card-body">
-            <h5 class="mb-4">Position Description</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-          </div>
+      <div class="col-sm-8">
+        <h6>Visibility</h6>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-ctrl active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked=""> All tasks
+          </label>
+          <label class="btn btn-ctrl">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Mandy Manger
+          </label>
+          <label class="btn btn-ctrl">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Emily Employee
+          </label>
         </div>
       </div>
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/job.svg" alt="Jobs">
-          <div class="card-body">
-            <h5 class="mb-4">Jobs</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-            <p><button type="button" class="btn btn-primary">Create a job</button></p>
-          </div>
-        </div>
+      <div class="col-sm-4 d-flex justify-content-end align-items-end">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal">Create a task</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Create a new task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Title</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Before your first day</option>
+      <option>Your first day</option>
+      <option>Your first 2 weeks</option>
+      <option>Your first 6 months</option>
+      <option>The end of your first 6 months</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Due date</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Content</label>
+    <script type="text/javascript" src="https://ui.pageuppeople.com/libs/scribble/scribble.js" charset="UTF-8" async="async"></script>
+    <textarea style="visibility: hidden;" pageup-scribble="pageup-scribble"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Activity type</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Select</option>
+      <option>type one</option>
+      <option>type two</option>
+      <option>type three</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Task allocated to</label>
+    <div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">Both</label>
       </div>
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/approval.svg" alt="Approval">
-          <div class="card-body">
-            <h5 class="mb-4">Approval</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-          </div>
-        </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline2">Manager</label>
       </div>
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/sourcing.svg" alt="Advertising">
-          <div class="card-body">
-            <h5 class="mb-4">Advertising</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/list.svg" alt="Shortlisting">
-          <div class="card-body">
-            <h5 class="mb-4">Shortlisting</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/panel.svg" alt="Panel">
-          <div class="card-body">
-            <h5 class="mb-4">Panel</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/interview.svg" alt="Interview">
-          <div class="card-body">
-            <h5 class="mb-4">Interview</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/offer.svg" alt="Offer">
-          <div class="card-body">
-            <h5 class="mb-4">Offer</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/contract.svg" alt="Contract">
-          <div class="card-body">
-            <h5 class="mb-4">Contract</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
-            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-          </div>
-        </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline3">Employee</label>
       </div>
     </div>
   </div>
-  <div class="col-md-3">
-    <h4>Guidelines / Tips</h4>
-    <p>Lorem ipsum dolort ametetur adipiscing elit, sed do eiusmod tempor edr incididunt ut labore et dolore magna aliqua. </p>
-    <p><a href="#">Ut enim ad minim</a> sersn veniam, quisre sedo nostruds deris exercitation verus ullamco laboris nisi ut aliquip ex ea commodo.</p>
-    </p>
+
+  <div class="form-group">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck1">
+      <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+    </div>
   </div>
+</form>              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light mr-auto" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Create</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+          <h5 class="mt-5">Before James's First Day</h5>
+      <table class="table mt-2">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Task</th>
+          <th scope="col">Assigned to</th>
+          <th scope="col">Due date</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="#">Get your gears set up</a></th>
+          <td data-title="Assigned to">Emily Employee</td>
+          <td data-title="Due date">05 March </td>
+          <td data-title="Status" class="text-success">Completed</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="#">Attend Culture Orientation</a></th>
+          <td data-title="Assigned to">Jacob</td>
+          <td data-title="Due date">06 March </td>
+          <td data-title="Status" class="text-danger">Overdue</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="#">Provide scope items to new starter</a></th>
+          <td data-title="Assigned to">Larry</td>
+          <td data-title="Due date">the Bird</td>
+          <td data-title="Status">Open</td>
+        </tr>
+      </tbody>
+    </table>
+        <h5 class="mt-5">Before James's First Day</h5>
+      <table class="table mt-2">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Task</th>
+          <th scope="col">Assigned to</th>
+          <th scope="col">Due date</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="#">Get your gears set up</a></th>
+          <td data-title="Assigned to">Emily Employee</td>
+          <td data-title="Due date">05 March </td>
+          <td data-title="Status" class="text-success">Completed</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="#">Attend Culture Orientation</a></th>
+          <td data-title="Assigned to">Jacob</td>
+          <td data-title="Due date">06 March </td>
+          <td data-title="Status" class="text-danger">Overdue</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="#">Provide scope items to new starter</a></th>
+          <td data-title="Assigned to">Larry</td>
+          <td data-title="Due date">the Bird</td>
+          <td data-title="Status">Open</td>
+        </tr>
+      </tbody>
+    </table>
+        <h5 class="mt-5">Before James's First Day</h5>
+      <table class="table mt-2">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Task</th>
+          <th scope="col">Assigned to</th>
+          <th scope="col">Due date</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="#">Get your gears set up</a></th>
+          <td data-title="Assigned to">Emily Employee</td>
+          <td data-title="Due date">05 March </td>
+          <td data-title="Status" class="text-success">Completed</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="#">Attend Culture Orientation</a></th>
+          <td data-title="Assigned to">Jacob</td>
+          <td data-title="Due date">06 March </td>
+          <td data-title="Status" class="text-danger">Overdue</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="#">Provide scope items to new starter</a></th>
+          <td data-title="Assigned to">Larry</td>
+          <td data-title="Due date">the Bird</td>
+          <td data-title="Status">Open</td>
+        </tr>
+      </tbody>
+    </table>
+        <h5 class="mt-5">Before James's First Day</h5>
+      <table class="table mt-2">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Task</th>
+          <th scope="col">Assigned to</th>
+          <th scope="col">Due date</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="#">Get your gears set up</a></th>
+          <td data-title="Assigned to">Emily Employee</td>
+          <td data-title="Due date">05 March </td>
+          <td data-title="Status" class="text-success">Completed</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="#">Attend Culture Orientation</a></th>
+          <td data-title="Assigned to">Jacob</td>
+          <td data-title="Due date">06 March </td>
+          <td data-title="Status" class="text-danger">Overdue</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="#">Provide scope items to new starter</a></th>
+          <td data-title="Assigned to">Larry</td>
+          <td data-title="Due date">the Bird</td>
+          <td data-title="Status">Open</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
 </div>
+
 			</section>
 		</main>
 <!-- jQuery -->
@@ -382,7 +508,3 @@
 </body>
 
 </html>
-<style>
-.card a { font-size: 1.25rem;}
-.card {font-size: 1rem;}
-</style>
