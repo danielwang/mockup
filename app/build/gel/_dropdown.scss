@@ -1,3 +1,20 @@
+
+.dropdown-toggle{
+  &:after{
+    vertical-align: baseline;
+    border:0;
+    content: "\e92a";
+    font-family: $gel-icon;
+  }
+}
+
+.show .dropdown-toggle{
+  &:after{
+    content: "\e92b";
+  }
+}
+
+
 .dropdown-menu{
   padding: 1.25rem;
   margin-top: 1.5rem;
@@ -16,15 +33,21 @@
   }
 
   .dropdown-item {
-    color: #607d9e;
+    color: #415365;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    @include font-regular();
+    font-size: 1rem;
+    margin-bottom: $spacer * 0.25;
     &:hover {
       color: #11b1ee;
     }
 
     [class^="gel-icon-"] {
-      color: $gray-500;
+      color: #AAB9D0;
+      margin-right: $spacer * 0.5;
+      vertical-align: text-bottom;
+      font-size: 1.1rem
     }
   }
 }

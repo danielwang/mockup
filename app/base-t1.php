@@ -27,7 +27,7 @@
     </nav>
 <!-- ************ menu ************  -->
     <aside id="gel-menu" role='menu'>
-      <a href="#" aria-label="Close menu" class="nav-toggle close"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
+      <a href="#" aria-label="Close menu" class="nav-toggle close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></a>
 
       <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="brand logo" src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"/><?php endblock() ?></a>
       <?php include ("_partials/menu/user-panel.html");?>
@@ -57,11 +57,7 @@
                   </a>
               </span>
                 <span class="item">
-                  <a class="dropdown-toggle text-center"
-                     href="#_"
-                     title="Help"
-                     data-html="true"
-                     data-toggle="dropdown">
+                  <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown">
                     <i class="gel-icon-lg gel-icon-help" aria-hidden="true"></i> <span>Help</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right">

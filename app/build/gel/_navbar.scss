@@ -15,6 +15,10 @@
       align-items: center;
       margin-right: 1rem;
       height: $navbar-height;
+
+      .nav-link.dropdown-toggle:after {
+        color: rgba($navbar-dark-color, .5);
+      }
     }
 
     .dropdown-menu {
@@ -79,40 +83,43 @@
       height: $navbar-height;
 
       input[type=search] {
-        border-radius: 10em;
+        border-radius: 0;
         transition: all 0.5s;
         width: 0;
         border: 0;
+        border-bottom: 1px solid rgba($navbar-dark-color, .5);
         background-color: transparent;
         padding-right: 22px;
+        color: rgba(255, 255, 255, .5);
         @include media-breakpoint-up(md) {
           // larger than md: 768px
-          width: 150px;
-          background-color: #4f617d;
+          width: 135px;
         }
 
         &::placeholder {
-          color: rgba(255, 255, 255, .5);
+          color: $navbar-dark-color;
         }
 
         &:focus {
-          width: 150px;
+          width: 200px;
           padding-right: 32px;
-          color: #000;
-          background-color: #fff;
+          color: $navbar-dark-color;
+          border-color: $navbar-dark-color;
+          background-color: transparent;
+          box-shadow: none;
           cursor: auto;
 
           + label {
-            color: #4f617d;
+            color: $navbar-dark-color;
           }
         }
 
         + label {
           position: absolute;
-          right: .5rem;
+          right: 0.5rem;
           z-index: 1;
           cursor: pointer;
-          color: rgba(255, 255, 255, .5);
+          color: rgba($navbar-dark-color, .5);
         }
       }
     }

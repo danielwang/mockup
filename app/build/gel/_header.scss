@@ -43,6 +43,7 @@
 
       span {
         display: none;
+        font-size: 1rem;
         @include media-breakpoint-up(lg) {
           // larger than md: 992px
           display: inline-block;

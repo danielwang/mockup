@@ -2,31 +2,30 @@
   <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="<?php echo ($resURL) ?>images/avatar.svg" alt="John's profile">
     John
   </a>
-  <div class="dropdown-menu user-menu">
+  <div class="dropdown-menu dropdown-menu-right user-menu">
     <!-- User name -->
     <header class="user-header">
       <h5 class="margin-bottom-none">John Smith</h5>
+      <p>john.smith@pageuppeople.com</p>
       <p>
-        <small>john.smith@pageuppeople.com</small>
-      </p>
-      <p>
-        <button type="button" class="btn btn-sm btn-primary btn-block">
+        <button type="button" class="btn btn-primary">
           View Profile</button>
       </p>
     </header>
     <footer>
-      <p>
-        <button type="button" class="btn btn-sm btn-light btn-block">Log out</button>
-      </p>
-      <p>
-        <span class="toggle toggle-purple d-inline-block">
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-beta"></i>
+        Beta is turned
+        <span class="toggle toggle-green d-inline-block">
           <label>
             <input type="checkbox">
-            <span>
-              Switch to Beta</span>
+            <span></span>
           </label>
         </span>
-      </p>
+      </a>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="logout" class="gel-icon-lock"></i>
+        Log out</a>
     </footer>
   </div>
 </li>

@@ -3226,20 +3226,20 @@ tbody.collapse.show {
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #fff; }
   .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .5); }
+    color: #fff; }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, .75); }
+    color: #fff; }
   .navbar-dark .navbar-nav .nav-link.disabled {
     color: rgba(255, 255, 255, .25); }
   .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
     color: #fff; }
   .navbar-dark .navbar-toggler {
-    color: rgba(255, 255, 255, .5);
+    color: #fff;
     border-color: rgba(255, 255, 255, .1); }
   .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, .5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
   .navbar-dark .navbar-text {
-    color: rgba(255, 255, 255, .5); }
+    color: #fff; }
   .navbar-dark .navbar-text a {
     color: #fff; }
   .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
@@ -7529,6 +7529,15 @@ body {
 .custom-control-label {
   vertical-align: text-top; }
 
+.dropdown-toggle:after {
+  vertical-align: baseline;
+  border: 0;
+  content: "\e92a";
+  font-family: "gel-icon"; }
+
+.show .dropdown-toggle:after {
+  content: "\e92b"; }
+
 .dropdown-menu {
   padding: 1.25rem;
   margin-top: 1.5rem;
@@ -7544,13 +7553,20 @@ body {
     border-bottom: 10px solid #fff;
     border-left: 10px solid transparent; }
   .dropdown-menu .dropdown-item {
-    color: #607d9e;
+    color: #415365;
     -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    font-weight: 400;
+    font-family: 'Proxima Nova';
+    font-size: 1rem;
+    margin-bottom: 0.25rem; }
   .dropdown-menu .dropdown-item:hover {
     color: #11b1ee; }
   .dropdown-menu .dropdown-item [class^="gel-icon-"] {
-    color: #adb5bd; }
+    color: #aab9d0;
+    margin-right: 0.5rem;
+    vertical-align: text-bottom;
+    font-size: 1.1rem; }
 
 #gel-header {
   background-image: linear-gradient(to right, #0053a3 0%, #018cd1 100%);
@@ -7585,7 +7601,8 @@ body {
   #gel-header .page-actions .item > a i {
     vertical-align: sub; }
   #gel-header .page-actions .item > a span {
-    display: none; }
+    display: none;
+    font-size: 1rem; }
   @media (min-width: 992px) {
         #gel-header .page-actions .item > a span {
           display: inline-block;
@@ -7686,13 +7703,13 @@ body {
   #gel-menu .user-menu #user-menu-hd {
     margin-bottom: 20px; }
   #gel-menu .user-menu #user-menu-hd:after {
-    content: "\f106";
-    font-family: "FontAwesome";
+    content: "\e92b";
+    font-family: "gel-icon";
     float: right;
     margin-top: 8px; }
   #gel-menu .user-menu #user-menu-hd.collapsed:after {
-    content: "\f107";
-    font-family: "FontAwesome";
+    content: "\e92a";
+    font-family: "gel-icon";
     float: right;
     margin-top: 8px; }
   #gel-menu .user-menu #user-menu-ft a {
@@ -7716,26 +7733,26 @@ body {
       background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
       background-attachment: local, local, scroll, scroll;
       background-color: transparent; } }
-  #gel-menu menu ul {
+  #gel-menu ul {
     margin: 0;
     padding: 0; }
-  #gel-menu menu ul > li.submenu {
+  #gel-menu ul li.submenu {
     margin-bottom: 30px;
     list-style: none; }
-  #gel-menu menu ul > li.submenu h5 {
+  #gel-menu ul h5 {
     color: #10bbf3; }
-  #gel-menu menu ul > li.submenu li {
+  #gel-menu ul li {
     margin-bottom: 10px;
     list-style: none; }
-    #gel-menu menu ul > li.submenu li a {
-      color: #dfdfdf;
-      font-size: 16px;
-      margin-left: 0;
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-      #gel-menu menu ul > li.submenu li a:hover {
-        color: #11b1ee;
-        margin-left: 8px; }
+  #gel-menu ul li a {
+    color: #dfdfdf;
+    font-size: 16px;
+    margin-left: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #gel-menu ul li a:hover {
+    color: #11b1ee;
+    margin-left: 8px; }
 
 .navbar {
   position: sticky;
@@ -7753,6 +7770,8 @@ body {
     align-items: center;
     margin-right: 1rem;
     height: 3.75rem; }
+  .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
+    color: rgba(255, 255, 255, .5); }
   .navbar .navbar-nav .dropdown-menu {
     top: 2.75rem;
     right: -0.5rem;
@@ -7794,26 +7813,29 @@ body {
     align-items: center;
     height: 3.75rem; }
   .navbar .navbar-nav .search-group input[type=search] {
-    border-radius: 10em;
+    border-radius: 0;
     transition: all 0.5s;
     width: 0;
     border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
     background-color: transparent;
-    padding-right: 22px; }
+    padding-right: 22px;
+    color: rgba(255, 255, 255, .5); }
   @media (min-width: 768px) {
         .navbar .navbar-nav .search-group input[type=search] {
-          width: 150px;
-          background-color: #4f617d; } }
+          width: 135px; } }
   .navbar .navbar-nav .search-group input[type=search]::placeholder {
-    color: rgba(255, 255, 255, .5); }
+    color: #fff; }
   .navbar .navbar-nav .search-group input[type=search]:focus {
-    width: 150px;
+    width: 200px;
     padding-right: 32px;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    box-shadow: none;
     cursor: auto; }
     .navbar .navbar-nav .search-group input[type=search]:focus + label {
-      color: #4f617d; }
+      color: #fff; }
   .navbar .navbar-nav .search-group input[type=search] + label {
     position: absolute;
     right: 0.5rem;
