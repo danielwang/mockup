@@ -13,7 +13,7 @@
       <div class="container">
         <!-- logo  -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
           <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="brand logo" src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"/><?php endblock() ?></a></li>
         </ul>
         <ul class="navbar-nav">
@@ -27,7 +27,7 @@
     </nav>
 <!-- ************ menu ************  -->
     <aside id="gel-menu" role='menu'>
-      <a href="#" aria-label="Close menu" class="nav-toggle close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></a>
+      <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
 
       <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="brand logo" src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"/><?php endblock() ?></a>
       <?php include ("_partials/menu/user-panel.html");?>

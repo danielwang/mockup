@@ -76,6 +76,7 @@
       }
     }
     // search form in navbar
+    // search form in navbar
     .search-group {
       position: relative;
       display: flex;
@@ -83,43 +84,46 @@
       height: $navbar-height;
 
       input[type=search] {
-        border-radius: 0;
+        border-radius: 10em;
         transition: all 0.5s;
         width: 0;
         border: 0;
-        border-bottom: 1px solid rgba($navbar-dark-color, .5);
         background-color: transparent;
         padding-right: 22px;
-        color: rgba(255, 255, 255, .5);
         @include media-breakpoint-up(md) {
           // larger than md: 768px
-          width: 135px;
+          width: 150px;
+          background-color: #4f617d;
         }
 
         &::placeholder {
-          color: $navbar-dark-color;
+          color: rgba(255, 255, 255, .5);
         }
 
         &:focus {
           width: 200px;
           padding-right: 32px;
-          color: $navbar-dark-color;
-          border-color: $navbar-dark-color;
-          background-color: transparent;
-          box-shadow: none;
+          color: #000;
+          background-color: #fff;
           cursor: auto;
 
-          + label {
-            color: $navbar-dark-color;
+          + .btn-submit {
+            color: #4f617d;
           }
         }
 
-        + label {
+        + .btn-submit {
           position: absolute;
           right: 0.5rem;
+          top: 1rem;
           z-index: 1;
           cursor: pointer;
-          color: rgba($navbar-dark-color, .5);
+          color: rgba(255, 255, 255, .5);
+          background: transparent;
+          border: 0;
+          padding: 0.25rem;
+          width: 26px;
+          height: 26px;
         }
       }
     }
