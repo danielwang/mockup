@@ -177,13 +177,13 @@ $sizes: map-merge((
 // Settings for the `<body>` element.
 
 $body-bg:                   #ebeff3 !default;
-$body-color:                $gray-900 !default;
+$body-color:                #415365 !default;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                #20ade7 !default;
+$link-color:                #07b5ef !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     none !default;

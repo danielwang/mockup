@@ -83,13 +83,13 @@
         <th scope="col">Applications</th>
         <th scope="col">Opening date</th>
         <th scope="col">Closing date</th>
-        <!-- <th scope="col"></th> -->
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
       <?php for ($x =1; $x <= 15; $x++) {?>
       <tr>
-        <th scope="row"><a href="#<?php echo $x ?>">Human Resources Manager <?php echo $x ?></a> </th>
+        <th scope="row">Human Resources Manager <?php echo $x ?> </th>
         <td data-title="Job ID">
           <?php echo $x * 2  + 53302042 ?>
         </td>
@@ -101,9 +101,9 @@
         <td data-title="Applications"><a href="cl"><?php echo random_int(1, 100) ?></a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <!-- <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td> -->
+        <td data-title="View">
+          <a href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td>
       </tr>
       <tr>
         <th scope="row"><a href="#<?php echo $x ?>">Retail Customer Service Officer <?php echo $x ?></a></th>
@@ -118,9 +118,9 @@
         <td data-title="Applications"><a href="cl"><?php echo random_int(1, 100) ?></a></td>
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <!-- <td data-title="View">
-          <a href="#"><i class="gel-icon-lg gel-icon-eye"></i></a>
-        </td> -->
+        <td data-title="View">
+          <a href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-eye"></i></a>
+        </td>
       </tr>
     <?php } ?>
     </tbody>

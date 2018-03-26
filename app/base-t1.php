@@ -9,7 +9,7 @@
 
 
 <!-- ************ topbar ************ -->
-    <nav id="gel-navbar" class="navbar navbar-expand-lg navbar-dark bg-navy" role="navigation">
+    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
       <div class="container">
         <!-- logo  -->
         <ul class="navbar-nav mr-auto">

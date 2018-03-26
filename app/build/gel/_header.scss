@@ -33,21 +33,25 @@
       align-items: center;
     }
 
-    .item > a {
-      margin-left: 20px;
-      color: white;
+    .item {
+      position: relative;
 
-      i{
-        vertical-align: sub;
-      }
+      > a {
+        margin-left: 20px;
+        color: white;
 
-      span {
-        display: none;
-        font-size: 1rem;
-        @include media-breakpoint-up(lg) {
-          // larger than md: 992px
-          display: inline-block;
-          @include font-heading();
+        i {
+          vertical-align: sub;
+        }
+
+        span {
+          display: none;
+          font-size: 1rem;
+          @include media-breakpoint-up(lg) {
+            // larger than md: 992px
+            display: inline-block;
+            @include font-heading();
+          }
         }
       }
     }

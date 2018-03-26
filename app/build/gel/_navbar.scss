@@ -13,7 +13,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      margin-right: 1rem;
+      margin-right: $spacer;
       height: $navbar-height;
 
       .nav-link.dropdown-toggle:after {
@@ -22,8 +22,8 @@
     }
 
     .dropdown-menu {
-      top: $navbar-height - 1;
-      right: -0.5rem;
+      top: $spacer * 2.5;
+      right: -$spacer * 0.25;
       left: auto;
       max-width: 20rem;
       position: absolute;
@@ -52,6 +52,10 @@
 
         .nav-link {
           padding-right: 0;
+        }
+
+        .dropdown-menu{
+          right: -$spacer * 0.625;
         }
       }
     }
