@@ -6,8 +6,17 @@
   include_once '_head.php'; ?>
 
    <?php emptyblock('page-notification') ?>
+   <!-- ************ menu ************  -->
+       <aside id="gel-menu" role='menu'>
+         <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
 
+         <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="brand logo" src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"/><?php endblock() ?></a>
+         <?php include ("_partials/menu/user-panel.html");?>
 
+         <menu class="scroll">
+           <?php include ("_partials/menu/${parent}.html");?>
+         </menu>
+       </aside>
 <!-- ************ topbar ************ -->
     <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
       <div class="container">
@@ -25,17 +34,7 @@
         </ul>
       </div>
     </nav>
-<!-- ************ menu ************  -->
-    <aside id="gel-menu" role='menu'>
-      <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
 
-      <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="brand logo" src="<?php echo ($resURL) ?>images/pu-logo.png" width="100"/><?php endblock() ?></a>
-      <?php include ("_partials/menu/user-panel.html");?>
-
-      <menu class="scroll">
-        <?php include ("_partials/menu/${parent}.html");?>
-      </menu>
-    </aside>
 
 <!-- ************  page header ************ -->
 <?php startblock('page-header');?>

@@ -83,7 +83,7 @@
         <th scope="col">Applications</th>
         <th scope="col">Opening date</th>
         <th scope="col">Closing date</th>
-        <th scope="col"></th>
+        <th scope="col">Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -102,11 +102,11 @@
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
         <td data-title="View">
-          <a href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-eye"></i></a>
+          <a aria-label="View application" href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-eye"></i></a>
         </td>
       </tr>
       <tr>
-        <th scope="row"><a href="#<?php echo $x ?>">Retail Customer Service Officer <?php echo $x ?></a></th>
+        <th scope="row">Retail Customer Service Officer <?php echo $x ?></th>
         <td data-title="Job ID">
           <?php echo $x + 53302042 ?>
         </td>
@@ -119,7 +119,7 @@
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
         <td data-title="View">
-          <a href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-eye"></i></a>
+          <a aria-label="View application" href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-eye"></i></a>
         </td>
       </tr>
     <?php } ?>

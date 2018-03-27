@@ -7758,6 +7758,9 @@ body {
     color: #11b1ee;
     margin-left: 8px; }
 
+.modal-header, .modal-body, .modal-footer {
+  padding: 1rem 2rem; }
+
 .navbar {
   position: sticky;
   top: 0;
@@ -7824,7 +7827,8 @@ body {
     width: 0;
     border: 0;
     background-color: transparent;
-    padding-right: 22px; }
+    padding-right: 22px;
+    color: #fff; }
   @media (min-width: 768px) {
         .navbar .navbar-nav .search-group input[type=search] {
           width: 150px;

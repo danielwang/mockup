@@ -94,6 +94,7 @@
         border: 0;
         background-color: transparent;
         padding-right: 22px;
+        color: $white;
         @include media-breakpoint-up(md) {
           // larger than md: 768px
           width: 150px;
