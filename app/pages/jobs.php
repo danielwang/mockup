@@ -7,13 +7,13 @@
   <div class="col-md-5 col-lg-4">
     <h6>Visibility</h6>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-ctrl active">
+      <label class="btn btn-light active">
         <input type="radio" name="options" id="option1" autocomplete="off" checked> My jobs
       </label>
-      <label class="btn btn-ctrl">
+      <label class="btn btn-light">
         <input type="radio" name="options" id="option2" autocomplete="off"> Team jobs
       </label>
-      <label class="btn btn-ctrl">
+      <label class="btn btn-light">
         <input type="radio" name="options" id="option3" autocomplete="off"> All jobs
       </label>
     </div>
