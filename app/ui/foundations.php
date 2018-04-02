@@ -1,4 +1,4 @@
-<?php $pageTitle = "Molecules"; $parent = "ui"; include '../base-ui.php'; ?>
+<?php $pageTitle = "Foundations"; $parent = "ui"; include '../base-ui.php'; ?>
 
 <?php startblock('page-tabs') ?>
   <?php pageTabs($pageTitle);  ?>

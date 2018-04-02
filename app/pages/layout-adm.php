@@ -1,4 +1,4 @@
-<?php $pageTitle = "Admin Page Template 1"; $parent = "adm"; include '../base-t1.php';?>
+<?php $pageTitle = "Admin Page Template"; $parent = "adm"; include '../base-t1.php';?>
 
 <?php //startblock('page-notification') ?>
     <!-- <div id="gel-notification" class="gel-notification-error">
@@ -14,5 +14,5 @@
   <button href="#" type="button" class="close"><i class="fa fa-times"></i></button>
 </div> -->
 
-  
+
 <?php endblock()?>

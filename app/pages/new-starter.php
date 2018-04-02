@@ -4,7 +4,7 @@
 
 <?php startblock('page-body');?>
 <div class="row">
-  <div class="col-lg-4">
+  <div class="col-lg-3">
     <h3>Emily Johnson</h3>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
@@ -16,7 +16,7 @@
         <p>31 March 2018</p>
       </div>
     </div>
-    <p><button class="btn btn-outline-secondary btn-block">Notify Emily updates</button></p>
+    <p><button class="btn btn-outline-primary btn-block">Notify Emily updates</button></p>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
         <h5>Additional tasks</h5>
@@ -28,7 +28,7 @@
       </div>
     </div>
   </div>
-  <div class="col-lg-8">
+  <div class="col-lg-9">
     <div class="row">
       <div class="col-sm-8">
         <h6>Visibility</h6>
@@ -52,39 +52,40 @@
     <?php for ($c =1; $c <= 4; $c++) {?>
       <h5 class="mt-5">Before James's First Day</h5>
       <table class="table mt-2">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Task</th>
-          <th scope="col">Assigned to</th>
-          <th scope="col">Due date</th>
-          <th scope="col">Status</th>
-          <th scope="col">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row"><a href="#">Get your gears set up</a></th>
-          <td data-title="Assigned to">Emily Employee</td>
-          <td data-title="Due date">05 March </td>
-          <td data-title="Status" class="text-success">Completed</td>
-          <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
-        </tr>
-        <tr>
-          <th scope="row"><a href="#">Attend Culture Orientation</a></th>
-          <td data-title="Assigned to">Jacob</td>
-          <td data-title="Due date">06 March </td>
-          <td data-title="Status" class="text-danger">Overdue</td>
-          <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
-        </tr>
-        <tr>
-          <th scope="row"><a href="#">Provide scope items to new starter</a></th>
-          <td data-title="Assigned to">Larry</td>
-          <td data-title="Due date">the Bird</td>
-          <td data-title="Status">Open</td>
-          <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
-        </tr>
-      </tbody>
-    </table>
+        <caption class="sr-only">List of tasks</caption>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Task</th>
+            <th scope="col">Assigned to</th>
+            <th scope="col">Due date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><a href="#">Get your gears set up</a></th>
+            <td data-title="Assigned to">Emily Employee</td>
+            <td data-title="Due date">05 March </td>
+            <td data-title="Status" class="text-success">Completed</td>
+            <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="#">Attend Culture Orientation</a></th>
+            <td data-title="Assigned to">Jacob</td>
+            <td data-title="Due date">06 March </td>
+            <td data-title="Status" class="text-danger">Overdue</td>
+            <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="#">Provide scope items to new starter</a></th>
+            <td data-title="Assigned to">Larry</td>
+            <td data-title="Due date">the Bird</td>
+            <td data-title="Status">Open</td>
+            <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
   <?php } ?>
   </div>
 </div>
@@ -96,7 +97,7 @@
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">Create a new task</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">

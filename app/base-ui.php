@@ -27,13 +27,32 @@
 <!-- page header -->
 <header id="gel-header" role="banner">
     <div class="container">
-      <h1 class="page-title"><?php echo $pageTitle  ?></h1>
-
-      <div class="page-tabs nav nav-tabs" role="tablist">
-          <?php startblock('page-tabs') ?>
-          <?php endblock() ?>
+      <div class="row">
+        <div class="col-md-9 col-lg-8">
+          <h1 class="page-title"><?php echo $pageTitle  ?></h1>
+        </div>
+        <div class="page-actions col-md-3 col-lg-4">
+          <span class="item">
+              <a class="text-center" href="#_" title="Print">
+                <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
+              </a>
+          </span>
+          <span class="item">
+              <a class="text-center" href="#_" title="Feedback">
+                <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
+              </a>
+          </span>
+            <span class="item">
+              <a class="text-center" href="#_" title="Help" data-toggle="dropdown">
+                <i class="gel-icon-lg gel-icon-help" aria-hidden="true"></i> <span>Help</span>
+              </a>
+            </span>
+          </div>
       </div>
-
+      <ul class="page-tabs nav" role="tablist">
+        <?php startblock('page-tabs') ?>
+        <?php endblock() ?>
+      </ul>
     </div>
 </header>
 <!-- page body -->

@@ -7,28 +7,28 @@
   <div class="col-md-5 col-lg-4">
     <h6>Visibility</h6>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-light active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> My jobs
+      <label class="btn btn-secondary btn-ctrl active">
+        <input type="radio" name="visibility" id="option1" autocomplete="off" checked> My jobs
       </label>
-      <label class="btn btn-light">
-        <input type="radio" name="options" id="option2" autocomplete="off"> Team jobs
+      <label class="btn btn-secondary btn-ctrl">
+        <input type="radio" name="visibility" id="option2" autocomplete="off"> Team jobs
       </label>
-      <label class="btn btn-light">
-        <input type="radio" name="options" id="option3" autocomplete="off"> All jobs
+      <label class="btn btn-secondary btn-ctrl">
+        <input type="radio" name="visibility" id="option3" autocomplete="off"> All jobs
       </label>
     </div>
   </div>
   <div class="col-md-5 col-lg-4">
     <h6 class="mt-2 mt-md-0">Status</h6>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-ctrl active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> Current
+      <label class="btn btn-secondary btn-ctrl active">
+        <input type="radio" name="status" id="option1" autocomplete="off" checked> Current
       </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="options" id="option2" autocomplete="off"> Archived
+      <label class="btn btn-secondary btn-ctrl">
+        <input type="radio" name="status" id="option2" autocomplete="off"> Archived
       </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="options" id="option3" autocomplete="off"> All
+      <label class="btn btn-secondary btn-ctrl">
+        <input type="radio" name="status" id="option3" autocomplete="off"> All
       </label>
     </div>
   </div>
@@ -72,6 +72,7 @@
   </div>
 </div>
 <table class="table table-striped table-hover mt-3">
+    <caption class="sr-only">List of jobs</caption>
     <thead class="thead-dark">
       <tr>
         <th scope="col">Job Title</th>

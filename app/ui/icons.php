@@ -1,4 +1,4 @@
-<?php $pageTitle = "Iconography"; $parent = "hm"; include '../base-t1.php';?>
+<?php $pageTitle = "Iconography"; $parent = "hm"; include '../base-ui.php';?>
 
 <?php
 
@@ -61,9 +61,7 @@ $lineIcons = buildLineIcons();
 ?>
 
 <?php startblock('page-tabs') ?>
-
   <!-- Nav tabs -->
-  <ul class="page-tabs nav" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="solid-icons-tab" data-toggle="tab" href="#solid-icons" role="tab" aria-controls="solid-icons" aria-selected="true">Solid</a>
     </li>
@@ -79,7 +77,6 @@ $lineIcons = buildLineIcons();
     <li class="nav-item">
       <a class="nav-link" id="change-log-tab" data-toggle="tab" href="#change-log" role="tab" aria-controls="change-log" aria-selected="false">Change Log</a>
     </li>
-  </ul>
 <?php endblock() ?>
 
 

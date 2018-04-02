@@ -12,7 +12,7 @@ $menu-bg:               #4F596A;
 $header-bg-start:       #0053a3;
 $header-bg-end:         #018cd1;
 
-$ctrl:               #63778b;
+$ctrl:                  #63778b;
 //== Additional font icons
 //
 //** gel icons
@@ -63,7 +63,7 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #57C0E9 !default;
+$blue:    #117cab !default;
 $azure:   #10bbf3 !default;
 $indigo:  #6610f2 !default;
 $purple:  #7E52A0 !default;
@@ -183,9 +183,9 @@ $body-color:                #415365 !default;
 //
 // Style anchor elements.
 
-$link-color:                #07b5ef !default;
+$link-color:                $blue !default;
 $link-decoration:           none !default;
-$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-color:          lighten($link-color, 15%) !default;
 $link-hover-decoration:     none !default;
 
 // Paragraphs
@@ -382,15 +382,15 @@ $input-btn-border-width:      $border-width !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 $btn-padding-y:               $input-btn-padding-y !default;
-$btn-padding-x:               1rem !default;
+$btn-padding-x:               1.5rem !default;
 $btn-line-height:             $input-btn-line-height !default;
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
-$btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+$btn-padding-x-sm:            1rem !default;
 $btn-line-height-sm:          $input-btn-line-height-sm !default;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
-$btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+$btn-padding-x-lg:            2.5rem !default;
 $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
@@ -791,9 +791,9 @@ $modal-header-border-width:   $modal-content-border-width !default;
 $modal-footer-border-width:   $modal-header-border-width !default;
 $modal-header-padding:        1rem !default;
 
-$modal-lg:                          800px !default;
-$modal-md:                          500px !default;
-$modal-sm:                          300px !default;
+$modal-lg:                          1140px !default;
+$modal-md:                          720px !default;
+$modal-sm:                          540px !default;
 
 $modal-transition:                  transform .3s ease-out !default;
 

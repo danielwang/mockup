@@ -15,13 +15,15 @@ function pageTabs($type) {
 		$filename = preg_replace("/\.html$/i", "", $file);
 		$title = preg_replace("/\-/i", " ", $filename);
 		$title = ucwords($title);
-		$tabname = 'tab-' . $filename ;
+		$tabname =  $filename . '-tab' ;
 		if($file === reset($files)){
-			echo '<span class="item active">';
+			$active = "active";
+			$selected = true;
 		} else{
-			echo '<span class="item">';
+			$active = "";
+			$selected = false;
 		}
-		echo '<a href="#page-' . $tabname  . '" id="' . $tabname  .'" data-toggle="tab" role="tab" aria-controls="' . $tabname  . '" aria-selected="true">' . $title . '</a></span>';
+		echo '<li class="nav-item"><a class="nav-link '. $active  .'" id="' . $tabname  .'" data-toggle="tab" href="#' . $filename .  '" role="tab" aria-controls="' . $filename . '" aria-selected="'. $selected  .'">' . $title . '</a></li>';
 	endforeach;
 }
 
@@ -40,7 +42,12 @@ function showMarkup($type, $format) {
 		$filename = preg_replace("/\.$format$/i", "", $file);
 		$title = preg_replace("/\-/i", " ", $filename);
 		$tabname = 'page-tab-' . $filename ;
-		echo '<div class="tab-pane fade show" id="' . $tabname  .'" role="tabpanel" aria-labelledby="' . $tabname  .'">';
+		if($file === reset($files)){
+			$active = "active";
+		} else{
+			$active = "";
+		}
+		echo '<div class="tab-pane ' . $active . '" id="' . $filename  .'" role="tabpanel" aria-labelledby="' . $tabname  .'">';
 		include $type . '/' . $file;
 		echo '</div>';
 	endforeach;

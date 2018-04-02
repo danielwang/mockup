@@ -4,16 +4,16 @@
  @include font-heading();
 }
 
-// .btn-ctrl{
-//   color:  $ctrl;
-//   border-color: lighten($ctrl, 50%);
-//   border-radius: .5rem;
-//   background-color: white;
-//
-//   &:focus, :active{
-//     box-shadow: 0 0 0 0.2rem rgba($ctrl, .25);
-//   }
-//   &.active, .focus{
-//     background-color: lighten($ctrl, 40%);
-//   }
-// }
+.btn-ctrl{
+  color:  $ctrl;
+  border-color: lighten($ctrl, 50%);
+  border-radius: .5rem;
+  background-color: white;
+
+  // &:focus, :active{
+  //   box-shadow: 0 0 0 0.2rem rgba($ctrl, .25);
+  // }
+  // &.active, .focus{
+  //   background-color: lighten($ctrl, 40%);
+  // }
+}
