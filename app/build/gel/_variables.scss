@@ -183,9 +183,9 @@ $body-color:                #415365 !default;
 //
 // Style anchor elements.
 
-$link-color:                $blue !default;
+$link-color:                darken($primary, 5%) !default;
 $link-decoration:           none !default;
-$link-hover-color:          lighten($link-color, 15%) !default;
+$link-hover-color:          lighten($link-color, 5%) !default;
 $link-hover-decoration:     none !default;
 
 // Paragraphs
@@ -347,10 +347,10 @@ $table-border-color:          $gray-300 !default;
 $table-head-bg:               $gray-200 !default;
 $table-head-color:            $gray-700 !default;
 
-$table-dark-bg:               $ctrl;
+$table-dark-bg:               lighten($ctrl, 15%);
 $table-dark-accent-bg:        rgba($white, .05) !default;
 $table-dark-hover-bg:         rgba($white, .075) !default;
-$table-dark-border-color:     $ctrl;
+$table-dark-border-color:     lighten($ctrl, 15%);
 $table-dark-color:            white;
 
 
@@ -791,9 +791,9 @@ $modal-header-border-width:   $modal-content-border-width !default;
 $modal-footer-border-width:   $modal-header-border-width !default;
 $modal-header-padding:        1rem !default;
 
-$modal-lg:                          1140px !default;
-$modal-md:                          720px !default;
-$modal-sm:                          540px !default;
+$modal-lg:                          800px !default;
+$modal-md:                          500px !default;
+$modal-sm:                          300px !default;
 
 $modal-transition:                  transform .3s ease-out !default;
 

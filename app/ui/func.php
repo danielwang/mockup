@@ -4,7 +4,7 @@
 // list of the items in the dir
 function pageTabs($type) {
 	$files = array();
-	$handle = opendir($type . '/');
+	$handle = opendir('core-elements/' . $type . '/');
 	while (false !== ($file = readdir($handle))):
 		if (stristr($file, '.html')):
 			$files[] = $file;
@@ -30,7 +30,7 @@ function pageTabs($type) {
 // show the content of the items
 function showMarkup($type, $format) {
 	$files = array();
-	$handle = opendir($type);
+	$handle = opendir('core-elements/' . $type . '/');
 	while (false !== ($file = readdir($handle))):
 		if (stristr($file, '.' . $format)):
 			$files[] = $file;
@@ -48,7 +48,7 @@ function showMarkup($type, $format) {
 			$active = "";
 		}
 		echo '<div class="tab-pane ' . $active . '" id="' . $filename  .'" role="tabpanel" aria-labelledby="' . $tabname  .'">';
-		include $type . '/' . $file;
+		include 'core-elements/' . $type . '/' . $file;
 		echo '</div>';
 	endforeach;
 }

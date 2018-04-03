@@ -159,12 +159,12 @@ sup {
   top: -0.5em; }
 
 a {
-  color: #117cab;
+  color: #0baade;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #20abe9;
+    color: #10bbf3;
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -1293,8 +1293,8 @@ pre {
 
 .table .thead-dark th {
   color: white;
-  background-color: #63778b;
-  border-color: #63778b; }
+  background-color: #8d9dae;
+  border-color: #8d9dae; }
   .table .thead-light th {
     color: #495057;
     background-color: #e9ecef;
@@ -1302,9 +1302,9 @@ pre {
 
 .table-dark {
   color: white;
-  background-color: #63778b; }
+  background-color: #8d9dae; }
   .table-dark th, .table-dark td, .table-dark thead th {
-    border-color: #63778b; }
+    border-color: #8d9dae; }
   .table-dark.table-bordered {
     border: 0; }
   .table-dark.table-striped tbody tr:nth-of-type(odd) {
@@ -2418,10 +2418,10 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #117cab;
+  color: #0baade;
   background-color: transparent; }
   .btn-link:hover {
-    color: #20abe9;
+    color: #10bbf3;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent; }
@@ -3435,11 +3435,11 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #117cab;
+  color: #0baade;
   background-color: #fff;
   border: 1px solid #dee2e6; }
   .page-link:hover {
-    color: #20abe9;
+    color: #10bbf3;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -4212,18 +4212,18 @@ button.close {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 720px;
+    max-width: 500px;
     margin: 1.75rem auto; }
     .modal-dialog-centered {
       min-height: calc(100% - (1.75rem * 2)); }
     .modal-content {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .5); }
     .modal-sm {
-      max-width: 540px; } }
+      max-width: 300px; } }
 
 @media (min-width: 992px) {
   .modal-lg {
-    max-width: 1140px; } }
+    max-width: 800px; } }
 
 .tooltip {
   position: absolute;
@@ -7863,7 +7863,8 @@ body {
   .table.table-striped tbody tr:nth-of-type(even) {
     background: #f8f9fa; }
   .table tbody td, .table tbody th {
-    vertical-align: middle; }
+    vertical-align: middle;
+    font-weight: 400; }
 /* *********************************\
  responsive table viewport < 768
  \***********************************/

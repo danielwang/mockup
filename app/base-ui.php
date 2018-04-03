@@ -21,7 +21,7 @@
     <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="logo" src="<?php echo ($resURL) ?>images/gel-logo.png" width="140"/><?php endblock() ?></a>
 
     <menu class="scroll">
-      <?php include ("_partials/menu/${parent}.html");?>
+      <?php include ("_partials/menu/ui.html");?>
     </menu>
   </aside>
 <!-- page header -->
