@@ -22,4 +22,4 @@
       <![endif]-->
     </head>
 <body>
-<a href="#gel-main" class="sr-only">Skip to main content</a>
+<a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>

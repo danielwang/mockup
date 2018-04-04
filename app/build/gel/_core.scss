@@ -46,6 +46,16 @@ h6 {
   font-family: $font-family-headings;
   font-weight: 600;
 }
+
+a{
+  @include font-semibold();
+}
+
+label{
+  margin-bottom: .375rem;
+  @include font-semibold();
+}
+
 ##{$prefix}-main {
   padding: 30px 0;
 }

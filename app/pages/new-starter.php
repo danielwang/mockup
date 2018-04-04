@@ -95,7 +95,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Create a new task</h5>
+        <h3 class="modal-title" id="exampleModalLongTitle">Create a new task</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
@@ -104,7 +104,7 @@
         <?php include ("../ui/_partials/form-sm.html");?>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light mr-auto" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary">Create</button>
       </div>
     </div>
@@ -116,7 +116,7 @@
   <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Delete task?</h5>
+        <h3 class="modal-title">Delete task?</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
         </button>
@@ -126,7 +126,7 @@
         <p>Welcome the starter with a cup of coffee and cool discussion abouth her role and expextations.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light mr-auto" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-danger">Delete</button>
       </div>
     </div>

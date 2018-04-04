@@ -1,0 +1,15 @@
+.nav-tabs-line{
+  .nav-link{
+    color: $body-color;
+    font-size: 1rem;
+    &.active{
+      border-bottom: 3px solid $link-color;
+      margin-bottom: -2px;
+    }
+  }
+
+  + .tab-content{
+      padding: $spacer;
+      border-top: 1px solid $input-border-color;
+  }
+}

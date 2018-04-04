@@ -5,29 +5,29 @@
 <?php startblock('page-body');?>
 <div class="row">
   <div class="col-md-5 col-lg-4">
-    <h6>Visibility</h6>
+    <h5>Visibility</h5>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-secondary btn-ctrl active">
+      <label class="btn btn-ctrl active">
         <input type="radio" name="visibility" id="option1" autocomplete="off" checked> My jobs
       </label>
-      <label class="btn btn-secondary btn-ctrl">
+      <label class="btn btn-ctrl">
         <input type="radio" name="visibility" id="option2" autocomplete="off"> Team jobs
       </label>
-      <label class="btn btn-secondary btn-ctrl">
+      <label class="btn btn-ctrl">
         <input type="radio" name="visibility" id="option3" autocomplete="off"> All jobs
       </label>
     </div>
   </div>
   <div class="col-md-5 col-lg-4">
-    <h6 class="mt-2 mt-md-0">Status</h6>
+    <h5 class="mt-2 mt-md-0">Status</h5>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-secondary btn-ctrl active">
+      <label class="btn btn-ctrl active">
         <input type="radio" name="status" id="option1" autocomplete="off" checked> Current
       </label>
-      <label class="btn btn-secondary btn-ctrl">
+      <label class="btn btn-ctrl">
         <input type="radio" name="status" id="option2" autocomplete="off"> Archived
       </label>
-      <label class="btn btn-secondary btn-ctrl">
+      <label class="btn btn-ctrl">
         <input type="radio" name="status" id="option3" autocomplete="off"> All
       </label>
     </div>
@@ -35,40 +35,6 @@
   <div class="col-md-2 col-lg-4 d-flex justify-content-end align-items-end">
       <span class="mb-2 mr-2">133 results</span>
       <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"> Settings </button>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="exampleModalLabel">Settings</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p class="lead">Select the columns you wish to add/remove</p>
-              <div class="row">
-                <?php for ($c =1; $c <= 2; $c++) {?>
-                    <div class="col-6">
-                      <?php for ($i =1; $i <= 10; $i++) {?>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class ="custom-control-input" checked id="<?php echo $c . '-' .$i ?>">
-                          <label class="custom-control-label" for="<?php echo $c . '-' . $i ?>">
-                            Column <?php echo $c . '-' . $i ?>
-                          </label>
-                        </div>
-                      <?php } ?>
-                    </div>
-                <?php } ?>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-light mr-auto" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Apply</button>
-            </div>
-          </div>
-        </div>
-      </div>
   </div>
 </div>
 <table class="table table-striped table-hover mt-3">
@@ -126,5 +92,38 @@
     <?php } ?>
     </tbody>
   </table>
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Settings</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Select the columns you wish to add/remove</p>
+          <div class="row">
+            <?php for ($c =1; $c <= 2; $c++) {?>
+                <div class="col-6">
+                  <?php for ($i =1; $i <= 10; $i++) {?>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class ="custom-control-input" checked id="<?php echo $c . '-' .$i ?>">
+                      <label class="custom-control-label" for="<?php echo $c . '-' . $i ?>">
+                        Column <?php echo $c . '-' . $i ?>
+                      </label>
+                    </div>
+                  <?php } ?>
+                </div>
+            <?php } ?>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <?php endblock() ?>

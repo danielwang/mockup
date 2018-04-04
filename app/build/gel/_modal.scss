@@ -2,3 +2,7 @@
 .modal-header, .modal-body, .modal-footer {
   padding: $spacer $spacer * 2;
 }
+
+.modal-header .close {
+  margin: (-$modal-header-padding/2) (-$modal-header-padding) (-$modal-header-padding/2) auto;
+}
