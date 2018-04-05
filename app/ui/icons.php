@@ -39,7 +39,26 @@ function buildSolidIcons(){
     ["copy", "copy"],
     ["close", "close"],
     ["tick", "tick"],
-    ["help", "help"]
+    ["help", "help"],
+    ["settings", "settings"], //new
+    ["folder", "folder"],
+    ["image","image"],
+    ["bookmark","bookmark"],
+    ["chat","chat"],
+    ["compensation","compensation"],
+    ["drag","drag"],
+    ["pencil","pencil"],
+    ["history","history"],
+    ["home","home"],
+    ["location","location"],
+    ["add","add"],
+    ["plus","plus"],
+    ["tag","tag"],
+    ["view","view"],
+    ["resume","resume"],
+    ["slack","slack"],
+    ["github","github"],
+    ["edit","edit"]
   ];
 }
 

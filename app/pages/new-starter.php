@@ -37,14 +37,14 @@
             <input type="radio" name="options" id="option1" autocomplete="off" checked=""> All tasks
           </label>
           <label class="btn btn-ctrl">
-            <input type="radio" name="options" id="option2" autocomplete="off"> Mandy Manger
+            <input type="radio" name="options" id="option2" autocomplete="off"> Manger
           </label>
           <label class="btn btn-ctrl">
-            <input type="radio" name="options" id="option3" autocomplete="off"> Emily Employee
+            <input type="radio" name="options" id="option3" autocomplete="off"> Employee
           </label>
         </div>
       </div>
-      <div class="col-sm-4 d-flex justify-content-end align-items-end">
+      <div class="col-sm-4 d-flex justify-content-end align-items-end mt-3">
         <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#createModal">Create a task</button>
       </div>
   </div>
@@ -68,21 +68,21 @@
             <td data-title="Assigned to">Emily Employee</td>
             <td data-title="Due date">05 March </td>
             <td data-title="Status" class="text-success">Completed</td>
-            <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash"></i></a><i class="dragable gel-icon-drag"></i></td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Attend Culture Orientation</a></th>
             <td data-title="Assigned to">Jacob</td>
             <td data-title="Due date">06 March </td>
             <td data-title="Status" class="text-danger">Overdue</td>
-            <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash"></i></a><i class="dragable gel-icon-drag"></i></td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Provide scope items to new starter</a></th>
             <td data-title="Assigned to">Larry</td>
             <td data-title="Due date">the Bird</td>
             <td data-title="Status">Open</td>
-            <td data-title="Actions"><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash gel-icon-lg"></i></a><a href="#"><i class="gel-icon-trash gel-icon-lg"></i></a></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash"></i></a><i class="dragable gel-icon-drag"></i></td>
           </tr>
         </tbody>
       </table>
@@ -97,7 +97,7 @@
       <div class="modal-header">
         <h3 class="modal-title" id="exampleModalLongTitle">Create a new task</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
+          <span aria-hidden="true" class="gel-icon-close"></span>
         </button>
       </div>
       <div class="modal-body">
@@ -113,12 +113,12 @@
 
 <!-- Delete task Modal -->
 <div class="modal fade" id="deleteTask" tabindex="-1" role="dialog" aria-labelledby="deleteTask" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Delete task?</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+          <span aria-hidden="true" class="gel-icon-close-o"></span>
         </button>
       </div>
       <div class="modal-body">

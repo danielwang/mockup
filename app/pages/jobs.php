@@ -4,7 +4,7 @@
 
 <?php startblock('page-body');?>
 <div class="row">
-  <div class="col-md-5 col-lg-4">
+  <div class="col-md-6 col-lg-4">
     <h5>Visibility</h5>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn btn-ctrl active">
@@ -18,7 +18,7 @@
       </label>
     </div>
   </div>
-  <div class="col-md-5 col-lg-4">
+  <div class="col-md-6 col-lg-4">
     <h5 class="mt-2 mt-md-0">Status</h5>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn btn-ctrl active">
@@ -32,11 +32,12 @@
       </label>
     </div>
   </div>
-  <div class="col-md-2 col-lg-4 d-flex justify-content-end align-items-end">
+  <div class="col-lg-4 d-flex justify-content-sm-end align-items-end mt-3">
       <span class="mb-2 mr-2">133 results</span>
-      <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"> Settings </button>
+      <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"><i aria-hidden="true" class="gel-icon-settings"></i> Settings </button>
   </div>
 </div>
+
 <table class="table table-striped table-hover mt-3">
     <caption class="sr-only">List of jobs</caption>
     <thead class="thead-dark">
@@ -99,7 +100,7 @@
         <div class="modal-header">
           <h3 class="modal-title" id="exampleModalLabel">Settings</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+            <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
           </button>
         </div>
         <div class="modal-body">
@@ -126,4 +127,5 @@
       </div>
     </div>
   </div>
+
 <?php endblock() ?>
