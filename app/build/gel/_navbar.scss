@@ -95,18 +95,16 @@
         background-color: transparent;
         padding-right: 22px;
         color: $white;
-        @include media-breakpoint-up(md) {
-          // larger than md: 768px
-          width: 150px;
-          background-color: #4f617d;
-        }
+        width: 130px;
+        background-color: #4f617d;
+
 
         &::placeholder {
           color: rgba(255, 255, 255, .5);
         }
 
         &:focus {
-          width: 200px;
+          width: 175px;
           padding-right: 32px;
           color: #000;
           background-color: #fff;

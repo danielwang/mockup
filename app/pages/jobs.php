@@ -48,7 +48,7 @@
         </th>
         <th scope="col">Status
         </th>
-        <th scope="col">Applications</th>
+        <!-- <th scope="col">Applications</th> -->
         <th scope="col">Opening date</th>
         <th scope="col">Closing date</th>
         <th scope="col">Actions</th>
@@ -57,7 +57,7 @@
     <tbody>
       <?php for ($x =1; $x <= 15; $x++) {?>
       <tr>
-        <th scope="row">Human Resources Manager <?php echo $x ?> </th>
+        <th scope="row">Human Resources Manager </th>
         <td data-title="Job ID">
           <?php echo $x * 2  + 53302042 ?>
         </td>
@@ -66,7 +66,7 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl"><?php echo random_int(1, 100) ?></a></td>
+        <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
         <td data-title="View">
@@ -74,7 +74,7 @@
         </td>
       </tr>
       <tr>
-        <th scope="row">Retail Customer Service Officer <?php echo $x ?></th>
+        <th scope="row">Retail Customer Service Officer </th>
         <td data-title="Job ID">
           <?php echo $x + 53302042 ?>
         </td>
@@ -83,7 +83,7 @@
         <td data-title="Status">
           Offer Made
         </td>
-        <td data-title="Applications"><a href="cl"><?php echo random_int(1, 100) ?></a></td>
+        <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
         <td data-title="View">
@@ -108,7 +108,7 @@
           <div class="row">
             <?php for ($c =1; $c <= 2; $c++) {?>
                 <div class="col-6">
-                  <?php for ($i =1; $i <= 10; $i++) {?>
+                  <?php for ($i =1; $i <= 5; $i++) {?>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class ="custom-control-input" checked id="<?php echo $c . '-' .$i ?>">
                       <label class="custom-control-label" for="<?php echo $c . '-' . $i ?>">

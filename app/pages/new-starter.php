@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col-sm-6 col-lg-12">
         <h5>Position:</h5>
-        <p>Sennior project manager - Customer Services</p>
+        <p>Sennior project manager</p>
       </div>
       <div class="col-sm-6 col-lg-12">
         <h5>Start Date:</h5>

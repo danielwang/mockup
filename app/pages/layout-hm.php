@@ -19,7 +19,7 @@
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description">
           <div class="card-body">
             <h5 class="mb-4">Position Description</h5>
-            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="empty">0</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
         </div>

@@ -8033,7 +8033,7 @@ label {
   #gel-menu ul li.submenu {
     margin-bottom: 30px;
     list-style: none; }
-  #gel-menu ul h5 {
+  #gel-menu ul h4 {
     color: #10bbf3; }
   #gel-menu ul li {
     margin-bottom: 10px;
@@ -8121,15 +8121,13 @@ label {
     border: 0;
     background-color: transparent;
     padding-right: 22px;
-    color: #fff; }
-  @media (min-width: 768px) {
-        .navbar .navbar-nav .search-group input[type=search] {
-          width: 150px;
-          background-color: #4f617d; } }
+    color: #fff;
+    width: 130px;
+    background-color: #4f617d; }
   .navbar .navbar-nav .search-group input[type=search]::placeholder {
     color: rgba(255, 255, 255, .5); }
   .navbar .navbar-nav .search-group input[type=search]:focus {
-    width: 200px;
+    width: 175px;
     padding-right: 32px;
     color: #000;
     background-color: #fff;
