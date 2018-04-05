@@ -4,8 +4,8 @@
 // --------------------------------------------------
 
 
-$font-family-icon: 'FontAwesome' !default;
-$fa-var-check: "\f00c" !default;
+$font-family-icon: $gel-icon;
+$fa-var-check: "\e91d" !default;
 $check-icon: $fa-var-check !default;
 
 @mixin checkbox-variant($parent, $color) {

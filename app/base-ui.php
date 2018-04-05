@@ -33,26 +33,23 @@
         </div>
         <div class="page-actions col-md-3 col-lg-4">
           <span class="item">
-              <a class="text-center" href="#_" title="Print">
-                <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
+              <a class="text-center" target="_blank" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
+                <i aria-hidden="true" class="gel-icon-lg gel-icon-slack" title="Slack"></i> <span>GEL</span>
               </a>
           </span>
           <span class="item">
-              <a class="text-center" href="#_" title="Feedback">
-                <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
+              <a class="text-center" target="_blank" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/" title="Feedback">
+                <i aria-hidden="true" class="gel-icon-lg gel-icon-beta" title="Bootstrap"></i> <span>Bootstrap</span>
               </a>
           </span>
             <span class="item">
-              <a class="text-center" href="#_" title="Help" data-toggle="dropdown">
-                <i class="gel-icon-lg gel-icon-help" aria-hidden="true"></i> <span>Help</span>
+              <a class="text-center" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" title="Github">
+                <i class="gel-icon-lg gel-icon-github" aria-hidden="true"></i> <span>Github</span>
               </a>
             </span>
           </div>
       </div>
-      <ul class="page-tabs nav" role="tablist">
-        <?php startblock('page-tabs') ?>
-        <?php endblock() ?>
-      </ul>
+      <ul class="page-tabs nav" role="tablist"><?php startblock('page-tabs') ?><?php endblock() ?></ul>
     </div>
 </header>
 <!-- page body -->
