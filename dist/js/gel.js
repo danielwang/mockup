@@ -7,6 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
   for (var i=0;i<menuIcons.length; i++) {
       menuIcons[i].addEventListener('click', () => {
     		menu.classList.toggle('open');
+        if (menu.classList == ""){
+          setAriaExpanded('false');
+        }else {
+          setAriaExpanded('true');
+        }
     	});
+  }
+  // screen reader accessibility 
+  function setAriaExpanded(val){
+    for (var i=0;i<menuIcons.length; i++) {
+      menuIcons[i].setAttribute('aria-expanded', val);
+    }
   }
 });
