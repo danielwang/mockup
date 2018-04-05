@@ -12,7 +12,7 @@
   This is your Manager Dashboard where you will see all your tasks organized in various stages.
   You will also see how many actions are required per task. Please attend to these tasks accordingly.</p>
 <div class="row">
-  <div class="col-md-9">
+  <div class="col-lg-9">
     <div class="row">
       <div class="col-sm-6 col-xl-4 mb-4">
         <div class="card h-100 text-center">
@@ -107,7 +107,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="col-lg-3">
     <h4>Guidelines / Tips</h4>
     <p>Lorem ipsum dolort ametetur adipiscing elit, sed do eiusmod tempor edr incididunt ut labore et dolore magna aliqua. </p>
     <p><a href="#">Ut enim ad minim</a> sersn veniam, quisre sedo nostruds deris exercitation verus ullamco laboris nisi ut aliquip ex ea commodo.</p>
