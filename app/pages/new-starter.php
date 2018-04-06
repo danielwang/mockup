@@ -8,22 +8,22 @@
     <h3>Emily Johnson</h3>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
-        <h5>Position:</h5>
+        <h5 class="mb-0">Position:</h5>
         <p>Sennior project manager</p>
       </div>
       <div class="col-sm-6 col-lg-12">
-        <h5>Start Date:</h5>
+        <h5 class="mb-0">Start Date:</h5>
         <p>31 March 2018</p>
       </div>
     </div>
     <p><button class="btn btn-outline-primary btn-block">Notify Emily updates</button></p>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
-        <h5>Additional tasks</h5>
+        <h5 class="mb-0">Additional tasks</h5>
         <p>Organizational Introductions and Onboarding tasks <a href="#"><i class="gel-icon-add"></i></a></p>
       </div>
       <div class="col-sm-6 col-lg-12">
-        <h5>My Favourite tasks</h5>
+        <h5 class="mb-0">My Favourite tasks</h5>
         <p>There is no task</p>
       </div>
     </div>

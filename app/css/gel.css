@@ -665,7 +665,7 @@ mark, .mark {
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.09375rem; }
+  font-size: 1.25rem; }
 
 .blockquote-footer {
   display: block;
@@ -8456,6 +8456,11 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   .nav-tabs-line + .tab-content {
     padding: 1rem;
     border-top: 1px solid #bac4ce; }
+
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  padding: 3rem 5rem; }
 /*******************************************************
  Variables
  *******************************************************/

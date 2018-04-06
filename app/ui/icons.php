@@ -100,7 +100,7 @@ $lineIcons = buildLineIcons();
 <div class="tab-content">
 <!-- icon library -->
   <div class="tab-pane active" id="icons" role="tabpanel" aria-labelledby="icons-tab">
-    <p class="lead">The design of system icons is simple, modern, friendly, and sometimes quirky. Each icon is reduced to its minimal form, with every idea edited to its essence. The designs ensure readability and clarity even at small sizes.</p>
+    <blockquote class="blockquote">The design of system icons is simple, modern, friendly, and sometimes quirky. Each icon is reduced to its minimal form, with every idea edited to its essence. The designs ensure readability and clarity even at small sizes.</blockquote>
     <h4>Design principles:</h4>
     <p>Bold, Friendly, Modern, Universal, Accessible, Simple</p>
     <ul class="nav nav-tabs-line" role="tablist">
