@@ -19,6 +19,11 @@
 	font-family: 'Proxima Nova Semibold';
 }
 
+@mixin font-light() {
+	font-weight: 400;
+	font-family: 'Proxima Nova Light';
+}
+
 // @mixin dropdown-menu (){
 // 	max-width: 16rem;
 // 	@include border-radius(0.5rem);

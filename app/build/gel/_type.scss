@@ -1,5 +1,5 @@
 .blockquote {
-  margin-bottom: $spacer;
   font-size: $blockquote-font-size;
-  padding: $spacer * 3 $spacer * 5; 
+  margin: $spacer 0 $spacer * 2 0;
+  @include font-light();
 }

@@ -292,6 +292,9 @@
 
 .gel-icon-view-o:before {
   content: "\e91c"; }
+
+.gel-icon-sketch:before {
+  content: "\e957"; }
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7719,6 +7722,10 @@ button.close {
   font-family: 'Proxima Nova Bold';
   src: url('fonts/ProximaNova-Bold.otf'); }
 
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('fonts/ProximaNova-Light.otf'); }
+
 html {
   height: 100%; }
 
@@ -8319,7 +8326,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     background-color: transparent;
     padding-right: 22px;
     color: #fff;
-    width: 130px;
+    width: 145px;
     background-color: #4f617d; }
   .navbar .navbar-nav .search-group input[type=search]::placeholder {
     color: rgba(255, 255, 255, .5); }
@@ -8458,9 +8465,10 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     border-top: 1px solid #bac4ce; }
 
 .blockquote {
-  margin-bottom: 1rem;
   font-size: 1.25rem;
-  padding: 3rem 5rem; }
+  margin: 1rem 0 2rem 0;
+  font-weight: 400;
+  font-family: 'Proxima Nova Light'; }
 /*******************************************************
  Variables
  *******************************************************/
