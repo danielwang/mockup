@@ -14,10 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     	});
   }
-  // screen reader accessibility 
+  // screen reader accessibility
   function setAriaExpanded(val){
     for (var i=0;i<menuIcons.length; i++) {
       menuIcons[i].setAttribute('aria-expanded', val);
     }
   }
+
 });

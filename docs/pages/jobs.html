@@ -23,6 +23,11 @@
     </head>
 <body>
 <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
+<script>
+function popupWindow(url) {
+   window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=50,left=50,width=1024,height=800");
+}
+</script>
 
       <!-- ************ menu ************  -->
        <aside id="gel-menu" role='menu'>
@@ -158,7 +163,7 @@
 <li class="nav-item recent-items">
   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recent items</a>
   <div class="dropdown-menu dropdown-menu-right">
-    <a class="dropdown-item" href="#">
+    <a class="dropdown-item" href="#" onclick="popupWindow('http://localhost:9000/mockup/app/pages/new-starter')">
       <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
       Mr Daniel Appllicant</a>
     <a class="dropdown-item" href="#">
