@@ -8,22 +8,22 @@
     <h3>Emily Johnson</h3>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
-        <h5 class="mb-0">Position:</h5>
+        <h6 class="mb-0">Position:</h6>
         <p>Sennior project manager</p>
       </div>
       <div class="col-sm-6 col-lg-12">
-        <h5 class="mb-0">Start Date:</h5>
+        <h6 class="mb-0">Start Date:</h6>
         <p>31 March 2018</p>
       </div>
     </div>
     <p><button class="btn btn-outline-primary btn-block">Notify Emily updates</button></p>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
-        <h5 class="mb-0">Additional tasks</h5>
+        <h6 class="mb-0">Additional tasks</h6>
         <p>Organizational Introductions and Onboarding tasks <a href="#"><i class="gel-icon-add"></i></a></p>
       </div>
       <div class="col-sm-6 col-lg-12">
-        <h5 class="mb-0">My Favourite tasks</h5>
+        <h6 class="mb-0">My Favourite tasks</h6>
         <p>There is no task</p>
       </div>
     </div>
@@ -95,9 +95,9 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLongTitle">Create a new task</h3>
+        <h2 class="modal-title" id="exampleModalLongTitle">Create a new task</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close"></span>
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">
@@ -116,9 +116,9 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title">Delete task?</h3>
+        <h2 class="modal-title">Delete task?</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close-o"></span>
+          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">
