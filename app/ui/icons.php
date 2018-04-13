@@ -104,8 +104,18 @@ $lineIcons = buildLineIcons();
 <!-- icon library -->
   <div class="tab-pane active" id="icons" role="tabpanel" aria-labelledby="icons-tab">
 
-    <h4>Design principles:</h4>
-    <p>Bold, Friendly, Modern, Universal, Accessible, Simple</p>
+    <h3>When to use icons</h3>
+    <p>Icons are powerful visual helpers, and should be used with care. Overuse quickly results in UIs that are visually overwhelming or distracting.</p>
+
+    <p>Icons are commonly used:</p>
+
+    <ul>
+      <li> In primary navigation </li>
+      <li>In page headers and section titles</li>
+      <li>In banners to bring attention to a specific theme (an announcement, an error, etc.)</li>
+      <li>Inline with text to add clarity</li>
+      <li>To direct a user’s attention to something they can take action on, or which results in an action</li>
+    </ul>
     <ul class="nav nav-tabs-line" role="tablist">
       <li class="nav-item">
          <a class="nav-link active" id="solid-icons-tab" data-toggle="tab" href="#solid-icons" role="tab" aria-controls="solid-icons" aria-selected="true">Solid</a>

@@ -8,30 +8,33 @@
     <h3>Emily Johnson</h3>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
-        <h6 class="mb-0">Position:</h6>
+        <h5 class="mb-0">Position:</h5>
         <p>Sennior project manager</p>
       </div>
       <div class="col-sm-6 col-lg-12">
-        <h6 class="mb-0">Start Date:</h6>
+        <h5 class="mb-0">Start Date:</h5>
         <p>31 March 2018</p>
       </div>
     </div>
-    <p><button class="btn btn-outline-primary btn-block">Notify Emily updates</button></p>
+    <p class="mb-5"><button class="btn btn-outline-primary btn-block">Notify Emily of updates</button></p>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
-        <h6 class="mb-0">Additional tasks</h6>
-        <p>Organizational Introductions and Onboarding tasks <a href="#"><i class="gel-icon-add"></i></a></p>
+        <h5 class="mb-1">Additional tasks</h5>
+        <p class="border-bottom">Organizational Introductions and Onboarding tasks <span class="float-right"><a href="#"><i class="gel-icon-add"></i></a></span></p>
+        <p class="border-bottom">New starter signed contract?<span class="float-right"><a href="#"><i class="gel-icon-add"></i></a></span></p>
+        <p class="border-bottom">On-site client visit <span class="float-right"><a href="#"><i class="gel-icon-add"></i></a></span></p>
       </div>
       <div class="col-sm-6 col-lg-12">
-        <h6 class="mb-0">My Favourite tasks</h6>
-        <p>There is no task</p>
+        <h5 class="mt-4 mb-1">My Favourite tasks</h5>
+        <p class="border-bottom">Probation Check <span class="float-right"><a href="#"><i class="gel-icon-pencil"></i></a><a href="#"><i class="gel-icon-add"></i></a></span></p>
+        <p class="border-bottom">Coffee with new starter <span class="float-right"><a href="#"><i class="gel-icon-pencil"></i></a><a href="#"><i class="gel-icon-add"></i></a></span></p>
       </div>
     </div>
   </div>
   <div class="col-lg-9">
     <div class="row">
       <div class="col-sm-8">
-        <h6>Visibility</h6>
+        <h5>Visibility</h5>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-ctrl active">
             <input type="radio" name="options" id="option1" autocomplete="off" checked=""> All tasks
@@ -50,7 +53,7 @@
   </div>
 
     <?php for ($c =1; $c <= 4; $c++) {?>
-      <h5 class="mt-5">Before James's First Day</h5>
+      <h4 class="mt-5">Before James's First Day</h4>
       <table class="table mt-2">
         <caption class="sr-only">List of tasks</caption>
         <thead class="thead-dark">

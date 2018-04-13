@@ -18,7 +18,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description">
           <div class="card-body">
-            <h5 class="mb-4">Position Description</h5>
+            <h4 class="mb-4">Position Description</h4>
             <p class="card-text"><a href="empty">0</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -28,7 +28,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Jobs">
           <div class="card-body">
-            <h5 class="mb-4">Jobs</h5>
+            <h4 class="mb-4">Jobs</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
             <p><button type="button" class="btn btn-primary">Create a job</button></p>
@@ -39,7 +39,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/approval.svg" alt="Approval">
           <div class="card-body">
-            <h5 class="mb-4">Approval</h5>
+            <h4 class="mb-4">Approval</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -49,7 +49,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/sourcing.svg" alt="Advertising">
           <div class="card-body">
-            <h5 class="mb-4">Advertising</h5>
+            <h4 class="mb-4">Advertising</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -59,7 +59,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/list.svg" alt="Shortlisting">
           <div class="card-body">
-            <h5 class="mb-4">Shortlisting</h5>
+            <h4 class="mb-4">Shortlisting</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -69,7 +69,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/panel.svg" alt="Panel">
           <div class="card-body">
-            <h5 class="mb-4">Panel</h5>
+            <h4 class="mb-4">Panel</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -79,7 +79,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/interview.svg" alt="Interview">
           <div class="card-body">
-            <h5 class="mb-4">Interview</h5>
+            <h4 class="mb-4">Interview</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -89,7 +89,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/offer.svg" alt="Offer">
           <div class="card-body">
-            <h5 class="mb-4">Offer</h5>
+            <h4 class="mb-4">Offer</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -99,7 +99,7 @@
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/contract.svg" alt="Contract">
           <div class="card-body">
-            <h5 class="mb-4">Contract</h5>
+            <h4 class="mb-4">Contract</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
           </div>
@@ -108,7 +108,7 @@
     </div>
   </div>
   <div class="col-lg-3">
-    <h4>Guidelines / Tips</h4>
+    <h3>Guidelines / Tips</h3>
     <p>Lorem ipsum dolort ametetur adipiscing elit, sed do eiusmod tempor edr incididunt ut labore et dolore magna aliqua. </p>
     <p><a href="#">Ut enim ad minim</a> sersn veniam, quisre sedo nostruds deris exercitation verus ullamco laboris nisi ut aliquip ex ea commodo.</p>
     </p>

@@ -64,3 +64,9 @@ label{
 ##{$prefix}-main {
   padding: 30px 0;
 }
+
+.form-control{
+  &:focus{
+    box-shadow: 0 0 0px 1px $primary;
+  }
+}
