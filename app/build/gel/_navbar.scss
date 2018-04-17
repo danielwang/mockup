@@ -88,7 +88,7 @@
       height: $navbar-height;
 
       input[type=search] {
-        border-radius: 10em;
+        border-radius: $border-radius-sm;
         transition: all 0.5s;
         width: 0;
         border: 0;
@@ -106,12 +106,12 @@
         &:focus {
           width: 175px;
           padding-right: 32px;
-          color: #000;
-          background-color: #fff;
+          color: $body-color;
+          background-color: $white;
           cursor: auto;
 
           + .btn-submit {
-            color: #4f617d;
+            color: $body-color;
           }
         }
 

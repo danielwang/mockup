@@ -2888,7 +2888,7 @@ tbody.collapse.show {
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #0063b0; }
+    background-color: #fff; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #6c757d;
     background-color: transparent; }
@@ -8061,7 +8061,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     border-bottom: 10px solid #fff;
     border-left: 10px solid transparent; }
   .dropdown-menu .dropdown-item {
-    color: #415365;
+    color: #63778b;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     font-weight: 400;
@@ -8069,9 +8069,11 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     font-size: 1rem;
     margin-bottom: 0.25rem; }
   .dropdown-menu .dropdown-item:hover {
-    color: #11b1ee; }
+    color: #10bbf3; }
+  .dropdown-menu .dropdown-item:hover [class^="gel-icon-"] {
+    color: #10bbf3; }
   .dropdown-menu .dropdown-item [class^="gel-icon-"] {
-    color: #aab9d0;
+    color: #9caab8;
     margin-right: 0.5rem;
     vertical-align: text-bottom;
     font-size: 1.1rem; }
@@ -8333,7 +8335,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     align-items: center;
     height: 3.75rem; }
   .navbar .navbar-nav .search-group input[type=search] {
-    border-radius: 10em;
+    border-radius: 0.25rem;
     transition: all 0.5s;
     width: 0;
     border: 0;
@@ -8347,11 +8349,11 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   .navbar .navbar-nav .search-group input[type=search]:focus {
     width: 175px;
     padding-right: 32px;
-    color: #000;
+    color: #415365;
     background-color: #fff;
     cursor: auto; }
     .navbar .navbar-nav .search-group input[type=search]:focus + .btn-submit {
-      color: #4f617d; }
+      color: #415365; }
   .navbar .navbar-nav .search-group input[type=search] + .btn-submit {
     position: absolute;
     right: 0.5rem;

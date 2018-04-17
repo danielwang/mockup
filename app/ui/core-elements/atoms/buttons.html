@@ -1,55 +1,95 @@
-<blockquote class="blockquote">
-  Buttons are used to invoke an event
-</blockquote>
-
-<div class="btn-group btn-group-toggle" data-toggle="buttons">
-  <label class="btn btn-ctrl active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked="checked">
-    Active
-  </label>
-  <label class="btn btn-ctrl">
-    <input type="radio" name="options" id="option2" autocomplete="off">
-    Radio
-  </label>
-  <label class="btn btn-ctrl">
-    <input type="radio" name="options" id="option3" autocomplete="off">
-    Radio
-  </label>
-</div>
-
-<button class="btn btn-ctrl" type="button">
-  <i aria-hidden="true" class="gel-icon-settings"></i>
-  Settings
-</button>
-<hr>
+<h3>Default</h3>
+<p>Each serving its own semantic purpose</p>
 <p>
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-secondary">Secondary</button>
   <button type="button" class="btn btn-success">Success</button>
   <button type="button" class="btn btn-danger">Danger</button>
   <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-light">Light</button>
-  <button type="button" class="btn btn-dark">Dark</button>
-  <button type="button" class="btn btn-link">Link</button>
+  <!-- <button type="button" class="btn btn-light">Light</button> <button type="button" class="btn btn-dark">Dark</button> -->
 </p>
+<h3 class="mt-5">Outline</h3>
+<p>Replace the default modifier classes with the
+  <code>.btn-outline-*</code>
+  ones to remove all background images and colors on any button.</p>
 <p>
   <button type="button" class="btn btn-outline-primary">Primary</button>
   <button type="button" class="btn btn-outline-secondary">Secondary</button>
   <button type="button" class="btn btn-outline-success">Success</button>
   <button type="button" class="btn btn-outline-danger">Danger</button>
   <button type="button" class="btn btn-outline-warning">Warning</button>
-  <button type="button" class="btn btn-outline-info">Info</button>
-  <button type="button" class="btn btn-outline-light">Light</button>
-  <button type="button" class="btn btn-outline-dark">Dark</button>
+  <!-- <button type="button" class="btn btn-outline-info">Info</button> <button type="button" class="btn btn-outline-light">Light</button> <button type="button" class="btn btn-outline-dark">Dark</button> -->
 </p>
+<h3 class="mt-5">Disabled state</h3>
 <p>
-  <button type="button" class="btn btn-primary btn-lg">Large button</button>
-  <button type="button" class="btn btn-secondary btn-lg">Large button</button>
-  <button type="button" class="btn btn-primary btn-sm">Small button</button>
-  <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+  <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
+  <button type="button" class="btn btn-secondary" disabled="disabled">Secondary</button>
+  <button type="button" class="btn btn-success" disabled="disabled">Success</button>
+  <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
+  <button type="button" class="btn btn-warning" disabled="disabled">Warning</button>
+  <!-- <button type="button" class="btn btn-light">Light</button> <button type="button" class="btn btn-dark">Dark</button> -->
 </p>
-<p>
-  <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-  <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-</p>
+<h3 class="mt-5">Sizes</h3>
+<div class="row">
+  <div class="col-6">
+    <p>
+      <code>.btn-lg</code>
+    </p>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg">Large button</button>
+  </div>
+  <div class="col-6">
+    <p>
+      <code>.btn-sm</code>
+    </p>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-outline-secondary btn-sm">Small button</button>
+  </div>
+</div>
+
+<h3 class="mt-5">Block</h3>
+<div class="row">
+  <div class="col-sm-6">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Block level button</button>
+  </div>
+</div>
+
+<h3 class="mt-5">Controls</h3>
+<button class="btn btn-ctrl" type="button">
+  <i aria-hidden="true" class="gel-icon-settings"></i>
+  Settings
+</button>
+
+<h3 class="mt-5">Segmented controls</h3>
+<div class="row">
+  <div class="col-6">
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-ctrl active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked="checked">
+        All
+      </label>
+      <label class="btn btn-ctrl">
+        <input type="radio" name="options" id="option2" autocomplete="off">
+        Manager
+      </label>
+      <label class="btn btn-ctrl">
+        <input type="radio" name="options" id="option3" autocomplete="off">
+        Employee
+      </label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-sm btn-ctrl active">
+        <input type="radio" name="options-sm" id="option1" autocomplete="off" checked="checked">
+        Active
+      </label>
+      <label class="btn btn-sm btn-ctrl">
+        <input type="radio" name="options-sm" id="option2" autocomplete="off">
+        Inactive
+      </label>
+    </div>
+  </div>
+</div>
+<hr>
