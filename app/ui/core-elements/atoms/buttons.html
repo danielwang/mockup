@@ -29,6 +29,12 @@
   <button type="button" class="btn btn-warning" disabled="disabled">Warning</button>
   <!-- <button type="button" class="btn btn-light">Light</button> <button type="button" class="btn btn-dark">Dark</button> -->
 </p>
+
+<h3 class="mt-5">Loading state</h3>
+<p>
+  <button type="button" class="btn btn-primary loading" disabled="disabled">Loading</button>
+  <button type="button" class="btn btn-danger loading" disabled="disabled">Deleting</button>
+</p>
 <h3 class="mt-5">Sizes</h3>
 <div class="row">
   <div class="col-6">
@@ -56,11 +62,26 @@
 </div>
 
 <h3 class="mt-5">Controls</h3>
-<button class="btn btn-ctrl" type="button">
-  <i aria-hidden="true" class="gel-icon-settings"></i>
-  Settings
-</button>
-
+<div class="row">
+  <div class="col-6">
+    <button class="btn btn-ctrl" type="button">
+      <i aria-hidden="true" class="gel-icon-settings"></i>
+      Settings
+    </button>
+  </div>
+  <div class="col-6">
+    <div class="dropdown">
+      <button class="btn btn-ctrl dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Actions
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+  </div>
+</div>
 <h3 class="mt-5">Segmented controls</h3>
 <div class="row">
   <div class="col-6">
