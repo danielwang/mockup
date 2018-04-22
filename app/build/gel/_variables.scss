@@ -268,8 +268,8 @@ $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              .875rem !default;; // Reset base font size to 14px
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-lg:                1rem !default;
+$font-size-sm:                $font-size-base !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -715,11 +715,11 @@ $card-columns-margin:               $card-spacer-y !default;
 $tooltip-font-size:           $font-size-sm !default;
 $tooltip-max-width:           200px !default;
 $tooltip-color:               $white !default;
-$tooltip-bg:                  $black !default;
-$tooltip-border-radius:        $border-radius !default;
+$tooltip-bg:                  $body-color !default;
+$tooltip-border-radius:       $border-radius !default;
 $tooltip-opacity:             .9 !default;
-$tooltip-padding-y:           .25rem !default;
-$tooltip-padding-x:           .5rem !default;
+$tooltip-padding-y:           .375rem !default;
+$tooltip-padding-x:           .75rem !default;
 $tooltip-margin:              0 !default;
 
 $tooltip-arrow-width:         .8rem !default;

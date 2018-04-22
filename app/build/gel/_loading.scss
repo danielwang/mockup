@@ -1,0 +1,110 @@
+//
+// Balls Spinner
+// --------------------------------------------------
+$transparent: transparent;
+$boxSize: 48px;
+$speed: 1s; /*Global Mixins*/
+
+@mixin bounding-box($width, $height) {
+  width: $width;
+  height: $height;
+  display: inline-block;
+  box-sizing: border-box;
+}
+/*Global Spinner*/
+
+.spinner {
+  @include bounding-box($boxSize, $boxSize);
+  position: relative;
+}
+
+.balls,
+.balls-sm {
+  animation: balls-animate $speed linear infinite;
+}
+
+.balls:before {
+  border-radius: 50%;
+  content: " ";
+  @include bounding-box($boxSize/2, $boxSize/2);
+  background-color: $primary;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: balls-animate-before $speed ease-in-out infinite;
+}
+
+.balls:after {
+  border-radius: 50%;
+  content: " ";
+  @include bounding-box($boxSize/2, $boxSize/2);
+  background-color: $secondary;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: balls-animate-after $speed ease-in-out infinite;
+}
+/* small */
+
+.spinner-sm {
+  @include bounding-box($boxSize/2, $boxSize/2);
+  position: relative;
+}
+
+.balls-sm:before {
+  border-radius: 50%;
+  content: " ";
+  @include bounding-box($boxSize/4, $boxSize/4);
+  background-color: $primary;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: balls-animate-before $speed ease-in-out infinite;
+}
+
+.balls-sm:after {
+  border-radius: 50%;
+  content: " ";
+  @include bounding-box($boxSize/4, $boxSize/4);
+  background-color: $secondary;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: balls-animate-after $speed ease-in-out infinite;
+}
+/*Balls Spinner Animation*/
+@keyframes balls-animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes balls-animate-before {
+  0% {
+    transform: translate(-5px, -5px);
+  }
+
+  50% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(-5px, -5px);
+  }
+}
+@keyframes balls-animate-after {
+  0% {
+    transform: translate(5px, 5px);
+  }
+
+  50% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(5px, 5px);
+  }
+}
