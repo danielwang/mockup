@@ -1,0 +1,110 @@
+$check-icon: "\e91d" !default;
+$bucket-size-default: 18px;
+$bucket-size-lg: 30px;
+$bucket-colors: () !default;
+$bucket-colors: map-merge((
+  "red":        $red,
+  "orange":     $orange,
+  "green":      $green,
+), $bucket-colors);
+
+.bucket {
+  cursor: default;
+  margin: 0 $spacer/2;
+  display: inline-block;
+
+  label {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    &::before {
+      cursor: pointer;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: $bucket-size-default;
+      height: $bucket-size-default;
+      top: 2px;
+      left: 0;
+      border: 1px solid $input-border-color;
+      border-radius: 50%;
+      background-color:$white;
+      @include transition(border 0.15s ease-in-out, color 0.15s ease-in-out);
+    }
+
+    &::after {
+      cursor: pointer;
+      display: inline-block;
+      position: absolute;
+      width: ($bucket-size-default - 4);
+      height: ($bucket-size-default - 4);
+      left: 2px;
+      top: 4px;
+      font-size: 11px;
+      background-color: $white;
+      color: $input-color;
+      border-radius: 50%;
+      text-align: center;
+    }
+  }
+
+  input[type="radio"] {
+    position: static;
+    margin-left: 0;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+
+    &:focus + label::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+
+    &:checked + label::after {
+      font-family: $gel-icon;
+      content: $check-icon;
+    }
+  }
+}
+@mixin bucket-variant($color) {
+  label {
+    &::before {
+      border-color: $color;
+    }
+
+    &::after {
+      color: $color;
+    }
+  }
+}
+
+@each $color, $value in $bucket-colors {
+  .bucket-#{$color} {
+    @include bucket-variant($value);
+  }
+}
+
+@mixin bucket-size($size) {
+  label {
+    &::before {
+      width: $size;
+      height: $size;
+      border-width: 2px;
+      top: 4px;
+    }
+
+    &::after {
+      font-size: 18px;
+      width: ($size - 4);
+      height: ($size - 4);
+      top: 6px;
+    }
+  }
+}
+
+.bucket-lg {
+  @include bucket-size($bucket-size-lg);
+}

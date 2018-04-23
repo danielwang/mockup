@@ -7809,6 +7809,78 @@ label {
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
 
+.bucket {
+  cursor: default;
+  margin: 0 0.5rem;
+  display: inline-block; }
+  .bucket label {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    position: relative; }
+  .bucket label::before {
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: 0;
+    border: 1px solid #bac4ce;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+  .bucket label::after {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 2px;
+    top: 4px;
+    font-size: 11px;
+    background-color: #fff;
+    color: #415365;
+    border-radius: 50%;
+    text-align: center; }
+  .bucket input[type="radio"] {
+    position: static;
+    margin-left: 0;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1; }
+  .bucket input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  .bucket input[type="radio"]:checked + label::after {
+    font-family: "gel-icon";
+    content: "\e91d"; }
+  .bucket-red label::before {
+    border-color: #d53d39; }
+  .bucket-red label::after {
+    color: #d53d39; }
+  .bucket-orange label::before {
+    border-color: #f78764; }
+  .bucket-orange label::after {
+    color: #f78764; }
+  .bucket-green label::before {
+    border-color: #008a02; }
+  .bucket-green label::after {
+    color: #008a02; }
+
+.bucket-lg label::before {
+  width: 30px;
+  height: 30px;
+  border-width: 2px;
+  top: 4px; }
+  .bucket-lg label::after {
+    font-size: 18px;
+    width: 26px;
+    height: 26px;
+    top: 6px; }
+
 .btn {
   font-weight: 700;
   font-family: 'Nunito', sans-serif; }
@@ -8474,6 +8546,9 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     padding: 0.25rem;
     width: 26px;
     height: 26px; }
+
+#popup-top {
+  padding: 1.5rem 0; }
 
 .table {
   border-collapse: separate;

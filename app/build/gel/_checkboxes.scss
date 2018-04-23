@@ -3,10 +3,7 @@
 //  http://flatlogic.github.io/awesome-bootstrap-checkbox/demo/1.0.0/
 // --------------------------------------------------
 
-
-$font-family-icon: $gel-icon;
-$fa-var-check: "\e91d" !default;
-$check-icon: $fa-var-check !default;
+$check-icon: "\e91d" !default;
 
 @mixin checkbox-variant($parent, $color) {
   #{$parent} input[type="checkbox"]:checked + label,
@@ -92,7 +89,7 @@ $check-icon: $fa-var-check !default;
     }
 
     &:checked + label::after{
-      font-family: $font-family-icon;
+      font-family: $gel-icon;
       content: $check-icon;
     }
 
