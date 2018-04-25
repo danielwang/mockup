@@ -33,6 +33,11 @@
     border-left: 10px solid transparent;
   }
 
+  &.dropdown-menu-right{
+    left: auto;
+    right:-0.75rem;
+  }
+
   .dropdown-item {
     color: $ctrl;
     -webkit-transition: all 0.3s ease;

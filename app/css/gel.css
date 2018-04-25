@@ -8143,6 +8143,9 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     border-right: 10px solid transparent;
     border-bottom: 10px solid #fff;
     border-left: 10px solid transparent; }
+  .dropdown-menu.dropdown-menu-right {
+    left: auto;
+    right: -0.75rem; }
   .dropdown-menu .dropdown-item {
     color: #63778b;
     -webkit-transition: all 0.3s ease;
