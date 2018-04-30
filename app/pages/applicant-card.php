@@ -7,7 +7,7 @@
         <div class="col-md-6">
           <h2 class="text-white">Victoria Johnson</h2>
         </div>
-        <div class="col-md-6">
+        <div class="col-6 col-md-2">
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-sm btn-ctrl active">
               <input type="radio" name="options-sm" id="option1" autocomplete="off" checked="checked">
@@ -18,6 +18,8 @@
               Inactive
             </label>
           </div>
+        </div>
+        <div class="col-6 col-md-2">
           <fieldset class="d-inline">
             <div class="bucket bucket-green bucket-lg">
               <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
@@ -41,6 +43,18 @@
               </label>
             </div>
           </fieldset>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="dropdown">
+            <button class="btn btn-ctrl btn-sm dropdown-menu-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Actions
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="w-100 mt-3"></div>

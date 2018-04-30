@@ -86,6 +86,7 @@
       display: flex;
       align-items: center;
       height: $navbar-height;
+      margin: 0;
 
       input[type=search] {
         border-radius: $border-radius-sm;

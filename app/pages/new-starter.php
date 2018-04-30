@@ -33,7 +33,7 @@
   </div>
   <div class="col-lg-9">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8 col-md-6">
         <h5>Visibility</h5>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-ctrl active">
@@ -47,7 +47,7 @@
           </label>
         </div>
       </div>
-      <div class="col-sm-4 d-flex justify-content-end align-items-end mt-3">
+      <div class="col-sm-4 offset-md-2 col-md-4 d-flex justify-content-end align-items-end mt-3">
         <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#createModal">Create a task</button>
       </div>
   </div>

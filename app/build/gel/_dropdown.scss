@@ -1,6 +1,8 @@
 
 .dropdown-toggle{
   margin-right: $spacer;
+  padding-right: 1.75rem;
+
   &:after{
     vertical-align: baseline;
     border:0;
