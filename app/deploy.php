@@ -7,7 +7,7 @@
 // echo "<p>latest <a href='index.html'>Styleguide</a> has been generated</p>";
 
 /* read php files from folders */
-$folders = array("pages");
+$folders = array("pages", "ui");
 for ($i = 0; $i < count($folders); $i++) {
   echo "<ul><li>";
   //generate files
@@ -24,16 +24,17 @@ function recurseDir($folderpath) {
 
   foreach($files as $file){
     if($file != '.' && $file != '..'){
-      if(is_dir($folderpath . '/' . $file)){
-        echo "<li> $file <i>Subfolder</i>";
-        $file_path = $folderpath . DIRECTORY_SEPARATOR . $file;
-        recurseDir($file_path);
-        echo "</li>";
-      }else{
+      // if there are sub directories
+      // if(is_dir($folderpath . '/' . $file)){
+      //   echo "<li> $file <i>Subfolder</i>";
+      //   $file_path = $folderpath . DIRECTORY_SEPARATOR . $file;
+      //   recurseDir($file_path);
+      //   echo "</li>";
+      // }else{
         $folderpath = str_replace('/', DIRECTORY_SEPARATOR, $folderpath);
         echo "<li>$folderpath -> $file</li>";
         viewSource($folderpath, $file);
-      }
+      // }
     }
   }
   echo "</ul>";
