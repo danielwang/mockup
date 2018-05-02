@@ -1,7 +1,7 @@
 var menu = document.getElementById('gel-menu');
 var menuIcons = document.getElementsByClassName('nav-toggle');
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   // read menu state from localStorage
   //  menuState();
   toggleMenu();
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function toggleMenu() {
   // sliding menu toggle
   for (var i = 0; i < menuIcons.length; i++) {
-    menuIcons[i].addEventListener('click', () => {
+    menuIcons[i].addEventListener('click', function() {
       menu.classList.toggle('open');
       if (menu.classList == "") {
         setAriaExpanded('false');

@@ -1,7 +1,99 @@
 <?php $pageTitle = "Golbal Experience Language"; include '../base-ui.php';?>
-
+<?php startblock('page-tagline');?>A living styleguide for designers & developers at PageUp<?php endblock() ?>
 <?php startblock('page-body');?>
-
+<div class="row">
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/pd.svg" alt="Position Description">
+          <div class="card-body">
+            <h4 class="mb-4">Position Description</h4>
+            <p class="card-text"><a href="empty">0</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/job.svg" alt="Jobs">
+          <div class="card-body">
+            <h4 class="mb-4">Jobs</h4>
+            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+            <p><button type="button" class="btn btn-primary">Create a job</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/approval.svg" alt="Approval">
+          <div class="card-body">
+            <h4 class="mb-4">Approval</h4>
+            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/sourcing.svg" alt="Advertising">
+          <div class="card-body">
+            <h4 class="mb-4">Advertising</h4>
+            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/list.svg" alt="Shortlisting">
+          <div class="card-body">
+            <h4 class="mb-4">Shortlisting</h4>
+            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/panel.svg" alt="Panel">
+          <div class="card-body">
+            <h4 class="mb-4">Panel</h4>
+            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/interview.svg" alt="Interview">
+          <div class="card-body">
+            <h4 class="mb-4">Interview</h4>
+            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/offer.svg" alt="Offer">
+          <div class="card-body">
+            <h4 class="mb-4">Offer</h4>
+            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/contract.svg" alt="Contract">
+          <div class="card-body">
+            <h4 class="mb-4">Contract</h4>
+            <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
+            <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <svg width="246px" height="246px" viewBox="0 0 246 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
