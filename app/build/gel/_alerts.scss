@@ -1,0 +1,69 @@
+//
+// Message styles
+//
+
+.notification {
+  position: relative;
+  padding: $spacer;
+  text-align: center;
+  @include font-semibold;
+}
+
+
+// Provide class for links that match alerts
+.notification-link {
+  @include font-bold;
+  text-decoration: underline;
+}
+
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.notification-dismissible {
+  padding-right: ($close-font-size + $alert-padding-x * 2);
+
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $alert-padding-y $alert-padding-x;
+    color: inherit;
+  }
+}
+
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+// @each $color, $value in $theme-colors {
+//   .alert-#{$color} {
+//     @include alert-variant($color, $color, $white);
+//   }
+// }
+
+
+
+@mixin notification-variant($background, $border, $color) {
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border;
+
+  .notification-link {
+    color: darken($color, 10%);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .notification-#{$color} {
+    @include notification-variant($value, $value, $white);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant(lighten($value, 60%), $value, $body-color);
+  }
+}

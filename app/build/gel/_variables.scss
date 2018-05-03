@@ -69,7 +69,7 @@ $indigo:  #6610f2 !default;
 $purple:  #7E52A0 !default;
 $pink:    #e83e8c !default;
 $red:     #D53D39 !default;
-$orange:  #F78764 !default;
+$orange:  #f38900 !default;
 $yellow:  #E1A931 !default;
 $green:   #008A02 !default;
 $teal:    #20c997 !default;
@@ -99,7 +99,7 @@ $primary:       $blue !default;
 $secondary:     $ctrl !default;
 $success:       $green !default;
 $info:          $azure !default;
-$warning:       $yellow !default;
+$warning:       $orange !default;
 $danger:        $red !default;
 $light:         $gray-300 !default;
 $dark:          $gray-800 !default;
@@ -113,10 +113,7 @@ $theme-colors: map-merge((
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark,
-  "navy":       $navy
+  "danger":     $danger
 ), $theme-colors);
 // stylelint-enable
 
