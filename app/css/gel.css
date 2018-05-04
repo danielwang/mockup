@@ -8344,7 +8344,6 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
   min-height: 100%;
   width: 300px;
   background: #4f596a;
@@ -8373,12 +8372,12 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   #gel-menu .nav-toggle.close {
     position: absolute;
     top: 0;
-    left: 10px; }
+    right: 0; }
   #gel-menu .nav-toggle.close :hover {
     color: white; }
   #gel-menu .logo {
-    margin-left: 52px;
-    margin-top: 12px;
+    margin-left: 45px;
+    margin-top: 10px;
     display: block; }
   @media (min-width: 768px) {
     #gel-menu .logo {
@@ -8410,7 +8409,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   #gel-menu menu {
     margin-top: 3.75rem;
     padding: 0 2.8125rem; }
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     #gel-menu menu {
       position: sticky;
       top: 3.75rem;
@@ -8444,7 +8443,12 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     font-weight: 400;
-    font-family: 'Proxima Nova'; }
+    font-family: 'Proxima Nova';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+    display: inherit; }
   #gel-menu ul li a:hover {
     color: #11b1ee;
     margin-left: 8px; }

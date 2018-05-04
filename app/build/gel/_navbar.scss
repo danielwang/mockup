@@ -16,8 +16,15 @@
       margin-right: $spacer;
       height: $navbar-height;
 
-      .nav-link.dropdown-toggle:after {
-        color: rgba($navbar-dark-color, .5);
+      .nav-link{
+        // accessibility
+        // &:focus{
+        //   outline:2px dotted #4f617d
+        // }
+
+        &.dropdown-toggle:after {
+          color: rgba($navbar-dark-color, .5);
+        }
       }
     }
 

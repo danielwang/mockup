@@ -20,7 +20,8 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-  	    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+        <!-- IE fix: polyfill js must be in head, so IE render content properly-->
+  	  <script type="text/javascript" src="<?php echo ($resURL) ?>js/polyfill.min.js"></script>
   </head>
   <body>
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
