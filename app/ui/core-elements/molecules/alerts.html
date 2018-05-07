@@ -1,23 +1,29 @@
 <h3>Notifications</h3>
 <div class="notification notification-info" role="notification">
+  <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
   This is a info alert—check it out!
+  <a class="alert-link" href="#">link</a>
 </div>
 <div class="p-3"></div>
 <div class="notification notification-success" role="notification">
+  <i class="gel-icon-tick-circle gel-icon-lg" aria-hidden="true"></i>
   This is a success alert—check it out!
 </div>
 <div class="p-3"></div>
 <div class="notification notification-danger" role="notification">
+  <i class="gel-icon-error gel-icon-lg" aria-hidden="true"></i>
   This is a danger alert—check it out!
 </div>
 <div class="p-3"></div>
 <div class="notification notification-warning" role="notification">
+  <i class="gel-icon-warning gel-icon-lg" aria-hidden="true"></i>
   You are currently controlling John Smith's account,
   <a href="#" class="notification-link">go back to your account</a>
 </div>
 <div class="p-3"></div>
 <h3>Alerts</h3>
 <p class="alert alert-info" role="alert">
+  <i class="gel-icon-info" aria-hidden="true"></i>
   A simple primary alert with
   <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
 </p>
@@ -28,9 +34,14 @@
 </p>
 
 <p class="alert alert-danger" role="alert">
+  <i class="gel-icon-error" aria-hidden="true"></i>
   This is a danger alert—check it out!
 </p>
 
-<p class="alert alert-warning" role="alert">
-  This is a warning alert—check it out!
-</p>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <i class="gel-icon-warning" aria-hidden="true"></i>
+  You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

@@ -1,0 +1,10 @@
+@if $enable-print-styles {
+  @media print {
+    #gel-footer,
+    #gel-menu,
+    #gel-navbar,
+    .page-actions {
+      display: none !important;;
+    }
+  }
+}

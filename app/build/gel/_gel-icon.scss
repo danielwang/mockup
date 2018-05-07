@@ -40,6 +40,42 @@
   font-size: 3rem;
 }
 
+.gel-icon-login:before {
+  content: "\e95a";
+}
+.gel-icon-logout:before {
+  content: "\e95b";
+}
+.gel-icon-tick-circle:before {
+  content: "\e92d";
+}
+.gel-icon-error:before {
+  content: "\e959";
+}
+.gel-icon-info:before {
+  content: "\e943";
+}
+.gel-icon-warning:before {
+  content: "\e95c";
+}
+.gel-icon-logo:before {
+  content: "\e933";
+}
+.gel-icon-beta:before {
+  content: "\e958";
+}
+.gel-icon-beta-feedback:before {
+  content: "\e923";
+}
+.gel-icon-alpha:before {
+  content: "\e955";
+}
+.gel-icon-alpha-feedback:before {
+  content: "\e956";
+}
+.gel-icon-feedback:before {
+  content: "\e920";
+}
 .gel-icon-bookmark:before {
   content: "\e952";
 }
@@ -85,20 +121,29 @@
 .gel-icon-view:before {
   content: "\e94f";
 }
+.gel-icon-slack:before {
+  content: "\e942";
+}
+.gel-icon-sketch:before {
+  content: "\e957";
+}
+.gel-icon-github:before {
+  content: "\1f339";
+}
+.gel-icon-edit:before {
+  content: "\e950";
+}
 .gel-icon-print:before {
   content: "\e941";
 }
-.gel-icon-feedback:before {
-  content: "\e920";
+.gel-icon-help:before {
+  content: "\e91e";
 }
 .gel-icon-help-pointer:before {
   content: "\e921";
 }
 .gel-icon-info-pointer:before {
   content: "\e922";
-}
-.gel-icon-beta:before {
-  content: "\e923";
 }
 .gel-icon-search:before {
   content: "\e924";
@@ -133,9 +178,6 @@
 .gel-icon-eye:before {
   content: "\e932";
 }
-.gel-icon-logo:before {
-  content: "\e933";
-}
 .gel-icon-user:before {
   content: "\e934";
 }
@@ -169,23 +211,17 @@
 .gel-icon-notes:before {
   content: "\e930";
 }
-.gel-icon-edit:before {
-  content: "\e950";
-}
-.gel-icon-resume:before {
-  content: "\e94d";
-}
 .gel-icon-new:before {
   content: "\e931";
 }
 .gel-icon-preview:before {
   content: "\e93e";
 }
+.gel-icon-resume:before {
+  content: "\e94d";
+}
 .gel-icon-copy:before {
   content: "\e93f";
-}
-.gel-icon-tick-circle:before {
-  content: "\e92d";
 }
 .gel-icon-close-circle:before {
   content: "\e92e";
@@ -196,17 +232,8 @@
 .gel-icon-tick:before {
   content: "\e91d";
 }
-.gel-icon-help:before {
-  content: "\e91e";
-}
 .gel-icon-calendar:before {
   content: "\e91f";
-}
-.gel-icon-slack:before {
-  content: "\e942";
-}
-.gel-icon-github:before {
-  content: "\e943";
 }
 .gel-icon-logo-o:before {
   content: "\e915";
@@ -294,7 +321,4 @@
 }
 .gel-icon-view-o:before {
   content: "\e91c";
-}
-.gel-icon-sketch:before {
-  content: "\e957";
 }
