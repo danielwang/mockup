@@ -1,324 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
 /* *************************************** *\
- *   PageUp GEL - Theme 3.0.0
+ *   PageUp GEL - Theme 3.1.1
  *   Author: Daniel Wang
- *	 Date: 15/03/2018
+ *	 Date: 07/05/2018
  *
  \* *************************************** */
-@font-face {
-  font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wx') format('truetype'), url('icons/gel-icon.woff?q0w0wx') format('woff'), url('icons/gel-icon.svg?q0w0wx#gel-icon') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="gel-icon-"], [class*=" gel-icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'gel-icon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 1.125rem;
-  vertical-align: text-top;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.gel-icon-sm {
-  font-size: 1rem; }
-
-.gel-icon-lg {
-  font-size: 1.5rem; }
-
-.gel-icon-2x {
-  font-size: 2rem; }
-
-.gel-icon-3x {
-  font-size: 3rem; }
-
-.gel-icon-login:before {
-  content: "\e95a"; }
-
-.gel-icon-logout:before {
-  content: "\e95b"; }
-
-.gel-icon-tick-circle:before {
-  content: "\e92d"; }
-
-.gel-icon-error:before {
-  content: "\e959"; }
-
-.gel-icon-info:before {
-  content: "\e943"; }
-
-.gel-icon-warning:before {
-  content: "\e95c"; }
-
-.gel-icon-logo:before {
-  content: "\e933"; }
-
-.gel-icon-beta:before {
-  content: "\e958"; }
-
-.gel-icon-beta-feedback:before {
-  content: "\e923"; }
-
-.gel-icon-alpha:before {
-  content: "\e955"; }
-
-.gel-icon-alpha-feedback:before {
-  content: "\e956"; }
-
-.gel-icon-feedback:before {
-  content: "\e920"; }
-
-.gel-icon-bookmark:before {
-  content: "\e952"; }
-
-.gel-icon-folder:before {
-  content: "\e953"; }
-
-.gel-icon-image:before {
-  content: "\e954"; }
-
-.gel-icon-settings:before {
-  content: "\e951"; }
-
-.gel-icon-chat:before {
-  content: "\e945"; }
-
-.gel-icon-compensation:before {
-  content: "\e946"; }
-
-.gel-icon-drag:before {
-  content: "\e947"; }
-
-.gel-icon-pencil:before {
-  content: "\e948"; }
-
-.gel-icon-history:before {
-  content: "\e949"; }
-
-.gel-icon-home:before {
-  content: "\e94a"; }
-
-.gel-icon-location:before {
-  content: "\e94b"; }
-
-.gel-icon-add:before {
-  content: "\e944"; }
-
-.gel-icon-plus:before {
-  content: "\e94c"; }
-
-.gel-icon-tag:before {
-  content: "\e94e"; }
-
-.gel-icon-view:before {
-  content: "\e94f"; }
-
-.gel-icon-slack:before {
-  content: "\e942"; }
-
-.gel-icon-sketch:before {
-  content: "\e957"; }
-
-.gel-icon-github:before {
-  content: "\1f339"; }
-
-.gel-icon-edit:before {
-  content: "\e950"; }
-
-.gel-icon-print:before {
-  content: "\e941"; }
-
-.gel-icon-help:before {
-  content: "\e91e"; }
-
-.gel-icon-help-pointer:before {
-  content: "\e921"; }
-
-.gel-icon-info-pointer:before {
-  content: "\e922"; }
-
-.gel-icon-search:before {
-  content: "\e924"; }
-
-.gel-icon-bullhorn:before {
-  content: "\e925"; }
-
-.gel-icon-right:before {
-  content: "\e926"; }
-
-.gel-icon-left:before {
-  content: "\e927"; }
-
-.gel-icon-upload:before {
-  content: "\e928"; }
-
-.gel-icon-download:before {
-  content: "\e929"; }
-
-.gel-icon-dropdown:before {
-  content: "\e92a"; }
-
-.gel-icon-foldup:before {
-  content: "\e92b"; }
-
-.gel-icon-share:before {
-  content: "\e92c"; }
-
-.gel-icon-trash:before {
-  content: "\e92f"; }
-
-.gel-icon-eye:before {
-  content: "\e932"; }
-
-.gel-icon-user:before {
-  content: "\e934"; }
-
-.gel-icon-job:before {
-  content: "\e935"; }
-
-.gel-icon-knowledge-portal:before {
-  content: "\e936"; }
-
-.gel-icon-refresh:before {
-  content: "\e937"; }
-
-.gel-icon-lock:before {
-  content: "\e938"; }
-
-.gel-icon-analytics:before {
-  content: "\e939"; }
-
-.gel-icon-menu:before {
-  content: "\e93a"; }
-
-.gel-icon-support:before {
-  content: "\e93b"; }
-
-.gel-icon-employee:before {
-  content: "\e93c"; }
-
-.gel-icon-add-user:before {
-  content: "\e93d"; }
-
-.gel-icon-notes:before {
-  content: "\e930"; }
-
-.gel-icon-new:before {
-  content: "\e931"; }
-
-.gel-icon-preview:before {
-  content: "\e93e"; }
-
-.gel-icon-resume:before {
-  content: "\e94d"; }
-
-.gel-icon-copy:before {
-  content: "\e93f"; }
-
-.gel-icon-close-circle:before {
-  content: "\e92e"; }
-
-.gel-icon-close:before {
-  content: "\e940"; }
-
-.gel-icon-tick:before {
-  content: "\e91d"; }
-
-.gel-icon-calendar:before {
-  content: "\e91f"; }
-
-.gel-icon-logo-o:before {
-  content: "\e915"; }
-
-.gel-icon-menu-o:before {
-  content: "\e90a"; }
-
-.gel-icon-close-o:before {
-  content: "\e910"; }
-
-.gel-icon-beta-o:before {
-  content: "\e904"; }
-
-.gel-icon-bullhorn-o:before {
-  content: "\e916"; }
-
-.gel-icon-print-o:before {
-  content: "\e913"; }
-
-.gel-icon-feedback-o:before {
-  content: "\e909"; }
-
-.gel-icon-support-o:before {
-  content: "\e90f"; }
-
-.gel-icon-profile-o:before {
-  content: "\e914"; }
-
-.gel-icon-search-o:before {
-  content: "\e919"; }
-
-.gel-icon-applicant-o:before {
-  content: "\e902"; }
-
-.gel-icon-control-o:before {
-  content: "\e906"; }
-
-.gel-icon-team-o:before {
-  content: "\e91a"; }
-
-.gel-icon-job-o:before {
-  content: "\e90c"; }
-
-.gel-icon-application-o:before {
-  content: "\e903"; }
-
-.gel-icon-employee-o:before {
-  content: "\e908"; }
-
-.gel-icon-recruitment-o:before {
-  content: "\e917"; }
-
-.gel-icon-learning-o:before {
-  content: "\e90e"; }
-
-.gel-icon-analytics-o:before {
-  content: "\e901"; }
-
-.gel-icon-orgchart-o:before {
-  content: "\e912"; }
-
-.gel-icon-onboarding-o:before {
-  content: "\e911"; }
-
-.gel-icon-journal-o:before {
-  content: "\e90d"; }
-
-.gel-icon-copy-o:before {
-  content: "\e907"; }
-
-.gel-icon-history-o:before {
-  content: "\e90b"; }
-
-.gel-icon-salary-o:before {
-  content: "\e918"; }
-
-.gel-icon-close-circle-o:before {
-  content: "\e905"; }
-
-.gel-icon-add-o:before {
-  content: "\e900"; }
-
-.gel-icon-unlock-o:before {
-  content: "\e91b"; }
-
-.gel-icon-view-o:before {
-  content: "\e91c"; }
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -8373,7 +8059,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   top: 0;
   min-height: 100%;
   width: 300px;
-  background: #4f596a;
+  background: #3d485b;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.5s;
@@ -8446,8 +8132,8 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
       overflow-y: auto;
-      background: linear-gradient(#4f596a 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #4f596a 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
-      background: -webkit-linear-gradient(#4f596a 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #4f596a 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background: linear-gradient(#3d485b 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #3d485b 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background: -webkit-linear-gradient(#3d485b 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #3d485b 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
       background-repeat: no-repeat;
       background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
       background-attachment: local, local, scroll, scroll;
@@ -9123,3 +8809,318 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 @media print {
   #gel-footer, #gel-menu, #gel-navbar, .page-actions {
     display: none !important; } }
+
+@font-face {
+  font-family: 'gel-icon';
+  src: url('icons/gel-icon.ttf?q0w0wx') format('truetype'), url('icons/gel-icon.woff?q0w0wx') format('woff'), url('icons/gel-icon.svg?q0w0wx#gel-icon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="gel-icon-"], [class*=" gel-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gel-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.125rem;
+  vertical-align: text-top;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.gel-icon-sm {
+  font-size: 1rem; }
+
+.gel-icon-lg {
+  font-size: 1.5rem; }
+
+.gel-icon-2x {
+  font-size: 2rem; }
+
+.gel-icon-3x {
+  font-size: 3rem; }
+
+.gel-icon-login:before {
+  content: "\e95a"; }
+
+.gel-icon-logout:before {
+  content: "\e95b"; }
+
+.gel-icon-tick-circle:before {
+  content: "\e92d"; }
+
+.gel-icon-error:before {
+  content: "\e959"; }
+
+.gel-icon-info:before {
+  content: "\e943"; }
+
+.gel-icon-warning:before {
+  content: "\e95c"; }
+
+.gel-icon-logo:before {
+  content: "\e933"; }
+
+.gel-icon-beta:before {
+  content: "\e958"; }
+
+.gel-icon-beta-feedback:before {
+  content: "\e923"; }
+
+.gel-icon-alpha:before {
+  content: "\e955"; }
+
+.gel-icon-alpha-feedback:before {
+  content: "\e956"; }
+
+.gel-icon-feedback:before {
+  content: "\e920"; }
+
+.gel-icon-bookmark:before {
+  content: "\e952"; }
+
+.gel-icon-folder:before {
+  content: "\e953"; }
+
+.gel-icon-image:before {
+  content: "\e954"; }
+
+.gel-icon-settings:before {
+  content: "\e951"; }
+
+.gel-icon-chat:before {
+  content: "\e945"; }
+
+.gel-icon-compensation:before {
+  content: "\e946"; }
+
+.gel-icon-drag:before {
+  content: "\e947"; }
+
+.gel-icon-pencil:before {
+  content: "\e948"; }
+
+.gel-icon-history:before {
+  content: "\e949"; }
+
+.gel-icon-home:before {
+  content: "\e94a"; }
+
+.gel-icon-location:before {
+  content: "\e94b"; }
+
+.gel-icon-add:before {
+  content: "\e944"; }
+
+.gel-icon-plus:before {
+  content: "\e94c"; }
+
+.gel-icon-tag:before {
+  content: "\e94e"; }
+
+.gel-icon-view:before {
+  content: "\e94f"; }
+
+.gel-icon-slack:before {
+  content: "\e942"; }
+
+.gel-icon-sketch:before {
+  content: "\e957"; }
+
+.gel-icon-github:before {
+  content: "\1f339"; }
+
+.gel-icon-edit:before {
+  content: "\e950"; }
+
+.gel-icon-print:before {
+  content: "\e941"; }
+
+.gel-icon-help:before {
+  content: "\e91e"; }
+
+.gel-icon-help-pointer:before {
+  content: "\e921"; }
+
+.gel-icon-info-pointer:before {
+  content: "\e922"; }
+
+.gel-icon-search:before {
+  content: "\e924"; }
+
+.gel-icon-bullhorn:before {
+  content: "\e925"; }
+
+.gel-icon-right:before {
+  content: "\e926"; }
+
+.gel-icon-left:before {
+  content: "\e927"; }
+
+.gel-icon-upload:before {
+  content: "\e928"; }
+
+.gel-icon-download:before {
+  content: "\e929"; }
+
+.gel-icon-dropdown:before {
+  content: "\e92a"; }
+
+.gel-icon-foldup:before {
+  content: "\e92b"; }
+
+.gel-icon-share:before {
+  content: "\e92c"; }
+
+.gel-icon-trash:before {
+  content: "\e92f"; }
+
+.gel-icon-eye:before {
+  content: "\e932"; }
+
+.gel-icon-user:before {
+  content: "\e934"; }
+
+.gel-icon-job:before {
+  content: "\e935"; }
+
+.gel-icon-knowledge-portal:before {
+  content: "\e936"; }
+
+.gel-icon-refresh:before {
+  content: "\e937"; }
+
+.gel-icon-lock:before {
+  content: "\e938"; }
+
+.gel-icon-analytics:before {
+  content: "\e939"; }
+
+.gel-icon-menu:before {
+  content: "\e93a"; }
+
+.gel-icon-support:before {
+  content: "\e93b"; }
+
+.gel-icon-employee:before {
+  content: "\e93c"; }
+
+.gel-icon-add-user:before {
+  content: "\e93d"; }
+
+.gel-icon-notes:before {
+  content: "\e930"; }
+
+.gel-icon-new:before {
+  content: "\e931"; }
+
+.gel-icon-preview:before {
+  content: "\e93e"; }
+
+.gel-icon-resume:before {
+  content: "\e94d"; }
+
+.gel-icon-copy:before {
+  content: "\e93f"; }
+
+.gel-icon-close-circle:before {
+  content: "\e92e"; }
+
+.gel-icon-close:before {
+  content: "\e940"; }
+
+.gel-icon-tick:before {
+  content: "\e91d"; }
+
+.gel-icon-calendar:before {
+  content: "\e91f"; }
+
+.gel-icon-logo-o:before {
+  content: "\e915"; }
+
+.gel-icon-menu-o:before {
+  content: "\e90a"; }
+
+.gel-icon-close-o:before {
+  content: "\e910"; }
+
+.gel-icon-beta-o:before {
+  content: "\e904"; }
+
+.gel-icon-bullhorn-o:before {
+  content: "\e916"; }
+
+.gel-icon-print-o:before {
+  content: "\e913"; }
+
+.gel-icon-feedback-o:before {
+  content: "\e909"; }
+
+.gel-icon-support-o:before {
+  content: "\e90f"; }
+
+.gel-icon-profile-o:before {
+  content: "\e914"; }
+
+.gel-icon-search-o:before {
+  content: "\e919"; }
+
+.gel-icon-applicant-o:before {
+  content: "\e902"; }
+
+.gel-icon-control-o:before {
+  content: "\e906"; }
+
+.gel-icon-team-o:before {
+  content: "\e91a"; }
+
+.gel-icon-job-o:before {
+  content: "\e90c"; }
+
+.gel-icon-application-o:before {
+  content: "\e903"; }
+
+.gel-icon-employee-o:before {
+  content: "\e908"; }
+
+.gel-icon-recruitment-o:before {
+  content: "\e917"; }
+
+.gel-icon-learning-o:before {
+  content: "\e90e"; }
+
+.gel-icon-analytics-o:before {
+  content: "\e901"; }
+
+.gel-icon-orgchart-o:before {
+  content: "\e912"; }
+
+.gel-icon-onboarding-o:before {
+  content: "\e911"; }
+
+.gel-icon-journal-o:before {
+  content: "\e90d"; }
+
+.gel-icon-copy-o:before {
+  content: "\e907"; }
+
+.gel-icon-history-o:before {
+  content: "\e90b"; }
+
+.gel-icon-salary-o:before {
+  content: "\e918"; }
+
+.gel-icon-close-circle-o:before {
+  content: "\e905"; }
+
+.gel-icon-add-o:before {
+  content: "\e900"; }
+
+.gel-icon-unlock-o:before {
+  content: "\e91b"; }
+
+.gel-icon-view-o:before {
+  content: "\e91c"; }

@@ -1,20 +1,17 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.0.0
+ *   PageUp GEL - Theme 3.1.1
  *   Author: Daniel Wang
- *	 Date: 15/03/2018
+ *	 Date: 07/05/2018
  *
 \* *************************************** */
 //google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
 
-// GEL icons
-//@import url('https://ui.pageuppeople.com/icons/v2.0.1/css/gel-icon.css');
-@import "gel-icon";
-
 @import "functions";
 @import "variables";
-@import "../bootstrap-4.0.0/bootstrap";
 
+// .gel{
+@import "../bootstrap-4.0.0/bootstrap";
 //----
 @import "mixins";
 @import "core";
@@ -38,5 +35,10 @@
 @import "type";
 @import "toggles";
 @import "utility";
-
+//----
 @import "print";
+//}
+
+// GEL icons
+//@import url('https://ui.pageuppeople.com/icons/v2.0.1/css/gel-icon.css');
+@import "gel-icon";
