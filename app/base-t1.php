@@ -51,7 +51,7 @@
                   </a>
               </span>
               <span class="item">
-                  <a class="text-center" href="#_" title="Feedback">
+                  <a class="text-center" href="#_" title="Feedback" data-toggle="modal" data-target="#feedbackModal">
                     <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
                   </a>
               </span>

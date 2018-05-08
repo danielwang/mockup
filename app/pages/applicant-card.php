@@ -1,6 +1,11 @@
 <?php $pageTitle = "Applicant card"; include '../base-popup.php';?>
 
 <?php startblock('popup-top');?>
+<div class="notification notification-info" role="notification">
+  <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
+  This is a info alert—check it out!
+  <a class="alert-link" href="#">link</a>
+</div>
 <section id="popup-top" class="bg-navy text-white">
     <div class="container">
       <div class="row">
