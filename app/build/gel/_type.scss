@@ -3,3 +3,8 @@
   margin: $spacer 0 $spacer * 2 0;
   @include font-light();
 }
+
+dt{
+  font-size: 1rem;
+  @include font-semibold();
+}

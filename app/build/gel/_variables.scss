@@ -12,7 +12,6 @@ $menu-bg:               #3D485B;
 $header-bg-start:       #0053a3;
 $header-bg-end:         #018cd1;
 
-$ctrl:                  #63778b;
 //== Additional font icons
 //
 //** gel icons
@@ -32,6 +31,9 @@ $gel-icon:            "gel-icon";
 //
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+$ctrl:                  #63778b;
 
 //
 // Color system
@@ -266,7 +268,7 @@ $font-family-base:            $font-family-sans-serif !default;
 
 $font-size-base:              .875rem !default;; // Reset base font size to 14px
 $font-size-lg:                1rem !default;
-$font-size-sm:                $font-size-base !default;
+$font-size-sm:                .75rem !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -302,7 +304,7 @@ $display-line-height:         $headings-line-height !default;
 $lead-font-size:              1rem !default;
 $lead-font-weight:            300 !default;
 
-$small-font-size:             80% !default;
+$small-font-size:             .75rem !default;
 
 $text-muted:                  $gray-600 !default;
 
@@ -410,7 +412,16 @@ $btn-border-radius-sm:        $btn-border-radius !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
+// contrl
 
+$ctrl-size-lg:          3rem;  // 48px
+$ctrl-size:             2.375rem; // 38px
+$ctrl-size-sm:          2rem;  //32px
+
+$ctrl-color:            $body-color;
+$ctrl-border-color:     lighten($ctrl, 30%);
+$ctrl-active-bg:        lighten($ctrl, 35%);
+$ctrl-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba($ctrl, .25), $btn-active-box-shadow;
 // Forms
 
 $input-padding-y:                       $input-btn-padding-y !default;
@@ -660,20 +671,20 @@ $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
 $pagination-line-height:            1.25 !default;
 
-$pagination-color:                  $link-color !default;
+$pagination-color:                  $ctrl-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $ctrl-border-color !default;
 
-$pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
+$pagination-focus-box-shadow:       $ctrl-focus-box-shadow !default;
 
-$pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-color:            $ctrl-color !default;
+$pagination-hover-bg:               $white !default;
+$pagination-hover-border-color:     $ctrl-border-color !default;
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
-$pagination-active-border-color:    $pagination-active-bg !default;
+$pagination-active-color:           $ctrl-color !default;
+$pagination-active-bg:              $ctrl-active-bg !default;
+$pagination-active-border-color:    $ctrl-border-color !default;
 
 $pagination-disabled-color:         $gray-600 !default;
 $pagination-disabled-bg:            $white !default;

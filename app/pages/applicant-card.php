@@ -1,16 +1,16 @@
 <?php $pageTitle = "Applicant card"; include '../base-popup.php';?>
 
 <?php startblock('popup-top');?>
-<div class="notification notification-info" role="notification">
+<!-- <div class="notification notification-info" role="notification">
   <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
   This is a info alert—check it out!
   <a class="alert-link" href="#">link</a>
-</div>
+</div> -->
 <section id="popup-top" class="bg-navy text-white">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="text-white">Victoria Johnson</h2>
+          <h2 class="text-white">Daniel Applicant</h2>
         </div>
         <div class="col-6 col-md-2">
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -62,49 +62,50 @@
           </div>
         </div>
       </div>
-      <div class="w-100 mt-3"></div>
+      <div class="w-100 mt-4"></div>
       <dl class="row">
-        <div class="col-6 col-md-4 col-lg-2">
+        <span class="col-6 col-md-4 col-lg-2">
           <dt>Gender</dt>
           <dd>Male</dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        </span>
+        <span class="col-6 col-md-4 col-lg-2">
           <dt>Phone</dt>
           <dd>+61 4123 111 111</dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        </span>
+        <span class="col-6 col-md-4 col-lg-4">
           <dt>Address</dt>
           <dd>91 William Street, Melbourne, VIC, Australia</dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <dt>Employment status</dt>
-          <dd><a href="#"> Never</a></dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        </span>
+        <span class="col-6 col-md-4 col-lg-2">
+          <dt>Linked Employee</dt>
+          <dd><a href="#"> Relink</a></dd>
+        </span>
+        <span class="col-6 col-md-4 col-lg-2">
           <dt>Flags</dt>
-          <dd>Male</dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
+          <dd></dd>
+        </span>
+        <span class="col-6 col-md-4 col-lg-2">
           <dt>Number</dt>
           <dd>10923445</dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <dt>Gender</dt>
-          <dd>Male</dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <dt>Phone</dt>
-          <dd>+61 4123 111 111</dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <dt>Address</dt>
-          <dd>91 William Street, Melbourne, VIC, Australia</dd>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        </span>
+        <span class="col-6 col-md-4 col-lg-2">
+          <dt>Nationality</dt>
+          <dd>Australia</dd>
+        </span>
+        <span class="col-6 col-md-4 col-lg-4">
+          <dt>Email</dt>
+          <dd>daniel.applicant@company.com</dd>
+        </span>
+        <span class="col-6 col-md-4 col-lg-2">
+          <dt>Orininal Source</dt>
+          <dd>Seek</dd>
+        </span>
+        <span class="col-6 col-md-4 col-lg-2">
           <dt>Employment status</dt>
-          <dd><a href="#"> Never</a></dd>
-        </div>
-      </dl></div>
+          <dd>Never employed or contracted</dd>
+        </span>
+      </dl>
+    </div>
 </section>
 <?php endblock()?>
 

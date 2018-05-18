@@ -1,9 +1,10 @@
 <article class="user-menu">
   <header id="user-menu-hd" class="margin-bottom-none collapsed" data-toggle="collapse" data-target="#user-menu-ft">
-    <img class="avatar" src="<?php echo ($resURL) ?>images/avatar.svg" alt="John's profile"/>
-    <strong>
-      John Smith
-    </strong>
+    <p><img class="avatar" src="<?php echo ($resURL) ?>images/avatar.svg" alt="John's profile"/>
+      <strong>
+        John Smith
+      </strong>
+    </p>
   </header>
   <footer id="user-menu-ft" class="collapse">
     <p>
@@ -12,22 +13,21 @@
     </p>
     <ul>
       <li>
-        <a href="#">
-          Beta is turned
-          <span class="toggle toggle-green d-inline-block">
-            <label>
-              <span class="sr-only">Beta toggle</span>
-              <input type="checkbox">
-              <span></span>
-            </label>
-          </span>
+        <a class="dropdown-item" href="#">
+          <i aria-hidden="true" title="beta switch" class="gel-icon-logo"></i>
+          Switch to Live
         </a>
       </li>
       <li>
-        <a href="#">Beta Feedback</a>
+        <a class="dropdown-item" href="#">
+          <i aria-hidden="true" title="beta switch" class="gel-icon-beta-feedback"></i>
+          Beta Feedback
+        </a>
       </li>
       <li>
-        <a href="#">Log Out</a>
+        <a href="#">
+          <i aria-hidden="true" title="beta switch" class="gel-icon-logout"></i>
+          Log Out</a>
       </li>
     </ul>
   </footer>

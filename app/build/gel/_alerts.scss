@@ -6,9 +6,8 @@
   position: relative;
   padding: $spacer;
   text-align: center;
-  font-size: 1rem;
   @include font-semibold;
-  
+
   [class^="gel-icon-"]{
     vertical-align: middle;
   }

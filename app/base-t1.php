@@ -46,7 +46,7 @@
             </div>
             <div class="page-actions col-md-3 col-lg-4">
               <span class="item">
-                  <a class="text-center" href="#_" title="Print">
+                  <a class="text-center" href="#_" title="Print" onclick="javascript: window.print();">
                     <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
                   </a>
               </span>

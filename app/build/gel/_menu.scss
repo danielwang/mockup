@@ -71,23 +71,24 @@
     // user menu
     #user-menu-hd {
       margin-bottom: 20px;
+      position: relative;
 
       &:after {
         content: "\e92b";
         font-family: $gel-icon;
-        float: right;
-        margin-top: 8px;
+        position: absolute;
+        right: 0;
+        top: 6px;
       }
 
       &.collapsed:after {
         content: "\e92a";
         font-family: $gel-icon;
-        float: right;
-        margin-top: 8px;
       }
     }
 
     #user-menu-ft {
+      margin-bottom: $spacer * 1.75;
       a {
         color: white;
       }
@@ -95,9 +96,10 @@
   }
 
   menu {
-    margin-top: $navbar-height;
+    margin-top: $spacer * 1.75;
     padding: 0 2.8125rem;
     @include media-breakpoint-up(md) {
+      margin-top: $navbar-height;
       position: sticky;
       top: $navbar-height;
       height: calc(100vh - #{$navbar-height});
