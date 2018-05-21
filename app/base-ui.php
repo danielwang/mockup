@@ -50,7 +50,8 @@
           <h1 class="page-title"><?php echo $pageTitle  ?></h1>
           <blockquote class="blockquote"><?php startblock('page-tagline');?>Tagline goes here<?php endblock() ?></blockquote>
         </div>
-        <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
+        <?php startblock('page-actions');?>
+          <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
           <span class="item">
             <a class="text-center" target="_blank" href="#" title="Download Sketch files">
               <i class="gel-icon-lg gel-icon-sketch" aria-hidden="true"></i> <span>Sketch</span>
@@ -67,6 +68,7 @@
               </a>
           </span>
           </div>
+        <?php endblock() ?>
       </div>
 
       <ul class="page-tabs nav" role="tablist"><?php startblock('page-tabs') ?><?php endblock() ?></ul>
