@@ -8282,17 +8282,24 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 .table {
   border-collapse: separate;
   border-spacing: 0;
-  border-radius: 0.5rem;
-  overflow: hidden; }
+  border-radius: 0.5rem; }
   .table thead th {
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
     vertical-align: middle;
     border: 0; }
+  .table thead tr th:first-child {
+    border-top-left-radius: 0.5rem; }
+  .table thead tr th:last-child {
+    border-top-right-radius: 0.5rem; }
   .table.table-striped tbody tr:nth-of-type(odd) {
     background: white; }
   .table.table-striped tbody tr:nth-of-type(even) {
     background: #f8f9fa; }
+  .table tbody tr:last-child th, .table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 0.5rem; }
+  .table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 0.5rem; }
   .table tbody td, .table tbody th {
     vertical-align: middle;
     font-weight: 400; }
@@ -8377,7 +8384,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     background: #f8f9fa; }
   .table-sticky table tbody tr:nth-of-type(odd) th {
     background: white; }
-  .table-sticky table tbody tr:hover th, .table-sticky table tbody tr:hover td {
+  .table-sticky table tbody tr:hover td, .table-sticky table tbody tr:hover th {
     background-color: #d7dde3 !important; }
   .table-sticky table td, .table-sticky table th {
     white-space: nowrap; }

@@ -113,122 +113,49 @@
 <table class="table table-striped table-hover">
   <thead class="thead-dark">
     <tr>
-      <th></th>
-      <th>Submitted</th>
+      <th>Position</th>
+      <th>Number</th>
+      <th>Date</th>
+      <th>Recruiter</th>
+      <th>Applied via</th>
       <th>Status</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Gender</th>
-      <th>Mobile</th>
-      <th>Email</th>
+      <th>Offer</th>
+      <th>Flags</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
-        <tr>
+    <tr>
       <th>
-        <span class="checkbox checkbox-default">
-          <input type="checkbox" id="checkbox-1">
-          <label for="checkbox-1"></label>
-        </span>
+        <a href="#"><i class="gel-icon-info-pointer"></i></a> Senior Operations Manager
       </th>
+      <td>942130</td>
       <td>17 Nov 2017</td>
       <td>
-        <a href="#">Not shortlisted</a>
+        <a href="#">Michelle Petterson</a>
       </td>
       <td>
-        <a href="#">Achamyeleh</a>
+        <a href="#">Career website</a>
       </td>
       <td>
-        <a href="#">Berhanu</a>
+        <a href="#">Interviewed</a>
+        <p><small>Status changed 12 May 2018</small></p>
       </td>
-      <td>M</td>
-      <td>+61 411 111 036</td>
-      <td>Achamyeleh.Berhanu@dreamworld.com</td>
+      <td><a href="#">No offer</a></td>
+      <td><i class="gel-icon-location"></i><i class="gel-icon-bullhorn"></i></td>
+      <td>
+        <div class="dropdown">
+            <button class="btn btn-ctrl btn-sm dropdown-menu-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Actions
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </td>
     </tr>
-        <tr>
-      <th>
-        <span class="checkbox checkbox-default">
-          <input type="checkbox" id="checkbox-2">
-          <label for="checkbox-2"></label>
-        </span>
-      </th>
-      <td>17 Nov 2017</td>
-      <td>
-        <a href="#">Not shortlisted</a>
-      </td>
-      <td>
-        <a href="#">Achamyeleh</a>
-      </td>
-      <td>
-        <a href="#">Berhanu</a>
-      </td>
-      <td>M</td>
-      <td>+61 411 111 037</td>
-      <td>Achamyeleh.Berhanu@dreamworld.com</td>
-    </tr>
-        <tr>
-      <th>
-        <span class="checkbox checkbox-default">
-          <input type="checkbox" id="checkbox-3">
-          <label for="checkbox-3"></label>
-        </span>
-      </th>
-      <td>17 Nov 2017</td>
-      <td>
-        <a href="#">Not shortlisted</a>
-      </td>
-      <td>
-        <a href="#">Achamyeleh</a>
-      </td>
-      <td>
-        <a href="#">Berhanu</a>
-      </td>
-      <td>M</td>
-      <td>+61 411 111 038</td>
-      <td>Achamyeleh.Berhanu@dreamworld.com</td>
-    </tr>
-        <tr>
-      <th>
-        <span class="checkbox checkbox-default">
-          <input type="checkbox" id="checkbox-4">
-          <label for="checkbox-4"></label>
-        </span>
-      </th>
-      <td>17 Nov 2017</td>
-      <td>
-        <a href="#">Not shortlisted</a>
-      </td>
-      <td>
-        <a href="#">Achamyeleh</a>
-      </td>
-      <td>
-        <a href="#">Berhanu</a>
-      </td>
-      <td>M</td>
-      <td>+61 411 111 039</td>
-      <td>Achamyeleh.Berhanu@dreamworld.com</td>
-    </tr>
-        <tr>
-      <th>
-        <span class="checkbox checkbox-default">
-          <input type="checkbox" id="checkbox-5">
-          <label for="checkbox-5"></label>
-        </span>
-      </th>
-      <td>17 Nov 2017</td>
-      <td>
-        <a href="#">Not shortlisted</a>
-      </td>
-      <td>
-        <a href="#">Achamyeleh</a>
-      </td>
-      <td>
-        <a href="#">Berhanu</a>
-      </td>
-      <td>M</td>
-      <td>+61 411 111 040</td>
-      <td>Achamyeleh.Berhanu@dreamworld.com</td>
-    </tr>
-      </tbody>
+  </tbody>
 </table>
 <?php endblock()?>

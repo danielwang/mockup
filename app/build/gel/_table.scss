@@ -2,12 +2,20 @@
   border-collapse: separate;
   border-spacing: 0;
   border-radius: .5rem;
-  overflow: hidden;
+  // overflow: hidden;
   thead {
     th {
       @include font-heading();
       vertical-align: middle;
       border: 0;
+    }
+
+    tr th:first-child {
+      border-top-left-radius: 0.5rem;
+    }
+
+    tr th:last-child {
+      border-top-right-radius: 0.5rem;
     }
   }
 
@@ -20,6 +28,14 @@
   }
 
   tbody {
+    tr:last-child {
+      th, td:first-child{
+        border-bottom-left-radius: 0.5rem;
+      }
+      td:last-child{
+        border-bottom-right-radius: 0.5rem;
+      }
+    }
     td,
     th {
       vertical-align: middle;
@@ -97,16 +113,15 @@
 /* *********************************\
   sticky header and column
 \***********************************/
-
 .table-sticky {
   width: 100%;
   margin: 20px 0;
   max-height: 70vh;
   position: relative;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1px solid lighten($ctrl, 20%);
   @include media-breakpoint-down(sm) {
-    border:0;
+    border: 0;
     max-height: none;
   }
   overflow: scroll;
@@ -124,8 +139,8 @@
       position: sticky;
       z-index: 2;
     }
-    tbody{
 
+    tbody {
       th:first-child {
         left: 0;
         position: -webkit-sticky;
@@ -133,20 +148,20 @@
         z-index: 1;
       }
 
-      tr:nth-of-type(even) th{
+      tr:nth-of-type(even) th {
         background: $gray-100;
       }
 
-      tr:nth-of-type(odd) th{
+      tr:nth-of-type(odd) th {
         background: white;
       }
 
-      tr:hover{
-        th, td{
+      tr:hover {
+        td,
+        th {
           background-color: lighten($ctrl, 40%) !important;
         }
       }
-
     }
 
     td,
