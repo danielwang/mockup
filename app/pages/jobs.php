@@ -55,7 +55,7 @@
       </tr>
     </thead>
     <tbody>
-      <?php for ($x =1; $x <= 15; $x++) {?>
+      <?php for ($x =1; $x <= 10; $x++) {?>
       <tr>
         <th scope="row">Human Resources Manager </th>
         <td data-title="Job ID">
@@ -70,7 +70,7 @@
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
         <td data-title="View">
-          <a aria-label="View application" href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-eye"></i></a>
+          <a aria-label="View application" href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-view"></i></a>
         </td>
       </tr>
       <tr>
@@ -87,12 +87,34 @@
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
         <td data-title="View">
-          <a aria-label="View application" href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-eye"></i></a>
+          <a aria-label="View application" href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-view"></i></a>
         </td>
       </tr>
     <?php } ?>
     </tbody>
   </table>
+
+  <nav aria-label="Search results pages">
+    <ul class="pagination justify-content-end">
+      <li class="page-item">
+        <a class="page-link" href="#">Previous</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item active">
+        <a class="page-link" href="#">2
+          <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">

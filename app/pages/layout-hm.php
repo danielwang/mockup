@@ -21,6 +21,7 @@
             <h4 class="mb-4">Position Description</h4>
             <p class="card-text"><a href="empty">0</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
+            <p><button title="Manage position descriptions" type="button" class="btn btn-outline-primary btn-block text-truncate">Manage position descriptions</button></p>
           </div>
         </div>
       </div>
@@ -31,7 +32,8 @@
             <h4 class="mb-4">Jobs</h4>
             <p class="card-text"><a href="#">8</a> lorem ipsum dolor</p>
             <p class="card-text"><a href="#">21</a> ametetur adipiscing</p>
-            <p><button type="button" class="btn btn-primary">Create a job</button></p>
+            <p><button title="Create a job" type="button" class="btn btn-primary btn-block">Create a job</button></p>
+            <p><button title="Raise a contractor requisition" type="button" class="btn btn-outline-primary btn-block text-truncate">Raise a contractor requisition</button></p>
           </div>
         </div>
       </div>

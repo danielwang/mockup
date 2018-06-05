@@ -4,6 +4,11 @@
 	font-family: $font-family-headings;
 }
 
+@mixin font-cta() {
+	font-weight: 600;
+	font-family: $font-family-headings;
+}
+
 @mixin font-bold() {
 	font-weight: 400;
 	font-family: 'Proxima Nova Bold';
