@@ -1,0 +1,95 @@
+$check-icon: "\e91d";
+$tray: "\e95d";
+$tray-size: 2.5rem;
+$tray-size-sm: 20px;
+$tray-colors: () !default;
+$tray-colors: map-merge((
+  "red":        $red,
+  "orange":     $orange,
+  "green":      $green,
+), $tray-colors);
+
+.tray {
+  cursor: default;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  label {
+    cursor: pointer;
+    vertical-align: top;
+    position: relative;
+
+    &::before {
+      font-family: $gel-icon;
+      content: $tray;
+      font-size: $tray-size;
+      position: absolute;
+      z-index: 2;
+      top: -14px;
+    }
+
+    &::after {
+      font-family: $gel-icon;
+      cursor: pointer;
+      text-align: center;
+      content: "";
+      background: $white;
+      z-index: 1;
+      position: absolute;
+      width: 26px;
+      height: 24px;
+      top: 2px;
+      left: 7px;
+      font-size: 18px;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked + label::after {
+      content: $check-icon;
+    }
+  }
+}
+@mixin tray-variant($color) {
+  label {
+    &::before {
+      color: $color;
+    }
+
+    &::after {
+      color: $color;
+    }
+  }
+}
+
+@each $color, $value in $tray-colors {
+  .tray-#{$color} {
+    @include tray-variant($value);
+  }
+}
+
+@mixin tray-size($size) {
+  label {
+    &::before {
+      top: -10px;
+      font-size: 1.5rem;
+    }
+
+    &::after {
+      font-size: 12px;
+      width: 16px;
+      height: 16px;
+      top: -2px;
+      left: 4px;
+    }
+  }
+}
+
+.tray-sm {
+  width: 28px;
+  height: 20px;
+  @include tray-size($tray-size-sm);
+}

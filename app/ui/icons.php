@@ -21,12 +21,14 @@ function buildSolidIcons(){
     ["login", "login"],
     ["logout", "logout"],
     ["bullhorn", "bullhorn"],
-    ["right", "right"],
-    ["left", "left"],
+    ["arrow right", "arrow-right"],
+    ["arrow left", "arrow-left"],
     ["upload", "upload"],
     ["download", "download"],
-    ["dropdown", "dropdown"],
-    ["foldup", "foldup"],
+    ["angle down", "angle-down"],
+    ["angle up", "angle-up"],
+    ["angle left", "angle-left"],
+    ["angle right", "angle-right"],
     ["share", "share"],
     ["tick", "tick-circle"],
     ["close", "close-circle"],
@@ -68,7 +70,8 @@ function buildSolidIcons(){
     ["slack","slack"],
     ["github","github"],
     ["edit","edit"],
-    ["sketch","sketch"]
+    ["sketch","sketch"],
+    ["tray","tray"]
   ];
 }
 

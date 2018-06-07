@@ -14,52 +14,56 @@
         </div>
         <div class="col-6 col-md-2">
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-sm btn-ctrl active">
-              <input type="radio" name="options-sm" id="option1" autocomplete="off" checked="checked">
+            <label class="btn btn-sm btn-ctrl">
+              <input type="radio" name="talent-pool" id="option1" checked="checked">
               Active
             </label>
             <label class="btn btn-sm btn-ctrl">
-              <input type="radio" name="options-sm" id="option2" autocomplete="off">
+              <input type="radio" name="talent-pool" id="option2">
               Inactive
             </label>
           </div>
         </div>
+
+        <div class="col-6 col-md-2">
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-sm btn-ctrl"><i class="gel-icon-print"></i></button>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Actions
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Dropdown link</a>
+                <a class="dropdown-item" href="#">Dropdown link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-6 col-md-2">
           <fieldset class="d-inline">
-            <div class="bucket bucket-green bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
-              <label for="radio-b-l-1">
+            <div class="tray tray-green">
+              <input type="radio" name="radio-b" id="radio-b-1" value="option2" checked="checked">
+              <label for="radio-b-1">
                 <span class="sr-only">
                   Green</span>
               </label>
             </div>
-            <div class="bucket bucket-orange bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
-              <label for="radio-b-l-2">
+            <div class="tray tray-orange">
+              <input type="radio" name="radio-b" id="radio-b-2" value="option1">
+              <label for="radio-b-2">
                 <span class="sr-only">
                   Orange</span>
               </label>
             </div>
-            <div class="bucket bucket-red bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
-              <label for="radio-b-l-3">
+            <div class="tray tray-red">
+              <input type="radio" name="radio-b" id="radio-b-3" value="option3">
+              <label for="radio-b-3">
                 <span class="sr-only">
                   Red</span>
               </label>
             </div>
           </fieldset>
-        </div>
-        <div class="col-6 col-md-2">
-          <div class="dropdown">
-            <button class="btn btn-ctrl btn-sm dropdown-menu-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Actions
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
         </div>
       </div>
       <div class="w-100 mt-4"></div>
@@ -127,7 +131,7 @@
   <tbody>
     <tr>
       <th>
-        <a href="#"><i class="gel-icon-info-pointer"></i></a> Senior Operations Manager
+        <a href="#"><i class="gel-icon-info-pointer gel-icon-lg"></i></a> Senior Operations Manager
       </th>
       <td>942130</td>
       <td>17 Nov 2017</td>

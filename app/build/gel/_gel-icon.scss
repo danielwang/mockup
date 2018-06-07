@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'gel-icon';
   src:
-    url('icons/gel-icon.ttf?q0w0wx') format('truetype'),
-    url('icons/gel-icon.woff?q0w0wx') format('woff'),
-    url('icons/gel-icon.svg?q0w0wx#gel-icon') format('svg');
+    url('icons/gel-icon.ttf?q0w0wa') format('truetype'),
+    url('icons/gel-icon.woff?q0w0wa') format('woff'),
+    url('icons/gel-icon.svg?q0w0wa#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -128,7 +128,7 @@
   content: "\e957";
 }
 .gel-icon-github:before {
-  content: "\1f339";
+  content: "\e960";
 }
 .gel-icon-edit:before {
   content: "\e950";
@@ -151,10 +151,10 @@
 .gel-icon-bullhorn:before {
   content: "\e925";
 }
-.gel-icon-right:before {
+.gel-icon-arrow-right:before {
   content: "\e926";
 }
-.gel-icon-left:before {
+.gel-icon-arrow-left:before {
   content: "\e927";
 }
 .gel-icon-upload:before {
@@ -163,10 +163,16 @@
 .gel-icon-download:before {
   content: "\e929";
 }
-.gel-icon-dropdown:before {
+.gel-icon-angle-left:before {
+  content: "\e95e";
+}
+.gel-icon-angle-right:before {
+  content: "\e95f";
+}
+.gel-icon-angle-down:before {
   content: "\e92a";
 }
-.gel-icon-foldup:before {
+.gel-icon-angle-up:before {
   content: "\e92b";
 }
 .gel-icon-share:before {
@@ -321,4 +327,7 @@
 }
 .gel-icon-view-o:before {
   content: "\e91c";
+}
+.gel-icon-tray:before {
+  content: "\e95d";
 }
