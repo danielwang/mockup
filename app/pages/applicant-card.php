@@ -9,10 +9,10 @@
 <section id="popup-top" class="bg-navy text-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <h2 class="text-white">Daniel Applicant</h2>
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col-6 col-md-4 col-lg-2">
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-sm btn-ctrl">
               <input type="radio" name="talent-pool" id="option1" checked="checked">
@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-2">
+        <div class="col-6 col-md-4 col-lg-2">
           <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
             <button type="button" class="btn btn-sm btn-ctrl"><i class="gel-icon-print"></i></button>
             <div class="btn-group" role="group">
@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-2">
+        <div class="col-6 col-md-4 col-lg-2">
           <fieldset class="d-inline">
             <div class="tray tray-green">
               <input type="radio" name="radio-b" id="radio-b-1" value="option2" checked="checked">
