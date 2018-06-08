@@ -8000,7 +8000,8 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     position: relative; }
   #gel-header .page-actions .item > a {
     margin-left: 20px;
-    color: white; }
+    color: white;
+    padding: 0; }
   #gel-header .page-actions .item > a i {
     vertical-align: -5px; }
   #gel-header .page-actions .item > a span {

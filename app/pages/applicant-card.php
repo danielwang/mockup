@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-2">
+        <div class="col-12 col-md-4 col-lg-2">
           <fieldset class="d-inline">
             <div class="tray tray-green">
               <input type="radio" name="radio-b" id="radio-b-1" value="option2" checked="checked">
