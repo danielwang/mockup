@@ -2,7 +2,7 @@
 *** T5 template ***
 ******************  -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="gel">
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,8 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-  	    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+        <!-- IE fix: polyfill js must be in head, so IE render content properly-->
+  	  <script type="text/javascript" src="../js/polyfill.min.js"></script>
   </head>
   <body>
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -122,7 +123,7 @@
           <h1 class="page-title">Foundations</h1>
           <blockquote class="blockquote">Tagline goes here</blockquote>
         </div>
-        <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
+                  <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
           <span class="item">
             <a class="text-center" target="_blank" href="#" title="Download Sketch files">
               <i class="gel-icon-lg gel-icon-sketch" aria-hidden="true"></i> <span>Sketch</span>
@@ -139,7 +140,7 @@
               </a>
           </span>
           </div>
-      </div>
+              </div>
 
       <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="colours-tab" data-toggle="tab" href="#colours" role="tab" aria-controls="colours" aria-selected="1">Colours</a></li><li class="nav-item"><a class="nav-link " id="grids-tab" data-toggle="tab" href="#grids" role="tab" aria-controls="grids" aria-selected="">Grids</a></li><li class="nav-item"><a class="nav-link " id="typography-tab" data-toggle="tab" href="#typography" role="tab" aria-controls="typography" aria-selected="">Typography</a></li></ul>
     </div>
@@ -210,8 +211,103 @@
     </div>
   </div>
 </footer>
-<script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
+<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Alpha feedback</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">
+          Welcome and thanks in advance for taking the time to provide us feedback on your experience.
+        </p>
+        <div class="row">
+          <div class="col-12 mt-3">
+            <h5>1. The new design still allows me to access all the features and functionality that I use at the moment?</h5>
+          </div>
+          <div class="col-sm-8 col-md-6">
+            <div class="form-group">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-ctrl active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
+                  Yes
+                </label>
+                <label class="btn btn-ctrl">
+                  <input type="radio" name="options" id="option2" autocomplete="off">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label>Do you have any addtional feedback?</label>
+              <input class="form-control" type="text"/>
+            </div>
+          </div>
+
+          <div class="col-12 mt-5">
+            <h5>2. The new design is an improvement on the current systems's design?</h5>
+          </div>
+          <div class="col-sm-8 col-md-6">
+            <div class="form-group">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-ctrl active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
+                  Yes
+                </label>
+                <label class="btn btn-ctrl">
+                  <input type="radio" name="options" id="option2" autocomplete="off">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label>Do you have any addtional feedback?</label>
+              <input class="form-control" type="text"/>
+            </div>
+          </div>
+
+          <div class="col-12 mt-5">
+            <h5>3. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
+          </div>
+          <div class="col-sm-8 col-md-6">
+            <div class="form-group">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-ctrl active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
+                  Yes
+                </label>
+                <label class="btn btn-ctrl">
+                  <input type="radio" name="options" id="option2" autocomplete="off">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label>Please provide details of what this is? (Attach a screen capture to your feedback)</label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div><script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
 <script src="../js/gel.js"></script>
 </body>
-
 </html>

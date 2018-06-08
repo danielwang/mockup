@@ -1,300 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
 /* *************************************** *\
- *   PageUp GEL - Theme 3.0.0
+ *   PageUp GEL - Theme 3.1.1
  *   Author: Daniel Wang
- *	 Date: 15/03/2018
+ *	 Date: 07/05/2018
  *
  \* *************************************** */
-@font-face {
-  font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wx') format('truetype'), url('icons/gel-icon.woff?q0w0wx') format('woff'), url('icons/gel-icon.svg?q0w0wx#gel-icon') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="gel-icon-"], [class*=" gel-icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'gel-icon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 1.125rem;
-  vertical-align: text-top;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.gel-icon-sm {
-  font-size: 1rem; }
-
-.gel-icon-lg {
-  font-size: 1.5rem; }
-
-.gel-icon-2x {
-  font-size: 2rem; }
-
-.gel-icon-3x {
-  font-size: 3rem; }
-
-.gel-icon-bookmark:before {
-  content: "\e952"; }
-
-.gel-icon-folder:before {
-  content: "\e953"; }
-
-.gel-icon-image:before {
-  content: "\e954"; }
-
-.gel-icon-settings:before {
-  content: "\e951"; }
-
-.gel-icon-chat:before {
-  content: "\e945"; }
-
-.gel-icon-compensation:before {
-  content: "\e946"; }
-
-.gel-icon-drag:before {
-  content: "\e947"; }
-
-.gel-icon-pencil:before {
-  content: "\e948"; }
-
-.gel-icon-history:before {
-  content: "\e949"; }
-
-.gel-icon-home:before {
-  content: "\e94a"; }
-
-.gel-icon-location:before {
-  content: "\e94b"; }
-
-.gel-icon-add:before {
-  content: "\e944"; }
-
-.gel-icon-plus:before {
-  content: "\e94c"; }
-
-.gel-icon-tag:before {
-  content: "\e94e"; }
-
-.gel-icon-view:before {
-  content: "\e94f"; }
-
-.gel-icon-print:before {
-  content: "\e941"; }
-
-.gel-icon-feedback:before {
-  content: "\e920"; }
-
-.gel-icon-help-pointer:before {
-  content: "\e921"; }
-
-.gel-icon-info-pointer:before {
-  content: "\e922"; }
-
-.gel-icon-beta:before {
-  content: "\e923"; }
-
-.gel-icon-search:before {
-  content: "\e924"; }
-
-.gel-icon-bullhorn:before {
-  content: "\e925"; }
-
-.gel-icon-right:before {
-  content: "\e926"; }
-
-.gel-icon-left:before {
-  content: "\e927"; }
-
-.gel-icon-upload:before {
-  content: "\e928"; }
-
-.gel-icon-download:before {
-  content: "\e929"; }
-
-.gel-icon-dropdown:before {
-  content: "\e92a"; }
-
-.gel-icon-foldup:before {
-  content: "\e92b"; }
-
-.gel-icon-share:before {
-  content: "\e92c"; }
-
-.gel-icon-trash:before {
-  content: "\e92f"; }
-
-.gel-icon-eye:before {
-  content: "\e932"; }
-
-.gel-icon-logo:before {
-  content: "\e933"; }
-
-.gel-icon-user:before {
-  content: "\e934"; }
-
-.gel-icon-job:before {
-  content: "\e935"; }
-
-.gel-icon-knowledge-portal:before {
-  content: "\e936"; }
-
-.gel-icon-refresh:before {
-  content: "\e937"; }
-
-.gel-icon-lock:before {
-  content: "\e938"; }
-
-.gel-icon-analytics:before {
-  content: "\e939"; }
-
-.gel-icon-menu:before {
-  content: "\e93a"; }
-
-.gel-icon-support:before {
-  content: "\e93b"; }
-
-.gel-icon-employee:before {
-  content: "\e93c"; }
-
-.gel-icon-add-user:before {
-  content: "\e93d"; }
-
-.gel-icon-notes:before {
-  content: "\e930"; }
-
-.gel-icon-edit:before {
-  content: "\e950"; }
-
-.gel-icon-resume:before {
-  content: "\e94d"; }
-
-.gel-icon-new:before {
-  content: "\e931"; }
-
-.gel-icon-preview:before {
-  content: "\e93e"; }
-
-.gel-icon-copy:before {
-  content: "\e93f"; }
-
-.gel-icon-tick-circle:before {
-  content: "\e92d"; }
-
-.gel-icon-close-circle:before {
-  content: "\e92e"; }
-
-.gel-icon-close:before {
-  content: "\e940"; }
-
-.gel-icon-tick:before {
-  content: "\e91d"; }
-
-.gel-icon-help:before {
-  content: "\e91e"; }
-
-.gel-icon-calendar:before {
-  content: "\e91f"; }
-
-.gel-icon-slack:before {
-  content: "\e942"; }
-
-.gel-icon-github:before {
-  content: "\e943"; }
-
-.gel-icon-logo-o:before {
-  content: "\e915"; }
-
-.gel-icon-menu-o:before {
-  content: "\e90a"; }
-
-.gel-icon-close-o:before {
-  content: "\e910"; }
-
-.gel-icon-beta-o:before {
-  content: "\e904"; }
-
-.gel-icon-bullhorn-o:before {
-  content: "\e916"; }
-
-.gel-icon-print-o:before {
-  content: "\e913"; }
-
-.gel-icon-feedback-o:before {
-  content: "\e909"; }
-
-.gel-icon-support-o:before {
-  content: "\e90f"; }
-
-.gel-icon-profile-o:before {
-  content: "\e914"; }
-
-.gel-icon-search-o:before {
-  content: "\e919"; }
-
-.gel-icon-applicant-o:before {
-  content: "\e902"; }
-
-.gel-icon-control-o:before {
-  content: "\e906"; }
-
-.gel-icon-team-o:before {
-  content: "\e91a"; }
-
-.gel-icon-job-o:before {
-  content: "\e90c"; }
-
-.gel-icon-application-o:before {
-  content: "\e903"; }
-
-.gel-icon-employee-o:before {
-  content: "\e908"; }
-
-.gel-icon-recruitment-o:before {
-  content: "\e917"; }
-
-.gel-icon-learning-o:before {
-  content: "\e90e"; }
-
-.gel-icon-analytics-o:before {
-  content: "\e901"; }
-
-.gel-icon-orgchart-o:before {
-  content: "\e912"; }
-
-.gel-icon-onboarding-o:before {
-  content: "\e911"; }
-
-.gel-icon-journal-o:before {
-  content: "\e90d"; }
-
-.gel-icon-copy-o:before {
-  content: "\e907"; }
-
-.gel-icon-history-o:before {
-  content: "\e90b"; }
-
-.gel-icon-salary-o:before {
-  content: "\e918"; }
-
-.gel-icon-close-circle-o:before {
-  content: "\e905"; }
-
-.gel-icon-add-o:before {
-  content: "\e900"; }
-
-.gel-icon-unlock-o:before {
-  content: "\e91b"; }
-
-.gel-icon-view-o:before {
-  content: "\e91c"; }
-
-.gel-icon-sketch:before {
-  content: "\e957"; }
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -639,7 +349,7 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .1); }
 
 small, .small {
-  font-size: 80%;
+  font-size: 0.75rem;
   font-weight: 400; }
 
 mark, .mark {
@@ -1680,7 +1390,7 @@ select.form-control:not([size]):not([multiple]) {
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5; }
 
 .form-control-plaintext {
@@ -1699,12 +1409,12 @@ select.form-control:not([size]):not([multiple]) {
 
 .form-control-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   border-radius: 0.25rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]), .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]), .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]), .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(1.8125rem + 2px); }
+  height: calc(1.625rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn {
   padding: 0.5rem 1rem;
@@ -1761,7 +1471,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 80%;
+  font-size: 0.75rem;
   color: #008a02; }
 
 .valid-tooltip {
@@ -1815,7 +1525,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 80%;
+  font-size: 0.75rem;
   color: #d53d39; }
 
 .invalid-tooltip {
@@ -2585,7 +2295,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 1rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   border-radius: 1.5rem; }
 
@@ -2756,7 +2466,7 @@ tbody.collapse.show {
   display: block;
   padding: 0.5rem 0;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #6c757d;
   white-space: nowrap; }
 
@@ -3013,7 +2723,7 @@ tbody.collapse.show {
     opacity: 0; }
 
 .custom-select-sm {
-  height: calc(1.8125rem + 2px);
+  height: calc(1.625rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%; }
@@ -3580,18 +3290,18 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #0063b0;
+  color: #415365;
   background-color: #fff;
-  border: 1px solid #dee2e6; }
+  border: 1px solid #bac4ce; }
   .page-link:hover {
-    color: #008efd;
+    color: #415365;
     text-decoration: none;
-    background-color: #e9ecef;
-    border-color: #dee2e6; }
+    background-color: #fff;
+    border-color: #bac4ce; }
   .page-link:focus {
     z-index: 2;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 99, 176, .25); }
+    box-shadow: 0 0 0 0.2rem rgba(99, 119, 139, .25), inset 0 3px 5px rgba(0, 0, 0, 0); }
   .page-link:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
@@ -3604,9 +3314,9 @@ tbody.collapse.show {
     border-bottom-right-radius: 0.5rem; }
   .page-item.active .page-link {
     z-index: 1;
-    color: #fff;
-    background-color: #0063b0;
-    border-color: #0063b0; }
+    color: #415365;
+    background-color: #c8d0d8;
+    border-color: #bac4ce; }
   .page-item.disabled .page-link {
     color: #6c757d;
     pointer-events: none;
@@ -3627,7 +3337,7 @@ tbody.collapse.show {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5; }
   .pagination-sm .page-item:first-child .page-link {
     border-top-left-radius: 0.25rem;
@@ -4314,7 +4024,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   word-wrap: break-word;
   opacity: 0; }
   .tooltip.show {
@@ -4399,7 +4109,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -7547,7 +7257,7 @@ label {
   -webkit-box-shadow: inset 0 0 6px rgba(178, 178, 178, .75); }
 
 .scroll::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(0, 0, 0, ); }
+  background: rgba(78, 78, 78, 1); }
 
 .notification {
   position: relative;
@@ -7555,6 +7265,8 @@ label {
   text-align: center;
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
+  .notification [class^="gel-icon-"] {
+    vertical-align: middle; }
 
 .notification-link {
   font-weight: 400;
@@ -7801,80 +7513,70 @@ label {
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
 
-.bucket {
+.tray {
   cursor: default;
-  margin: 0 0.5rem;
-  display: inline-block; }
-  .bucket label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative; }
+  .tray label {
     cursor: pointer;
-    display: inline-block;
     vertical-align: top;
     position: relative; }
-  .bucket label::before {
-    cursor: pointer;
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    top: 2px;
-    left: 0;
-    border: 1px solid #bac4ce;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
-  .bucket label::after {
-    cursor: pointer;
-    display: inline-block;
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    left: 2px;
-    top: 4px;
-    font-size: 11px;
-    background-color: #fff;
-    color: #415365;
-    border-radius: 50%;
-    text-align: center; }
-  .bucket input[type="radio"] {
-    position: static;
-    margin-left: 0;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 1; }
-  .bucket input[type="radio"]:focus + label::before {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px; }
-  .bucket input[type="radio"]:checked + label::after {
+  .tray label::before {
     font-family: "gel-icon";
+    content: "\e95d";
+    font-size: 2.5rem;
+    position: absolute;
+    z-index: 2;
+    top: -14px; }
+  .tray label::after {
+    font-family: "gel-icon";
+    cursor: pointer;
+    text-align: center;
+    content: "";
+    background: #fff;
+    z-index: 1;
+    position: absolute;
+    width: 26px;
+    height: 24px;
+    top: 2px;
+    left: 7px;
+    font-size: 18px; }
+  .tray input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    left: 6px; }
+  .tray input[type="radio"]:checked + label::after {
     content: "\e91d"; }
-  .bucket-red label::before {
-    border-color: #d53d39; }
-  .bucket-red label::after {
+  .tray-red label::before {
     color: #d53d39; }
-  .bucket-orange label::before {
-    border-color: #f38900; }
-  .bucket-orange label::after {
+  .tray-red label::after {
+    color: #d53d39; }
+  .tray-orange label::before {
     color: #f38900; }
-  .bucket-green label::before {
-    border-color: #008a02; }
-  .bucket-green label::after {
+  .tray-orange label::after {
+    color: #f38900; }
+  .tray-green label::before {
+    color: #008a02; }
+  .tray-green label::after {
     color: #008a02; }
 
-.bucket-lg label::before {
-  width: 30px;
-  height: 30px;
-  border-width: 2px;
-  top: 4px; }
-  .bucket-lg label::after {
-    font-size: 18px;
-    width: 26px;
-    height: 26px;
-    top: 6px; }
+.tray-sm {
+  width: 28px;
+  height: 20px; }
+  .tray-sm label::before {
+    top: -10px;
+    font-size: 1.5rem; }
+  .tray-sm label::after {
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    top: -2px;
+    left: 4px; }
 
 .btn {
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Nunito', sans-serif; }
   .btn.loading {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
@@ -7889,14 +7591,13 @@ label {
   border-color: #bac4ce;
   border-radius: 0.5rem;
   background-color: white; }
-  .btn-ctrl:not(:disabled):not(.disabled):active, .btn-ctrl:not(:disabled):not(.disabled).active {
+  .btn-ctrl:not(:disabled):not(.disabled).active, .btn-ctrl:not(:disabled):not(.disabled):active {
     background-image: none;
     box-shadow: none; }
-  .btn-ctrl:not(:disabled):not(.disabled):active:focus, .btn-ctrl:not(:disabled):not(.disabled).active:focus, .btn-ctrl:not(:disabled):not(.disabled):active.focus, .btn-ctrl:not(:disabled):not(.disabled).active.focus {
+  .btn-ctrl:not(:disabled):not(.disabled).active.focus, .btn-ctrl:not(:disabled):not(.disabled):active.focus, .btn-ctrl:not(:disabled):not(.disabled).active:focus, .btn-ctrl:not(:disabled):not(.disabled):active:focus {
     box-shadow: 0 0 0 0.2rem rgba(99, 119, 139, .25), inset 0 3px 5px rgba(0, 0, 0, 0); }
-  .btn-ctrl:focus, .btn-ctrl.focus {
+  .btn-ctrl.focus, .btn-ctrl:focus {
     background-image: none;
-    box-shadow: none;
     box-shadow: 0 0 0 0.2rem rgba(99, 119, 139, .25), inset 0 3px 5px rgba(0, 0, 0, 0); }
 
 .btn-group-toggle {
@@ -8161,6 +7862,15 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     margin-right: 0.5rem;
     vertical-align: text-bottom;
     font-size: 1.1rem; }
+
+.form-control {
+  height: 2.375rem; }
+
+.form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn {
+  height: 3rem; }
+
+.form-control-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-append > .btn {
+  height: 2rem; }
 /*Global Mixins*/
 /*Global Spinner*/
 .spinner {
@@ -8290,7 +8000,8 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     position: relative; }
   #gel-header .page-actions .item > a {
     margin-left: 20px;
-    color: white; }
+    color: white;
+    padding: 0; }
   #gel-header .page-actions .item > a i {
     vertical-align: -5px; }
   #gel-header .page-actions .item > a span {
@@ -8344,10 +8055,9 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
   min-height: 100%;
   width: 300px;
-  background: #4f596a;
+  background: #3d485b;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.5s;
@@ -8373,12 +8083,12 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   #gel-menu .nav-toggle.close {
     position: absolute;
     top: 0;
-    left: 10px; }
+    right: 0; }
   #gel-menu .nav-toggle.close :hover {
     color: white; }
   #gel-menu .logo {
-    margin-left: 52px;
-    margin-top: 12px;
+    margin-left: 45px;
+    margin-top: 10px;
     display: block; }
   @media (min-width: 768px) {
     #gel-menu .logo {
@@ -8394,24 +8104,27 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   #gel-menu .user-menu .gel-toggle-btn input + span:before {
     background: #7c8ba4; }
   #gel-menu .user-menu #user-menu-hd {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative; }
   #gel-menu .user-menu #user-menu-hd:after {
     content: "\e92b";
     font-family: "gel-icon";
-    float: right;
-    margin-top: 8px; }
+    position: absolute;
+    right: 0;
+    top: 6px; }
   #gel-menu .user-menu #user-menu-hd.collapsed:after {
     content: "\e92a";
-    font-family: "gel-icon";
-    float: right;
-    margin-top: 8px; }
+    font-family: "gel-icon"; }
+  #gel-menu .user-menu #user-menu-ft {
+    margin-bottom: 1.75rem; }
   #gel-menu .user-menu #user-menu-ft a {
     color: white; }
   #gel-menu menu {
-    margin-top: 3.75rem;
+    margin-top: 1.75rem;
     padding: 0 2.8125rem; }
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     #gel-menu menu {
+      margin-top: 3.75rem;
       position: sticky;
       top: 3.75rem;
       height: calc(100vh - 3.75rem);
@@ -8420,8 +8133,8 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
       overflow-y: auto;
-      background: linear-gradient(#4f596a 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #4f596a 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
-      background: -webkit-linear-gradient(#4f596a 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #4f596a 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background: linear-gradient(#3d485b 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #3d485b 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background: -webkit-linear-gradient(#3d485b 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #3d485b 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
       background-repeat: no-repeat;
       background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
       background-attachment: local, local, scroll, scroll;
@@ -8444,7 +8157,12 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     font-weight: 400;
-    font-family: 'Proxima Nova'; }
+    font-family: 'Proxima Nova';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+    display: inherit; }
   #gel-menu ul li a:hover {
     color: #11b1ee;
     margin-left: 8px; }
@@ -8555,17 +8273,24 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 .table {
   border-collapse: separate;
   border-spacing: 0;
-  border-radius: 0.5rem;
-  overflow: hidden; }
+  border-radius: 0.5rem; }
   .table thead th {
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
     vertical-align: middle;
     border: 0; }
+  .table thead tr th:first-child {
+    border-top-left-radius: 0.5rem; }
+  .table thead tr th:last-child {
+    border-top-right-radius: 0.5rem; }
   .table.table-striped tbody tr:nth-of-type(odd) {
     background: white; }
   .table.table-striped tbody tr:nth-of-type(even) {
     background: #f8f9fa; }
+  .table tbody tr:last-child th, .table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 0.5rem; }
+  .table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 0.5rem; }
   .table tbody td, .table tbody th {
     vertical-align: middle;
     font-weight: 400; }
@@ -8650,7 +8375,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     background: #f8f9fa; }
   .table-sticky table tbody tr:nth-of-type(odd) th {
     background: white; }
-  .table-sticky table tbody tr:hover th, .table-sticky table tbody tr:hover td {
+  .table-sticky table tbody tr:hover td, .table-sticky table tbody tr:hover th {
     background-color: #d7dde3 !important; }
   .table-sticky table td, .table-sticky table th {
     white-space: nowrap; }
@@ -8670,6 +8395,16 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   margin: 1rem 0 2rem 0;
   font-weight: 400;
   font-family: 'Proxima Nova Light'; }
+
+dt {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Proxima Nova Semibold'; }
+
+strong {
+  font-weight: 400;
+  font-weight: 400;
+  font-family: 'Proxima Nova Semibold'; }
 /*******************************************************
  Variables
  *******************************************************/
@@ -9088,3 +8823,331 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 
 .dragable {
   cursor: move; }
+
+@media print {
+  #gel-footer, #gel-menu, #gel-navbar, .page-actions {
+    display: none !important; } }
+
+@font-face {
+  font-family: 'gel-icon';
+  src: url('icons/gel-icon.ttf?q0w0wa') format('truetype'), url('icons/gel-icon.woff?q0w0wa') format('woff'), url('icons/gel-icon.svg?q0w0wa#gel-icon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="gel-icon-"], [class*=" gel-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gel-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.125rem;
+  vertical-align: text-top;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.gel-icon-sm {
+  font-size: 1rem; }
+
+.gel-icon-lg {
+  font-size: 1.5rem; }
+
+.gel-icon-2x {
+  font-size: 2rem; }
+
+.gel-icon-3x {
+  font-size: 3rem; }
+
+.gel-icon-login:before {
+  content: "\e95a"; }
+
+.gel-icon-logout:before {
+  content: "\e95b"; }
+
+.gel-icon-tick-circle:before {
+  content: "\e92d"; }
+
+.gel-icon-error:before {
+  content: "\e959"; }
+
+.gel-icon-info:before {
+  content: "\e943"; }
+
+.gel-icon-warning:before {
+  content: "\e95c"; }
+
+.gel-icon-logo:before {
+  content: "\e933"; }
+
+.gel-icon-beta:before {
+  content: "\e958"; }
+
+.gel-icon-beta-feedback:before {
+  content: "\e923"; }
+
+.gel-icon-alpha:before {
+  content: "\e955"; }
+
+.gel-icon-alpha-feedback:before {
+  content: "\e956"; }
+
+.gel-icon-feedback:before {
+  content: "\e920"; }
+
+.gel-icon-bookmark:before {
+  content: "\e952"; }
+
+.gel-icon-folder:before {
+  content: "\e953"; }
+
+.gel-icon-image:before {
+  content: "\e954"; }
+
+.gel-icon-settings:before {
+  content: "\e951"; }
+
+.gel-icon-chat:before {
+  content: "\e945"; }
+
+.gel-icon-compensation:before {
+  content: "\e946"; }
+
+.gel-icon-drag:before {
+  content: "\e947"; }
+
+.gel-icon-pencil:before {
+  content: "\e948"; }
+
+.gel-icon-history:before {
+  content: "\e949"; }
+
+.gel-icon-home:before {
+  content: "\e94a"; }
+
+.gel-icon-location:before {
+  content: "\e94b"; }
+
+.gel-icon-add:before {
+  content: "\e944"; }
+
+.gel-icon-plus:before {
+  content: "\e94c"; }
+
+.gel-icon-tag:before {
+  content: "\e94e"; }
+
+.gel-icon-view:before {
+  content: "\e94f"; }
+
+.gel-icon-slack:before {
+  content: "\e942"; }
+
+.gel-icon-sketch:before {
+  content: "\e957"; }
+
+.gel-icon-github:before {
+  content: "\e960"; }
+
+.gel-icon-edit:before {
+  content: "\e950"; }
+
+.gel-icon-print:before {
+  content: "\e941"; }
+
+.gel-icon-help:before {
+  content: "\e91e"; }
+
+.gel-icon-help-pointer:before {
+  content: "\e921"; }
+
+.gel-icon-info-pointer:before {
+  content: "\e922"; }
+
+.gel-icon-search:before {
+  content: "\e924"; }
+
+.gel-icon-bullhorn:before {
+  content: "\e925"; }
+
+.gel-icon-arrow-right:before {
+  content: "\e926"; }
+
+.gel-icon-arrow-left:before {
+  content: "\e927"; }
+
+.gel-icon-upload:before {
+  content: "\e928"; }
+
+.gel-icon-download:before {
+  content: "\e929"; }
+
+.gel-icon-angle-left:before {
+  content: "\e95e"; }
+
+.gel-icon-angle-right:before {
+  content: "\e95f"; }
+
+.gel-icon-angle-down:before {
+  content: "\e92a"; }
+
+.gel-icon-angle-up:before {
+  content: "\e92b"; }
+
+.gel-icon-share:before {
+  content: "\e92c"; }
+
+.gel-icon-trash:before {
+  content: "\e92f"; }
+
+.gel-icon-eye:before {
+  content: "\e932"; }
+
+.gel-icon-user:before {
+  content: "\e934"; }
+
+.gel-icon-job:before {
+  content: "\e935"; }
+
+.gel-icon-knowledge-portal:before {
+  content: "\e936"; }
+
+.gel-icon-refresh:before {
+  content: "\e937"; }
+
+.gel-icon-lock:before {
+  content: "\e938"; }
+
+.gel-icon-analytics:before {
+  content: "\e939"; }
+
+.gel-icon-menu:before {
+  content: "\e93a"; }
+
+.gel-icon-support:before {
+  content: "\e93b"; }
+
+.gel-icon-employee:before {
+  content: "\e93c"; }
+
+.gel-icon-add-user:before {
+  content: "\e93d"; }
+
+.gel-icon-notes:before {
+  content: "\e930"; }
+
+.gel-icon-new:before {
+  content: "\e931"; }
+
+.gel-icon-preview:before {
+  content: "\e93e"; }
+
+.gel-icon-resume:before {
+  content: "\e94d"; }
+
+.gel-icon-copy:before {
+  content: "\e93f"; }
+
+.gel-icon-close-circle:before {
+  content: "\e92e"; }
+
+.gel-icon-close:before {
+  content: "\e940"; }
+
+.gel-icon-tick:before {
+  content: "\e91d"; }
+
+.gel-icon-calendar:before {
+  content: "\e91f"; }
+
+.gel-icon-logo-o:before {
+  content: "\e915"; }
+
+.gel-icon-menu-o:before {
+  content: "\e90a"; }
+
+.gel-icon-close-o:before {
+  content: "\e910"; }
+
+.gel-icon-beta-o:before {
+  content: "\e904"; }
+
+.gel-icon-bullhorn-o:before {
+  content: "\e916"; }
+
+.gel-icon-print-o:before {
+  content: "\e913"; }
+
+.gel-icon-feedback-o:before {
+  content: "\e909"; }
+
+.gel-icon-support-o:before {
+  content: "\e90f"; }
+
+.gel-icon-profile-o:before {
+  content: "\e914"; }
+
+.gel-icon-search-o:before {
+  content: "\e919"; }
+
+.gel-icon-applicant-o:before {
+  content: "\e902"; }
+
+.gel-icon-control-o:before {
+  content: "\e906"; }
+
+.gel-icon-team-o:before {
+  content: "\e91a"; }
+
+.gel-icon-job-o:before {
+  content: "\e90c"; }
+
+.gel-icon-application-o:before {
+  content: "\e903"; }
+
+.gel-icon-employee-o:before {
+  content: "\e908"; }
+
+.gel-icon-recruitment-o:before {
+  content: "\e917"; }
+
+.gel-icon-learning-o:before {
+  content: "\e90e"; }
+
+.gel-icon-analytics-o:before {
+  content: "\e901"; }
+
+.gel-icon-orgchart-o:before {
+  content: "\e912"; }
+
+.gel-icon-onboarding-o:before {
+  content: "\e911"; }
+
+.gel-icon-journal-o:before {
+  content: "\e90d"; }
+
+.gel-icon-copy-o:before {
+  content: "\e907"; }
+
+.gel-icon-history-o:before {
+  content: "\e90b"; }
+
+.gel-icon-salary-o:before {
+  content: "\e918"; }
+
+.gel-icon-close-circle-o:before {
+  content: "\e905"; }
+
+.gel-icon-add-o:before {
+  content: "\e900"; }
+
+.gel-icon-unlock-o:before {
+  content: "\e91b"; }
+
+.gel-icon-view-o:before {
+  content: "\e91c"; }
+
+.gel-icon-tray:before {
+  content: "\e95d"; }
