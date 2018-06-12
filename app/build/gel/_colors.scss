@@ -1,0 +1,55 @@
+// https://codepen.io/danielwang/pen/wXJVJL
+
+$baseColors: (
+  red: #e81700,
+  purple: #7E52A0,
+  pageup: #142c52,
+  slate: #415365,
+  blue: #0063b0,
+  light-blue: #42c7ff,
+  orange: #ff6200,
+  green: #49bd61,
+  grey: #3d484b,
+  teal: #3ab8bb,
+);
+
+@function colorMap($baseColors, $variations) {
+  $colors:();
+
+  @each $color, $value in $baseColors {
+    $maxVar: 36;
+    $mid: $variations / 2;
+    $dist: $mid - 1;
+    $step: $maxVar / $dist;
+
+    // lighten and darken
+    @for $i from 1 through $dist {
+      $percent: $maxVar - ($step * ($i - 1));
+      $darken: ($variations - $i) * 100;
+      $lighten: $i * 100;
+
+      $colors: map-merge($colors, (
+         #{$color}-#{$lighten}: lighten($value, $percent),
+         #{$color}-#{$darken}:  darken($value, $percent)
+      ));
+    }
+
+    // middle eg 500
+    $colors: map-merge($colors, (#{$color}-50: lighten($value, 38.7)));
+    $colors: map-merge($colors, (#{$color}-#{$variations/2*100}: $value));
+  }
+  @return $colors;
+}
+
+@each $color, $value in colorMap($baseColors, 10) {
+  // .#{$color} {
+  //   &::before {
+  //     content: '#{$value}';
+  //     font-family: monospace;
+  //     float: right;
+  //     text-transform: uppercase;
+  //   }
+  //   background-color: $value;
+  // }
+  $color: $value;
+}
