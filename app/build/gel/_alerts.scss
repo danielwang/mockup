@@ -62,12 +62,12 @@
 
 @each $color, $value in $theme-colors {
   .notification-#{$color} {
-    @include notification-variant($value, $value, $white);
+    @include notification-variant(darken($value, 9%), $value, $white);
   }
 }
 
 @each $color, $value in $theme-colors {
   .alert-#{$color} {
-    @include alert-variant(lighten($value, 60%), $value, $body-color);
+    @include alert-variant(lighten($value, 45%), $value, darken($value, 18%));
   }
 }

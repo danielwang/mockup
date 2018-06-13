@@ -179,6 +179,14 @@ $lineIcons = buildLineIcons();
               <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/interview.svg" alt="Interview"></div>
               <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/offer.svg" alt="Offer"></div>
               <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/contract.svg" alt="Contract"></div>
+
+              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/target.svg" /></div>
+              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/folder.svg" alt="Jobs"></div>
+              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/bulb.svg" alt="Approval"></div>
+              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/pencil.svg" alt="Advertising"></div>
+              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/paperplane.svg" alt="Shortlisting"></div>
+              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/key.svg" alt="Advertising"></div>
+              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/personas.svg" alt="Shortlisting"></div>
           </div>
         </div>
       </div>

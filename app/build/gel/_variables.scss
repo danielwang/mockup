@@ -33,13 +33,9 @@ $gel-icon:            "gel-icon";
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 
-$ctrl:                  #415365;
-
 //
 // Color system
 //
-
-//$pageup-500;
 
 // stylelint-disable
 $white:    #fff !default;
@@ -67,18 +63,108 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
+$grey:    #3d485b !default;
 $blue:    #0063b0 !default;
 $azure:   #00a1e5 !default;
 $indigo:  #6610f2 !default;
 $purple:  #7E52A0 !default;
 $pink:    #e83e8c !default;
-$red:     #e81700 !default;
+$red:     #d53d39 !default;
 $orange:  #ff6200 !default;
 $yellow:  #E1A931 !default;
-$green:   #49bd61 !default;
+$green:   #317635 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $navy:    #142C52 !default;
+$slate:   #415365 !default;
+
+$pageup:  $navy;
+$ctrl:    $slate;
+
+$pageup-100: lighten($pageup, 36%);
+$pageup-200: lighten($pageup, 27%);
+$pageup-300: lighten($pageup, 18%);
+$pageup-400: lighten($pageup, 9%);
+$pageup-500: $pageup;
+$pageup-600: darken($pageup, 9%);
+$pageup-700: darken($pageup, 18%);
+$pageup-800: darken($pageup, 27%);
+$pageup-900: darken($pageup, 36%);
+
+$grey-100: lighten($grey, 36%);
+$grey-200: lighten($grey, 27%);
+$grey-300: lighten($grey, 18%);
+$grey-400: lighten($grey, 9%);
+$grey-500: $grey;
+$grey-600: darken($grey, 9%);
+$grey-700: darken($grey, 18%);
+$grey-800: darken($grey, 27%);
+$grey-900: darken($grey, 36%);
+
+
+$slate-100: lighten($slate, 36%);
+$slate-200: lighten($slate, 27%);
+$slate-300: lighten($slate, 18%);
+$slate-400: lighten($slate, 9%);
+$slate-500: $slate;
+$slate-600: darken($slate, 9%);
+$slate-700: darken($slate, 18%);
+$slate-800: darken($slate, 27%);
+$slate-900: darken($slate, 36%);
+
+
+$blue-100: lighten($blue, 36%);
+$blue-200: lighten($blue, 27%);
+$blue-300: lighten($blue, 18%);
+$blue-400: lighten($blue, 9%);
+$blue-500: $blue;
+$blue-600: darken($blue, 9%);
+$blue-700: darken($blue, 18%);
+$blue-800: darken($blue, 27%);
+$blue-900: darken($blue, 36%);
+
+$azure-100: lighten($azure, 36%);
+$azure-200: lighten($azure, 27%);
+$azure-300: lighten($azure, 18%);
+$azure-400: lighten($azure, 9%);
+$azure-500: $azure;
+$azure-600: darken($azure, 9%);
+$azure-700: darken($azure, 18%);
+$azure-800: darken($azure, 27%);
+$azure-900: darken($azure, 36%);
+
+
+$red-100: lighten($red, 36%);
+$red-200: lighten($red, 27%);
+$red-300: lighten($red, 18%);
+$red-400: lighten($red, 9%);
+$red-500: $red;
+$red-600: darken($red, 9%);
+$red-700: darken($red, 18%);
+$red-800: darken($red, 27%);
+$red-900: darken($red, 36%);
+
+
+$green-100: lighten($green, 36%);
+$green-200: lighten($green, 27%);
+$green-300: lighten($green, 18%);
+$green-400: lighten($green, 9%);
+$green-500: $green;
+$green-600: darken($green, 9%);
+$green-700: darken($green, 18%);
+$green-800: darken($green, 27%);
+$green-900: darken($green, 36%);
+
+
+$orange-100: lighten($orange, 36%);
+$orange-200: lighten($orange, 27%);
+$orange-300: lighten($orange, 18%);
+$orange-400: lighten($orange, 9%);
+$orange-500: $orange;
+$orange-600: darken($orange, 9%);
+$orange-700: darken($orange, 18%);
+$orange-800: darken($orange, 27%);
+$orange-900: darken($orange, 36%);
 
 $colors: () !default;
 $colors: map-merge((
@@ -120,6 +206,8 @@ $theme-colors: map-merge((
   "danger":     $danger
 ), $theme-colors);
 // stylelint-enable
+
+
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
@@ -178,7 +266,7 @@ $sizes: map-merge((
 // Settings for the `<body>` element.
 
 $body-bg:                   #ebeff3 !default;
-$body-color:                #415365 !default;
+$body-color:                $slate-600 !default;
 
 // Links
 //
@@ -348,7 +436,7 @@ $table-border-color:          $gray-300 !default;
 $table-head-bg:               $gray-200 !default;
 $table-head-color:            $gray-700 !default;
 
-$table-dark-bg:               lighten($ctrl, 15%);
+$table-dark-bg:               $slate-300;
 $table-dark-accent-bg:        rgba($white, .05) !default;
 $table-dark-hover-bg:         rgba($white, .075) !default;
 $table-dark-border-color:     lighten($ctrl, 15%);
@@ -420,9 +508,9 @@ $ctrl-size-lg:          3rem;  // 48px
 $ctrl-size:             2.375rem; // 38px
 $ctrl-size-sm:          2rem;  //32px
 
-$ctrl-color:            $body-color;
-$ctrl-border-color:     lighten($ctrl, 30%);
-$ctrl-active-bg:        lighten($ctrl, 35%);
+$ctrl-color:            $slate;
+$ctrl-border-color:     $slate-100;
+$ctrl-active-bg:        lighten($slate-100, 10%);
 $ctrl-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba($ctrl, .25), $btn-active-box-shadow;
 // Forms
 

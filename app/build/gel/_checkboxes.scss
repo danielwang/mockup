@@ -52,7 +52,7 @@ $check-icon: "\e91d" !default;
       top: 2px;
       left: 0;
       margin-left: -$form-check-input-gutter;
-      border: 1px solid $input-border-color;
+      border: 1px solid $slate;
       border-radius: 3px;
       background-color: #fff;
       @include transition(border 0.15s ease-in-out, color 0.15s ease-in-out);
@@ -70,7 +70,7 @@ $check-icon: "\e91d" !default;
       padding-left: 3px;
       padding-top: 1px;
       font-size: 11px;
-      color: $input-color;
+      color: $slate;
     }
   }
 
@@ -202,7 +202,7 @@ $check-icon: "\e91d" !default;
       top: 5px;
       margin-left: -20px;
       border-radius: 50%;
-      background-color: $input-color;
+      background-color: $slate;
       transform: scale(0, 0);
 
       transition: transform .1s cubic-bezier(.8,-0.33,.2,1.33);
