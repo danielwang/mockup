@@ -1,0 +1,27 @@
+.accordion {
+  border-radius: 5px;
+  overflow: hidden;
+
+  .card {
+    padding: 0;
+
+    .card-header {
+      a {
+        color: $white;
+        display: block;
+        font-family: $font-family-headings;
+        @include text-truncate();
+        &:before {
+          float: right;
+          margin-left: $spacer;
+          content: "\e92b";
+          font-family: "gel-icon";
+        }
+
+        &.collapsed:before {
+          content: "\e92a";
+        }
+      }
+    }
+  }
+}

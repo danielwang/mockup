@@ -11,11 +11,12 @@
 @import "variables";
 
 // .gel{
-@import "../bootstrap-4.0.0/bootstrap";
+@import "../bootstrap-4.1.0/bootstrap";
 //----
 @import "mixins";
 @import "core";
 @import "misc";
+@import "accordions";
 @import "alerts";
 @import "avatars";
 @import "badges";
