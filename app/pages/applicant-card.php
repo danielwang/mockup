@@ -41,24 +41,24 @@
         </div>
 
         <div class="col-12 col-md-4 col-lg-2">
-          <fieldset class="d-inline">
-            <div class="tray tray-green">
-              <input type="radio" name="radio-b" id="radio-b-1" value="option2" checked="checked">
-              <label for="radio-b-1">
+          <fieldset>
+            <div class="tray tray-green tray-lg">
+              <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
+              <label for="radio-b-l-1" data-toggle="tooltip" data-placement="bottom" data-original-title="Green Tray">
                 <span class="sr-only">
                   Green</span>
               </label>
             </div>
-            <div class="tray tray-orange">
-              <input type="radio" name="radio-b" id="radio-b-2" value="option1">
-              <label for="radio-b-2">
+            <div class="tray tray-orange tray-lg">
+              <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
+              <label for="radio-b-l-2" data-toggle="tooltip" data-placement="bottom" data-original-title="Orange Tray">
                 <span class="sr-only">
                   Orange</span>
               </label>
             </div>
-            <div class="tray tray-red">
-              <input type="radio" name="radio-b" id="radio-b-3" value="option3">
-              <label for="radio-b-3">
+            <div class="tray tray-red tray-lg">
+              <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
+              <label for="radio-b-l-3" data-toggle="tooltip" data-placement="bottom" data-original-title="Red Tray">
                 <span class="sr-only">
                   Red</span>
               </label>

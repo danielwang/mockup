@@ -15,7 +15,7 @@
           float: right;
           margin-left: $spacer;
           content: "\e92b";
-          font-family: "gel-icon";
+          font-family: $gel-icon;
         }
 
         &.collapsed:before {

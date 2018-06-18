@@ -1,0 +1,84 @@
+#smileys {
+  display: flex;
+  .face {
+    flex: 1 0 0px;
+    text-align: center;
+    input[type="radio"] {
+      -webkit-appearance: none;
+      width: 40px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      filter: opacity(0.45);
+      margin: 0 5px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        filter: opacity(0.75);
+      }
+
+      &:checked {
+        filter: opacity(1);
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      &.excellent {
+        background: url("../images/smileys/excellent.svg") center;
+        background-size: cover;
+      }
+
+      &.good {
+        background: url("../images/smileys/good.svg") center;
+        background-size: cover;
+      }
+
+      &.fair {
+        background: url("../images/smileys/fair.svg") center;
+        background-size: cover;
+      }
+
+      &.bad {
+        background: url("../images/smileys/bad.svg") center;
+        background-size: cover;
+      }
+
+      &.worse {
+        background: url("../images/smileys/worse.svg") center;
+        background-size: cover;
+      }
+    }
+
+    label {
+      display: block;
+
+    }
+  }
+}
+
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    input[type=radio] {
+        display: none
+    }
+    label {
+        color: $slate-50;
+        font-size: 18px;
+        padding: 0;
+        cursor: pointer;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+
+    label:hover,
+    label:hover ~ label{
+      color: $blue-200;
+    }
+    input[type=radio]:checked ~ label {
+        color: $blue
+    }
+}

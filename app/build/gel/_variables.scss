@@ -24,7 +24,7 @@ $icon-x5-size:        ceil(($icon-size-base * 5));
 
 //** icons
 $gel-icon:            "gel-icon";
-//$fontawesome:         "FontAwesome";
+
 
 
 // Variables
@@ -101,7 +101,7 @@ $grey-700: darken($grey, 18%);
 $grey-800: darken($grey, 27%);
 $grey-900: darken($grey, 36%);
 
-
+$slate-50: lighten($slate, 45%);
 $slate-100: lighten($slate, 36%);
 $slate-200: lighten($slate, 27%);
 $slate-300: lighten($slate, 18%);
@@ -814,7 +814,7 @@ $tooltip-font-size:           $font-size-sm !default;
 $tooltip-max-width:           200px !default;
 $tooltip-color:               $white !default;
 $tooltip-bg:                  $body-color !default;
-$tooltip-border-radius:       $border-radius !default;
+$tooltip-border-radius:       $border-radius/2 !default;
 $tooltip-opacity:             .9 !default;
 $tooltip-padding-y:           .375rem !default;
 $tooltip-padding-x:           .75rem !default;

@@ -2,48 +2,58 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel">Alpha feedback</h2>
+        <h2 class="modal-title" id="exampleModalLabel">Beta feedback</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">
         <p class="lead">
-          Welcome and thanks in advance for taking the time to provide us feedback on your experience.
+          We love hearing your thoughts on upgrades and latest releases, and we appreciate you taking the time to provide us with your valuable feedback.
         </p>
         <div class="row">
           <div class="col-12 mt-3">
-            <h5>1. The new design still allows me to access all the features and functionality that I use at the moment?</h5>
+            <h5>1. What do you think of the new design?</h5>
           </div>
           <div class="col-sm-8 col-md-6">
-            <div class="form-group">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl">
-                  <input type="radio" name="options" id="option2" autocomplete="off">
-                  No
-                </label>
-              </div>
+            <div id="smileys">
+              <span class="face">
+                <input type="radio" name="smiley" value="worse" class="worse" id="smiley-worse"/>
+                <label for="smiley-worse">Worse</label>
+              </span>
+              <span class="face">
+                <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
+                <label for="smiley-bad">Bad</label>
+              </span>
+              <span class="face">
+                <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
+                <label for="smiley-fair">Fair</label>
+              </span>
+              <span class="face">
+                <input type="radio" name="smiley" value="good" class="good" id="smiley-good"/>
+                <label for="smiley-good">Good</label>
+              </span>
+              <span class="face">
+                <input type="radio" name="smiley" value="excellent" class="excellent" id="smiley-excellent"/>
+                <label for="smiley-excellent">Excellent</label>
+              </span>
             </div>
           </div>
           <div class="col-12">
             <div class="form-group">
-              <label>Do you have any addtional feedback?</label>
-              <input class="form-control" type="text"/>
+              <label>Why did you give that rating?</label>
+              <textarea class="form-control" rows="2"></textarea>
             </div>
           </div>
 
           <div class="col-12 mt-5">
-            <h5>2. The new design is an improvement on the current systems's design?</h5>
+            <h5>2. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
           </div>
           <div class="col-sm-8 col-md-6">
             <div class="form-group">
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
+                  <input type="radio" name="options" id="option1" autocomplete="off">
                   Yes
                 </label>
                 <label class="btn btn-ctrl">
@@ -55,35 +65,8 @@
           </div>
           <div class="col-12">
             <div class="form-group">
-              <label>Do you have any addtional feedback?</label>
-              <input class="form-control" type="text"/>
-            </div>
-          </div>
-
-          <div class="col-12 mt-5">
-            <h5>3. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
-          </div>
-          <div class="col-sm-8 col-md-6">
-            <div class="form-group">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl">
-                  <input type="radio" name="options" id="option2" autocomplete="off">
-                  No
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group">
-              <label>Please provide details of what this is? (Attach a screen capture to your feedback)</label>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile"></label>
-              </div>
+              <label>Please provide details of what this is?</label>
+              <textarea class="form-control" rows="2"></textarea>
             </div>
           </div>
         </div>
