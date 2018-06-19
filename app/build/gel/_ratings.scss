@@ -1,84 +1,135 @@
-#smileys {
-  display: flex;
-  .face {
-    flex: 1 0 0px;
-    text-align: center;
-    input[type="radio"] {
-      -webkit-appearance: none;
-      width: 40px;
-      height: 40px;
-      border: none;
-      cursor: pointer;
-      filter: opacity(0.45);
-      margin: 0 5px;
-      transition: all 0.2s ease;
+$face-colors: ()!default;
+$face-colors: map-merge(("red": $red, "orange": $orange, "green": $green-400, "yellow": $yellow, "lime": #75ad37), $face-colors);
+@mixin face-variants($outline, $solid) {
+  input[type="radio"] {
+    -webkit-appearance: none;
 
-      &:hover {
-        filter: opacity(0.75);
-      }
-
-      &:checked {
-        filter: opacity(1);
-      }
-
-      &:focus {
-        outline: 0;
-      }
-
-      &.excellent {
-        background: url("../images/smileys/excellent.svg") center;
-        background-size: cover;
-      }
-
-      &.good {
-        background: url("../images/smileys/good.svg") center;
-        background-size: cover;
-      }
-
-      &.fair {
-        background: url("../images/smileys/fair.svg") center;
-        background-size: cover;
-      }
-
-      &.bad {
-        background: url("../images/smileys/bad.svg") center;
-        background-size: cover;
-      }
-
-      &.worse {
-        background: url("../images/smileys/worse.svg") center;
-        background-size: cover;
+    + label {
+      &::before {
+        content: $outline;
       }
     }
 
-    label {
-      display: block;
-
+    &:checked + label {
+      &::before {
+        content: $solid;
+      }
     }
   }
 }
+@mixin face-colors($color) {
+  input[type="radio"] {
+    -webkit-appearance: none;
 
+    + label {
+      &::before {
+        color: lighten($color, 9%);;
+      }
 
-.star-rating {
-    direction: rtl;
-    display: inline-block;
-    input[type=radio] {
-        display: none
+      &::after {
+        background-color: lighten($color, 36%); //100
+      }
     }
+
+    &:checked + label {
+      &::before {
+        color: $color;
+      }
+
+      &::after {
+        background-color: darken($color, 36%); //900
+      }
+    }
+  }
+}
+@each $color, $value in $face-colors {
+  .face-#{$color} {
+    @include face-colors($value);
+  }
+}
+
+.smileys {
+  display: flex;
+
+  .face {
+    flex: 1 0 0;
+    text-align: center;
+
     label {
-        color: $slate-50;
-        font-size: 18px;
-        padding: 0;
-        cursor: pointer;
-        -webkit-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
+      cursor: pointer;
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        font-family: $gel-icon;
+        font-size: 48px;
+        position: absolute;
+        z-index: 2;
+        left: -3px;
+        top: -16px;
+      }
+
+      &::after {
+        content: "";
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        top: 2px;
+        left: 4px;
+        border-radius: 50%;
+      }
     }
 
-    label:hover,
-    label:hover ~ label{
-      color: $blue-200;
+    span{
+      display: block;
     }
-    input[type=radio]:checked ~ label {
-        color: $blue
-    }
+  }
+
+  .face-red {
+    @include face-variants("\e965", "\e96b")
+  }
+
+  .face-orange {
+    @include face-variants("\e966","\e96a")
+  }
+
+  .face-yellow {
+    @include face-variants("\e964","\e969")
+  }
+
+  .face-lime {
+    @include face-variants("\e963","\e968")
+  }
+
+  .face-green {
+    @include face-variants("\e962","\e967")
+  }
+}
+// ********************** Star Rating ************************\\
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+
+  input[type=radio] {
+    display: none;
+  }
+
+  label {
+    color: $slate-50;
+    font-size: 18px;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  label:hover,
+  label:hover ~ label {
+    color: $blue-200;
+  }
+
+  input[type=radio]:checked ~ label {
+    color: $blue;
+  }
 }

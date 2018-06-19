@@ -8520,44 +8520,114 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 
 #popup-top {
   padding: 1.5rem 0; }
+  .face-red input[type="radio"] {
+    -webkit-appearance: none; }
+  .face-red input[type="radio"] + label::before {
+    color: #dd625f; }
+  .face-red input[type="radio"] + label::after {
+    background-color: #f5d1d0; }
+  .face-red input[type="radio"]:checked + label::before {
+    color: #d53d39; }
+  .face-red input[type="radio"]:checked + label::after {
+    background-color: #47110f; }
+  .face-orange input[type="radio"] {
+    -webkit-appearance: none; }
+  .face-orange input[type="radio"] + label::before {
+    color: #ff7e2e; }
+  .face-orange input[type="radio"] + label::after {
+    background-color: #ffd3b8; }
+  .face-orange input[type="radio"]:checked + label::before {
+    color: #ff6200; }
+  .face-orange input[type="radio"]:checked + label::after {
+    background-color: #471b00; }
+  .face-green input[type="radio"] {
+    -webkit-appearance: none; }
+  .face-green input[type="radio"] + label::before {
+    color: #4eb554; }
+  .face-green input[type="radio"] + label::after {
+    background-color: #afdeb2; }
+  .face-green input[type="radio"]:checked + label::before {
+    color: #3e9644; }
+  .face-green input[type="radio"]:checked + label::after {
+    background-color: #091509; }
+  .face-yellow input[type="radio"] {
+    -webkit-appearance: none; }
+  .face-yellow input[type="radio"] + label::before {
+    color: #e7ba59; }
+  .face-yellow input[type="radio"] + label::after {
+    background-color: #f8ecd1; }
+  .face-yellow input[type="radio"]:checked + label::before {
+    color: #e1a931; }
+  .face-yellow input[type="radio"]:checked + label::after {
+    background-color: #4f390b; }
+  .face-lime input[type="radio"] {
+    -webkit-appearance: none; }
+  .face-lime input[type="radio"] + label::before {
+    color: #8cc64c; }
+  .face-lime input[type="radio"] + label::after {
+    background-color: #cfe7b4; }
+  .face-lime input[type="radio"]:checked + label::before {
+    color: #75ad37; }
+  .face-lime input[type="radio"]:checked + label::after {
+    background-color: #17220b; }
 
-#smileys {
+.smileys {
   display: flex; }
-  #smileys .face {
-    flex: 1 0 0px;
+  .smileys .face {
+    flex: 1 0 0;
     text-align: center; }
-  #smileys .face input[type="radio"] {
-    -webkit-appearance: none;
-    width: 40px;
-    height: 40px;
-    border: none;
+  .smileys .face label {
     cursor: pointer;
-    filter: opacity(0.45);
-    margin: 0 5px;
-    transition: all 0.2s ease; }
-  #smileys .face input[type="radio"]:hover {
-    filter: opacity(0.75); }
-  #smileys .face input[type="radio"]:checked {
-    filter: opacity(1); }
-  #smileys .face input[type="radio"]:focus {
-    outline: 0; }
-  #smileys .face input[type="radio"].excellent {
-    background: url("../images/smileys/excellent.svg") center;
-    background-size: cover; }
-  #smileys .face input[type="radio"].good {
-    background: url("../images/smileys/good.svg") center;
-    background-size: cover; }
-  #smileys .face input[type="radio"].fair {
-    background: url("../images/smileys/fair.svg") center;
-    background-size: cover; }
-  #smileys .face input[type="radio"].bad {
-    background: url("../images/smileys/bad.svg") center;
-    background-size: cover; }
-  #smileys .face input[type="radio"].worse {
-    background: url("../images/smileys/worse.svg") center;
-    background-size: cover; }
-  #smileys .face label {
+    position: relative;
+    width: 40px;
+    height: 40px; }
+  .smileys .face label::before {
+    font-family: "gel-icon";
+    font-size: 48px;
+    position: absolute;
+    z-index: 2;
+    left: -3px;
+    top: -16px; }
+  .smileys .face label::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    border-radius: 50%; }
+  .smileys .face span {
     display: block; }
+  .smileys .face-red input[type="radio"] {
+    -webkit-appearance: none; }
+  .smileys .face-red input[type="radio"] + label::before {
+    content: "\e965"; }
+  .smileys .face-red input[type="radio"]:checked + label::before {
+    content: "\e96b"; }
+  .smileys .face-orange input[type="radio"] {
+    -webkit-appearance: none; }
+  .smileys .face-orange input[type="radio"] + label::before {
+    content: "\e966"; }
+  .smileys .face-orange input[type="radio"]:checked + label::before {
+    content: "\e96a"; }
+  .smileys .face-yellow input[type="radio"] {
+    -webkit-appearance: none; }
+  .smileys .face-yellow input[type="radio"] + label::before {
+    content: "\e964"; }
+  .smileys .face-yellow input[type="radio"]:checked + label::before {
+    content: "\e969"; }
+  .smileys .face-lime input[type="radio"] {
+    -webkit-appearance: none; }
+  .smileys .face-lime input[type="radio"] + label::before {
+    content: "\e963"; }
+  .smileys .face-lime input[type="radio"]:checked + label::before {
+    content: "\e968"; }
+  .smileys .face-green input[type="radio"] {
+    -webkit-appearance: none; }
+  .smileys .face-green input[type="radio"] + label::before {
+    content: "\e962"; }
+  .smileys .face-green input[type="radio"]:checked + label::before {
+    content: "\e967"; }
 
 .star-rating {
   direction: rtl;
@@ -9136,7 +9206,7 @@ strong {
 
 @font-face {
   font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wb') format('truetype'), url('icons/gel-icon.woff?q0w0wb') format('woff'), url('icons/gel-icon.svg?q0w0wb#gel-icon') format('svg');
+  src: url('icons/gel-icon.ttf?q0w0wc') format('truetype'), url('icons/gel-icon.woff?q0w0wc') format('woff'), url('icons/gel-icon.svg?q0w0wc#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -9460,3 +9530,33 @@ strong {
 
 .gel-icon-star:before {
   content: "\e961"; }
+
+.gel-icon-happy-o:before {
+  content: "\e962"; }
+
+.gel-icon-happy:before {
+  content: "\e967"; }
+
+.gel-icon-smile-o:before {
+  content: "\e963"; }
+
+.gel-icon-smile:before {
+  content: "\e968"; }
+
+.gel-icon-meh-o:before {
+  content: "\e964"; }
+
+.gel-icon-meh:before {
+  content: "\e969"; }
+
+.gel-icon-sad-o:before {
+  content: "\e966"; }
+
+.gel-icon-sad:before {
+  content: "\e96a"; }
+
+.gel-icon-frown-o:before {
+  content: "\e965"; }
+
+.gel-icon-frown:before {
+  content: "\e96b"; }
