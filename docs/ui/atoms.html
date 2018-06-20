@@ -7,13 +7,14 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="noindex">
-      <title>Atoms - MockUp</title>
+      <title>Atoms - PageUp GEL</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
       <meta name="author" content="daniel.wang" >
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="../css/gel.css">
+      <link rel="stylesheet" href="../css/gel-site.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -35,7 +36,7 @@
     <div class="container">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu gel-icon-2x"></i></span></li>
-        <li class="nav-item"><a class="logo" href="../"> <img alt="logo" src="../images/gel-logo.png" width="60"/></a></li>
+        <li class="nav-item"><a class="logo" href="../"> <img alt="logo" src="../images/gel-logo.png" width="60"/> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" target="_blank" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
@@ -78,19 +79,33 @@
         <a href="#">Accessibility</a>
       </li>
       <li>
+        <a href="#">Personas</a>
+      </li>
+      <li>
         <a href="#">Installation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="submenu">
+    <h4>Foundations</h4>
+    <ul>
+      <li>
+        <a href="colours">Colour Palettes</a>
+      </li>
+      <li>
+        <a href="typography">Typography</a>
+      </li>
+      <li>
+        <a href="icons">Iconography</a>
+      </li>
+      <li>
+        <a href="grids">Responsive Grids</a>
       </li>
     </ul>
   </li>
   <li class="submenu">
     <h4>Core elements</h4>
     <ul>
-      <li>
-        <a href="icons">Iconography</a>
-      </li>
-      <li>
-        <a href="foundations">Foundation</a>
-      </li>
       <li>
         <a href="atoms">Atoms</a>
       </li>
@@ -150,7 +165,7 @@
 		<main id="gel-main">
 			<section class="container">
 				<div class="tab-content">
-    <div class="tab-pane active" id="avatars" role="tabpanel" aria-labelledby="page-tab-avatars"><blockquote class="blockquote">
+    <div class="tab-pane active" id="avatars" role="tabpanel" aria-labelledby="page-tab-avatars"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
   Use round avatars to quickly identify users, it also help creating value by delivering relevant and contextual information.
 </blockquote>
 
@@ -176,7 +191,21 @@
     <img class="avatar avatar-lg" src="../images/avatar.png">
     <p>80x80</p>
   </div>
-</div></div><div class="tab-pane " id="buttons" role="tabpanel" aria-labelledby="page-tab-buttons"><h3>Default</h3>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is a PU design element, not included in Bootstrap.</p>
+<h6>Sizes</h6>
+<ul>
+    <li>
+        <code>.gel-avatar-lg</code>
+    </li>
+    <li>
+        <code>.gel-avatar-md</code>
+    </li>
+    <li>
+        <code>.gel-avatar-sm</code>
+    </li>
+</ul>
+</div></div></div></div><div class="tab-pane " id="buttons" role="tabpanel" aria-labelledby="page-tab-buttons"><div class="row"><div class="col-md-6 col-lg-7"><blockquote>A button means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.</blockquote>
+<h3>Default</h3>
 <p>Each serving its own semantic purpose</p>
 <p>
   <button type="button" class="btn btn-primary">Primary</button>
@@ -318,7 +347,20 @@
     </div>
   </div>
 </div>
-<hr></div><div class="tab-pane " id="checkboxes" role="tabpanel" aria-labelledby="page-tab-checkboxes"><form role="form" lpformnum="1">
+<hr></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><h6 class="green">Do's</h6>
+<ul>
+    <li>Use verbs for button labels (eg. "Save" instead of "OK")</li>
+    <li>Where possible limit each screen to a single primary action. This helps to guide the user to complete a task.</li>
+    <li>Use the disabled state when a prior action needs to be taken before the button becomes enabled</li>
+    <li>Icon on the button should clearly communicate what action will occur</li>
+</ul>
+<h6 class="red">Don'ts</h6>
+<ul>
+    <li>Do not use the disabled state if a user does not have permission to perform the action</li>
+    <li>Avoid compound actions (eg. "Save and Close" )</li>
+</ul>
+</div></div></div></div><div class="tab-pane " id="checkboxes" role="tabpanel" aria-labelledby="page-tab-checkboxes"><div class="row"><div class="col-md-6 col-lg-7"><blockquote>Used for selecting multiple values from several options.</blockquote>
+<form role="form" lpformnum="1">
   <div class="row">
     <div class="col-md-4">
       <fieldset>
@@ -460,7 +502,7 @@
     </div>
   </div>
 </form>
-<p>The checkbox and radio button are built by purely CSS, it does not require javascript</p></div><div class="tab-pane " id="input" role="tabpanel" aria-labelledby="page-tab-input"><form>
+<p>The checkbox and radio button are built by purely CSS, it does not require javascript</p></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="input" role="tabpanel" aria-labelledby="page-tab-input"><div class="row"><div class="col-md-6 col-lg-7"><form>
   <h4>Form controls</h4>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
@@ -501,7 +543,7 @@
     <div class="col-sm-4"><input class="form-control" type="text" placeholder="Default input"></div>
     <div class="col-sm-4"><input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"></div>
   </div>
-</form></div><div class="tab-pane " id="loaders" role="tabpanel" aria-labelledby="page-tab-loaders"><h3>Progress bar</h3>
+</form></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="loaders" role="tabpanel" aria-labelledby="page-tab-loaders"><div class="row"><div class="col-md-6 col-lg-7"><h3>Progress bar</h3>
 <p>Progress bars make long processes tolerable</p>
 <p>Users are more willing to tolerate a long wait time if they see a progress bar.</p>
 <p>Don’t use static progress indicators.</p>
@@ -522,7 +564,7 @@
   <div class="col-sm-6">
     <div class="spinner-sm balls-sm"></div>
   </div>
-</div></div><div class="tab-pane " id="radios" role="tabpanel" aria-labelledby="page-tab-radios"><form role="form" lpformnum="2">
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="radios" role="tabpanel" aria-labelledby="page-tab-radios"><div class="row"><div class="col-md-6 col-lg-7"><form role="form" lpformnum="2">
   <div class="row">
     <div class="col-md-4">
       <fieldset>
@@ -640,12 +682,45 @@
       </fieldset>
     </div>
   </div>
-</form></div><div class="tab-pane " id="tags" role="tabpanel" aria-labelledby="page-tab-tags"><span class="badge badge-primary">Primary</span>
+</form></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="tags" role="tabpanel" aria-labelledby="page-tab-tags"><div class="row"><div class="col-md-6 col-lg-7"><span class="badge badge-primary">Primary</span>
 <span class="badge badge-secondary">Secondary</span>
 <span class="badge badge-success">Success</span>
 <span class="badge badge-danger">Danger</span>
 <span class="badge badge-warning">Warning</span>
-</div><div class="tab-pane " id="toggles" role="tabpanel" aria-labelledby="page-tab-toggles"><div class="row">
+</div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is a PU design element, not included in Bootstrap.</p>
+<h6>Sizes</h6>
+<ul>
+    <li>
+        <code>.gel-tag</code>
+    </li>
+    <li>
+        <code>.gel-tag-sm</code>
+    </li>
+</ul>
+
+<h6>Colors</h6>
+<small>Default color is grey</small>
+<ul>
+    <li>
+        <code>.gel-tag-orange</code>
+    </li>
+    <li>
+        <code>.gel-tag-blue</code>
+    </li>
+    <li>
+        <code>.gel-tag-green</code>
+    </li>
+    <li>
+        <code>.gel-tag-red</code>
+    </li>
+    <li>
+        <code>.gel-tag-yellow</code>
+    </li>
+    <li>
+        <code>.gel-tag-purple</code>
+    </li>
+</ul>
+</div></div></div></div><div class="tab-pane " id="toggles" role="tabpanel" aria-labelledby="page-tab-toggles"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-sm-4">
     <h5>Large</h5>
     <div class="toggle toggle-lg toggle-primary">
@@ -711,7 +786,7 @@
     </div>
   </div>
 </div>
-<p>The switch toggles are built by purely CSS, it does not require javascript</p></div><div class="tab-pane " id="tooltips" role="tabpanel" aria-labelledby="page-tab-tooltips"><div class="row">
+<p>The switch toggles are built by purely CSS, it does not require javascript</p></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="tooltips" role="tabpanel" aria-labelledby="page-tab-tooltips"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-sm-2">
     <i class="gel-icon-2x gray gel-icon-job" data-toggle="tooltip" data-placement="left" title="" data-original-title="Job"></i>
   </div>
@@ -724,7 +799,13 @@
   <div class="col-sm-2">
     <i class="gel-icon-2x gray gel-icon-support" data-toggle="tooltip" data-placement="right" title="" data-original-title="Live support"></i>
   </div>
-</div></div></div>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>
+  Tooltips help users understand unknown or unfamiliar objects that aren’t described directly in the user interface.
+</p>
+<p>
+  They are a powerful way to simplify UI — provide information users need when they need it (reduce screen clutter).
+</p>
+</div></div></div></div></div>
 
 			</section>
 		</main>
@@ -742,51 +823,66 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel">Alpha feedback</h2>
+        <h2 class="modal-title" id="exampleModalLabel">Beta feedback</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">
         <p class="lead">
-          Welcome and thanks in advance for taking the time to provide us feedback on your experience.
+          We love hearing your thoughts on upgrades and latest releases, and we appreciate you taking the time to provide us with your valuable feedback.
         </p>
         <div class="row">
           <div class="col-12 mt-3">
-            <h5>1. The new design still allows me to access all the features and functionality that I use at the moment?</h5>
+            <h5>1. What do you think of the new design?</h5>
           </div>
           <div class="col-sm-8 col-md-6">
-            <div class="form-group">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl">
-                  <input type="radio" name="options" id="option2" autocomplete="off">
-                  No
-                </label>
+            <div class="smileys mt-3">
+              <div class="face face-red">
+                <input type="radio" name="smiley" value="worse" class="worse" id="smiley-worse"/>
+                <label for="smiley-worse"></label>
+                <span>Worse</span>
+              </div>
+              <div class="face face-orange">
+                <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
+                <label for="smiley-bad"></label>
+                <span>Bad</span>
+              </div>
+              <div class="face face-yellow">
+                <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
+                <label for="smiley-fair"></label>
+                <span>Fair</span>
+              </div>
+              <div class="face face-lime">
+                <input type="radio" name="smiley" value="good" class="good" id="smiley-good"/>
+                <label for="smiley-good"></label>
+                <span>Good</span>
+              </div>
+              <div class="face face-green">
+                <input type="radio" name="smiley" value="excellent" class="excellent" id="smiley-excellent"/>
+                <label for="smiley-excellent"></label>
+                <span>Excellent</span>
               </div>
             </div>
           </div>
           <div class="col-12">
-            <div class="form-group">
-              <label>Do you have any addtional feedback?</label>
-              <input class="form-control" type="text"/>
+            <div class="form-group mt-3">
+              <label>Why did you give that rating?</label>
+              <textarea class="form-control" rows="2"></textarea>
             </div>
           </div>
 
           <div class="col-12 mt-5">
-            <h5>2. The new design is an improvement on the current systems's design?</h5>
+            <h5>2. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
           </div>
-          <div class="col-sm-8 col-md-6">
-            <div class="form-group">
+          <div class="col-sm-6 col-md-4">
+            <div class="form-group mt-3">
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
+                <label class="btn btn-ctrl btn-sm">
+                  <input type="radio" name="options" id="option1" autocomplete="off">
                   Yes
                 </label>
-                <label class="btn btn-ctrl">
+                <label class="btn btn-ctrl btn-sm">
                   <input type="radio" name="options" id="option2" autocomplete="off">
                   No
                 </label>
@@ -795,35 +891,26 @@
           </div>
           <div class="col-12">
             <div class="form-group">
-              <label>Do you have any addtional feedback?</label>
-              <input class="form-control" type="text"/>
-            </div>
-          </div>
-
-          <div class="col-12 mt-5">
-            <h5>3. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
-          </div>
-          <div class="col-sm-8 col-md-6">
-            <div class="form-group">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl">
-                  <input type="radio" name="options" id="option2" autocomplete="off">
-                  No
-                </label>
-              </div>
+              <label>Please provide details of what this is?</label>
+              <textarea class="form-control" rows="2"></textarea>
             </div>
           </div>
           <div class="col-12">
             <div class="form-group">
-              <label>Please provide details of what this is? (Attach a screen capture to your feedback)</label>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile"></label>
-              </div>
+              <label>Attach a screen capture of your feedbak below:</label>
+              <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
+                <div class="dz-message needsclick gray">
+                  <h3 class="text-muted">Drag &amp; Drop files here</h3>
+                  <span class="note needsclick">
+                    Or
+                    <a href="#_">browse</a>
+                    from local drive
+                  </span>
+                  <p>
+                    <small>Max 5MB in size, Word, PDF, or JPG formats</small>
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>

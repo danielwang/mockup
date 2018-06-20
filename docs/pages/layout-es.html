@@ -14,6 +14,7 @@
       <meta name="author" content="daniel.wang" >
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="../css/gel.css">
+      <link rel="stylesheet" href="../css/gel-site.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -382,51 +383,66 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel">Alpha feedback</h2>
+        <h2 class="modal-title" id="exampleModalLabel">Beta feedback</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">
         <p class="lead">
-          Welcome and thanks in advance for taking the time to provide us feedback on your experience.
+          We love hearing your thoughts on upgrades and latest releases, and we appreciate you taking the time to provide us with your valuable feedback.
         </p>
         <div class="row">
           <div class="col-12 mt-3">
-            <h5>1. The new design still allows me to access all the features and functionality that I use at the moment?</h5>
+            <h5>1. What do you think of the new design?</h5>
           </div>
           <div class="col-sm-8 col-md-6">
-            <div class="form-group">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl">
-                  <input type="radio" name="options" id="option2" autocomplete="off">
-                  No
-                </label>
+            <div class="smileys mt-3">
+              <div class="face face-red">
+                <input type="radio" name="smiley" value="worse" class="worse" id="smiley-worse"/>
+                <label for="smiley-worse"></label>
+                <span>Worse</span>
+              </div>
+              <div class="face face-orange">
+                <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
+                <label for="smiley-bad"></label>
+                <span>Bad</span>
+              </div>
+              <div class="face face-yellow">
+                <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
+                <label for="smiley-fair"></label>
+                <span>Fair</span>
+              </div>
+              <div class="face face-lime">
+                <input type="radio" name="smiley" value="good" class="good" id="smiley-good"/>
+                <label for="smiley-good"></label>
+                <span>Good</span>
+              </div>
+              <div class="face face-green">
+                <input type="radio" name="smiley" value="excellent" class="excellent" id="smiley-excellent"/>
+                <label for="smiley-excellent"></label>
+                <span>Excellent</span>
               </div>
             </div>
           </div>
           <div class="col-12">
-            <div class="form-group">
-              <label>Do you have any addtional feedback?</label>
-              <input class="form-control" type="text"/>
+            <div class="form-group mt-3">
+              <label>Why did you give that rating?</label>
+              <textarea class="form-control" rows="2"></textarea>
             </div>
           </div>
 
           <div class="col-12 mt-5">
-            <h5>2. The new design is an improvement on the current systems's design?</h5>
+            <h5>2. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
           </div>
-          <div class="col-sm-8 col-md-6">
-            <div class="form-group">
+          <div class="col-sm-6 col-md-4">
+            <div class="form-group mt-3">
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
+                <label class="btn btn-ctrl btn-sm">
+                  <input type="radio" name="options" id="option1" autocomplete="off">
                   Yes
                 </label>
-                <label class="btn btn-ctrl">
+                <label class="btn btn-ctrl btn-sm">
                   <input type="radio" name="options" id="option2" autocomplete="off">
                   No
                 </label>
@@ -435,35 +451,26 @@
           </div>
           <div class="col-12">
             <div class="form-group">
-              <label>Do you have any addtional feedback?</label>
-              <input class="form-control" type="text"/>
-            </div>
-          </div>
-
-          <div class="col-12 mt-5">
-            <h5>3. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
-          </div>
-          <div class="col-sm-8 col-md-6">
-            <div class="form-group">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked="">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl">
-                  <input type="radio" name="options" id="option2" autocomplete="off">
-                  No
-                </label>
-              </div>
+              <label>Please provide details of what this is?</label>
+              <textarea class="form-control" rows="2"></textarea>
             </div>
           </div>
           <div class="col-12">
             <div class="form-group">
-              <label>Please provide details of what this is? (Attach a screen capture to your feedback)</label>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile"></label>
-              </div>
+              <label>Attach a screen capture of your feedbak below:</label>
+              <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
+                <div class="dz-message needsclick gray">
+                  <h3 class="text-muted">Drag &amp; Drop files here</h3>
+                  <span class="note needsclick">
+                    Or
+                    <a href="#_">browse</a>
+                    from local drive
+                  </span>
+                  <p>
+                    <small>Max 5MB in size, Word, PDF, or JPG formats</small>
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
