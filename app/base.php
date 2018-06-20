@@ -2,6 +2,7 @@
 *** T5 template ***
 ******************  -->
 <?php
+  $site = "MockUp";
   require_once 'ti.php';
   include_once '_head.php';
   ?>

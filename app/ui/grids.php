@@ -5,5 +5,5 @@ Consistent use of a grid system provides the foundation for harmoniously and con
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
-  <?php include ('core-elements/foundations/colours.html'); ?>
+  <?php include ('core-elements/foundations/grids.html'); ?>
 <?php endblock()?>

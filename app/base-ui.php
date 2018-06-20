@@ -2,6 +2,7 @@
 *** T5 template ***
 ******************  -->
 <?php
+  $site = "PageUp GEL";
   require_once 'ti.php';
   include_once '_head.php';
   include_once 'ui/func.php';
@@ -10,7 +11,7 @@
     <div class="container">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu gel-icon-2x"></i></span></li>
-        <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="logo" src="<?php echo ($resURL) ?>images/gel-logo.png" width="60"/><?php endblock() ?></a></li>
+        <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="logo" src="<?php echo ($resURL) ?>images/gel-logo.png" width="60"/><?php endblock() ?> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" target="_blank" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
