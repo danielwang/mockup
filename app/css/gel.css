@@ -8693,6 +8693,8 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     -moz-transition: font-size 0.5s ease;
     -o-transition: font-size 0.5s ease;
     transition: font-size 0.5s ease; }
+  #gel-header blockquote.tagline {
+    margin: 1rem 0 1rem 0; }
   #gel-header h6 {
     color: white;
     font-size: 12px; }

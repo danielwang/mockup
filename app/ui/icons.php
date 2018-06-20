@@ -1,4 +1,4 @@
-<?php $pageTitle = "Iconography"; $parent = "hm"; include '../base-ui.php';?>
+<?php $pageTitle = "Iconography"; include '../base-ui.php';?>
 
 <?php
 
