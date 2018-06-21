@@ -1,0 +1,17 @@
+<p>Pure CSS way to make inputs look prettier. No Javascript!</p>
+<p>You need to follow the below markup structure.
+  <b class="red">It will not work if you nest input inside label or put label before input</b>.</p>
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"example1"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label <span class="na">for=</span><span class="s">"example1"</span>&gt;</span>check me out<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre>
+</figure>
+<ul>
+  <li>It will work with hidden input fields between input checkbox and label</li>
+  <li>
+    <code>&lt;label&gt;</code>
+    tag is mandatory, leave it empty tag when there is no label text</li>
+</ul>
