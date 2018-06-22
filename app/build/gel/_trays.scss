@@ -2,12 +2,9 @@ $check-icon: "\e91d";
 $tray: "\e95d";
 $tray-size: 2.5rem;
 $tray-size-sm: 20px;
-$tray-colors: () !default;
-$tray-colors: map-merge((
-  "red":        $red,
-  "orange":     $orange,
-  "green":      $green,
-), $tray-colors);
+$tray-colors: ()
+!default;
+$tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tray-colors);
 
 .tray {
   cursor: default;
@@ -49,9 +46,7 @@ $tray-colors: map-merge((
   }
 
   input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-    left: 6px;
+    display: none;
 
     &:checked + label::after {
       content: $check-icon;
@@ -69,13 +64,11 @@ $tray-colors: map-merge((
     }
   }
 }
-
 @each $color, $value in $tray-colors {
   .tray-#{$color} {
     @include tray-variant($value);
   }
 }
-
 @mixin tray-size($size) {
   label {
     &::before {

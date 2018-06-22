@@ -2,17 +2,21 @@ $face-colors: ()!default;
 $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green-400, "yellow": $yellow, "lime": #75ad37), $face-colors);
 @mixin face-variants($outline, $solid) {
   input[type="radio"] {
-    -webkit-appearance: none;
-
+    @include hidden-radio();
     + label {
       &::before {
         content: $outline;
       }
     }
 
-    &:checked + label {
-      &::before {
-        content: $solid;
+    &:checked {
+      &+ label {
+        &::before {
+          content: $solid;
+        }
+      }
+      &~ span{
+        @include font-semibold();
       }
     }
   }
@@ -109,7 +113,7 @@ $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green-400, "y
   display: inline-block;
 
   input[type=radio] {
-    display: none;
+    @include hidden-radio();
   }
 
   label {

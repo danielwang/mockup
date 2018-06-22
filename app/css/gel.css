@@ -7789,9 +7789,7 @@ label {
     left: 7px;
     font-size: 18px; }
   .tray input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-    left: 6px; }
+    display: none; }
   .tray input[type="radio"]:checked + label::after {
     content: "\e91d"; }
   .tray-red label::before {
@@ -8841,13 +8839,10 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
       overflow-x: hidden;
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
-      overflow-y: auto;
-      background: linear-gradient(#3d485b 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #3d485b 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
-      background: -webkit-linear-gradient(#3d485b 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #3d485b 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background: linear-gradient(#3d485b 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0) 10px, #3d485b 70%) bottom, radial-gradient(at top, rgba(0, 0, 0, 0.2), transparent 70%), radial-gradient(at bottom, rgba(0, 0, 0, 0.2), transparent 70%) bottom;
       background-repeat: no-repeat;
-      background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
-      background-attachment: local, local, scroll, scroll;
-      background-color: transparent; } }
+      background-size: 100% 20px, 100% 20px, 100% 10px, 100% 10px;
+      background-attachment: local, local, scroll, scroll; } }
   #gel-menu ul {
     margin: 0;
     padding: 0; }
@@ -9047,41 +9042,68 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   .smileys .face span {
     display: block; }
   .smileys .face-red input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .smileys .face-red input[type="radio"] + label::before {
     content: "\e966"; }
   .smileys .face-red input[type="radio"]:checked + label::before {
     content: "\e968"; }
+  .smileys .face-red input[type="radio"]:checked ~ span {
+    font-weight: 400;
+    font-family: 'Proxima Nova Semibold'; }
   .smileys .face-orange input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .smileys .face-orange input[type="radio"] + label::before {
     content: "\e965"; }
   .smileys .face-orange input[type="radio"]:checked + label::before {
     content: "\e969"; }
+  .smileys .face-orange input[type="radio"]:checked ~ span {
+    font-weight: 400;
+    font-family: 'Proxima Nova Semibold'; }
   .smileys .face-yellow input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .smileys .face-yellow input[type="radio"] + label::before {
     content: "\e963"; }
   .smileys .face-yellow input[type="radio"]:checked + label::before {
     content: "\e967"; }
+  .smileys .face-yellow input[type="radio"]:checked ~ span {
+    font-weight: 400;
+    font-family: 'Proxima Nova Semibold'; }
   .smileys .face-lime input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .smileys .face-lime input[type="radio"] + label::before {
     content: "\e964"; }
   .smileys .face-lime input[type="radio"]:checked + label::before {
     content: "\e96c"; }
+  .smileys .face-lime input[type="radio"]:checked ~ span {
+    font-weight: 400;
+    font-family: 'Proxima Nova Semibold'; }
   .smileys .face-green input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .smileys .face-green input[type="radio"] + label::before {
     content: "\e962"; }
   .smileys .face-green input[type="radio"]:checked + label::before {
     content: "\e96a"; }
+  .smileys .face-green input[type="radio"]:checked ~ span {
+    font-weight: 400;
+    font-family: 'Proxima Nova Semibold'; }
 
 .star-rating {
   direction: rtl;
   display: inline-block; }
   .star-rating input[type=radio] {
-    display: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .star-rating label {
     color: #b9c6d2;
     font-size: 18px;
