@@ -158,43 +158,310 @@
           </div>
               </div>
 
-      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="1">Form</a></li><li class="nav-item"><a class="nav-link " id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="">Search</a></li><li class="nav-item"><a class="nav-link " id="upload-tab" data-toggle="tab" href="#upload" role="tab" aria-controls="upload" aria-selected="">Upload</a></li></ul>
+      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="1">Form</a></li><li class="nav-item"><a class="nav-link " id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="">Ratings</a></li><li class="nav-item"><a class="nav-link " id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="">Search</a></li><li class="nav-item"><a class="nav-link " id="trays-tab" data-toggle="tab" href="#trays" role="tab" aria-controls="trays" aria-selected="">Trays</a></li><li class="nav-item"><a class="nav-link " id="uploads-tab" data-toggle="tab" href="#uploads" role="tab" aria-controls="uploads" aria-selected="">Uploads</a></li></ul>
     </div>
 </header>
 <!-- page body -->
 		<main id="gel-main">
 			<section class="container">
 				<div class="tab-content">
-    <div class="tab-pane active" id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="search" role="tabpanel" aria-labelledby="page-tab-search"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="upload" role="tabpanel" aria-labelledby="page-tab-upload"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
-  <div class="col-sm-8">
-    <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
-      <div class="dz-message needsclick gray">
-        <h3 class="text-muted">Drag &amp; Drop files here</h3>
-        <span class="note needsclick">
-          Or
-          <a href="#_">browse</a>
-          from local drive
-        </span>
-        <p>
-          <small>Max 5MB in size, Word, PDF, or JPG formats</small>
-        </p>
-      </div>
-    </form>
+    <div class="tab-pane active" id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is how the element is used:</p>
+<ul>
+  <li>Put
+    <code>.required</code>
+    after
+    <code>.control-label</code>
+    to indicate mandatory field.</li>
+  <li>The switch toggle are built by purely CSS, it does not require javascript</li>
+  <li>The checkbox and radio button are built by purely CSS, it does not require javascript</li>
+  <li>Searchable Select is a Bootstrap plugin, bootstrap-combobox.css is already builtin the Styleguide, you just need to download
+    <a href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js</a>
+    into your application.</li>
+</ul>
+</div></div></div></div><div class="tab-pane " id="ratings" role="tabpanel" aria-labelledby="page-tab-ratings"><div class="row"><div class="col-md-6 col-lg-7"><h3>Stars rating</h3>
+<div class="card">
+  <div class="star-rating">
+    <input id="star-5" type="radio" name="rating" value="star-5">
+    <label for="star-5" title="5 stars">
+      <i class="active gel-icon-3x gel-icon-star" aria-hidden="true"></i>
+    </label>
+    <input id="star-4" type="radio" name="rating" value="star-4">
+    <label for="star-4" title="4 stars">
+      <i class="active gel-icon-3x gel-icon-star" aria-hidden="true"></i>
+    </label>
+    <input id="star-3" type="radio" name="rating" value="star-3">
+    <label for="star-3" title="3 stars">
+      <i class="active gel-icon-3x gel-icon-star" aria-hidden="true"></i>
+    </label>
+    <input id="star-2" type="radio" name="rating" value="star-2">
+    <label for="star-2" title="2 stars">
+      <i class="active gel-icon-3x gel-icon-star" aria-hidden="true"></i>
+    </label>
+    <input id="star-1" type="radio" name="rating" value="star-1">
+    <label for="star-1" title="1 star">
+      <i class="active gel-icon-3x gel-icon-star" aria-hidden="true"></i>
+    </label>
   </div>
-  <div class="col-sm-4">
-    <div class="sg-doc">
-      <h4 class="sg-h4">Usage Notes</h4>
-      <p>We use
-        <a href="http://www.dropzonejs.com/">dropzonejs</a>, that provides drag’n’drop file uploads with image previews. Read the full
-        <a href="http://www.dropzonejs.com/#configuration">configuration</a>
-      </p>
-      <p>dropzonejs supports IE 10+ Safari 6+. For all the other browsers, dropzone provides an oldschool file input fallback.</p>
-      <p>Use
-        <code>.dropzone</code>
-      </p>
+</div>
+<hr class="sg-hr"/>
+<h3 class="mb-3">Smiley rating</h3>
+<div class="card">
+  <p class="lead">What do you think of the new feature?</p>
+  <div class="smileys">
+    <div class="face face-red">
+      <input type="radio" name="smiley" value="worse" class="worse" id="smiley-worse"/>
+      <label for="smiley-worse"></label>
+      <span>Worse</span>
+    </div>
+    <div class="face face-orange">
+      <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
+      <label for="smiley-bad"></label>
+      <span>Bad</span>
+    </div>
+    <div class="face face-yellow">
+      <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
+      <label for="smiley-fair"></label>
+      <span>Fair</span>
+    </div>
+    <div class="face face-lime">
+      <input type="radio" name="smiley" value="good" class="good" id="smiley-good"/>
+      <label for="smiley-good"></label>
+      <span>Good</span>
+    </div>
+    <div class="face face-green">
+      <input type="radio" name="smiley" value="excellent" class="excellent" id="smiley-excellent"/>
+      <label for="smiley-excellent"></label>
+      <span>Excellent</span>
     </div>
   </div>
-</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div></div>
+</div>
+<hr class="sg-hr"/>
+<h3 class="mb-3">Scale rating</h3>
+<div class="card">
+  <p class="lead">How satisfied were you with the session content?</p>
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option1" autocomplete="off">
+      1
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option2" autocomplete="off">
+      2
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option3" autocomplete="off">
+      3
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option4" autocomplete="off">
+      4
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option5" autocomplete="off">
+      5
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option6" autocomplete="off">
+      6
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option7" autocomplete="off">
+      7
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option8" autocomplete="off">
+      8
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option9" autocomplete="off">
+      9
+    </label>
+    <label class="btn btn-sm btn-ctrl">
+      <input type="radio" name="options-sm" id="option10" autocomplete="off">
+      10
+    </label>
+  </div>
+  <div class="d-flex justify-content-between mt-2">
+    <span>Poor</span>
+    <span>Excellent</span>
+  </div>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="search" role="tabpanel" aria-labelledby="page-tab-search"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
+  <div class="col-md-4">
+    <h3>Small</h3>
+    <fieldset>
+      <div class="tray tray-sm tray-green">
+        <input type="radio" name="radio-sm" id="radio-sm-1" value="option2">
+        <label for="radio-sm-1">
+          <span class="sr-only">
+            Green</span>
+        </label>
+      </div>
+      <div class="tray tray-sm tray-orange">
+        <input type="radio" name="radio-sm" id="radio-sm-2" value="option1">
+        <label for="radio-sm-2">
+          <span class="sr-only">
+            Orange</span>
+        </label>
+      </div>
+      <div class="tray tray-sm tray-red">
+        <input type="radio" name="radio-sm" id="radio-sm-3" value="option3">
+        <label for="radio-sm-3">
+          <span class="sr-only">
+            Red</span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <div class="col-md-8">
+    <h3>Default</h3>
+    <fieldset>
+      <div class="tray tray-green tray-lg">
+        <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
+        <label for="radio-b-l-1" data-toggle="tooltip" data-placement="bottom" data-original-title="Green Tray">
+          <span class="sr-only">
+            Green</span>
+        </label>
+      </div>
+      <div class="tray tray-orange tray-lg">
+        <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
+        <label for="radio-b-l-2" data-toggle="tooltip" data-placement="bottom" data-original-title="Orange Tray">
+          <span class="sr-only">
+            Orange</span>
+        </label>
+      </div>
+      <div class="tray tray-red tray-lg">
+        <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
+        <label for="radio-b-l-3" data-toggle="tooltip" data-placement="bottom" data-original-title="Red Tray">
+          <span class="sr-only">
+            Red</span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+</div>
+<h3>Examples</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+        <fieldset>
+          <div class="tray tray-sm tray-green">
+            <input type="radio" name="radio-sm-a" id="radio-sm-a-1" value="option2">
+            <label for="radio-sm-a-1">
+              <span class="sr-only">
+                Green</span>
+            </label>
+          </div>
+          <div class="tray tray-sm tray-orange">
+            <input type="radio" name="radio-sm-a" id="radio-sm-a-2" value="option1">
+            <label for="radio-sm-a-2">
+              <span class="sr-only">
+                Orange</span>
+            </label>
+          </div>
+          <div class="tray tray-sm tray-red">
+            <input type="radio" name="radio-sm-a" id="radio-sm-a-3" value="option3">
+            <label for="radio-sm-a-3">
+              <span class="sr-only">
+                Red</span>
+            </label>
+          </div>
+        </fieldset>
+      </th>
+      <td>Mark</td>
+      <td>Otto</td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <fieldset>
+          <div class="tray tray-sm tray-green">
+            <input type="radio" name="radio-sm-b" id="radio-sm-b-1" value="option2">
+            <label for="radio-sm-b-1">
+              <span class="sr-only">
+                Green</span>
+            </label>
+          </div>
+          <div class="tray tray-sm tray-orange">
+            <input type="radio" name="radio-sm-b" id="radio-sm-b-2" value="option1">
+            <label for="radio-sm-b-2">
+              <span class="sr-only">
+                Orange</span>
+            </label>
+          </div>
+          <div class="tray tray-sm tray-red">
+            <input type="radio" name="radio-sm-b" id="radio-sm-b-3" value="option3">
+            <label for="radio-sm-b-3">
+              <span class="sr-only">
+                Red</span>
+            </label>
+          </div>
+        </fieldset>
+      </th>
+      <td>Larry</td>
+      <td>the Bird</td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <fieldset>
+          <div class="tray tray-sm tray-green">
+            <input type="radio" name="radio-sm-c" id="radio-sm-c-1" value="option2">
+            <label for="radio-sm-c-1">
+              <span class="sr-only">
+                Green</span>
+            </label>
+          </div>
+          <div class="tray tray-sm tray-orange">
+            <input type="radio" name="radio-sm-c" id="radio-sm-c-2" value="option1">
+            <label for="radio-sm-c-2">
+              <span class="sr-only">
+                Orange</span>
+            </label>
+          </div>
+          <div class="tray tray-sm tray-red">
+            <input type="radio" name="radio-sm-c" id="radio-sm-c-3" value="option3">
+            <label for="radio-sm-c-3">
+              <span class="sr-only">
+                Red</span>
+            </label>
+          </div>
+        </fieldset>
+      </th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+    </tr>
+  </tbody>
+</table></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="uploads" role="tabpanel" aria-labelledby="page-tab-uploads"><div class="row"><div class="col-md-6 col-lg-7"><form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
+  <div class="dz-message needsclick gray">
+    <h3 class="text-muted">Drag &amp; Drop files here</h3>
+    <span class="note needsclick">
+      Or
+      <a href="#_">browse</a>
+      from local drive
+    </span>
+    <p>
+      <small>Max 5MB in size, Word, PDF, or JPG formats</small>
+    </p>
+  </div>
+</form></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>We use
+  <a href="http://www.dropzonejs.com/">dropzonejs</a>, that provides drag’n’drop file uploads with image previews. Read the full
+  <a href="http://www.dropzonejs.com/#configuration">configuration</a>
+</p>
+
+<p>dropzonejs supports IE 10+ Safari 6+. For all the other browsers, dropzone provides an oldschool file input fallback.</p>
+<p>Use
+  <code>.gel-dropzone</code>
+  class with
+  <code>.dropzone</code>
+</p>
+</div></div></div></div></div>
 
 			</section>
 		</main>
@@ -219,7 +486,7 @@
       </div>
       <div class="modal-body">
         <p class="lead">
-          We love hearing your thoughts on upgrades and latest releases, and we appreciate you taking the time to provide us with your valuable feedback.
+          We love hearing your thoughts on upgrades and recent releases. Please provide us with your feedback below
         </p>
         <div class="row">
           <div class="col-12 mt-3">
@@ -261,7 +528,7 @@
             </div>
           </div>
 
-          <div class="col-12 mt-5">
+          <div class="col-12 mt-3">
             <h5>2. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
           </div>
           <div class="col-sm-6 col-md-4">
@@ -272,7 +539,7 @@
                   Yes
                 </label>
                 <label class="btn btn-ctrl btn-sm">
-                  <input type="radio" name="options" id="option2" autocomplete="off">
+                  <input type="radio" name="options" id="option2" autocomplete="off" checked="checked">
                   No
                 </label>
               </div>
@@ -286,7 +553,7 @@
           </div>
           <div class="col-12">
             <div class="form-group">
-              <label>Attach a screen capture of your feedbak below:</label>
+              <label>Attach a screen capture of your feedback below:</label>
               <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
                 <div class="dz-message needsclick gray">
                   <h3 class="text-muted">Drag &amp; Drop files here</h3>
