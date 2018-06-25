@@ -1,4 +1,4 @@
-.blockquote {
+.blockquote, .tagline{
   font-size: $blockquote-font-size;
   margin: $spacer 0 $spacer * 2 0;
   @include font-light();

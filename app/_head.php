@@ -26,8 +26,10 @@
   </head>
   <body>
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
-    <script>
-    function popupWindow(url) {
-       window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=50,left=50,width=1024,height=800");
-    }
-    </script>
+    <?php if($site=="MockUp") { ?>
+      <script>
+      function popupWindow(url) {
+         window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=50,left=50,width=1024,height=800");
+      }
+      </script>
+    <?php } ?>   

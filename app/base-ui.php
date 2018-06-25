@@ -49,7 +49,7 @@
       <div class="row">
         <div class="col-md-9 col-lg-8">
           <h1 class="page-title"><?php echo $pageTitle  ?></h1>
-          <blockquote class="blockquote"><?php startblock('page-tagline');?>Tagline goes here<?php endblock() ?></blockquote>
+          <blockquote class="tagline"><?php startblock('page-tagline');?>Tagline goes here<?php endblock() ?></blockquote>
         </div>
         <?php startblock('page-actions');?>
           <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
