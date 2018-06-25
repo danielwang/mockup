@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.1.1
+ *   PageUp GEL - Theme 3.2.1
  *   Author: Daniel Wang
- *	 Date: 07/05/2018
+ *	 Date: 25/06/2018
  *
 \* *************************************** */
 //google fonts
@@ -10,7 +10,7 @@
 @import "functions";
 @import "variables";
 
-// .gel{
+// scope GEL .gel{
 @import "../bootstrap-4.1.0/bootstrap";
 //----
 @import "mixins";
@@ -44,5 +44,4 @@
 //}
 
 // GEL icons
-//@import url('https://ui.pageuppeople.com/icons/v2.0.1/css/gel-icon.css');
 @import "gel-icon";

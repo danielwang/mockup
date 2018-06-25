@@ -104,4 +104,14 @@ copy('css/gel.min.css', '../dist/css/gel.min.css');
 copy('js/gel.js', '../docs/js/gel.js');
 copy('js/gel.js', '../dist/js/gel.js');
 
+/* deploy scoped gel to S3
+  1. uncomment .gel class in gel.scss
+  2. generate the gel.css file
+  3. rename the gel.css to gel-scoped.css
+  4. remove the empty .gel class inside the stylesheet
+  5. rename selector .gel body {} => .gel {}
+  6. copy files to S3
+  7. don't forget font icons 
+*/
+
 ?>
