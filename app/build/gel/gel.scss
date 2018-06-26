@@ -10,10 +10,20 @@
 @import "functions";
 @import "variables";
 
+
 // scope GEL .gel{
 @import "../bootstrap-4.1.0/bootstrap";
+
+
+
 //----
 @import "mixins";
+
+// animation
+@import "../animate/animate";
+@import "../animate/_attention-seekers/bounce";
+
+
 @import "core";
 @import "misc";
 @import "accordions";
@@ -42,6 +52,7 @@
 //----
 @import "print";
 //}
+
 
 // GEL icons
 @import "gel-icon";

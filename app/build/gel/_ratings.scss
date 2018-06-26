@@ -62,6 +62,15 @@ $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green-400, "y
       width: 42px;
       height: 40px;
 
+      &:hover{
+        @include bounce(
+          $duration: .5s,
+          $delay: 0,
+          $function: ease,
+          $fill: both
+        );
+      }
+
       &::before {
         font-family: $gel-icon;
         font-size: 48px;
