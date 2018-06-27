@@ -140,57 +140,57 @@ $lineIcons = buildLineIcons();
        </li>
     </ul>
     <div class="tab-content">
-          <div class="tab-pane active" id="solid-icons" role="tabpanel" aria-labelledby="solid-icons-tab">
-            <h6 class="text-right"><?php echo count($solidIcons); ?> solid icons</h6>
-            <div class="row">
-              <?php for($i = 0; $i < ceil(count($solidIcons)) ; $i++){ ?>
-                <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
-                    <div class="card">
-                      <h6><?php echo ucfirst($solidIcons[$i][0]);?></h6>
-                      <p><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></p>
-                      <small><code>.gel-icon-<?php echo $solidIcons[$i][1];?></code></small>
-                    </div>
-                </div>
-              <?php } ?>
-            </div>
-          </div>
-          <div class="tab-pane" id="line-icons" role="tabpanel" aria-labelledby="line-icons-tab">
-            <h6 class="text-right"><?php echo count($lineIcons); ?> line icons</h6>
-            <div class="row">
-            <?php for($i = 0; $i < ceil(count($lineIcons)) ; $i++){ ?>
+        <div class="tab-pane active" id="solid-icons" role="tabpanel" aria-labelledby="solid-icons-tab">
+          <h6 class="text-right"><?php echo count($solidIcons); ?> solid icons</h6>
+          <div class="row">
+            <?php for($i = 0; $i < ceil(count($solidIcons)) ; $i++){ ?>
               <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
                   <div class="card">
-                    <h6><?php echo ucfirst($lineIcons[$i][0]);?></h6>
-                    <p><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></p>
-                    <small><code>.gel-icon-<?php echo $lineIcons[$i][1];?>-o</code></small>
+                    <h6><?php echo ucfirst($solidIcons[$i][0]);?></h6>
+                    <p><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></p>
+                    <small><code>.gel-icon-<?php echo $solidIcons[$i][1];?></code></small>
                   </div>
               </div>
             <?php } ?>
+          </div>
+        </div>
+        <div class="tab-pane" id="line-icons" role="tabpanel" aria-labelledby="line-icons-tab">
+          <h6 class="text-right"><?php echo count($lineIcons); ?> line icons</h6>
+          <div class="row">
+          <?php for($i = 0; $i < ceil(count($lineIcons)) ; $i++){ ?>
+            <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
+                <div class="card">
+                  <h6><?php echo ucfirst($lineIcons[$i][0]);?></h6>
+                  <p><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></p>
+                  <small><code>.gel-icon-<?php echo $lineIcons[$i][1];?>-o</code></small>
+                </div>
             </div>
+          <?php } ?>
           </div>
-          <div class="tab-pane" id="illustrations" role="tabpanel" aria-labelledby="illustrations-tab">
-            <div class="row">
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description" /></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Jobs"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/approval.svg" alt="Approval"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/sourcing.svg" alt="Advertising"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/list.svg" alt="Shortlisting"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/panel.svg" alt="Panel"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/interview.svg" alt="Interview"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/offer.svg" alt="Offer"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/contract.svg" alt="Contract"></div>
+        </div>
+        <div class="tab-pane" id="illustrations" role="tabpanel" aria-labelledby="illustrations-tab">
+          <div class="row">
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description" /></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Jobs"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/approval.svg" alt="Approval"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/sourcing.svg" alt="Advertising"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/list.svg" alt="Shortlisting"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/panel.svg" alt="Panel"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/interview.svg" alt="Interview"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/offer.svg" alt="Offer"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/contract.svg" alt="Contract"></div>
 
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/target.svg" /></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/folder.svg" alt="Jobs"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/bulb.svg" alt="Approval"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/pencil.svg" alt="Advertising"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/paperplane.svg" alt="Shortlisting"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/key.svg" alt="Advertising"></div>
-              <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/personas.svg" alt="Shortlisting"></div>
-          </div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/target.svg" /></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/folder.svg" alt="Jobs"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/bulb.svg" alt="Approval"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/pencil.svg" alt="Advertising"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/paperplane.svg" alt="Shortlisting"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/key.svg" alt="Advertising"></div>
+            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/personas.svg" alt="Shortlisting"></div>
         </div>
       </div>
     </div>
+  </div>
 <!-- how to use -->
   <div class="tab-pane" id="usage" role="tabpanel" aria-labelledby="usage-tab">
     <h4>Basic use</h4>

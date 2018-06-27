@@ -19,6 +19,14 @@
   margin: 15px;
 }
 
+.sg-heading{
+  color: #142c52;
+  display: inline-block;
+  background: -webkit-linear-gradient(45deg,#0053a3,#49b3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .red-100 {
   background-color: #ffaaa1;
 }
