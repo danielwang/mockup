@@ -128,12 +128,12 @@ $lineIcons = buildLineIcons();
       <li>Inline with text to add clarity</li>
       <li>To direct a user’s attention to something they can take action on, or which results in an action</li>
     </ul>
-    <ul class="nav nav-tabs-line" role="tablist">
+    <ul class="nav nav-tabs nav-fill" role="tablist">
       <li class="nav-item">
-         <a class="nav-link active" id="solid-icons-tab" data-toggle="tab" href="#solid-icons" role="tab" aria-controls="solid-icons" aria-selected="true">Solid</a>
+         <a class="nav-link active" id="solid-icons-tab" data-toggle="tab" href="#solid-icons" role="tab" aria-controls="solid-icons" aria-selected="true">Solid Icons</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link" id="line-icons-tab" data-toggle="tab" href="#line-icons" role="tab" aria-controls="line-icons" aria-selected="false">Line</a>
+         <a class="nav-link" id="line-icons-tab" data-toggle="tab" href="#line-icons" role="tab" aria-controls="line-icons" aria-selected="false">Line Icons</a>
        </li>
        <li class="nav-item">
          <a class="nav-link" id="illustrations-tab" data-toggle="tab" href="#illustrations" role="tab" aria-controls="illustrations" aria-selected="false">Illustrations</a>
@@ -170,23 +170,22 @@ $lineIcons = buildLineIcons();
         </div>
         <div class="tab-pane" id="illustrations" role="tabpanel" aria-labelledby="illustrations-tab">
           <div class="row">
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description" /></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Jobs"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/approval.svg" alt="Approval"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/sourcing.svg" alt="Advertising"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/list.svg" alt="Shortlisting"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/panel.svg" alt="Panel"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/interview.svg" alt="Interview"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/offer.svg" alt="Offer"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/contract.svg" alt="Contract"></div>
-
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/target.svg" /></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/folder.svg" alt="Jobs"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/bulb.svg" alt="Approval"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/pencil.svg" alt="Advertising"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/paperplane.svg" alt="Shortlisting"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/key.svg" alt="Advertising"></div>
-            <div class="col-1"><img src="<?php echo ($resURL) ?>images/illustrations/personas.svg" alt="Shortlisting"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description" /></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Jobs"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/approval.svg" alt="Approval"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/sourcing.svg" alt="Advertising"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/list.svg" alt="Shortlisting"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/panel.svg" alt="Panel"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/interview.svg" alt="Interview"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/offer.svg" alt="Offer"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/contract.svg" alt="Contract"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/target.svg" /></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/folder.svg" alt="Jobs"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/bulb.svg" alt="Approval"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/pencil.svg" alt="Advertising"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/paperplane.svg" alt="Shortlisting"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/key.svg" alt="Advertising"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/personas.svg" alt="Shortlisting"></div>
         </div>
       </div>
     </div>

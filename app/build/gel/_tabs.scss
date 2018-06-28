@@ -13,3 +13,20 @@
       border-top: 1px solid $input-border-color;
   }
 }
+
+.nav-tabs{
+  border-width: 2px;
+
+    .nav-link {
+      @include font-heading();
+      font-size: 1rem;
+      color: $text-muted;
+      padding: $spacer * 0.625;
+    }
+    + .tab-content{
+        padding: $spacer * 2;
+        background: white;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+    }
+}

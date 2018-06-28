@@ -1,0 +1,25 @@
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    height: 32px;
+    line-height: 32px;
+
+    &+ li:before {
+      content: "\e95f";
+      font-family: $gel-icon;
+    }
+
+    &.dropdown {
+      &:hover {
+        ul.dropdown-menu {
+          display: block;
+          margin-top: 0;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
