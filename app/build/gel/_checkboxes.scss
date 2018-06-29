@@ -52,7 +52,7 @@ $check-icon: "\e91d" !default;
       top: 2px;
       left: 0;
       margin-left: -$form-check-input-gutter;
-      border: 1px solid $slate;
+      border: 1px solid $ctrl-border-color;
       border-radius: 3px;
       background-color: #fff;
       @include transition(border 0.15s ease-in-out, color 0.15s ease-in-out);

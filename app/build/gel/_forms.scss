@@ -5,3 +5,8 @@
 .form-control-sm{
   height: $ctrl-size-sm;
 }
+.form-group{
+  > label {
+    font-size: 1rem;
+  }
+}

@@ -3,14 +3,13 @@
     color: $body-color;
     font-size: 1rem;
     &.active{
-      border-bottom: 3px solid $link-color;
-      margin-bottom: -2px;
+      border-bottom: 4px solid $blue;
     }
   }
 
   + .tab-content{
       padding: $spacer;
-      border-top: 1px solid $input-border-color;
+      border-top: 1px solid $ctrl-border-color;
   }
 }
 
@@ -22,6 +21,7 @@
       font-size: 1rem;
       color: $text-muted;
       padding: $spacer * 0.625;
+      border: 0;
     }
     + .tab-content{
         padding: $spacer * 2;
