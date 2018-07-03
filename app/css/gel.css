@@ -3812,13 +3812,13 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     z-index: 1;
     text-decoration: none; }
   .list-group-item.disabled, .list-group-item:disabled {
-    color: #6c757d;
+    color: #adb5bd;
     background-color: #fff; }
   .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #0063b0;
-    border-color: #0063b0; }
+    background-color: #66819c;
+    border-color: #66819c; }
 
 .list-group-flush .list-group-item {
   border-right: 0;
@@ -8549,6 +8549,33 @@ select.form-control {
 
 .form-group > label {
   font-size: 1rem; }
+
+.list-group-flush {
+  border-right: 1px solid #97a3b9; }
+  .list-group-flush .list-group-item {
+    background: transparent;
+    border: 0;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif; }
+  .list-group-flush .list-group-item.active {
+    color: inherit; }
+  .list-group-flush .list-group-item.active::after {
+    width: 15px;
+    height: 15px;
+    transform: rotate(-45deg);
+    border-left: 1px solid #97a3b9;
+    border-top: 1px solid #97a3b9;
+    display: block;
+    content: "";
+    position: absolute;
+    right: -8px;
+    background: white;
+    top: 15px; }
+
+.list-group .list-group-item.active a {
+  color: white; }
 /*Global Mixins*/
 /*Global Spinner*/
 .spinner {
@@ -9848,6 +9875,11 @@ strong {
 
 .dragable {
   cursor: move; }
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #3d485b; }
 
 @media print {
   #gel-footer, #gel-menu, #gel-navbar, .page-actions {

@@ -13,3 +13,9 @@
 .dragable{
   cursor: move;
 }
+
+.disabled {
+   pointer-events: none;
+   cursor: default;
+   color: $grey;
+}

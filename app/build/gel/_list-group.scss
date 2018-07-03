@@ -1,0 +1,36 @@
+.list-group-flush {
+  border-right: 1px solid $grey-100;
+
+  .list-group-item{
+    background: transparent;
+    border: 0;
+    display: block;
+    font-size: 1rem;
+    @include font-heading();
+
+    &.active{
+      color: inherit;
+
+      &::after {
+        width: 15px;
+        height: 15px;
+        transform: rotate(-45deg);
+        border-left: 1px solid $grey-100;
+        border-top: 1px solid $grey-100;
+        display: block;
+        content: "";
+        position: absolute;
+        right: -8px;
+        background: white;
+        top: 15px;
+      }
+    }
+  }
+}
+.list-group{
+  .list-group-item.active{
+    a {
+      color: white
+    }
+  }
+}
