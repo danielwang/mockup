@@ -71,9 +71,15 @@ function buildSolidIcons(){
     ["github","github"],
     ["edit","edit"],
     ["sketch","sketch"],
-    ["tray","tray"]
+    ["tray","tray"],
+    ["sad","sad"],
+    ["frown","frown"],
+    ["meh","meh"],
+    ["smile","smile"],
+    ["happy","happy"]
   ];
 }
+
 
 $solidIcons = buildSolidIcons();
 
@@ -84,7 +90,8 @@ function buildLineIcons(){
     ["control","control"],["team","team"],["job","job"],["employee","employee"],
     ["recruitment","recruitment"],["learning","learning"],["analytics","analytics"],["orgchart","orgchart"],
     ["onboarding","onboarding"],["journal","journal"],["copy","copy"],["history","history"],["salary","salary"],
-    ["add","add"],["unlock","unlock"],["view","view"],["resume","application"]
+    ["add","add"],["unlock","unlock"],["view","view"],["resume","application"],
+    ["sad","sad"],["frown","frown"],["meh","meh"],["smile","smile"],["happy","happy"]
   ];
 }
 
@@ -112,7 +119,7 @@ $lineIcons = buildLineIcons();
 
 
 <!-- Tab panes -->
-<div class="tab-content">
+<div class="tab-content icon-library">
 <!-- icon library -->
   <div class="tab-pane active" id="icons" role="tabpanel" aria-labelledby="icons-tab">
 

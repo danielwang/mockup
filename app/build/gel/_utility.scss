@@ -15,7 +15,6 @@
 }
 
 .disabled {
-   pointer-events: none;
    cursor: default;
-   color: $grey;
+   color: $gray-500;
 }

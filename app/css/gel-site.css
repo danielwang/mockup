@@ -27,6 +27,9 @@
   -webkit-text-fill-color: transparent;
 }
 
+.icon-library [class^="gel-icon-"]{
+    color: #536a81;
+}
 .red-100 {
   background-color: #ffaaa1;
 }

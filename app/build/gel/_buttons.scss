@@ -9,6 +9,15 @@
     opacity: 0.65;
     cursor: progress;
   }
+
+  &.dropdown-toggle{
+    &+.dropdown-menu{
+      margin-top: $spacer/4;
+      &::after{
+        display: none;
+      }
+    }
+  }
 }
 
 .btn-ctrl {

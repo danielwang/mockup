@@ -5,11 +5,9 @@
     background: transparent;
     border: 0;
     display: block;
-    font-size: 1rem;
-    @include font-heading();
 
     &.active{
-      color: inherit;
+      color: $azure;
 
       &::after {
         width: 15px;
@@ -28,9 +26,13 @@
   }
 }
 .list-group{
-  .list-group-item.active{
-    a {
-      color: white
+  .list-group-item{
+    font-size: 1rem;
+    @include font-heading();
+    &.active{
+      a {
+        color: white
+      }
     }
   }
 }

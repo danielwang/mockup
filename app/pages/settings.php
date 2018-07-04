@@ -15,7 +15,7 @@
 
 <?php startblock('page-body');?>
 <div class="row">
-<div class="col-sm-2">
+<div class="col-sm-3 mb-2 mb-sm-0">
   <div class="btn-group btn-group-toggle" data-toggle="buttons">
         <label class="btn btn-ctrl active">
           <input type="radio" name="options" id="option1" autocomplete="off" checked="checked">
@@ -38,7 +38,7 @@
 </div>
 <div class="card mt-4">
   <div class="row">
-    <div class="col-sm-4 col-md-3">
+    <div class="col-sm-5 col-xl-3">
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action active"><i class="gel-icon-job-o"></i> Jobs</a>
         <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-analytics-o"></i> Sourcing</a>
@@ -53,34 +53,34 @@
         <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-copy-o"></i> Other</a>
       </div>
     </div>
-    <div class="col-sm-8 col-md-9">
+    <div class="col-sm-7 col-xl-9">
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
           <h3>Jobs</h3>
-          <ul>
-            <li class="col-sm-6"><a href="#">Recruitment Processes</a></li>
-            <li class="col-sm-6"><a href="#">Job Approval</a></li>
+          <ul class="row list-unstyled">
+            <li class="col-sm-6 mb-3"><a href="#">Recruitment Processes</a></li>
+            <li class="col-sm-6 mb-3"><a href="#">Job Approval</a></li>
           </ul>
           <h4>Job Card fields</h4>
-          <ul class="row">
-              <li class="col-sm-6"><a href="#">Agreement Types</a></li>
-              <li class="col-sm-6"><a href="#">Companies</a></li>
-              <li class="col-sm-6"><a href="#">Contract Types</a></li>
-              <li class="col-sm-6"><a href="#">Cost Centres</a></li>
-              <li class="col-sm-6"><a href="#">Generic Lists</a></li>
-              <li class="col-sm-6"><a href="#">Industries</a></li>
-              <li class="col-sm-6"><a href="#">Job Sectors</a></li>
-              <li class="col-sm-6"><a href="#">Job Status</a></li>
-              <li class="col-sm-6"><a href="#">Job Types</a></li>
-              <li class="col-sm-6"><a href="#">Locations</a></li>
-              <li class="col-sm-6"><a href="#">Organisational Hierarchy</a></li>
-              <li class="col-sm-6"><a href="#">Pay Scales</a></li>
-              <li class="col-sm-6"><a href="#">Personnel Areas</a></li>
-              <li class="col-sm-6"><a href="#">Reasons</a></li>
-              <li class="col-sm-6"><a href="#">Roles</a></li>
-              <li class="col-sm-6"><a href="#">Sites</a></li>
-              <li class="col-sm-6"><a href="#">Work Availability Preferences</a></li>
-              <li class="col-sm-6"><a href="#">Work Types</a></li>
+          <ul class="row list-unstyled">
+              <li class="col-sm-6 mb-3"><a href="#">Agreement Types</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Companies</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Contract Types</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Cost Centres</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Generic Lists</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Industries</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Job Sectors</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Job Status</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Job Types</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Locations</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Organisational Hierarchy</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Pay Scales</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Personnel Areas</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Reasons</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Roles</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Sites</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Work Availability Preferences</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Work Types</a></li>
           </ul>
         </div>
         <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>

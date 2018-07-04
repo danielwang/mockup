@@ -7781,6 +7781,10 @@ label {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
     opacity: 0.65;
     cursor: progress; }
+  .btn.dropdown-toggle + .dropdown-menu {
+    margin-top: 0.25rem; }
+  .btn.dropdown-toggle + .dropdown-menu::after {
+    display: none; }
 
 .btn-ctrl {
   color: #415365;
@@ -8555,12 +8559,9 @@ select.form-control {
   .list-group-flush .list-group-item {
     background: transparent;
     border: 0;
-    display: block;
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif; }
+    display: block; }
   .list-group-flush .list-group-item.active {
-    color: inherit; }
+    color: #00a1e5; }
   .list-group-flush .list-group-item.active::after {
     width: 15px;
     height: 15px;
@@ -8574,8 +8575,12 @@ select.form-control {
     background: white;
     top: 15px; }
 
-.list-group .list-group-item.active a {
-  color: white; }
+.list-group .list-group-item {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif; }
+  .list-group .list-group-item.active a {
+    color: white; }
 /*Global Mixins*/
 /*Global Spinner*/
 .spinner {
@@ -9235,7 +9240,8 @@ select.form-control {
   color: #2f3c49;
   font-size: 1rem; }
   .nav-tabs-line .nav-link.active {
-    border-bottom: 4px solid #0063b0; }
+    border-bottom: 4px solid currentcolor;
+    color: #00a1e5; }
   .nav-tabs-line + .tab-content {
     padding: 1rem;
     border-top: 1px solid #66819c; }
@@ -9877,9 +9883,8 @@ strong {
   cursor: move; }
 
 .disabled {
-  pointer-events: none;
   cursor: default;
-  color: #3d485b; }
+  color: #adb5bd; }
 
 @media print {
   #gel-footer, #gel-menu, #gel-navbar, .page-actions {

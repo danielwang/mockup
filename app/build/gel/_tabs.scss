@@ -3,7 +3,8 @@
     color: $body-color;
     font-size: 1rem;
     &.active{
-      border-bottom: 4px solid $blue;
+      border-bottom: 4px solid currentcolor;
+      color: $azure;
     }
   }
 
