@@ -72,13 +72,13 @@
         <a href="principles">Design Principles</a>
       </li>
       <li>
-        <a href="#">Accessibility</a>
+        <a href="accessibility">Accessibility</a>
       </li>
       <li>
-        <a href="#">Personas</a>
+        <a href="personas">Personas</a>
       </li>
       <li>
-        <a href="#">Installation</a>
+        <a href="installation">Installation</a>
       </li>
     </ul>
   </li>
@@ -116,6 +116,7 @@
       </li>
     </ul>
   </li>
+  <!-- <li class="submenu"> <h4>Documentations</h4> <ul> <li> <a href="#">Class Naming Convention</a> </li> </ul> </li> -->
   <li class="submenu">
     <h4>Downloads</h4>
     <ul>
@@ -154,14 +155,113 @@
           </div>
               </div>
 
-      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="1">Form</a></li><li class="nav-item"><a class="nav-link " id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="">Ratings</a></li><li class="nav-item"><a class="nav-link " id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="">Search</a></li><li class="nav-item"><a class="nav-link " id="trays-tab" data-toggle="tab" href="#trays" role="tab" aria-controls="trays" aria-selected="">Trays</a></li><li class="nav-item"><a class="nav-link " id="uploads-tab" data-toggle="tab" href="#uploads" role="tab" aria-controls="uploads" aria-selected="">Uploads</a></li></ul>
+      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="cards" aria-selected="1">Cards</a></li><li class="nav-item"><a class="nav-link " id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="">Form</a></li><li class="nav-item"><a class="nav-link " id="modals-tab" data-toggle="tab" href="#modals" role="tab" aria-controls="modals" aria-selected="">Modals</a></li><li class="nav-item"><a class="nav-link " id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="">Ratings</a></li><li class="nav-item"><a class="nav-link " id="scribble-tab" data-toggle="tab" href="#scribble" role="tab" aria-controls="scribble" aria-selected="">Scribble</a></li><li class="nav-item"><a class="nav-link " id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="">Search</a></li><li class="nav-item"><a class="nav-link " id="timeline-tab" data-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="">Timeline</a></li><li class="nav-item"><a class="nav-link " id="trays-tab" data-toggle="tab" href="#trays" role="tab" aria-controls="trays" aria-selected="">Trays</a></li><li class="nav-item"><a class="nav-link " id="uploaders-tab" data-toggle="tab" href="#uploaders" role="tab" aria-controls="uploaders" aria-selected="">Uploaders</a></li></ul>
     </div>
 </header>
 <!-- page body -->
 		<main id="gel-main">
 			<section class="container">
 				<div class="tab-content">
-    <div class="tab-pane active" id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is how the element is used:</p>
+    <div class="tab-pane active" id="cards" role="tabpanel" aria-labelledby="page-tab-cards"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+  A card can be used to display content related to a single subject. The content can consist of multiple elements of varying types and sizes.</blockquote>
+
+<div class="card">
+  <h5>This is a card</h5>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>The width of the box should be relative to the parent grid. No hard coded pixels needed.</p></div></div></div></div><div class="tab-pane " id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"><form class="card">
+  <div class="form-group">
+    <label for="title1">Label</label>
+    <input type="text" class="form-control" id="title1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="group1">Select dropdown</label>
+    <select class="form-control" id="group1">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="date1">Date picker</label>
+    <input type="text" class="form-control" id="date1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="description1">Textarea
+      <span class="help" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">
+        <i class="gel-icon-help"></i>
+      </span>
+    </label>
+    <textarea class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="who1">Segmented control</label>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-ctrl">
+        <input type="radio" name="options" id="option1" autocomplete="off">
+        Both
+      </label>
+      <label class="btn btn-ctrl">
+        <input type="radio" name="options" id="option2" autocomplete="off">
+        Manger
+      </label>
+      <label class="btn btn-ctrl active">
+        <input type="radio" name="options" id="option3" autocomplete="off" checked="checked">
+        Employee
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="who1">Radios buttons</label>
+    <div>
+      <div class="radio radio-inline">
+        <input type="radio" id="inlineRadio4-a" value="option4" name="radioInline4">
+        <label for="inlineRadio4-a">
+          consectetur
+        </label>
+      </div>
+      <div class="radio radio-inline">
+        <input type="radio" id="inlineRadio4-b" value="option4" name="radioInline4">
+        <label for="inlineRadio4-b">
+          adipiscing
+        </label>
+      </div>
+      <div class="radio radio-inline">
+        <input type="radio" id="inlineRadio4-c" value="option4" name="radioInline4">
+        <label for="inlineRadio4-c">
+          eiusmod
+        </label>
+      </div>
+      <div class="radio radio-inline">
+        <input type="radio" id="inlineRadio4-d" value="option4" name="radioInline4">
+        <label for="inlineRadio4-d">
+          incididunt
+        </label>
+      </div>
+      <div class="radio radio-inline">
+        <input type="radio" id="inlineRadio4-e" value="option4" name="radioInline4">
+        <label for="inlineRadio4-e">
+          reprehenderit
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="checkbox checkbox-default">
+      <input id="checkbox1" type="checkbox">
+      <label for="checkbox1">
+        Save it into favourite task list
+      </label>
+    </div>
+  </div>
+
+  <div class="d-flex">
+    <button type="button" class="btn btn-outline-secondary mr-auto">Cancel</button>
+    <button type="button" class="btn btn-primary">Submit</button>
+  </div>
+</form></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is how the element is used:</p>
 <ul>
   <li>Put
     <code>.required</code>
@@ -174,7 +274,37 @@
     <a href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js</a>
     into your application.</li>
 </ul>
-</div></div></div></div><div class="tab-pane " id="ratings" role="tabpanel" aria-labelledby="page-tab-ratings"><div class="row"><div class="col-md-6 col-lg-7"><h3>Stars rating</h3>
+</div></div></div></div><div class="tab-pane " id="modals" role="tabpanel" aria-labelledby="page-tab-modals"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+  A modal is a box with content displayed on top of the page to capture the user’s attention for an specific action inside the same process. Modals are subordinated to pages.
+</blockquote>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalCenterTitle">Modal title</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>Modal content</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="ratings" role="tabpanel" aria-labelledby="page-tab-ratings"><div class="row"><div class="col-md-6 col-lg-7"><h3>Stars rating</h3>
 <div class="card">
   <div class="star-rating">
     <input id="star-5" type="radio" name="rating" value="star-5">
@@ -281,7 +411,15 @@
     <span>Poor</span>
     <span>Excellent</span>
   </div>
-</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="search" role="tabpanel" aria-labelledby="page-tab-search"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="scribble" role="tabpanel" aria-labelledby="page-tab-scribble"><div class="row"><div class="col-md-6 col-lg-7"><script type="text/javascript" src="https://ui.pageuppeople.com/libs/scribble/scribble.js" charset="UTF-8" async="async"></script>
+<textarea style="visibility: hidden;" pageup-scribble="pageup-scribble">Hello from Scribble!</textarea></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>
+  <a target="_blank" href="https://github.com/PageUpPeopleOrg/scribble">Scribble</a>
+  is the rich text editor we use in our product. You can download it from PageUp Github Repositories.
+</p>
+<p>Further information on
+  <a href="https://knowledgeportal.pageuppeople.com/rich-text-editor/">Knowledge Portal</a>
+</p>
+</div></div></div></div><div class="tab-pane " id="search" role="tabpanel" aria-labelledby="page-tab-search"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="timeline" role="tabpanel" aria-labelledby="page-tab-timeline"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-md-4">
     <h3>Small</h3>
     <fieldset>
@@ -434,7 +572,8 @@
       <td>Thornton</td>
     </tr>
   </tbody>
-</table></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="uploads" role="tabpanel" aria-labelledby="page-tab-uploads"><div class="row"><div class="col-md-6 col-lg-7"><form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
+</table></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="uploaders" role="tabpanel" aria-labelledby="page-tab-uploaders"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">File Uploader is a pattern that allows the user to select and upload images and files to the system.</blockquote>
+<form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
   <div class="dz-message needsclick gray">
     <h3 class="text-muted">Drag &amp; Drop files here</h3>
     <span class="note needsclick">
@@ -446,18 +585,7 @@
       <small>Max 5MB in size, Word, PDF, or JPG formats</small>
     </p>
   </div>
-</form></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>We use
-  <a href="http://www.dropzonejs.com/">dropzonejs</a>, that provides drag’n’drop file uploads with image previews. Read the full
-  <a href="http://www.dropzonejs.com/#configuration">configuration</a>
-</p>
-
-<p>dropzonejs supports IE 10+ Safari 6+. For all the other browsers, dropzone provides an oldschool file input fallback.</p>
-<p>Use
-  <code>.gel-dropzone</code>
-  class with
-  <code>.dropzone</code>
-</p>
-</div></div></div></div></div>
+</form></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div></div>
 
 			</section>
 		</main>

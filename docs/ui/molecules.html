@@ -72,13 +72,13 @@
         <a href="principles">Design Principles</a>
       </li>
       <li>
-        <a href="#">Accessibility</a>
+        <a href="accessibility">Accessibility</a>
       </li>
       <li>
-        <a href="#">Personas</a>
+        <a href="personas">Personas</a>
       </li>
       <li>
-        <a href="#">Installation</a>
+        <a href="installation">Installation</a>
       </li>
     </ul>
   </li>
@@ -116,6 +116,7 @@
       </li>
     </ul>
   </li>
+  <!-- <li class="submenu"> <h4>Documentations</h4> <ul> <li> <a href="#">Class Naming Convention</a> </li> </ul> </li> -->
   <li class="submenu">
     <h4>Downloads</h4>
     <ul>
@@ -154,7 +155,7 @@
           </div>
               </div>
 
-      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="accordions-tab" data-toggle="tab" href="#accordions" role="tab" aria-controls="accordions" aria-selected="1">Accordions</a></li><li class="nav-item"><a class="nav-link " id="alerts-tab" data-toggle="tab" href="#alerts" role="tab" aria-controls="alerts" aria-selected="">Alerts</a></li><li class="nav-item"><a class="nav-link " id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="cards" aria-selected="">Cards</a></li><li class="nav-item"><a class="nav-link " id="dropdowns-tab" data-toggle="tab" href="#dropdowns" role="tab" aria-controls="dropdowns" aria-selected="">Dropdowns</a></li><li class="nav-item"><a class="nav-link " id="modals-tab" data-toggle="tab" href="#modals" role="tab" aria-controls="modals" aria-selected="">Modals</a></li><li class="nav-item"><a class="nav-link " id="pagination-tab" data-toggle="tab" href="#pagination" role="tab" aria-controls="pagination" aria-selected="">Pagination</a></li><li class="nav-item"><a class="nav-link " id="popover-tab" data-toggle="tab" href="#popover" role="tab" aria-controls="popover" aria-selected="">Popover</a></li><li class="nav-item"><a class="nav-link " id="tables-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="tables" aria-selected="">Tables</a></li><li class="nav-item"><a class="nav-link " id="tabs-tab" data-toggle="tab" href="#tabs" role="tab" aria-controls="tabs" aria-selected="">Tabs</a></li></ul>
+      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="accordions-tab" data-toggle="tab" href="#accordions" role="tab" aria-controls="accordions" aria-selected="1">Accordions</a></li><li class="nav-item"><a class="nav-link " id="alerts-tab" data-toggle="tab" href="#alerts" role="tab" aria-controls="alerts" aria-selected="">Alerts</a></li><li class="nav-item"><a class="nav-link " id="breadcrumb-tab" data-toggle="tab" href="#breadcrumb" role="tab" aria-controls="breadcrumb" aria-selected="">Breadcrumb</a></li><li class="nav-item"><a class="nav-link " id="dropdowns-tab" data-toggle="tab" href="#dropdowns" role="tab" aria-controls="dropdowns" aria-selected="">Dropdowns</a></li><li class="nav-item"><a class="nav-link " id="lists-tab" data-toggle="tab" href="#lists" role="tab" aria-controls="lists" aria-selected="">Lists</a></li><li class="nav-item"><a class="nav-link " id="pagination-tab" data-toggle="tab" href="#pagination" role="tab" aria-controls="pagination" aria-selected="">Pagination</a></li><li class="nav-item"><a class="nav-link " id="popover-tab" data-toggle="tab" href="#popover" role="tab" aria-controls="popover" aria-selected="">Popover</a></li><li class="nav-item"><a class="nav-link " id="tables-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="tables" aria-selected="">Tables</a></li><li class="nav-item"><a class="nav-link " id="tabs-tab" data-toggle="tab" href="#tabs" role="tab" aria-controls="tabs" aria-selected="">Tabs</a></li><li class="nav-item"><a class="nav-link " id="wizards-tab" data-toggle="tab" href="#wizards" role="tab" aria-controls="wizards" aria-selected="">Wizards</a></li></ul>
     </div>
 </header>
 <!-- page body -->
@@ -286,6 +287,8 @@
 </div>
 <hr class="sg-hr"/>
 <h3>Alerts</h3>
+<p>Alerts are thought to be used inside context as forms. Usually you will only need to use the information one. Its width depends on the container with you use it, always respecting the container margins to the content. The close action is not of
+  mandatory use.</p>
 <p class="alert alert-info" role="alert">
   <i class="gel-icon-info" aria-hidden="true"></i>
   A simple primary alert with
@@ -316,26 +319,84 @@
     messages with the associated icons.</p>
 <p>Feedback color is critical, because it’s positioned at the top of the section interacting with other key components.
 </p>
-</div></div></div></div><div class="tab-pane " id="cards" role="tabpanel" aria-labelledby="page-tab-cards"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
-  A card can be used to display content related to a single subject. The content can consist of multiple elements of varying types and sizes.</blockquote>
+</div></div></div></div><div class="tab-pane " id="breadcrumb" role="tabpanel" aria-labelledby="page-tab-breadcrumb"><div class="row"><div class="col-md-6 col-lg-7"><ol class="breadcrumb">
+  <li>
+    <a href="#">
+      <i class="gel-icon-home"></i>
+    </a>
+  </li>
+  <li>
+    <a href="#">level 2</a>
+  </li>
+  <li>
+    <a href="#">level 3</a>
+  </li>
+  <li class="active">Current</li>
+</ol></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><h6 class="green">Do's</h6>
+<ul>
+    <li>Use breadcrumb for 3 Levels or More.</li>
+    <li>Always on the toli of the liage content.</li>
+    <li>All breadcrumbs need to start with the home liage. The home liage is the first level.
+    </li>
+</ul>
+<h6 class="red">Don'ts</h6>
+<ul>
+    <li>Don’t link to the liage the user is on.</li>
+    <li>Don’t use breadcrumbs on mobile site</li>
+</ul>
+</div></div></div></div><div class="tab-pane " id="dropdowns" role="tabpanel" aria-labelledby="page-tab-dropdowns"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="lists" role="tabpanel" aria-labelledby="page-tab-lists"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+  List groups are a flexible and powerful component for displaying a series of content. They can also be used as navigation with the right modifier class.</blockquote>
 
+<div class="row">
+  <div class="col-sm-6">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <a href="#">Recruitment</a>
+      </li>
+      <li class="list-group-item active">
+        <a href="#">Onboarding</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#">Performance</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#">Learning</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#">Succession</a>
+      </li>
+      <li class="list-group-item">
+        <a class="disabled" href="#" data-toggle="tooltip" data-placement="right" data-original-title="disabled">Compensation</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<hr class="sg-hr"/>
 <div class="card">
-  <h5>This is a card</h5>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>The width of the box should be relative to the parent grid. No hard coded pixels needed.</p></div></div></div></div><div class="tab-pane " id="dropdowns" role="tabpanel" aria-labelledby="page-tab-dropdowns"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="modals" role="tabpanel" aria-labelledby="page-tab-modals"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>Note: Do not use to show error, success, or warning messages. Keep them on the page.</p>
-<h6>Sizes</h6>
-<ul>
-  <li>
-    <code>.modal-lg</code>
-  </li>
-</ul>
-<h6>Type</h6>
-<ul>
-  <li>
-    <code>.modal-danger</code>
-  </li>
-</ul>
-</div></div></div></div><div class="tab-pane " id="pagination" role="tabpanel" aria-labelledby="page-tab-pagination"><div class="row"><div class="col-md-6 col-lg-7"><nav aria-label="Search results pages">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action">
+          List 1
+        </a>
+        <a href="#" class="list-group-item list-group-item-action active">List 2</a>
+        <a href="#" class="list-group-item list-group-item-action">List 3</a>
+        <a href="#" class="list-group-item list-group-item-action">List 4</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" data-toggle="tooltip" data-placement="left" data-original-title="disabled">List disabled</a>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <h5>Heading</h5>
+      <p>Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+      </p>
+      <h5>Heading</h5>
+      <p>Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+    </div>
+  </div>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="pagination" role="tabpanel" aria-labelledby="page-tab-pagination"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+  Preset pagination styles helps divide up large blocks of content on your site or app.
+</blockquote>
+<nav aria-label="Search results pages">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link" href="#">Previous</a>
@@ -378,34 +439,43 @@
 </nav>
 
 <p>
-  <button type="button" class="btn btn-outline-secondary">
+  <button type="button" class="btn btn-ctrl">
     <i class="gel-icon-angle-left"></i>
     Previous
   </button>
-  <button type="button" class="btn btn-outline-secondary">Next
+  <button type="button" class="btn btn-ctrl">Next
     <i class="gel-icon-angle-right"></i>
   </button>
 </p></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="popover" role="tabpanel" aria-labelledby="page-tab-popover"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
   Popovers add small overlays of content for housing secondary information. It’s important to keep secondary information simple and to a minimum. Also, avoid complex functionality.
 </blockquote>
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
-</button>
+<div class="row">
+  <div class="col-md-3">
+    <button type="button" class="btn btn-ctrl" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Top
+    </button>
+  </div>
+  <div class="col-md-3">
+    <button type="button" class="btn btn-ctrl" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Right
+    </button>
+  </div>
+  <div class="col-md-3">
+    <button type="button" class="btn btn-ctrl" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+    sagittis lacus vel augue laoreet rutrum faucibus.">
+      Bottom
+    </button>
+  </div>
 
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on right
-</button>
+  <div class="col-md-3">
+    <button type="button" class="btn btn-ctrl" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Left
+    </button>
+  </div>
+</div>
 
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on bottom
-</button>
-
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on left
-</button>
-
-<button type="button" id="popover-via-click" class="btn btn-default" data-content="You clicked the button and as a result, this message box simply.. popped.<br>Now simply click anywhere to dismiss.">Click to open</button></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="tables" role="tabpanel" aria-labelledby="page-tab-tables"><div class="row"><div class="col-md-6 col-lg-7"><h3>Small table
+<!-- <button type="button" id="popover-via-click" class="btn btn-default" data-content="You clicked the button and as a result, this message box simply.. popped.<br>Now simply click anywhere to dismiss.">Click to open</button> --></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="tables" role="tabpanel" aria-labelledby="page-tab-tables"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">A table is a specific pattern for comparing datasets in a very direct an analytical way.</blockquote>
+<h3>Small table
 </h3>
 <table class="table table-bordered">
   <thead>
@@ -515,7 +585,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>36</td>
       <td>Internal</td>
-      <td>41</td>
+      <td>28</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -553,7 +623,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>37</td>
       <td>Internal</td>
-      <td>43</td>
+      <td>64</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -591,7 +661,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>38</td>
       <td>Internal</td>
-      <td>67</td>
+      <td>87</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -629,7 +699,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>39</td>
       <td>Internal</td>
-      <td>79</td>
+      <td>56</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -667,7 +737,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>40</td>
       <td>Internal</td>
-      <td>59</td>
+      <td>50</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -705,7 +775,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>41</td>
       <td>Internal</td>
-      <td>93</td>
+      <td>51</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -781,7 +851,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>43</td>
       <td>Internal</td>
-      <td>50</td>
+      <td>24</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -819,7 +889,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>44</td>
       <td>Internal</td>
-      <td>41</td>
+      <td>62</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -857,7 +927,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>45</td>
       <td>Internal</td>
-      <td>67</td>
+      <td>61</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -895,7 +965,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>46</td>
       <td>Internal</td>
-      <td>92</td>
+      <td>18</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -933,7 +1003,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>47</td>
       <td>Internal</td>
-      <td>69</td>
+      <td>81</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -971,7 +1041,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>48</td>
       <td>Internal</td>
-      <td>92</td>
+      <td>17</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1009,7 +1079,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>49</td>
       <td>Internal</td>
-      <td>28</td>
+      <td>98</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1047,7 +1117,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>50</td>
       <td>Internal</td>
-      <td>85</td>
+      <td>32</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1085,7 +1155,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>51</td>
       <td>Internal</td>
-      <td>51</td>
+      <td>32</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1123,7 +1193,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>52</td>
       <td>Internal</td>
-      <td>78</td>
+      <td>2</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1161,7 +1231,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>53</td>
       <td>Internal</td>
-      <td>47</td>
+      <td>19</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1199,7 +1269,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>54</td>
       <td>Internal</td>
-      <td>95</td>
+      <td>94</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1237,7 +1307,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>55</td>
       <td>Internal</td>
-      <td>91</td>
+      <td>89</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1275,7 +1345,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>56</td>
       <td>Internal</td>
-      <td>3</td>
+      <td>71</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1313,7 +1383,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>57</td>
       <td>Internal</td>
-      <td>58</td>
+      <td>37</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1351,7 +1421,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>58</td>
       <td>Internal</td>
-      <td>31</td>
+      <td>38</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1389,7 +1459,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>59</td>
       <td>Internal</td>
-      <td>49</td>
+      <td>38</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1427,7 +1497,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>60</td>
       <td>Internal</td>
-      <td>43</td>
+      <td>33</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1465,7 +1535,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>61</td>
       <td>Internal</td>
-      <td>65</td>
+      <td>53</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1503,7 +1573,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>62</td>
       <td>Internal</td>
-      <td>7</td>
+      <td>20</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1541,7 +1611,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>63</td>
       <td>Internal</td>
-      <td>26</td>
+      <td>36</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1579,7 +1649,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>64</td>
       <td>Internal</td>
-      <td>58</td>
+      <td>84</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1617,7 +1687,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>65</td>
       <td>Internal</td>
-      <td>64</td>
+      <td>17</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1655,7 +1725,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>66</td>
       <td>Internal</td>
-      <td>71</td>
+      <td>92</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1693,7 +1763,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>67</td>
       <td>Internal</td>
-      <td>66</td>
+      <td>100</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1731,7 +1801,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>68</td>
       <td>Internal</td>
-      <td>73</td>
+      <td>88</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1769,7 +1839,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>69</td>
       <td>Internal</td>
-      <td>73</td>
+      <td>69</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1807,7 +1877,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>70</td>
       <td>Internal</td>
-      <td>43</td>
+      <td>87</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1845,7 +1915,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>71</td>
       <td>Internal</td>
-      <td>80</td>
+      <td>90</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1883,7 +1953,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>72</td>
       <td>Internal</td>
-      <td>40</td>
+      <td>80</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1921,7 +1991,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>73</td>
       <td>Internal</td>
-      <td>19</td>
+      <td>29</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1959,7 +2029,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>74</td>
       <td>Internal</td>
-      <td>63</td>
+      <td>71</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1997,7 +2067,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>75</td>
       <td>Internal</td>
-      <td>27</td>
+      <td>97</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2035,7 +2105,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>76</td>
       <td>Internal</td>
-      <td>34</td>
+      <td>61</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2073,7 +2143,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>77</td>
       <td>Internal</td>
-      <td>77</td>
+      <td>69</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2111,7 +2181,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>78</td>
       <td>Internal</td>
-      <td>70</td>
+      <td>29</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2149,7 +2219,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>79</td>
       <td>Internal</td>
-      <td>34</td>
+      <td>71</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2187,7 +2257,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>80</td>
       <td>Internal</td>
-      <td>55</td>
+      <td>38</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2225,7 +2295,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>81</td>
       <td>Internal</td>
-      <td>61</td>
+      <td>96</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2263,7 +2333,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>82</td>
       <td>Internal</td>
-      <td>83</td>
+      <td>63</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2301,7 +2371,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>83</td>
       <td>Internal</td>
-      <td>3</td>
+      <td>100</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2339,7 +2409,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>84</td>
       <td>Internal</td>
-      <td>76</td>
+      <td>38</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2377,7 +2447,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       <td>United Arab Emirates</td>
       <td>85</td>
       <td>Internal</td>
-      <td>89</td>
+      <td>95</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2396,27 +2466,68 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 </table> </div> --></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><P>Use
   <code>.gel-table</code>
   for page or section level table.</p>
-</div></div></div></div><div class="tab-pane " id="tabs" role="tabpanel" aria-labelledby="page-tab-tabs"><div class="row"><div class="col-md-6 col-lg-7"><ul class="nav nav-tabs-line" role="tablist">
+</div></div></div></div><div class="tab-pane " id="tabs" role="tabpanel" aria-labelledby="page-tab-tabs"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+  Tabs are a navigational element which shows and hides content which, while similar, is disparate enough to warrant showing singularly.</blockquote>
+
+<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    <a class="nav-link active" id="one-tab" data-toggle="tab" href="#TabOne" role="tab" aria-controls="home" aria-expanded="true">Tab One</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="two-tab" data-toggle="tab" href="#TabTwo" role="tab" aria-controls="profile" aria-expanded="false">Tab Two</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    <a class="nav-link" id="three-tab" data-toggle="tab" href="#TabThree" role="tab" aria-controls="profile" aria-expanded="false">Tab Three</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="four-tab" data-toggle="tab" href="#TabFour" role="tab" aria-controls="profile" aria-expanded="false">Tab Four</a>
   </li>
 </ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh
-    elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+<div class="tab-content" id="myTabContent2" style="">
+  <div role="tabpanel" class="tab-pane fade active show" id="TabOne" aria-labelledby="home-tab" aria-expanded="true" style="">
+    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+      Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
   </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
-    Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+  <div class="tab-pane fade" id="TabTwo" role="tabpanel" aria-labelledby="profile-tab" aria-expanded="false" style="">
+    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth
+      letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan
+      fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
   </div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse
-    potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+  <div class="tab-pane fade" id="TabThree" role="tabpanel" aria-labelledby="dropdown1-tab">
+    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
+      banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of
+      them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+  </div>
+  <div class="tab-pane fade" id="TabFour" role="tabpanel" aria-labelledby="dropdown2-tab">
+    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park
+      Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo
+      park vegan.</p>
+  </div>
+</div>
+<hr class="sg-hr">
+<div class="card">
+  <ul class="nav nav-tabs-line" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+      elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+      Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse
+      potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+    </div>
   </div>
 </div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><P>Use
   <b>PU Tab</b>
@@ -2431,7 +2542,73 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
     <code>.nav-line</code>
   </li>
 </ul>
-</div></div></div></div></div>
+</div></div></div></div><div class="tab-pane " id="wizards" role="tabpanel" aria-labelledby="page-tab-wizards"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">A wizard presents a series of steps or conditions that the user needs to complete in order to accomplish a goal
+</blockquote>
+
+<h3>Vertical</h3>
+<div class="wizard wizard-vertical">
+  <div class="wizard-step complete">
+    <a class="wizard-dot" href="#"></a>
+    <h5 class="wizard-stepnum">Step 1</h5>
+    <div class="wizard-info">Lorem ipsum dolor sit amet.</div>
+  </div>
+  <div class="wizard-step complete">
+    <a class="wizard-dot" href="#"></a>
+    <h5 class="wizard-stepnum">Step 2</h5>
+    <div class="wizard-info">Vestibulum ante ipsum primis in faucibus orci luctus et.
+    </div>
+  </div>
+  <div class="wizard-step active">
+    <a class="wizard-dot" href="#"></a>
+    <h5 class="wizard-stepnum">Step 3</h5>
+    <div class="wizard-info">Ultrices posuere cubilia Curae.</div>
+  </div>
+
+  <div class="wizard-step disabled">
+    <a class="wizard-dot" href="#"></a>
+    <h5 class="wizard-stepnum">Step 4</h5>
+    <div class="wizard-info">Duis porta ipsum vitae mi bibendum bibendum.</div>
+  </div>
+  <div class="wizard-step disabled">
+    <a class="wizard-dot" href="#"></a>
+    <h5 class="wizard-stepnum">Step 5</h5>
+    <div class="wizard-info">Lorem ipsum dolor sit amet.</div>
+  </div>
+</div>
+
+<h3>Horizontal</h3>
+<div class="row wizard">
+  <div class="col-4 wizard-step complete">
+    <h5 class="text-center wizard-stepnum">Step 1</h5>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+    <a href="#" class="wizard-dot"></a>
+    <div class="wizard-info text-center">Lorem ipsum dolor sit amet.</div>
+  </div>
+
+  <div class="col-4 wizard-step active">
+    <!-- complete -->
+    <h5 class="text-center wizard-stepnum">Step 2</h5>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+    <a href="#" class="wizard-dot"></a>
+    <div class="wizard-info text-center">Integer semper dolor ac auctor rutrum.
+    </div>
+  </div>
+
+  <div class="col-4 wizard-step disabled">
+    <!-- active -->
+    <h5 class="text-center wizard-stepnum">Step 3</h5>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+    <a href="#" class="wizard-dot"></a>
+    <div class="wizard-info text-center">
+      Curabitur mollis magna at blandit vestibulum.</div>
+  </div>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div></div>
 
 			</section>
 		</main>

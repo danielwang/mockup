@@ -72,13 +72,13 @@
         <a href="principles">Design Principles</a>
       </li>
       <li>
-        <a href="#">Accessibility</a>
+        <a href="accessibility">Accessibility</a>
       </li>
       <li>
-        <a href="#">Personas</a>
+        <a href="personas">Personas</a>
       </li>
       <li>
-        <a href="#">Installation</a>
+        <a href="installation">Installation</a>
       </li>
     </ul>
   </li>
@@ -116,6 +116,7 @@
       </li>
     </ul>
   </li>
+  <!-- <li class="submenu"> <h4>Documentations</h4> <ul> <li> <a href="#">Class Naming Convention</a> </li> </ul> </li> -->
   <li class="submenu">
     <h4>Downloads</h4>
     <ul>
@@ -154,7 +155,7 @@
           </div>
               </div>
 
-      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="avatars-tab" data-toggle="tab" href="#avatars" role="tab" aria-controls="avatars" aria-selected="1">Avatars</a></li><li class="nav-item"><a class="nav-link " id="buttons-tab" data-toggle="tab" href="#buttons" role="tab" aria-controls="buttons" aria-selected="">Buttons</a></li><li class="nav-item"><a class="nav-link " id="checkboxes-tab" data-toggle="tab" href="#checkboxes" role="tab" aria-controls="checkboxes" aria-selected="">Checkboxes</a></li><li class="nav-item"><a class="nav-link " id="input-tab" data-toggle="tab" href="#input" role="tab" aria-controls="input" aria-selected="">Input</a></li><li class="nav-item"><a class="nav-link " id="loaders-tab" data-toggle="tab" href="#loaders" role="tab" aria-controls="loaders" aria-selected="">Loaders</a></li><li class="nav-item"><a class="nav-link " id="radios-tab" data-toggle="tab" href="#radios" role="tab" aria-controls="radios" aria-selected="">Radios</a></li><li class="nav-item"><a class="nav-link " id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="">Tags</a></li><li class="nav-item"><a class="nav-link " id="toggles-tab" data-toggle="tab" href="#toggles" role="tab" aria-controls="toggles" aria-selected="">Toggles</a></li><li class="nav-item"><a class="nav-link " id="tooltips-tab" data-toggle="tab" href="#tooltips" role="tab" aria-controls="tooltips" aria-selected="">Tooltips</a></li></ul>
+      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="avatars-tab" data-toggle="tab" href="#avatars" role="tab" aria-controls="avatars" aria-selected="1">Avatars</a></li><li class="nav-item"><a class="nav-link " id="badges-tab" data-toggle="tab" href="#badges" role="tab" aria-controls="badges" aria-selected="">Badges</a></li><li class="nav-item"><a class="nav-link " id="buttons-tab" data-toggle="tab" href="#buttons" role="tab" aria-controls="buttons" aria-selected="">Buttons</a></li><li class="nav-item"><a class="nav-link " id="checkboxes-tab" data-toggle="tab" href="#checkboxes" role="tab" aria-controls="checkboxes" aria-selected="">Checkboxes</a></li><li class="nav-item"><a class="nav-link " id="inputs-tab" data-toggle="tab" href="#inputs" role="tab" aria-controls="inputs" aria-selected="">Inputs</a></li><li class="nav-item"><a class="nav-link " id="loaders-tab" data-toggle="tab" href="#loaders" role="tab" aria-controls="loaders" aria-selected="">Loaders</a></li><li class="nav-item"><a class="nav-link " id="radios-tab" data-toggle="tab" href="#radios" role="tab" aria-controls="radios" aria-selected="">Radios</a></li><li class="nav-item"><a class="nav-link " id="toggles-tab" data-toggle="tab" href="#toggles" role="tab" aria-controls="toggles" aria-selected="">Toggles</a></li><li class="nav-item"><a class="nav-link " id="tooltips-tab" data-toggle="tab" href="#tooltips" role="tab" aria-controls="tooltips" aria-selected="">Tooltips</a></li></ul>
     </div>
 </header>
 <!-- page body -->
@@ -190,16 +191,24 @@
 </div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is a PU design element, not included in Bootstrap.</p>
 <h6>Sizes</h6>
 <ul>
-    <li>
-        <code>.gel-avatar-lg</code>
-    </li>
-    <li>
-        <code>.gel-avatar-md</code>
-    </li>
-    <li>
-        <code>.gel-avatar-sm</code>
-    </li>
-</ul>
+  <li>
+    <code>.avatar-lg</code>
+  </li>
+  <li>
+    <code>.avatar-md</code>
+  </li>
+  <li>
+    <code>.avatar-sm</code>
+  </li>
+</ul></div></div></div></div><div class="tab-pane " id="badges" role="tabpanel" aria-labelledby="page-tab-badges"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">Badges help highlight important information such as notifications or new and unread messages. Badges have circular borders and are only used to specify a number.</blockquote>
+
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>Use Badges as visual indicators for numeric values, like tallies and other quantities. For status information, use
+    <a href="#sg-labels">Labels</a>
+    instead.</p>
 </div></div></div></div><div class="tab-pane " id="buttons" role="tabpanel" aria-labelledby="page-tab-buttons"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">A button means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.</blockquote>
 <h3>Default</h3>
 <p>Each serving its own semantic purpose</p>
@@ -500,7 +509,10 @@
   <li>
     <code>&lt;label&gt;</code>
     tag is mandatory, leave it empty tag when there is no label text</li>
-</ul></div></div></div></div><div class="tab-pane " id="input" role="tabpanel" aria-labelledby="page-tab-input"><div class="row"><div class="col-md-6 col-lg-7"><form>
+</ul></div></div></div></div><div class="tab-pane " id="inputs" role="tabpanel" aria-labelledby="page-tab-inputs"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+  Input elements are used to gather information from users.
+</blockquote>
+<form>
   <h3>Form controls</h3>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
@@ -516,16 +528,7 @@
       <option>5</option>
     </select>
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Example multiple select</label>
-    <select multiple="multiple" class="form-control" id="exampleFormControlSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
+
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -563,8 +566,11 @@
   <div class="col-sm-6">
     <div class="spinner-sm balls-sm"></div>
   </div>
-</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="radios" role="tabpanel" aria-labelledby="page-tab-radios"><div class="row"><div class="col-md-6 col-lg-7"><form role="form" lpformnum="2">
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="radios" role="tabpanel" aria-labelledby="page-tab-radios"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+  An input group which can only have one entry selected at a time.
+</blockquote>
 
+<form role="form" lpformnum="2">
   <fieldset>
     <legend>
       Basic
@@ -686,45 +692,9 @@
         <code>&lt;label&gt;</code>
         tag is mandatory, leave it empty tag when there is no label text</li>
 </ul>
-</div></div></div></div><div class="tab-pane " id="tags" role="tabpanel" aria-labelledby="page-tab-tags"><div class="row"><div class="col-md-6 col-lg-7"><span class="badge badge-primary">Primary</span>
-<span class="badge badge-secondary">Secondary</span>
-<span class="badge badge-success">Success</span>
-<span class="badge badge-danger">Danger</span>
-<span class="badge badge-warning">Warning</span>
-</div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is a PU design element, not included in Bootstrap.</p>
-<h6>Sizes</h6>
-<ul>
-    <li>
-        <code>.gel-tag</code>
-    </li>
-    <li>
-        <code>.gel-tag-sm</code>
-    </li>
-</ul>
+</div></div></div></div><div class="tab-pane " id="toggles" role="tabpanel" aria-labelledby="page-tab-toggles"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">The toggle switch represents a physical switch that allows users to turn things on or off.</blockquote>
 
-<h6>Colors</h6>
-<small>Default color is grey</small>
-<ul>
-    <li>
-        <code>.gel-tag-orange</code>
-    </li>
-    <li>
-        <code>.gel-tag-blue</code>
-    </li>
-    <li>
-        <code>.gel-tag-green</code>
-    </li>
-    <li>
-        <code>.gel-tag-red</code>
-    </li>
-    <li>
-        <code>.gel-tag-yellow</code>
-    </li>
-    <li>
-        <code>.gel-tag-purple</code>
-    </li>
-</ul>
-</div></div></div></div><div class="tab-pane " id="toggles" role="tabpanel" aria-labelledby="page-tab-toggles"><div class="row"><div class="col-md-6 col-lg-7"><h3>Default</h3>
+<h3>Default</h3>
 <div class="toggle">
   <label>
     <input type="checkbox">
@@ -789,11 +759,11 @@
       </label>
     </div>
   </div>
-</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>The toggle switch represents a physical switch that allows users to turn things on or off.</p>
-<p>Pure css toggle buttons based on the bootstrap checkbox pattern. The only difference between default Bootstrap is the additional
-    <code>&lt;span&gt;</code>
-</p>
-</div></div></div></div><div class="tab-pane " id="tooltips" role="tabpanel" aria-labelledby="page-tab-tooltips"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>Pure css toggle buttons
+</p></div></div></div></div><div class="tab-pane " id="tooltips" role="tabpanel" aria-labelledby="page-tab-tooltips"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+  Tooltips are brief pieces of information that appear on hover state over an element to clarify the meaning or use of an interaction element for the user.
+</blockquote>
+<div class="row">
   <div class="col-sm-3">
     <i class="gel-icon-2x gray gel-icon-job" data-toggle="tooltip" data-placement="left" title="" data-original-title="Job"></i>
   </div>

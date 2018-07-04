@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="noindex">
-      <title>Admin Page Template - MockUp</title>
+      <title>Settings - MockUp</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
@@ -344,7 +344,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8">
-              <h1 class="page-title">Admin Page Template</h1>
+              <h1 class="page-title">Settings</h1>
             </div>
             <div class="page-actions col-md-3 col-lg-4">
               <span class="item">
@@ -370,23 +370,94 @@
               </div>
           </div>
 
-                    <ul class="page-tabs nav" role="tablist">
-            <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="Tab one" aria-selected="true">Tab one</a></li>
-            <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="Tab two" aria-selected="">Tab two</a></li>
-            <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="Tab three" aria-selected="">Tab Three</a></li>
-            <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="Tab four" aria-selected="">Tab four</a></li>
-            <li class="nav-item"><a class="nav-link " id="tab-5" data-toggle="tab" href="#tab5" role="tab" aria-controls="Tab five" aria-selected="">Tab five</a></li>
-            <li class="nav-item"><a class="nav-link " id="tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="Tab six" aria-selected="">Tab six</a></li>
-          </ul>
-              </header>
+            <ul class="page-tabs nav" role="tablist">
+    <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="Tab one" aria-selected="true">Configure</a></li>
+    <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="Tab two" aria-selected="">Settings</a></li>
+    <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="Tab three" aria-selected="">Knowledge Portal</a></li>
+    <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="Tab four" aria-selected="">Client Bundles</a></li>
+  </ul>
+    </header>
 
 <!-- ************  page body ************ -->
 		<main id="gel-main" role="main">
 			<section class="container">
-				<!-- <div class="alert alert-info">
-  <strong>Info Message!</strong> Consequatur facere deleniti cumque <a class="alert-link" href="">link</a> ducimus maiores nemo.
-  <button href="#" type="button" class="close"><i class="fa fa-times"></i></button>
-</div> -->
+				<div class="row">
+<div class="col-sm-3 mb-2 mb-sm-0">
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-ctrl active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked="checked">
+          Home
+        </label>
+        <label class="btn btn-ctrl">
+          <input type="radio" name="options" id="option2" autocomplete="off">
+          Tags
+        </label>
+    </div>
+  </div>
+  <div class="offset-sm-1 col-sm-6">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" aria-label="Search" aria-describedby="settings-search">
+      <div class="input-group-append">
+        <span class="btn input-group-text" id="settings-search">Search</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mt-4">
+  <div class="row">
+    <div class="col-sm-5 col-xl-3">
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action active"><i class="gel-icon-job-o"></i> Jobs</a>
+        <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-analytics-o"></i> Sourcing</a>
+        <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-application-o"></i> Offers</a>
+        <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-onboarding-o"></i> Onboarding</a>
+        <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-journal-o"></i> Performance</a>
+        <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-learning-o"></i> Learning</a>
+        <a href="#" class="list-group-item list-group-item-action disabled"><i class="gel-icon-orgchart-o"></i> Succession</a>
+        <a href="#" class="list-group-item list-group-item-action disabled"><i class="gel-icon-salary-o"></i> Compensation</a>
+        <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-copy-o"></i> Integration</a>
+        <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-copy-o"></i> Third Party Settings</a>
+        <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-copy-o"></i> Other</a>
+      </div>
+    </div>
+    <div class="col-sm-7 col-xl-9">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <h3>Jobs</h3>
+          <ul class="row list-unstyled">
+            <li class="col-sm-6 mb-3"><a href="#">Recruitment Processes</a></li>
+            <li class="col-sm-6 mb-3"><a href="#">Job Approval</a></li>
+          </ul>
+          <h4>Job Card fields</h4>
+          <ul class="row list-unstyled">
+              <li class="col-sm-6 mb-3"><a href="#">Agreement Types</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Companies</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Contract Types</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Cost Centres</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Generic Lists</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Industries</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Job Sectors</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Job Status</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Job Types</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Locations</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Organisational Hierarchy</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Pay Scales</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Personnel Areas</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Reasons</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Roles</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Sites</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Work Availability Preferences</a></li>
+              <li class="col-sm-6 mb-3"><a href="#">Work Types</a></li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 			</section>
@@ -507,8 +578,3 @@
 <script src="../js/gel.js"></script>
 </body>
 </html>
-    <!-- <div id="gel-notification" class="gel-notification-error">
-      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> An error occurred while importing Job file last night. One or more mandatory fields were not provided.
-      <button class="btn btn-sm btn-round">Find more info</button>
-      <button href="#" type="button" class="close"><i class="fa fa-times"></i></button>
-    </div> -->
