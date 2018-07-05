@@ -7880,7 +7880,8 @@ label {
   .checkbox.checkbox-circle label::before {
     border-radius: 50%; }
   .checkbox.checkbox-inline {
-    margin-top: 0; }
+    margin-top: 0;
+    display: inline; }
 
 .checkbox-default input[type="checkbox"]:checked + label::before, .checkbox-default input[type="radio"]:checked + label::before {
   background-color: #415365;
@@ -8051,7 +8052,7 @@ select.form-control {
     content: "\e92a";
     font-family: "gel-icon"; }
 
-.show .dropdown-toggle:after {
+.show > .dropdown-toggle:after {
   content: "\e92b"; }
 
 .dropdown-menu {

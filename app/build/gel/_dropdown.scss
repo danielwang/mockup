@@ -11,7 +11,7 @@
   }
 }
 
-.show .dropdown-toggle{
+.show > .dropdown-toggle{
   &:after{
     content: "\e92b";
   }

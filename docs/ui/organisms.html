@@ -155,7 +155,7 @@
           </div>
               </div>
 
-      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="cards" aria-selected="1">Cards</a></li><li class="nav-item"><a class="nav-link " id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="">Form</a></li><li class="nav-item"><a class="nav-link " id="modals-tab" data-toggle="tab" href="#modals" role="tab" aria-controls="modals" aria-selected="">Modals</a></li><li class="nav-item"><a class="nav-link " id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="">Ratings</a></li><li class="nav-item"><a class="nav-link " id="scribble-tab" data-toggle="tab" href="#scribble" role="tab" aria-controls="scribble" aria-selected="">Scribble</a></li><li class="nav-item"><a class="nav-link " id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="">Search</a></li><li class="nav-item"><a class="nav-link " id="timeline-tab" data-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="">Timeline</a></li><li class="nav-item"><a class="nav-link " id="trays-tab" data-toggle="tab" href="#trays" role="tab" aria-controls="trays" aria-selected="">Trays</a></li><li class="nav-item"><a class="nav-link " id="uploaders-tab" data-toggle="tab" href="#uploaders" role="tab" aria-controls="uploaders" aria-selected="">Uploaders</a></li></ul>
+      <ul class="page-tabs nav" role="tablist">  <li class="nav-item"><a class="nav-link active" id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="cards" aria-selected="1">Cards</a></li><li class="nav-item"><a class="nav-link " id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="">Form</a></li><li class="nav-item"><a class="nav-link " id="modals-tab" data-toggle="tab" href="#modals" role="tab" aria-controls="modals" aria-selected="">Modals</a></li><li class="nav-item"><a class="nav-link " id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="">Ratings</a></li><li class="nav-item"><a class="nav-link " id="scribble-tab" data-toggle="tab" href="#scribble" role="tab" aria-controls="scribble" aria-selected="">Scribble</a></li><li class="nav-item"><a class="nav-link " id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="">Search</a></li><li class="nav-item"><a class="nav-link " id="timelines-tab" data-toggle="tab" href="#timelines" role="tab" aria-controls="timelines" aria-selected="">Timelines</a></li><li class="nav-item"><a class="nav-link " id="trays-tab" data-toggle="tab" href="#trays" role="tab" aria-controls="trays" aria-selected="">Trays</a></li><li class="nav-item"><a class="nav-link " id="uploaders-tab" data-toggle="tab" href="#uploaders" role="tab" aria-controls="uploaders" aria-selected="">Uploaders</a></li></ul>
     </div>
 </header>
 <!-- page body -->
@@ -335,14 +335,14 @@
   <p class="lead">What do you think of the new feature?</p>
   <div class="smileys">
     <div class="face face-red">
-      <input type="radio" name="smiley" value="worse" class="worse" id="smiley-worse"/>
-      <label for="smiley-worse"></label>
-      <span>Worse</span>
-    </div>
-    <div class="face face-orange">
       <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
       <label for="smiley-bad"></label>
       <span>Bad</span>
+    </div>
+    <div class="face face-orange">
+      <input type="radio" name="smiley" value="poor" class="poor" id="smiley-poor"/>
+      <label for="smiley-poor"></label>
+      <span>Poor</span>
     </div>
     <div class="face face-yellow">
       <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
@@ -412,14 +412,168 @@
     <span>Excellent</span>
   </div>
 </div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="scribble" role="tabpanel" aria-labelledby="page-tab-scribble"><div class="row"><div class="col-md-6 col-lg-7"><script type="text/javascript" src="https://ui.pageuppeople.com/libs/scribble/scribble.js" charset="UTF-8" async="async"></script>
-<textarea style="visibility: hidden;" pageup-scribble="pageup-scribble">Hello from Scribble!</textarea></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>
+<textarea style="visibility: hidden;" pageup-scribble="pageup-scribble"></textarea></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>
   <a target="_blank" href="https://github.com/PageUpPeopleOrg/scribble">Scribble</a>
   is the rich text editor we use in our product. You can download it from PageUp Github Repositories.
 </p>
 <p>Further information on
   <a href="https://knowledgeportal.pageuppeople.com/rich-text-editor/">Knowledge Portal</a>
 </p>
-</div></div></div></div><div class="tab-pane " id="search" role="tabpanel" aria-labelledby="page-tab-search"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="timeline" role="tabpanel" aria-labelledby="page-tab-timeline"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
+</div></div></div></div><div class="tab-pane " id="search" role="tabpanel" aria-labelledby="page-tab-search"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="timelines" role="tabpanel" aria-labelledby="page-tab-timelines"><div class="row"><div class="col-md-6 col-lg-7"><h3>Basic</h3>
+
+<ul class="timeline">
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>March 12, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.</p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>March 23, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>April 02, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>April 28, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+</ul>
+<hr class="sg-hr"/>
+<h3>Split</h3>
+
+<ul class="timeline timeline-split">
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>March 12, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.</p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>March 23, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>April 02, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>April 28, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+</ul>
+<hr class="sg-hr"/>
+<h3>Centered</h3>
+
+<ul class="timeline timeline-centered">
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>March 12, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.</p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>March 23, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>April 02, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>April 28, 2016</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Event Title</h5>
+      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+        mollis pretium. Pellentesque ut neque.
+      </p>
+    </div>
+  </li>
+</ul></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-md-4">
     <h3>Small</h3>
     <fieldset>
@@ -610,23 +764,23 @@
       </div>
       <div class="modal-body">
         <p class="lead">
-          We love hearing your thoughts on upgrades and recent releases. Please provide us with your feedback below
+          We love hearing your thoughts on upgrades and recent releases. Please provide us with your feedback below:
         </p>
         <div class="row">
           <div class="col-12 mt-3">
-            <h5>1. What do you think of the new design?</h5>
+            <h4>How was your experience in Bata today?</h4>
           </div>
           <div class="col-sm-8 col-md-6">
             <div class="smileys mt-3">
               <div class="face face-red">
-                <input type="radio" name="smiley" value="worse" class="worse" id="smiley-worse"/>
-                <label for="smiley-worse"></label>
-                <span>Worse</span>
-              </div>
-              <div class="face face-orange">
                 <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
                 <label for="smiley-bad"></label>
                 <span>Bad</span>
+              </div>
+              <div class="face face-orange">
+                <input type="radio" name="smiley" value="poor" class="poor" id="smiley-poor"/>
+                <label for="smiley-poor"></label>
+                <span>Poor</span>
               </div>
               <div class="face face-yellow">
                 <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
@@ -648,31 +802,7 @@
           <div class="col-12">
             <div class="form-group mt-3">
               <label>Why did you give that rating?</label>
-              <textarea class="form-control" rows="2"></textarea>
-            </div>
-          </div>
-
-          <div class="col-12 mt-3">
-            <h5>2. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="form-group mt-3">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl btn-sm">
-                  <input type="radio" name="options" id="option1" autocomplete="off">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl btn-sm">
-                  <input type="radio" name="options" id="option2" autocomplete="off" checked="checked">
-                  No
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group">
-              <label>Please provide details of what this is?</label>
-              <textarea class="form-control" rows="2"></textarea>
+              <textarea class="form-control" rows="4"></textarea>
             </div>
           </div>
           <div class="col-12">

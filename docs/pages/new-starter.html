@@ -526,25 +526,33 @@
   <div class="form-group">
     <label for="who1">Task allocated to</label>
     <div>
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-        <label class="custom-control-label" for="customRadioInline1">Both</label>
+      <div class="radio radio-default radio-inline">
+        <input type="radio" id="inlineRadio1" value="option1" name="radioInline">
+        <label for="inlineRadio1">
+          Both
+        </label>
       </div>
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-        <label class="custom-control-label" for="customRadioInline2">Manager</label>
+      <div class="radio radio-default radio-inline">
+        <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+        <label for="inlineRadio2">
+          Manager
+        </label>
       </div>
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-        <label class="custom-control-label" for="customRadioInline3">Employee</label>
+      <div class="radio radio-default radio-inline">
+        <input type="radio" id="inlineRadio3" value="option3" name="radioInline">
+        <label for="inlineRadio3">
+          Employee
+        </label>
       </div>
     </div>
   </div>
 
   <div class="form-group">
-    <div class="custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input" id="customCheck1">
-      <label class="custom-control-label" for="customCheck1">Save it into favourite task list</label>
+    <div class="checkbox checkbox-default checkbox-inline">
+      <input id="checkbox3" type="checkbox">
+      <label for="checkbox3">
+        Save it into favourite task list
+      </label>
     </div>
   </div>
 </form>      </div>
@@ -600,23 +608,23 @@
       </div>
       <div class="modal-body">
         <p class="lead">
-          We love hearing your thoughts on upgrades and recent releases. Please provide us with your feedback below
+          We love hearing your thoughts on upgrades and recent releases. Please provide us with your feedback below:
         </p>
         <div class="row">
           <div class="col-12 mt-3">
-            <h5>1. What do you think of the new design?</h5>
+            <h4>How was your experience in Bata today?</h4>
           </div>
           <div class="col-sm-8 col-md-6">
             <div class="smileys mt-3">
               <div class="face face-red">
-                <input type="radio" name="smiley" value="worse" class="worse" id="smiley-worse"/>
-                <label for="smiley-worse"></label>
-                <span>Worse</span>
-              </div>
-              <div class="face face-orange">
                 <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
                 <label for="smiley-bad"></label>
                 <span>Bad</span>
+              </div>
+              <div class="face face-orange">
+                <input type="radio" name="smiley" value="poor" class="poor" id="smiley-poor"/>
+                <label for="smiley-poor"></label>
+                <span>Poor</span>
               </div>
               <div class="face face-yellow">
                 <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
@@ -638,31 +646,7 @@
           <div class="col-12">
             <div class="form-group mt-3">
               <label>Why did you give that rating?</label>
-              <textarea class="form-control" rows="2"></textarea>
-            </div>
-          </div>
-
-          <div class="col-12 mt-3">
-            <h5>2. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="form-group mt-3">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl btn-sm">
-                  <input type="radio" name="options" id="option1" autocomplete="off">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl btn-sm">
-                  <input type="radio" name="options" id="option2" autocomplete="off" checked="checked">
-                  No
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group">
-              <label>Please provide details of what this is?</label>
-              <textarea class="form-control" rows="2"></textarea>
+              <textarea class="form-control" rows="4"></textarea>
             </div>
           </div>
           <div class="col-12">

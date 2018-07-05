@@ -280,7 +280,7 @@
       <div class="timeline-marker"></div>
       <div class="timeline-content">
         <h5 class="timeline-title">Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</h5>
-        <p><a href="">View</a>  <a href="">PDF</a>  <a href="">Reprocess</a>
+        <p><a class="btn btn-outline-primary btn-sm" href="#">View</a>  <a class="btn btn-outline-primary btn-sm"href="#">PDF</a>  <a class="btn btn-outline-primary btn-sm" href="#">Reprocess</a>
         </p>
       </div>
     </li>

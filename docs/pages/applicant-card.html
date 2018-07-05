@@ -146,65 +146,190 @@
 <!-- ************  page header ************ -->
     <header id="gel-header" role="banner" class="pt-0">
         <div class="container">
-                    <ul class="page-tabs nav mt-0" role="tablist">
-            <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="Tab one" aria-selected="true">Applications</a></li>
-            <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="Tab two" aria-selected="">History</a></li>
-            <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="Tab three" aria-selected="">CRM</a></li>
-            <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="Tab four" aria-selected="">Resume</a></li>
-          </ul>
-              </header>
+          <ul class="page-tabs nav mt-0" role="tablist">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#applications" role="applications" aria-controls="applications" aria-selected="true">Applications</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#history" role="History" aria-controls="History" aria-selected="false">History</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#crm" role="tab" aria-controls="CRM" aria-selected="false">CRM</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a></li>
+</ul>
+    </header>
 
 <!-- ************  page body ************ -->
 		<main id="gel-main" role="main">
 			<section class="container">
-				<table class="table table-striped table-hover">
-  <thead class="thead-dark">
-    <tr>
-      <th>Position</th>
-      <th>Number</th>
-      <th>Date</th>
-      <th>Recruiter</th>
-      <th>Applied via</th>
-      <th>Status</th>
-      <th>Offer</th>
-      <th>Flags</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>
-        <a href="#"><i class="gel-icon-info-pointer"></i></a>Operations Manager
-      </th>
-      <td>942130</td>
-      <td>17 Nov 2017</td>
-      <td>
-        <a href="#">Michelle Petterson</a>
-      </td>
-      <td>
-        <a href="#">Career website</a>
-      </td>
-      <td>
-        <a href="#">Interviewed</a>
-        <p><small>Status changed 12 May 2018</small></p>
-      </td>
-      <td><a href="#">No offer</a></td>
-      <td><i class="gel-icon-location"></i><i class="gel-icon-bullhorn"></i></td>
-      <td>
-        <div class="dropdown">
-            <button class="btn btn-ctrl btn-sm dropdown-menu-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Actions
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
-        </td>
-    </tr>
-  </tbody>
-</table>
+				
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="applications" role="tabpanel" aria-labelledby="applications-tab">
+    <table class="table table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Position</th>
+          <th>Number</th>
+          <th>Date</th>
+          <th>Recruiter</th>
+          <th>Applied via</th>
+          <th>Status</th>
+          <th>Offer</th>
+          <th>Flags</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            <a href="#"><i class="gel-icon-info-pointer"></i></a>Operations Manager
+          </th>
+          <td>942130</td>
+          <td>17 Nov 2017</td>
+          <td>
+            <a href="#">Michelle Petterson</a>
+          </td>
+          <td>
+            <a href="#">Career website</a>
+          </td>
+          <td>
+            <a href="#">Interviewed</a>
+            <p><small>Status changed 12 May 2018</small></p>
+          </td>
+          <td><a href="#">No offer</a></td>
+          <td><i class="gel-icon-location"></i><i class="gel-icon-bullhorn"></i></td>
+          <td>
+            <div class="dropdown">
+                <button class="btn btn-ctrl btn-sm dropdown-menu-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Actions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </td>
+        </tr>
+        <tr>
+          <th>
+            <a href="#"><i class="gel-icon-info-pointer"></i></a>Senior Project Manager
+          </th>
+          <td>942130</td>
+          <td>17 Nov 2017</td>
+          <td>
+            <a href="#">Michelle Petterson</a>
+          </td>
+          <td>
+            <a href="#">Career website</a>
+          </td>
+          <td>
+            <a href="#">Interviewed</a>
+            <p><small>Status changed 12 May 2018</small></p>
+          </td>
+          <td><a href="#">No offer</a></td>
+          <td><i class="gel-icon-location"></i><i class="gel-icon-bullhorn"></i></td>
+          <td>
+            <div class="dropdown">
+                <button class="btn btn-ctrl btn-sm dropdown-menu-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Actions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="group1">Jobs</label>
+          <select class="form-control" id="group1">
+            <option>Operations Manager</option>
+            <option>Senior Project Manager</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="group1">Item</label>
+          <select class="form-control" id="group1">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <ul class="timeline timeline-split mt-3">
+    <li class="timeline-item">
+      <div class="timeline-info">
+        <span>Saturday, 2 Dec 2017, 5:22am</span>
+      </div>
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h5 class="timeline-title">Line manager review 1</h5>
+        <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+          mollis pretium. Pellentesque ut neque.</p>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <div class="timeline-info">
+        <p>Wednesday, 22 Nov 2017 9:33am</p>
+        <span class="muted">Daniel Recruiter</span>
+      </div>
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h5 class="timeline-title">Status changed to 'HR shortlist'</h5>
+        <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+          mollis pretium. Pellentesque ut neque.
+        </p>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <div class="timeline-info">
+        <span>Monday, 20 Nov 2017, 9:53am</span>
+      </div>
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h5 class="timeline-title">Application submitted</h5>
+        <p>Scoring breakdown: <br>
+          0/20 points: 'No' for 'Are you a National of the country where this position is based?' <br>
+          20/20 points: 'Yes' for 'Do you have a background or experience working with/in Emergency country context?' <br>
+          20/20 points: 'Yes' for 'Do you possess any full-time, paid work experience outside your country of nationality (this can inc...' <br>
+          12/20 points: 'I have a Bachelor’s / First Level University Degree' for 'Please indicate your highest completed university degree (i.e. degree in-hand):' <br>
+          20/20 points: 'I have more than 15 years’ experience' for 'Please indicate your years of professional work experience relevant to the position applied for:' <br>
+          ------------------ <br>
+          72/100 total points (rounded)
+        </p>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <div class="timeline-info">
+        <span>Monday, 20 Nov 2017, 9:50am</span>
+      </div>
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h5 class="timeline-title">Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</h5>
+        <p><a class="btn btn-outline-primary btn-sm" href="#">View</a>  <a class="btn btn-outline-primary btn-sm"href="#">PDF</a>  <a class="btn btn-outline-primary btn-sm" href="#">Reprocess</a>
+        </p>
+      </div>
+    </li>
+  </ul>
+  </div>
+  <div class="tab-pane fade" id="crm" role="tabpanel" aria-labelledby="contact-tab">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+    Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+  </div>
+  <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="contact-tab">Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse
+    potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+  </div>
+</div>
+
+
 			</section>
 		</main>
     <div class="main-footer border-top fixed-bottom p-3 bg-white">
@@ -236,23 +361,23 @@
       </div>
       <div class="modal-body">
         <p class="lead">
-          We love hearing your thoughts on upgrades and recent releases. Please provide us with your feedback below
+          We love hearing your thoughts on upgrades and recent releases. Please provide us with your feedback below:
         </p>
         <div class="row">
           <div class="col-12 mt-3">
-            <h5>1. What do you think of the new design?</h5>
+            <h4>How was your experience in Bata today?</h4>
           </div>
           <div class="col-sm-8 col-md-6">
             <div class="smileys mt-3">
               <div class="face face-red">
-                <input type="radio" name="smiley" value="worse" class="worse" id="smiley-worse"/>
-                <label for="smiley-worse"></label>
-                <span>Worse</span>
-              </div>
-              <div class="face face-orange">
                 <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
                 <label for="smiley-bad"></label>
                 <span>Bad</span>
+              </div>
+              <div class="face face-orange">
+                <input type="radio" name="smiley" value="poor" class="poor" id="smiley-poor"/>
+                <label for="smiley-poor"></label>
+                <span>Poor</span>
               </div>
               <div class="face face-yellow">
                 <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
@@ -274,31 +399,7 @@
           <div class="col-12">
             <div class="form-group mt-3">
               <label>Why did you give that rating?</label>
-              <textarea class="form-control" rows="2"></textarea>
-            </div>
-          </div>
-
-          <div class="col-12 mt-3">
-            <h5>2. Is there anything that the seems to be 'broken' with the introduction of the new design?</h5>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="form-group mt-3">
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-ctrl btn-sm">
-                  <input type="radio" name="options" id="option1" autocomplete="off">
-                  Yes
-                </label>
-                <label class="btn btn-ctrl btn-sm">
-                  <input type="radio" name="options" id="option2" autocomplete="off" checked="checked">
-                  No
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group">
-              <label>Please provide details of what this is?</label>
-              <textarea class="form-control" rows="2"></textarea>
+              <textarea class="form-control" rows="4"></textarea>
             </div>
           </div>
           <div class="col-12">
