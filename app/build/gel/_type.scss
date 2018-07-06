@@ -9,7 +9,7 @@ dt{
   @include font-semibold();
 }
 
-strong{
+b, strong{
   font-weight: 400;
   @include font-semibold();
 }

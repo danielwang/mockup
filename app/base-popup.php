@@ -28,8 +28,8 @@
     <div class="main-footer border-top fixed-bottom p-3 bg-white">
       <section class="container">
         <div class="d-flex">
-          <button type="button" class="btn btn-outline-secondary mr-auto"><i class="gel-icon-dropdown"></i> Previous</button>
-          <button type="button" class="btn btn-outline-secondary">Next <i class="gel-icon-dropdown"></i></button>
+          <button type="button" class="btn btn-outline-secondary mr-auto"><i class="gel-icon-angle-left"></i> Previous</button>
+          <button type="button" class="btn btn-outline-secondary">Next <i class="gel-icon-angle-right"></i></button>
         </div>
       </section>
     </div>

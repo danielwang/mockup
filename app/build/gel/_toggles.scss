@@ -109,7 +109,8 @@ Main Slider
 
     + span {
       padding-left: $scrubber-width-default * 2.5;
-
+      display: inline-block;
+      
       &:before {
         content: "";
         height: $scrubber-width-default;

@@ -1,50 +1,64 @@
 <blockquote class="blockquote">User feedback and messaging is essential in UI design. Using a cross-brand palette of reserved, contextual colours provides a flexible, consistent message system for common user interactions.</blockquote>
 <h3>Notifications</h3>
-<div class="notification notification-info" role="notification">
+<div class="notification notification-info alert-dismissible fade show" role="notification">
   <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
-  This is a info alert—check it out!
-  <a class="alert-link" href="#">link</a>
+  This is a info notification
+  <a class="notification-link" href="#">check it out!</a>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i class="gel-icon-close-o gel-icon-lg" aria-hidden="true"></i>
+  </button>
 </div>
 <div class="p-3"></div>
 <div class="notification notification-success" role="notification">
   <i class="gel-icon-tick-circle gel-icon-lg" aria-hidden="true"></i>
-  This is a success alert—check it out!
+  This is a success notification!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i class="gel-icon-close-o gel-icon-lg" aria-hidden="true"></i>
+  </button>
 </div>
 <div class="p-3"></div>
 <div class="notification notification-danger" role="notification">
   <i class="gel-icon-error gel-icon-lg" aria-hidden="true"></i>
-  This is a danger alert—check it out!
+  This is a danger, please
+  <a class="notification-link" href="#">take an action now</a>
 </div>
 <div class="p-3"></div>
 <div class="notification notification-warning" role="notification">
   <i class="gel-icon-warning gel-icon-lg" aria-hidden="true"></i>
   You are currently controlling John Smith's account,
-  <a href="#" class="notification-link">go back to your account</a>
+  <a href="#" class="notification-link">Go back to your account</a>
 </div>
 <hr class="sg-hr"/>
 <h3>Alerts</h3>
 <p>Alerts are thought to be used inside context as forms. Usually you will only need to use the information one. Its width depends on the container with you use it, always respecting the container margins to the content. The close action is not of
   mandatory use.</p>
-<p class="alert alert-info" role="alert">
+<p class="alert alert-info alert-dismissible fade show" role="alert">
   <i class="gel-icon-info" aria-hidden="true"></i>
   A simple primary alert with
   <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i class="gel-icon-close-o gel-icon-lg" aria-hidden="true"></i>
+  </button>
 </p>
 
-<p class="alert alert-success" role="alert">
+<p class="alert alert-success alert-dismissible fade show" role="alert">
   <i class="gel-icon-tick-circle"></i>
   This is a success alert—check it out!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i class="gel-icon-close-o gel-icon-lg" aria-hidden="true"></i>
+  </button>
 </p>
 
 <p class="alert alert-danger" role="alert">
   <i class="gel-icon-error" aria-hidden="true"></i>
   This is a danger alert—check it out!
+  <a href="#" class="alert-link">Fixing it now</a>
 </p>
 
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
   <i class="gel-icon-warning" aria-hidden="true"></i>
   You should check in on some of those fields below.
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
+    <i class="gel-icon-close-o gel-icon-lg" aria-hidden="true"></i>
   </button>
 </div>

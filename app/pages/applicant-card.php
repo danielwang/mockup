@@ -1,11 +1,10 @@
 <?php $pageTitle = "Applicant card"; include '../base-popup.php';?>
 
 <?php startblock('popup-top');?>
-<!-- <div class="notification notification-info" role="notification">
+<div class="notification notification-info" role="notification">
   <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
-  This is a info alert—check it out!
-  <a class="alert-link" href="#">link</a>
-</div> -->
+  This applicant has been entered by Referred Candidate <a class="notification-link" href="#">View referral</a>
+</div>
 <section id="popup-top" class="bg-navy text-white">
     <div class="container">
       <div class="row">
@@ -27,7 +26,7 @@
 
         <div class="col-6 col-md-4 col-lg-2">
           <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-sm btn-ctrl"><i class="gel-icon-print"></i></button>
+            <button type="button" class="btn btn-sm btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
             <div class="btn-group" role="group">
               <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Actions
