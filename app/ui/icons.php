@@ -56,7 +56,7 @@ function buildSolidIcons(){
     ["image","image"],
     ["bookmark","bookmark"],
     ["chat","chat"],
-    ["compensation","compensation"],
+    ["database","database"],
     ["drag","drag"],
     ["pencil","pencil"],
     ["history","history"],
@@ -76,7 +76,16 @@ function buildSolidIcons(){
     ["frown","frown"],
     ["meh","meh"],
     ["smile","smile"],
-    ["happy","happy"]
+    ["happy","happy"],
+    ["thirdparty","thirdparty"],
+    ["configure","configure"],
+    ["integration","integration"],
+    ["succession","succession"],
+    ["money","money"],
+    ["learning","learning"],
+    ["cost","cost"],
+    ["sourcing","sourcing"],
+    ["application","application"]
   ];
 }
 

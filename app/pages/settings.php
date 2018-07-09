@@ -42,23 +42,24 @@
     <div class="card mt-4">
       <div class="row">
         <div class="col-sm-5 col-xl-3">
-          <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action active"><i class="gel-icon-job-o"></i> Jobs</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-analytics-o"></i> Sourcing</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-application-o"></i> Offers</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-onboarding-o"></i> Onboarding</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-journal-o"></i> Performance</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-learning-o"></i> Learning</a>
-            <a href="#" class="list-group-item list-group-item-action disabled"><i class="gel-icon-orgchart-o"></i> Succession</a>
-            <a href="#" class="list-group-item list-group-item-action disabled"><i class="gel-icon-salary-o"></i> Compensation</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-copy-o"></i> Integration</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-copy-o"></i> Third Party Settings</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="gel-icon-copy-o"></i> Other</a>
+          <div class="list-group list-group-flush nav" role="tablist">
+            <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list2" role="tab"><i class="gel-icon-sourcing"></i> Sourcing</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-application"></i> Offers</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list4" role="tab"><i class="gel-icon-tick-circle"></i> Onboarding</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list5" role="tab"><i class="gel-icon-star"></i> Performance</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list6" role="tab"><i class="gel-icon-learning"></i> Learning</a>
+            <a class="list-group-item list-group-item-action disabled" data-toggle="tab" href="#list7" role="tab"><i class="gel-icon-succession"></i> Succession</a>
+            <a class="list-group-item list-group-item-action disabled" data-toggle="tab" href="#list8" role="tab"><i class="gel-icon-money"></i> Compensation</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list9" role="tab"><i class="gel-icon-integration"></i> Integration</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list10" role="tab"><i class="gel-icon-configure"></i> Configure</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-thirdparty"></i> Third Party Settings</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list12" role="tab"><i class="gel-icon-settings"></i> Other</a>
           </div>
         </div>
         <div class="col-sm-7 col-xl-9">
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="tab-pane show active" id="list1" role="tabpanel" aria-labelledby="list-home-list">
               <h3>Jobs</h3>
               <ul class="row list-unstyled">
                 <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Recruitment Processes</a></li>
@@ -86,9 +87,17 @@
                   <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Work Types</a></li>
               </ul>
             </div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+            <div class="tab-pane" id="list2" role="tabpanel" aria-labelledby="list-profile-list"><h3>Sourcing</h3></div>
+            <div class="tab-pane" id="list3" role="tabpanel" aria-labelledby="list-messages-list"><h3>Offer</h3></div>
+            <div class="tab-pane" id="list4" role="tabpanel" aria-labelledby="list-settings-list"><h3>Onboarding</h3></div>
+            <div class="tab-pane" id="list5" role="tabpanel" aria-labelledby="list-profile-list"><h3>Performance</h3></div>
+            <div class="tab-pane" id="list6" role="tabpanel" aria-labelledby="list-messages-list"><h3>Learning</h3></div>
+            <div class="tab-pane" id="list7" role="tabpanel" aria-labelledby="list-settings-list"><h3>Succession</h3></div>
+            <div class="tab-pane" id="list8" role="tabpanel" aria-labelledby="list-profile-list"><h3>Compensation</h3></div>
+            <div class="tab-pane" id="list9" role="tabpanel" aria-labelledby="list-messages-list"><h3>Integration</h3></div>
+            <div class="tab-pane" id="list10" role="tabpanel" aria-labelledby="list-settings-list"><h3>Configure</h3></div>
+            <div class="tab-pane" id="list11" role="tabpanel" aria-labelledby="list-profile-list"><h3>Third party settings</h3></div>
+            <div class="tab-pane" id="list12" role="tabpanel" aria-labelledby="list-messages-list"><h3>Other</h3></div>
           </div>
         </div>
       </div>
