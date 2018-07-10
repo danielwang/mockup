@@ -35,6 +35,10 @@
 	pointer-events: none;
 }
 
+@mixin focus-state(){
+	text-decoration: underline;
+	outline: none;
+}
 // @mixin dropdown-menu (){
 // 	max-width: 16rem;
 // 	@include border-radius(0.5rem);

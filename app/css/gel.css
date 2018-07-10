@@ -7983,12 +7983,13 @@ select.form-control {
     font-family: 'Proxima Nova';
     font-size: 1rem;
     margin-bottom: 0.25rem; }
-  .dropdown-menu .dropdown-item:hover {
-    color: #00a1e5; }
-  .dropdown-menu .dropdown-item:hover [class^="gel-icon-"] {
+  .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+    color: #00a1e5;
+    background: transparent; }
+  .dropdown-menu .dropdown-item:hover [class^="gel-icon-"], .dropdown-menu .dropdown-item:focus [class^="gel-icon-"] {
     color: #00a1e5; }
   .dropdown-menu .dropdown-item [class^="gel-icon-"] {
-    color: #6c86a0;
+    color: #66819c;
     margin-right: 0.5rem;
     vertical-align: text-bottom;
     font-size: 1.1rem; }
@@ -8618,6 +8619,11 @@ select.form-control {
     margin-left: 20px;
     color: white;
     padding: 0; }
+  #gel-header .page-actions .item > a:focus {
+    outline: none; }
+    #gel-header .page-actions .item > a:focus span {
+      text-decoration: underline;
+      outline: none; }
   #gel-header .page-actions .item > a i {
     vertical-align: -5px; }
   #gel-header .page-actions .item > a span {
@@ -8650,7 +8656,12 @@ select.form-control {
     color: #fff;
     padding: 1rem;
     position: relative; }
-  #gel-header .page-tabs .nav-item a:focus, #gel-header .page-tabs .nav-item a:hover {
+  #gel-header .page-tabs .nav-item a:focus {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: underline;
+    outline: none; }
+  #gel-header .page-tabs .nav-item a:hover {
     color: #fff;
     background-color: transparent; }
   #gel-header .page-tabs .nav-item a.active {
@@ -8802,6 +8813,9 @@ select.form-control {
     align-items: center;
     margin-right: 1rem;
     height: 3.75rem; }
+  .navbar .navbar-nav .nav-item .nav-link:focus {
+    outline: none;
+    text-decoration: underline; }
   .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
     color: rgba(255, 255, 255, .5); }
   .navbar .navbar-nav .dropdown-menu {
@@ -8877,8 +8891,10 @@ select.form-control {
     background: transparent;
     border: 0;
     padding: 0.25rem;
-    width: 26px;
-    height: 26px; }
+    width: 30px;
+    height: 30px; }
+    .navbar .navbar-nav .search-group input[type=search] + .btn-submit:focus {
+      outline: 1px solid currentcolor; }
 
 #popup-top {
   padding: 1.5rem 0; }
@@ -9487,8 +9503,10 @@ b, strong {
     margin: 0 0;
     cursor: pointer;
     opacity: 0; }
-  .toggle input[type="checkbox"]:focus + *:before {
-    outline: 0; }
+  .toggle input[type="checkbox"]:focus + span {
+    font-weight: 400;
+    font-family: 'Proxima Nova Bold';
+    outline: 1px dotted currentcolor !important; }
   .toggle input + span {
     cursor: pointer;
     user-select: none; }
@@ -9580,7 +9598,8 @@ b, strong {
 .toggle-md {
   line-height: 30px; }
   .toggle-md input + span {
-    padding-left: 75px; }
+    padding-left: 75px;
+    font-size: 1.125rem; }
   .toggle-md input + span:before {
     width: 60px; }
   .toggle-md input + span:after, .toggle-md input + span:before {
@@ -9595,7 +9614,8 @@ b, strong {
 .toggle-lg {
   line-height: 40px; }
   .toggle-lg input + span {
-    padding-left: 100px; }
+    padding-left: 100px;
+    font-size: 1.5rem; }
   .toggle-lg input + span:before {
     width: 80px; }
   .toggle-lg input + span:after, .toggle-lg input + span:before {

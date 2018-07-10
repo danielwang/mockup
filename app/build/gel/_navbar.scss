@@ -18,9 +18,10 @@
 
       .nav-link{
         // accessibility
-        // &:focus{
-        //   outline:2px dotted #4f617d
-        // }
+        &:focus{
+          outline: none;
+          text-decoration: underline;
+        }
 
         &.dropdown-toggle:after {
           color: rgba($navbar-dark-color, .5);
@@ -133,8 +134,11 @@
           background: transparent;
           border: 0;
           padding: 0.25rem;
-          width: 26px;
-          height: 26px;
+          width: 30px;
+          height: 30px;
+          &:focus {
+            outline: 1px solid currentcolor;
+          }
         }
       }
     }

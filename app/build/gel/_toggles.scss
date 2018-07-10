@@ -70,9 +70,9 @@ Main Slider basics
     opacity: 0;
 
 
-    &:focus + *:before
-    {
-      outline:0;
+    &:focus + span  {
+        @include font-bold();
+        outline: 1px dotted currentcolor !important;
     }
   }
 
@@ -110,7 +110,7 @@ Main Slider
     + span {
       padding-left: $scrubber-width-default * 2.5;
       display: inline-block;
-      
+
       &:before {
         content: "";
         height: $scrubber-width-default;
@@ -243,6 +243,7 @@ Sizes
 
   input + span {
     padding-left: $scrubber-width-md * 2.5;
+    font-size: 1.125rem;
   }
 
   input + span:before {
@@ -271,6 +272,7 @@ Sizes
 
   input + span {
     padding-left: $scrubber-width-lg * 2.5;
+    font-size: 1.5rem;
   }
 
   input + span:before {

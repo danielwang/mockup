@@ -45,6 +45,12 @@
         color: white;
         padding: 0;
 
+        &:focus {  // tab focus ally
+          outline: none;
+          span{
+            @include focus-state();
+          }
+        }
         i {
           vertical-align: -5px;
         }
@@ -87,7 +93,11 @@
         color: $white;
         padding: $spacer;
         position: relative;
-        &:focus,
+        &:focus{
+          color: #fff;
+          background-color: transparent;
+          @include focus-state();
+        }
         &:hover {
           color: #fff;
           background-color: transparent;

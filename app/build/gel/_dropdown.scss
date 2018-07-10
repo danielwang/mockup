@@ -47,16 +47,17 @@
     @include font-regular();
     font-size: 1rem;
     margin-bottom: $spacer * 0.25;
-    &:hover {
+    &:hover, &:focus {
       color: $azure;
-
+      background: transparent;
+      
       [class^="gel-icon-"] {
         color: $azure;
       }
     }
 
     [class^="gel-icon-"] {
-      color: lighten($ctrl, 20%);
+      color: $slate-300;
       margin-right: $spacer * 0.5;
       vertical-align: text-bottom;
       font-size: 1.1rem;
