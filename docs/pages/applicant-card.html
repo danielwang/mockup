@@ -33,11 +33,10 @@
       </script>
        
 
-   <!-- <div class="notification notification-info" role="notification">
+   <div class="notification notification-info" role="notification">
   <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
-  This is a info alert—check it out!
-  <a class="alert-link" href="#">link</a>
-</div> -->
+  This applicant has been entered by Referred Candidate <a class="notification-link" href="#">View referral</a>
+</div>
 <section id="popup-top" class="bg-navy text-white">
     <div class="container">
       <div class="row">
@@ -45,21 +44,28 @@
           <h2 class="text-white">Daniel Applicant</h2>
         </div>
         <div class="col-6 col-md-4 col-lg-2">
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-sm btn-ctrl">
-              <input type="radio" name="talent-pool" id="option1" checked="checked">
-              Active
-            </label>
-            <label class="btn btn-sm btn-ctrl">
-              <input type="radio" name="talent-pool" id="option2">
-              Inactive
-            </label>
-          </div>
+          <fieldset>
+            <legend class="sr-only">Segmented Control Small</legend>
+            <div class="btn-group btn-group-toggle segmented-control">
+              <label>
+                <input type="radio" name="options-seg-sm" id="option1" autocomplete="off" checked="checked">
+                <span class="btn btn-ctrl btn-sm">
+                  Active
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="options-seg-sm" id="option2" autocomplete="off">
+                <span class="btn btn-ctrl btn-sm">
+                  Inactive
+                </span>
+              </label>
+            </div>
+          </fieldset>
         </div>
 
         <div class="col-6 col-md-4 col-lg-2">
           <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-sm btn-ctrl"><i class="gel-icon-print"></i></button>
+            <button type="button" class="btn btn-sm btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
             <div class="btn-group" role="group">
               <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Actions
@@ -335,8 +341,8 @@
     <div class="main-footer border-top fixed-bottom p-3 bg-white">
       <section class="container">
         <div class="d-flex">
-          <button type="button" class="btn btn-outline-secondary mr-auto"><i class="gel-icon-dropdown"></i> Previous</button>
-          <button type="button" class="btn btn-outline-secondary">Next <i class="gel-icon-dropdown"></i></button>
+          <button type="button" class="btn btn-outline-secondary mr-auto"><i class="gel-icon-angle-left"></i> Previous</button>
+          <button type="button" class="btn btn-outline-secondary">Next <i class="gel-icon-angle-right"></i></button>
         </div>
       </section>
     </div>
@@ -354,7 +360,7 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel">Beta feedback</h2>
+        <h2 class="modal-title" id="exampleModalLabel">Beta Feedback</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
@@ -365,7 +371,7 @@
         </p>
         <div class="row">
           <div class="col-12 mt-3">
-            <h4>How was your experience in Bata today?</h4>
+            <h4>How was your experience in Beta today?</h4>
           </div>
           <div class="col-sm-8 col-md-6">
             <div class="smileys mt-3">
@@ -398,7 +404,7 @@
           </div>
           <div class="col-12">
             <div class="form-group mt-3">
-              <label>Why did you give that rating?</label>
+              <label>Why did you give this rating?</label>
               <textarea class="form-control" rows="4"></textarea>
             </div>
           </div>

@@ -324,17 +324,29 @@
     <div class="row">
       <div class="col-sm-8 col-md-6">
         <h5>Visibility</h5>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-ctrl active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked=""> All tasks
-          </label>
-          <label class="btn btn-ctrl">
-            <input type="radio" name="options" id="option2" autocomplete="off"> Manger
-          </label>
-          <label class="btn btn-ctrl">
-            <input type="radio" name="options" id="option3" autocomplete="off"> Employee
-          </label>
-        </div>
+        <fieldset>
+          <legend class="sr-only">visibility</legend>
+          <div class="btn-group btn-group-toggle segmented-control">
+            <label>
+              <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+              <span class="btn btn-ctrl">
+                All tasks
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="options-seg" id="option2" autocomplete="off">
+              <span class="btn btn-ctrl">
+                Manager
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="options-seg" id="option3" autocomplete="off">
+              <span class="btn btn-ctrl">
+                Employee
+              </span>
+            </label>
+          </div>
+        </fieldset>
       </div>
       <div class="col-sm-4 offset-md-2 col-md-4 d-flex justify-content-end align-items-end mt-3">
         <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#createModal">Create a task</button>
@@ -601,7 +613,7 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel">Beta feedback</h2>
+        <h2 class="modal-title" id="exampleModalLabel">Beta Feedback</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
@@ -612,7 +624,7 @@
         </p>
         <div class="row">
           <div class="col-12 mt-3">
-            <h4>How was your experience in Bata today?</h4>
+            <h4>How was your experience in Beta today?</h4>
           </div>
           <div class="col-sm-8 col-md-6">
             <div class="smileys mt-3">
@@ -645,7 +657,7 @@
           </div>
           <div class="col-12">
             <div class="form-group mt-3">
-              <label>Why did you give that rating?</label>
+              <label>Why did you give this rating?</label>
               <textarea class="form-control" rows="4"></textarea>
             </div>
           </div>
