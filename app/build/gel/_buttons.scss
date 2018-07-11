@@ -48,16 +48,47 @@
   }
 }
 
-.btn-group-toggle {
+.segmented-control {
   display: flex;
   width: 100%;
 
-  .btn-ctrl {
+  label {
     flex-basis: 100%;
 
-    &.active {
+    .btn-ctrl{
+      display: block;
+      border-radius: 0;
+      margin-left: -1px;
+    }
+    &:first-child{
+      .btn-ctrl{
+        margin-left: 0;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+      }
+    }
+    &:last-child{
+      .btn-ctrl{
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+    }
+
+  }
+
+  input[type="radio"]{
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+
+    &:focus + .btn-ctrl{
+      box-shadow: $ctrl-focus-box-shadow;
+    }
+
+    &:checked + .btn-ctrl{
       background-color: $ctrl-active-bg;
       color: $slate-600;
     }
   }
+
 }

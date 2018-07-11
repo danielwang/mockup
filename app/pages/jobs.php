@@ -6,31 +6,55 @@
 <div class="row">
   <div class="col-md-6 col-lg-4">
     <h5>Visibility</h5>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-ctrl active">
-        <input type="radio" name="visibility" id="option1" autocomplete="off" checked> My jobs
-      </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="visibility" id="option2" autocomplete="off"> Team jobs
-      </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="visibility" id="option3" autocomplete="off"> All jobs
-      </label>
-    </div>
+    <fieldset>
+      <legend class="sr-only">visibility</legend>
+      <div class="btn-group btn-group-toggle segmented-control">
+        <label>
+          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+          <span class="btn btn-ctrl">
+            My jobs
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg" id="option2" autocomplete="off">
+          <span class="btn btn-ctrl">
+            Team jobs
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg" id="option3" autocomplete="off">
+          <span class="btn btn-ctrl">
+            All jobs
+          </span>
+        </label>
+      </div>
+    </fieldset>
   </div>
   <div class="col-md-6 col-lg-4">
     <h5 class="mt-2 mt-md-0">Status</h5>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-ctrl active">
-        <input type="radio" name="status" id="option1" autocomplete="off" checked> Current
-      </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="status" id="option2" autocomplete="off"> Archived
-      </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="status" id="option3" autocomplete="off"> All
-      </label>
-    </div>
+    <fieldset>
+      <legend class="sr-only">Status</legend>
+      <div class="btn-group btn-group-toggle segmented-control">
+        <label>
+          <input type="radio" name="options-seg-status" id="option1" autocomplete="off" checked="checked">
+          <span class="btn btn-ctrl">
+            Current
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg-status" id="option2" autocomplete="off">
+          <span class="btn btn-ctrl">
+            Archived
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg-status" id="option3" autocomplete="off">
+          <span class="btn btn-ctrl">
+            All
+          </span>
+        </label>
+      </div>
+    </fieldset>
   </div>
   <div class="col-lg-4 d-flex justify-content-sm-end align-items-end mt-3">
       <span class="mb-2 mr-2">133 results</span>

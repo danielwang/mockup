@@ -35,17 +35,29 @@
     <div class="row">
       <div class="col-sm-8 col-md-6">
         <h5>Visibility</h5>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-ctrl active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked=""> All tasks
-          </label>
-          <label class="btn btn-ctrl">
-            <input type="radio" name="options" id="option2" autocomplete="off"> Manger
-          </label>
-          <label class="btn btn-ctrl">
-            <input type="radio" name="options" id="option3" autocomplete="off"> Employee
-          </label>
-        </div>
+        <fieldset>
+          <legend class="sr-only">visibility</legend>
+          <div class="btn-group btn-group-toggle segmented-control">
+            <label>
+              <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+              <span class="btn btn-ctrl">
+                All tasks
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="options-seg" id="option2" autocomplete="off">
+              <span class="btn btn-ctrl">
+                Manager
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="options-seg" id="option3" autocomplete="off">
+              <span class="btn btn-ctrl">
+                Employee
+              </span>
+            </label>
+          </div>
+        </fieldset>
       </div>
       <div class="col-sm-4 offset-md-2 col-md-4 d-flex justify-content-end align-items-end mt-3">
         <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#createModal">Create a task</button>

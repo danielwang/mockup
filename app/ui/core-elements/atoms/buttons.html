@@ -119,33 +119,49 @@
 <hr class="sg-hr"/>
 <h3>Segmented controls</h3>
 <div class="row">
-  <div class="col-md-6">
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-ctrl active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked="checked">
-        All
-      </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="options" id="option2" autocomplete="off">
-        Manager
-      </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="options" id="option3" autocomplete="off">
-        Employee
-      </label>
-    </div>
+  <div class="col-md-8">
+    <fieldset>
+      <legend class="sr-only">Segmented Control</legend>
+      <div class="btn-group btn-group-toggle segmented-control">
+        <label>
+          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+          <span class="btn btn-ctrl">
+            All
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg" id="option2" autocomplete="off">
+          <span class="btn btn-ctrl">
+            Manager
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg" id="option3" autocomplete="off">
+          <span class="btn btn-ctrl">
+            Employee
+          </span>
+        </label>
+      </div>
+    </fieldset>
   </div>
-  <div class="col-md-6">
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-sm btn-ctrl active">
-        <input type="radio" name="options-sm" id="option1" autocomplete="off" checked="checked">
-        Active
-      </label>
-      <label class="btn btn-sm btn-ctrl">
-        <input type="radio" name="options-sm" id="option2" autocomplete="off">
-        Inactive
-      </label>
-    </div>
+  <div class="col-md-4">
+    <fieldset>
+      <legend class="sr-only">Segmented Control Small</legend>
+      <div class="btn-group btn-group-toggle segmented-control">
+        <label>
+          <input type="radio" name="options-seg-sm" id="option1" autocomplete="off" checked="checked">
+          <span class="btn btn-ctrl btn-sm">
+            Active
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg-sm" id="option2" autocomplete="off">
+          <span class="btn btn-ctrl btn-sm">
+            Inactive
+          </span>
+        </label>
+      </div>
+    </fieldset>
   </div>
 </div>
 <hr>

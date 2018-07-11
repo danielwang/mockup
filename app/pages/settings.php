@@ -19,17 +19,24 @@
   <div class="tab-pane active" id="configure" role="tabpanel" aria-labelledby="configure-tab">
   <div class="row">
     <div class="col-sm-3 mb-2 mb-sm-0">
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-ctrl active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked="checked">
+      <fieldset>
+        <legend class="sr-only">Home or Tags</legend>
+        <div class="btn-group btn-group-toggle segmented-control">
+          <label>
+            <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+            <span class="btn btn-ctrl btn">
               Home
-            </label>
-            <label class="btn btn-ctrl">
-              <input type="radio" name="options" id="option2" autocomplete="off">
+            </span>
+          </label>
+          <label>
+            <input type="radio" name="options-seg" id="option2" autocomplete="off">
+            <span class="btn btn-ctrl btn">
               Tags
-            </label>
+            </span>
+          </label>
         </div>
-      </div>
+      </fieldset>
+    </div>
       <div class="offset-sm-1 col-sm-6">
         <div class="input-group mb-3">
           <input type="text" class="form-control" aria-label="Search" aria-describedby="settings-search">
@@ -46,11 +53,11 @@
             <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list2" role="tab"><i class="gel-icon-sourcing"></i> Sourcing</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-application"></i> Offers</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list4" role="tab"><i class="gel-icon-tick-circle"></i> Onboarding</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list4" role="tab"><i class="gel-icon-onboarding"></i> Onboarding</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list5" role="tab"><i class="gel-icon-star"></i> Performance</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list6" role="tab"><i class="gel-icon-learning"></i> Learning</a>
             <a class="list-group-item list-group-item-action disabled" data-toggle="tab" href="#list7" role="tab"><i class="gel-icon-succession"></i> Succession</a>
-            <a class="list-group-item list-group-item-action disabled" data-toggle="tab" href="#list8" role="tab"><i class="gel-icon-money"></i> Compensation</a>
+            <a class="list-group-item list-group-item-action disabled" data-toggle="tab" href="#list8" role="tab"><i class="gel-icon-cost"></i> Compensation</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list9" role="tab"><i class="gel-icon-integration"></i> Integration</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list10" role="tab"><i class="gel-icon-configure"></i> Configure</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-thirdparty"></i> Third Party Settings</a>

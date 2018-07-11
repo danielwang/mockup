@@ -1,110 +1,109 @@
 <blockquote class="blockquote">
   An input group which can only have one entry selected at a time.
 </blockquote>
-
-<form role="form" lpformnum="2">
-  <fieldset>
-    <legend>
-      Basic
-    </legend>
-    <p>
-      Supports bootstrap brand colors:
-      <code>.radio-primary</code>,
-      <code>.radio-danger</code>
-      etc.
-    </p>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="radio">
-          <input type="radio" name="radio1" id="radio1" value="option1" checked="">
-          <label for="radio1">
-            Small
-          </label>
-        </div>
-        <div class="radio">
-          <input type="radio" name="radio1" id="radio2" value="option2">
-          <label for="radio2">
-            Big
-          </label>
-        </div>
+<h3>Default</h3>
+<fieldset>
+  <legend class="sr-only">
+    Basic
+  </legend>
+  <p>
+    Supports bootstrap brand colors:
+    <code>.radio-primary</code>,
+    <code>.radio-danger</code>
+    etc.
+  </p>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="radio">
+        <input type="radio" name="radio1" id="radio1" value="option1" checked="">
+        <label for="radio1">
+          Small
+        </label>
       </div>
-      <div class="col-sm-6">
-        <div class="radio radio-danger">
-          <input type="radio" name="radio2" id="radio3" value="option1">
-          <label for="radio3">
-            Next
-          </label>
-        </div>
-        <div class="radio radio-danger">
-          <input type="radio" name="radio2" id="radio4" value="option2" checked="">
-          <label for="radio4">
-            One
-          </label>
-        </div>
+      <div class="radio">
+        <input type="radio" name="radio1" id="radio2" value="option2">
+        <label for="radio2">
+          Big
+        </label>
       </div>
     </div>
-    <!-- <p>Radios without label text</p> <div class="radio"> <input type="radio" id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One"> <label></label> </div> <div class="radio radio-success"> <input type="radio"
-    id="singleRadio2" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two"> <label></label> </div> -->
-    <h4>Inline radios</h4>
-    <div class="radio radio-info radio-inline">
-      <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
-      <label for="inlineRadio1">
-        Inline One
-      </label>
+    <div class="col-sm-6">
+      <div class="radio radio-danger">
+        <input type="radio" name="radio2" id="radio3" value="option1">
+        <label for="radio3">
+          Next
+        </label>
+      </div>
+      <div class="radio radio-danger">
+        <input type="radio" name="radio2" id="radio4" value="option2" checked="">
+        <label for="radio4">
+          One
+        </label>
+      </div>
     </div>
-    <div class="radio radio-inline">
-      <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
-      <label for="inlineRadio2">
-        Inline Two
-      </label>
-    </div>
-  </fieldset>
-  <hr class="sg-hr"/>
-  <fieldset>
-    <legend>
-      Disabled
-    </legend>
-    <p>
-      Disabled state also supported.
-    </p>
-    <div class="radio radio-danger">
-      <input type="radio" name="radio3" id="radio5" value="option1" disabled="">
-      <label for="radio5">
-        Next
-      </label>
-    </div>
-    <div class="radio">
-      <input type="radio" name="radio3" id="radio6" value="option2" checked="" disabled="">
-      <label for="radio6">
-        One
-      </label>
-    </div>
-  </fieldset>
-  <hr class="sg-hr"/>
-  <fieldset>
-    <legend>
-      As Checkboxes
-    </legend>
-    <p>
-      Radios can be made to look like checkboxes.
-    </p>
-    <div class="checkbox checkbox">
-      <input type="radio" name="radio4" id="radio7" value="option1" checked="">
-      <label for="radio7">
-        Default
-      </label>
-    </div>
-    <div class="checkbox checkbox-success">
-      <input type="radio" name="radio4" id="radio8" value="option2">
-      <label for="radio8">
-        Success
-      </label>
-    </div>
-    <div class="checkbox checkbox-danger">
-      <input type="radio" name="radio4" id="radio9" value="option3">
-      <label for="radio9">
-        Danger
-      </label>
-    </div>
-  </fieldset>
-</form>
+  </div>
+  <!-- <p>Radios without label text</p> <div class="radio"> <input type="radio" id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One"> <label></label> </div> <div class="radio radio-success"> <input type="radio"
+  id="singleRadio2" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two"> <label></label> </div> -->
+  <h4>Inline radios</h4>
+  <div class="radio radio-info radio-inline">
+    <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+    <label for="inlineRadio1">
+      Inline One
+    </label>
+  </div>
+  <div class="radio radio-inline">
+    <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+    <label for="inlineRadio2">
+      Inline Two
+    </label>
+  </div>
+</fieldset>
+<hr class="sg-hr"/>
+<fieldset>
+  <legend class="sr-only">
+    Disabled
+  </legend>
+  <p>
+    Disabled state also supported.
+  </p>
+  <div class="radio radio-danger">
+    <input type="radio" name="radio3" id="radio5" value="option1" disabled="">
+    <label for="radio5">
+      Next
+    </label>
+  </div>
+  <div class="radio">
+    <input type="radio" name="radio3" id="radio6" value="option2" checked="" disabled="">
+    <label for="radio6">
+      One
+    </label>
+  </div>
+</fieldset>
+<hr class="sg-hr"/>
+<h3>Checkboxes Style</h3>
+<fieldset>
+  <legend class="sr-only">
+    As Checkboxes
+  </legend>
+  <p>
+    Radios can be made to look like checkboxes.
+  </p>
+  <div class="checkbox checkbox">
+    <input type="radio" name="radio4" id="radio7" value="option1" checked="">
+    <label for="radio7">
+      Default
+    </label>
+  </div>
+  <div class="checkbox checkbox-success">
+    <input type="radio" name="radio4" id="radio8" value="option2">
+    <label for="radio8">
+      Success
+    </label>
+  </div>
+  <div class="checkbox checkbox-danger">
+    <input type="radio" name="radio4" id="radio9" value="option3">
+    <label for="radio9">
+      Danger
+    </label>
+  </div>
+</fieldset>

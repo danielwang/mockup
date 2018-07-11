@@ -7705,12 +7705,29 @@ label {
   .btn-ctrl .btn-sm, .btn-ctrl .btn-group-sm > .btn {
     border-radius: 0.25rem; }
 
-.btn-group-toggle {
+.segmented-control {
   display: flex;
   width: 100%; }
-  .btn-group-toggle .btn-ctrl {
+  .segmented-control label {
     flex-basis: 100%; }
-  .btn-group-toggle .btn-ctrl.active {
+  .segmented-control label .btn-ctrl {
+    display: block;
+    border-radius: 0;
+    margin-left: -1px; }
+  .segmented-control label:first-child .btn-ctrl {
+    margin-left: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem; }
+  .segmented-control label:last-child .btn-ctrl {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; }
+  .segmented-control input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
+  .segmented-control input[type="radio"]:focus + .btn-ctrl {
+    box-shadow: 0 0 0 0.2rem rgba(65, 83, 101, .25), inset 0 3px 5px rgba(0, 0, 0, 0); }
+  .segmented-control input[type="radio"]:checked + .btn-ctrl {
     background-color: #bcc8d4;
     color: #2f3c49; }
 
@@ -10362,3 +10379,6 @@ b, strong {
 
 .gel-icon-application:before {
   content: "\e974"; }
+
+.gel-icon-onboarding:before {
+  content: "\e975"; }

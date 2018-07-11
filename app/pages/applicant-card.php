@@ -12,16 +12,23 @@
           <h2 class="text-white">Daniel Applicant</h2>
         </div>
         <div class="col-6 col-md-4 col-lg-2">
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-sm btn-ctrl">
-              <input type="radio" name="talent-pool" id="option1" checked="checked">
-              Active
-            </label>
-            <label class="btn btn-sm btn-ctrl">
-              <input type="radio" name="talent-pool" id="option2">
-              Inactive
-            </label>
-          </div>
+          <fieldset>
+            <legend class="sr-only">Segmented Control Small</legend>
+            <div class="btn-group btn-group-toggle segmented-control">
+              <label>
+                <input type="radio" name="options-seg-sm" id="option1" autocomplete="off" checked="checked">
+                <span class="btn btn-ctrl btn-sm">
+                  Active
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="options-seg-sm" id="option2" autocomplete="off">
+                <span class="btn btn-ctrl btn-sm">
+                  Inactive
+                </span>
+              </label>
+            </div>
+          </fieldset>
         </div>
 
         <div class="col-6 col-md-4 col-lg-2">

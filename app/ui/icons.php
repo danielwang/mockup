@@ -85,7 +85,8 @@ function buildSolidIcons(){
     ["learning","learning"],
     ["cost","cost"],
     ["sourcing","sourcing"],
-    ["application","application"]
+    ["application","application"],
+    ["onboarding", "onboarding"]
   ];
 }
 
