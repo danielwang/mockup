@@ -163,7 +163,7 @@ $lineIcons = buildLineIcons();
               <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
                   <div class="card">
                     <h6><?php echo ucfirst($solidIcons[$i][0]);?></h6>
-                    <p><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></p>
+                    <p><a href="<?php echo ($resURL) ?>images/SVG/<?php echo $solidIcons[$i][1];?>.svg" download><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></a></p>
                     <small><code>.gel-icon-<?php echo $solidIcons[$i][1];?></code></small>
                   </div>
               </div>
@@ -177,7 +177,7 @@ $lineIcons = buildLineIcons();
             <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
                 <div class="card">
                   <h6><?php echo ucfirst($lineIcons[$i][0]);?></h6>
-                  <p><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></p>
+                  <p><a href="<?php echo ($resURL) ?>images/SVG/<?php echo $lineIcons[$i][1];?>.svg" download><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></a></p>
                   <small><code>.gel-icon-<?php echo $lineIcons[$i][1];?>-o</code></small>
                 </div>
             </div>
