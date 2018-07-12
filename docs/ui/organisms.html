@@ -197,20 +197,29 @@
   </div>
   <div class="form-group">
     <label for="who1">Segmented control</label>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-ctrl">
-        <input type="radio" name="options" id="option1" autocomplete="off">
-        Both
-      </label>
-      <label class="btn btn-ctrl">
-        <input type="radio" name="options" id="option2" autocomplete="off">
-        Manger
-      </label>
-      <label class="btn btn-ctrl active">
-        <input type="radio" name="options" id="option3" autocomplete="off" checked="checked">
-        Employee
-      </label>
-    </div>
+    <fieldset>
+      <legend class="sr-only">visibility</legend>
+      <div class="btn-group btn-group-toggle segmented-control">
+        <label>
+          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+          <span class="btn btn-ctrl">
+            All tasks
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg" id="option2" autocomplete="off">
+          <span class="btn btn-ctrl">
+            Manager
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-seg" id="option3" autocomplete="off">
+          <span class="btn btn-ctrl">
+            Employee
+          </span>
+        </label>
+      </div>
+    </fieldset>
   </div>
   <div class="form-group">
     <label for="who1">Radios buttons</label>
@@ -411,8 +420,8 @@
     <span>Poor</span>
     <span>Excellent</span>
   </div>
-</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="scribble" role="tabpanel" aria-labelledby="page-tab-scribble"><div class="row"><div class="col-md-6 col-lg-7"><script type="text/javascript" src="https://ui.pageuppeople.com/libs/scribble/scribble.js" charset="UTF-8" async="async"></script>
-<textarea style="visibility: hidden;" pageup-scribble="pageup-scribble"></textarea></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="scribble" role="tabpanel" aria-labelledby="page-tab-scribble"><div class="row"><div class="col-md-6 col-lg-7"><textarea style="visibility: hidden;" pageup-scribble="pageup-scribble"></textarea>
+<script type="text/javascript" src="https://ui.pageuppeople.com/libs/scribble/scribble.js" charset="UTF-8" async="async"></script></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>
   <a target="_blank" href="https://github.com/PageUpPeopleOrg/scribble">Scribble</a>
   is the rich text editor we use in our product. You can download it from PageUp Github Repositories.
 </p>
@@ -576,7 +585,7 @@
 </ul></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-md-4">
     <h3>Small</h3>
-    <fieldset>
+    <fieldset class="d-inline-block" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
       <div class="tray tray-sm tray-green">
         <input type="radio" name="radio-sm" id="radio-sm-1" value="option2">
         <label for="radio-sm-1">
@@ -602,24 +611,25 @@
   </div>
   <div class="col-md-8">
     <h3>Default</h3>
-    <fieldset>
+    <fieldset class="d-inline-block" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
+      <legend class="sr-only">3 trays</legend>
       <div class="tray tray-green tray-lg">
         <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
-        <label for="radio-b-l-1" data-toggle="tooltip" data-placement="bottom" data-original-title="Green Tray">
+        <label for="radio-b-l-1">
           <span class="sr-only">
             Green</span>
         </label>
       </div>
       <div class="tray tray-orange tray-lg">
         <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
-        <label for="radio-b-l-2" data-toggle="tooltip" data-placement="bottom" data-original-title="Orange Tray">
+        <label for="radio-b-l-2">
           <span class="sr-only">
             Orange</span>
         </label>
       </div>
       <div class="tray tray-red tray-lg">
         <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
-        <label for="radio-b-l-3" data-toggle="tooltip" data-placement="bottom" data-original-title="Red Tray">
+        <label for="radio-b-l-3">
           <span class="sr-only">
             Red</span>
         </label>

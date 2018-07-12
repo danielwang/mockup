@@ -8916,7 +8916,9 @@ select.form-control {
 #popup-top {
   padding: 1.5rem 0; }
   .face-red input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .face-red input[type="radio"] + label::before {
     color: #dd625f; }
   .face-red input[type="radio"]:checked + label::before {
@@ -8924,7 +8926,9 @@ select.form-control {
   .face-red input[type="radio"]:checked + label::after {
     background-color: #821e1c; }
   .face-orange input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .face-orange input[type="radio"] + label::before {
     color: #ff7e2e; }
   .face-orange input[type="radio"]:checked + label::before {
@@ -8932,7 +8936,9 @@ select.form-control {
   .face-orange input[type="radio"]:checked + label::after {
     background-color: #8f3700; }
   .face-green input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .face-green input[type="radio"] + label::before {
     color: #4eb554; }
   .face-green input[type="radio"]:checked + label::before {
@@ -8940,7 +8946,9 @@ select.form-control {
   .face-green input[type="radio"]:checked + label::after {
     background-color: #1e4720; }
   .face-yellow input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .face-yellow input[type="radio"] + label::before {
     color: #e7ba59; }
   .face-yellow input[type="radio"]:checked + label::before {
@@ -8948,7 +8956,9 @@ select.form-control {
   .face-yellow input[type="radio"]:checked + label::after {
     background-color: #8d6715; }
   .face-lime input[type="radio"] {
-    -webkit-appearance: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .face-lime input[type="radio"] + label::before {
     color: #8cc64c; }
   .face-lime input[type="radio"]:checked + label::before {
@@ -9372,7 +9382,8 @@ select.form-control {
     vertical-align: top;
     position: relative;
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    transition: all 0.3s ease-out; }
   .tray label::before {
     font-family: "gel-icon";
     content: "\e95d";
@@ -9393,20 +9404,26 @@ select.form-control {
     top: 2px;
     left: 7px;
     font-size: 18px; }
+  .tray label:hover {
+    transform: translateY(-3px); }
   .tray input[type="radio"] {
-    display: none; }
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
   .tray input[type="radio"]:checked + label::after {
     content: "\e91d"; }
+  .tray input[type="radio"]:focus + label {
+    transform: translateY(-3px); }
   .tray-red label::before {
-    color: #d53d39; }
+    color: #dd625f; }
   .tray-red label::after {
     color: #d53d39; }
   .tray-orange label::before {
-    color: #ff6200; }
+    color: #ff7e2e; }
   .tray-orange label::after {
     color: #ff6200; }
   .tray-green label::before {
-    color: #317635; }
+    color: #3e9644; }
   .tray-green label::after {
     color: #317635; }
 
@@ -9433,6 +9450,11 @@ dt {
   font-size: 1rem;
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
+
+dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 b, strong {
   font-weight: 400;
