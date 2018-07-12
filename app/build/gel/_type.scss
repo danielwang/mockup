@@ -8,6 +8,9 @@ dt{
   font-size: 1rem;
   @include font-semibold();
 }
+dd{
+  @include text-truncate();
+}
 
 b, strong{
   font-weight: 400;

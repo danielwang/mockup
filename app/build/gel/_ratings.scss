@@ -23,7 +23,9 @@ $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green-400, "y
 }
 @mixin face-colors($color) {
   input[type="radio"] {
-    -webkit-appearance: none;
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
 
     + label {
       &::before {
