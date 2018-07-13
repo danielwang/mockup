@@ -99,21 +99,18 @@ $css = array(
 );
 minifyCSS($css);
 
-copy('css/gel.css', '../docs/css/gel.css');
-copy('css/gel.min.css', '../dist/css/gel.min.css');
-copy('js/gel.js', '../docs/js/gel.js');
-copy('js/gel.js', '../dist/js/gel.js');
 
-/* deploy scoped gel to S3
+/* Deploy Process
   0. increase version num and date in gel.scss
   1. uncomment .gel class in gel.scss
   2. generate the gel.css file
-  3. rename the gel.css to gel-scoped.css
+  3. save gel.css as gel-scoped.css
   4. remove the empty .gel class inside the stylesheet, .gel html => html.gel
   5. rename selector .gel body {} => .gel {}
-  6. run minify-css
-  7. copy files to S3
-  8. don't forget font icons
+  6. comment out .gel in scss and re generate new gel.css
+  7. run minify-css
+  8. copy files to S3
+  9. don't forget font icons
 */
 
 ?>
