@@ -34,7 +34,7 @@
        
 
       <!-- ************ menu ************  -->
-       <aside id="gel-menu" role='menu'>
+  <aside id="gel-menu" role='menu'>
          <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
 
          <a href="../" class="logo"> <img alt="brand logo" src="../images/pu-logo.png" width="100"/></a>
@@ -162,8 +162,8 @@
   </li>
 </ul>         </menu>
        </aside>
-<!-- ************ topbar ************ -->
-    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
+  <!-- ************ topbar ************ -->
+  <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
       <div class="container">
         <!-- logo  -->
         <ul class="navbar-nav mr-auto">
@@ -233,38 +233,12 @@
     </nav>
 
 
-<!-- ************  page header ************ -->
-    <header id="gel-header" role="banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8">
-              <h1 class="page-title">ES Page template</h1>
-            </div>
-            <div class="page-actions col-md-3 col-lg-4">
-              <span class="item">
-                  <a class="text-center" href="#_" title="Print" onclick="javascript: window.print();">
-                    <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
-                  </a>
-              </span>
-              <span class="item">
-                  <a class="text-center" href="#_" title="Feedback" data-toggle="modal" data-target="#feedbackModal">
-                    <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
-                  </a>
-              </span>
-                <span class="item">
-                  <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown">
-                    <i class="gel-icon-lg gel-icon-help" aria-hidden="true"></i> <span>Help</span>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#1" title="Live support"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a>
-                    <a class="dropdown-item" href="#2" title="Knowledge portal"><i class="gel-icon-knowledge-portal" aria-hidden="true" ></i> Knowledge Portal</a>
-                    <a class="dropdown-item" href="#3" title="Raise support case"><i class="gel-icon-bullhorn" aria-hidden="true"></i> Raise support case</a>
-                  </div>
-                </span>
-              </div>
-          </div>
+  <!-- ************  page header ************ -->
+        <header id="gel-header" role="banner">
+          <div class="container">
+            <h1 class="page-title">ES Page template</h1>
 
-            <div class="page-tabs">
+              <div class="page-tabs">
       <span class="item active"><a href="#">In progress / Upcoming</a></span>
       <span class="item"><a href="#">Completed</a></span>
       <span class="item"><a href="#">Pending approval <span class="badge">1</span></a></span>
@@ -272,12 +246,12 @@
       <!-- <span class="item"><button type="button" class="pull-right btn btn-ghost btn-primary">
           Explore Library</button></span> -->
   </div>
-    </header>
-
-<!-- ************  page body ************ -->
-		<main id="gel-main" role="main">
-			<section class="container">
-				<div class="row">
+      </header>
+  
+  <!-- ************  page body ************ -->
+	<main id="gel-main" role="main">
+		<section class="container">
+			<div class="row">
   <div class="col-sm-8">
       <ul class="nav nav-tabs nav-line">
         <li class="active">
@@ -368,18 +342,48 @@
     <a target="_blank" href="landing"><img style="max-width:100%; border-radius:6px" src="../images/learn-app.png" alt="learning app home" /> </a>
   </div>
 </div>
-			</section>
-		</main>
-<footer id="gel-footer" role="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-6">Design by DUX team 2018</div>
-      <div class="col-6 text-right">Powered by
-        <a href="#">PageUp</a>
+		</section>
+	</main>
+  <!-- ************  page footer ************ -->
+  <footer id="gel-footer" role="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-4 offset-md-2 text-right">
+          <div class="btn-group dropup">
+            <button type="button" class="btn btn-sm btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#1">English (US)</a>
+              <a class="dropdown-item" href="#2">Español (Spanish)</a>
+              <a class="dropdown-item" href="#3">Deutsch (German)</a>
+              <a class="dropdown-item" href="#4">简体中文 (Chinese, Simplified)</a>
+              <a class="dropdown-item" href="#5">日本語 (Japanese)</a>
+              <a class="dropdown-item" href="#6">Nederlands (Dutch)</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 text-right">
+          <span id="langChange" class="control-language-switcher" data-control="LanguageSwitcher">
+              <select class="form-control form-control-sm w-auto d-inline" name="langList" id="langList">
+                      <option value="en">English</option>
+                      <option value="en-us">English (US)</option>
+                      <option value="es">Español (Spanish)</option>
+                      <option value="de">Deutsch (German)</option>
+                      <option value="tr">Türkçe (Turkish)</option>
+                      <option value="zh-s">简体中文 (Chinese, Simplified)</option>
+                      <option value="ja">日本語 (Japanese)</option>
+                      <option value="nl">Nederlands (Dutch)</option>
+              </select>
+          </span>
+        </div>
+        <div class="col-6 col-md-2 text-right">
+          Powered by
+          <a href="https://www.pageuppeople.com/powered-by-pageup/" target="_blank">PageUp</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
