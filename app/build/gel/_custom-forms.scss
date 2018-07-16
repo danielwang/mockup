@@ -11,9 +11,13 @@ select.form-control {
   -moz-appearance: none;
   appearance: none;
   padding-right: 20px;
-  background-image: url("data:image/svg+xml,%0A%3Csvg width='70px' height='44px' viewBox='0 0 70 44' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Iconography' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Solid-icons' transform='translate%28-1045.000000, -338.000000%29' fill='%2366819c'%3E%3Cg id='drop-down' transform='translate%281045.000000, 338.000000%29'%3E%3Cg id='Page-1'%3E%3Cpath d='M68.1712,5.6079 L64.3922,1.8289 C62.5002,-0.0631 59.8752,-0.5691 58.4602,0.6969 C50.3302,7.9689 42.5102,15.5639 35.0002,23.4629 C27.4892,15.5639 19.6692,7.9689 11.5392,0.6969 C10.1252,-0.5691 7.4992,-0.0631 5.6082,1.8289 L1.8282,5.6079 C-0.0628,7.4999 -0.5688,10.1249 0.6962,11.5399 C10.6982,22.7209 21.3032,33.3249 32.4842,43.3269 C33.1312,43.9059 34.0322,44.1099 35.0002,43.9849 C35.9672,44.1099 36.8682,43.9059 37.5162,43.3269 C48.6972,33.3249 59.3012,22.7209 69.3032,11.5399 C70.5682,10.1249 70.0632,7.4999 68.1712,5.6079' id='Fill-1'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='70px' height='90px' viewBox='0 0 27 27' style='enable-background:new 0 0 27 27;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%2366819C;%7d %3c/style%3e%3cpath class='st0' d='M5.5,9.9l1,1C7,11.3,7.6,11.4,8,11.1c2.1-1.9,4.1-3.8,6-5.8c1.9,2,3.9,4,6,5.8c0.4,0.3,1,0.2,1.5-0.3l1-1 c0.5-0.5,0.6-1.2,0.3-1.5c-2.6-2.9-5.3-5.6-8.1-8.1C14.5,0.1,14.2,0,14,0.1c-0.2,0-0.5,0-0.6,0.2c-2.9,2.6-5.6,5.3-8.1,8.1 C4.9,8.7,5,9.4,5.5,9.9z'/%3e%3cpath class='st0' d='M22.4,17.1l-1-1c-0.5-0.5-1.2-0.6-1.5-0.3c-2.1,1.9-4.1,3.8-6,5.8c-1.9-2-3.9-4-6-5.8c-0.4-0.3-1-0.2-1.5,0.3 l-1,1c-0.5,0.5-0.6,1.2-0.3,1.5c2.6,2.9,5.3,5.6,8.1,8.1c0.2,0.1,0.4,0.2,0.6,0.2c0.2,0,0.5,0,0.6-0.2c2.9-2.6,5.6-5.3,8.1-8.1 C23.1,18.2,22.9,17.5,22.4,17.1z'/%3e%3c/svg%3e ");
   background-color: white;
   background-repeat: no-repeat;
-  background-position: right 10px bottom 10px;
+  background-position: right 10px bottom 12px;
   background-size: 14px 14px;
+
+  &.form-control-sm{
+    background-position: right 6px bottom 6px;
+  }
 }

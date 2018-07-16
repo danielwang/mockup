@@ -20,6 +20,15 @@
   }
 }
 
+.btn-link{
+  &:active{
+    &:focus{
+      box-shadow: none !important;
+      text-decoration: underline;
+    }
+  }
+}
+
 .btn-ctrl {
   color: $ctrl;
   border-color: $ctrl-border-color;

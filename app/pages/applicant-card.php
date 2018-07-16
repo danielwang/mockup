@@ -32,7 +32,7 @@
         </div>
 
         <div class="col-6 col-md-4 col-lg-2">
-          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <div class="btn-group d-print-none" role="group" aria-label="Button group with nested dropdown">
             <button type="button" class="btn btn-sm btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
             <div class="btn-group" role="group">
               <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,7 +89,7 @@
         </span>
         <span class="col-6 col-md-4 col-lg-2">
           <dt>Linked Employee</dt>
-          <dd><a class="white" href="#"> Relink</a></dd>
+          <dd><a class="text-white" href="#"> Relink</a></dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
           <dt>Flags</dt>
@@ -121,7 +121,7 @@
 <?php endblock()?>
 
 <?php startblock('page-tabs') ?>
-<ul class="page-tabs nav mt-0" role="tablist">
+<ul class="page-tabs nav mt-0 d-print-none" role="tablist">
   <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#applications" role="applications" aria-controls="applications" aria-selected="true">Applications</a></li>
   <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#history" role="History" aria-controls="History" aria-selected="false">History</a></li>
   <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#crm" role="tab" aria-controls="CRM" aria-selected="false">CRM</a></li>
@@ -132,7 +132,8 @@
 <?php startblock('page-body');?>
 
 <div class="tab-content">
-  <div class="tab-pane fade show active" id="applications" role="tabpanel" aria-labelledby="applications-tab">
+  <div class="tab-pane d-print-block show active" id="applications" role="tabpanel" aria-labelledby="applications-tab">
+    <h3 class="d-none d-print-block">Applications</h3>
     <table class="table table-striped table-hover">
       <thead class="thead-dark">
         <tr>
@@ -213,7 +214,8 @@
       </tbody>
     </table>
   </div>
-  <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+  <div class="tab-pane d-print-block" id="history" role="tabpanel" aria-labelledby="history-tab">
+    <h3 class="d-none d-print-block">History</h3>
     <div class="row">
       <div class="col-sm-3">
         <div class="form-group">
@@ -293,10 +295,14 @@
     </li>
   </ul>
   </div>
-  <div class="tab-pane fade" id="crm" role="tabpanel" aria-labelledby="contact-tab">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+  <div class="tab-pane d-print-block" id="crm" role="tabpanel" aria-labelledby="CRM-tab">
+    <h3 class="d-none d-print-block">CRM</h3>
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
     Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
   </div>
-  <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="contact-tab">Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+  <div class="tab-pane d-print-block" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+    <h3 class="d-none d-print-block">Resume</h3>
+    Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
     Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse
     potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
   </div>

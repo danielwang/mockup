@@ -9,6 +9,15 @@
     content: "\e92a";
     font-family: $gel-icon;
   }
+
+  // dropup
+  .dropup & {
+    &:after{
+        content: "\e92b";
+        border: 0;
+        vertical-align: baseline;
+    }
+  }
 }
 
 .show > .dropdown-toggle{
@@ -17,6 +26,11 @@
   }
 }
 
+.dropup.show > .dropdown-toggle{
+  &:after{
+      content: "\e92a";
+  }
+}
 
 .dropdown-menu{
   padding: $spacer * 1.25;
@@ -50,7 +64,7 @@
     &:hover, &:focus {
       color: $azure;
       background: transparent;
-      
+
       [class^="gel-icon-"] {
         color: $azure;
       }
@@ -61,6 +75,22 @@
       margin-right: $spacer * 0.5;
       vertical-align: text-bottom;
       font-size: 1.1rem;
+    }
+  }
+
+}
+
+.dropup{
+
+  .dropdown-menu{
+    bottom: 25px;
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, .175);
+
+    &:after{
+      top: auto;
+      left: auto;
+      bottom: -10px;
+      transform: rotate(180deg);
     }
   }
 

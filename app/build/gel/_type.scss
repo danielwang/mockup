@@ -16,3 +16,19 @@ b, strong{
   font-weight: 400;
   @include font-semibold();
 }
+
+.text-16{
+  font-size: 1rem; //16px
+}
+
+.text-18{
+  font-size: 1.125rem; //20px
+}
+
+.text-20{
+  font-size: 1.25rem;  //24px
+}
+
+.text-24{
+  font-size: 1.5rem // 24px
+}

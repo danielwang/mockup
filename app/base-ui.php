@@ -74,12 +74,22 @@
 
       <ul class="page-tabs nav" role="tablist"><?php startblock('page-tabs') ?><?php endblock() ?></ul>
     </div>
-</header>
+  </header>
 <!-- page body -->
-		<main id="gel-main">
-			<section class="container">
-				<?php startblock('page-body')?>
-				<?php endblock()?>
-			</section>
-		</main>
+	<main id="gel-main">
+		<section class="container">
+			<?php startblock('page-body')?>
+			<?php endblock()?>
+		</section>
+	</main>
+  <footer id="gel-footer" role="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">Design by DUX team 2018</div>
+        <div class="col-6 text-right">
+          <a href="#">PageUp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 <?php include '_foot.html';?>
