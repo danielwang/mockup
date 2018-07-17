@@ -8936,7 +8936,8 @@ select.form-control {
       outline: 1px solid currentcolor; }
 
 #popup-top {
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0;
+  color: white; }
   .face-red input[type="radio"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
@@ -9483,7 +9484,16 @@ b, strong {
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
 
-.text-16 {
+sup {
+  top: 0; }
+
+sub, sup {
+  font-size: 0.75rem; }
+
+.text-12, .text-sm {
+  font-size: 0.75rem; }
+
+.text-16, .text-lg {
   font-size: 1rem; }
 
 .text-18 {
@@ -10049,8 +10059,16 @@ b, strong {
   pointer-events: none; }
 
 @media print {
+  body, h1, h2, h3, h4, h5, h6, th {
+    color: #000 !important; }
+
   #gel-footer, #gel-menu, #gel-navbar, .page-actions {
-    display: none !important; } }
+    display: none !important; }
+
+  #popup-top {
+    color: #000 !important; }
+    #popup-top h2 {
+      color: #000 !important; } }
 
 @font-face {
   font-family: 'gel-icon';
