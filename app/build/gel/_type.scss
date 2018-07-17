@@ -17,7 +17,17 @@ b, strong{
   @include font-semibold();
 }
 
-.text-16{
+sup{
+  top:0;
+}
+sub,sup{
+  font-size: 0.75rem;
+}
+.text-12, .text-sm{
+  font-size: 0.75rem; //12px
+}
+
+.text-16, .text-lg{
   font-size: 1rem; //16px
 }
 

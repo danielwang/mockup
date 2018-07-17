@@ -29,7 +29,7 @@
     <?php if($site=="MockUp") { ?>
       <script>
       function popupWindow(url) {
-         window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=50,left=50,width=1024,height=800");
+         window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=150,left=150,width=1280,height=960");
       }
       </script>
-    <?php } ?>   
+    <?php } ?>

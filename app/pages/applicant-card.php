@@ -1,11 +1,11 @@
 <?php $pageTitle = "Applicant card"; include '../base-popup.php';?>
 
 <?php startblock('popup-top');?>
-<div class="notification notification-info" role="notification">
+<div class="notification notification-info d-print-none" role="notification">
   <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
   This applicant has been entered by Referred Candidate <a class="notification-link" href="#">View referral</a>
 </div>
-<section id="popup-top" class="bg-navy text-white">
+<section id="popup-top" class="bg-navy" role="header">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -134,85 +134,44 @@
 <div class="tab-content">
   <div class="tab-pane d-print-block show active" id="applications" role="tabpanel" aria-labelledby="applications-tab">
     <h3 class="d-none d-print-block">Applications</h3>
-    <table class="table table-striped table-hover">
-      <thead class="thead-dark">
-        <tr>
-          <th>Position</th>
-          <th>Number</th>
-          <th>Date</th>
-          <th>Recruiter</th>
-          <th>Applied via</th>
-          <th>Status</th>
-          <th>Offer</th>
-          <th>Flags</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>
-            <a href="#"><i class="gel-icon-info-pointer"></i></a>Operations Manager
-          </th>
-          <td>942130</td>
-          <td>17 Nov 2017</td>
-          <td>
-            <a href="#">Michelle Petterson</a>
-          </td>
-          <td>
-            <a href="#">Career website</a>
-          </td>
-          <td>
-            <a href="#">Interviewed</a>
-            <p><small>Status changed 12 May 2018</small></p>
-          </td>
-          <td><a href="#">No offer</a></td>
-          <td><i class="gel-icon-location"></i><i class="gel-icon-bullhorn"></i></td>
-          <td>
-            <div class="dropdown">
-                <button class="btn btn-ctrl btn-sm dropdown-menu-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Actions
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+        <?php for ($x =1; $x <= 3; $x++) {?>
+          <div class="card hover mb-4">
+            <div class="row">
+              <div class="mb-4 mb-lg-0 col-md-12 col-lg-6">
+                <h5><a class="d-print-none" href="#"><i class="gel-icon-info-pointer"></i></a> International Consultant on Early Childhood Development</h5>
+                <div class="row">
+                    <span class="col-6 col-sm-3"><sup class="text-black-50">Job ID:</sup><br/> <span>942130</span></span>
+                    <span class="col-6 col-sm-3"><sup class="text-black-50">Submit date:</sup> <br/><span>17 Nov 2017</span></span>
+                    <span class="col-6 col-sm-3"><sup class="text-black-50">Recruiter:</sup> <br/><span>Daniel Wang</span></span>
+                    <span class="col-6 col-sm-3"><sup class="text-black-50">Applied via:</sup> <br/><span>Linkedin</span></span>
                 </div>
               </div>
-            </td>
-        </tr>
-        <tr>
-          <th>
-            <a href="#"><i class="gel-icon-info-pointer"></i></a>Senior Project Manager
-          </th>
-          <td>942130</td>
-          <td>17 Nov 2017</td>
-          <td>
-            <a href="#">Michelle Petterson</a>
-          </td>
-          <td>
-            <a href="#">Career website</a>
-          </td>
-          <td>
-            <a href="#">Interviewed</a>
-            <p><small>Status changed 12 May 2018</small></p>
-          </td>
-          <td><a href="#">No offer</a></td>
-          <td><i class="gel-icon-location"></i><i class="gel-icon-bullhorn"></i></td>
-          <td>
-            <div class="dropdown">
-                <button class="btn btn-ctrl btn-sm dropdown-menu-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Actions
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+              <div class="col-6 col-lg-2">
+                <a href="#">Interviewed</a>
+                <p>Status changed 12 May 2018</p>
               </div>
-            </td>
-        </tr>
-      </tbody>
-    </table>
+              <div class="col-6 col-lg-1">
+                <a href="#">No offer</a>
+              </div>
+              <div class="col-6 col-lg-1">
+                <i class="gel-icon-location"></i><i class="gel-icon-bullhorn"></i><i class="gel-icon-info"></i><i class="gel-icon-lock"></i>
+              </div>
+              <div class="col-6 col-lg-2 text-lg-right">
+                <div class="dropdown d-inline-block d-print-none">
+                    <button class="btn btn-ctrl btn-sm dropdown-toggle mr-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Actions
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <?php } ?>
+
   </div>
   <div class="tab-pane d-print-block" id="history" role="tabpanel" aria-labelledby="history-tab">
     <h3 class="d-none d-print-block">History</h3>
