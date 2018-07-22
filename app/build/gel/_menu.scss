@@ -96,8 +96,8 @@
   }
 
   menu {
-    margin-top: $spacer * 1.75;
-    padding: 0 2.8125rem;
+    margin-top: $spacer * 2;
+    padding: 0 $spacer * 3;
     @include media-breakpoint-up(md) {
       margin-top: $navbar-height;
       position: sticky;
@@ -116,7 +116,7 @@
     padding: 0;
 
     li.submenu {
-      margin-bottom: 30px;
+      margin-bottom: $spacer * 2;
       list-style: none;
     }
 
@@ -125,7 +125,7 @@
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: $spacer/2;
       list-style: none;
 
 

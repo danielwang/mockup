@@ -423,8 +423,8 @@ $hr-margin-y:                 $spacer !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          $spacer * 0.875 !default;
-$table-cell-padding-sm:       .3rem !default;
+$table-cell-padding:          $spacer !default;
+$table-cell-padding-sm:       .5rem !default;
 
 $table-bg:                    white !default;
 $table-accent-bg:             rgba($black, .05) !default;
@@ -788,7 +788,7 @@ $jumbotron-bg:                      $gray-200 !default;
 
 // Cards
 
-$card-spacer-y:                     1rem !default;
+$card-spacer-y:                     1.25rem !default;
 $card-spacer-x:                     1.25rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;

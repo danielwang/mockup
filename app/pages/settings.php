@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="card mt-4">
+    <div class="card mt-3">
       <div class="row">
         <div class="col-sm-5 col-xl-3">
           <div class="list-group list-group-flush nav" role="tablist">

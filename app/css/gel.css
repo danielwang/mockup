@@ -196,8 +196,8 @@ table {
   border-collapse: collapse; }
 
 caption {
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #6c757d;
   text-align: left;
   caption-side: bottom; }
@@ -1144,7 +1144,7 @@ pre {
   margin-bottom: 1rem;
   background-color: white; }
   .table th, .table td {
-    padding: 0.875rem;
+    padding: 1rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6; }
   .table thead th {
@@ -1156,7 +1156,7 @@ pre {
     background-color: #ebeff3; }
 
 .table-sm th, .table-sm td {
-  padding: 0.3rem; }
+  padding: 0.5rem; }
 
 .table-bordered {
   border: 1px solid #dee2e6; }
@@ -3211,10 +3211,10 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   padding: 1.25rem; }
 
 .card-title {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.25rem; }
 
 .card-subtitle {
-  margin-top: -0.5rem;
+  margin-top: -0.625rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3226,7 +3226,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     margin-left: 1.25rem; }
 
 .card-header {
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   margin-bottom: 0;
   background-color: #66819c;
   border-bottom: 1px solid #9dafc0; }
@@ -3236,7 +3236,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     border-top: 0; }
 
 .card-footer {
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   background-color: #66819c;
   border-top: 1px solid #9dafc0; }
   .card-footer:last-child {
@@ -3244,7 +3244,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .card-header-tabs {
   margin-right: -0.625rem;
-  margin-bottom: -1rem;
+  margin-bottom: -1.25rem;
   margin-left: -0.625rem;
   border-bottom: 0; }
 
@@ -3334,7 +3334,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
           border-radius: 0; } }
 
 .card-columns .card {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.25rem; }
   @media (min-width: 576px) {
   .card-columns {
     column-count: 3;
@@ -7440,7 +7440,7 @@ label {
   font-family: 'Proxima Nova Semibold'; }
 
 #gel-main {
-  padding: 30px 0;
+  padding: 2rem 0;
   flex: 1 0 auto; }
 
 #gel-footer {
@@ -8786,8 +8786,8 @@ select.form-control {
   #gel-menu .user-menu #user-menu-ft a {
     color: white; }
   #gel-menu menu {
-    margin-top: 1.75rem;
-    padding: 0 2.8125rem; }
+    margin-top: 2rem;
+    padding: 0 3rem; }
   @media (min-width: 768px) {
     #gel-menu menu {
       margin-top: 3.75rem;
@@ -8806,12 +8806,12 @@ select.form-control {
     margin: 0;
     padding: 0; }
   #gel-menu ul li.submenu {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     list-style: none; }
   #gel-menu ul h4 {
     color: #00a1e5; }
   #gel-menu ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
     list-style: none; }
   #gel-menu ul li a {
     color: #dfdfdf;
@@ -9465,7 +9465,7 @@ select.form-control {
 
 .blockquote, .tagline {
   font-size: 1.25rem;
-  margin: 1rem 0 2rem 0;
+  margin: 0 0 2rem 0;
   font-weight: 400;
   font-family: 'Proxima Nova Light'; }
 
@@ -9475,6 +9475,7 @@ dt {
   font-family: 'Proxima Nova Semibold'; }
 
 dd {
+  margin-bottom: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
