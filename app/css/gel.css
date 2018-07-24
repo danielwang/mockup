@@ -7950,6 +7950,26 @@ label {
 label .was-validated .form-check-input:invalid .checkbox:before, label .form-check-input.is-invalid .checkbox:before, label .was-validated .form-check-input:invalid .radio:before, label .form-check-input.is-invalid .radio:before {
   border-color: #d53d39; }
 
+.circle {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 20rem;
+  border: 2px solid #415365;
+  text-align: center;
+  vertical-align: middle; }
+
+.job-filters {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+  .job-filters {
+    justify-content: center;
+    flex-wrap: wrap; } }
+
 .custom-control-inline {
   align-items: center; }
 
@@ -8641,7 +8661,7 @@ select.form-control {
     -o-transition: font-size 0.5s ease;
     transition: font-size 0.5s ease; }
   #gel-header blockquote.tagline {
-    margin: 1rem 0 0 0; }
+    margin: 1rem 0 0; }
   #gel-header h6 {
     color: white;
     font-size: 12px; }
@@ -8673,8 +8693,15 @@ select.form-control {
           display: inline-block;
           font-weight: 700;
           font-family: 'Nunito', sans-serif; } }
-  #gel-header .page-tabs {
-    margin: 1rem 0 -2rem -1rem;
+
+#gel-subpages {
+  position: sticky;
+  top: 3.75rem;
+  z-index: 1020;
+  background-image: linear-gradient(to right, #0053a3 0%, #018cd1 100%);
+  background-repeat: repeat-x; }
+  #gel-subpages .page-tabs {
+    margin-left: -15px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -8684,34 +8711,34 @@ select.form-control {
     overflow-x: auto;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch; }
-  #gel-header .page-tabs:empty {
+  #gel-subpages .page-tabs:empty {
     display: none; }
-  #gel-header .page-tabs .nav-item {
+  #gel-subpages .page-tabs .nav-item {
     white-space: nowrap; }
-  #gel-header .page-tabs .nav-item a {
+  #gel-subpages .page-tabs .nav-item a {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     opacity: 0.75;
     color: #fff;
     padding: 1rem;
     position: relative; }
-  #gel-header .page-tabs .nav-item a:focus {
+  #gel-subpages .page-tabs .nav-item a:focus {
     color: #fff;
     background-color: transparent;
     text-decoration: underline;
     outline: none; }
-  #gel-header .page-tabs .nav-item a:hover {
+  #gel-subpages .page-tabs .nav-item a:hover {
     color: #fff;
     background-color: transparent; }
-  #gel-header .page-tabs .nav-item a.active {
+  #gel-subpages .page-tabs .nav-item a.active {
     opacity: 1; }
-    #gel-header .page-tabs .nav-item a.active::before {
+    #gel-subpages .page-tabs .nav-item a.active::before {
       content: "";
       position: absolute;
       bottom: 0;
       border-width: 0 0.5rem 0.5rem;
       border-style: solid;
-      border-color: #f0f0f0 transparent;
+      border-color: #ebeff3 transparent;
       display: block;
       width: 0;
       left: calc(50%);

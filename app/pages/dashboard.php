@@ -17,38 +17,43 @@
     <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Teams</a></li>
   </ul>
 <?php endblock() ?>
-
-<?php startblock('page-body');?>
-
-<div class="card">
-  <div class="row">
-    <div class="col-2 col-lg-1 text-center">
-      <i class="gel-icon-user gel-icon-2x"></i> <span class="text-20">12</span>
-    </div>
-    <div class="col-10 col-lg-4">
-      <h4><a href="#"><i class="gel-icon-info-pointer"></i></a> <a href="#">Customer Sales &amp; Service Consultant</a></h4>
-
-        <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
-            <span>Approved to advertise</span>
-            <span>#J9827364</span></div>
-        <!--     <span class=""><sup class="text-black-50">Hiring Manager:</sup> <br/><span>Daniel Wang</span></span>
-            <span class=""><sup class="text-black-50">Positions:</sup> <br/><span> 6</span></span>
-            <span class=""><sup class="text-black-50">Vacancies:</sup> <br/><span> 10</span></span>
-         -->
+<?php startblock('page-top');?>
+<div id="gel-masthead" class="bg-white mb-3 p-3">
+    <div class="container">
+      <div class="job-filters">
+          <?php for ($x =1; $x <= 7; $x++) {?>
+                <div class="ml-2 mr-2"><span class="circle">5</span><span>job status</span></div>
+          <?php } ?>
       </div>
-    <div class="col-2 col-lg-2">Aaron Hardy</div>
-    <div class="col-2 col-lg-1">5</div>
-    <div class="col-2 col-lg-1">9</div>
-    <div class="col-2 col-lg-3">
-      <ul class="list-unstyled">
-          <li>2 new applications
-              <a href="#1">View</a>
-          </li>
-          <li>5 applications in Offer approval commenced for more than 3 days<text>.</text>
-              <a href="#">View</a>
-          </li>
-      </ul>
     </div>
-  </div>
+</div>
+<?php endblock()?>
+<?php startblock('page-body');?>
+<div class="card">
+  <?php for ($x =1; $x <= 10; $x++) {?>
+    <div class="row">
+      <div class="col-2 col-lg-1 text-center">
+        <i class="gel-icon-user gel-icon-2x"></i> <span class="text-20">12</span>
+      </div>
+      <div class="col-10 col-lg-4">
+        <h5><a href="#"><i class="gel-icon-info-pointer"></i></a> <a href="#">Customer Sales &amp; Service Consultant</a></h5>
+      </div>
+      <div class="offset-2 offset-lg-0 col-lg-2">Approved to advertise</div>
+      <div class="offset-2 offset-lg-0 col-lg-2">#J9827364</div>
+      <div class="offset-2 offset-lg-0 col-lg-2">Aaron Hardy</div>
+      <div class="offset-2 offset-lg-0 col-lg-1">5 (9)</div>
+      <!-- <div class="col-2 col-lg-3">
+        <ul class="list-unstyled">
+            <li>2 new applications
+                <a href="#1">View</a>
+            </li>
+            <li>5 applications in Offer approval commenced for more than 3 days<text>.</text>
+                <a href="#">View</a>
+            </li>
+        </ul>
+      </div> -->
+    </div>
+    <hr>
+  <?php } ?>
 </div>
 <?php endblock()?>

@@ -1,0 +1,24 @@
+.circle{
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 20rem;
+  border: 2px solid $slate;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#gel-masthead{
+
+}
+.job-filters{
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  @include media-breakpoint-up(md) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
