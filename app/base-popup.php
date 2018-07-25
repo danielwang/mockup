@@ -9,15 +9,14 @@
    <?php emptyblock('page-notification') ?>
 <?php startblock('popup-top');?>
 <?php endblock()?>
-<!-- ************  page header ************ -->
-<?php startblock('page-header');?>
-    <header id="gel-header" role="banner" class="pt-0">
-        <div class="container">
-          <?php startblock('page-tabs') ?>
-          <?php endblock() ?>
-    </header>
-<?php endblock()?>
 
+<!-- ************  page sub pages ************ -->
+<nav id="gel-subpages" role="navigation" style="top:0">
+   <div class="container">
+     <?php startblock('page-tabs') ?>
+     <?php endblock() ?>
+   </div>
+</nav>
 <!-- ************  page body ************ -->
 		<main id="gel-main" role="main">
 			<section class="container">

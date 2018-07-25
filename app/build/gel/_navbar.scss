@@ -78,11 +78,6 @@
     // nav help
     .nav-help {
       margin-right: 0;
-      @include media-breakpoint-up(md) {
-        // larger than md: 768px
-        display: none;
-      }
-
       .dropdown-toggle:after {
         display: none;
       }

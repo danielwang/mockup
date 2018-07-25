@@ -198,7 +198,7 @@
         </div>
       </div>
     </div>
-    <ul class="timeline timeline-split mt-3">
+    <ul class="timeline timeline-split mt-3 mb-3">
     <li class="timeline-item">
       <div class="timeline-info">
         <span>Saturday, 2 Dec 2017, 5:22am</span>

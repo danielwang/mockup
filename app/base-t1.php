@@ -41,7 +41,15 @@
   <?php startblock('page-header');?>
       <header id="gel-header" role="banner">
           <div class="container">
-            <h1 class="page-title"><?php echo $pageTitle  ?></h1>
+            <div class="row">
+              <div class="col-md-9 col-lg-8">
+                <h1 class="page-title"><?php echo $pageTitle  ?></h1>
+              </div>
+              <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
+                  <?php emptyblock('page-actions') ?>
+              </div>
+            </div>
+          </div>
       </header>
   <?php endblock()?>
  <!-- ************  page sub pages ************ -->

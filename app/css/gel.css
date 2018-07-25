@@ -8697,7 +8697,7 @@ select.form-control {
 #gel-subpages {
   position: sticky;
   top: 3.75rem;
-  z-index: 1020;
+  z-index: 999;
   background-image: linear-gradient(to right, #0053a3 0%, #018cd1 100%);
   background-repeat: repeat-x; }
   #gel-subpages .page-tabs {
@@ -8916,9 +8916,6 @@ select.form-control {
         display: flex; } }
   .navbar .navbar-nav .nav-help {
     margin-right: 0; }
-  @media (min-width: 768px) {
-      .navbar .navbar-nav .nav-help {
-        display: none; } }
   .navbar .navbar-nav .nav-help .dropdown-toggle:after {
     display: none; }
   .navbar .navbar-nav .search-group {

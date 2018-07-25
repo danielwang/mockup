@@ -7,6 +7,18 @@
       <button href="#" type="button" class="close"><i class="fa fa-times"></i></button>
     </div> -->
 <?php // endblock() ?>
+<?php startblock('page-actions') ?>
+  <span class="item">
+    <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown">
+      <i class="gel-icon-lg gel-icon-user" aria-hidden="true"></i> <span>Team and Users</span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+      <a class="dropdown-item" href="#1" title="Live support"><i class="gel-icon-support" aria-hidden="true"></i>  Live support</a>
+      <a class="dropdown-item" href="#2" title="Knowledge portal"><i class="gel-icon-knowledge-portal" aria-hidden="true" ></i> Knowledge Portal</a>
+      <a class="dropdown-item" href="#3" title="Raise support case"><i class="gel-icon-bullhorn" aria-hidden="true"></i> Raise support case</a>
+    </div>
+  </span>
+<?php endblock() ?>
 <?php startblock('page-tabs') ?>
   <ul class="page-tabs nav" role="tablist">
     <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#configure" role="tab" aria-controls="Tab one" aria-selected="true">Current Jobs</a></li>
@@ -14,9 +26,9 @@
     <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#kp" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a></li>
     <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a></li>
     <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#kp" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Teams</a></li>
   </ul>
 <?php endblock() ?>
+
 <?php startblock('page-top');?>
 <div id="gel-masthead" class="bg-white mb-3 p-3">
     <div class="container">
