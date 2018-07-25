@@ -196,8 +196,8 @@ table {
   border-collapse: collapse; }
 
 caption {
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #6c757d;
   text-align: left;
   caption-side: bottom; }
@@ -1144,7 +1144,7 @@ pre {
   margin-bottom: 1rem;
   background-color: white; }
   .table th, .table td {
-    padding: 0.875rem;
+    padding: 1rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6; }
   .table thead th {
@@ -1156,7 +1156,7 @@ pre {
     background-color: #ebeff3; }
 
 .table-sm th, .table-sm td {
-  padding: 0.3rem; }
+  padding: 0.5rem; }
 
 .table-bordered {
   border: 1px solid #dee2e6; }
@@ -3211,10 +3211,10 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   padding: 1.25rem; }
 
 .card-title {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.25rem; }
 
 .card-subtitle {
-  margin-top: -0.5rem;
+  margin-top: -0.625rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3226,7 +3226,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     margin-left: 1.25rem; }
 
 .card-header {
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   margin-bottom: 0;
   background-color: #66819c;
   border-bottom: 1px solid #9dafc0; }
@@ -3236,7 +3236,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     border-top: 0; }
 
 .card-footer {
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   background-color: #66819c;
   border-top: 1px solid #9dafc0; }
   .card-footer:last-child {
@@ -3244,7 +3244,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .card-header-tabs {
   margin-right: -0.625rem;
-  margin-bottom: -1rem;
+  margin-bottom: -1.25rem;
   margin-left: -0.625rem;
   border-bottom: 0; }
 
@@ -3334,7 +3334,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
           border-radius: 0; } }
 
 .card-columns .card {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.25rem; }
   @media (min-width: 576px) {
   .card-columns {
     column-count: 3;
@@ -7440,7 +7440,7 @@ label {
   font-family: 'Proxima Nova Semibold'; }
 
 #gel-main {
-  padding: 30px 0;
+  padding: 2rem 0;
   flex: 1 0 auto; }
 
 #gel-footer {
@@ -7949,6 +7949,26 @@ label {
 
 label .was-validated .form-check-input:invalid .checkbox:before, label .form-check-input.is-invalid .checkbox:before, label .was-validated .form-check-input:invalid .radio:before, label .form-check-input.is-invalid .radio:before {
   border-color: #d53d39; }
+
+.circle {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 20rem;
+  border: 2px solid #415365;
+  text-align: center;
+  vertical-align: middle; }
+
+.job-filters {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+  .job-filters {
+    justify-content: center;
+    flex-wrap: wrap; } }
 
 .custom-control-inline {
   align-items: center; }
@@ -8641,7 +8661,7 @@ select.form-control {
     -o-transition: font-size 0.5s ease;
     transition: font-size 0.5s ease; }
   #gel-header blockquote.tagline {
-    margin: 1rem 0 0 0; }
+    margin: 1rem 0 0; }
   #gel-header h6 {
     color: white;
     font-size: 12px; }
@@ -8673,8 +8693,15 @@ select.form-control {
           display: inline-block;
           font-weight: 700;
           font-family: 'Nunito', sans-serif; } }
-  #gel-header .page-tabs {
-    margin: 1rem 0 -2rem -1rem;
+
+#gel-subpages {
+  position: sticky;
+  top: 3.75rem;
+  z-index: 999;
+  background-image: linear-gradient(to right, #0053a3 0%, #018cd1 100%);
+  background-repeat: repeat-x; }
+  #gel-subpages .page-tabs {
+    margin-left: -15px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -8684,34 +8711,34 @@ select.form-control {
     overflow-x: auto;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch; }
-  #gel-header .page-tabs:empty {
+  #gel-subpages .page-tabs:empty {
     display: none; }
-  #gel-header .page-tabs .nav-item {
+  #gel-subpages .page-tabs .nav-item {
     white-space: nowrap; }
-  #gel-header .page-tabs .nav-item a {
+  #gel-subpages .page-tabs .nav-item a {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     opacity: 0.75;
     color: #fff;
     padding: 1rem;
     position: relative; }
-  #gel-header .page-tabs .nav-item a:focus {
+  #gel-subpages .page-tabs .nav-item a:focus {
     color: #fff;
     background-color: transparent;
     text-decoration: underline;
     outline: none; }
-  #gel-header .page-tabs .nav-item a:hover {
+  #gel-subpages .page-tabs .nav-item a:hover {
     color: #fff;
     background-color: transparent; }
-  #gel-header .page-tabs .nav-item a.active {
+  #gel-subpages .page-tabs .nav-item a.active {
     opacity: 1; }
-    #gel-header .page-tabs .nav-item a.active::before {
+    #gel-subpages .page-tabs .nav-item a.active::before {
       content: "";
       position: absolute;
       bottom: 0;
       border-width: 0 0.5rem 0.5rem;
       border-style: solid;
-      border-color: #f0f0f0 transparent;
+      border-color: #ebeff3 transparent;
       display: block;
       width: 0;
       left: calc(50%);
@@ -8786,8 +8813,8 @@ select.form-control {
   #gel-menu .user-menu #user-menu-ft a {
     color: white; }
   #gel-menu menu {
-    margin-top: 1.75rem;
-    padding: 0 2.8125rem; }
+    margin-top: 2rem;
+    padding: 0 3rem; }
   @media (min-width: 768px) {
     #gel-menu menu {
       margin-top: 3.75rem;
@@ -8806,12 +8833,12 @@ select.form-control {
     margin: 0;
     padding: 0; }
   #gel-menu ul li.submenu {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     list-style: none; }
   #gel-menu ul h4 {
     color: #00a1e5; }
   #gel-menu ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
     list-style: none; }
   #gel-menu ul li a {
     color: #dfdfdf;
@@ -8889,9 +8916,6 @@ select.form-control {
         display: flex; } }
   .navbar .navbar-nav .nav-help {
     margin-right: 0; }
-  @media (min-width: 768px) {
-      .navbar .navbar-nav .nav-help {
-        display: none; } }
   .navbar .navbar-nav .nav-help .dropdown-toggle:after {
     display: none; }
   .navbar .navbar-nav .search-group {
@@ -9465,7 +9489,7 @@ select.form-control {
 
 .blockquote, .tagline {
   font-size: 1.25rem;
-  margin: 1rem 0 2rem 0;
+  margin: 0 0 2rem 0;
   font-weight: 400;
   font-family: 'Proxima Nova Light'; }
 
@@ -9475,6 +9499,7 @@ dt {
   font-family: 'Proxima Nova Semibold'; }
 
 dd {
+  margin-bottom: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }

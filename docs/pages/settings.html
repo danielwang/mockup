@@ -249,13 +249,13 @@
 <li class="nav-item recent-items">
   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recent items</a>
   <div class="dropdown-menu dropdown-menu-right">
-    <a class="dropdown-item" href="#" onclick="popupWindow('../pages/applicant-card')">
+    <a title="Daniel Appllicant" class="dropdown-item" href="#" onclick="popupWindow('../pages/applicant-card')">
       <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
       Mr Daniel Appllicant</a>
-    <a class="dropdown-item" href="#">
+    <a title="Elizabeth Appllicant" class="dropdown-item" href="#">
       <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
       Miss Elizabeth Appllicant</a>
-    <a class="dropdown-item" href="#">
+    <a title="Senior project manager" class="dropdown-item" href="#">
       <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
       Senior project manager</a>
     <a class="dropdown-item" href="#">
@@ -312,7 +312,7 @@
   </div>
 </li>          <!-- help -->
           <li id="nav-help" class="nav-help nav-item">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-label="Help">
+  <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" aria-label="Help">
     <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
     <span class="sr-only">Help</span></a>
   <div class="dropdown-menu dropdown-menu-right">
@@ -320,7 +320,7 @@
       <i class="gel-icon-print" aria-hidden="true"></i>
       Print
     </a>
-    <a href="#" class="dropdown-item" title="Feedback">
+    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal">
       <i class="gel-icon-feedback" aria-hidden="true"></i>
       Feedback</a>
     <a href="#" class="dropdown-item" title="Knowledge portal">
@@ -341,19 +341,29 @@
   <!-- ************  page header ************ -->
         <header id="gel-header" role="banner">
           <div class="container">
-            <h1 class="page-title">Settings</h1>
-
-              <ul class="page-tabs nav" role="tablist">
+            <div class="row">
+              <div class="col-md-9 col-lg-8">
+                <h1 class="page-title">Settings</h1>
+              </div>
+              <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
+                                </div>
+            </div>
+          </div>
+      </header>
+   <!-- ************  page sub pages ************ -->
+ <nav id="gel-subpages" role="navigation">
+    <div class="container">
+        <ul class="page-tabs nav" role="tablist">
     <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#configure" role="tab" aria-controls="Tab one" aria-selected="true">Configure</a></li>
     <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#settings" role="tab" aria-controls="Tab two" aria-selected="false">Settings</a></li>
     <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#kp" role="tab" aria-controls="Tab three" aria-selected="false">Knowledge Portal</a></li>
     <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Client Bundles</a></li>
   </ul>
-      </header>
-  
+    </div>
+  </nav>
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
-		<section class="container">
+        		<section class="container">
 			
 <div class="tab-content">
   <div class="tab-pane active" id="configure" role="tabpanel" aria-labelledby="configure-tab">
@@ -386,7 +396,7 @@
         </div>
       </div>
     </div>
-    <div class="card mt-4">
+    <div class="card mt-3">
       <div class="row">
         <div class="col-sm-5 col-xl-3">
           <div class="list-group list-group-flush nav" role="tablist">

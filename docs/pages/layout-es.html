@@ -206,7 +206,7 @@
   </div>
 </li>          <!-- help -->
           <li id="nav-help" class="nav-help nav-item">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-label="Help">
+  <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" aria-label="Help">
     <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
     <span class="sr-only">Help</span></a>
   <div class="dropdown-menu dropdown-menu-right">
@@ -214,7 +214,7 @@
       <i class="gel-icon-print" aria-hidden="true"></i>
       Print
     </a>
-    <a href="#" class="dropdown-item" title="Feedback">
+    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal">
       <i class="gel-icon-feedback" aria-hidden="true"></i>
       Feedback</a>
     <a href="#" class="dropdown-item" title="Knowledge portal">
@@ -235,9 +235,19 @@
   <!-- ************  page header ************ -->
         <header id="gel-header" role="banner">
           <div class="container">
-            <h1 class="page-title">ES Page template</h1>
-
-              <div class="page-tabs">
+            <div class="row">
+              <div class="col-md-9 col-lg-8">
+                <h1 class="page-title">ES Page template</h1>
+              </div>
+              <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
+                                </div>
+            </div>
+          </div>
+      </header>
+   <!-- ************  page sub pages ************ -->
+ <nav id="gel-subpages" role="navigation">
+    <div class="container">
+        <div class="page-tabs">
       <span class="item active"><a href="#">In progress / Upcoming</a></span>
       <span class="item"><a href="#">Completed</a></span>
       <span class="item"><a href="#">Pending approval <span class="badge">1</span></a></span>
@@ -245,11 +255,11 @@
       <!-- <span class="item"><button type="button" class="pull-right btn btn-ghost btn-primary">
           Explore Library</button></span> -->
   </div>
-      </header>
-  
+    </div>
+  </nav>
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
-		<section class="container">
+        		<section class="container">
 			<div class="row">
   <div class="col-sm-8">
       <ul class="nav nav-tabs nav-line">

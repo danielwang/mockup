@@ -166,13 +166,13 @@
 <li class="nav-item recent-items">
   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recent items</a>
   <div class="dropdown-menu dropdown-menu-right">
-    <a class="dropdown-item" href="#" onclick="popupWindow('../pages/applicant-card')">
+    <a title="Daniel Appllicant" class="dropdown-item" href="#" onclick="popupWindow('../pages/applicant-card')">
       <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
       Mr Daniel Appllicant</a>
-    <a class="dropdown-item" href="#">
+    <a title="Elizabeth Appllicant" class="dropdown-item" href="#">
       <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
       Miss Elizabeth Appllicant</a>
-    <a class="dropdown-item" href="#">
+    <a title="Senior project manager" class="dropdown-item" href="#">
       <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
       Senior project manager</a>
     <a class="dropdown-item" href="#">
@@ -229,7 +229,7 @@
   </div>
 </li>          <!-- help -->
           <li id="nav-help" class="nav-help nav-item">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-label="Help">
+  <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" aria-label="Help">
     <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
     <span class="sr-only">Help</span></a>
   <div class="dropdown-menu dropdown-menu-right">
@@ -237,7 +237,7 @@
       <i class="gel-icon-print" aria-hidden="true"></i>
       Print
     </a>
-    <a href="#" class="dropdown-item" title="Feedback">
+    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal">
       <i class="gel-icon-feedback" aria-hidden="true"></i>
       Feedback</a>
     <a href="#" class="dropdown-item" title="Knowledge portal">
@@ -258,13 +258,23 @@
   <!-- ************  page header ************ -->
         <header id="gel-header" role="banner">
           <div class="container">
-            <h1 class="page-title">My Jobs</h1>
-
-                  </header>
-  
+            <div class="row">
+              <div class="col-md-9 col-lg-8">
+                <h1 class="page-title">My Jobs</h1>
+              </div>
+              <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
+                                </div>
+            </div>
+          </div>
+      </header>
+   <!-- ************  page sub pages ************ -->
+ <nav id="gel-subpages" role="navigation">
+    <div class="container">
+          </div>
+  </nav>
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
-		<section class="container">
+        		<section class="container">
 			<div class="row">
   <div class="col-md-6 col-lg-4">
     <h5>Visibility</h5>
