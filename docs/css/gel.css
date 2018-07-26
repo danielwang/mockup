@@ -160,7 +160,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #008efd;
+    color: #00a1e5;
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -2287,7 +2287,7 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #0063b0;
   background-color: transparent; }
   .btn-link:hover {
-    color: #008efd;
+    color: #00a1e5;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent; }
@@ -3784,10 +3784,10 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .list-group-item-action {
   width: 100%;
-  color: #495057;
+  color: #415365;
   text-align: inherit; }
   .list-group-item-action:hover, .list-group-item-action:focus {
-    color: #495057;
+    color: #00a1e5;
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
@@ -7432,7 +7432,14 @@ body {
 
 a {
   font-weight: 400;
-  font-family: 'Proxima Nova Semibold'; }
+  font-family: 'Proxima Nova Semibold';
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+
+.breadcrumb > li a, .list-group-item a {
+  color: #415365; }
+  .breadcrumb > li a:hover, .list-group-item a:hover {
+    color: #00a1e5; }
 
 label {
   margin-bottom: 0.375rem;
@@ -7953,11 +7960,13 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 .circle {
   width: 60px;
   height: 60px;
-  display: block;
-  border-radius: 20rem;
-  border: 2px solid #415365;
-  text-align: center;
-  vertical-align: middle; }
+  display: flex;
+  border-radius: 1rem;
+  border: 2px solid #9dafc0;
+  align-items: center;
+  font-size: 28px;
+  justify-content: center;
+  color: #8198ae; }
 
 .job-filters {
   display: flex;
@@ -7967,7 +7976,7 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   max-width: 100%; }
   @media (min-width: 768px) {
   .job-filters {
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap; } }
 
 .custom-control-inline {
@@ -8027,8 +8036,6 @@ select.form-control {
     right: -0.75rem; }
   .dropdown-menu .dropdown-item {
     color: #415365;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
     font-weight: 400;
     font-family: 'Proxima Nova';
     font-size: 1rem;
@@ -8539,11 +8546,11 @@ select.form-control {
     background: white;
     top: 15px; }
 
-.list-group .list-group-item {
+.list-group-item {
   font-size: 1rem;
   font-weight: 700;
   font-family: 'Nunito', sans-serif; }
-  .list-group .list-group-item.active a {
+  .list-group-item.active a {
     color: white; }
 /*Global Mixins*/
 /*Global Spinner*/
@@ -8743,6 +8750,9 @@ select.form-control {
       width: 0;
       left: calc(50%);
       margin-left: -0.5rem; }
+
+#gel-header + #gel-subpages {
+  margin-top: -1rem; }
 
 #gel-menu {
   position: absolute;
@@ -9231,14 +9241,28 @@ select.form-control {
     white-space: nowrap; }
 
 .nav-tabs-line .nav-link {
-  color: #2f3c49;
-  font-size: 1rem; }
+  color: #415365;
+  font-size: 1rem;
+  padding-bottom: 1rem; }
   .nav-tabs-line .nav-link.active {
-    border-bottom: 4px solid currentcolor;
-    color: #00a1e5; }
+    color: #00a1e5;
+    position: relative; }
+  .nav-tabs-line .nav-link.active::after {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-left: 1px solid #97a3b9;
+    border-top: 1px solid #97a3b9;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    background: white;
+    left: calc(50%);
+    margin-left: -5px; }
   .nav-tabs-line + .tab-content {
     padding: 1rem;
-    border-top: 1px solid #66819c; }
+    border-top: 1px solid #97a3b9; }
 
 .nav-tabs {
   border-width: 2px; }
@@ -9246,7 +9270,7 @@ select.form-control {
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
-    color: #6c757d;
+    color: #415365;
     padding: 0.625rem;
     border: 0; }
   .nav-tabs + .tab-content {
@@ -9486,6 +9510,11 @@ select.form-control {
     height: 16px;
     top: -2px;
     left: 4px; }
+
+.link-alt {
+  color: #415365; }
+  .link-alt:hover {
+    color: #00a1e5; }
 
 .blockquote, .tagline {
   font-size: 1.25rem;
