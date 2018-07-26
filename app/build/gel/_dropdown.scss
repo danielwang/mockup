@@ -55,9 +55,8 @@
   }
 
   .dropdown-item {
-    color: $ctrl;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    color: $link-color-alt;
+
     @include font-regular();
     font-size: 1rem;
     margin-bottom: $spacer * 0.25;
@@ -66,7 +65,7 @@
       background: transparent;
 
       [class^="gel-icon-"] {
-        color: $azure;
+        color: $link-color-alt-hover;
       }
     }
 

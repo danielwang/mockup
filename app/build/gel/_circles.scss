@@ -1,11 +1,13 @@
 .circle{
   width: 60px;
   height: 60px;
-  display: block;
-  border-radius: 20rem;
-  border: 2px solid $slate;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  border-radius: 1rem;
+  border: 2px solid $slate-100;
+  align-items: center;
+  font-size: 28px;
+  justify-content: center;
+  color: $slate-200;
 }
 
 #gel-masthead{
@@ -18,7 +20,7 @@
   -webkit-overflow-scrolling: touch;
   max-width: 100%;
   @include media-breakpoint-up(md) {
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
 }

@@ -36,7 +36,7 @@
  }
 
  // Compile less to output a css file
- require_once $resURL . 'vendor/scssphp/scss.inc.php';
+ require $resURL . 'vendor/scssphp/scss.inc.php';
  use Leafo\ScssPhp\Compiler;
 
  $scss = new Compiler();

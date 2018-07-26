@@ -1,0 +1,35 @@
+/* *************************************** *\
+ *  The styling for GEL site
+\* *************************************** */
+
+@import "variables";
+//@import "colors";
+
+.sg-hr{
+  margin: 1.5rem 0;
+  border-color: transparent;
+}
+.sg-doc {
+  background: #ffc none repeat scroll 0 0;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+  color: #333;
+  display: block;
+  min-height: 210px;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.15s linear 0s;
+  transform: rotate(1deg);
+  margin: 15px;
+}
+
+.sg-heading{
+  color: #142c52;
+  display: inline-block;
+  background: -webkit-linear-gradient(45deg,#0053a3,#49b3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-library [class^="gel-icon-"]{
+    color: #536a81;
+}

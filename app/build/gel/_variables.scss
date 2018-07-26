@@ -275,9 +275,12 @@ $body-color:                $slate-600 !default;
 
 $link-color:                $primary !default;
 $link-decoration:           none !default;
-$link-hover-color:          lighten($link-color, 15%) !default;
+$link-hover-color:          $azure !default;
 $link-hover-decoration:     none !default;
 
+$link-color-alt:           $slate-500 !default;
+$link-color-alt-hover:     $azure !default;
+$link-alt-hover-decoration: underline;
 // Paragraphs
 //
 // Style p element.
@@ -941,8 +944,8 @@ $list-group-active-border-color:    $list-group-active-bg !default;
 $list-group-disabled-color:         $gray-500 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
 
-$list-group-action-color:           $gray-700 !default;
-$list-group-action-hover-color:     $list-group-action-color !default;
+$list-group-action-color:           $link-color-alt !default;
+$list-group-action-hover-color:     $link-color-alt-hover !default;
 
 $list-group-action-active-color:    $body-color !default;
 $list-group-action-active-bg:       $gray-200 !default;

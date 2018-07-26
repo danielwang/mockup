@@ -75,7 +75,7 @@
 #gel-subpages {
   position: sticky;
   top: $navbar-height;
-  z-index: $zindex-sticky - 21; // 999 just below the dropdown 
+  z-index: $zindex-sticky - 21; // 999 just below the dropdown
   @include gradient-x($header-bg-start, $header-bg-end);
 
   .page-tabs {
@@ -135,4 +135,8 @@
       }
     }
   }
+}
+
+#gel-header + #gel-subpages {
+  margin-top: -1rem;
 }

@@ -81,12 +81,11 @@
     <tbody>
       <?php for ($x =1; $x <= 10; $x++) {?>
       <tr>
-        <th scope="row">Human Resources Manager </th>
+        <th scope="row">International Consultant on Early Childhood Development</th>
         <td data-title="Job ID">
           <?php echo $x * 2  + 53302042 ?>
         </td>
-
-        <td data-title="Recruiter"> Peter Smith  </td>
+        <td data-title="Recruiter">Peter Smith</td>
         <td data-title="Status">
           Offer Made
         </td>
@@ -102,11 +101,11 @@
         <td data-title="Job ID">
           <?php echo $x + 53302042 ?>
         </td>
-
-        <td data-title="Recruiter"> Michael Jackson </td>
+        <td data-title="Recruiter"> Arnold Schwarzenegger </td>
         <td data-title="Status">
-          Offer Made
+          Approved to advertise
         </td>
+
         <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>

@@ -1,16 +1,13 @@
-// https://codepen.io/danielwang/pen/wXJVJL
-
 $baseColors: (
-  red: #e81700,
-  purple: #7E52A0,
-  pageup: #142c52,
-  slate: #415365,
-  blue: #0063b0,
-  light-blue: #42c7ff,
-  orange: #ff6200,
-  green: #49bd61,
-  grey: #3d484b,
-  teal: #3ab8bb,
+  red: $red,
+  purple: $purple,
+  pageup: $navy,
+  slate: $slate,
+  blue: $blue,
+  light-blue: $azure,
+  orange: $orange,
+  green: $green,
+  grey: $grey
 );
 
 @function colorMap($baseColors, $variations) {
@@ -35,21 +32,54 @@ $baseColors: (
     }
 
     // middle eg 500
-    $colors: map-merge($colors, (#{$color}-50: lighten($value, 38.7)));
     $colors: map-merge($colors, (#{$color}-#{$variations/2*100}: $value));
   }
   @return $colors;
 }
 
 @each $color, $value in colorMap($baseColors, 10) {
-  // .#{$color} {
-  //   &::before {
-  //     content: '#{$value}';
-  //     font-family: monospace;
-  //     float: right;
-  //     text-transform: uppercase;
-  //   }
-  //   background-color: $value;
-  // }
-  $color: $value;
+  .#{$color} {
+    &::before {
+      content: '#{$value}';
+      font-family: monospace;
+      float: right;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    background-color: $value;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swatches {
+  flex: auto;
+  margin: 20px;
+  font-family: arial;
+}
+
+.swatch-title {
+  padding: 12px;
+  text-transform: capitalize;
+
+  h3 {
+    margin: 0 0 50px;
+    font-size: inherit;
+    color:white;
+  }
+}
+
+.color-swatch:nth-child(n+7) {
+  color: #fff;
+}
+
+.color-swatch {
+  box-sizing: border-box;
+  min-width: 360px;
+  padding: 12px;
+  display: block;
+  font-weight: bold;
 }

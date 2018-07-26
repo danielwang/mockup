@@ -1,6 +1,6 @@
 .nav-tabs-line{
   .nav-link{
-    color: $body-color;
+    color: $link-color-alt;
     font-size: 1rem;
     &.active{
       border-bottom: 4px solid currentcolor;
@@ -20,7 +20,7 @@
     .nav-link {
       @include font-heading();
       font-size: 1rem;
-      color: $text-muted;
+      color: $link-color-alt;
       padding: $spacer * 0.625;
       border: 0;
     }

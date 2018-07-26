@@ -33,7 +33,7 @@
 <div id="gel-masthead" class="bg-white mb-3 p-3">
     <div class="container">
       <div class="job-filters">
-          <?php for ($x =1; $x <= 7; $x++) {?>
+          <?php for ($x =1; $x <= 17; $x++) {?>
                 <div class="ml-2 mr-2"><span class="circle">5</span><span>job status</span></div>
           <?php } ?>
       </div>
@@ -41,7 +41,30 @@
 </div>
 <?php endblock()?>
 <?php startblock('page-body');?>
-<div class="card">
+<!-- <div class="card">
+  <div class="row">
+    <div class="col-2 col-lg-1 text-center">
+      Applications
+    </div>
+    <div class="col-10 col-lg-4">
+      Job title
+    </div>
+    <div class="offset-2 offset-lg-0 col-lg-2">Status</div>
+    <div class="offset-2 offset-lg-0 col-lg-2">Job ID</div>
+    <div class="offset-2 offset-lg-0 col-lg-2">Hiring Manager</div>
+    <div class="offset-2 offset-lg-0 col-lg-1">Position</div>
+    <div class="col-2 col-lg-3">
+      <ul class="list-unstyled">
+          <li>2 new applications
+              <a href="#1">View</a>
+          </li>
+          <li>5 applications in Offer approval commenced for more than 3 days<text>.</text>
+              <a href="#">View</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <hr>
   <?php for ($x =1; $x <= 10; $x++) {?>
     <div class="row">
       <div class="col-2 col-lg-1 text-center">
@@ -53,8 +76,8 @@
       <div class="offset-2 offset-lg-0 col-lg-2">Approved to advertise</div>
       <div class="offset-2 offset-lg-0 col-lg-2">#J9827364</div>
       <div class="offset-2 offset-lg-0 col-lg-2">Aaron Hardy</div>
-      <div class="offset-2 offset-lg-0 col-lg-1">5 (9)</div>
-      <!-- <div class="col-2 col-lg-3">
+      <div class="offset-2 offset-lg-0 col-lg-1">5</div>
+      <div class="col-2 col-lg-3">
         <ul class="list-unstyled">
             <li>2 new applications
                 <a href="#1">View</a>
@@ -63,9 +86,66 @@
                 <a href="#">View</a>
             </li>
         </ul>
-      </div> -->
+      </div>
     </div>
     <hr>
   <?php } ?>
-</div>
+</div> -->
+
+<table class="table table-striped table-hover mt-3">
+    <caption class="sr-only">List of jobs</caption>
+    <thead>
+      <tr>
+        <th>Applications</th>
+        <th scope="col">Job Title</th>
+        <th scope="col">Job ID</th>
+        <th scope="col">Recruiter
+        </th>
+        <th scope="col">Status
+        </th>
+        <th scope="col">Positions</th>
+        <th scope="col">Vacancies</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php for ($x =1; $x <= 10; $x++) {?>
+      <tr>
+        <td><i class="gel-icon-user gel-icon-lg"></i> <span class="text-20">12</span></td>
+        <th scope="row"><h5><a href="#"><i class="gel-icon-info-pointer"></i></a> <a href="#">International Consultant on Early Childhood Development</a></th>
+        <td data-title="Job ID">
+          <?php echo $x * 2  + 53302042 ?>
+        </td>
+        <td data-title="Recruiter">Peter Smith</td>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
+        <td data-title="Opening date">12</td>
+        <td data-title="Closing date">8</td>
+        <td data-title="View">
+        </td>
+      </tr>
+      <tr>
+        <td><i class="gel-icon-user gel-icon-lg"></i> <span class="text-20">12</span></td>
+        <th scope="row"><h5><a href="#"><i class="gel-icon-info-pointer"></i></a> <a href="#">Retail Customer Service Officer </a></th>
+        <td data-title="Job ID">
+          <?php echo $x + 53302042 ?>
+        </td>
+        <td data-title="Recruiter"> Arnold Schwarzenegger </td>
+        <td data-title="Status">
+          Approved to advertise
+        </td>
+
+        <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
+        <td data-title="Opening date">9</td>
+        <td data-title="Closing date">6</td>
+        <td data-title="View">
+          <a aria-label="View application" href="#<?php echo $x ?>"><i class="text-red gel-icon-lg gel-icon-bullhorn"></i></a>
+        </td>
+      </tr>
+    <?php } ?>
+    </tbody>
+  </table>
+
 <?php endblock()?>
