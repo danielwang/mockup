@@ -9242,13 +9242,27 @@ select.form-control {
 
 .nav-tabs-line .nav-link {
   color: #415365;
-  font-size: 1rem; }
+  font-size: 1rem;
+  padding-bottom: 1rem; }
   .nav-tabs-line .nav-link.active {
-    border-bottom: 4px solid currentcolor;
-    color: #00a1e5; }
+    color: #00a1e5;
+    position: relative; }
+  .nav-tabs-line .nav-link.active::after {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-left: 1px solid #97a3b9;
+    border-top: 1px solid #97a3b9;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    background: white;
+    left: calc(50%);
+    margin-left: -5px; }
   .nav-tabs-line + .tab-content {
     padding: 1rem;
-    border-top: 1px solid #66819c; }
+    border-top: 1px solid #97a3b9; }
 
 .nav-tabs {
   border-width: 2px; }
