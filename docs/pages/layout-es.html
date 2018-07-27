@@ -191,7 +191,7 @@
         <i aria-hidden="true" title="beta switch" class="gel-icon-logo"></i>
         Switch back to Live
       </a>
-      <a class="dropdown-item" href="#">
+      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#feedbackModal">
         <i aria-hidden="true" title="beta switch" class="gel-icon-beta-feedback"></i>
         Give Beta feedback
       </a>
@@ -214,7 +214,7 @@
       <i class="gel-icon-print" aria-hidden="true"></i>
       Print
     </a>
-    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal">
+    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal2">
       <i class="gel-icon-feedback" aria-hidden="true"></i>
       Feedback</a>
     <a href="#" class="dropdown-item" title="Knowledge portal">
@@ -375,6 +375,7 @@
       </div>
     </div>
   </footer>
+<!-- BETA feedback -->
 <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -424,6 +425,112 @@
           <div class="col-12">
             <div class="form-group mt-3">
               <label>Why did you give this rating?</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label>Attach a screen capture of your feedback below:</label>
+              <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
+                <div class="dz-message needsclick gray">
+                  <h3 class="text-muted">Drag &amp; Drop files here</h3>
+                  <span class="note needsclick">
+                    Or
+                    <a href="#_">browse</a>
+                    from local drive
+                  </span>
+                  <p>
+                    <small>Max 5MB in size, Word, PDF, or JPG formats</small>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Alpha feedback -->
+<div class="modal fade" id="feedbackModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel2">Alpha Feedback</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">
+          Welcome and thanks in advance for taking the time to provide us feedback on your experience.
+        </p>
+        <div class="row">
+          <div class="col-12 mt-2 mb-1">
+            <h4>What do you think of the new design?</h4>
+          </div>
+          <div class="col-sm-8">
+            <fieldset>
+              <legend class="sr-only">Segmented Control</legend>
+              <div class="btn-group btn-group-toggle segmented-control">
+                <label>
+                  <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+                  <span class="btn btn-ctrl">
+                    Much better
+                  </span>
+                </label>
+                <label>
+                  <input type="radio" name="options-seg" id="option2" autocomplete="off">
+                  <span class="btn btn-ctrl">
+                    No difference
+                  </span>
+                </label>
+                <label>
+                  <input type="radio" name="options-seg" id="option3" autocomplete="off">
+                  <span class="btn btn-ctrl">
+                    Worse
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-12">
+            <div class="form-group mt-2">
+              <label>Do you have any additional feedback?</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="col-12 mt-3 mb-2">
+            <h4>
+              Is there anything that the seems to be 'broken' with the introduction of the new design?</h4>
+          </div>
+          <div class="col-sm-4">
+            <fieldset>
+              <legend class="sr-only">Segmented Control</legend>
+              <div class="btn-group btn-group-toggle segmented-control">
+                <label>
+                  <input type="radio" name="options-yn" id="option1" autocomplete="off" checked="checked">
+                  <span class="btn btn-ctrl">
+                    Yes
+                  </span>
+                </label>
+                <label>
+                  <input type="radio" name="options-yn" id="option2" autocomplete="off">
+                  <span class="btn btn-ctrl">
+                    No
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-12">
+            <div class="form-group mt-1">
+              <label>Please provide details of what is broken</label>
               <textarea class="form-control" rows="4"></textarea>
             </div>
           </div>
