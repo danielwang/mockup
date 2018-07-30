@@ -21,131 +21,180 @@
 <?php endblock() ?>
 <?php startblock('page-tabs') ?>
   <ul class="page-tabs nav" role="tablist">
-    <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#configure" role="tab" aria-controls="Tab one" aria-selected="true">Current Jobs</a></li>
-    <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#settings" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#kp" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#kp" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a></li>
+    <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="Tab one" aria-selected="true">Current Jobs</a></li>
+    <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a></li>
+    <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a></li>
+    <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a></li>
+    <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a></li>
   </ul>
 <?php endblock() ?>
 
-<?php startblock('page-top');?>
-<div id="gel-masthead" class="bg-white mb-3 p-3">
-    <div class="container">
-      <div class="job-filters">
-          <?php for ($x =1; $x <= 17; $x++) {?>
-                <div class="ml-2 mr-2"><span class="circle">5</span><span>job status</span></div>
-          <?php } ?>
-      </div>
-    </div>
-</div>
-<?php endblock()?>
 <?php startblock('page-body');?>
-<!-- <div class="card">
-  <div class="row">
-    <div class="col-2 col-lg-1 text-center">
-      Applications
+
+<div class="tab-content">
+  <!-- ****************  current jobs ********************-->
+  <div class="tab-pane d-print-block show active" id="current-jobs" role="tabpanel" aria-labelledby="applications-tab">
+    <?php startblock('page-top');?>
+    <div id="gel-masthead" class="mb-3 p-3">
+        <div class="container">
+          <div class="job-filters">
+              <?php for ($x =1; $x <= 17; $x++) {?>
+                    <div class="ml-2 mr-2"><span class="circle">5</span><span>job status</span></div>
+              <?php } ?>
+          </div>
+        </div>
     </div>
-    <div class="col-10 col-lg-4">
-      Job title
-    </div>
-    <div class="offset-2 offset-lg-0 col-lg-2">Status</div>
-    <div class="offset-2 offset-lg-0 col-lg-2">Job ID</div>
-    <div class="offset-2 offset-lg-0 col-lg-2">Hiring Manager</div>
-    <div class="offset-2 offset-lg-0 col-lg-1">Position</div>
-    <div class="col-2 col-lg-3">
-      <ul class="list-unstyled">
-          <li>2 new applications
-              <a href="#1">View</a>
-          </li>
-          <li>5 applications in Offer approval commenced for more than 3 days<text>.</text>
-              <a href="#">View</a>
-          </li>
-      </ul>
+    <?php endblock()?>
+    <div class="card">
+      <div class="row">
+        <div class="col-3 col-lg-2 text-center"><h6>Applications</h6></div>
+        <div class="col-9 col-md-5 col-lg-4"><h5>Jobs</h5></div>
+        <div class="col-9 col-md-5 col-lg-2"><h5>Status</h5></div>
+        <div class="col-md-3 col-lg-2"><h5>Recruiter</h5></div>
+        <div class="col-md-3 col-lg-1 text-nowrap"><h5>Positions</h5></div>
+        <div class="col-md-3 col-lg-1 text-nowrap"><h5>Vacancies</h5></div>
+      </div>
+
+    <?php for ($x =1; $x <= 10; $x++) {?>
+      <hr>
+      <div class="row mb-2">
+        <div class="col-3 col-lg-2 d-flex align-items-center justify-content-center">
+          <i class="gel-icon-user gel-icon-lg"></i> <span class="text-20">18</span>
+          <span class="badge badge-warning">6 new</span>
+
+        </div>
+        <div class="col-9 col-md-5 col-lg-4">
+          <h5><a href="#"><i class="gel-icon-info-pointer"></i></a>
+              <a href="#">Consultant on Early Childhood Development</a> </h5>
+          <!-- <p><small>53302044</small></p> -->
+        </div>
+        <div class="col-md-3 col-lg-2">Approved to advertise</div>
+        <div class="col-md-3 col-lg-2">Arnold Schwarzenegger</div>
+        <div class="col-md-3 col-lg-1 text-center">12</div>
+        <div class="col-md-3 col-lg-1 text-center">10</div>
+        <div class="offset-lg-2 col-lg-10">
+          <ul class="list-unstyled">
+            <li><i class="gel-icon-bullhorn"></i> <a class="link-alt" href="#">2 applications are incomplete for more than 5 days.</a></li>
+            <li><i class="gel-icon-bullhorn"></i><a class="link-alt" href="#"> This has been incomplete for more than 1 day</a></li>
+          </ul>
+        </div>
+      </div>
+    <?php } ?>
     </div>
   </div>
-  <hr>
-  <?php for ($x =1; $x <= 10; $x++) {?>
+  <!-- ****************  tasks ********************-->
+  <div class="tab-pane d-print-block show" id="tasks" role="tabpanel" aria-labelledby="applications-tab">
     <div class="row">
-      <div class="col-2 col-lg-1 text-center">
-        <i class="gel-icon-user gel-icon-2x"></i> <span class="text-20">12</span>
+      <div class="col-md-6">
+          <h3>You tasks</h3>
       </div>
-      <div class="col-10 col-lg-4">
-        <h5><a href="#"><i class="gel-icon-info-pointer"></i></a> <a href="#">Customer Sales &amp; Service Consultant</a></h5>
-      </div>
-      <div class="offset-2 offset-lg-0 col-lg-2">Approved to advertise</div>
-      <div class="offset-2 offset-lg-0 col-lg-2">#J9827364</div>
-      <div class="offset-2 offset-lg-0 col-lg-2">Aaron Hardy</div>
-      <div class="offset-2 offset-lg-0 col-lg-1">5</div>
-      <div class="col-2 col-lg-3">
-        <ul class="list-unstyled">
-            <li>2 new applications
-                <a href="#1">View</a>
-            </li>
-            <li>5 applications in Offer approval commenced for more than 3 days<text>.</text>
-                <a href="#">View</a>
-            </li>
-        </ul>
+      <div class="col-md-6">
+        <h3>Assigned Tasks</h3>
       </div>
     </div>
-    <hr>
-  <?php } ?>
-</div> -->
+      <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card"></div>
+        </div>
+      </div>
+  </div>
+  <!-- ****************  workbench ********************-->
+  <div class="tab-pane d-print-block show" id="workbench" role="tabpanel" aria-labelledby="applications-tab">
+    <div class="row">
+      <div class="col-md-9">
+          <div class="card">
+            <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
+               <div class="dz-message needsclick gray">
+                 <h3 class="text-muted">Drag &amp; Drop files here</h3>
+                 <span class="note needsclick">
+                   Or
+                   <a href="#_">browse</a>
+                   from local drive
+                 </span>
+                 <p>
+                   <small>Max 5MB in size, Word, PDF, or JPG formats</small>
+                 </p>
+               </div>
+             </form>
 
-<table class="table table-striped table-hover mt-3">
-    <caption class="sr-only">List of jobs</caption>
-    <thead>
-      <tr>
-        <th>Applications</th>
-        <th scope="col">Job Title</th>
-        <th scope="col">Job ID</th>
-        <th scope="col">Recruiter
-        </th>
-        <th scope="col">Status
-        </th>
-        <th scope="col">Positions</th>
-        <th scope="col">Vacancies</th>
-        <th scope="col">Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php for ($x =1; $x <= 10; $x++) {?>
-      <tr>
-        <td><i class="gel-icon-user gel-icon-lg"></i> <span class="text-20">12</span></td>
-        <th scope="row"><h5><a href="#"><i class="gel-icon-info-pointer"></i></a> <a href="#">International Consultant on Early Childhood Development</a></th>
-        <td data-title="Job ID">
-          <?php echo $x * 2  + 53302042 ?>
-        </td>
-        <td data-title="Recruiter">Peter Smith</td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
-        <td data-title="Opening date">12</td>
-        <td data-title="Closing date">8</td>
-        <td data-title="View">
-        </td>
-      </tr>
-      <tr>
-        <td><i class="gel-icon-user gel-icon-lg"></i> <span class="text-20">12</span></td>
-        <th scope="row"><h5><a href="#"><i class="gel-icon-info-pointer"></i></a> <a href="#">Retail Customer Service Officer </a></th>
-        <td data-title="Job ID">
-          <?php echo $x + 53302042 ?>
-        </td>
-        <td data-title="Recruiter"> Arnold Schwarzenegger </td>
-        <td data-title="Status">
-          Approved to advertise
-        </td>
-
-        <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
-        <td data-title="Opening date">9</td>
-        <td data-title="Closing date">6</td>
-        <td data-title="View">
-          <a aria-label="View application" href="#<?php echo $x ?>"><i class="text-red gel-icon-lg gel-icon-bullhorn"></i></a>
-        </td>
-      </tr>
-    <?php } ?>
-    </tbody>
-  </table>
-
+             <table class="table mt-5">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <div class="alert">
+          <h5>Hints</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure. </p>
+          <p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ****************  tasks ********************-->
+  <div class="tab-pane d-print-block show" id="manager-activities" role="tabpanel" aria-labelledby="applications-tab">
+  </div>
+  <!-- ****************  tasks ********************-->
+  <div class="tab-pane d-print-block show" id="performed-actions" role="tabpanel" aria-labelledby="applications-tab">
+  </div>
 <?php endblock()?>

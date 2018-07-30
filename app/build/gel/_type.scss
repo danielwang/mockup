@@ -1,8 +1,9 @@
 .link-alt{
   color: $link-color-alt;
-
+  @include font-regular();
   &:hover{
     color: $link-color-alt-hover;
+    text-decoration: underline;
   }
 }
 
@@ -23,7 +24,7 @@ dd{
 
 b, strong{
   font-weight: 400;
-  @include font-semibold();
+  @include font-bold();
 }
 
 sup{
