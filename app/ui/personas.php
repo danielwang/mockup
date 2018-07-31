@@ -1,4 +1,4 @@
-<?php $pageTitle = "Personas"; $parent = "ui"; include '../base-ui.php'; ?>
+<?php $pageTitle = "Personas"; $parent = "ui"; $hasSubPage = false; include '../base-ui.php'; ?>
 
 <?php startblock('page-tagline');?>
 

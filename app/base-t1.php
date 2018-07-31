@@ -53,20 +53,9 @@
       </header>
   <?php endblock()?>
  <!-- ************  page sub pages ************ -->
- <nav id="gel-subpages" role="navigation">
-    <div class="container">
-      <?php startblock('page-tabs') ?>
-      <ul class="page-tabs nav" role="tablist">
-        <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="Tab one" aria-selected="true">Tab one</a></li>
-        <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="Tab two" aria-selected="">Tab two</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="Tab three" aria-selected="">Tab Three</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="Tab four" aria-selected="">Tab four</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-5" data-toggle="tab" href="#tab5" role="tab" aria-controls="Tab five" aria-selected="">Tab five</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="Tab six" aria-selected="">Tab six</a></li>
-      </ul>
-      <?php endblock() ?>
-    </div>
-  </nav>
+  <?php startblock('page-tabs') ?>
+  <?php endblock() ?>
+
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
     <?php startblock('page-top')?>

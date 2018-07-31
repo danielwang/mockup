@@ -5,12 +5,16 @@
 <?php endblock() ?>
 
 <?php startblock('page-tabs') ?>
-  <ul class="page-tabs nav" role="tablist">
-    <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#configure" role="tab" aria-controls="Tab one" aria-selected="true">Configure</a></li>
-    <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#settings" role="tab" aria-controls="Tab two" aria-selected="false">Settings</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#kp" role="tab" aria-controls="Tab three" aria-selected="false">Knowledge Portal</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Client Bundles</a></li>
-  </ul>
+<nav id="gel-subpages" role="navigation">
+   <div class="container">
+      <ul class="page-tabs nav" role="tablist">
+        <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#configure" role="tab" aria-controls="Tab one" aria-selected="true">Configure</a></li>
+        <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#settings" role="tab" aria-controls="Tab two" aria-selected="false">Settings</a></li>
+        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#kp" role="tab" aria-controls="Tab three" aria-selected="false">Knowledge Portal</a></li>
+        <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Client Bundles</a></li>
+      </ul>
+    </div>
+</nav>    
 <?php endblock() ?>
 
 <?php startblock('page-body');?>

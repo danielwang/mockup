@@ -74,19 +74,28 @@
     </div>
   </header>
   <!-- ************  page sub pages ************ -->
-   <nav id="gel-subpages" role="navigation">
-      <div class="container">
+  <?php if ($hasSubPage) { startblock('page-tabs') ?>
+  <nav id="gel-subpages" role="navigation">
+     <div class="container">
         <ul class="page-tabs nav" role="tablist">
-         <?php startblock('page-tabs') ?>
-         <?php endblock() ?>
-        </ul>
-      </div>
-   </nav>
+          <?php pageTabs($pageTitle);  ?>
+      </ul>
+    </div>
+  </nav>
+  <?php endblock(); }?>
 <!-- page body -->
 	<main id="gel-main">
 		<section class="container">
-			<?php startblock('page-body')?>
-			<?php endblock()?>
+      <?php
+      if ($hasSubPage){  // sub pages tab contents
+        echo "<div class='tab-content'>";
+        showMarkup($pageTitle, 'html');
+        echo "</div>";
+      } else { // content
+        startblock('page-body');
+			  endblock();
+      }
+      ?>
 		</section>
 	</main>
   <footer id="gel-footer" role="footer">
