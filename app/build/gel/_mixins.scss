@@ -59,19 +59,17 @@
 //
 
 @mixin scroll-y($bg-color) {
-    // overflow-y: auto;
-    // background: linear-gradient($bg-color 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), $bg-color 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
-		// background: -webkit-linear-gradient($bg-color 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), $bg-color 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
-		// background: -moz-linear-gradient($bg-color 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), $bg-color 70%) 0 100%, -moz-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -moz-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
-		// background-repeat: no-repeat;
-    // background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
-    // background-attachment: local, local, scroll, scroll;
-    // background-color: transparent;
-		background:
-			linear-gradient($bg-color 30%, hsla(0,0%,100%, 0)),
-			linear-gradient(hsla(0,0%,100%,0) 10px, $bg-color 70%) bottom,
-			radial-gradient(at top, rgba(0,0,0,0.2), transparent 70%),
-			radial-gradient(at bottom, rgba(0,0,0,0.2), transparent 70%) bottom;
+    overflow-y: auto;
+    background: linear-gradient($bg-color 30%, $bg-color), linear-gradient($bg-color, $bg-color 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+		background: -webkit-linear-gradient($bg-color 30%, $bg-color), -webkit-linear-gradient($bg-color, $bg-color 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+		background: -moz-linear-gradient($bg-color 30%, $bg-color), -webkit-linear-gradient($bg-color, $bg-color 70%) 0 100%, -moz-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -moz-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+    background-color: transparent;
+
+		// background:
+		// 	linear-gradient($bg-color 30%, $bg-color),
+		// 	linear-gradient($bg-color 30%, $bg-color 70%) bottom,
+		// 	radial-gradient(at top, rgba(0,0,0,0.4), transparent 70%),
+		// 	radial-gradient(at bottom, rgba(0,0,0,0.4), transparent 70%) bottom;
 		background-repeat:no-repeat;
 		background-size: 100% 20px, 100% 20px, 100% 10px, 100% 10px;
 		background-attachment:local, local, scroll, scroll;

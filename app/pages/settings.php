@@ -10,11 +10,18 @@
       <ul class="page-tabs nav" role="tablist">
         <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#configure" role="tab" aria-controls="Tab one" aria-selected="true">Configure</a></li>
         <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#settings" role="tab" aria-controls="Tab two" aria-selected="false">Settings</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#kp" role="tab" aria-controls="Tab three" aria-selected="false">Knowledge Portal</a></li>
         <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Client Bundles</a></li>
       </ul>
     </div>
-</nav>    
+</nav>
+<?php endblock() ?>
+
+<?php startblock('page-actions') ?>
+  <span class="item">
+    <a class="text-center" target="_blank" href="https://knowledgeportal.pageuppeople.com" title="Knowledge portal">
+      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i> <span>Knowledge portal</span>
+    </a>
+  </span>
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
@@ -27,13 +34,13 @@
         <legend class="sr-only">Home or Tags</legend>
         <div class="btn-group btn-group-toggle segmented-control">
           <label>
-            <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+            <input type="radio" name="options-home-tag" id="option1" autocomplete="off" checked>
             <span class="btn btn-ctrl btn">
               Home
             </span>
           </label>
           <label>
-            <input type="radio" name="options-seg" id="option2" autocomplete="off">
+            <input type="radio" name="options-home-tag" id="option2" autocomplete="off">
             <span class="btn btn-ctrl btn">
               Tags
             </span>

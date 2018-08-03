@@ -10,19 +10,19 @@
       <legend class="sr-only">visibility</legend>
       <div class="btn-group btn-group-toggle segmented-control">
         <label>
-          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+          <input type="radio" name="options-v" id="option1" autocomplete="off" checked="checked">
           <span class="btn btn-ctrl">
             My jobs
           </span>
         </label>
         <label>
-          <input type="radio" name="options-seg" id="option2" autocomplete="off">
+          <input type="radio" name="options-v" id="option2" autocomplete="off">
           <span class="btn btn-ctrl">
             Team jobs
           </span>
         </label>
         <label>
-          <input type="radio" name="options-seg" id="option3" autocomplete="off">
+          <input type="radio" name="options-v" id="option3" autocomplete="off">
           <span class="btn btn-ctrl">
             All jobs
           </span>

@@ -15,7 +15,8 @@
   -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
   transition-timing-function: cubic-bezier(0.7,0,0.3,1);
   z-index: $zindex-fixed;
-  @include media-breakpoint-up(md) {
+  -webkit-overflow-scrolling: touch;
+  @include media-breakpoint-up(xl) {
     position: fixed;
   }
 
@@ -96,10 +97,9 @@
   }
 
   menu {
-    margin-top: $spacer * 2;
-    padding: 0 $spacer * 3;
-    @include media-breakpoint-up(md) {
-      margin-top: $navbar-height;
+    margin-top: $navbar-height;
+    padding: 0 $spacer * 3 $spacer * 2;
+    @include media-breakpoint-up(xl) {
       position: sticky;
       top: $navbar-height;
       height: calc(100vh - #{$navbar-height});
