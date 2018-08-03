@@ -8767,8 +8767,9 @@ select.form-control {
   transition: transform 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  z-index: 1030; }
-  @media (min-width: 768px) {
+  z-index: 1030;
+  -webkit-overflow-scrolling: touch; }
+  @media (min-width: 1200px) {
   #gel-menu {
     position: fixed; } }
   #gel-menu.open {
@@ -8823,11 +8824,10 @@ select.form-control {
   #gel-menu .user-menu #user-menu-ft a {
     color: white; }
   #gel-menu menu {
-    margin-top: 2rem;
-    padding: 0 3rem; }
-  @media (min-width: 768px) {
+    margin-top: 3.75rem;
+    padding: 0 3rem 2rem; }
+  @media (min-width: 1200px) {
     #gel-menu menu {
-      margin-top: 3.75rem;
       position: sticky;
       top: 3.75rem;
       height: calc(100vh - 3.75rem);
@@ -8835,7 +8835,11 @@ select.form-control {
       overflow-x: hidden;
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
-      background: linear-gradient(#3d485b 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0) 10px, #3d485b 70%) bottom, radial-gradient(at top, rgba(0, 0, 0, 0.2), transparent 70%), radial-gradient(at bottom, rgba(0, 0, 0, 0.2), transparent 70%) bottom;
+      overflow-y: auto;
+      background: linear-gradient(#3d485b 30%, #3d485b), linear-gradient(#3d485b, #3d485b 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background: -webkit-linear-gradient(#3d485b 30%, #3d485b), -webkit-linear-gradient(#3d485b, #3d485b 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background: -moz-linear-gradient(#3d485b 30%, #3d485b), -webkit-linear-gradient(#3d485b, #3d485b 70%) 0 100%, -moz-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -moz-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+      background-color: transparent;
       background-repeat: no-repeat;
       background-size: 100% 20px, 100% 20px, 100% 10px, 100% 10px;
       background-attachment: local, local, scroll, scroll; } }
