@@ -35,7 +35,6 @@
 .dropdown-menu{
   padding: $spacer * 1.25;
   margin-top: $spacer * 1.5;
-  border: 0;
 
   &:after {
     position: absolute;
@@ -83,7 +82,7 @@
 
   .dropdown-menu{
     bottom: 25px;
-    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, .175);
+    box-shadow: 0 -3px 4px rgba(8, 8, 8, .11);
 
     &:after{
       top: auto;
