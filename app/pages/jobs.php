@@ -61,116 +61,116 @@
       <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"><i aria-hidden="true" class="gel-icon-settings"></i> Settings </button>
   </div>
 </div>
+<div class="table-responsive">
+  <table class="table table-striped table-hover mt-3">
+      <caption class="sr-only">List of jobs</caption>
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Job Title</th>
+          <th scope="col">Job ID</th>
+          <th scope="col">Recruiter
+          </th>
+          <th scope="col">Status
+          </th>
+          <!-- <th scope="col">Applications</th> -->
+          <th scope="col">Opening date</th>
+          <th scope="col">Closing date</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php for ($x =1; $x <= 10; $x++) {?>
+        <tr>
+          <th scope="row">International Consultant on Early Childhood Development</th>
+          <td data-title="Job ID">
+            <?php echo $x * 2  + 53302042 ?>
+          </td>
+          <td data-title="Recruiter">Peter Smith</td>
+          <td data-title="Status">
+            Offer Made
+          </td>
+          <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
+          <td data-title="Opening date">Jul 14, 2017</td>
+          <td data-title="Closing date">Jan 23, 2018</td>
+          <td data-title="Actions">
+            <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application" class="gel-icon-lg gel-icon-view"></i></a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Retail Customer Service Officer </th>
+          <td data-title="Job ID">
+            <?php echo $x + 53302042 ?>
+          </td>
+          <td data-title="Recruiter"> Arnold Schwarzenegger </td>
+          <td data-title="Status">
+            Approved to advertise
+          </td>
 
-<table class="table table-striped table-hover mt-3">
-    <caption class="sr-only">List of jobs</caption>
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Job Title</th>
-        <th scope="col">Job ID</th>
-        <th scope="col">Recruiter
-        </th>
-        <th scope="col">Status
-        </th>
-        <!-- <th scope="col">Applications</th> -->
-        <th scope="col">Opening date</th>
-        <th scope="col">Closing date</th>
-        <th scope="col">Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php for ($x =1; $x <= 10; $x++) {?>
-      <tr>
-        <th scope="row">International Consultant on Early Childhood Development</th>
-        <td data-title="Job ID">
-          <?php echo $x * 2  + 53302042 ?>
-        </td>
-        <td data-title="Recruiter">Peter Smith</td>
-        <td data-title="Status">
-          Offer Made
-        </td>
-        <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="Actions">
-          <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application" class="gel-icon-lg gel-icon-view"></i></a>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Retail Customer Service Officer </th>
-        <td data-title="Job ID">
-          <?php echo $x + 53302042 ?>
-        </td>
-        <td data-title="Recruiter"> Arnold Schwarzenegger </td>
-        <td data-title="Status">
-          Approved to advertise
-        </td>
+          <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
+          <td data-title="Opening date">Jul 14, 2017</td>
+          <td data-title="Closing date">Jan 23, 2018</td>
+          <td data-title="Actions">
+            <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application"class="gel-icon-lg gel-icon-view"></i></a>
+          </td>
+        </tr>
+      <?php } ?>
+      </tbody>
+    </table>
 
-        <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
-        <td data-title="Opening date">Jul 14, 2017</td>
-        <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="Actions">
-          <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application"class="gel-icon-lg gel-icon-view"></i></a>
-        </td>
-      </tr>
-    <?php } ?>
-    </tbody>
-  </table>
+    <nav aria-label="Search results pages">
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <a class="page-link" href="#">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="#">2
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
 
-  <nav aria-label="Search results pages">
-    <ul class="pagination justify-content-end">
-      <li class="page-item">
-        <a class="page-link" href="#">Previous</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="#">1</a>
-      </li>
-      <li class="page-item active">
-        <a class="page-link" href="#">2
-          <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="#">3</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="#">Next</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel">Settings</h2>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p class="lead">Select the columns you wish to add/remove</p>
-          <div class="row">
-            <?php for ($c =1; $c <= 2; $c++) {?>
-                <div class="col-6">
-                  <?php for ($i =1; $i <= 5; $i++) {?>
-                    <div class="checkbox checkbox-default">
-                      <input type="checkbox" checked id="<?php echo $c . '-' .$i ?>">
-                      <label for="<?php echo $c . '-' . $i ?>">
-                        Column <?php echo $c . '-' . $i ?>
-                      </label>
-                    </div>
-                  <?php } ?>
-                </div>
-            <?php } ?>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">Settings</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
+            </button>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Apply</button>
+          <div class="modal-body">
+            <p class="lead">Select the columns you wish to add/remove</p>
+            <div class="row">
+              <?php for ($c =1; $c <= 2; $c++) {?>
+                  <div class="col-6">
+                    <?php for ($i =1; $i <= 5; $i++) {?>
+                      <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="<?php echo $c . '-' .$i ?>">
+                        <label for="<?php echo $c . '-' . $i ?>">
+                          Column <?php echo $c . '-' . $i ?>
+                        </label>
+                      </div>
+                    <?php } ?>
+                  </div>
+              <?php } ?>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Apply</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
+</div>
 <?php endblock() ?>
