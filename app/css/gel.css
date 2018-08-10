@@ -7435,6 +7435,8 @@ a {
   font-family: 'Proxima Nova Semibold';
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease; }
+  a:focus {
+    outline-offset: 3px; }
 
 .breadcrumb > li a, .list-group-item a {
   color: #415365; }

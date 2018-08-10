@@ -91,7 +91,7 @@
       <div class="row">
         <div class="col-md-6">
             <h3>My tasks</h3>
-            <div class="card">
+            <div class="card h-100">
               <table class="table">
                 <thead>
                   <tr>
@@ -119,13 +119,24 @@
                     <td colspan="2">Larry the Bird</td>
                     <td>@twitter</td>
                   </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
         </div>
         <div class="col-md-6">
           <h3>Assigned Tasks</h3>
-          <div class="card">
+          <div class="card h-100 d-flex justify-content-center align-items-center">
             <svg width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 234.1 214.1" style="enable-background:new 0 0 234.1 214.1;" xml:space="preserve">
             <style type="text/css">
@@ -155,6 +166,7 @@
             <path class="st2" d="M118,72h39.5c1.5,0,2.6-1.7,2.6-3.9c0-2.2-1.1-3.9-2.5-3.9H118c-1.4,0-2.5,1.7-2.5,3.9
               C115.5,70.3,116.6,72,118,72z"/>
             </svg>
+            <h5 class="mt-4 mb-3 text-muted">There are no task, would you like to add one? </h5>
           </div>
         </div>
       </div>

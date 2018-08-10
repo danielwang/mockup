@@ -19,7 +19,7 @@
 <?php startblock('page-actions') ?>
   <span class="item">
     <a class="text-center" target="_blank" href="https://knowledgeportal.pageuppeople.com" title="Knowledge portal">
-      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i> <span>Knowledge portal</span>
+      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i> <span>Knowledge Portal</span>
     </a>
   </span>
 <?php endblock() ?>

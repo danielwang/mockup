@@ -58,6 +58,10 @@ a{
   @include font-semibold();
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+
+  &:focus {
+    outline-offset: 3px;
+  }
 }
 
 %link-alt{
