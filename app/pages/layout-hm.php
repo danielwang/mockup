@@ -18,8 +18,8 @@
       <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description">
       <div class="card-body text-16">
         <h4 class="mb-4">Position Description</h4>
-        <p class="card-text"><a class="text-20" href="empty">0</a> <a class="link-alt" href="empty">lorem ipsum dolor</a></p>
-        <p class="card-text"><a class="text-20" href="#">21</a><a class="link-alt" href="jobs">ametetur adipiscing</a></p>
+        <p class="card-text"><a href="empty"><span class="text-20">1</span> lorem ipsum dolor</a></p>
+        <p class="card-text"><a href="#"><span class="text-20"> 21</span> ametetur adipiscing</a></p>
         <p><button title="Manage position descriptions" type="button" class="btn btn-outline-primary btn-block text-truncate">Manage position descriptions</button></p>
       </div>
     </div>
@@ -29,7 +29,7 @@
       <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Jobs">
       <div class="card-body text-16">
         <h4 class="mb-4">Jobs</h4>
-        <p class="card-text"><a class="text-20" href="#">8</a> <a class="link-alt" href="jobs">Requisition</a></p>
+        <p class="card-text"><a href="jobs"><span class="text-20"> 8 </span> Requisition</a></p>
         <p class="card-text"><a class="text-20" href="#">21</a> <a class="link-alt" href="jobs">Team requisition open</a></p>
         <p><button title="Create a job" type="button" class="btn btn-primary btn-block">Create a requisition</button></p>
         <p><button title="Raise a contractor requisition" type="button" class="btn btn-outline-primary btn-block text-truncate">New contractor requisition</button></p>

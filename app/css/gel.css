@@ -316,7 +316,7 @@ h5, .h5 {
   font-size: 1rem; }
 
 h6, .h6 {
-  font-size: 1rem; }
+  font-size: 0.875rem; }
 
 .lead {
   font-size: 1rem;
@@ -3419,8 +3419,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   .page-item.active .page-link {
     z-index: 1;
     color: #415365;
-    background-color: #bcc8d4;
-    border-color: #66819c; }
+    background-color: #ced8e2;
+    border-color: #ced8e2; }
   .page-item.disabled .page-link {
     color: #6c757d;
     pointer-events: none;
@@ -4135,7 +4135,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 1rem;
+  font-size: 0.875rem;
   word-wrap: break-word;
   opacity: 0; }
   .tooltip.show {
@@ -7720,7 +7720,8 @@ label {
   display: flex;
   width: 100%; }
   .segmented-control label {
-    flex-basis: 100%; }
+    flex-basis: 100%;
+    margin-bottom: 0; }
   .segmented-control label .btn-ctrl {
     display: block;
     border-radius: 0;

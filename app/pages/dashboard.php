@@ -20,13 +20,17 @@
   </span>
 <?php endblock() ?>
 <?php startblock('page-tabs') ?>
-  <ul class="page-tabs nav" role="tablist">
-    <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="Tab one" aria-selected="true">Current Jobs</a></li>
-    <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a></li>
-    <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a></li>
-  </ul>
+<nav id="gel-subpages" role="navigation">
+   <div class="container">
+      <ul class="page-tabs nav" role="tablist">
+        <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="Tab one" aria-selected="true">Current Jobs</a></li>
+        <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a></li>
+        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a></li>
+        <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a></li>
+        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a></li>
+      </ul>
+    </div>
+</nav>
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
@@ -48,11 +52,11 @@
     <div class="card">
       <div class="row">
         <div class="col-3 col-lg-2 text-center"><h6>Applications</h6></div>
-        <div class="col-9 col-md-5 col-lg-4"><h5>Jobs</h5></div>
-        <div class="col-9 col-md-5 col-lg-2"><h5>Status</h5></div>
-        <div class="col-md-3 col-lg-2"><h5>Recruiter</h5></div>
-        <div class="col-md-3 col-lg-1 text-nowrap"><h5>Positions</h5></div>
-        <div class="col-md-3 col-lg-1 text-nowrap"><h5>Vacancies</h5></div>
+        <div class="col-9 col-md-5 col-lg-4"><h6>Jobs</h6></div>
+        <div class="col-9 col-md-5 col-lg-2"><h6>Status</h6></div>
+        <div class="col-md-3 col-lg-2"><h6>Recruiter</h6></div>
+        <div class="col-md-3 col-lg-1 text-nowrap"><h6>Positions</h6></div>
+        <div class="col-md-3 col-lg-1 text-nowrap"><h6>Vacancies</h6></div>
       </div>
 
     <?php for ($x =1; $x <= 10; $x++) {?>
@@ -65,7 +69,7 @@
         </div>
         <div class="col-9 col-md-5 col-lg-4">
           <h5><a href="#"><i class="gel-icon-info-pointer"></i></a>
-              <a href="#">Consultant on Early Childhood Development</a> </h5>
+              <a href="job-card">Retail Customer Service Officer</a> </h5>
           <!-- <p><small>53302044</small></p> -->
         </div>
         <div class="col-md-3 col-lg-2">Approved to advertise</div>

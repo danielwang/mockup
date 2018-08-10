@@ -92,8 +92,8 @@
         <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a aria-label="View application" href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-view"></i></a>
+        <td data-title="Actions">
+          <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application" class="gel-icon-lg gel-icon-view"></i></a>
         </td>
       </tr>
       <tr>
@@ -109,8 +109,8 @@
         <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
         <td data-title="Opening date">Jul 14, 2017</td>
         <td data-title="Closing date">Jan 23, 2018</td>
-        <td data-title="View">
-          <a aria-label="View application" href="#<?php echo $x ?>"><i class="gel-icon-lg gel-icon-view"></i></a>
+        <td data-title="Actions">
+          <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application"class="gel-icon-lg gel-icon-view"></i></a>
         </td>
       </tr>
     <?php } ?>
