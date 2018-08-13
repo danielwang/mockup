@@ -41,6 +41,12 @@
       color: $white;
       margin-left: -6px;
       padding: 0;
+      width: 2rem;
+      height: 2rem;
+      transition: transform .2s ease;
+      &:active{
+        transform: scale(0.9);
+      }
     }
 
     .logo {

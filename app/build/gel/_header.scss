@@ -109,11 +109,13 @@
           color: #fff;
           background-color: transparent;
           @include focus-state();
+          opacity: 1;
         }
 
         &:hover {
           color: #fff;
           background-color: transparent;
+          opacity: 1;
         }
 
         &.active {
