@@ -69,10 +69,10 @@ $azure:   #00a1e5 !default;
 $indigo:  #6610f2 !default;
 $purple:  #7E52A0 !default;
 $pink:    #e83e8c !default;
-$red:     #d53d39 !default;
+$red:     #E81700 !default;
 $orange:  #ff6200 !default;
 $yellow:  #E1A931 !default;
-$green:   #317635 !default;
+$green:   #10a746 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $navy:    #142C52 !default;
@@ -791,8 +791,8 @@ $jumbotron-bg:                      $gray-200 !default;
 
 // Cards
 
-$card-spacer-y:                     1.25rem !default;
-$card-spacer-x:                     1.25rem !default;
+$card-spacer-y:                     $spacer !default;
+$card-spacer-x:                     $spacer !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 $border-color !default;

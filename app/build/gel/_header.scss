@@ -3,7 +3,7 @@
 ##{$prefix}-header {
   @include gradient-x($header-bg-start, $header-bg-end);
   color: white;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   -webkit-transition: font-size 0.5s ease;
   -moz-transition: font-size 0.5s ease;
   -o-transition: font-size 0.5s ease;
