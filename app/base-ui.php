@@ -14,10 +14,10 @@
         <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="logo" src="<?php echo ($resURL) ?>images/gel-logo.png" width="60"/><?php endblock() ?> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
       </ul>
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" target="_blank" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
+        <li class="nav-item"><a class="nav-link" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Slack" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
           <i aria-hidden="true" class="gel-icon-lg gel-icon-slack" title="Slack"></i>
         </a></li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/" title="Feedback">
+        <li class="nav-item"><a data-toggle="tooltip" data-placement="bottom" data-original-title="Bootstrap 4" class="nav-link" target="_blank" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/" title="Bootstrap 4">
           <svg width="18" height="18" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" style="
               margin-top: 10px;
           ">
@@ -28,7 +28,7 @@
           </svg>
 
           </a></li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" title="Github">
+        <li class="nav-item"><a class="nav-link" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" title="Github">
             <i class="gel-icon-lg gel-icon-github" aria-hidden="true"></i></a>
       </ul>
     </div>

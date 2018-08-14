@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'gel-icon';
   src:
-    url('icons/gel-icon.ttf?q0w0wf') format('truetype'),
-    url('icons/gel-icon.woff?q0w0wf') format('woff'),
-    url('icons/gel-icon.svg?q0w0wf#gel-icon') format('svg');
+    url('icons/gel-icon.ttf?q0w0wg') format('truetype'),
+    url('icons/gel-icon.woff?q0w0wg') format('woff'),
+    url('icons/gel-icon.svg?q0w0wg#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -393,4 +393,22 @@
 }
 .gel-icon-onboarding:before {
   content: "\e975";
+}
+.gel-icon-clock:before {
+  content: "\e976";
+}
+.gel-icon-close-app:before {
+  content: "\e977";
+}
+.gel-icon-bell:before {
+  content: "\e978";
+}
+.gel-icon-target:before {
+  content: "\e979";
+}
+.gel-icon-team:before {
+  content: "\e97b";
+}
+.gel-icon-control:before {
+  content: "\e97a";
 }

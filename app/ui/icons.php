@@ -86,7 +86,13 @@ function buildSolidIcons(){
     ["cost","cost"],
     ["sourcing","sourcing"],
     ["application","application"],
-    ["onboarding", "onboarding"]
+    ["onboarding", "onboarding"],
+    ["clock","clock"],
+    ["close app","close-app"],
+    ["bell","bell"],
+    ["target","target"],
+    ["team","team"],
+    ["control","control"]
   ];
 }
 
@@ -162,9 +168,9 @@ $lineIcons = buildLineIcons();
           <div class="row">
             <?php for($i = 0; $i < ceil(count($solidIcons)) ; $i++){ ?>
               <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
-                  <div class="card">
+                  <div class="card border-0">
                     <h6><?php echo ucfirst($solidIcons[$i][0]);?></h6>
-                    <p><a href="<?php echo ($resURL) ?>images/SVG/<?php echo $solidIcons[$i][1];?>.svg" download><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></a></p>
+                    <p><a href="<?php echo ($resURL) ?>images/SVG/<?php echo $solidIcons[$i][1];?>.svg" data-toggle="tooltip" data-placement="top" title="Click to download SVG" download><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></a></p>
                     <small><code>.gel-icon-<?php echo $solidIcons[$i][1];?></code></small>
                   </div>
               </div>
@@ -176,7 +182,7 @@ $lineIcons = buildLineIcons();
           <div class="row">
           <?php for($i = 0; $i < ceil(count($lineIcons)) ; $i++){ ?>
             <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
-                <div class="card">
+                <div class="card border-0">
                   <h6><?php echo ucfirst($lineIcons[$i][0]);?></h6>
                   <p><a href="<?php echo ($resURL) ?>images/SVG/<?php echo $lineIcons[$i][1];?>.svg" download><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></a></p>
                   <small><code>.gel-icon-<?php echo $lineIcons[$i][1];?>-o</code></small>

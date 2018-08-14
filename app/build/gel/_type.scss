@@ -3,7 +3,6 @@
   @include font-regular();
   &:hover{
     color: $link-color-alt-hover;
-    text-decoration: underline;
   }
 }
 
@@ -11,6 +10,7 @@
   font-size: $blockquote-font-size;
   margin: 0 0 $spacer * 2 0;
   @include font-light();
+  line-height: 1.25;
 }
 
 dt{

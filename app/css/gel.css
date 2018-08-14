@@ -7449,7 +7449,7 @@ label {
   font-family: 'Proxima Nova Semibold'; }
 
 #gel-main {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   flex: 1 0 auto; }
 
 #gel-footer {
@@ -7748,8 +7748,11 @@ label {
 .card {
   padding: 1rem; }
   .card .illustrations {
-    margin: auto;
+    margin: 0.5rem auto 0;
     width: 3.5rem; }
+  .card .card-text {
+    line-height: 1.25;
+    margin-bottom: 0.5rem; }
 
 .checkbox {
   cursor: default;
@@ -9528,14 +9531,14 @@ select.form-control {
   font-weight: 400;
   font-family: 'Proxima Nova'; }
   .link-alt:hover {
-    color: #00a1e5;
-    text-decoration: underline; }
+    color: #00a1e5; }
 
 .blockquote, .tagline {
   font-size: 1.25rem;
   margin: 0 0 2rem 0;
   font-weight: 400;
-  font-family: 'Proxima Nova Light'; }
+  font-family: 'Proxima Nova Light';
+  line-height: 1.25; }
 
 dt {
   font-size: 1rem;
@@ -10141,7 +10144,7 @@ sub, sup {
 
 @font-face {
   font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wf') format('truetype'), url('icons/gel-icon.woff?q0w0wf') format('woff'), url('icons/gel-icon.svg?q0w0wf#gel-icon') format('svg');
+  src: url('icons/gel-icon.ttf?q0w0wg') format('truetype'), url('icons/gel-icon.woff?q0w0wg') format('woff'), url('icons/gel-icon.svg?q0w0wg#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -10525,3 +10528,21 @@ sub, sup {
 
 .gel-icon-onboarding:before {
   content: "\e975"; }
+
+.gel-icon-clock:before {
+  content: "\e976"; }
+
+.gel-icon-close-app:before {
+  content: "\e977"; }
+
+.gel-icon-bell:before {
+  content: "\e978"; }
+
+.gel-icon-target:before {
+  content: "\e979"; }
+
+.gel-icon-team:before {
+  content: "\e97b"; }
+
+.gel-icon-control:before {
+  content: "\e97a"; }
