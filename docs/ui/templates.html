@@ -34,10 +34,10 @@
         <li class="nav-item"><a class="logo" href="../"> <img alt="logo" src="../images/gel-logo.png" width="60"/> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
       </ul>
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" target="_blank" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
+        <li class="nav-item"><a class="nav-link" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Slack" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
           <i aria-hidden="true" class="gel-icon-lg gel-icon-slack" title="Slack"></i>
         </a></li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/" title="Feedback">
+        <li class="nav-item"><a data-toggle="tooltip" data-placement="bottom" data-original-title="Bootstrap 4" class="nav-link" target="_blank" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/" title="Bootstrap 4">
           <svg width="18" height="18" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" style="
               margin-top: 10px;
           ">
@@ -48,7 +48,7 @@
           </svg>
 
           </a></li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" title="Github">
+        <li class="nav-item"><a class="nav-link" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" title="Github">
             <i class="gel-icon-lg gel-icon-github" aria-hidden="true"></i></a>
       </ul>
     </div>
@@ -158,13 +158,45 @@
     <nav id="gel-subpages" role="navigation">
      <div class="container">
         <ul class="page-tabs nav" role="tablist">
-          <li class="nav-item"><a class="nav-link active" id="empty states-tab" data-toggle="tab" href="#empty states" role="tab" aria-controls="empty states" aria-selected="1">Empty States</a></li><li class="nav-item"><a class="nav-link " id="error pages-tab" data-toggle="tab" href="#error pages" role="tab" aria-controls="error pages" aria-selected="">Error Pages</a></li>      </ul>
+          <li class="nav-item"><a class="nav-link active" id="content loading-tab" data-toggle="tab" href="#content loading" role="tab" aria-controls="content loading" aria-selected="1">Content Loading</a></li><li class="nav-item"><a class="nav-link " id="empty states-tab" data-toggle="tab" href="#empty states" role="tab" aria-controls="empty states" aria-selected="">Empty States</a></li><li class="nav-item"><a class="nav-link " id="error pages-tab" data-toggle="tab" href="#error pages" role="tab" aria-controls="error pages" aria-selected="">Error Pages</a></li>      </ul>
     </div>
   </nav>
   <!-- page body -->
 	<main id="gel-main">
 		<section class="container">
-      <div class='tab-content'><div class="tab-pane active" id="empty states" role="tabpanel" aria-labelledby="page-tab-empty states"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">Empty states provide users with feedback on the reasons behind that fact and what is possible to be done.
+      <div class='tab-content'><div class="tab-pane active" id="content loading" role="tabpanel" aria-labelledby="page-tab-content loading"><div class="row"><div class="col-md-6 col-lg-7"><div class="table-responsive position-relative">
+  <div class="spinner-sm balls-sm absolute-center"></div>
+  <table class="table" style="opacity:0.5">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="empty states" role="tabpanel" aria-labelledby="page-tab-empty states"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">Empty states provide users with feedback on the reasons behind that fact and what is possible to be done.
 </blockquote></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="error pages" role="tabpanel" aria-labelledby="page-tab-error pages"><div class="row"><div class="col-md-6 col-lg-7"></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div></div>		</section>
 	</main>
   <footer id="gel-footer" role="footer">
