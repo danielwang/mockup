@@ -8563,12 +8563,12 @@ select.form-control {
   height: 48px;
   display: inline-block;
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .spinner.spinner-fixed-center-vh {
     position: fixed;
     left: 50vw;
     top: 50vh;
-    z-index: 1;
     margin-left: -24px; }
 
 .spinner-sm {
@@ -8576,12 +8576,12 @@ select.form-control {
   height: 24px;
   display: inline-block;
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .spinner-sm.spinner-fixed-center-vh {
     position: fixed;
     left: 50vw;
     top: 50vh;
-    z-index: 1;
     margin-left: -12px; }
 
 .balls {
@@ -8594,6 +8594,7 @@ select.form-control {
     display: inline-block;
     box-sizing: border-box;
     position: relative;
+    z-index: 1;
     background-color: #0063b0;
     position: absolute;
     top: 0;
@@ -8603,7 +8604,6 @@ select.form-control {
     position: fixed;
     left: 50vw;
     top: 50vh;
-    z-index: 1;
     margin-left: -12px; }
   .balls:after {
     border-radius: 50%;
@@ -8613,6 +8613,7 @@ select.form-control {
     display: inline-block;
     box-sizing: border-box;
     position: relative;
+    z-index: 1;
     background-color: #415365;
     position: absolute;
     bottom: 0;
@@ -8622,7 +8623,6 @@ select.form-control {
     position: fixed;
     left: 50vw;
     top: 50vh;
-    z-index: 1;
     margin-left: -12px; }
 
 .balls-sm {
@@ -8635,6 +8635,7 @@ select.form-control {
     display: inline-block;
     box-sizing: border-box;
     position: relative;
+    z-index: 1;
     background-color: #0063b0;
     position: absolute;
     top: 0;
@@ -8644,7 +8645,6 @@ select.form-control {
     position: fixed;
     left: 50vw;
     top: 50vh;
-    z-index: 1;
     margin-left: -6px; }
   .balls-sm:after {
     border-radius: 50%;
@@ -8654,6 +8654,7 @@ select.form-control {
     display: inline-block;
     box-sizing: border-box;
     position: relative;
+    z-index: 1;
     background-color: #415365;
     position: absolute;
     bottom: 0;
@@ -8663,7 +8664,6 @@ select.form-control {
     position: fixed;
     left: 50vw;
     top: 50vh;
-    z-index: 1;
     margin-left: -6px; }
 /*Balls Spinner Animation*/
 @keyframes balls-animate {
@@ -10171,6 +10171,14 @@ sub, sup {
   cursor: default;
   color: #adb5bd;
   pointer-events: none; }
+
+.absolute-center {
+  margin: auto;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
 
 @media print {
   body, h1, h2, h3, h4, h5, h6, th {

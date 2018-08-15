@@ -3,19 +3,27 @@
     background-color: $value !important;
   }
 }
-
 @each $color, $value in $colors {
   .text-#{$color} {
     color: $value !important;
   }
 }
 
-.dragable{
+.dragable {
   cursor: move;
 }
 
 .disabled {
-   cursor: default;
-   color: $gray-500;
-   pointer-events: none;
+  cursor: default;
+  color: $gray-500;
+  pointer-events: none;
+}
+
+.absolute-center {
+  margin: auto;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
