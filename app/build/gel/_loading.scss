@@ -32,7 +32,7 @@ $speed: 1s; /*Global Mixins*/
   @include bounding-box($boxSize/2);
 }
 
-@mixin balls-variants($ball-size) {
+@mixin balls-variants($ball-size, $speed) {
   animation: balls-animate $speed linear infinite;
   &:before {
     border-radius: 50%;
@@ -57,10 +57,10 @@ $speed: 1s; /*Global Mixins*/
 }
 
 .balls{
-  @include balls-variants($boxSize/2);
+  @include balls-variants($boxSize/2, $speed);
 }
 .balls-sm {
-  @include balls-variants($boxSize/4);
+  @include balls-variants($boxSize/4, $speed);
 }
 
 
