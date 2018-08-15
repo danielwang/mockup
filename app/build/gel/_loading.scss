@@ -5,73 +5,66 @@ $transparent: transparent;
 $boxSize: 48px;
 $speed: 1s; /*Global Mixins*/
 
-@mixin bounding-box($width, $height) {
-  width: $width;
-  height: $height;
+@mixin bounding-box($ball-size) {
+  width: $ball-size;
+  height:$ball-size;
   display: inline-block;
   box-sizing: border-box;
+  position: relative;
+
+  &.spinner-fixed-center-vh{
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    z-index: 1;
+    margin-left: -($ball-size/2);
+  }
 }
+
+
 /*Global Spinner*/
 
 .spinner {
-  @include bounding-box($boxSize, $boxSize);
-  position: relative;
-}
+  @include bounding-box($boxSize);
 
-.balls,
-.balls-sm {
-  animation: balls-animate $speed linear infinite;
 }
-
-.balls:before {
-  border-radius: 50%;
-  content: " ";
-  @include bounding-box($boxSize/2, $boxSize/2);
-  background-color: $primary;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: balls-animate-before $speed ease-in-out infinite;
-}
-
-.balls:after {
-  border-radius: 50%;
-  content: " ";
-  @include bounding-box($boxSize/2, $boxSize/2);
-  background-color: $secondary;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: balls-animate-after $speed ease-in-out infinite;
-}
-/* small */
 
 .spinner-sm {
-  @include bounding-box($boxSize/2, $boxSize/2);
-  position: relative;
+  @include bounding-box($boxSize/2);
 }
 
-.balls-sm:before {
-  border-radius: 50%;
-  content: " ";
-  @include bounding-box($boxSize/4, $boxSize/4);
-  background-color: $primary;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: balls-animate-before $speed ease-in-out infinite;
+@mixin balls-variants($ball-size) {
+  animation: balls-animate $speed linear infinite;
+  &:before {
+    border-radius: 50%;
+    content: " ";
+    @include bounding-box($ball-size);
+    background-color: $primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: balls-animate-before $speed ease-in-out infinite;
+  }
+  &:after {
+    border-radius: 50%;
+    content: " ";
+    @include bounding-box($ball-size);
+    background-color: $secondary;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: balls-animate-after $speed ease-in-out infinite;
+  }
 }
 
-.balls-sm:after {
-  border-radius: 50%;
-  content: " ";
-  @include bounding-box($boxSize/4, $boxSize/4);
-  background-color: $secondary;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: balls-animate-after $speed ease-in-out infinite;
+.balls{
+  @include balls-variants($boxSize/2);
 }
+.balls-sm {
+  @include balls-variants($boxSize/4);
+}
+
+
 /*Balls Spinner Animation*/
 @keyframes balls-animate {
   0% {

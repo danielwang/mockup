@@ -8564,68 +8564,107 @@ select.form-control {
   display: inline-block;
   box-sizing: border-box;
   position: relative; }
+  .spinner.spinner-fixed-center-vh {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    z-index: 1;
+    margin-left: -24px; }
 
-.balls, .balls-sm {
-  animation: balls-animate 1s linear infinite; }
-
-.balls:before {
-  border-radius: 50%;
-  content: " ";
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color: #0063b0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: balls-animate-before 1s ease-in-out infinite; }
-
-.balls:after {
-  border-radius: 50%;
-  content: " ";
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color: #415365;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: balls-animate-after 1s ease-in-out infinite; }
-/* small */
 .spinner-sm {
   width: 24px;
   height: 24px;
   display: inline-block;
   box-sizing: border-box;
   position: relative; }
+  .spinner-sm.spinner-fixed-center-vh {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    z-index: 1;
+    margin-left: -12px; }
 
-.balls-sm:before {
-  border-radius: 50%;
-  content: " ";
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color: #0063b0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: balls-animate-before 1s ease-in-out infinite; }
+.balls {
+  animation: balls-animate 1s linear infinite; }
+  .balls:before {
+    border-radius: 50%;
+    content: " ";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #0063b0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: balls-animate-before 1s ease-in-out infinite; }
+  .balls:before.spinner-fixed-center-vh {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    z-index: 1;
+    margin-left: -12px; }
+  .balls:after {
+    border-radius: 50%;
+    content: " ";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #415365;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: balls-animate-after 1s ease-in-out infinite; }
+  .balls:after.spinner-fixed-center-vh {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    z-index: 1;
+    margin-left: -12px; }
 
-.balls-sm:after {
-  border-radius: 50%;
-  content: " ";
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color: #415365;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: balls-animate-after 1s ease-in-out infinite; }
+.balls-sm {
+  animation: balls-animate 1s linear infinite; }
+  .balls-sm:before {
+    border-radius: 50%;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #0063b0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: balls-animate-before 1s ease-in-out infinite; }
+  .balls-sm:before.spinner-fixed-center-vh {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    z-index: 1;
+    margin-left: -6px; }
+  .balls-sm:after {
+    border-radius: 50%;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #415365;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: balls-animate-after 1s ease-in-out infinite; }
+  .balls-sm:after.spinner-fixed-center-vh {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    z-index: 1;
+    margin-left: -6px; }
 /*Balls Spinner Animation*/
 @keyframes balls-animate {
   0% {
@@ -8876,6 +8915,9 @@ select.form-control {
   #gel-menu ul li a:hover {
     color: #11b1ee;
     margin-left: 8px; }
+
+.modal.show {
+  display: block; }
 
 .modal-header, .modal-body, .modal-footer {
   padding: 1rem 2rem; }
