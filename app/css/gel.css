@@ -10227,7 +10227,7 @@ sub, sup {
 
 @font-face {
   font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wg') format('truetype'), url('icons/gel-icon.woff?q0w0wg') format('woff'), url('icons/gel-icon.svg?q0w0wg#gel-icon') format('svg');
+  src: url('icons/gel-icon.ttf?q0w0wi') format('truetype'), url('icons/gel-icon.woff?q0w0wi') format('woff'), url('icons/gel-icon.svg?q0w0wi#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -10629,3 +10629,9 @@ sub, sup {
 
 .gel-icon-control:before {
   content: "\e97a"; }
+
+.gel-icon-sort-down:before {
+  content: "\e97c"; }
+
+.gel-icon-sort-up:before {
+  content: "\e97d"; }

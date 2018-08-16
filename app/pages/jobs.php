@@ -66,14 +66,14 @@
       <caption class="sr-only">List of jobs</caption>
       <thead class="thead-dark">
         <tr>
-          <th scope="col">Job Title</th>
+          <th scope="col">Job Title </th>
           <th scope="col">Job ID</th>
           <th scope="col">Recruiter
           </th>
           <th scope="col">Status
           </th>
           <!-- <th scope="col">Applications</th> -->
-          <th scope="col">Opening date</th>
+          <th scope="col">Opening date <i class="gel-icon-sort-up"></i></th>
           <th scope="col">Closing date</th>
           <th scope="col">Actions</th>
         </tr>
