@@ -1291,7 +1291,7 @@ pre {
   .table-dark.table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(255, 255, 255, .05); }
   .table-dark.table-hover tbody tr:hover {
-    background-color: rgba(255, 255, 255, .075); }
+    background-color: #536a81; }
 
 @media (max-width: 575.98px) {
         .table-responsive-sm {
@@ -8694,7 +8694,7 @@ select.form-control {
     transform: translate(5px, 5px); } }
 
 #gel-header {
-  background-image: linear-gradient(to right, #0053a3 0%, #018cd1 100%);
+  background-image: linear-gradient(to right, #0053a3 0%, #0053a3 100%);
   background-repeat: repeat-x;
   color: white;
   padding: 1.5rem 0;
@@ -8748,7 +8748,7 @@ select.form-control {
   position: sticky;
   top: 3.75rem;
   z-index: 999;
-  background-image: linear-gradient(to right, #0053a3 0%, #018cd1 100%);
+  background-image: linear-gradient(to right, #0053a3 0%, #0053a3 100%);
   background-repeat: repeat-x; }
   #gel-subpages .page-tabs {
     margin-left: -15px;
@@ -9195,22 +9195,45 @@ select.form-control {
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
     vertical-align: middle;
-    border: 0; }
+    border: 0;
+    line-height: 1.2; }
   .table thead tr th:first-child {
     border-top-left-radius: 0.5rem; }
   .table thead tr th:last-child {
     border-top-right-radius: 0.5rem; }
-  .table.table-striped tbody tr:nth-of-type(odd) {
-    background: white; }
-  .table.table-striped tbody tr:nth-of-type(even) {
-    background: #f8f9fa; }
-  .table tbody tr:last-child th, .table tbody tr:last-child td:first-child {
+  .table thead.thead-sortable th {
+    cursor: pointer;
+    border-left: 1px solid #536a81; }
+  .table thead.thead-sortable th:hover {
+    background-color: #536a81; }
+  .table thead.thead-sortable th a {
+    color: #fff;
+    display: block;
+    position: relative; }
+  .table thead.thead-sortable th a:focus {
+    text-decoration: underline;
+    outline: 0; }
+  .table thead.thead-sortable th a.sort-up:after {
+    content: "\e97d";
+    font-family: "gel-icon";
+    position: absolute;
+    right: 0; }
+  .table thead.thead-sortable th a.sort-down:after {
+    content: "\e97c";
+    font-family: "gel-icon";
+    position: absolute;
+    right: 0; }
+  .table tbody tr:last-child td:first-child, .table tbody tr:last-child th {
     border-bottom-left-radius: 0.5rem; }
   .table tbody tr:last-child td:last-child {
     border-bottom-right-radius: 0.5rem; }
   .table tbody td, .table tbody th {
     vertical-align: middle;
     font-weight: 400; }
+  .table.table-striped tbody tr:nth-of-type(odd) {
+    background: white; }
+  .table.table-striped tbody tr:nth-of-type(even) {
+    background: #f8f9fa; }
 /* *********************************\
  responsive table viewport < 768
  \***********************************/

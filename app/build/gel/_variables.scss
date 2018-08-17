@@ -10,7 +10,7 @@ $navbar-height:         3.75rem;
 
 $menu-bg:               #3D485B;
 $header-bg-start:       #0053a3;
-$header-bg-end:         #018cd1;
+$header-bg-end:         #0053a3;
 
 //== Additional font icons
 //
@@ -442,7 +442,7 @@ $table-head-color:            $gray-700 !default;
 
 $table-dark-bg:               $ctrl-border-color;
 $table-dark-accent-bg:        rgba($white, .05) !default;
-$table-dark-hover-bg:         rgba($white, .075) !default;
+$table-dark-hover-bg:         darken($ctrl-border-color, 9%) !default;
 $table-dark-border-color:     lighten($ctrl, 15%);
 $table-dark-color:            white;
 

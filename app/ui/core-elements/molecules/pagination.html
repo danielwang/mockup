@@ -1,23 +1,86 @@
 <blockquote class="blockquote">
   Preset pagination styles helps divide up large blocks of content on your site or app.
 </blockquote>
+<h3>Pagination</h3>
 <nav aria-label="Search results pages">
   <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#">Previous</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">1</a>
+    <li class="page-item disabled">
+      <a class="page-link" href="#" aria-label="Previous" tabindex="-1">Previous
+      </a>
     </li>
     <li class="page-item active">
-      <a class="page-link" href="#">2
+      <a class="page-link" href="#">1
         <span class="sr-only">(current)</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">3</a>
+      <a class="page-link" href="#">2</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="#">3
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">4</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">5</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">Next</a>
+    </li>
+  </ul>
+</nav>
+
+<nav aria-label="Search results pages">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">7</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">8</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="#">9
+        <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">10</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">11</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">Next</a>
+    </li>
+  </ul>
+</nav>
+
+<nav aria-label="Search results pages">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">16</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">17</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="#">18
+        <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">19</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">20</a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link" href="#" aria-label="Next" tabindex="-1">Next</a>
     </li>
   </ul>
 </nav>
@@ -28,14 +91,14 @@
       <a class="page-link" href="#">Previous</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">1</a>
+      <a class="page-link" href="#">7</a>
     </li>
     <li class="page-item active">
-      <a class="page-link" href="#">2
+      <a class="page-link" href="#">8
         <span class="sr-only">(current)</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">3</a>
+      <a class="page-link" href="#">9</a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">Next</a>
@@ -43,7 +106,11 @@
   </ul>
 </nav>
 
-<p>
+<hr>
+<h3>Pager</h3>
+<!-- <div class="btn-group btn-group-sm segmented-control" role="Pager" aria-label="Pager"> <button type="button" class="btn btn-ctrl"> <i class="gel-icon-angle-left"></i> </button> <button type="button" class="btn btn-ctrl"> <i
+class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
+<p class="d-flex justify-content-between">
   <button type="button" class="btn btn-ctrl">
     <i class="gel-icon-angle-left"></i>
     Previous

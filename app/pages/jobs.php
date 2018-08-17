@@ -57,25 +57,25 @@
     </fieldset>
   </div>
   <div class="col-lg-4 d-flex justify-content-sm-end align-items-end mt-3">
-      <span class="mb-2 mr-2">133 results</span>
+      <span class="mb-2 mr-2">55 results</span>
       <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"><i aria-hidden="true" class="gel-icon-settings"></i> Settings </button>
   </div>
 </div>
 <div class="table-responsive">
   <table class="table table-striped table-hover mt-3">
       <caption class="sr-only">List of jobs</caption>
-      <thead class="thead-dark">
+      <thead class="thead-dark thead-sortable">
         <tr>
-          <th scope="col">Job Title </th>
-          <th scope="col">Job ID</th>
-          <th scope="col">Recruiter
+          <th scope="col"><a href="#" class="sort-up">Job Title</a></th>
+          <th scope="col"><a href="#">Job ID</a></th>
+          <th scope="col"><a href="#">Recruiter</a>
           </th>
-          <th scope="col">Status
+          <th scope="col"><a href="#">Status</a>
           </th>
           <!-- <th scope="col">Applications</th> -->
-          <th scope="col">Opening date <i class="gel-icon-sort-up"></i></th>
-          <th scope="col">Closing date</th>
-          <th scope="col">Actions</th>
+          <th scope="col"><a href="#">Opening date </a></th>
+          <th scope="col"><a href="#">Closing date </a></th>
+          <th scope="col"></th>
         </tr>
       </thead>
       <tbody>
@@ -92,7 +92,7 @@
           <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
-          <td data-title="Actions">
+          <td data-title="Actions" class="text-center">
             <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application" class="gel-icon-lg gel-icon-view"></i></a>
           </td>
         </tr>
@@ -109,7 +109,7 @@
           <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
-          <td data-title="Actions">
+          <td data-title="Actions" class="text-center">
             <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application"class="gel-icon-lg gel-icon-view"></i></a>
           </td>
         </tr>
@@ -117,8 +117,9 @@
       </tbody>
     </table>
 
-    <nav aria-label="Search results pages">
-      <ul class="pagination justify-content-end">
+    <nav aria-label="Search results pages" class="d-flex justify-content-between align-items-center">
+      <span class="mr-2 text-muted">Showing 21 - 40 of 55 results</span>
+      <ul class="pagination mb-0">
         <li class="page-item">
           <a class="page-link" href="#">Previous</a>
         </li>
