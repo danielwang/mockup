@@ -79,14 +79,6 @@
       font-weight: 400;
     }
   }
-
-  &.table-striped tbody tr:nth-of-type(odd) {
-    background: white;
-  }
-
-  &.table-striped tbody tr:nth-of-type(even) {
-    background: $gray-100;
-  }
 }
 /* *********************************\
   responsive table viewport < 768
@@ -141,8 +133,9 @@
       }
 
       td {
-        text-align: left;
+        text-align: left !important;
         background: white;
+        min-height: 3.25rem; // empty cell
       }
 
       td[data-title]:before {

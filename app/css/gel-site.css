@@ -31,10 +31,10 @@
     color: #536a81;
 }
 .red-100 {
-  background-color: #f5d1d0;
+  background-color: #ffaaa1;
 }
 .red-100::before {
-  content: "#f5d1d0";
+  content: "#ffaaa1";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -42,10 +42,10 @@
 }
 
 .red-900 {
-  background-color: #47110f;
+  background-color: #300500;
 }
 .red-900::before {
-  content: "#47110f";
+  content: "#300500";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -53,10 +53,10 @@
 }
 
 .red-200 {
-  background-color: #edacab;
+  background-color: #ff8173;
 }
 .red-200::before {
-  content: "#edacab";
+  content: "#ff8173";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -64,10 +64,10 @@
 }
 
 .red-800 {
-  background-color: #6d1917;
+  background-color: #5e0900;
 }
 .red-800::before {
-  content: "#6d1917";
+  content: "#5e0900";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -75,10 +75,10 @@
 }
 
 .red-300 {
-  background-color: #e58785;
+  background-color: #ff5745;
 }
 .red-300::before {
-  content: "#e58785";
+  content: "#ff5745";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -86,10 +86,10 @@
 }
 
 .red-700 {
-  background-color: #93221f;
+  background-color: #8c0e00;
 }
 .red-700::before {
-  content: "#93221f";
+  content: "#8c0e00";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -97,10 +97,10 @@
 }
 
 .red-400 {
-  background-color: #dd625f;
+  background-color: #ff2e17;
 }
 .red-400::before {
-  content: "#dd625f";
+  content: "#ff2e17";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -108,10 +108,10 @@
 }
 
 .red-600 {
-  background-color: #b92b27;
+  background-color: #ba1200;
 }
 .red-600::before {
-  content: "#b92b27";
+  content: "#ba1200";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -119,10 +119,10 @@
 }
 
 .red-500 {
-  background-color: #D53D39;
+  background-color: #e81700;
 }
 .red-500::before {
-  content: "#D53D39";
+  content: "#e81700";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -625,10 +625,10 @@
 }
 
 .orange-100 {
-  background-color: #ffd3b8;
+  background-color: #ffd4b8;
 }
 .orange-100::before {
-  content: "#ffd3b8";
+  content: "#ffd4b8";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -636,10 +636,10 @@
 }
 
 .orange-900 {
-  background-color: #471b00;
+  background-color: #471c00;
 }
 .orange-900::before {
-  content: "#471b00";
+  content: "#471c00";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -647,10 +647,10 @@
 }
 
 .orange-200 {
-  background-color: #ffb78a;
+  background-color: #ffb88a;
 }
 .orange-200::before {
-  content: "#ffb78a";
+  content: "#ffb88a";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -658,10 +658,10 @@
 }
 
 .orange-800 {
-  background-color: #752d00;
+  background-color: #752e00;
 }
 .orange-800::before {
-  content: "#752d00";
+  content: "#752e00";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -669,10 +669,10 @@
 }
 
 .orange-300 {
-  background-color: #ff9b5c;
+  background-color: #ff9c5c;
 }
 .orange-300::before {
-  content: "#ff9b5c";
+  content: "#ff9c5c";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -680,10 +680,10 @@
 }
 
 .orange-700 {
-  background-color: #a33f00;
+  background-color: #a34000;
 }
 .orange-700::before {
-  content: "#a33f00";
+  content: "#a34000";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -691,10 +691,10 @@
 }
 
 .orange-400 {
-  background-color: #ff7e2e;
+  background-color: #ff802e;
 }
 .orange-400::before {
-  content: "#ff7e2e";
+  content: "#ff802e";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -702,10 +702,10 @@
 }
 
 .orange-600 {
-  background-color: #d15000;
+  background-color: #d15200;
 }
 .orange-600::before {
-  content: "#d15000";
+  content: "#d15200";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -713,10 +713,10 @@
 }
 
 .orange-500 {
-  background-color: #ff6200;
+  background-color: #ff6400;
 }
 .orange-500::before {
-  content: "#ff6200";
+  content: "#ff6400";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -724,10 +724,10 @@
 }
 
 .green-100 {
-  background-color: #8ed092;
+  background-color: #7cf2a6;
 }
 .green-100::before {
-  content: "#8ed092";
+  content: "#7cf2a6";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -746,10 +746,10 @@
 }
 
 .green-200 {
-  background-color: #6ec373;
+  background-color: #52ee8a;
 }
 .green-200::before {
-  content: "#6ec373";
+  content: "#52ee8a";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -757,10 +757,10 @@
 }
 
 .green-800 {
-  background-color: #091509;
+  background-color: #042911;
 }
 .green-800::before {
-  content: "#091509";
+  content: "#042911";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -768,10 +768,10 @@
 }
 
 .green-300 {
-  background-color: #4eb554;
+  background-color: #28ea6e;
 }
 .green-300::before {
-  content: "#4eb554";
+  content: "#28ea6e";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -779,10 +779,10 @@
 }
 
 .green-700 {
-  background-color: #163518;
+  background-color: #085323;
 }
 .green-700::before {
-  content: "#163518";
+  content: "#085323";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -790,10 +790,10 @@
 }
 
 .green-400 {
-  background-color: #3e9644;
+  background-color: #14d158;
 }
 .green-400::before {
-  content: "#3e9644";
+  content: "#14d158";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -801,10 +801,10 @@
 }
 
 .green-600 {
-  background-color: #245626;
+  background-color: #0c7d34;
 }
 .green-600::before {
-  content: "#245626";
+  content: "#0c7d34";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -812,10 +812,10 @@
 }
 
 .green-500 {
-  background-color: #317635;
+  background-color: #10a746;
 }
 .green-500::before {
-  content: "#317635";
+  content: "#10a746";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -823,10 +823,10 @@
 }
 
 .grey-100 {
-  background-color: #97a3b9;
+  background-color: white;
 }
 .grey-100::before {
-  content: "#97a3b9";
+  content: "white";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -834,10 +834,10 @@
 }
 
 .grey-900 {
-  background-color: black;
+  background-color: #5c7c9c;
 }
 .grey-900::before {
-  content: "black";
+  content: "#5c7c9c";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -845,10 +845,10 @@
 }
 
 .grey-200 {
-  background-color: #7b8ba7;
+  background-color: white;
 }
 .grey-200::before {
-  content: "#7b8ba7";
+  content: "white";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -856,10 +856,10 @@
 }
 
 .grey-800 {
-  background-color: #060709;
+  background-color: #7793af;
 }
 .grey-800::before {
-  content: "#060709";
+  content: "#7793af";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -867,10 +867,10 @@
 }
 
 .grey-300 {
-  background-color: #627392;
+  background-color: white;
 }
 .grey-300::before {
-  content: "#627392";
+  content: "white";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -878,10 +878,10 @@
 }
 
 .grey-700 {
-  background-color: #181d24;
+  background-color: #94aac0;
 }
 .grey-700::before {
-  content: "#181d24";
+  content: "#94aac0";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -889,10 +889,10 @@
 }
 
 .grey-400 {
-  background-color: #4f5e76;
+  background-color: #ebeff3;
 }
 .grey-400::before {
-  content: "#4f5e76";
+  content: "#ebeff3";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -900,10 +900,10 @@
 }
 
 .grey-600 {
-  background-color: #2b3240;
+  background-color: #b1c1d1;
 }
 .grey-600::before {
-  content: "#2b3240";
+  content: "#b1c1d1";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -911,10 +911,10 @@
 }
 
 .grey-500 {
-  background-color: #3D485B;
+  background-color: #ced8e2;
 }
 .grey-500::before {
-  content: "#3D485B";
+  content: "#ced8e2";
   font-family: monospace;
   float: right;
   text-transform: uppercase;

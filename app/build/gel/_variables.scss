@@ -77,6 +77,7 @@ $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $navy:    #142C52 !default;
 $slate:   #415365 !default;
+$smoke:   #ced8e2 !default;
 
 $pageup:        $navy;
 $pageup-100: lighten($pageup, 36%);
@@ -110,6 +111,11 @@ $slate-700: darken($slate, 18%);
 $slate-800: darken($slate, 27%);
 $slate-900: darken($slate, 36%);
 
+$smoke-500: $smoke;
+$smoke-600: darken($smoke, 9%);
+$smoke-700: darken($smoke, 18%);
+$smoke-800: darken($smoke, 27%);
+$smoke-900: darken($smoke, 36%);
 
 $blue-100: lighten($blue, 36%);
 $blue-200: lighten($blue, 27%);
@@ -334,7 +340,7 @@ $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
 
 $border-width:                1px !default;
-$border-color:                #ced8e2 !default;
+$border-color:                $smoke !default;
 
 $border-radius:               .5rem !default;
 $border-radius-lg:            .75rem !default;
@@ -431,7 +437,7 @@ $table-cell-padding-sm:       .5rem !default;
 
 $table-bg:                    white !default;
 $table-accent-bg:             rgba($black, .05) !default;
-$table-hover-bg:              lighten($ctrl, 40%);
+$table-hover-bg:              $smoke;
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          $border-width !default;
