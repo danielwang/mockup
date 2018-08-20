@@ -1,5 +1,6 @@
 .link-alt{
   color: $link-color-alt;
+  line-height: normal;
   @include font-regular();
   &:hover{
     color: $link-color-alt-hover;

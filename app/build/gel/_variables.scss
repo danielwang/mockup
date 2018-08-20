@@ -440,9 +440,9 @@ $table-border-color:          $border-color !default;
 $table-head-bg:               $gray-200 !default;
 $table-head-color:            $gray-700 !default;
 
-$table-dark-bg:               $ctrl-border-color;
+$table-dark-bg:               $slate-400;
 $table-dark-accent-bg:        rgba($white, .05) !default;
-$table-dark-hover-bg:         darken($ctrl-border-color, 9%) !default;
+$table-dark-hover-bg:         $slate-300 !default;
 $table-dark-border-color:     lighten($ctrl, 15%);
 $table-dark-color:            white;
 
@@ -714,7 +714,7 @@ $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
 $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
 $nav-tabs-link-active-color:        $white !default;
-$nav-tabs-link-active-bg:           $ctrl-border-color !default;
+$nav-tabs-link-active-bg:           $slate-400 !default;
 $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
 
 $nav-pills-border-radius:           $border-radius !default;
@@ -797,7 +797,7 @@ $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 $border-color !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
-$card-cap-bg:                       $ctrl-border-color;
+$card-cap-bg:                       $slate-400;
 $card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1.25rem !default;

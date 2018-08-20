@@ -66,16 +66,15 @@
       <caption class="sr-only">List of jobs</caption>
       <thead class="thead-dark thead-sortable">
         <tr>
-          <th scope="col"><a href="#" class="sort-up">Job Title</a></th>
-          <th scope="col"><a href="#">Job ID</a></th>
-          <th scope="col"><a href="#">Recruiter</a>
+          <th scope="col"><a href="#" class="sort-up" aria-label="sorting by Job Title">Job Title</a></th>
+          <th scope="col"><a href="#" aria-label="sorting by Job ID">Job ID</a></th>
+          <th scope="col"><a href="#" aria-label="sorting by Recruiter">Recruiter</a>
           </th>
-          <th scope="col"><a href="#">Status</a>
+          <th scope="col"><a href="#" aria-label="sorting by Status">Status</a>
           </th>
-          <!-- <th scope="col">Applications</th> -->
-          <th scope="col"><a href="#">Opening date </a></th>
-          <th scope="col"><a href="#">Closing date </a></th>
-          <th scope="col"></th>
+          <th scope="col"><a href="#" aria-label="sorting by Opening date">Opening date </a></th>
+          <th scope="col"><a href="#" aria-label="sorting by Closing date">Closing date </a></th>
+          <th scope="col"><span class="sr-only">Action</span></th>
         </tr>
       </thead>
       <tbody>
@@ -89,7 +88,6 @@
           <td data-title="Status">
             Offer Made
           </td>
-          <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
           <td data-title="Actions" class="text-center">
@@ -105,8 +103,6 @@
           <td data-title="Status">
             Approved to advertise
           </td>
-
-          <!-- <td data-title="Applications"><a href="cl"><?php //echo random_int(1, 100) ?></a></td> -->
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
           <td data-title="Actions" class="text-center">
@@ -116,62 +112,62 @@
       <?php } ?>
       </tbody>
     </table>
+</div>
+<nav aria-label="Search results pages" class="d-flex justify-content-between align-items-center">
+  <span class="mr-2 text-muted">Showing 21 - 40 of 55 results</span>
+  <ul class="pagination mb-0">
+    <li class="page-item">
+      <a class="page-link" href="#">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2
+        <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
 
-    <nav aria-label="Search results pages" class="d-flex justify-content-between align-items-center">
-      <span class="mr-2 text-muted">Showing 21 - 40 of 55 results</span>
-      <ul class="pagination mb-0">
-        <li class="page-item">
-          <a class="page-link" href="#">Previous</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item active">
-          <a class="page-link" href="#">2
-            <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="exampleModalLabel">Settings</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Select the columns you wish to add/remove</p>
-            <div class="row">
-              <?php for ($c =1; $c <= 2; $c++) {?>
-                  <div class="col-6">
-                    <?php for ($i =1; $i <= 5; $i++) {?>
-                      <div class="checkbox checkbox-default">
-                        <input type="checkbox" checked id="<?php echo $c . '-' .$i ?>">
-                        <label for="<?php echo $c . '-' . $i ?>">
-                          Column <?php echo $c . '-' . $i ?>
-                        </label>
-                      </div>
-                    <?php } ?>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Settings</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Select the columns you wish to add/remove</p>
+        <div class="row">
+          <?php for ($c =1; $c <= 2; $c++) {?>
+              <div class="col-6">
+                <?php for ($i =1; $i <= 5; $i++) {?>
+                  <div class="checkbox checkbox-default">
+                    <input type="checkbox" checked id="<?php echo $c . '-' .$i ?>">
+                    <label for="<?php echo $c . '-' . $i ?>">
+                      Column <?php echo $c . '-' . $i ?>
+                    </label>
                   </div>
-              <?php } ?>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Apply</button>
-          </div>
+                <?php } ?>
+              </div>
+          <?php } ?>
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Apply</button>
+      </div>
     </div>
+  </div>
 </div>
+
 <?php endblock() ?>

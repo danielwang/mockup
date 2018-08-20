@@ -13,6 +13,7 @@
 
     tr th:first-child {
       border-top-left-radius: 0.5rem;
+      border-left: 0;
     }
 
     tr th:last-child {
@@ -22,8 +23,7 @@
     &.thead-dark th {}
 
     &.thead-sortable th {
-      cursor: pointer;
-      border-left: 1px solid $table-dark-hover-bg;
+      border-left: 1px solid $slate-600;
 
       &:hover {
         background-color: $table-dark-hover-bg;
@@ -42,7 +42,9 @@
             content: "\e97d";
             font-family: $gel-icon;
             position: absolute;
-            right: 0;
+            font-size: 1.25rem;
+            right: -0.25rem;
+            top: calc(50% - 0.625rem);
           }
         }
         &.sort-down{
@@ -50,7 +52,9 @@
             content: "\e97c";
             font-family: $gel-icon;
             position: absolute;
-            right: 0;
+            right: -0.25rem;
+            font-size: 1.25rem;
+            top: calc(50% - 0.625rem);
           }
         }
       }
