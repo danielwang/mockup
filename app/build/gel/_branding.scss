@@ -1,0 +1,9 @@
+// client branding header sitting on top of navbar
+
+.client-branding{
+  max-height: 5rem;
+  padding: 1rem;
+  .logo{
+    max-height: 3rem;
+  }
+}

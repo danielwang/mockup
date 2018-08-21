@@ -108,7 +108,7 @@
 </div>
 
 <!-- 3 cards in a row with guidelines  -->
-<div class="row">
+<!-- <div class="row">
   <div class="col-xl-9">
     <div class="row">
       <div class="col-md-6 col-lg-4 mb-4">
@@ -170,5 +170,5 @@
        <p>Lorem ipsum dolort ametetur adipiscing elit, sed do eiusmod tempor edr incididunt ut labore et dolore magna aliqua. </p>
        <p><a href="#">Ut enim ad minim</a> sersn veniam, quisre sedo nostrud<p>
   </div>
-</div>
+</div> -->
 <?php endblock()?>

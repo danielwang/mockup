@@ -10216,6 +10216,13 @@ sub, sup {
 .opacity-10 {
   opacity: 1; }
 
+.client-branding {
+  max-height: 5rem;
+  padding: 1rem; }
+
+.client-branding .logo {
+  max-height: 3rem; }
+
 @media print {
   body, h1, h2, h3, h4, h5, h6, th {
     color: #000 !important; }

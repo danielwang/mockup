@@ -6,6 +6,14 @@
   require_once 'ti.php';
   include_once '_head.php'; ?>
 
+   <!-- Hiring manager centre, client branding -->
+   <?php if ($parent == "hm"){ ?>
+      <header role="Branding header" class="client-branding" style="background-color: #B7BC3F">
+          <div class="container-fluid">
+            <img class="logo" src="<?php echo ($resURL) ?>images/client-logo.png" alt="client'name logo" />
+          </div>
+      </header>
+   <?php } ?>
    <?php emptyblock('page-notification') ?>
    <!-- ************ menu ************  -->
   <aside id="gel-menu" role='menu'>
@@ -20,7 +28,7 @@
        </aside>
   <!-- ************ topbar ************ -->
   <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <!-- logo  -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
