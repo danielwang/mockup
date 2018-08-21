@@ -86,17 +86,17 @@
 }
 
 .alert-info{
-  @include alert-variants($azure-100, $azure-700, $azure-200, $azure-600)
+  @include alert-variants($azure-100, $azure-700, $azure-600, $azure-600)
 }
 
 .alert-success{
-  @include alert-variants($green-100, $green-800, $green-400, $green-600)
+  @include alert-variants($green-100, $green-800, $green-600, $green-600)
 }
 
 .alert-danger{
-  @include alert-variants($red-100, $red-900, $red-200, $red-600)
+  @include alert-variants($red-100, $red-900, $red-600, $red-600)
 }
 
 .alert-warning{
-  @include alert-variants($orange-100, $orange-900, $orange-200, $orange-500)
+  @include alert-variants($orange-100, $orange-900, $orange-600, $orange-500)
 }

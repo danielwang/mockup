@@ -113,26 +113,49 @@
       </tbody>
     </table>
 </div>
-<nav aria-label="Search results pages" class="d-flex justify-content-between align-items-center">
-  <span class="mr-2 text-muted">Showing 21 - 40 of 55 results</span>
-  <ul class="pagination mb-0">
+<nav aria-label="Search results pages" class="row">
+  <span class="text-muted text-sm mb-2 col-md-6 order-md-1 col-lg-2 col-xl-3 d-flex align-items-center">Showing 121 - 140 of 175 results</span>
+  <ul class="order-md-3 order-lg-2 col-lg-6 col-xl-6 mb-2 pagination justify-content-center" role="pagination">
     <li class="page-item">
-      <a class="page-link" href="#">Previous</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" >|<</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">1</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-sm"></i></a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">4</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">5</a>
     </li>
     <li class="page-item active">
-      <a class="page-link" href="#">2
+      <a class="page-link" href="#">6
         <span class="sr-only">(current)</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">3</a>
+      <a class="page-link" href="#">7</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="#">8</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-sm"></i></a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" >>|</a>
     </li>
   </ul>
+  <div class="col-md-6 order-md-2 order-lg-3 col-lg-4 col-xl-3 justify-content-end d-flex align-items-center mb-2">
+    <span class="text-muted text-sm mr-2">
+      Page 6 of 8 | Jump to page
+    </span>
+    <div class="d-inline-flex input-group input-group-sm w-auto">
+      <input style="width:40px" type="text" class="form-control" aria-label="Jump to page">
+      <div class="input-group-append">
+        <button class="btn btn-secondary" type="button">Go</button>
+      </div>
+    </div>
+  </div>
 </nav>
 
 <!-- Modal -->

@@ -7579,7 +7579,7 @@ label {
 .alert-info {
   color: #006089;
   background: rgba(158, 226, 255, 0.5);
-  border-color: #70d4ff; }
+  border-color: #0081b7; }
   .alert-info .alert-link {
     color: #006089;
     font-weight: 400;
@@ -7592,7 +7592,7 @@ label {
 .alert-success {
   color: #042911;
   background: rgba(124, 242, 166, 0.5);
-  border-color: #14d158; }
+  border-color: #0c7d34; }
   .alert-success .alert-link {
     color: #042911;
     font-weight: 400;
@@ -7605,7 +7605,7 @@ label {
 .alert-danger {
   color: #300500;
   background: rgba(255, 170, 161, 0.5);
-  border-color: #ff8173; }
+  border-color: #ba1200; }
   .alert-danger .alert-link {
     color: #300500;
     font-weight: 400;
@@ -7618,7 +7618,7 @@ label {
 .alert-warning {
   color: #471b00;
   background: rgba(255, 211, 184, 0.5);
-  border-color: #ffb78a; }
+  border-color: #d15000; }
   .alert-warning .alert-link {
     color: #471b00;
     font-weight: 400;
@@ -10634,7 +10634,7 @@ sub, sup {
   content: "\e97a"; }
 
 .gel-icon-sort-down:before {
-  content: "\e97c"; }
+  content: "\e97d"; }
 
 .gel-icon-sort-up:before {
-  content: "\e97d"; }
+  content: "\e97c"; }
