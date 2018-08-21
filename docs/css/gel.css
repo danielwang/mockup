@@ -1172,7 +1172,7 @@ pre {
   background-color: rgba(0, 0, 0, .05); }
 
 .table-hover tbody tr:hover {
-  background-color: #aab9c8; }
+  background-color: #ced8e2; }
   .table-primary, .table-primary > th, .table-primary > td {
     background-color: #b8d3e9; }
   .table-hover .table-primary:hover {
@@ -1265,12 +1265,12 @@ pre {
       background-color: #f6a9a0; }
 
 .table-active, .table-active > th, .table-active > td {
-  background-color: #aab9c8; }
+  background-color: #ced8e2; }
 
 .table-hover .table-active:hover {
-  background-color: #9aacbe; }
+  background-color: #becbd9; }
   .table-hover .table-active:hover > td, .table-hover .table-active:hover > th {
-    background-color: #9aacbe; }
+    background-color: #becbd9; }
 
 .table .thead-dark th {
   color: white;
@@ -7518,13 +7518,6 @@ label {
   font-size: 1rem;
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
-  .notification [class^="gel-icon-"] {
-    vertical-align: middle; }
-  .notification .notification-link {
-    font-weight: 400;
-    font-family: 'Proxima Nova Bold';
-    text-decoration: underline;
-    color: #fff; }
 
 .notification-dismissible {
   padding-right: 3.8125rem; }
@@ -7534,70 +7527,58 @@ label {
     right: 0;
     padding: 0.75rem 1.25rem;
     color: inherit; }
-  .notification-primary {
-    color: #fff;
-    background-color: #004982;
-    border-color: #0063b0; }
-  .notification-secondary {
-    color: #fff;
-    background-color: #2f3c49;
-    border-color: #415365; }
-  .notification-success {
-    color: #fff;
-    background-color: #0c7d34;
-    border-color: #10a746; }
-  .notification-info {
-    color: #fff;
-    background-color: #0081b7;
-    border-color: #00a1e5; }
-  .notification-warning {
-    color: #fff;
-    background-color: #d15000;
-    border-color: #ff6200; }
-  .notification-danger {
-    color: #fff;
-    background-color: #ba1200;
-    border-color: #e81700; }
-  .notification-light {
-    color: #fff;
-    background-color: #c4cbd2;
-    border-color: #dee2e6; }
-  .notification-dark {
-    color: #fff;
-    background-color: #1f2327;
-    border-color: #343a40; }
-  .notification-default {
-    color: #fff;
-    background-color: #2f3c49;
-    border-color: #415365; }
-  .notification-primary {
-    color: #fff;
-    background-color: #004982;
-    border-color: #0063b0; }
-  .notification-secondary {
-    color: #fff;
-    background-color: #2f3c49;
-    border-color: #415365; }
-  .notification-success {
-    color: #fff;
-    background-color: #0c7d34;
-    border-color: #10a746; }
-  .notification-info {
-    color: #fff;
-    background-color: #0081b7;
-    border-color: #00a1e5; }
-  .notification-warning {
-    color: #fff;
-    background-color: #d15000;
-    border-color: #ff6200; }
-  .notification-danger {
-    color: #fff;
-    background-color: #ba1200;
-    border-color: #e81700; }
+
+.notification-info {
+  color: #006089;
+  background-color: #9ee2ff; }
+  .notification-info [class^="gel-icon-"] {
+    color: #0081b7;
+    vertical-align: middle; }
+  .notification-info .notification-link {
+    color: #006089;
+    font-weight: 400;
+    font-family: 'Proxima Nova Bold';
+    text-decoration: underline; }
+
+.notification-warning {
+  color: #471b00;
+  background-color: #ffd3b8; }
+  .notification-warning [class^="gel-icon-"] {
+    color: #ff6200;
+    vertical-align: middle; }
+  .notification-warning .notification-link {
+    color: #471b00;
+    font-weight: 400;
+    font-family: 'Proxima Nova Bold';
+    text-decoration: underline; }
+
+.notification-danger {
+  color: #300500;
+  background-color: #ffaaa1; }
+  .notification-danger [class^="gel-icon-"] {
+    color: #e81700;
+    vertical-align: middle; }
+  .notification-danger .notification-link {
+    color: #300500;
+    font-weight: 400;
+    font-family: 'Proxima Nova Bold';
+    text-decoration: underline; }
+
+.notification-success {
+  color: #042911;
+  background-color: #7cf2a6; }
+  .notification-success [class^="gel-icon-"] {
+    color: #0c7d34;
+    vertical-align: middle; }
+  .notification-success .notification-link {
+    color: #042911;
+    font-weight: 400;
+    font-family: 'Proxima Nova Bold';
+    text-decoration: underline; }
 
 .alert-info {
   color: #006089;
-  background-color: #ccf0ff;
+  background: rgba(158, 226, 255, 0.5);
   border-color: #0081b7; }
   .alert-info .alert-link {
     color: #006089;
@@ -7609,24 +7590,24 @@ label {
     color: #0081b7; }
 
 .alert-success {
-  color: #085323;
-  background-color: #d0fadf;
-  border-color: #10a746; }
+  color: #042911;
+  background: rgba(124, 242, 166, 0.5);
+  border-color: #0c7d34; }
   .alert-success .alert-link {
-    color: #085323;
+    color: #042911;
     font-weight: 400;
     font-family: 'Proxima Nova Bold';
     text-decoration: underline; }
   .alert-success [class^="gel-icon-"] {
     vertical-align: sub;
-    color: #10a746; }
+    color: #0c7d34; }
 
 .alert-danger {
-  color: #5e0900;
-  background-color: #ffaaa1;
+  color: #300500;
+  background: rgba(255, 170, 161, 0.5);
   border-color: #ba1200; }
   .alert-danger .alert-link {
-    color: #5e0900;
+    color: #300500;
     font-weight: 400;
     font-family: 'Proxima Nova Bold';
     text-decoration: underline; }
@@ -7635,17 +7616,17 @@ label {
     color: #ba1200; }
 
 .alert-warning {
-  color: #752d00;
-  background-color: #ffefe6;
-  border-color: #a33f00; }
+  color: #471b00;
+  background: rgba(255, 211, 184, 0.5);
+  border-color: #d15000; }
   .alert-warning .alert-link {
-    color: #752d00;
+    color: #471b00;
     font-weight: 400;
     font-family: 'Proxima Nova Bold';
     text-decoration: underline; }
   .alert-warning [class^="gel-icon-"] {
     vertical-align: sub;
-    color: #a33f00; }
+    color: #ff6200; }
 
 .avatar {
   width: 36px;
@@ -9231,10 +9212,6 @@ select.form-control {
   .table tbody td, .table tbody th {
     vertical-align: middle;
     font-weight: 400; }
-  .table.table-striped tbody tr:nth-of-type(odd) {
-    background: white; }
-  .table.table-striped tbody tr:nth-of-type(even) {
-    background: #f8f9fa; }
 /* *********************************\
  responsive table viewport < 768
  \***********************************/
@@ -9272,8 +9249,9 @@ select.form-control {
         border: 0;
         background: white; }
       .table tbody td {
-        text-align: left;
-        background: white; }
+        text-align: left !important;
+        background: white;
+        min-height: 3.25rem; }
       .table tbody td[data-title]:before {
         content: attr(data-title);
         float: left;
@@ -10656,7 +10634,7 @@ sub, sup {
   content: "\e97a"; }
 
 .gel-icon-sort-down:before {
-  content: "\e97c"; }
+  content: "\e97d"; }
 
 .gel-icon-sort-up:before {
-  content: "\e97d"; }
+  content: "\e97c"; }
