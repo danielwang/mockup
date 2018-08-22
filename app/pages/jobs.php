@@ -117,7 +117,7 @@
   <span class="text-muted text-sm mb-2 col-md-6 order-md-1 col-lg-2 col-xl-3 d-flex align-items-center">Showing 121 - 140 of 175 results</span>
   <ul class="order-md-3 order-lg-2 col-lg-6 col-xl-6 mb-2 pagination justify-content-center" role="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" >|<</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" ><i class="gel-icon-left-end gel-icon-sm"></i></a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-sm"></i></a>
@@ -142,7 +142,7 @@
       <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-sm"></i></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" >>|</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" ><i class="gel-icon-right-end gel-icon-sm"></i></a>
     </li>
   </ul>
   <div class="col-md-6 order-md-2 order-lg-3 col-lg-4 col-xl-3 justify-content-end d-flex align-items-center mb-2">
@@ -150,9 +150,9 @@
       Page 6 of 8 | Jump to page
     </span>
     <div class="d-inline-flex input-group input-group-sm w-auto">
-      <input style="width:40px" type="text" class="form-control" aria-label="Jump to page">
+      <input style="width:45px" type="number" min="1" max="8" class="form-control border-0" aria-label="Jump to page">
       <div class="input-group-append">
-        <button class="btn btn-secondary" type="button">Go</button>
+        <button class="btn btn-light" type="button">Go</button>
       </div>
     </div>
   </div>

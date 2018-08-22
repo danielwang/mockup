@@ -1,5 +1,5 @@
 $face-colors: ()!default;
-$face-colors: map-merge(("red": $red, "orange": $orange, "green": $green-400, "yellow": $yellow, "lime": #75ad37), $face-colors);
+$face-colors: map-merge(("red": $red, "orange": $orange, "green": $green, "yellow": $yellow, "lime": #75ad37), $face-colors);
 @mixin face-variants($outline, $solid) {
   input[type="radio"] {
     @include hidden-radio();
@@ -29,7 +29,7 @@ $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green-400, "y
 
     + label {
       &::before {
-        color: lighten($color, 9%);;
+        color: $color;
       }
 
     }

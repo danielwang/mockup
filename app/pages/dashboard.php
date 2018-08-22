@@ -78,8 +78,8 @@
         <div class="col-md-3 col-lg-1 text-center">10</div>
         <div class="offset-lg-2 col-lg-10">
           <ul class="list-unstyled">
-            <li><i class="gel-icon-bullhorn"></i> <a class="link-alt" href="#">2 applications are incomplete for more than 5 days.</a></li>
-            <li><i class="gel-icon-bullhorn"></i><a class="link-alt" href="#"> This has been incomplete for more than 1 day</a></li>
+            <li><i class="gel-icon-bell gel-icon-sm text-red"></i> <a class="link-alt" href="#">2 applications are incomplete for more than 5 days.</a></li>
+            <li><i class="gel-icon-bell gel-icon-sm text-danger"></i><a class="link-alt" href="#"> This has been incomplete for more than 1 day</a></li>
           </ul>
         </div>
       </div>

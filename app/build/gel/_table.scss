@@ -39,7 +39,7 @@
 
         &.sort-up{
           &:after{
-            content: "\e97d";
+            content: "\e97c";
             font-family: $gel-icon;
             position: absolute;
             font-size: 1.25rem;
@@ -49,7 +49,7 @@
         }
         &.sort-down{
           &:after{
-            content: "\e97c";
+            content: "\e97d";
             font-family: $gel-icon;
             position: absolute;
             right: -0.25rem;

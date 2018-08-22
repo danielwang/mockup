@@ -86,7 +86,7 @@
 }
 
 .alert-info{
-  @include alert-variants($azure-100, $azure-700, $azure-600, $azure-600)
+  @include alert-variants($azure-100, $azure-800, $azure-600, $azure-600)
 }
 
 .alert-success{

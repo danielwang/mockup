@@ -67,7 +67,7 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
 @mixin tray-variant($color) {
   label {
     &::before {
-      color: lighten($color, 9%);
+      color: $color;
     }
 
     &::after {

@@ -29,6 +29,8 @@ function buildSolidIcons(){
     ["angle up", "angle-up"],
     ["angle left", "angle-left"],
     ["angle right", "angle-right"],
+    ["left end", "left-end"],
+    ["right end", "right-end"],
     ["share", "share"],
     ["tick", "tick-circle"],
     ["close", "close-circle"],
@@ -77,7 +79,7 @@ function buildSolidIcons(){
     ["meh","meh"],
     ["smile","smile"],
     ["happy","happy"],
-    ["thirdparty","thirdparty"],
+    ["third party","third-party"],
     ["configure","configure"],
     ["integration","integration"],
     ["succession","succession"],
@@ -92,7 +94,8 @@ function buildSolidIcons(){
     ["bell","bell"],
     ["target","target"],
     ["team","team"],
-    ["control","control"]
+    ["control","control"],
+    ["ellipsis","ellipsis"]
   ];
 }
 
