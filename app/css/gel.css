@@ -3422,7 +3422,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     background-color: #ced8e2;
     border-color: #ced8e2; }
   .page-item.disabled .page-link {
-    color: #6c757d;
+    color: #ced4da;
     pointer-events: none;
     cursor: auto;
     background-color: #fff;

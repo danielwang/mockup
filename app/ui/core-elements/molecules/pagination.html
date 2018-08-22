@@ -2,10 +2,32 @@
   Preset pagination styles helps divide up large blocks of content on your site or app.
 </blockquote>
 <h3>Pagination</h3>
+<label>Less than 5 pages</label>
 <nav aria-label="Search results pages">
-  <ul class="pagination">
+  <ul class="pagination" role="pagination">
+    <li class="page-item active">
+      <a class="page-link" href="#">1
+        <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">3</a>
+    </li>
+  </ul>
+</nav>
+<label>More than 5 pages</label>
+<nav aria-label="Search results pages">
+  <ul class="pagination" role="pagination">
     <li class="page-item disabled">
-      <a class="page-link" href="#" aria-label="Previous" tabindex="-1">Previous
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First">
+        <i class="gel-icon-left-end gel-icon-xs"></i>
+      </a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous">
+        <i class="gel-icon-angle-left gel-icon-xs"></i>
       </a>
     </li>
     <li class="page-item active">
@@ -16,8 +38,7 @@
       <a class="page-link" href="#">2</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">3
-      </a>
+      <a class="page-link" href="#">3</a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">4</a>
@@ -26,86 +47,141 @@
       <a class="page-link" href="#">5</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">Next</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next">
+        <i class="gel-icon-angle-right gel-icon-xs"></i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last">
+        <i class="gel-icon-right-end gel-icon-xs"></i>
+      </a>
     </li>
   </ul>
 </nav>
-
 <nav aria-label="Search results pages">
-  <ul class="pagination">
+  <ul class="pagination" role="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">Previous</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First">
+        <i class="gel-icon-left-end gel-icon-xs"></i>
+      </a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">7</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous">
+        <i class="gel-icon-angle-left gel-icon-xs"></i>
+      </a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">8</a>
-    </li>
-    <li class="page-item active">
-      <a class="page-link" href="#">9
-        <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">10</a>
+      <a class="page-link" href="#">10
+      </a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">11</a>
     </li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">Next</a>
-    </li>
-  </ul>
-</nav>
-
-<nav aria-label="Search results pages">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">Previous</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">16</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">17</a>
-    </li>
     <li class="page-item active">
-      <a class="page-link" href="#">18
+      <a class="page-link" href="#">12
         <span class="sr-only">(current)</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">19</a>
+      <a class="page-link" href="#">13</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">20</a>
+      <a class="page-link" href="#">14</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next">
+        <i class="gel-icon-angle-right gel-icon-xs"></i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last">
+        <i class="gel-icon-right-end gel-icon-xs"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav aria-label="Search results pages">
+  <ul class="pagination" role="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First">
+        <i class="gel-icon-left-end gel-icon-xs"></i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous">
+        <i class="gel-icon-angle-left gel-icon-xs"></i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">21
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">22</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="#">23
+        <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">24</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">25</a>
     </li>
     <li class="page-item disabled">
-      <a class="page-link" href="#" aria-label="Next" tabindex="-1">Next</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next">
+        <i class="gel-icon-angle-right gel-icon-xs"></i>
+      </a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last">
+        <i class="gel-icon-right-end gel-icon-xs"></i>
+      </a>
     </li>
   </ul>
 </nav>
-
+<h5 class="mt-3">Small</h5>
 <nav aria-label="Search results pages">
-  <ul class="pagination pagination-sm">
+  <ul class="pagination pagination-sm" role="pagination">
     <li class="page-item">
-      <a class="page-link" href="#">Previous</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First">
+        <i class="gel-icon-left-end gel-icon-xs"></i>
+      </a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">7</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous">
+        <i class="gel-icon-angle-left gel-icon-xs"></i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">10
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">11</a>
     </li>
     <li class="page-item active">
-      <a class="page-link" href="#">8
+      <a class="page-link" href="#">12
         <span class="sr-only">(current)</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">9</a>
+      <a class="page-link" href="#">13</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="#">14</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next">
+        <i class="gel-icon-angle-right gel-icon-xs"></i>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last">
+        <i class="gel-icon-right-end gel-icon-xs"></i>
+      </a>
     </li>
   </ul>
 </nav>
-
 <hr>
 <h3>Pager</h3>
 <!-- <div class="btn-group btn-group-sm segmented-control" role="Pager" aria-label="Pager"> <button type="button" class="btn btn-ctrl"> <i class="gel-icon-angle-left"></i> </button> <button type="button" class="btn btn-ctrl"> <i

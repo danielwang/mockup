@@ -640,10 +640,10 @@
   <span class="text-muted text-sm mb-2 col-md-6 order-md-1 col-lg-2 col-xl-3 d-flex align-items-center">Showing 121 - 140 of 175 results</span>
   <ul class="order-md-3 order-lg-2 col-lg-6 col-xl-6 mb-2 pagination justify-content-center" role="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" >|<</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" ><i class="gel-icon-left-end gel-icon-xs"></i></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-sm"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-xs"></i></a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">4</a>
@@ -662,10 +662,10 @@
       <a class="page-link" href="#">8</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-sm"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-xs"></i></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" >>|</a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" ><i class="gel-icon-right-end gel-icon-xs"></i></a>
     </li>
   </ul>
   <div class="col-md-6 order-md-2 order-lg-3 col-lg-4 col-xl-3 justify-content-end d-flex align-items-center mb-2">
@@ -673,9 +673,9 @@
       Page 6 of 8 | Jump to page
     </span>
     <div class="d-inline-flex input-group input-group-sm w-auto">
-      <input style="width:40px" type="text" class="form-control" aria-label="Jump to page">
+      <input style="width:45px" type="number" min="1" max="8" class="form-control border-0" aria-label="Jump to page">
       <div class="input-group-append">
-        <button class="btn btn-secondary" type="button">Go</button>
+        <button class="btn btn-light" type="button">Go</button>
       </div>
     </div>
   </div>
@@ -693,62 +693,90 @@
       </div>
       <div class="modal-body">
         <p class="lead">Select the columns you wish to add/remove</p>
-        <div class="row">
-                        <div class="col-6">
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="1-1">
-                    <label for="1-1">
-                      Column 1-1                    </label>
-                  </div>
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="1-2">
-                    <label for="1-2">
-                      Column 1-2                    </label>
-                  </div>
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="1-3">
-                    <label for="1-3">
-                      Column 1-3                    </label>
-                  </div>
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="1-4">
-                    <label for="1-4">
-                      Column 1-4                    </label>
-                  </div>
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="1-5">
-                    <label for="1-5">
-                      Column 1-5                    </label>
-                  </div>
-                              </div>
-                        <div class="col-6">
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="2-1">
-                    <label for="2-1">
-                      Column 2-1                    </label>
-                  </div>
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="2-2">
-                    <label for="2-2">
-                      Column 2-2                    </label>
-                  </div>
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="2-3">
-                    <label for="2-3">
-                      Column 2-3                    </label>
-                  </div>
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="2-4">
-                    <label for="2-4">
-                      Column 2-4                    </label>
-                  </div>
-                                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="2-5">
-                    <label for="2-5">
-                      Column 2-5                    </label>
-                  </div>
-                              </div>
-                  </div>
+        <form>
+          <div class="form-group">
+            <label for="group1">Columns</label>
+            <div class="row">
+                                <div class="col-6">
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="1-1">
+                        <label for="1-1">
+                          Column 1-1                        </label>
+                      </div>
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="1-2">
+                        <label for="1-2">
+                          Column 1-2                        </label>
+                      </div>
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="1-3">
+                        <label for="1-3">
+                          Column 1-3                        </label>
+                      </div>
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="1-4">
+                        <label for="1-4">
+                          Column 1-4                        </label>
+                      </div>
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="1-5">
+                        <label for="1-5">
+                          Column 1-5                        </label>
+                      </div>
+                                      </div>
+                                <div class="col-6">
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="2-1">
+                        <label for="2-1">
+                          Column 2-1                        </label>
+                      </div>
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="2-2">
+                        <label for="2-2">
+                          Column 2-2                        </label>
+                      </div>
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="2-3">
+                        <label for="2-3">
+                          Column 2-3                        </label>
+                      </div>
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="2-4">
+                        <label for="2-4">
+                          Column 2-4                        </label>
+                      </div>
+                                          <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="2-5">
+                        <label for="2-5">
+                          Column 2-5                        </label>
+                      </div>
+                                      </div>
+                          </div>
+          </div>
+          <div class="form-group">
+          <label for="who1">Number of rows on the page</label>
+          <div>
+            <div class="radio radio-default radio-inline">
+              <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked>
+              <label for="inlineRadio1">
+                20
+              </label>
+            </div>
+            <div class="radio radio-default radio-inline">
+              <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+              <label for="inlineRadio2">
+                50
+              </label>
+            </div>
+            <div class="radio radio-default radio-inline">
+              <input type="radio" id="inlineRadio3" value="option3" name="radioInline">
+              <label for="inlineRadio3">
+                100
+              </label>
+            </div>
+          </div>
+        </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>

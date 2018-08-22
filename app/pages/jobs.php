@@ -170,20 +170,48 @@
       </div>
       <div class="modal-body">
         <p class="lead">Select the columns you wish to add/remove</p>
-        <div class="row">
-          <?php for ($c =1; $c <= 2; $c++) {?>
-              <div class="col-6">
-                <?php for ($i =1; $i <= 5; $i++) {?>
-                  <div class="checkbox checkbox-default">
-                    <input type="checkbox" checked id="<?php echo $c . '-' .$i ?>">
-                    <label for="<?php echo $c . '-' . $i ?>">
-                      Column <?php echo $c . '-' . $i ?>
-                    </label>
+        <form>
+          <div class="form-group">
+            <label for="group1">Columns</label>
+            <div class="row">
+              <?php for ($c =1; $c <= 2; $c++) {?>
+                  <div class="col-6">
+                    <?php for ($i =1; $i <= 5; $i++) {?>
+                      <div class="checkbox checkbox-default">
+                        <input type="checkbox" checked id="<?php echo $c . '-' .$i ?>">
+                        <label for="<?php echo $c . '-' . $i ?>">
+                          Column <?php echo $c . '-' . $i ?>
+                        </label>
+                      </div>
+                    <?php } ?>
                   </div>
-                <?php } ?>
-              </div>
-          <?php } ?>
+              <?php } ?>
+            </div>
+          </div>
+          <div class="form-group">
+          <label for="who1">Number of rows on the page</label>
+          <div>
+            <div class="radio radio-default radio-inline">
+              <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked>
+              <label for="inlineRadio1">
+                20
+              </label>
+            </div>
+            <div class="radio radio-default radio-inline">
+              <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+              <label for="inlineRadio2">
+                50
+              </label>
+            </div>
+            <div class="radio radio-default radio-inline">
+              <input type="radio" id="inlineRadio3" value="option3" name="radioInline">
+              <label for="inlineRadio3">
+                100
+              </label>
+            </div>
+          </div>
         </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
