@@ -117,10 +117,10 @@
   <span class="text-muted text-sm mb-2 col-md-6 order-md-1 col-lg-2 col-xl-3 d-flex align-items-center">Showing 121 - 140 of 175 results</span>
   <ul class="order-md-3 order-lg-2 col-lg-6 col-xl-6 mb-2 pagination justify-content-center" role="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" ><i class="gel-icon-left-end gel-icon-sm"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" ><i class="gel-icon-left-end gel-icon-xs"></i></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-sm"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-xs"></i></a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">4</a>
@@ -139,10 +139,10 @@
       <a class="page-link" href="#">8</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-sm"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-xs"></i></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" ><i class="gel-icon-right-end gel-icon-sm"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" ><i class="gel-icon-right-end gel-icon-xs"></i></a>
     </li>
   </ul>
   <div class="col-md-6 order-md-2 order-lg-3 col-lg-4 col-xl-3 justify-content-end d-flex align-items-center mb-2">

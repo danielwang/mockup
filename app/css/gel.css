@@ -10256,6 +10256,9 @@ sub, sup {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.gel-icon-xs {
+  font-size: 0.875rem; }
+
 .gel-icon-sm {
   font-size: 1rem; }
 
