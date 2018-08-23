@@ -1,0 +1,63 @@
+<div class="card">
+  <div class="row">
+    <div class="col-3 col-lg-2 text-center">
+      <h6>Applications</h6>
+    </div>
+    <div class="col-9 col-md-5 col-lg-4">
+      <h6>Jobs</h6>
+    </div>
+    <div class="col-9 col-md-5 col-lg-2">
+      <h6>Status</h6>
+    </div>
+    <div class="col-md-3 col-lg-2">
+      <h6>Recruiter</h6>
+    </div>
+    <div class="col-md-3 col-lg-1 text-nowrap">
+      <h6>Positions</h6>
+    </div>
+    <div class="col-md-3 col-lg-1 text-nowrap">
+      <h6>Vacancies</h6>
+    </div>
+  </div>
+
+  <?php for ($x =1; $x <= 10; $x++) {?>
+  <hr>
+  <div class="row mb-2">
+    <div class="col-3 col-lg-2 text-center">
+      <p>
+        <i class="gel-icon-user gel-icon-lg"></i>
+        <span class="text-20">18</span></p>
+      <span class="badge badge-warning">6 new</span>
+    </div>
+    <div class="col-9 col-md-5 col-lg-4">
+      <h5 class="position-relative">
+        <a href="#" class="dropdown-toggle text-center" title="Job info" data-toggle="dropdown" data-persist="true">
+          <i class="gel-icon-info-pointer"></i>
+        </a>
+        <div class="dropdown-menu">
+          <?php include "partials/_i-button.html" ?>
+        </div>
+        <a href="job-card">Retail Customer Service Officer</a>
+      </h5>
+      <!-- <p><small>53302044</small></p> -->
+    </div>
+    <div class="col-md-3 col-lg-2">Approved to advertise</div>
+    <div class="col-md-3 col-lg-2">Arnold Schwarzenegger</div>
+    <div class="col-md-3 col-lg-1 text-center">12</div>
+    <div class="col-md-3 col-lg-1 text-center">10</div>
+    <div class="offset-lg-2 col-lg-10">
+      <ul class="list-unstyled">
+        <li>
+          <i class="gel-icon-bell gel-icon-sm text-red"></i>
+          <a class="link-alt" href="#">2 applications are incomplete for more than 5 days.</a>
+        </li>
+        <li>
+          <i class="gel-icon-bell gel-icon-sm text-danger"></i>
+          <a class="link-alt" href="#">
+            This has been incomplete for more than 1 day</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <?php } ?>
+</div>

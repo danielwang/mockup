@@ -1,4 +1,4 @@
-<?php $parent = "hm"; $pageTitle = "Retail Customer Service Officer - Melbourne"; include '../base-t1.php';?>
+<?php $parent = "adm"; $pageTitle = "Retail Customer Service Officer - Melbourne"; include '../base-t1.php';?>
 
 <?php startblock('page-actions') ?>
 <span class="item">
@@ -8,7 +8,7 @@
 </span>
   <span class="item">
     <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown">
-      <i class="gel-icon-lg gel-icon-print" aria-hidden="true"></i> <span>Actions</span>
+      <i class="gel-icon-lg gel-icon-ellipsis" aria-hidden="true"></i> <span>Actions</span>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
       <a class="dropdown-item" href="#2" title="Copy job"><i class="gel-icon-copy" aria-hidden="true" ></i>Copy job</a>
