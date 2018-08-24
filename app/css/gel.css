@@ -10167,6 +10167,124 @@ sub, sup {
 .text-navy {
   color: #142c52 !important; }
 
+.vw-10 {
+  width: 10vw !important; }
+
+.vw-30 {
+  width: 30vw !important; }
+
+.vw-50 {
+  width: 50vw !important; }
+
+.vw-70 {
+  width: 70vw !important; }
+
+.vw-90 {
+  width: 90vw !important; }
+
+.vh-10 {
+  height: 10vh !important; }
+
+.vh-30 {
+  height: 30vh !important; }
+
+.vh-50 {
+  height: 50vh !important; }
+
+.vh-70 {
+  height: 70vh !important; }
+
+.vh-90 {
+  height: 90vh !important; }
+
+@media (min-width: 576px) {
+    .vw-sm-10 {
+      width: 10vw !important; }
+      .vw-sm-30 {
+        width: 30vw !important; }
+      .vw-sm-50 {
+        width: 50vw !important; }
+      .vw-sm-70 {
+        width: 70vw !important; }
+      .vw-sm-90 {
+        width: 90vw !important; }
+      .vh-sm-10 {
+        height: 10vh !important; }
+      .vh-sm-30 {
+        height: 30vh !important; }
+      .vh-sm-50 {
+        height: 50vh !important; }
+      .vh-sm-70 {
+        height: 70vh !important; }
+      .vh-sm-90 {
+        height: 90vh !important; } }
+
+@media (min-width: 768px) {
+    .vw-md-10 {
+      width: 10vw !important; }
+      .vw-md-30 {
+        width: 30vw !important; }
+      .vw-md-50 {
+        width: 50vw !important; }
+      .vw-md-70 {
+        width: 70vw !important; }
+      .vw-md-90 {
+        width: 90vw !important; }
+      .vh-md-10 {
+        height: 10vh !important; }
+      .vh-md-30 {
+        height: 30vh !important; }
+      .vh-md-50 {
+        height: 50vh !important; }
+      .vh-md-70 {
+        height: 70vh !important; }
+      .vh-md-90 {
+        height: 90vh !important; } }
+
+@media (min-width: 992px) {
+    .vw-lg-10 {
+      width: 10vw !important; }
+      .vw-lg-30 {
+        width: 30vw !important; }
+      .vw-lg-50 {
+        width: 50vw !important; }
+      .vw-lg-70 {
+        width: 70vw !important; }
+      .vw-lg-90 {
+        width: 90vw !important; }
+      .vh-lg-10 {
+        height: 10vh !important; }
+      .vh-lg-30 {
+        height: 30vh !important; }
+      .vh-lg-50 {
+        height: 50vh !important; }
+      .vh-lg-70 {
+        height: 70vh !important; }
+      .vh-lg-90 {
+        height: 90vh !important; } }
+
+@media (min-width: 1200px) {
+    .vw-xl-10 {
+      width: 10vw !important; }
+      .vw-xl-30 {
+        width: 30vw !important; }
+      .vw-xl-50 {
+        width: 50vw !important; }
+      .vw-xl-70 {
+        width: 70vw !important; }
+      .vw-xl-90 {
+        width: 90vw !important; }
+      .vh-xl-10 {
+        height: 10vh !important; }
+      .vh-xl-30 {
+        height: 30vh !important; }
+      .vh-xl-50 {
+        height: 50vh !important; }
+      .vh-xl-70 {
+        height: 70vh !important; }
+      .vh-xl-90 {
+        height: 90vh !important; } }
+
 .dragable {
   cursor: move; }
 
