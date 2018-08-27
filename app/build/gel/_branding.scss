@@ -6,4 +6,7 @@
   .logo{
     max-height: 3rem;
   }
+  @include media-breakpoint-down(xs) {  // hide client branding when xs
+    display: none;
+  }
 }

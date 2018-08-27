@@ -71,7 +71,7 @@
             <a class="list-group-item list-group-item-action disabled" data-toggle="tab" href="#list8" role="tab"><i class="gel-icon-cost"></i> Compensation</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list9" role="tab"><i class="gel-icon-integration"></i> Integration</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list10" role="tab"><i class="gel-icon-configure"></i> Configure</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-thirdparty"></i> Third Party Settings</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-third-party"></i> Third Party Settings</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list12" role="tab"><i class="gel-icon-settings"></i> Other</a>
           </div>
         </div>

@@ -173,19 +173,17 @@
         <form>
           <div class="form-group">
             <label for="group1">Columns</label>
-            <div class="row">
-              <?php for ($c =1; $c <= 2; $c++) {?>
-                  <div class="col-6">
-                    <?php for ($i =1; $i <= 5; $i++) {?>
-                      <div class="checkbox checkbox-default">
-                        <input type="checkbox" checked id="<?php echo $c . '-' .$i ?>">
-                        <label for="<?php echo $c . '-' . $i ?>">
-                          Column <?php echo $c . '-' . $i ?>
-                        </label>
-                      </div>
-                    <?php } ?>
+            <div class="d-flex flex-wrap">
+                <?php $c=1; for ($i =1; $i <= 15; $i++) {?>
+                  <div class="w-50">
+                    <div class="checkbox checkbox-default">
+                      <input type="checkbox" checked id="<?php echo $c . '-' .$i ?>">
+                      <label for="<?php echo $c . '-' . $i ?>">
+                        Column <?php echo $c . '-' . $i ?>
+                      </label>
+                    </div>
                   </div>
-              <?php } ?>
+                <?php } ?>
             </div>
           </div>
           <div class="form-group">

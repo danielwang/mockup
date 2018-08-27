@@ -18,6 +18,23 @@
         vertical-align: baseline;
     }
   }
+
+  &.no-caret{
+    padding-right: 0;
+    margin-right:  0;
+
+    &:after{
+      content: "" !important;
+    }
+
+    &+ .dropdown-menu{
+      margin-top: 0;
+      &:after{
+        border: 0;
+      }
+    }
+  }
+
 }
 
 .show > .dropdown-toggle{

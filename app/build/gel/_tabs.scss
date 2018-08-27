@@ -1,49 +1,69 @@
-.nav-tabs-line{
-  .nav-link{
-    color: $link-color-alt;
-    font-size: 1rem;
-    padding-bottom: 1rem;
-    &.active{
-      // border-bottom: 4px solid currentcolor;
-      color: $azure;
-      position: relative;
-      &::after {
-        width: 10px;
-        height: 10px;
-        transform: rotate(45deg);
-        border-left: 1px solid $grey-100;
-        border-top: 1px solid $grey-100;
-        display: block;
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        background: white;
-        left: calc(50%);
-        margin-left: -5px;
+.nav-tabs-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: flex-end;
+  max-width: 100%;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: -1px;
+  overflow-y: hidden;
+  height: 3rem;
+
+  .nav-item {
+    white-space: nowrap;
+
+    .nav-link {
+      color: $link-color-alt;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+
+      &.active {
+        // border-bottom: 4px solid currentcolor;
+        color: $azure;
+        position: relative;
+
+        &::before {
+          width: 10px;
+          height: 10px;
+          transform: rotate(45deg);
+          border-left: 1px solid $grey-100;
+          border-top: 1px solid $grey-100;
+          display: block;
+          content: "";
+          position: absolute;
+          bottom: -0.25rem;
+          background: white;
+          left: calc(50%);
+          margin-left: -5px;
+        }
       }
     }
   }
 
-  + .tab-content{
-      padding: $spacer;
-      border-top: 1px solid $grey-100;
+  + .tab-content {
+    padding: $spacer;
+    border-top: 1px solid $grey-100;
   }
 }
 
-.nav-tabs{
+.nav-tabs {
   border-width: 2px;
 
-    .nav-link {
-      @include font-heading();
-      font-size: 1rem;
-      color: $link-color-alt;
-      padding: $spacer * 0.625;
-      border: 0;
-    }
-    + .tab-content{
-        padding: $spacer * 2;
-        background: white;
-        border-bottom-left-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-    }
+  .nav-link {
+    @include font-heading();
+    font-size: 1rem;
+    color: $link-color-alt;
+    padding: $spacer * 0.625;
+    border: 0;
+  }
+
+  + .tab-content {
+    padding: $spacer * 2;
+    background: white;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
 }
