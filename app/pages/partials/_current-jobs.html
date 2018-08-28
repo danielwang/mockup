@@ -1,65 +1,71 @@
 <div class="card">
-  <div class="row">
-    <div class="col-3 col-lg-2 text-center">
+  <div class="row d-none d-xl-flex">
+    <div class="col-xl-2 text-center">
       <h6>Applications</h6>
     </div>
-    <div class="col-9 col-md-5 col-lg-4">
+    <div class="col-xl-4">
       <h6>Jobs</h6>
     </div>
-    <div class="col-9 col-md-5 col-lg-2">
+    <div class="col-xl-2">
       <h6>Status</h6>
     </div>
-    <div class="col-md-3 col-lg-2">
+    <div class="col-xl-2">
       <h6>Recruiter</h6>
     </div>
-    <div class="col-md-3 col-lg-1 text-nowrap">
+    <div class="col-xl-1 text-nowrap">
       <h6>Positions</h6>
     </div>
-    <div class="col-md-3 col-lg-1 text-nowrap">
+    <div class="col-xl-1 text-nowrap">
       <h6>Vacancies</h6>
     </div>
+    <hr>
   </div>
 
   <?php for ($x =1; $x <= 10; $x++) {?>
-  <hr>
-  <div class="row mb-2">
-    <div class="col-lg-2 text-center">
-      <p>
+  <div class="row">
+    <div class="col-sm-2 text-center">
+      <span class="d-inline-block d-sm-block">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span></p>
+        <span class="text-20">18</span>
+      </span>
       <span class="badge badge-warning">6 new</span>
     </div>
-    <div class="col-md-5 col-lg-4">
-      <div class="position-relative">
-        <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
-          <i class="gel-icon-info-pointer"></i>
-        </a>
-        <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-          <?php include "partials/_i-button.html" ?>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-md-12 col-xl-5">
+          <div class="position-relative">
+            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+              <i class="gel-icon-info-pointer"></i>
+            </a>
+            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <?php include "partials/_i-button.html" ?>
+            </div>
+            <h5 class="d-inline">
+              <a href="job-card">Retail Customer Service Officer</a>
+            </h5>
+            <!-- <p><small>53302044</small></p> -->
+          </div>
         </div>
-        <h5 class="d-inline">
-          <a href="job-card">Retail Customer Service Officer</a>
-        </h5>
-        <!-- <p><small>53302044</small></p> -->
+        <div class="col-md-6 col-xl-3">Approved to advertise</div>
+        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
+        <div class="col-md-6 col-xl-1 text-center">12</div>
+        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-12">
+          <ul class="list-unstyled">
+            <li>
+              <i class="gel-icon-bell gel-icon-sm text-red"></i>
+              <a class="link-alt" href="#">2 applications are incomplete for more than 5 days.</a>
+            </li>
+            <li>
+              <i class="gel-icon-bell gel-icon-sm text-danger"></i>
+              <a class="link-alt" href="#">
+                This has been incomplete for more than 1 day</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="col-md-3 col-lg-2">Approved to advertise</div>
-    <div class="col-md-3 col-lg-2">Arnold Schwarzenegger</div>
-    <div class="col-md-3 col-lg-1 text-center">12</div>
-    <div class="col-md-3 col-lg-1 text-center">10</div>
-    <div class="offset-lg-2 col-lg-10">
-      <ul class="list-unstyled">
-        <li>
-          <i class="gel-icon-bell gel-icon-sm text-red"></i>
-          <a class="link-alt" href="#">2 applications are incomplete for more than 5 days.</a>
-        </li>
-        <li>
-          <i class="gel-icon-bell gel-icon-sm text-danger"></i>
-          <a class="link-alt" href="#">
-            This has been incomplete for more than 1 day</a>
-        </li>
-      </ul>
-    </div>
   </div>
+  <hr>
   <?php } ?>
 </div>
