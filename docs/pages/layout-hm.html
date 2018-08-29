@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="noindex">
-      <title>Hiring manager dashboard - MockUp</title>
+      <title>Welcome John: Hiring manager dashboard - MockUp</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
@@ -33,12 +33,134 @@
       </script>
     
    <!-- Hiring manager centre, client branding -->
-         <header role="Branding header" class="client-branding" style="background-color: #B7BC3F">
+         <header role="Branding header" class="client-branding" style="background-color: #cccccc">
           <div class="container-fluid">
             <img class="logo" src="../images/client-logo.png" alt="client'name logo" />
           </div>
       </header>
-         <!-- ************ menu ************  -->
+         <!-- ************ topbar ************ -->
+   <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
+       <div class="container-fluid">
+         <!-- logo  -->
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
+           <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../images/pu-logo.png" width="100"/></a></li>
+         </ul>
+         <ul class="navbar-nav">
+           <li class="nav-item d-none d-xl-flex">
+  <a class="nav-link" href="jobs">Jobs</a>
+</li>
+<li class="nav-item d-none d-xl-flex">
+  <a class="nav-link" href="#">Applicants</a>
+</li>
+<li class="nav-item d-none d-xl-flex">
+  <a class="nav-link" href="#">Reports</a>
+</li>
+<li class="nav-item d-none d-xl-flex">
+  <a class="nav-link" href="settings">Settings</a>
+</li>
+<li class="nav-item">
+  <form class="search-group form-inline" role="search">
+    <label class="sr-only" for="quick-search" aria-label="Quick Search">
+      Quick Search</label>
+    <input id="quick-search" class="form-control" placeholder="Quick search" type="search">
+    <button class="btn-submit">
+      <i aria-hidden="true" class="gel-icon-search gel-icon-lg"></i>
+      <span class="sr-only">Quick Search</span>
+    </button>
+  </form>
+</li>
+<li class="nav-item recent-items">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recent items</a>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a title="Daniel Appllicant" class="dropdown-item" href="#" onclick="popupWindow('../pages/applicant-card')">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Mr Daniel Appllicant</a>
+    <a title="Elizabeth Appllicant" class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Miss Elizabeth Appllicant</a>
+    <a title="Senior project manager" class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
+      Senior project manager</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
+      Administrator - Head Office</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Bobby Employee</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Miss Elizabeth Appllicant</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Frank Employee</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
+      Business Development Executive</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Alexsander Employee</a>
+  </div>
+</li>           <!-- user panel -->
+           <li id="nav-user-panel" class="nav-item user-panel">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="../images/avatar.svg" alt="John's profile">
+    John
+  </a>
+  <div class="dropdown-menu dropdown-menu-right user-menu">
+    <!-- User name -->
+    <header class="user-header">
+      <h5 class="margin-bottom-none">John Smith</h5>
+      <p>john.smith@pageuppeople.com</p>
+      <p>
+        <button type="button" class="btn btn-primary">
+          View Profile</button>
+      </p>
+    </header>
+    <footer>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-logo"></i>
+        Switch back to Live
+      </a>
+      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#feedbackModal">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-beta-feedback"></i>
+        Give Beta feedback
+      </a>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-alpha"></i>
+        Experiment Alpha
+      </a>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="logout" class="gel-icon-logout"></i>
+        Log out</a>
+    </footer>
+  </div>
+</li>           <!-- help -->
+           <li id="nav-help" class="nav-help nav-item">
+  <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" aria-label="Help">
+    <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
+    <span class="sr-only">Help</span></a>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a href="#" class="dropdown-item" title="Print">
+      <i class="gel-icon-print" aria-hidden="true"></i>
+      Print
+    </a>
+    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal2">
+      <i class="gel-icon-feedback" aria-hidden="true"></i>
+      Feedback</a>
+    <a href="#" class="dropdown-item" title="Knowledge portal">
+      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i>
+      Knowledge portal</a>
+    <a href="#" class="dropdown-item" title="Live support">
+      <i class="gel-icon-support" aria-hidden="true"></i>
+      Live Support</a>
+    <a href="#" class="dropdown-item" title="Raise support case">
+      <i class="gel-icon-bullhorn" aria-hidden="true"></i>
+      Raise support case</a>
+  </div>
+</li>         </ul>
+       </div>
+     </nav>
+   <!-- ************ menu ************  -->
   <aside id="gel-menu" role='menu'>
          <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
 
@@ -137,136 +259,13 @@
   </li>
 </ul>         </menu>
        </aside>
-  <!-- ************ topbar ************ -->
-  <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
-      <div class="container-fluid">
-        <!-- logo  -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
-          <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../images/pu-logo.png" width="100"/></a></li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item d-none d-xl-flex">
-  <a class="nav-link" href="jobs">Jobs</a>
-</li>
-<li class="nav-item d-none d-xl-flex">
-  <a class="nav-link" href="#">Applicants</a>
-</li>
-<li class="nav-item d-none d-xl-flex">
-  <a class="nav-link" href="#">Reports</a>
-</li>
-<li class="nav-item d-none d-xl-flex">
-  <a class="nav-link" href="settings">Settings</a>
-</li>
-<li class="nav-item">
-  <form class="search-group form-inline" role="search">
-    <label class="sr-only" for="quick-search" aria-label="Quick Search">
-      Quick Search</label>
-    <input id="quick-search" class="form-control" placeholder="Quick search" type="search">
-    <button class="btn-submit">
-      <i aria-hidden="true" class="gel-icon-search gel-icon-lg"></i>
-      <span class="sr-only">Quick Search</span>
-    </button>
-  </form>
-</li>
-<li class="nav-item recent-items">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recent items</a>
-  <div class="dropdown-menu dropdown-menu-right">
-    <a title="Daniel Appllicant" class="dropdown-item" href="#" onclick="popupWindow('../pages/applicant-card')">
-      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
-      Mr Daniel Appllicant</a>
-    <a title="Elizabeth Appllicant" class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
-      Miss Elizabeth Appllicant</a>
-    <a title="Senior project manager" class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
-      Senior project manager</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
-      Administrator - Head Office</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
-      Bobby Employee</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
-      Miss Elizabeth Appllicant</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
-      Frank Employee</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
-      Business Development Executive</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
-      Alexsander Employee</a>
-  </div>
-</li>          <!-- user panel -->
-          <li id="nav-user-panel" class="nav-item user-panel">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="../images/avatar.svg" alt="John's profile">
-    John
-  </a>
-  <div class="dropdown-menu dropdown-menu-right user-menu">
-    <!-- User name -->
-    <header class="user-header">
-      <h5 class="margin-bottom-none">John Smith</h5>
-      <p>john.smith@pageuppeople.com</p>
-      <p>
-        <button type="button" class="btn btn-primary">
-          View Profile</button>
-      </p>
-    </header>
-    <footer>
-      <a class="dropdown-item" href="#">
-        <i aria-hidden="true" title="beta switch" class="gel-icon-logo"></i>
-        Switch back to Live
-      </a>
-      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#feedbackModal">
-        <i aria-hidden="true" title="beta switch" class="gel-icon-beta-feedback"></i>
-        Give Beta feedback
-      </a>
-      <a class="dropdown-item" href="#">
-        <i aria-hidden="true" title="beta switch" class="gel-icon-alpha"></i>
-        Experiment Alpha
-      </a>
-      <a class="dropdown-item" href="#">
-        <i aria-hidden="true" title="logout" class="gel-icon-logout"></i>
-        Log out</a>
-    </footer>
-  </div>
-</li>          <!-- help -->
-          <li id="nav-help" class="nav-help nav-item">
-  <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" aria-label="Help">
-    <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
-    <span class="sr-only">Help</span></a>
-  <div class="dropdown-menu dropdown-menu-right">
-    <a href="#" class="dropdown-item" title="Print">
-      <i class="gel-icon-print" aria-hidden="true"></i>
-      Print
-    </a>
-    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal2">
-      <i class="gel-icon-feedback" aria-hidden="true"></i>
-      Feedback</a>
-    <a href="#" class="dropdown-item" title="Knowledge portal">
-      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i>
-      Knowledge portal</a>
-    <a href="#" class="dropdown-item" title="Live support">
-      <i class="gel-icon-support" aria-hidden="true"></i>
-      Live Support</a>
-    <a href="#" class="dropdown-item" title="Raise support case">
-      <i class="gel-icon-bullhorn" aria-hidden="true"></i>
-      Raise support case</a>
-  </div>
-</li>        </ul>
-      </div>
-    </nav>
-
 
   <!-- ************  page header ************ -->
         <header id="gel-header" role="banner">
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8">
-                <h1 class="page-title">Hiring manager dashboard</h1>
+                <h1 class="page-title">Welcome John: Hiring manager dashboard</h1>
               </div>
               <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
                                 </div>
@@ -278,13 +277,11 @@
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
         		<section class="container">
-			<h2>Welcome John</h2>
-<p class="lead mb-4">
-  This is your Manager Dashboard where you will see all your tasks organized in various stages.
-  You will also see how many actions are required per task. Please attend to these tasks accordingly.</p>
+			<p class="lead mb-4">
+  This is your Manager Dashboard where you will see all your tasks organised in various stages.</p>
 
 <!-- 4 cards in a row without guidelines  -->
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
     <div class="card h-100 text-center">
       <img class="illustrations" src="../images/illustrations/pd.svg" alt="Position Description panel">
@@ -376,23 +373,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- 3 cards in a row with guidelines  -->
-<!-- <div class="row">
+<div class="row">
   <div class="col-xl-9">
     <div class="row">
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/pd.svg" alt="Position Description panel">
-          <div class="card-body text-16">
-            <h4 class="mb-4">Position Description</h4>
-            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">16</span> Lorem ipsum dolor</a></p>
-            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">23</span> Ametetur adipiscing</a></p>
-            <p class="mt-4"><a title="Manage position descriptions" role="button" href="#" class="btn btn-outline-primary btn-block text-truncate">Manage position descriptions</a></p>
-          </div>
-        </div>
-      </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <img class="illustrations" src="../images/illustrations/job.svg" alt="Jobs panel">
@@ -441,7 +427,7 @@
        <p>Lorem ipsum dolort ametetur adipiscing elit, sed do eiusmod tempor edr incididunt ut labore et dolore magna aliqua. </p>
        <p><a href="#">Ut enim ad minim</a> sersn veniam, quisre sedo nostrud<p>
   </div>
-</div> -->
+</div>
 		</section>
 	</main>
   <!-- ************  page footer ************ -->

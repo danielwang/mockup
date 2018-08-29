@@ -1,19 +1,17 @@
-<?php $pageTitle = "Hiring manager dashboard"; $parent = "hm"; include '../base-t1.php';?>
+<?php $pageTitle = "Welcome John: Hiring manager dashboard"; $parent = "hm"; include '../base-t1.php';?>
 
 <?php startblock('page-title') ?>
-  Hiring manager dashboard
+ Welcome John: Hiring manager dashboard
 <?php endblock() ?>
 
 <?php emptyblock('page-tabs') ?>
 
 <?php startblock('page-body');?>
-<h2>Welcome John</h2>
 <p class="lead mb-4">
-  This is your Manager Dashboard where you will see all your tasks organized in various stages.
-  You will also see how many actions are required per task. Please attend to these tasks accordingly.</p>
+  This is your Manager Dashboard where you will see all your tasks organised in various stages.</p>
 
 <!-- 4 cards in a row without guidelines  -->
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
     <div class="card h-100 text-center">
       <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description panel">
@@ -105,23 +103,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- 3 cards in a row with guidelines  -->
-<!-- <div class="row">
+<div class="row">
   <div class="col-xl-9">
     <div class="row">
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description panel">
-          <div class="card-body text-16">
-            <h4 class="mb-4">Position Description</h4>
-            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">16</span> Lorem ipsum dolor</a></p>
-            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">23</span> Ametetur adipiscing</a></p>
-            <p class="mt-4"><a title="Manage position descriptions" role="button" href="#" class="btn btn-outline-primary btn-block text-truncate">Manage position descriptions</a></p>
-          </div>
-        </div>
-      </div>
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/job.svg" alt="Jobs panel">
@@ -170,5 +157,5 @@
        <p>Lorem ipsum dolort ametetur adipiscing elit, sed do eiusmod tempor edr incididunt ut labore et dolore magna aliqua. </p>
        <p><a href="#">Ut enim ad minim</a> sersn veniam, quisre sedo nostrud<p>
   </div>
-</div> -->
+</div>
 <?php endblock()?>

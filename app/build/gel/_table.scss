@@ -25,6 +25,14 @@
     &.thead-sortable th {
       border-left: 1px solid $slate-600;
 
+      &.sorted{
+        padding-right: $spacer * 2;
+      }
+
+      &.disabled:hover{
+        background-color: $table-dark-bg;
+      }
+
       &:hover {
         background-color: $table-dark-hover-bg;
       }
@@ -43,7 +51,7 @@
             font-family: $gel-icon;
             position: absolute;
             font-size: 1.25rem;
-            right: -0.25rem;
+            right: -$spacer * 1.5;
             top: calc(50% - 0.625rem);
           }
         }
@@ -52,7 +60,7 @@
             content: "\e97d";
             font-family: $gel-icon;
             position: absolute;
-            right: -0.25rem;
+            right: -$spacer * 1.5;
             font-size: 1.25rem;
             top: calc(50% - 0.625rem);
           }

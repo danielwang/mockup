@@ -66,24 +66,24 @@
       <caption class="sr-only">List of jobs</caption>
       <thead class="thead-dark thead-sortable">
         <tr>
-          <th scope="col"><a href="#" class="sort-up" aria-label="sorting by Job Title">Job Title</a></th>
           <th scope="col"><a href="#" aria-label="sorting by Job ID">Job ID</a></th>
+          <th scope="col"><a href="#" aria-label="sorting by Job Title">Job Title</a></th>
           <th scope="col"><a href="#" aria-label="sorting by Recruiter">Recruiter</a>
           </th>
           <th scope="col"><a href="#" aria-label="sorting by Status">Status</a>
           </th>
-          <th scope="col"><a href="#" aria-label="sorting by Opening date">Opening date </a></th>
+          <th scope="col" class="sorted"><a href="#" class="sort-up" aria-label="sorting by Opening date">Opening date </a></th>
           <th scope="col"><a href="#" aria-label="sorting by Closing date">Closing date </a></th>
-          <th scope="col"><span class="sr-only">Action</span></th>
+          <th scope="col" class="disabled"><span class="sr-only">Action</span></th>
         </tr>
       </thead>
       <tbody>
         <?php for ($x =1; $x <= 10; $x++) {?>
         <tr>
-          <th scope="row">International Consultant on Early Childhood Development</th>
           <td data-title="Job ID">
             <?php echo $x * 2  + 53302042 ?>
           </td>
+          <th scope="row">International Consultant on Early Childhood Development</th>
           <td data-title="Recruiter">Peter Smith</td>
           <td data-title="Status">
             Offer Made
@@ -95,10 +95,10 @@
           </td>
         </tr>
         <tr>
-          <th scope="row">Retail Customer Service Officer </th>
           <td data-title="Job ID">
             <?php echo $x + 53302042 ?>
           </td>
+          <th scope="row">Retail Customer Service Officer </th>
           <td data-title="Recruiter"> Arnold Schwarzenegger </td>
           <td data-title="Status">
             Approved to advertise
@@ -117,10 +117,10 @@
   <span class="text-muted text-sm mb-2 col-md-6 order-md-1 col-lg-2 col-xl-3 d-flex align-items-center">Showing 121 - 140 of 175 results</span>
   <ul class="order-md-3 order-lg-2 col-lg-6 col-xl-6 mb-2 pagination justify-content-center" role="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" ><i class="gel-icon-left-end gel-icon-xs"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" ><i class="gel-icon-left-end gel-icon-xs"></i><span class="sr-only">First</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-xs"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-xs"></i><span class="sr-only">Previous</span></a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">4</a>
@@ -139,10 +139,10 @@
       <a class="page-link" href="#">8</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-xs"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-xs"></i><span class="sr-only">Next</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" ><i class="gel-icon-right-end gel-icon-xs"></i></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" ><i class="gel-icon-right-end gel-icon-xs"></i><span class="sr-only">Last</span></a>
     </li>
   </ul>
   <div class="col-md-6 order-md-2 order-lg-3 col-lg-4 col-xl-3 justify-content-end d-flex align-items-center mb-2">
