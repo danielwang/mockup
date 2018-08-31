@@ -47,15 +47,3 @@ function menuState() {
 function setMenuState(val) {
   localStorage.setItem("menuState", val); // store the value in local browser
 }
-
-// function setDropdownPosition() {
-//   var dropdowns = document.getElementsByClassName('dropdown-toggle');
-//   for (var i = 0; i < dropdowns.length; i++) {
-//     dropdowns[i].addEventListener('click', () => {
-//         var width = dropdowns[i].offsetWidth;
-//       //  console.log(width);
-//         dropdowns[i].nextElementSibling.style.marginLeft = -(width);
-//     }, false);
-//   }
-//
-// }

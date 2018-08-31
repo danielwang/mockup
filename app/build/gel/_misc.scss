@@ -19,6 +19,7 @@
 
 .scroll{
   -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .scroll::-webkit-scrollbar {

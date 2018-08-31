@@ -3,6 +3,7 @@
 <?php emptyblock('page-tabs') ?>
 
 <?php startblock('page-body');?>
+
 <div class="row">
   <div class="col-md-6 col-lg-4">
     <h5>Visibility</h5>
@@ -57,11 +58,20 @@
     </fieldset>
   </div>
   <div class="col-lg-4 d-flex justify-content-sm-end align-items-end mt-3">
-      <span class="mb-2 mr-2">55 results</span>
-      <button class="btn btn-ctrl" type="button" data-toggle="modal" data-target="#exampleModal"><i aria-hidden="true" class="gel-icon-settings"></i> Settings </button>
+
   </div>
 </div>
-<div class="table-responsive">
+<div class="d-flex justify-content-between align-items-center mt-3">
+  <span>55 results</span>
+  <div class="table-ctrl">
+    <button class="btn btn-ctrl btn-sm mr-2" type="button" data-toggle="modal" data-target="#exampleModal"><i aria-hidden="true" class="gel-icon-settings gel-icon-xs"></i> Settings </button>
+    <div class="scroller btn-group" role="scroller control" aria-label="">
+      <button id="left-btn" type="button" class="btn btn-ctrl btn-sm disabled" data-toggle="tooltip" data-placement="left" data-original-title="Scroll to left"><i class="gel-icon-arrow-left gel-icon-xs"></i></button>
+      <button id="right-btn" type="button" class="btn btn-ctrl btn-sm disabled" data-toggle="tooltip" data-placement="right" data-original-title="Scroll to right"><i class="gel-icon-arrow-right gel-icon-xs"></i></button>
+    </div>
+  </div>
+</div>
+<div id="table-wrapper" class="table-responsive">
   <table class="table table-striped table-hover mt-3">
       <caption class="sr-only">List of jobs</caption>
       <thead class="thead-dark thead-sortable">
@@ -70,6 +80,9 @@
           <th scope="col"><a href="#" aria-label="sorting by Job Title">Job Title</a></th>
           <th scope="col"><a href="#" aria-label="sorting by Recruiter">Recruiter</a>
           </th>
+          <?php for ($i =1; $i <= 11; $i++) {?>
+            <th scope="col"><a href="#" aria-label="sorting by Status">column <?php echo $i ?></a></th>
+          <?php } ?>
           <th scope="col"><a href="#" aria-label="sorting by Status">Status</a>
           </th>
           <th scope="col" class="sorted"><a href="#" class="sort-up" aria-label="sorting by Opening date">Opening date </a></th>
@@ -78,13 +91,16 @@
         </tr>
       </thead>
       <tbody>
-        <?php for ($x =1; $x <= 10; $x++) {?>
+        <?php for ($x =1; $x <= 1; $x++) {?>
         <tr>
           <td data-title="Job ID">
             <?php echo $x * 2  + 53302042 ?>
           </td>
           <th scope="row">International Consultant on Early Childhood Development</th>
           <td data-title="Recruiter">Peter Smith</td>
+          <?php for ($i =1; $i <= 11; $i++) {?>
+            <td data-title="Recruiter">data</td>
+          <?php } ?>
           <td data-title="Status">
             Offer Made
           </td>
@@ -100,6 +116,9 @@
           </td>
           <th scope="row">Retail Customer Service Officer </th>
           <td data-title="Recruiter"> Arnold Schwarzenegger </td>
+          <?php for ($i =1; $i <= 11; $i++) {?>
+            <td data-title="Recruiter">data</td>
+          <?php } ?>
           <td data-title="Status">
             Approved to advertise
           </td>
@@ -218,5 +237,117 @@
     </div>
   </div>
 </div>
+<script>
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+const tableWrapper = document.getElementById('table-wrapper');
+const table = tableWrapper.querySelector('.table');
+const scroller = document.querySelector('.scroller');
 
+var rightButton = document.getElementById('right-btn');
+var leftButton = document.getElementById('left-btn');
+//var overflowDis =  tableWidth - tableWrapperWidth;
+
+// Add scroller contrl on desktop
+if (!isMobile) {
+    scrollerInit();
+} else{
+    //hide scroller contrl on mobile devices
+    scroller.classList.add('d-none');
+}
+
+function getWrapperWidth(){
+   return tableWrapper.clientWidth;
+}
+
+function getTableWidth(){
+  return table.clientWidth;
+}
+
+function getOverflowDis(){
+    return getTableWidth() - getWrapperWidth();
+}
+
+function scrollerInit(){
+
+  // there is overflow
+  if (getWrapperWidth() < getTableWidth()) {
+      //show scroller
+      scroller.classList.remove('d-none');
+      rightButton.classList.remove('disabled');
+  }
+  else{
+      scroller.classList.add('d-none');
+  }
+
+  //
+  if (tableWrapper.scrollLeft > 0) {
+      leftButton.classList.remove('disabled');
+  } else{
+      leftButton.classList.add('disabled');
+  }
+
+}
+
+function scrollerReset(){
+  //
+  if (tableWrapper.scrollLeft > 0) {
+      // leftButton.disabled = false;
+      leftButton.classList.remove('disabled');
+  } else{
+      leftButton.classList.add('disabled');
+  }
+
+  if (tableWrapper.scrollLeft == getOverflowDis()) {
+      rightButton.classList.add('disabled');
+  } else{
+      rightButton.classList.remove('disabled');
+  }
+
+}
+
+rightButton.onclick = function () {
+    sideScroll(tableWrapper,'right',20,300,20);
+};
+leftButton.onclick = function () {
+    sideScroll(tableWrapper,'left',20,300,20);
+};
+
+function sideScroll(element,direction,speed,distance,step){
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+        scrollerReset();
+    }, speed);
+
+}
+
+var timeout;
+
+// Listen for resize events
+window.addEventListener('resize', function ( event ) {
+	// If timer is null, reset it to 66ms and run your functions.
+	// Otherwise, wait until timer is cleared
+	if ( !timeout ) {
+		timeout = setTimeout(function() {
+			// Reset timeout
+			timeout = null;
+			// Run our resize functions
+			scrollerInit();
+
+		}, 66);
+	}
+}, false);
+
+
+
+</script>
 <?php endblock() ?>

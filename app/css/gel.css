@@ -7474,7 +7474,8 @@ label {
  * http://lea.verou.me/2012/04/background-attachment-local/
  */
 .scroll {
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
 
 .scroll::-webkit-scrollbar {
   width: 8px;
@@ -8750,7 +8751,8 @@ select.form-control {
     max-width: 100%;
     overflow-x: auto;
     flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch; }
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
   #gel-subpages .page-tabs:empty {
     display: none; }
   #gel-subpages .page-tabs .nav-item {
