@@ -1,4 +1,4 @@
-<?php $pageTitle = "New Starter Tasks"; $parent = "hm"; include '../base-t1.php';?>
+<?php $pageTitle = "New Starter Tasks"; $pageAction = false; $parent = "hm"; include '../base-t1.php';?>
 
 <?php emptyblock('page-tabs') ?>
 
@@ -68,7 +68,7 @@
       <h4 class="mt-5">Before James's First Day</h4>
       <table class="table mt-2">
         <caption class="sr-only">List of tasks</caption>
-        <thead class="thead-dark">
+        <thead>
           <tr>
             <th scope="col">Task</th>
             <th scope="col">Assigned to</th>

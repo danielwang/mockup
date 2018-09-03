@@ -8688,7 +8688,7 @@ select.form-control {
   background-image: linear-gradient(to right, #0053a3 0%, #0053a3 100%);
   background-repeat: repeat-x;
   color: white;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   -webkit-transition: font-size 0.5s ease;
   -moz-transition: font-size 0.5s ease;
   -o-transition: font-size 0.5s ease;
@@ -8702,7 +8702,8 @@ select.form-control {
     -o-transition: font-size 0.5s ease;
     transition: font-size 0.5s ease; }
   #gel-header blockquote.tagline {
-    margin: 1rem 0 0; }
+    margin: 0.75rem 0 0;
+    font-size: 1.125rem; }
   #gel-header h6 {
     color: white;
     font-size: 12px; }

@@ -1,4 +1,4 @@
-<?php $parent = "adm"; $pageTitle = "Retail Customer Service Officer - Melbourne"; include '../base-t1.php';?>
+<?php $parent = "adm"; $pageAction = true; $pageTitle = "Retail Customer Service Officer - Melbourne"; include '../base-t1.php';?>
 
 <?php startblock('page-actions') ?>
 <span class="item">

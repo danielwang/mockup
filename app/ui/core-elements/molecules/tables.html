@@ -31,37 +31,108 @@
   </tbody>
 </table>
 <hr class="sg-hr"/>
-<h3>Dark table
+<h3>Big data table
 </h3>
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-ctrl d-flex justify-content-between align-items-center">
+  <span>55 results</span>
+  <div role="Controls of the table">
+    <button class="btn btn-ctrl btn-sm mr-2" type="button" data-toggle="modal" data-target="#exampleModal">
+      <i aria-hidden="true" class="gel-icon-settings gel-icon-xs"></i>
+      Settings
+    </button>
+    <div class="scroller btn-group" aria-label="Scroller">
+      <button type="button" class="btn btn-ctrl btn-sm scroller-left-btn disabled" data-toggle="tooltip" data-placement="left" data-original-title="Scroll to left">
+        <i class="gel-icon-arrow-left gel-icon-xs"></i>
+      </button>
+      <button type="button" class="btn btn-ctrl btn-sm scroller-right-btn disabled" data-toggle="tooltip" data-placement="right" data-original-title="Scroll to right">
+        <i class="gel-icon-arrow-right gel-icon-xs"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div data-control="scroller-wrapper" class="table-responsive">
+  <table data-control="scroller-content" class="table table-striped table-hover mt-3">
+    <caption class="sr-only">List of jobs</caption>
+    <thead class="thead-dark thead-sortable">
+      <tr>
+        <th scope="col">
+          <a href="#" aria-label="sorting by Job ID">Job ID</a>
+        </th>
+        <th scope="col">
+          <a href="#" aria-label="sorting by Job Title">Job Title</a>
+        </th>
+        <th scope="col">
+          <a href="#" aria-label="sorting by Recruiter">Recruiter</a>
+        </th>
+        <?php for ($i =1; $i <= 11; $i++) {?>
+        <th scope="col">
+          <a href="#" aria-label="sorting by Status">column
+            <?php echo $i ?></a>
+        </th>
+        <?php } ?>
+        <th scope="col">
+          <a href="#" aria-label="sorting by Status">Status</a>
+        </th>
+        <th scope="col" class="sorted">
+          <a href="#" class="sort-up" aria-label="sorting by Opening date">Opening date
+          </a>
+        </th>
+        <th scope="col">
+          <a href="#" aria-label="sorting by Closing date">Closing date
+          </a>
+        </th>
+        <th scope="col" class="disabled">
+          <span class="sr-only">Action</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php for ($x =1; $x <= 11; $x++) {?>
+      <tr>
+        <td data-title="Job ID">
+          <?php echo $x * 2  + 53302042 ?>
+        </td>
+        <th scope="row">International Consultant on Early Childhood Development</th>
+        <td data-title="Recruiter">Peter Smith</td>
+        <?php for ($i =1; $i <= 11; $i++) {?>
+        <td data-title="Recruiter">data</td>
+        <?php } ?>
+        <td data-title="Status">
+          Offer Made
+        </td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <td data-title="Actions" class="text-center">
+          <a aria-label="View application" href="job-card">
+            <i data-toggle="tooltip" data-placement="bottom" data-original-title="View application" class="gel-icon-lg gel-icon-view"></i>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title="Job ID">
+          <?php echo $x + 53302042 ?>
+        </td>
+        <th scope="row">Retail Customer Service Officer
+        </th>
+        <td data-title="Recruiter">
+          Arnold Schwarzenegger
+        </td>
+        <?php for ($i =1; $i <= 11; $i++) {?>
+        <td data-title="Recruiter">data</td>
+        <?php } ?>
+        <td data-title="Status">
+          Approved to advertise
+        </td>
+        <td data-title="Opening date">Jul 14, 2017</td>
+        <td data-title="Closing date">Jan 23, 2018</td>
+        <td data-title="Actions" class="text-center">
+          <a aria-label="View application" href="job-card">
+            <i data-toggle="tooltip" data-placement="bottom" data-original-title="View application" class="gel-icon-lg gel-icon-view"></i>
+          </a>
+        </td>
+      </tr>
+      <?php } ?>
+    </tbody>
+  </table>
+</div>
 
 <!-- <h5 class="mt-5">Larg table (Bootstrap) <small class="text-muted">scroll horizonally in side table</small> </h5> <div class="table-responsive"> <?php include ("_partials/table-lg.html");?> </div> -->

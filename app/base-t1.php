@@ -49,12 +49,20 @@
       <header id="gel-header" role="banner">
           <div class="container">
             <div class="row">
+              <?php if($pageAction == true) { ?>
               <div class="col-md-9 col-lg-8">
                 <h1 class="page-title"><?php echo $pageTitle  ?></h1>
+                <blockquote class="tagline"><?php emptyblock('page-tagline');?></blockquote>
               </div>
               <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
                   <?php emptyblock('page-actions') ?>
               </div>
+            <?php } else {?>
+              <div class="col-12">
+                <h1 class="page-title"><?php echo $pageTitle  ?></h1>
+                <blockquote class="tagline"><?php emptyblock('page-tagline');?></blockquote>
+              </div>
+            <?php }?>
             </div>
           </div>
       </header>

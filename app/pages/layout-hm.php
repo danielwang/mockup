@@ -1,14 +1,16 @@
-<?php $pageTitle = "Welcome John: Hiring manager dashboard"; $parent = "hm"; include '../base-t1.php';?>
+<?php $pageTitle = "Hiring manager dashboard"; $pageAction = false; $parent = "hm"; include '../base-t1.php';?>
 
 <?php startblock('page-title') ?>
- Welcome John: Hiring manager dashboard
+Hiring manager dashboard
+<?php endblock() ?>
+
+<?php startblock('page-tagline');?>
+Welcome John, this is your manager dashboard where you will see all your tasks organised in various stages.
 <?php endblock() ?>
 
 <?php emptyblock('page-tabs') ?>
 
 <?php startblock('page-body');?>
-<p class="lead mb-4">
-  This is your Manager Dashboard where you will see all your tasks organised in various stages.</p>
 
 <!-- 4 cards in a row without guidelines  -->
 <!-- <div class="row">

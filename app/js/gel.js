@@ -1,5 +1,10 @@
-var menu = document.getElementById('gel-menu');
-var menuIcons = document.getElementsByClassName('nav-toggle');
+/* *************************************** *\
+ *   PageUp GEL JS - v1.0.1
+ *   Author: Daniel Wang
+ *	 Date: 03/09/2018
+ *
+\* *************************************** */
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 document.addEventListener('DOMContentLoaded', function() {
   // read menu state from localStorage
@@ -8,6 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
 //  setDropdownPosition();
 });
 
+
+/*****************************************
+    Menu toggle
+*****************************************/
+var menu = document.getElementById('gel-menu');
+var menuIcons = document.getElementsByClassName('nav-toggle');
 
 function toggleMenu() {
   // sliding menu toggle

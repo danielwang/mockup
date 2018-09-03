@@ -1,4 +1,4 @@
-<?php $pageTitle = "My Jobs"; $parent = "hm"; include '../base-t1.php';?>
+<?php $pageTitle = "My Jobs"; $pageAction = false; $parent = "hm"; include '../base-t1.php';?>
 
 <?php emptyblock('page-tabs') ?>
 
@@ -61,18 +61,18 @@
 
   </div>
 </div>
-<div class="d-flex justify-content-between align-items-center mt-3">
+<div class="table-ctrl d-flex justify-content-between align-items-center mt-3">
   <span>55 results</span>
-  <div class="table-ctrl">
+  <div role="Controls of the table">
     <button class="btn btn-ctrl btn-sm mr-2" type="button" data-toggle="modal" data-target="#exampleModal"><i aria-hidden="true" class="gel-icon-settings gel-icon-xs"></i> Settings </button>
-    <div class="scroller btn-group" role="scroller control" aria-label="">
-      <button id="left-btn" type="button" class="btn btn-ctrl btn-sm disabled" data-toggle="tooltip" data-placement="left" data-original-title="Scroll to left"><i class="gel-icon-arrow-left gel-icon-xs"></i></button>
-      <button id="right-btn" type="button" class="btn btn-ctrl btn-sm disabled" data-toggle="tooltip" data-placement="right" data-original-title="Scroll to right"><i class="gel-icon-arrow-right gel-icon-xs"></i></button>
+    <div class="scroller btn-group" aria-label="Scroller">
+      <button type="button" class="btn btn-ctrl btn-sm scroller-left-btn disabled" data-toggle="tooltip" data-placement="left" data-original-title="Scroll to left"><i class="gel-icon-arrow-left gel-icon-xs"></i></button>
+      <button type="button" class="btn btn-ctrl btn-sm scroller-right-btn disabled" data-toggle="tooltip" data-placement="right" data-original-title="Scroll to right"><i class="gel-icon-arrow-right gel-icon-xs"></i></button>
     </div>
   </div>
 </div>
-<div id="table-wrapper" class="table-responsive">
-  <table class="table table-striped table-hover mt-3">
+<div data-control="scroller-wrapper" class="table-responsive">
+  <table data-control="scroller-content" class="table table-striped table-hover mt-3">
       <caption class="sr-only">List of jobs</caption>
       <thead class="thead-dark thead-sortable">
         <tr>
@@ -80,9 +80,6 @@
           <th scope="col"><a href="#" aria-label="sorting by Job Title">Job Title</a></th>
           <th scope="col"><a href="#" aria-label="sorting by Recruiter">Recruiter</a>
           </th>
-          <?php for ($i =1; $i <= 11; $i++) {?>
-            <th scope="col"><a href="#" aria-label="sorting by Status">column <?php echo $i ?></a></th>
-          <?php } ?>
           <th scope="col"><a href="#" aria-label="sorting by Status">Status</a>
           </th>
           <th scope="col" class="sorted"><a href="#" class="sort-up" aria-label="sorting by Opening date">Opening date </a></th>
@@ -91,16 +88,13 @@
         </tr>
       </thead>
       <tbody>
-        <?php for ($x =1; $x <= 1; $x++) {?>
+        <?php for ($x =1; $x <= 11; $x++) {?>
         <tr>
           <td data-title="Job ID">
             <?php echo $x * 2  + 53302042 ?>
           </td>
           <th scope="row">International Consultant on Early Childhood Development</th>
           <td data-title="Recruiter">Peter Smith</td>
-          <?php for ($i =1; $i <= 11; $i++) {?>
-            <td data-title="Recruiter">data</td>
-          <?php } ?>
           <td data-title="Status">
             Offer Made
           </td>
@@ -116,9 +110,6 @@
           </td>
           <th scope="row">Retail Customer Service Officer </th>
           <td data-title="Recruiter"> Arnold Schwarzenegger </td>
-          <?php for ($i =1; $i <= 11; $i++) {?>
-            <td data-title="Recruiter">data</td>
-          <?php } ?>
           <td data-title="Status">
             Approved to advertise
           </td>
@@ -136,10 +127,10 @@
   <span class="text-muted text-sm mb-2 col-md-6 order-md-1 col-lg-2 col-xl-3 d-flex align-items-center">Showing 121 - 140 of 175 results</span>
   <ul class="order-md-3 order-lg-2 col-lg-6 col-xl-6 mb-2 pagination justify-content-center" role="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" ><i class="gel-icon-left-end gel-icon-xs"></i><span class="sr-only">First</span></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="left" data-original-title="First" ><i aria-hidden="true" class="gel-icon-left-end gel-icon-xs"></i><span class="sr-only">First</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i class="gel-icon-angle-left gel-icon-xs"></i><span class="sr-only">Previous</span></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous" ><i aria-hidden="true" class="gel-icon-angle-left gel-icon-xs"></i><span class="sr-only">Previous</span></a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">4</a>
@@ -158,10 +149,10 @@
       <a class="page-link" href="#">8</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i class="gel-icon-angle-right gel-icon-xs"></i><span class="sr-only">Next</span></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next"><i aria-hidden="true" class="gel-icon-angle-right gel-icon-xs"></i><span class="sr-only">Next</span></a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" ><i class="gel-icon-right-end gel-icon-xs"></i><span class="sr-only">Last</span></a>
+      <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last" ><i aria-hidden="true" class="gel-icon-right-end gel-icon-xs"></i><span class="sr-only">Last</span></a>
     </li>
   </ul>
   <div class="col-md-6 order-md-2 order-lg-3 col-lg-4 col-xl-3 justify-content-end d-flex align-items-center mb-2">
@@ -238,78 +229,73 @@
   </div>
 </div>
 <script>
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-const tableWrapper = document.getElementById('table-wrapper');
-const table = tableWrapper.querySelector('.table');
+const outterWrapper = document.querySelector('[data-control="scroller-wrapper"]');
+const innerContent = outterWrapper.querySelector('[data-control="scroller-content"]');
 const scroller = document.querySelector('.scroller');
 
-var rightButton = document.getElementById('right-btn');
-var leftButton = document.getElementById('left-btn');
-//var overflowDis =  tableWidth - tableWrapperWidth;
+var rightBtn = scroller.querySelector('.scroller-right-btn');
+var leftBtn = scroller.querySelector('.scroller-left-btn');
+var timeout;
+
+scrollerInit();
 
 // Add scroller contrl on desktop
 if (!isMobile) {
     scrollerInit();
 } else{
-    //hide scroller contrl on mobile devices
+    //hide scroller contrl on mobile touch devices
     scroller.classList.add('d-none');
 }
 
-function getWrapperWidth(){
-   return tableWrapper.clientWidth;
+function getOutterWrapperWidth(){
+   return outterWrapper.clientWidth;
 }
 
-function getTableWidth(){
-  return table.clientWidth;
+function getInnerConcentWidth(){
+  return innerContent.clientWidth;
 }
 
 function getOverflowDis(){
-    return getTableWidth() - getWrapperWidth();
+    return getInnerConcentWidth() - getOutterWrapperWidth();
 }
 
 function scrollerInit(){
-
   // there is overflow
-  if (getWrapperWidth() < getTableWidth()) {
+  if (getOutterWrapperWidth() < getInnerConcentWidth()) {
       //show scroller
+      console.log('s');
       scroller.classList.remove('d-none');
-      rightButton.classList.remove('disabled');
+      rightBtn.classList.remove('disabled');
   }
   else{
+      console.log('sn');
       scroller.classList.add('d-none');
   }
 
-  //
-  if (tableWrapper.scrollLeft > 0) {
-      leftButton.classList.remove('disabled');
-  } else{
-      leftButton.classList.add('disabled');
-  }
-
 }
-
+// disable or enable scroller left right buttons
 function scrollerReset(){
-  //
-  if (tableWrapper.scrollLeft > 0) {
-      // leftButton.disabled = false;
-      leftButton.classList.remove('disabled');
+
+  if (outterWrapper.scrollLeft > 0) {
+      // leftBtn.disabled = false;
+      leftBtn.classList.remove('disabled');
   } else{
-      leftButton.classList.add('disabled');
+      leftBtn.classList.add('disabled');
   }
 
-  if (tableWrapper.scrollLeft == getOverflowDis()) {
-      rightButton.classList.add('disabled');
+  if (outterWrapper.scrollLeft == getOverflowDis()) {
+      rightBtn.classList.add('disabled');
   } else{
-      rightButton.classList.remove('disabled');
+      rightBtn.classList.remove('disabled');
   }
 
 }
 
-rightButton.onclick = function () {
-    sideScroll(tableWrapper,'right',20,300,20);
+rightBtn.onclick = function () {
+    sideScroll(outterWrapper,'right',20,300,20);
 };
-leftButton.onclick = function () {
-    sideScroll(tableWrapper,'left',20,300,20);
+leftBtn.onclick = function () {
+    sideScroll(outterWrapper,'left',20,300,20);
 };
 
 function sideScroll(element,direction,speed,distance,step){
@@ -330,9 +316,7 @@ function sideScroll(element,direction,speed,distance,step){
 
 }
 
-var timeout;
-
-// Listen for resize events
+// Listen for resize windows events
 window.addEventListener('resize', function ( event ) {
 	// If timer is null, reset it to 66ms and run your functions.
 	// Otherwise, wait until timer is cleared
@@ -347,7 +331,8 @@ window.addEventListener('resize', function ( event ) {
 	}
 }, false);
 
-
-
+outterWrapper.addEventListener('scroll', function() {
+    scrollerReset();
+});
 </script>
 <?php endblock() ?>
