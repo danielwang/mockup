@@ -24,12 +24,13 @@
 
     &.thead-sortable th {
       border-left: 1px solid $slate-600;
+      white-space: nowrap;
 
       &.sorted{
         padding-right: $spacer * 2;
       }
 
-      &.disabled:hover{
+      &.nohover:hover{
         background-color: $table-dark-bg;
       }
 

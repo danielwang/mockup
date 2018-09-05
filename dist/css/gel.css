@@ -9196,10 +9196,11 @@ select.form-control {
   .table thead tr th:last-child {
     border-top-right-radius: 0.5rem; }
   .table thead.thead-sortable th {
-    border-left: 1px solid #2f3c49; }
+    border-left: 1px solid #2f3c49;
+    white-space: nowrap; }
   .table thead.thead-sortable th.sorted {
     padding-right: 2rem; }
-  .table thead.thead-sortable th.disabled:hover {
+  .table thead.thead-sortable th.nohover:hover {
     background-color: #536a81; }
   .table thead.thead-sortable th:hover {
     background-color: #66819c; }
@@ -9618,6 +9619,8 @@ select.form-control {
   font-weight: 400;
   font-family: 'Proxima Nova Light';
   line-height: 1.25; }
+  .blockquote:empty, .tagline:empty {
+    display: none; }
 
 dt {
   font-size: 1rem;

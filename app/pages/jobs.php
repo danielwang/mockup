@@ -4,8 +4,8 @@
 
 <?php startblock('page-body');?>
 
-<div class="row">
-  <div class="col-md-6 col-lg-4">
+<section role="search filter">
+  <div class="d-block d-md-inline-block mr-md-3">
     <h5>Visibility</h5>
     <fieldset>
       <legend class="sr-only">visibility</legend>
@@ -31,7 +31,7 @@
       </div>
     </fieldset>
   </div>
-  <div class="col-md-6 col-lg-4">
+  <div class="d-block d-md-inline-block ">
     <h5 class="mt-2 mt-md-0">Status</h5>
     <fieldset>
       <legend class="sr-only">Status</legend>
@@ -57,17 +57,20 @@
       </div>
     </fieldset>
   </div>
-  <div class="col-lg-4 d-flex justify-content-sm-end align-items-end mt-3">
-
-  </div>
-</div>
+</section>
 <div class="table-ctrl d-flex justify-content-between align-items-center mt-3">
   <span>55 results</span>
   <div role="Controls of the table">
-    <button class="btn btn-ctrl btn-sm mr-2" type="button" data-toggle="modal" data-target="#exampleModal"><i aria-hidden="true" class="gel-icon-settings gel-icon-xs"></i> Settings </button>
-    <div class="scroller btn-group" aria-label="Scroller">
-      <button type="button" class="btn btn-ctrl btn-sm scroller-left-btn disabled" data-toggle="tooltip" data-placement="left" data-original-title="Scroll to left"><i class="gel-icon-arrow-left gel-icon-xs"></i></button>
-      <button type="button" class="btn btn-ctrl btn-sm scroller-right-btn disabled" data-toggle="tooltip" data-placement="right" data-original-title="Scroll to right"><i class="gel-icon-arrow-right gel-icon-xs"></i></button>
+    <button class="btn btn-ctrl btn-sm" type="button" data-toggle="modal" data-target="#exampleModal"><i aria-hidden="true" class="gel-icon-settings gel-icon-xs"></i> Settings </button>
+    <div class="scroller btn-group ml-2" aria-label="Scroller">
+      <button type="button" class="btn btn-ctrl btn-sm scroller-left-btn disabled" data-toggle="tooltip" data-placement="left" data-original-title="Scroll to left">
+        <i class="gel-icon-arrow-left gel-icon-xs" aria-hidden="true"></i>
+        <span class="sr-only">Scroll left</span>
+      </button>
+      <button type="button" class="btn btn-ctrl btn-sm scroller-right-btn disabled" data-toggle="tooltip" data-placement="right" data-original-title="Scroll to right">
+        <i class="gel-icon-arrow-right gel-icon-xs" aria-hidden="true"></i>
+        <span class="sr-only">Scroll right</span>
+      </button>
     </div>
   </div>
 </div>
@@ -229,6 +232,7 @@
   </div>
 </div>
 <script>
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const outterWrapper = document.querySelector('[data-control="scroller-wrapper"]');
 const innerContent = outterWrapper.querySelector('[data-control="scroller-content"]');
 const scroller = document.querySelector('.scroller');
