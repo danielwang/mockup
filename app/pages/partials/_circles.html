@@ -1,10 +1,182 @@
-<div id="gel-masthead" class="mb-3 p-3">
+<div id="gel-masthead" class="mb-3" roll="masthead">
   <div class="container">
-    <div class="job-filters">
-      <?php for ($x =1; $x <= 9; $x++) {?>
-      <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-      <?php } ?>
+    <div class="d-flex justify-content-between">
+      <div class="mr-3">
+        <a href="#_" class="circle" style="width:4rem; height:4rem">142</a>
+        Total jobs
+      </div>
+      <section data-control="scroller-wrapper" style="overflow: auto">
+        <div class="scroller btn-group ml-2 d-none" aria-label="Scroller">
+          <button type="button" class="btn btn-ctrl btn-sm scroller-left-btn disabled" data-toggle="tooltip" data-placement="left" data-original-title="Scroll to left">
+            <i class="gel-icon-arrow-left gel-icon-xs" aria-hidden="true"></i>
+            <span class="sr-only">Scroll left</span>
+          </button>
+          <button type="button" class="btn btn-ctrl btn-sm scroller-right-btn disabled" data-toggle="tooltip" data-placement="right" data-original-title="Scroll to right">
+            <i class="gel-icon-arrow-right gel-icon-xs" aria-hidden="true"></i>
+            <span class="sr-only">Scroll right</span>
+          </button>
+        </div>
+        <div data-control="scroller-content" class="job-status-filters" aria-label="job status filters">
+          <div class="filter">
+            <input type="checkbox" id="f-1"/>
+            <label for="f-1" class="circle">5</label>
+            <label for="f-1">Pending Brief</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-2"/>
+            <label for="f-2" class="circle">8</label>
+            <label for="f-2">Internal Advertising</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-3"/>
+            <label for="f-3" class="circle">31</label>
+            <label for="f-3">Finding Talent</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-4"/>
+            <label for="f-4" class="circle">1</label>
+            <label for="f-4">External Sourcing</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-5"/>
+            <label for="f-5" class="circle">2</label>
+            <label for="f-5">Screening</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-6"/>
+            <label for="f-6" class="circle">17</label>
+            <label for="f-6">HM Interviewing</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-7"/>
+            <label for="f-7" class="circle">9</label>
+            <label for="f-7">Background Checks</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-8"/>
+            <label for="f-8" class="circle">35</label>
+            <label for="f-8">Security / Offer Check</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-9"/>
+            <label for="f-9" class="circle">19</label>
+            <label for="f-9">Offer Confirmation</label>
+          </div>
+          <div class="filter">
+            <input type="checkbox" id="f-10"/>
+            <label for="f-10" class="circle">21</label>
+            <label for="f-10">Offer</label>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </div>
+
+<script>
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const outterWrapper = document.querySelector('[data-control="scroller-wrapper"]');
+  const innerContent = outterWrapper.querySelector('[data-control="scroller-content"]');
+  const scroller = document.querySelector('.scroller');
+
+  var rightBtn = scroller.querySelector('.scroller-right-btn');
+  var leftBtn = scroller.querySelector('.scroller-left-btn');
+  var timeout;
+
+  scrollerInit();
+
+  // Add scroller contrl on desktop
+  if (!isMobile) {
+    scrollerInit();
+  } else {
+    //hide scroller contrl on mobile touch devices
+    scroller.classList.add('d-none');
+  }
+
+  function getOutterWrapperWidth() {
+    return outterWrapper.clientWidth;
+  }
+
+  function getInnerConcentWidth() {
+    return innerContent.clientWidth;
+  }
+
+  function getOverflowDis() {
+    return getInnerConcentWidth() - getOutterWrapperWidth();
+  }
+
+  function scrollerInit() {
+    console.log('ow: ' + getOutterWrapperWidth() + ' iw: ' + getInnerConcentWidth());
+    // there is overflow
+    if (getOutterWrapperWidth() < getInnerConcentWidth()) {
+      //show scroller
+
+      scroller.classList.remove('d-none');
+      rightBtn.classList.remove('disabled');
+    } else {
+      console.log('sn');
+      scroller.classList.add('d-none');
+    }
+
+  }
+  // disable or enable scroller left right buttons
+  function scrollerReset() {
+
+    if (outterWrapper.scrollLeft > 0) {
+      // leftBtn.disabled = false;
+      leftBtn.classList.remove('disabled');
+    } else {
+      leftBtn.classList.add('disabled');
+    }
+
+    if (outterWrapper.scrollLeft == getOverflowDis()) {
+      rightBtn.classList.add('disabled');
+    } else {
+      rightBtn.classList.remove('disabled');
+    }
+
+  }
+
+  rightBtn.onclick = function () {
+    sideScroll(outterWrapper, 'right', 20, 300, 20);
+  };
+  leftBtn.onclick = function () {
+    sideScroll(outterWrapper, 'left', 20, 300, 20);
+  };
+
+  function sideScroll(element, direction, speed, distance, step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+      if (direction == 'left') {
+        element.scrollLeft -= step;
+      } else {
+        element.scrollLeft += step;
+      }
+      scrollAmount += step;
+
+      if (scrollAmount >= distance) {
+        window.clearInterval(slideTimer);
+      }
+      scrollerReset();
+    }, speed);
+
+  }
+
+  // Listen for resize windows events
+  window.addEventListener('resize', function (event) {
+    // If timer is null, reset it to 66ms and run your functions. Otherwise, wait until timer is cleared
+    if (!timeout) {
+      timeout = setTimeout(function () {
+        // Reset timeout
+        timeout = null;
+        // Run our resize functions
+        scrollerInit();
+
+      }, 66);
+    }
+  }, false);
+
+  outterWrapper.addEventListener('scroll', function () {
+    scrollerReset();
+  });
+</script>

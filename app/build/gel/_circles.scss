@@ -1,26 +1,66 @@
-.circle{
-  width: 60px;
-  height: 60px;
-  display: flex;
-  border-radius: 20rem;
-  border: 2px solid $slate-100;
-  align-items: center;
-  font-size: 28px;
-  justify-content: center;
-  color: $slate-200;
-}
-
-#gel-masthead{
-
-}
-.job-filters{
+.job-status-filters{
   display: flex;
   overflow-x: auto;
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
   max-width: 100%;
   @include media-breakpoint-up(md) {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    // justify-content: space-evenly;
+    // flex-wrap: wrap;
+  }
+
+  .filter{
+    justify-content: start;
+    margin: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: currentColor;
+
+    input[type="checkbox"]{
+      position: absolute;
+      left: -9999px;
+      margin-left: 0;
+      opacity: 0;
+      z-index: 1;
+
+      &:checked + .circle{
+        // color: rgb(random(255),random(255),random(255));
+        border-color: currentColor;
+      }
+      &:focus + label + label {
+        outline: 2px solid $azure;
+        outline-offset: 2px;
+      }
+      ~ label{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.circle{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  border-radius: 20rem;
+  border: 2px solid $slate-100;
+  align-items: center;
+  font-size: 1.25rem;
+  justify-content: center;
+  color: $slate-200;
+
+  .selected & {
+    color: $orange;
+    border-color: currentColor;
+  }
+}
+$circle-colors: red, orange, yellow, green, blue, purple;
+@for $i from 1 through length($circle-colors) {
+  .job-status-filters .filter:nth-child(#{$i}){
+    input[type="checkbox"]:checked + .circle{
+      color: nth($circle-colors, $i);
+    }
   }
 }

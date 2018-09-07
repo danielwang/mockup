@@ -1,38 +1,42 @@
 <div class="card">
   <div class="row d-none d-xl-flex">
-    <div class="col-xl-2 text-center">
+    <div class="col-sm-2 text-lg-center mb-3">
       <h6>Applications</h6>
     </div>
-    <div class="col-xl-4">
-      <h6>Jobs</h6>
-    </div>
-    <div class="col-xl-2">
-      <h6>Status</h6>
-    </div>
-    <div class="col-xl-2">
-      <h6>Recruiter</h6>
-    </div>
-    <div class="col-xl-1 text-nowrap">
-      <h6>Positions</h6>
-    </div>
-    <div class="col-xl-1 text-nowrap">
-      <h6>Vacancies</h6>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xl-5">
+          <h6>Jobs</h6>
+        </div>
+        <div class="col-xl-3">
+          <h6>Status</h6>
+        </div>
+        <div class="col-xl-2">
+          <h6>Recruiter</h6>
+        </div>
+        <div class="col-xl-1 text-center text-nowrap">
+          <h6>Pos</h6>
+        </div>
+        <div class="col-xl-1 text-center text-nowrap">
+          <h6>Vac</h6>
+        </div>
+      </div>
     </div>
     <hr>
   </div>
 
   <?php for ($x =1; $x <= 10; $x++) {?>
   <div class="row">
-    <div class="col-sm-2 text-center">
+    <div class="col-sm-2 text-lg-center mb-3">
       <span class="d-inline-block d-sm-block">
         <i class="gel-icon-user gel-icon-lg"></i>
         <span class="text-20">18</span>
       </span>
-      <span class="badge badge-warning">6 new</span>
+      <span class="badge badge-outline">6 new</span>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
             <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
@@ -41,15 +45,27 @@
               <?php include "partials/_i-button.html" ?>
             </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>

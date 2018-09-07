@@ -7653,6 +7653,10 @@ label {
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
 
+.badge-outline {
+  color: #ff6200;
+  border: 1px solid currentColor; }
+
 .breadcrumb {
   background: none;
   padding: 0;
@@ -7944,27 +7948,66 @@ label {
 label .was-validated .form-check-input:invalid .checkbox:before, label .form-check-input.is-invalid .checkbox:before, label .was-validated .form-check-input:invalid .radio:before, label .form-check-input.is-invalid .radio:before {
   border-color: #e81700; }
 
-.circle {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  border-radius: 20rem;
-  border: 2px solid #9dafc0;
-  align-items: center;
-  font-size: 28px;
-  justify-content: center;
-  color: #8198ae; }
-
-.job-filters {
+.job-status-filters {
   display: flex;
   overflow-x: auto;
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
   max-width: 100%; }
-  @media (min-width: 768px) {
-  .job-filters {
-    justify-content: space-evenly;
-    flex-wrap: wrap; } }
+
+  .job-status-filters .filter {
+    justify-content: start;
+    margin: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: currentColor; }
+  .job-status-filters .filter input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    margin-left: 0;
+    opacity: 0;
+    z-index: 1; }
+  .job-status-filters .filter input[type="checkbox"]:checked + .circle {
+    border-color: currentColor; }
+  .job-status-filters .filter input[type="checkbox"]:focus + label + label {
+    outline: 2px solid #00a1e5;
+    outline-offset: 2px; }
+  .job-status-filters .filter input[type="checkbox"] ~ label {
+    cursor: pointer; }
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  border-radius: 20rem;
+  border: 2px solid #9dafc0;
+  align-items: center;
+  font-size: 1.25rem;
+  justify-content: center;
+  color: #8198ae; }
+  .selected .circle {
+    color: #ff6200;
+    border-color: currentColor; }
+
+.job-status-filters .filter:nth-child(1) input[type="checkbox"]:checked + .circle {
+  color: red; }
+
+.job-status-filters .filter:nth-child(2) input[type="checkbox"]:checked + .circle {
+  color: orange; }
+
+.job-status-filters .filter:nth-child(3) input[type="checkbox"]:checked + .circle {
+  color: yellow; }
+
+.job-status-filters .filter:nth-child(4) input[type="checkbox"]:checked + .circle {
+  color: green; }
+
+.job-status-filters .filter:nth-child(5) input[type="checkbox"]:checked + .circle {
+  color: blue; }
+
+.job-status-filters .filter:nth-child(6) input[type="checkbox"]:checked + .circle {
+  color: purple; }
 
 .custom-control-inline {
   align-items: center; }
