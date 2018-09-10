@@ -96,7 +96,7 @@
           <td data-title="Job ID">
             <?php echo $x * 2  + 53302042 ?>
           </td>
-          <th scope="row">International Consultant on Early Childhood Development</th>
+          <th scope="row"><a href="job-card">International Consultant on Early Childhood Development</a></th>
           <td data-title="Recruiter">Peter Smith</td>
           <td data-title="Status">
             Offer Made
@@ -111,7 +111,7 @@
           <td data-title="Job ID">
             <?php echo $x + 53302042 ?>
           </td>
-          <th scope="row">Retail Customer Service Officer </th>
+          <th scope="row"><a href="job-card">Retail Customer Service Officer </a></th>
           <td data-title="Recruiter"> Arnold Schwarzenegger </td>
           <td data-title="Status">
             Approved to advertise

@@ -7949,11 +7949,10 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   border-color: #e81700; }
 
 .job-status-filters {
-  display: flex;
-  overflow-x: auto;
+  display: inline-flex;
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
-  max-width: 100%; }
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
 
   .job-status-filters .filter {
     justify-content: start;
@@ -7971,11 +7970,13 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     z-index: 1; }
   .job-status-filters .filter input[type="checkbox"]:checked + .circle {
     border-color: currentColor; }
+  .job-status-filters .filter input[type="checkbox"]:checked + .circle + label {
+    color: #2f3c49; }
   .job-status-filters .filter input[type="checkbox"]:focus + label + label {
-    outline: 2px solid #00a1e5;
-    outline-offset: 2px; }
+    text-decoration: underline; }
   .job-status-filters .filter input[type="checkbox"] ~ label {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #536a81; }
 
 .circle {
   width: 3rem;
@@ -7987,9 +7988,6 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
   font-size: 1.25rem;
   justify-content: center;
   color: #8198ae; }
-  .selected .circle {
-    color: #ff6200;
-    border-color: currentColor; }
 
 .job-status-filters .filter:nth-child(1) input[type="checkbox"]:checked + .circle {
   color: red; }
@@ -8008,6 +8006,11 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 
 .job-status-filters .filter:nth-child(6) input[type="checkbox"]:checked + .circle {
   color: purple; }
+
+[data-control = "scroller-wrapper"] {
+  overflow: auto;
+  position: relative;
+  background: ligthblue; }
 
 .custom-control-inline {
   align-items: center; }
@@ -9381,6 +9384,9 @@ select.form-control {
     color: #415365;
     font-size: 1rem;
     padding-bottom: 1rem; }
+  .nav-tabs-line .nav-item .nav-link:focus {
+    text-decoration: underline;
+    outline: none; }
   .nav-tabs-line .nav-item .nav-link.active {
     color: #00a1e5;
     position: relative; }

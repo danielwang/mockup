@@ -1,9 +1,9 @@
 .job-status-filters{
-  display: flex;
-  overflow-x: auto;
+  display: inline-flex;
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
-  max-width: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
   @include media-breakpoint-up(md) {
     // justify-content: space-evenly;
     // flex-wrap: wrap;
@@ -28,13 +28,17 @@
       &:checked + .circle{
         // color: rgb(random(255),random(255),random(255));
         border-color: currentColor;
+
+        + label{
+          color: $slate-600;
+        }
       }
       &:focus + label + label {
-        outline: 2px solid $azure;
-        outline-offset: 2px;
+        text-decoration: underline;
       }
       ~ label{
         cursor: pointer;
+        color: $slate-400;
       }
     }
   }
@@ -50,11 +54,6 @@
   font-size: 1.25rem;
   justify-content: center;
   color: $slate-200;
-
-  .selected & {
-    color: $orange;
-    border-color: currentColor;
-  }
 }
 $circle-colors: red, orange, yellow, green, blue, purple;
 @for $i from 1 through length($circle-colors) {
@@ -63,4 +62,37 @@ $circle-colors: red, orange, yellow, green, blue, purple;
       color: nth($circle-colors, $i);
     }
   }
+}
+
+// .scroller-left-btn{
+//   position: absolute;
+//   left: 0;
+//   z-index: 1;
+// }
+//
+// .scroller-right-btn{
+//   position: absolute;
+//   right: 0;
+//   z-index: 1;
+// }
+
+[data-control = "scroller-wrapper"]{
+  overflow: auto;
+  position: relative;
+  background: ligthblue;
+  // overflow: auto;
+  // position: relative;
+  //
+  // &:before{
+  //   position: absolute;
+  //   content: "<";
+  //   font-size: 3rem;
+  // }
+  //
+  // &:after{
+  //   position: absolute;
+  //   content: ">";
+  //   font-size: 3rem;
+  //   right: 0;
+  // }
 }

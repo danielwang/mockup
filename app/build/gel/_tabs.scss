@@ -20,6 +20,11 @@
       font-size: 1rem;
       padding-bottom: 1rem;
 
+      &:focus{
+        text-decoration: underline;
+        outline: none;
+      }
+
       &.active {
         // border-bottom: 4px solid currentcolor;
         color: $azure;
