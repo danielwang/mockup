@@ -1,4 +1,4 @@
-<?php $pageTitle = "My Jobs"; $pageAction = false; $parent = "hm"; include '../base-t1.php';?>
+<?php $pageTitle = "My Jobs"; $pageLayout="-fluid"; $parent = "hm"; include '../base-t1.php';?>
 
 <?php emptyblock('page-tabs') ?>
 
@@ -92,7 +92,7 @@
       </thead>
       <tbody>
         <?php for ($x =1; $x <= 11; $x++) {?>
-        <tr>
+        <tr class="clickable">
           <td data-title="Job ID">
             <?php echo $x * 2  + 53302042 ?>
           </td>
@@ -103,11 +103,12 @@
           </td>
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
-          <td data-title="Actions" class="text-center">
-            <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application" class="gel-icon-lg gel-icon-view"></i></a>
+          <td class="text-center">
+            <a class="d-none d-md-block" aria-label="View application" href="job-card"> View <i aria-hidden="true" class="gel-icon-angle-right gel-icon-sm"></i></a>
+            <a class="btn btn-outline-primary btn-block d-md-none" href="job-card"> View </a>
           </td>
         </tr>
-        <tr>
+        <tr class="clickable">
           <td data-title="Job ID">
             <?php echo $x + 53302042 ?>
           </td>
@@ -118,8 +119,9 @@
           </td>
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
-          <td data-title="Actions" class="text-center">
-            <a aria-label="View application" href="job-card"><i data-toggle="tooltip" data-placement="bottom" data-original-title="View application"class="gel-icon-lg gel-icon-view"></i></a>
+          <td class="text-center">
+            <a class="d-none d-md-block text-nowrap" aria-label="View application" href="job-card"> View <i aria-hidden="true" class="gel-icon-angle-right gel-icon-sm"></i></a>
+            <a class="btn btn-outline-primary btn-block d-md-none" href="job-card"> View </a>
           </td>
         </tr>
       <?php } ?>

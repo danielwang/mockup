@@ -2967,7 +2967,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 15px; }
   .navbar > .container, .navbar > .container-fluid {
     display: flex;
     flex-wrap: wrap;
@@ -2978,7 +2978,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   display: inline-block;
   padding-top: 0.40625rem;
   padding-bottom: 0.40625rem;
-  margin-right: 1rem;
+  margin-right: 15px;
   font-size: 1rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -7448,6 +7448,22 @@ label {
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
 
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+  .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px; } }
+  @media (min-width: 992px) {
+  .container-fluid {
+    padding-left: 45px;
+    padding-right: 45px; } }
+  @media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 60px;
+    padding-right: 60px; } }
+
 #gel-main {
   padding: 1.5rem 0;
   flex: 1 0 auto; }
@@ -7976,7 +7992,8 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     text-decoration: underline; }
   .job-status-filters .filter input[type="checkbox"] ~ label {
     cursor: pointer;
-    color: #536a81; }
+    color: #536a81;
+    line-height: 1.25; }
 
 .circle {
   width: 3rem;
@@ -8007,10 +8024,23 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
 .job-status-filters .filter:nth-child(6) input[type="checkbox"]:checked + .circle {
   color: purple; }
 
-[data-control = "scroller-wrapper"] {
+#gel-main-masthead {
+  width: 100vw;
+  background: white;
+  margin-left: calc(50% - 50vw);
+  margin-top: -1.5rem;
+  padding: 1.5rem 0 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.scroll-shadow {
   overflow: auto;
   position: relative;
-  background: ligthblue; }
+  overflow: auto;
+  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0)), linear-gradient(-90deg, white 0%, rgba(255, 255, 255, 0)) 100% 0, radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 100% 0;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 100px 137px, 100px 137px, 14px 137px, 14px 137px;
+  background-attachment: local, local, scroll, scroll; }
 
 .custom-control-inline {
   align-items: center; }
@@ -8970,7 +9000,9 @@ select.form-control {
   height: 3.75rem;
   z-index: 1020;
   font-weight: 400;
-  font-family: 'Proxima Nova Bold'; }
+  font-family: 'Proxima Nova Bold';
+  padding-left: 0;
+  padding-right: 0; }
   .navbar .navbar-nav {
     align-items: stretch;
     flex-direction: row; }
@@ -9064,6 +9096,22 @@ select.form-control {
     height: 30px; }
     .navbar .navbar-nav .search-group input[type=search] + .btn-submit:focus {
       outline: 1px solid currentcolor; }
+
+.navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container {
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (min-width: 992px) {
+    .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media (min-width: 1200px) {
+    .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container {
+      padding-left: 60px;
+      padding-right: 60px; } }
 
 #popup-top {
   padding: 1.5rem 0;
@@ -10271,6 +10319,9 @@ sub, sup {
 .vw-90 {
   width: 90vw !important; }
 
+.vw-100 {
+  width: 100vw !important; }
+
 .vh-10 {
   height: 10vh !important; }
 
@@ -10286,6 +10337,9 @@ sub, sup {
 .vh-90 {
   height: 90vh !important; }
 
+.vh-100 {
+  height: 100vh !important; }
+
 @media (min-width: 576px) {
     .vw-sm-10 {
       width: 10vw !important; }
@@ -10297,6 +10351,8 @@ sub, sup {
         width: 70vw !important; }
       .vw-sm-90 {
         width: 90vw !important; }
+      .vw-sm-100 {
+        width: 100vw !important; }
       .vh-sm-10 {
         height: 10vh !important; }
       .vh-sm-30 {
@@ -10306,7 +10362,9 @@ sub, sup {
       .vh-sm-70 {
         height: 70vh !important; }
       .vh-sm-90 {
-        height: 90vh !important; } }
+        height: 90vh !important; }
+      .vh-sm-100 {
+        height: 100vh !important; } }
 
 @media (min-width: 768px) {
     .vw-md-10 {
@@ -10319,6 +10377,8 @@ sub, sup {
         width: 70vw !important; }
       .vw-md-90 {
         width: 90vw !important; }
+      .vw-md-100 {
+        width: 100vw !important; }
       .vh-md-10 {
         height: 10vh !important; }
       .vh-md-30 {
@@ -10328,7 +10388,9 @@ sub, sup {
       .vh-md-70 {
         height: 70vh !important; }
       .vh-md-90 {
-        height: 90vh !important; } }
+        height: 90vh !important; }
+      .vh-md-100 {
+        height: 100vh !important; } }
 
 @media (min-width: 992px) {
     .vw-lg-10 {
@@ -10341,6 +10403,8 @@ sub, sup {
         width: 70vw !important; }
       .vw-lg-90 {
         width: 90vw !important; }
+      .vw-lg-100 {
+        width: 100vw !important; }
       .vh-lg-10 {
         height: 10vh !important; }
       .vh-lg-30 {
@@ -10350,7 +10414,9 @@ sub, sup {
       .vh-lg-70 {
         height: 70vh !important; }
       .vh-lg-90 {
-        height: 90vh !important; } }
+        height: 90vh !important; }
+      .vh-lg-100 {
+        height: 100vh !important; } }
 
 @media (min-width: 1200px) {
     .vw-xl-10 {
@@ -10363,6 +10429,8 @@ sub, sup {
         width: 70vw !important; }
       .vw-xl-90 {
         width: 90vw !important; }
+      .vw-xl-100 {
+        width: 100vw !important; }
       .vh-xl-10 {
         height: 10vh !important; }
       .vh-xl-30 {
@@ -10372,10 +10440,15 @@ sub, sup {
       .vh-xl-70 {
         height: 70vh !important; }
       .vh-xl-90 {
-        height: 90vh !important; } }
+        height: 90vh !important; }
+      .vh-xl-100 {
+        height: 100vh !important; } }
 
 .dragable {
   cursor: move; }
+
+.clickable {
+  cursor: pointer; }
 
 .disabled {
   cursor: default;

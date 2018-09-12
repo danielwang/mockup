@@ -412,70 +412,255 @@
 
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
-        		<section class="container">
+    <div class="bg-white h-25"></div>
+		<section class="container">
 			
 <div class="tab-content">
   <!-- ****************  current jobs ********************-->
   <div class="tab-pane d-print-block show active" id="current-jobs" role="tabpanel" aria-labelledby="applications-tab">
-        <div id="gel-masthead" class="mb-3 p-3">
+        <div id="gel-main-masthead" roll="masthead">
   <div class="container">
-    <div class="job-filters">
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-            <div class="ml-2 mr-2">
-        <span class="circle">5</span><span>Approved to advertise</span></div>
-          </div>
+    <div class="d-flex flex-nowrap">
+      <div class="border-right pr-3">
+        <a href="#_" class="circle" style="width:4rem; height:4rem">142</a>
+        Total Jobs
+      </div>
+      <div class="d-flex align-self-stretch" style="position:relative; overflow: hidden;">
+        <button type="button" class="order-1 btn btn-link btn-sm scroller-left-btn">
+          <i class="gel-icon-angle-left gel-icon-2x" aria-hidden="true"></i>
+          <span class="sr-only">Scroll left</span>
+        </button>
+        <button type="button" class="order-3 btn btn-link btn-sm scroller-right-btn">
+          <i class="gel-icon-angle-right gel-icon-2x" aria-hidden="true"></i>
+          <span class="sr-only">Scroll right</span>
+        </button>
+        <section class="order-2 scroll-shadow" data-control="scroller-wrapper">
+          <div data-control="scroller-content" class="job-status-filters" aria-label="job status filters">
+            <div class="filter">
+              <input type="checkbox" id="f-1"/>
+              <label for="f-1" class="circle">5</label>
+              <label for="f-1">Pending Brief</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="f-2"/>
+              <label for="f-2" class="circle">8</label>
+              <label for="f-2">Internal Advertising</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="f-3"/>
+              <label for="f-3" class="circle">31</label>
+              <label for="f-3">Finding Talent</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="f-4"/>
+              <label for="f-4" class="circle">1</label>
+              <label for="f-4">External Sourcing</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="f-5"/>
+              <label for="f-5" class="circle">2</label>
+              <label for="f-5">Screening</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="f-6"/>
+              <label for="f-6" class="circle">17</label>
+              <label for="f-6">HM Interviewing</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="f-7"/>
+              <label for="f-7" class="circle">9</label>
+              <label for="f-7">Background Checks</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="f-8"/>
+              <label for="f-8" class="circle">35</label>
+              <label for="f-8">Security / Offer Check</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="f-9"/>
+              <label for="f-9" class="circle">19</label>
+              <label for="f-9">Offer Confirmation</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                      </div>
+        </section>
+      </div>
+
+    </div>
   </div>
-</div>        <div class="card">
+</div>
+
+<script>
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const outterWrapper = document.querySelector('[data-control="scroller-wrapper"]');
+  const innerContent = outterWrapper.querySelector('[data-control="scroller-content"]');
+  //const scroller = document.querySelector('.scroller');
+
+  var rightBtn = document.querySelector('.scroller-right-btn');
+  var leftBtn = document.querySelector('.scroller-left-btn');
+  var timeout;
+
+  scrollerInit();
+
+  // Add scroller contrl on desktop if (!isMobile) {   scrollerInit(); } else {   hide scroller contrl on mobile touch devices   scroller.classList.add('d-none'); }
+
+  function getOutterWrapperWidth() {
+    return outterWrapper.clientWidth;
+  }
+
+  function getInnerConcentWidth() {
+    return innerContent.clientWidth;
+  }
+
+  function getOverflowDis() {
+    return getInnerConcentWidth() - getOutterWrapperWidth();
+  }
+
+  function scrollerInit() {
+    console.log('ow: ' + getOutterWrapperWidth() + ' iw: ' + getInnerConcentWidth());
+    // there is overflow
+    if (getOutterWrapperWidth() < getInnerConcentWidth()) {
+      //show scroller scroller.classList.remove('d-none');
+      rightBtn.classList.remove('d-none');
+      leftBtn.classList.remove('d-none');
+    } else {
+      console.log('sn');
+      //scroller.classList.add('d-none');
+      rightBtn.classList.add('d-none');
+      leftBtn.classList.add('d-none');
+    }
+
+  }
+  // disable or enable scroller left right buttons
+  function scrollerReset() {
+
+    if (outterWrapper.scrollLeft > 0) {
+      // leftBtn.disabled = false;
+      leftBtn.classList.remove('disabled');
+    } else {
+      leftBtn.classList.add('disabled');
+    }
+
+    if (outterWrapper.scrollLeft == getOverflowDis()) {
+      rightBtn.classList.add('disabled');
+    } else {
+      rightBtn.classList.remove('disabled');
+    }
+
+  }
+
+  rightBtn.onclick = function () {
+    sideScroll(outterWrapper, 'right', 20, 300, 20);
+  };
+  leftBtn.onclick = function () {
+    sideScroll(outterWrapper, 'left', 20, 300, 20);
+  };
+
+  function sideScroll(element, direction, speed, distance, step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+      if (direction == 'left') {
+        element.scrollLeft -= step;
+      } else {
+        element.scrollLeft += step;
+      }
+      scrollAmount += step;
+
+      if (scrollAmount >= distance) {
+        window.clearInterval(slideTimer);
+      }
+      scrollerReset();
+    }, speed);
+
+  }
+
+  // Listen for resize windows events
+  window.addEventListener('resize', function (event) {
+    // If timer is null, reset it to 66ms and run your functions. Otherwise, wait until timer is cleared
+    if (!timeout) {
+      timeout = setTimeout(function () {
+        // Reset timeout
+        timeout = null;
+        // Run our resize functions
+        scrollerInit();
+
+      }, 66);
+    }
+  }, false);
+
+  outterWrapper.addEventListener('scroll', function () {
+    scrollerReset();
+  });
+</script>        <div class="card">
   <div class="row d-none d-xl-flex">
-    <div class="col-xl-2 text-center">
-      <h6>Applications</h6>
+    <div class="col-sm-2 text-lg-center mb-3">
+      <h5>Applications</h5>
     </div>
-    <div class="col-xl-4">
-      <h6>Jobs</h6>
-    </div>
-    <div class="col-xl-2">
-      <h6>Status</h6>
-    </div>
-    <div class="col-xl-2">
-      <h6>Recruiter</h6>
-    </div>
-    <div class="col-xl-1 text-nowrap">
-      <h6>Positions</h6>
-    </div>
-    <div class="col-xl-1 text-nowrap">
-      <h6>Vacancies</h6>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xl-5">
+          <h5>Jobs</h5>
+        </div>
+        <div class="col-xl-3">
+          <h5>Status</h5>
+        </div>
+        <div class="col-xl-2">
+          <h5>Recruiter</h5>
+        </div>
+        <div class="col-xl-1 text-center text-nowrap">
+          <h5>
+            <abbr title="Positions">Pos</abbr>
+          </h5>
+        </div>
+        <div class="col-xl-1 text-center text-nowrap">
+          <h5>
+            <abbr title="Vacancies">Vac</abbr>
+          </h5>
+        </div>
+      </div>
     </div>
     <hr>
   </div>
 
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -526,7 +711,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -534,9 +719,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -642,15 +827,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -669,18 +866,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -731,7 +930,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -739,9 +938,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -847,15 +1046,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -874,18 +1085,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -936,7 +1149,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -944,9 +1157,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -1052,15 +1265,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -1079,18 +1304,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -1141,7 +1368,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -1149,9 +1376,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -1257,15 +1484,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -1284,18 +1523,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -1346,7 +1587,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -1354,9 +1595,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -1462,15 +1703,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -1489,18 +1742,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -1551,7 +1806,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -1559,9 +1814,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -1667,15 +1922,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -1694,18 +1961,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -1756,7 +2025,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -1764,9 +2033,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -1872,15 +2141,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -1899,18 +2180,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -1961,7 +2244,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -1969,9 +2252,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -2077,15 +2360,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -2104,18 +2399,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -2166,7 +2463,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -2174,9 +2471,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -2282,15 +2579,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>
@@ -2309,18 +2618,20 @@
   </div>
   <hr>
     <div class="row">
-    <div class="col-sm-2 text-center">
-      <span class="d-inline-block d-sm-block">
+    <div class="col-sm-2 text-lg-center mb-3">
+      <a href="#" class="d-inline-block d-sm-block text-secondary">
         <i class="gel-icon-user gel-icon-lg"></i>
-        <span class="text-20">18</span>
-      </span>
-      <span class="badge badge-warning">6 new</span>
+        <span class="text-20">18
+          <span class="sr-only">applicants</span></span>
+      </a>
+      <a href="#" class="badge badge-outline">6 new
+        <span class="sr-only">applicants</span></a>
     </div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-md-12 col-xl-5">
+        <div class="col-md-12 col-xl-5 mb-3">
           <div class="position-relative">
-            <a href="#" class="dropdown-toggle text-center no-caret" title="Job info" data-toggle="dropdown" data-persist="true">
+            <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
             <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
@@ -2371,7 +2682,7 @@
       <dd class="col-sm-7">Requisition</dd>
       <dt class="col-sm-5 text-14">Position:</dt>
       <dd class="col-sm-7">2</dd>
-      <dt class="col-sm-5 text-14">Region / Headquarters Group:</dt>
+      <dt class="col-sm-5 text-14">Region Group:</dt>
       <dd class="col-sm-7">East and South Africa Region (ESAR)</dd>
       <dt class="col-sm-5 text-14">Duty station:</dt>
       <dd class="col-sm-7">Mogadishu</dd>
@@ -2379,9 +2690,9 @@
       <dd class="col-sm-7">
         <a href="#">Approval of Appointment</a>
       </dd>
-      <dt class="col-sm-5 text-14">User:</dt>
+      <dt class="col-sm-5 text-14">Hiring Manager:</dt>
       <dd class="col-sm-7">
-        <a href="#">Feruzakhon Ziyovuddin</a>
+        <a href="#">Arnold Schwarzenegger</a>
       </dd>
       <dt class="col-sm-5 text-14">Recruitment Workflow:</dt>
       <dd class="col-sm-7">Regular Recruitment</dd>
@@ -2487,15 +2798,27 @@
   </div>
 </div>            </div>
             <h5 class="d-inline">
-              <a href="job-card">Retail Customer Service Officer</a>
+              <a href="job-card">Executive Assistant / Personal Assistant to Managing Director</a>
             </h5>
             <!-- <p><small>53302044</small></p> -->
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">Approved to advertise</div>
-        <div class="col-md-6 col-xl-2">Arnold Schwarzenegger</div>
-        <div class="col-md-6 col-xl-1 text-center">12</div>
-        <div class="col-md-6 col-xl-1 text-center">10</div>
+        <div class="col-6 col-lg-3 col-xl-3 mb-2">
+          <label class="d-block mb-0 d-xl-none">Status:</label>
+          <span>Approved to advertise</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-2 mb-2">
+          <label class="d-block mb-0 d-xl-none">Hiring manager:</label>
+          <span>Arnold Schwarzenegger</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Positions:</label>
+          <span>12</span>
+        </div>
+        <div class="col-6 col-lg-3 col-xl-1 text-xl-center mb-3">
+          <label class="d-block mb-0 d-xl-none">Vacancies:</label>
+          <span>9</span>
+        </div>
         <div class="col-12">
           <ul class="list-unstyled">
             <li>

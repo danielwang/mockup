@@ -1,4 +1,4 @@
-<?php $parent = "adm"; $pageAction = false; $pageTitle = "Large table"; include '../base-t1.php';?>
+<?php $parent = "adm"; $pageAction = false; $pageLayout="-fluid"; $pageTitle = "Fluid layout - Large table"; include '../base-t1.php';?>
 
 <?php emptyblock('page-tabs') ?>
 

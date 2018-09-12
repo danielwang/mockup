@@ -4,7 +4,10 @@
 <?php
   $site = "MockUp";
   require_once 'ti.php';
-  include_once '_head.php'; ?>
+  include_once '_head.php';
+  global $pageLayout;
+  global $pageAction;
+?>
 
    <!-- Hiring manager centre, client branding -->
    <?php if ($parent == "hm"){ ?>
@@ -47,7 +50,7 @@
   <!-- ************  page header ************ -->
   <?php startblock('page-header');?>
       <header id="gel-header" role="banner">
-          <div class="container">
+          <div class="container<?php echo $pageLayout ?>">
             <div class="row">
               <?php if($pageAction == true) { ?>
               <div class="col-md-9 col-lg-8">
@@ -75,14 +78,14 @@
 	<main id="gel-main" role="main">
     <?php startblock('page-top')?>
     <?php endblock()?>
-		<section class="container">
+		<section class="container<?php echo $pageLayout ?>">
 			<?php startblock('page-body')?>
 			<?php endblock()?>
 		</section>
 	</main>
   <!-- ************  page footer ************ -->
   <footer id="gel-footer" role="footer">
-    <div class="container">
+    <div class="container<?php echo $pageLayout ?>">
       <div class="d-flex justify-content-end">
         <div class="btn-group dropup">
           <button type="button" class="btn btn-sm btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

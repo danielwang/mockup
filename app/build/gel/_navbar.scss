@@ -4,6 +4,8 @@
   height: $navbar-height;
   z-index: $zindex-sticky;
   @include font-bold();
+  padding-left: 0;
+  padding-right: 0;
 
   .navbar-nav {
     align-items: stretch;
@@ -16,9 +18,9 @@
       margin-right: $spacer;
       height: $navbar-height;
 
-      .nav-link{
+      .nav-link {
         // accessibility
-        &:focus{
+        &:focus {
           outline: none;
           text-decoration: underline;
         }
@@ -43,8 +45,9 @@
       padding: 0;
       width: 2rem;
       height: 2rem;
-      transition: transform .2s ease;
-      &:active{
+      transition: transform 0.2s ease;
+
+      &:active {
         transform: scale(0.9);
       }
     }
@@ -68,7 +71,7 @@
           padding-right: 0;
         }
 
-        .dropdown-menu{
+        .dropdown-menu {
           right: -$spacer * 0.625;
         }
       }
@@ -84,6 +87,7 @@
     // nav help
     .nav-help {
       margin-right: 0;
+
       .dropdown-toggle:after {
         display: none;
       }
@@ -108,7 +112,6 @@
         width: 145px;
         background-color: #4f617d;
 
-
         &::placeholder {
           color: rgba(255, 255, 255, .5);
         }
@@ -128,7 +131,7 @@
         + .btn-submit {
           position: absolute;
           right: 0.5rem;
-          top: .75rem;
+          top: 0.75rem;
           z-index: 1;
           cursor: pointer;
           color: rgba(255, 255, 255, .5);
@@ -137,11 +140,33 @@
           padding: 0.25rem;
           width: 30px;
           height: 30px;
+
           &:focus {
             outline: 1px solid currentcolor;
           }
         }
       }
     }
+  }
+}
+
+.navbar-expand-sm {
+    > .container-fluid,
+    > .container {
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
+
+      @include media-breakpoint-up(md) {
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+      }
+      @include media-breakpoint-up(lg) {
+        padding-left: $grid-gutter-width * 1.5;
+        padding-right: $grid-gutter-width * 1.5;
+      }
+      @include media-breakpoint-up(xl) {
+        padding-left: $grid-gutter-width * 2;
+        padding-right: $grid-gutter-width * 2;
+      }
   }
 }
