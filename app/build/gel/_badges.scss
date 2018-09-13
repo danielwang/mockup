@@ -3,6 +3,30 @@
 }
 
 .badge-outline {
-  color: #ff6200;
+  color: #FF5722;
   border: 1px solid currentColor;
+}
+
+/**  dots/indicator **/
+@mixin dot-variant($color) {
+  background-color: $color;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-green {
+  @include dot-variant($green);
+}
+
+.dot-red {
+  @include dot-variant($red);
+}
+
+.dot-orange {
+  @include dot-variant($orange);
+}
+
+.dot-blue {
+  @include dot-variant($blue);
 }

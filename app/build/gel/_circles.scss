@@ -1,3 +1,8 @@
+[data-control="scroller-wrapper"]{
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 .job-status-filters {
   display: inline-flex;
   flex-wrap: nowrap;
@@ -41,6 +46,9 @@
         cursor: pointer;
         color: $slate-400;
         line-height: 1.25;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -56,8 +64,15 @@
   font-size: 1.25rem;
   justify-content: center;
   color: $slate-200;
+  position: relative;
+  .dot-red{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
-$circle-colors: red, orange, yellow, green, blue, purple;
+
+$circle-colors: #2196F3,#8BC34A, #FF5722, #E91E63, #795548, #9C27B0, #F44336, #00BCD4, #FFEB3B, #673AB7, #009688, #FF9800, #607D8B,#424242;
 @for $i from 1 through length($circle-colors) {
   .job-status-filters .filter:nth-child(#{$i}) {
     input[type="checkbox"]:checked + .circle {
@@ -91,6 +106,6 @@ $circle-colors: red, orange, yellow, green, blue, purple;
   background: linear-gradient(90deg, white 0%, rgba(255,255,255,0)), linear-gradient(-90deg, white 0%, rgba(255,255,255,0)) 100% 0, radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)), radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 100% 0;
   background-repeat: no-repeat;
   background-color: #fff;
-  background-size: 100px 137px, 100px 137px, 14px 137px, 14px 137px;
+  background-size: 100px 110px, 100px 110px, 14px 110px, 14px 110px;
   background-attachment: local, local, scroll, scroll;
 }

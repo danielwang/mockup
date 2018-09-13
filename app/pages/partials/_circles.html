@@ -6,11 +6,11 @@
         Total Jobs
       </div>
       <div class="d-flex align-self-stretch" style="position:relative; overflow: hidden;">
-        <button type="button" class="order-1 btn btn-link btn-sm scroller-left-btn">
+        <button type="button" class="order-1 btn btn-link btn-sm scroller-left-btn p-0">
           <i class="gel-icon-angle-left gel-icon-2x" aria-hidden="true"></i>
           <span class="sr-only">Scroll left</span>
         </button>
-        <button type="button" class="order-3 btn btn-link btn-sm scroller-right-btn">
+        <button type="button" class="order-3 btn btn-link btn-sm scroller-right-btn p-0">
           <i class="gel-icon-angle-right gel-icon-2x" aria-hidden="true"></i>
           <span class="sr-only">Scroll right</span>
         </button>
@@ -18,12 +18,16 @@
           <div data-control="scroller-content" class="job-status-filters" aria-label="job status filters">
             <div class="filter">
               <input type="checkbox" id="f-1"/>
-              <label for="f-1" class="circle">5</label>
-              <label for="f-1">Pending Brief</label>
+              <label for="f-1" class="circle">5
+              </label>
+              <label for="f-1">Pending Brief
+              </label>
             </div>
             <div class="filter">
               <input type="checkbox" id="f-2"/>
-              <label for="f-2" class="circle">8</label>
+              <label for="f-2" class="circle">8<sub class="dot-red">
+                  <span class="sr-only">notification indicator</span></sub>
+              </label>
               <label for="f-2">Internal Advertising</label>
             </div>
             <div class="filter">
@@ -43,7 +47,9 @@
             </div>
             <div class="filter">
               <input type="checkbox" id="f-6"/>
-              <label for="f-6" class="circle">17</label>
+              <label for="f-6" class="circle">17<sub class="dot-red">
+                  <span class="sr-only">notification indicator</span></sub>
+              </label>
               <label for="f-6">HM Interviewing</label>
             </div>
             <div class="filter">
@@ -53,7 +59,9 @@
             </div>
             <div class="filter">
               <input type="checkbox" id="f-8"/>
-              <label for="f-8" class="circle">35</label>
+              <label for="f-8" class="circle">35<sub class="dot-red">
+                  <span class="sr-only">notification indicator</span></sub>
+              </label>
               <label for="f-8">Security / Offer Check</label>
             </div>
             <div class="filter">
@@ -109,7 +117,9 @@
       //show scroller scroller.classList.remove('d-none');
       rightBtn.classList.remove('d-none');
       leftBtn.classList.remove('d-none');
+      scrollerReset();
     } else {
+      // no overflow
       console.log('sn');
       //scroller.classList.add('d-none');
       rightBtn.classList.add('d-none');

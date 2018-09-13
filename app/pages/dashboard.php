@@ -56,5 +56,6 @@
   </div>
   <!-- ****************  tasks ********************-->
   <div class="tab-pane d-print-block show" id="performed-actions" role="tabpanel" aria-labelledby="applications-tab">
+    <?php include "partials/_action-performed.html" ?>
   </div>
 <?php endblock()?>

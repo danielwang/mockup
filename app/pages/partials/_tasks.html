@@ -14,46 +14,87 @@
       </ul>
       <div class="tab-content">
         <div class="tab-pane show active" id="my-task" role="tabpanel" aria-labelledby="home-tab">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
+          <?php for ($x =1; $x <= 2; $x++) {?>
+          <div class="row">
+            <div class="col-2">
+              <i class="gel-icon-clock text-secondary"></i>
+            </div>
+            <div class="col-8">
+              <article>
+                <a href="#">Finalise longlist for VP Security role</a>
+                <br>
+                <span>Due in 6 days</span>
+              </article>
+
+            </div>
+            <div class="col-2">
+              <a href="#" class="link-alt">
+                <i class="gel-icon-trash"></i>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-2">
+              <i class="gel-icon-clock text-red"></i>
+            </div>
+            <div class="col-8">
+              <article>
+                <a href="#">Follow up with Bob Jones</a>
+                <br>
+                <span>Due in 3 weeks</span>
+              </article>
+            </div>
+            <div class="col-2">
+              <a href="#" class="link-alt">
+                <i class="gel-icon-trash"></i>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <?php }?>
+          <?php for ($x =1; $x <= 2; $x++) {?>
+          <div class="row">
+            <div class="col-2">
+              <i class="gel-icon-tick text-green"></i>
+            </div>
+            <div class="col-8">
+              <article>
+                <del>
+                  <a href="#" class="link-alt">Finalise longlist for VP Security role</a>
+                </del>
+                <br>
+                <span>Due in 6 days</span>
+              </article>
+            </div>
+            <div class="col-2">
+              <a href="#" class="link-alt">
+                <i class="gel-icon-trash"></i>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-2">
+              <i class="gel-icon-tick text-green"></i>
+            </div>
+            <div class="col-8">
+              <article>
+                <del>
+                  <a href="#" class="link-alt">Follow up with Bob Jones</a>
+                </del>
+                <br>
+                <span>Due in 3 weeks</span>
+              </article>
+            </div>
+            <div class="col-2">
+              <a href="#" class="link-alt">
+                <i class="gel-icon-trash"></i>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <?php }?>
         </div>
         <div class="tab-pane" id="assiged-to-me" role="tabpanel" aria-labelledby="profile-tab">
           <div class="d-flex justify-content-center align-items-center">
@@ -98,7 +139,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
   <div class="col-md-6">
