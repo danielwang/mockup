@@ -2,6 +2,94 @@
   Use accordion elements to vertically stack related content. Each item can be expanded to reveal the content associated with that item. Only one item can be opened at a time.
 </blockquote>
 
+<div class="card">
+  <section id="accordion-sm" class="accordion-line" role="tablist" aria-multiselectable="true">
+    <article>
+      <div class="accordion-header" role="tab" id="headingTwo">
+        <h5 class="mb-0">
+          <a data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-a" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </a>
+        </h5>
+      </div>
+      <div id="collapse-a" class="accordion-body collapse show" role="tabpanel" aria-labelledby="headingOne">
+
+        <table class="table table-borderless table-sm table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </article>
+    <article>
+      <div class="accordion-header" role="tab" id="headingTwo">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-b" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </a>
+        </h5>
+      </div>
+      <div id="collapse-b" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingTwo">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+        bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </article>
+    <article>
+      <div class="accordion-header" role="tab" id="headingThree">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-c" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </a>
+        </h5>
+      </div>
+      <div id="collapse-c" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingThree">
+
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+        bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </article>
+  </section>
+</div>
+<!------------------------------------------------------>
+<hr class="sg-hr">
 <div id="accordion" class="accordion" role="tablist" aria-multiselectable="true">
   <div class="card">
     <div class="card-header" role="tab" id="headingOne">
@@ -11,7 +99,6 @@
         </a>
       </h5>
     </div>
-
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
       <div class="card-body">
         <p>Managers can refine an employee's score using a star and slider combination. A manager can assign a star rating and then select a score for the employee from within the value range for the star (3 stars and a score of 47/100).</p>

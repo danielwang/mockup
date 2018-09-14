@@ -7531,6 +7531,33 @@ label {
   .accordion .card .card-header a.collapsed:before {
     content: "\e92a"; }
 
+.accordion-line {
+  background: #fff;
+  border-radius: 0.5rem; }
+  .accordion-line article {
+    border-bottom: 1px solid #ced8e2;
+    margin-top: -1px; }
+  .accordion-line article:last-child {
+    border-bottom: 0; }
+  .accordion-line article .accordion-header {
+    padding: 1rem 0; }
+  .accordion-line article .accordion-header a {
+    color: #00a1e5;
+    display: block;
+    font-family: 'Nunito', sans-serif; }
+  .accordion-line article .accordion-header a:before {
+    float: right;
+    margin-left: 1rem;
+    content: "\e92b";
+    font-family: "gel-icon"; }
+  .accordion-line article .accordion-header a.collapsed {
+    color: #415365; }
+    .accordion-line article .accordion-header a.collapsed:before {
+      content: "\e92a"; }
+  .accordion-line article .accordion-body {
+    padding: 1rem 0;
+    transition: all 0.3s ease 0s; }
+
 .notification {
   position: relative;
   padding: 1rem;
@@ -9428,14 +9455,18 @@ select.form-control {
       .table tbody td {
         text-align: left !important;
         background: white;
-        min-height: 3.25rem; }
+        min-height: 3.25rem;
+        padding-left: 50%;
+        position: relative; }
       .table tbody td[data-title]:before {
         content: attr(data-title);
         float: left;
         font-weight: 700;
         font-family: 'Nunito', sans-serif;
         width: 50%;
-        color: #1d252d; } }
+        color: #1d252d;
+        position: absolute;
+        left: 1rem; } }
 /* *********************************\
  sticky header and column
  \***********************************/
