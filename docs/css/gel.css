@@ -7644,6 +7644,19 @@ label {
     font-family: 'Proxima Nova Bold';
     text-decoration: underline; }
 
+.alert-hint {
+  color: #2f3c49;
+  background: rgba(255, 255, 255, 0.5);
+  border-color: #ced8e2; }
+  .alert-hint .alert-link {
+    color: #2f3c49;
+    font-weight: 400;
+    font-family: 'Proxima Nova Bold';
+    text-decoration: underline; }
+  .alert-hint [class^="gel-icon-"] {
+    vertical-align: sub;
+    color: #2f3c49; }
+
 .alert-info {
   color: #00405b;
   background: rgba(158, 226, 255, 0.5);
@@ -8059,7 +8072,8 @@ label .was-validated .form-check-input:invalid .checkbox:before, label .form-che
     opacity: 0;
     z-index: 1; }
   .job-status-filters .filter input[type="checkbox"]:checked + .circle {
-    border-color: currentColor; }
+    border-color: currentColor;
+    transition: all 0.1s ease 0s; }
   .job-status-filters .filter input[type="checkbox"]:checked + .circle + label {
     color: #2f3c49; }
   .job-status-filters .filter input[type="checkbox"]:focus + label + label {
