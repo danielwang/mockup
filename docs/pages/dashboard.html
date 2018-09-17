@@ -645,112 +645,7 @@
 
     </div>
   </div>
-</div>
-
-<script>
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  const outterWrapper = document.querySelector('[data-control="scroller-wrapper"]');
-  const innerContent = outterWrapper.querySelector('[data-control="scroller-content"]');
-  //const scroller = document.querySelector('.scroller');
-
-  var rightBtn = document.querySelector('.scroller-right-btn');
-  var leftBtn = document.querySelector('.scroller-left-btn');
-  var timeout;
-
-  scrollerInit();
-
-  // Add scroller contrl on desktop if (!isMobile) {   scrollerInit(); } else {   hide scroller contrl on mobile touch devices   scroller.classList.add('d-none'); }
-
-  function getOutterWrapperWidth() {
-    return outterWrapper.clientWidth;
-  }
-
-  function getInnerConcentWidth() {
-    return innerContent.clientWidth;
-  }
-
-  function getOverflowDis() {
-    return getInnerConcentWidth() - getOutterWrapperWidth();
-  }
-
-  function scrollerInit() {
-    console.log('ow: ' + getOutterWrapperWidth() + ' iw: ' + getInnerConcentWidth());
-    // there is overflow
-    if (getOutterWrapperWidth() < getInnerConcentWidth()) {
-      //show scroller scroller.classList.remove('d-none');
-      rightBtn.classList.remove('d-none');
-      leftBtn.classList.remove('d-none');
-      scrollerReset();
-    } else {
-      // no overflow
-      console.log('sn');
-      //scroller.classList.add('d-none');
-      rightBtn.classList.add('d-none');
-      leftBtn.classList.add('d-none');
-    }
-
-  }
-  // disable or enable scroller left right buttons
-  function scrollerReset() {
-
-    if (outterWrapper.scrollLeft > 0) {
-      // leftBtn.disabled = false;
-      leftBtn.classList.remove('disabled');
-    } else {
-      leftBtn.classList.add('disabled');
-    }
-
-    if (outterWrapper.scrollLeft == getOverflowDis()) {
-      rightBtn.classList.add('disabled');
-    } else {
-      rightBtn.classList.remove('disabled');
-    }
-
-  }
-
-  rightBtn.onclick = function () {
-    sideScroll(outterWrapper, 'right', 20, 300, 20);
-  };
-  leftBtn.onclick = function () {
-    sideScroll(outterWrapper, 'left', 20, 300, 20);
-  };
-
-  function sideScroll(element, direction, speed, distance, step) {
-    scrollAmount = 0;
-    var slideTimer = setInterval(function () {
-      if (direction == 'left') {
-        element.scrollLeft -= step;
-      } else {
-        element.scrollLeft += step;
-      }
-      scrollAmount += step;
-
-      if (scrollAmount >= distance) {
-        window.clearInterval(slideTimer);
-      }
-      scrollerReset();
-    }, speed);
-
-  }
-
-  // Listen for resize windows events
-  window.addEventListener('resize', function (event) {
-    // If timer is null, reset it to 66ms and run your functions. Otherwise, wait until timer is cleared
-    if (!timeout) {
-      timeout = setTimeout(function () {
-        // Reset timeout
-        timeout = null;
-        // Run our resize functions
-        scrollerInit();
-
-      }, 66);
-    }
-  }, false);
-
-  outterWrapper.addEventListener('scroll', function () {
-    scrollerReset();
-  });
-</script>        <div class="card">
+</div>        <div class="card">
   <div class="row d-none d-xl-flex">
     <div class="col-sm-2 text-lg-center">
       <h5 class="mb-0">Applications</h5>
@@ -2983,9 +2878,25 @@
   </div>  </div>
   <!-- ****************  tasks ********************-->
   <div class="tab-pane d-print-block show" id="tasks" role="tabpanel" aria-labelledby="applications-tab">
-      <div class="row">
-  <div class="col-md-6">
+      <div class="alert alert-hint alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i aria-hidden="true" class="gel-icon-close"></i>
+  </button>
+  Tasks allow users to keep track of their current and upcoming recruitment related tasks. Please see more information on
+  <a target="_blank" href="https://knowledgeportal.pageuppeople.com/recruitment/tasks/">Knowledge Portal</a>
+</div>
+<div class="row">
+  <div class="col-md-6 d-flex justify-content-between mb-2">
     <h3>My tasks</h3>
+    <button class="btn btn-primary btn-sm d-md-none">Add task</button>
+  </div>
+  <div class="col-md-6 d-none d-md-flex justify-content-between mb-2">
+    <h3>Assigned to others</h3>
+    <button class="btn btn-primary btn-sm">Add task</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
     <div class="card h-100">
       <ul class="nav nav-tabs-line" role="tablist">
         <li class="nav-item">
@@ -3158,8 +3069,10 @@
       </div>
     </div>
   </div>
+  <div class="col-12 d-md-none">
+    <h3 class="mt-3">Assigned to others</h3>
+  </div>
   <div class="col-md-6">
-    <h3>Assigned to others</h3>
     <div class="card h-100 d-flex justify-content-center align-items-center">
       <svg width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 234.1 214.1" style="enable-background:new 0 0 234.1 214.1;" xml:space="preserve">
         <style type="text/css">
@@ -3204,105 +3117,132 @@
 </div>  </div>
   <!-- ****************  workbench ********************-->
   <div class="tab-pane d-print-block show" id="workbench" role="tabpanel" aria-labelledby="applications-tab">
-      <div class="row">
-  <div class="col-md-9">
-    <div class="card">
-      <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
-        <div class="dz-message needsclick gray">
-          <h3 class="text-muted">Drag &amp; Drop files here</h3>
-          <span class="note needsclick">
-            Or
-            <a href="#_">browse</a>
-            from local drive
-          </span>
-          <p>
-            <small>Max 5MB in size, Word, PDF, or JPG formats</small>
-          </p>
-        </div>
-      </form>
+      <div class="alert alert-hint alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i aria-hidden="true" class="gel-icon-close"></i>
+  </button>
+  <h4 class="alert-heading">What is Workbench?</h4>
+  <p>Do you ever receive electronic resumes via email and think whats the fastest way to get these into PageUp? Create applicant profiles with ease and in bulk with drag & drop functionality. Multiple files can be dragged and dropped in one action. The
+    information that is automatically populated for an applicant include:</p>
+  <ul>
+    <li>The personal details - first name, last name, email address, phone number, address</li>
+    <li>Education history</li>
+    <li>Employment history</li>
+  </ul>
+  <p>Please see more information on
+    <a target="_blank" href="https://knowledgeportal.pageuppeople.com/recruitment/workbench/">Knowledge Portal</a>
+  </p>
+</div>
 
-      <table class="table mt-5">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-      <nav aria-label="Search results pages" class="d-flex justify-content-center">
-        <ul class="pagination pagination-sm" role="pagination">
-          <li class="page-item active">
-            <a class="page-link" href="#">
-              <span class="sr-only">(current)</span>
-              1</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">4</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next">
-              <i class="gel-icon-angle-right gel-icon-xs"></i>
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last">
-              <i class="gel-icon-right-end gel-icon-xs"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="alert">
-      <h3>What is Workbench?</h3>
-      <p>Do you ever receive electronic resumes via email and think whats the fastest way to get these into PageUp? Create applicant profiles with ease and in bulk with drag & drop functionality. Multiple files can be dragged and dropped in one action.</p>
-      <p>The information that is automatically populated for an applicant include:</p>
-      <ul>
-        <li>The personal details - first name, last name, email address, phone number, address</li>
-        <li>Education history</li>
-        <li>Employment history</li>
-      </ul>
-      <p>Please see more information on
-        <a target="_blank" href="https://knowledgeportal.pageuppeople.com/recruitment/workbench/">Knowledge Portal</a>
+<div class="card">
+  <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
+    <div class="dz-message needsclick gray">
+      <h3 class="text-muted">Drag &amp; Drop files here</h3>
+      <span class="note needsclick">
+        Or
+        <a href="#_">browse</a>
+        from local drive
+      </span>
+      <p>
+        <small>Max 5MB in size, Word, PDF, or JPG formats</small>
       </p>
     </div>
-  </div>
+  </form>
+
+  <table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <nav aria-label="Search results pages" class="d-flex justify-content-center">
+    <ul class="pagination pagination-sm" role="pagination">
+      <li class="page-item active">
+        <a class="page-link" href="#">
+          <span class="sr-only">(current)</span>
+          1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">4</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next">
+          <i class="gel-icon-angle-right gel-icon-xs"></i>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Last">
+          <i class="gel-icon-right-end gel-icon-xs"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>  </div>
   <!-- ****************  manager activities ********************-->
   <div class="tab-pane d-print-block show" id="manager-activities" role="tabpanel" aria-labelledby="applications-tab">
+      <div class="alert alert-hint alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i aria-hidden="true" class="gel-icon-close"></i>
+  </button>
+  These are activities that are related to the hiring manager through the recruitment process.
+</div>
+
+<div class="card">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="circle d-inline-flex">5</span>
+      <a href="#">Jobs with applicants for review</a>
+    </div>
+    <div class="col-sm-4">
+      <span class="circle d-inline-flex">2</span>
+      <a href="#">New starters</a>
+    </div>
+    <div class="col-sm-4">
+      <span class="circle d-inline-flex">6</span>
+      <a href="#">New starter tasks</a>
+    </div>
   </div>
+</div>  </div>
   <!-- ****************  tasks ********************-->
   <div class="tab-pane d-print-block show" id="performed-actions" role="tabpanel" aria-labelledby="applications-tab">
-    <table class="table table-striped">
+    <div class="alert alert-hint alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i aria-hidden="true" class="gel-icon-close"></i>
+  </button>
+  This section displays recruitment steps linked to application status changes made during the current week
+</div>
+
+<table class="table table-striped">
   <thead class="thead-dark">
     <tr>
       <th></th>
