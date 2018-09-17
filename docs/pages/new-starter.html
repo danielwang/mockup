@@ -293,20 +293,32 @@
     <div class="row">
       <div class="col-sm-6 col-lg-12">
         <h5 class="mb-1">Additional tasks</h5>
-        <p class="border-bottom pb-1">Organizational Introductions and Onboarding tasks <span class="float-right"><a href="#"><i class="gel-icon-add"></i></a></span></p>
-        <p class="border-bottom pb-1">New starter signed contract?<span class="float-right"><a href="#"><i class="gel-icon-add"></i></a></span></p>
-        <p class="border-bottom pb-1">On-site client visit <span class="float-right"><a href="#"><i class="gel-icon-add"></i></a></span></p>
+        <p class="border-bottom pb-1 pr-5">Organizational Introductions and Onboarding tasks
+          <span class="float-right mr-n-5"><a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a></span>
+        </p>
+        <p class="border-bottom pb-1 pr-5">New starter signed contract?<span class="float-right mr-n-5"><a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a></span></p>
+        <p class="border-bottom pb-1 pr-5">On-site client visit <span class="float-right mr-n-5"><a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a></span></p>
       </div>
       <div class="col-sm-6 col-lg-12">
         <h5 class="mt-4 mb-1">My Favourite tasks</h5>
-        <p class="border-bottom pb-1">Probation Check <span class="float-right"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a href="#"><i class="gel-icon-add"></i></a></span></p>
-        <p class="border-bottom pb-1">Coffee with new starter <span class="float-right"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a href="#"><i class="gel-icon-add"></i></a></span></p>
+        <p class="border-bottom pb-1 pr-5">Probation Check
+          <span class="float-right mr-n-5">
+            <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+            <a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a>
+          </span>
+        </p>
+        <p class="border-bottom pb-1 pr-5">Coffee with new starter
+          <span class="float-right mr-n-5">
+            <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+            <a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a>
+          </span>
+        </p>
       </div>
     </div>
   </div>
   <div class="col-lg-9">
-    <div class="row">
-      <div class="col-sm-8 col-md-6">
+     <div class="row">
+      <div class="col-sm-8 col-md-7">
         <h5>Visibility</h5>
         <fieldset>
           <legend class="sr-only">visibility</legend>
@@ -332,12 +344,11 @@
           </div>
         </fieldset>
       </div>
-      <div class="col-sm-4 offset-md-2 col-md-4 d-flex justify-content-end align-items-end mt-3">
+      <div class="col-sm-4 offset-md-2 col-md-3 d-flex justify-content-end align-items-end mt-3">
         <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#createModal">Create a task</button>
       </div>
-  </div>
-
-          <h4 class="mt-5">Before James's First Day</h4>
+    </div>
+        <h4 class="mt-5">Before James's First Day</h4>
       <table class="table mt-2">
         <caption class="sr-only">List of tasks</caption>
         <thead>
@@ -356,22 +367,32 @@
             <td data-title="Due date">05 March </td>
             <td data-title="Status" class="text-success">Completed</td>
             <td data-title="Actions" class="d-flex justify-content-between align-items-center">
-              <a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-              <a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Attend Culture Orientation</a></th>
             <td data-title="Assigned to">Jacob</td>
             <td data-title="Due date">06 March </td>
             <td data-title="Status" class="text-danger">Overdue</td>
-            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center">
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Provide scope items to new starter</a></th>
             <td data-title="Assigned to">Larry</td>
             <td data-title="Due date">the Bird</td>
             <td data-title="Status">Open</td>
-            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center">
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -394,22 +415,32 @@
             <td data-title="Due date">05 March </td>
             <td data-title="Status" class="text-success">Completed</td>
             <td data-title="Actions" class="d-flex justify-content-between align-items-center">
-              <a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-              <a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Attend Culture Orientation</a></th>
             <td data-title="Assigned to">Jacob</td>
             <td data-title="Due date">06 March </td>
             <td data-title="Status" class="text-danger">Overdue</td>
-            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center">
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Provide scope items to new starter</a></th>
             <td data-title="Assigned to">Larry</td>
             <td data-title="Due date">the Bird</td>
             <td data-title="Status">Open</td>
-            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center">
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -432,22 +463,32 @@
             <td data-title="Due date">05 March </td>
             <td data-title="Status" class="text-success">Completed</td>
             <td data-title="Actions" class="d-flex justify-content-between align-items-center">
-              <a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-              <a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Attend Culture Orientation</a></th>
             <td data-title="Assigned to">Jacob</td>
             <td data-title="Due date">06 March </td>
             <td data-title="Status" class="text-danger">Overdue</td>
-            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center">
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Provide scope items to new starter</a></th>
             <td data-title="Assigned to">Larry</td>
             <td data-title="Due date">the Bird</td>
             <td data-title="Status">Open</td>
-            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center">
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -470,22 +511,32 @@
             <td data-title="Due date">05 March </td>
             <td data-title="Status" class="text-success">Completed</td>
             <td data-title="Actions" class="d-flex justify-content-between align-items-center">
-              <a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-              <a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Attend Culture Orientation</a></th>
             <td data-title="Assigned to">Jacob</td>
             <td data-title="Due date">06 March </td>
             <td data-title="Status" class="text-danger">Overdue</td>
-            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center">
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="#">Provide scope items to new starter</a></th>
             <td data-title="Assigned to">Larry</td>
             <td data-title="Due date">the Bird</td>
             <td data-title="Status">Open</td>
-            <td data-title="Actions" class="d-flex justify-content-between align-items-center"><a href="#"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a><a title ="Delete task" href="#" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a><i class="dragable gel-icon-drag"></i></td>
+            <td data-title="Actions" class="d-flex justify-content-between align-items-center">
+              <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
+              <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
+              <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+            </td>
           </tr>
         </tbody>
       </table>

@@ -49,3 +49,26 @@
 .scroll::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(78, 78, 78, 1);
 }
+
+.noscrollbar{
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;  // Firefox
+}
+.noscrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  background: transparent;
+}
+
+.scroll-horizontal-shadow {
+  overflow: auto;
+  position: relative;
+  overflow: auto;
+  background: linear-gradient(90deg, white 0%, rgba(255,255,255,0)), linear-gradient(-90deg, white 0%, rgba(255,255,255,0)) 100% 0, radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)), radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 100% 0;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: 100px 110px, 100px 110px, 14px 110px, 14px 110px;
+  background-attachment: local, local, scroll, scroll;
+}

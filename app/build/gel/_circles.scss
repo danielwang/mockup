@@ -1,13 +1,7 @@
-[data-control="scroller-wrapper"]{
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
 
 .job-status-filters {
   display: inline-flex;
   flex-wrap: nowrap;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
   @include media-breakpoint-up(md) {
     // justify-content: space-evenly;
     // flex-wrap: wrap;
