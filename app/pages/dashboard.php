@@ -53,6 +53,7 @@
   </div>
   <!-- ****************  manager activities ********************-->
   <div class="tab-pane d-print-block show" id="manager-activities" role="tabpanel" aria-labelledby="applications-tab">
+      <?php include "partials/_manager-activities.html" ?>
   </div>
   <!-- ****************  tasks ********************-->
   <div class="tab-pane d-print-block show" id="performed-actions" role="tabpanel" aria-labelledby="applications-tab">

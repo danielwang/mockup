@@ -85,6 +85,10 @@
   }
 }
 
+.alert-hint{
+  @include alert-variants($white, $slate-600, $border-color, $slate-600)
+}
+
 .alert-info{
   @include alert-variants($azure-100, $azure-800, $azure-600, $azure-600)
 }

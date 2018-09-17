@@ -24,8 +24,8 @@
       z-index: 1;
 
       &:checked + .circle {
-        // color: rgb(random(255),random(255),random(255));
         border-color: currentColor;
+        transition: all 0.1s ease 0s;
 
         + label {
           color: $slate-600;
