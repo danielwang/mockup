@@ -58,3 +58,143 @@ function menuState() {
 function setMenuState(val) {
   localStorage.setItem("menuState", val); // store the value in local browser
 }
+
+
+
+/*****************************************
+    checkboxes select/unselect all
+*****************************************/
+/* function checkAll() {
+
+var inputs = document.querySelectorAll('.check');
+for (var i = 0; i < inputs.length; i++) {
+  inputs[i].checked = true;
+}
+
+this.onclick = uncheckAll;
+}
+
+function uncheckAll() {
+var inputs = document.querySelectorAll('.check');
+for (var i = 0; i < inputs.length; i++) {
+  inputs[i].checked = false;
+}
+
+this.onclick = checkAll; //function reference to original function
+}
+
+var el = document.getElementById("checkall"); //let for ES6 aficionados
+el.onclick = checkAll; //again, function reference, no ()
+
+*/
+
+
+const outterWrapper = document.querySelector('[data-control="scroller-wrapper"]');
+
+if (typeof(outterWrapper) != 'undefined' && outterWrapper != null){
+  const innerContent = outterWrapper.querySelector('[data-control="scroller-content"]');
+  //const scroller = document.querySelector('.scroller');
+
+  var rightBtn = document.querySelector('.scroller-right-btn');
+  var leftBtn = document.querySelector('.scroller-left-btn');
+  var timeout;
+
+  // Add scroller contrl on desktop
+  if (!isMobile) {
+    scrollerInit();
+  } else {
+    // hide scroller contrl on mobile touch devices
+    rightBtn.classList.add('d-none');
+    leftBtn.classList.add('d-none');
+  }
+
+  function getOutterWrapperWidth() {
+    return outterWrapper.clientWidth;
+  }
+
+  function getInnerConcentWidth() {
+    return innerContent.clientWidth;
+  }
+
+  function getOverflowDis() {
+    return getInnerConcentWidth() - getOutterWrapperWidth();
+  }
+
+  function scrollerInit() {
+    console.log('ow: ' + getOutterWrapperWidth() + ' iw: ' + getInnerConcentWidth());
+    // there is overflow
+    if (getOutterWrapperWidth() < getInnerConcentWidth()) {
+      //show scroller scroller.classList.remove('d-none');
+      rightBtn.classList.remove('d-none');
+      leftBtn.classList.remove('d-none');
+      scrollerReset();
+    } else {
+      // no overflow
+      console.log('sn');
+      //scroller.classList.add('d-none');
+      rightBtn.classList.add('d-none');
+      leftBtn.classList.add('d-none');
+    }
+
+  }
+  // disable or enable scroller left right buttons
+  function scrollerReset() {
+
+    if (outterWrapper.scrollLeft > 0) {
+      // leftBtn.disabled = false;
+      leftBtn.classList.remove('disabled');
+    } else {
+      leftBtn.classList.add('disabled');
+    }
+
+    if (outterWrapper.scrollLeft == getOverflowDis()) {
+      rightBtn.classList.add('disabled');
+    } else {
+      rightBtn.classList.remove('disabled');
+    }
+
+  }
+
+  rightBtn.onclick = function () {
+    sideScroll(outterWrapper, 'right', 20, 300, 20);
+  };
+  leftBtn.onclick = function () {
+    sideScroll(outterWrapper, 'left', 20, 300, 20);
+  };
+
+  function sideScroll(element, direction, speed, distance, step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+      if (direction == 'left') {
+        element.scrollLeft -= step;
+      } else {
+        element.scrollLeft += step;
+      }
+      scrollAmount += step;
+
+      if (scrollAmount >= distance) {
+        window.clearInterval(slideTimer);
+      }
+      scrollerReset();
+    }, speed);
+
+  }
+
+  // Listen for resize windows events
+  window.addEventListener('resize', function (event) {
+    // If timer is null, reset it to 66ms and run your functions. Otherwise, wait until timer is cleared
+    if (!timeout) {
+      timeout = setTimeout(function () {
+        // Reset timeout
+        timeout = null;
+        // Run our resize functions
+        scrollerInit();
+
+      }, 66);
+    }
+  }, false);
+
+  outterWrapper.addEventListener('scroll', function () {
+    scrollerReset();
+  });
+}
