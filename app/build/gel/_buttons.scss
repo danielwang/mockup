@@ -59,16 +59,16 @@
 
 .segmented-control {
   display: flex;
-  width: 100%;
 
   label {
-    flex-basis: 100%;
+    flex: 1 1;
     margin-bottom: 0;
-    
+    min-width: 0;
     .btn-ctrl{
       display: block;
       border-radius: 0;
       margin-left: -1px;
+      @include text-truncate();
     }
     &:first-child{
       .btn-ctrl{

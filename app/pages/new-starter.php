@@ -52,19 +52,19 @@
           <div class="btn-group btn-group-toggle segmented-control">
             <label>
               <input type="radio" name="options-seg-v" id="option1" autocomplete="off" checked="checked">
-              <span class="btn btn-ctrl">
+              <span class="btn btn-ctrl" title="All tasks">
                 All tasks
               </span>
             </label>
             <label>
               <input type="radio" name="options-seg-v" id="option2" autocomplete="off">
-              <span class="btn btn-ctrl">
+              <span class="btn btn-ctrl" title="Manager">
                 Manager
               </span>
             </label>
             <label>
               <input type="radio" name="options-seg-v" id="option3" autocomplete="off">
-              <span class="btn btn-ctrl">
+              <span class="btn btn-ctrl" title="Employee">
                 Employee
               </span>
             </label>

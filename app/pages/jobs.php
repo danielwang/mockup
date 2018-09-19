@@ -4,53 +4,53 @@
 
 <?php startblock('page-body');?>
 
-<section role="search filter">
-  <div class="d-block d-md-inline-block mr-md-3">
+<section class="row" role="search filter">
+  <div class="col-md-6 col-lg-5 col-xl-4 mb-md-3">
     <h5>Visibility</h5>
     <fieldset>
       <legend class="sr-only">visibility</legend>
       <div class="btn-group btn-group-toggle segmented-control">
         <label>
           <input type="radio" name="options-v" id="option1" autocomplete="off" checked="checked">
-          <span class="btn btn-ctrl">
+          <span class="btn btn-ctrl" title="My jobs">
             My jobs
           </span>
         </label>
         <label>
           <input type="radio" name="options-v" id="option2" autocomplete="off">
-          <span class="btn btn-ctrl">
+          <span class="btn btn-ctrl" title="Team jobs">
             Team jobs
           </span>
         </label>
         <label>
           <input type="radio" name="options-v" id="option3" autocomplete="off">
-          <span class="btn btn-ctrl">
+          <span class="btn btn-ctrl" title="All jobs">
             All jobs
           </span>
         </label>
       </div>
     </fieldset>
   </div>
-  <div class="d-block d-md-inline-block ">
+  <div class="col-md-6 col-lg-5 col-xl-4">
     <h5 class="mt-2 mt-md-0">Status</h5>
     <fieldset>
       <legend class="sr-only">Status</legend>
       <div class="btn-group btn-group-toggle segmented-control">
         <label>
           <input type="radio" name="options-seg-status" id="option1" autocomplete="off" checked="checked">
-          <span class="btn btn-ctrl">
+          <span class="btn btn-ctrl" title="Current">
             Current
           </span>
         </label>
         <label>
           <input type="radio" name="options-seg-status" id="option2" autocomplete="off">
-          <span class="btn btn-ctrl">
+          <span class="btn btn-ctrl" title="Archived">
             Archived
           </span>
         </label>
         <label>
           <input type="radio" name="options-seg-status" id="option3" autocomplete="off">
-          <span class="btn btn-ctrl">
+          <span class="btn btn-ctrl" title="All">
             All
           </span>
         </label>
