@@ -519,7 +519,7 @@ $ctrl-size-lg:          3rem;  // 48px
 $ctrl-size:             2.375rem; // 38px
 $ctrl-size-sm:          2rem;  //32px
 
-$ctrl-active-bg:        lighten($slate-100, 10%);
+$ctrl-active-bg:        lighten($slate-100, 9%);
 $ctrl-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba($ctrl, .25), $btn-active-box-shadow;
 // Forms
 

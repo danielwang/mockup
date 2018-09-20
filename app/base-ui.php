@@ -11,7 +11,7 @@
     <div class="container">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu gel-icon-2x"></i></span></li>
-        <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="logo" src="<?php echo ($resURL) ?>images/gel-logo.png" width="60"/><?php endblock() ?> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
+        <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="logo" src="<?php echo ($resURL) ?>site-images/gel-logo.png" width="60"/><?php endblock() ?> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Slack" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
@@ -37,7 +37,7 @@
   <aside id="gel-menu" role='menu'>
     <span class="nav-toggle close"><i class="gel-icon-close-o gel-icon-2x"></i></span>
 
-    <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="logo" src="<?php echo ($resURL) ?>images/gel-logo.png" width="75"/><?php endblock() ?></a>
+    <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="logo" src="<?php echo ($resURL) ?>site-images/gel-logo.png" width="75"/><?php endblock() ?></a>
 
     <menu class="scroll">
       <?php include ("_partials/menu/ui.html");?>
