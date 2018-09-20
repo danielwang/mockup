@@ -2,7 +2,7 @@
 /* *************************************** *\
  *   PageUp GEL - Theme 3.4.2
  *   Author: Daniel Wang
- *	 Date: 19/09/2018
+ *	 Date: 20/09/2018
  *
  \* *************************************** */
 /*!
@@ -7447,23 +7447,10 @@ label {
   margin-bottom: 0.375rem;
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
-
-.container-fluid {
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-  .container-fluid {
-    padding-left: 30px;
-    padding-right: 30px; } }
-  @media (min-width: 992px) {
-  .container-fluid {
-    padding-left: 45px;
-    padding-right: 45px; } }
-  @media (min-width: 1200px) {
-  .container-fluid {
-    padding-left: 60px;
-    padding-right: 60px; } }
-
+/* Commented out responsive gutter on fluid layout,
+ because it will break monilith hybrid page alignment,
+ same in navbar.scss
+ */
 #gel-main {
   padding: 1.5rem 0;
   flex: 1 0 auto; }
@@ -7839,7 +7826,7 @@ label {
   .segmented-control input[type="radio"]:focus + .btn-ctrl {
     box-shadow: 0 0 0 0.2rem rgba(65, 83, 101, .25), inset 0 3px 5px rgba(0, 0, 0, 0); }
   .segmented-control input[type="radio"]:checked + .btn-ctrl {
-    background-color: #bcc8d4;
+    background-color: #b9c6d2;
     color: #2f3c49; }
 
 .card {
@@ -8055,114 +8042,6 @@ label {
 
 label .was-validated .form-check-input:invalid .checkbox:before, label .form-check-input.is-invalid .checkbox:before, label .was-validated .form-check-input:invalid .radio:before, label .form-check-input.is-invalid .radio:before {
   border-color: #e81700; }
-
-.job-status-filters {
-  display: inline-flex;
-  flex-wrap: nowrap; }
-
-  .job-status-filters .filter {
-    justify-content: start;
-    margin: 0 1rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: currentColor; }
-  .job-status-filters .filter input[type="checkbox"] {
-    position: absolute;
-    left: -9999px;
-    margin-left: 0;
-    opacity: 0;
-    z-index: 1; }
-  .job-status-filters .filter input[type="checkbox"]:checked + .circle {
-    border-color: currentColor;
-    transition: all 0.1s ease 0s; }
-  .job-status-filters .filter input[type="checkbox"]:checked + .circle + label {
-    color: #2f3c49; }
-  .job-status-filters .filter input[type="checkbox"]:focus + label + label {
-    text-decoration: underline; }
-  .job-status-filters .filter input[type="checkbox"] ~ label {
-    cursor: pointer;
-    color: #536a81;
-    line-height: 1.25; }
-  .job-status-filters .filter input[type="checkbox"] ~ label:hover {
-    text-decoration: underline; }
-
-.circle {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  border-radius: 20rem;
-  border: 2px solid #9dafc0;
-  align-items: center;
-  font-size: 1.25rem;
-  justify-content: center;
-  color: #8198ae;
-  position: relative; }
-  .circle .dot-red {
-    position: absolute;
-    top: 0;
-    right: 0; }
-
-.job-status-filters .filter:nth-child(1) input[type="checkbox"]:checked + .circle {
-  color: #2196f3; }
-
-.job-status-filters .filter:nth-child(2) input[type="checkbox"]:checked + .circle {
-  color: #8bc34a; }
-
-.job-status-filters .filter:nth-child(3) input[type="checkbox"]:checked + .circle {
-  color: #ff5722; }
-
-.job-status-filters .filter:nth-child(4) input[type="checkbox"]:checked + .circle {
-  color: #e91e63; }
-
-.job-status-filters .filter:nth-child(5) input[type="checkbox"]:checked + .circle {
-  color: #795548; }
-
-.job-status-filters .filter:nth-child(6) input[type="checkbox"]:checked + .circle {
-  color: #9c27b0; }
-
-.job-status-filters .filter:nth-child(7) input[type="checkbox"]:checked + .circle {
-  color: #f44336; }
-
-.job-status-filters .filter:nth-child(8) input[type="checkbox"]:checked + .circle {
-  color: #00bcd4; }
-
-.job-status-filters .filter:nth-child(9) input[type="checkbox"]:checked + .circle {
-  color: #ffeb3b; }
-
-.job-status-filters .filter:nth-child(10) input[type="checkbox"]:checked + .circle {
-  color: #673ab7; }
-
-.job-status-filters .filter:nth-child(11) input[type="checkbox"]:checked + .circle {
-  color: #009688; }
-
-.job-status-filters .filter:nth-child(12) input[type="checkbox"]:checked + .circle {
-  color: #ff9800; }
-
-.job-status-filters .filter:nth-child(13) input[type="checkbox"]:checked + .circle {
-  color: #607d8b; }
-
-.job-status-filters .filter:nth-child(14) input[type="checkbox"]:checked + .circle {
-  color: #424242; }
-
-#gel-main-masthead {
-  width: 100vw;
-  background: white;
-  margin-left: calc(50% - 50vw);
-  margin-top: -1.5rem;
-  padding: 1.5rem 0 1.5rem;
-  margin-bottom: 1.5rem; }
-
-.scroll-shadow {
-  overflow: auto;
-  position: relative;
-  overflow: auto;
-  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0)), linear-gradient(-90deg, white 0%, rgba(255, 255, 255, 0)) 100% 0, radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 100% 0;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  background-size: 100px 110px, 100px 110px, 14px 110px, 14px 110px;
-  background-attachment: local, local, scroll, scroll; }
 
 .custom-control-inline {
   align-items: center; }
@@ -9218,23 +9097,10 @@ select.form-control {
     height: 30px; }
     .navbar .navbar-nav .search-group input[type=search] + .btn-submit:focus {
       outline: 1px solid currentcolor; }
-
-.navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container {
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container {
-      padding-left: 30px;
-      padding-right: 30px; } }
-  @media (min-width: 992px) {
-    .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container {
-      padding-left: 45px;
-      padding-right: 45px; } }
-  @media (min-width: 1200px) {
-    .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container {
-      padding-left: 60px;
-      padding-right: 60px; } }
-
+/* Commented out responsive gutter on fluid layout,
+ because it will break monilith hybrid page alignment,
+ same in core.scss
+ */
 #popup-top {
   padding: 1.5rem 0;
   color: white; }
