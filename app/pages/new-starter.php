@@ -75,11 +75,9 @@
         <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#createModal">Create a task</button>
       </div>
     </div>
-  <?php for ($c =1; $c <= 4; $c++) {?>
-      <h4 class="mt-5">Before James's First Day</h4>
-      <table class="table mt-2">
+      <table class="table mt-5">
         <caption class="sr-only">List of tasks</caption>
-        <thead>
+        <thead class="thead-dark">
           <tr>
             <th scope="col">Task</th>
             <th scope="col">Assigned to</th>
@@ -89,6 +87,8 @@
           </tr>
         </thead>
         <tbody>
+        <?php for ($c =1; $c <= 4; $c++) {?>
+          <tr><td class="h6 table-active" colspan="5">James's Day <?php echo $c ?></td></tr>
           <tr>
             <th scope="row"><a href="#">Get your gears set up</a></th>
             <td data-title="Assigned to">Emily Employee</td>
@@ -122,9 +122,9 @@
               <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
             </td>
           </tr>
+            <?php } ?>
         </tbody>
       </table>
-  <?php } ?>
   </div>
 </div>
 

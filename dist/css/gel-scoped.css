@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
 /* *************************************** *\
- *   PageUp GEL - Theme 3.4.2
+ *   PageUp GEL - Theme 3.5.0
  *   Author: Daniel Wang
- *	 Date: 20/09/2018
+ *	 Date: 21/09/2018
  *
  \* *************************************** */
 
@@ -59,7 +58,7 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; }
   .gel *, .gel *::before, .gel *::after {
     box-sizing: border-box; }
-    html.gel  {
+  html.gel  {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -6210,6 +6209,12 @@
   @font-face {
     font-family: 'Proxima Nova Light';
     src: url('fonts/ProximaNova-Light.otf'); }
+  @font-face {
+    font-family: 'Nunito Bold';
+    src: url('fonts/Nunito-Bold.otf'); }
+  @font-face {
+    font-family: 'Nunito Semibold';
+    src: url('fonts/Nunito-Semibold.otf'); }
   .gel html {
     height: 100%; }
   .gel body {
@@ -6225,8 +6230,8 @@
     display: flex;
     flex-direction: column; }
   .gel .h1, .gel .h2, .gel .h3, .gel .h4, .gel .h5, .gel .h6, .gel h1, .gel h2, .gel h3, .gel h4, .gel h5, .gel h6 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600; }
+    font-weight: 400;
+    font-family: 'Nunito Semibold'; }
   .gel a {
     font-weight: 400;
     font-family: 'Proxima Nova Semibold';
@@ -6516,8 +6521,8 @@
       margin-top: 0;
       margin-left: 8px; }
   .gel .btn {
-    font-weight: 600;
-    font-family: 'Nunito', sans-serif; }
+    font-weight: 400;
+    font-family: 'Nunito Semibold'; }
     .gel .btn.loading {
       background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
       background-size: 40px 40px;
@@ -6774,6 +6779,96 @@
       background-color: #10a746; }
   label .was-validated .gel .form-check-input:invalid .checkbox:before, label .gel .form-check-input.is-invalid .checkbox:before, label .was-validated .gel .form-check-input:invalid .radio:before, label .gel .form-check-input.is-invalid .radio:before {
     border-color: #e81700; }
+  .gel .job-status-filters {
+    display: inline-flex;
+    flex-wrap: nowrap; }
+
+    .gel .job-status-filters .filter {
+      justify-content: start;
+      margin: 0 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: currentColor; }
+    .gel .job-status-filters .filter input[type="checkbox"] {
+      position: absolute;
+      left: -9999px;
+      margin-left: 0;
+      opacity: 0;
+      z-index: 1; }
+    .gel .job-status-filters .filter input[type="checkbox"]:checked + .circle {
+      border-color: currentColor;
+      transition: all 0.1s ease 0s; }
+    .gel .job-status-filters .filter input[type="checkbox"]:checked + .circle + label {
+      color: #2f3c49; }
+    .gel .job-status-filters .filter input[type="checkbox"]:focus + label + label {
+      text-decoration: underline; }
+    .gel .job-status-filters .filter input[type="checkbox"] ~ label {
+      cursor: pointer;
+      color: #536a81;
+      line-height: 1.25; }
+    .gel .job-status-filters .filter input[type="checkbox"] ~ label:hover {
+      text-decoration: underline; }
+  .gel .circle {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    border-radius: 20rem;
+    border: 2px solid #9dafc0;
+    align-items: center;
+    font-size: 1.25rem;
+    justify-content: center;
+    color: #8198ae;
+    position: relative; }
+    .gel .circle .dot-red {
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .gel .job-status-filters .filter:nth-child(1) input[type="checkbox"]:checked + .circle {
+    color: #2196f3; }
+  .gel .job-status-filters .filter:nth-child(2) input[type="checkbox"]:checked + .circle {
+    color: #8bc34a; }
+  .gel .job-status-filters .filter:nth-child(3) input[type="checkbox"]:checked + .circle {
+    color: #ff5722; }
+  .gel .job-status-filters .filter:nth-child(4) input[type="checkbox"]:checked + .circle {
+    color: #e91e63; }
+  .gel .job-status-filters .filter:nth-child(5) input[type="checkbox"]:checked + .circle {
+    color: #795548; }
+  .gel .job-status-filters .filter:nth-child(6) input[type="checkbox"]:checked + .circle {
+    color: #9c27b0; }
+  .gel .job-status-filters .filter:nth-child(7) input[type="checkbox"]:checked + .circle {
+    color: #f44336; }
+  .gel .job-status-filters .filter:nth-child(8) input[type="checkbox"]:checked + .circle {
+    color: #00bcd4; }
+  .gel .job-status-filters .filter:nth-child(9) input[type="checkbox"]:checked + .circle {
+    color: #ffeb3b; }
+  .gel .job-status-filters .filter:nth-child(10) input[type="checkbox"]:checked + .circle {
+    color: #673ab7; }
+  .gel .job-status-filters .filter:nth-child(11) input[type="checkbox"]:checked + .circle {
+    color: #009688; }
+  .gel .job-status-filters .filter:nth-child(12) input[type="checkbox"]:checked + .circle {
+    color: #ff9800; }
+  .gel .job-status-filters .filter:nth-child(13) input[type="checkbox"]:checked + .circle {
+    color: #607d8b; }
+  .gel .job-status-filters .filter:nth-child(14) input[type="checkbox"]:checked + .circle {
+    color: #424242; }
+  .gel #gel-main-masthead {
+    width: 100vw;
+    background: white;
+    margin-left: calc(50% - 50vw);
+    margin-top: -1.5rem;
+    padding: 1.5rem 0 1.5rem;
+    margin-bottom: 1.5rem; }
+  .gel .scroll-shadow {
+    overflow: auto;
+    position: relative;
+    overflow: auto;
+    background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0)), linear-gradient(-90deg, white 0%, rgba(255, 255, 255, 0)) 100% 0, radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 100% 0;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 100px 110px, 100px 110px, 14px 110px, 14px 110px;
+    background-attachment: local, local, scroll, scroll; }
   .gel .custom-control-inline {
     align-items: center; }
   .gel .custom-control-label {
@@ -7278,8 +7373,8 @@
       top: 15px; }
   .gel .list-group-item {
     font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif; }
+    font-weight: 400;
+    font-family: 'Nunito Semibold'; }
     .gel .list-group-item.active a {
       color: white; }
   .gel .spinner {
@@ -7457,8 +7552,8 @@
       @media (min-width: 992px) {
         .gel #gel-header .page-actions .item > a span {
           display: inline-block;
-          font-weight: 700;
-          font-family: 'Nunito', sans-serif; } }
+          font-weight: 400;
+          font-family: 'Nunito Semibold'; } }
   .gel #gel-subpages {
     position: sticky;
     top: 3.75rem;
@@ -7900,8 +7995,8 @@
     border-spacing: 0;
     border-radius: 0.5rem; }
     .gel .table thead th {
-      font-weight: 700;
-      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-family: 'Nunito Semibold';
       vertical-align: middle;
       border: 0;
       line-height: 1.2; }
@@ -7978,8 +8073,8 @@
       .gel .table tbody tr:last-of-type {
         margin-bottom: 0; }
       .gel .table tbody th[scope="row"] {
-        font-weight: 700;
-        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-family: 'Nunito Semibold';
         border: 0;
         background: white; }
       .gel .table tbody td {
@@ -7991,8 +8086,8 @@
       .gel .table tbody td[data-title]:before {
         content: attr(data-title);
         float: left;
-        font-weight: 700;
-        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-family: 'Nunito Semibold';
         width: 50%;
         color: #1d252d;
         position: absolute;
@@ -8077,8 +8172,8 @@
   .gel .nav-tabs {
     border-width: 2px; }
     .gel .nav-tabs .nav-link {
-      font-weight: 700;
-      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-family: 'Nunito Semibold';
       font-size: 1rem;
       color: #415365;
       padding: 0.625rem;

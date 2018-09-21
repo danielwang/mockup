@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
 /* *************************************** *\
- *   PageUp GEL - Theme 3.4.2
+ *   PageUp GEL - Theme 3.5.0
  *   Author: Daniel Wang
- *	 Date: 20/09/2018
+ *	 Date: 21/09/2018
  *
  \* *************************************** */
 /*!
@@ -7410,6 +7409,14 @@ button.close {
   font-family: 'Proxima Nova Light';
   src: url('fonts/ProximaNova-Light.otf'); }
 
+@font-face {
+  font-family: 'Nunito Bold';
+  src: url('fonts/Nunito-Bold.otf'); }
+
+@font-face {
+  font-family: 'Nunito Semibold';
+  src: url('fonts/Nunito-Semibold.otf'); }
+
 html {
   height: 100%; }
 
@@ -7427,8 +7434,8 @@ body {
   flex-direction: column; }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600; }
+  font-weight: 400;
+  font-family: 'Nunito Semibold'; }
 
 a {
   font-weight: 400;
@@ -7765,8 +7772,8 @@ label {
     margin-left: 8px; }
 
 .btn {
-  font-weight: 600;
-  font-family: 'Nunito', sans-serif; }
+  font-weight: 400;
+  font-family: 'Nunito Semibold'; }
   .btn.loading {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
     background-size: 40px 40px;
@@ -8042,6 +8049,114 @@ label {
 
 label .was-validated .form-check-input:invalid .checkbox:before, label .form-check-input.is-invalid .checkbox:before, label .was-validated .form-check-input:invalid .radio:before, label .form-check-input.is-invalid .radio:before {
   border-color: #e81700; }
+
+.job-status-filters {
+  display: inline-flex;
+  flex-wrap: nowrap; }
+
+  .job-status-filters .filter {
+    justify-content: start;
+    margin: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: currentColor; }
+  .job-status-filters .filter input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    margin-left: 0;
+    opacity: 0;
+    z-index: 1; }
+  .job-status-filters .filter input[type="checkbox"]:checked + .circle {
+    border-color: currentColor;
+    transition: all 0.1s ease 0s; }
+  .job-status-filters .filter input[type="checkbox"]:checked + .circle + label {
+    color: #2f3c49; }
+  .job-status-filters .filter input[type="checkbox"]:focus + label + label {
+    text-decoration: underline; }
+  .job-status-filters .filter input[type="checkbox"] ~ label {
+    cursor: pointer;
+    color: #536a81;
+    line-height: 1.25; }
+  .job-status-filters .filter input[type="checkbox"] ~ label:hover {
+    text-decoration: underline; }
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  border-radius: 20rem;
+  border: 2px solid #9dafc0;
+  align-items: center;
+  font-size: 1.25rem;
+  justify-content: center;
+  color: #8198ae;
+  position: relative; }
+  .circle .dot-red {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.job-status-filters .filter:nth-child(1) input[type="checkbox"]:checked + .circle {
+  color: #2196f3; }
+
+.job-status-filters .filter:nth-child(2) input[type="checkbox"]:checked + .circle {
+  color: #8bc34a; }
+
+.job-status-filters .filter:nth-child(3) input[type="checkbox"]:checked + .circle {
+  color: #ff5722; }
+
+.job-status-filters .filter:nth-child(4) input[type="checkbox"]:checked + .circle {
+  color: #e91e63; }
+
+.job-status-filters .filter:nth-child(5) input[type="checkbox"]:checked + .circle {
+  color: #795548; }
+
+.job-status-filters .filter:nth-child(6) input[type="checkbox"]:checked + .circle {
+  color: #9c27b0; }
+
+.job-status-filters .filter:nth-child(7) input[type="checkbox"]:checked + .circle {
+  color: #f44336; }
+
+.job-status-filters .filter:nth-child(8) input[type="checkbox"]:checked + .circle {
+  color: #00bcd4; }
+
+.job-status-filters .filter:nth-child(9) input[type="checkbox"]:checked + .circle {
+  color: #ffeb3b; }
+
+.job-status-filters .filter:nth-child(10) input[type="checkbox"]:checked + .circle {
+  color: #673ab7; }
+
+.job-status-filters .filter:nth-child(11) input[type="checkbox"]:checked + .circle {
+  color: #009688; }
+
+.job-status-filters .filter:nth-child(12) input[type="checkbox"]:checked + .circle {
+  color: #ff9800; }
+
+.job-status-filters .filter:nth-child(13) input[type="checkbox"]:checked + .circle {
+  color: #607d8b; }
+
+.job-status-filters .filter:nth-child(14) input[type="checkbox"]:checked + .circle {
+  color: #424242; }
+
+#gel-main-masthead {
+  width: 100vw;
+  background: white;
+  margin-left: calc(50% - 50vw);
+  margin-top: -1.5rem;
+  padding: 1.5rem 0 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.scroll-shadow {
+  overflow: auto;
+  position: relative;
+  overflow: auto;
+  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0)), linear-gradient(-90deg, white 0%, rgba(255, 255, 255, 0)) 100% 0, radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 100% 0;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 100px 110px, 100px 110px, 14px 110px, 14px 110px;
+  background-attachment: local, local, scroll, scroll; }
 
 .custom-control-inline {
   align-items: center; }
@@ -8620,8 +8735,8 @@ select.form-control {
 
 .list-group-item {
   font-size: 1rem;
-  font-weight: 700;
-  font-family: 'Nunito', sans-serif; }
+  font-weight: 400;
+  font-family: 'Nunito Semibold'; }
   .list-group-item.active a {
     color: white; }
 /*Global Mixins*/
@@ -8810,8 +8925,8 @@ select.form-control {
     @media (min-width: 992px) {
         #gel-header .page-actions .item > a span {
           display: inline-block;
-          font-weight: 700;
-          font-family: 'Nunito', sans-serif; } }
+          font-weight: 400;
+          font-family: 'Nunito Semibold'; } }
 
 #gel-subpages {
   position: sticky;
@@ -9267,8 +9382,8 @@ select.form-control {
   border-spacing: 0;
   border-radius: 0.5rem; }
   .table thead th {
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-family: 'Nunito Semibold';
     vertical-align: middle;
     border: 0;
     line-height: 1.2; }
@@ -9346,8 +9461,8 @@ select.form-control {
       .table tbody tr:last-of-type {
         margin-bottom: 0; }
       .table tbody th[scope="row"] {
-        font-weight: 700;
-        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-family: 'Nunito Semibold';
         border: 0;
         background: white; }
       .table tbody td {
@@ -9359,8 +9474,8 @@ select.form-control {
       .table tbody td[data-title]:before {
         content: attr(data-title);
         float: left;
-        font-weight: 700;
-        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-family: 'Nunito Semibold';
         width: 50%;
         color: #1d252d;
         position: absolute;
@@ -9450,8 +9565,8 @@ select.form-control {
 .nav-tabs {
   border-width: 2px; }
   .nav-tabs .nav-link {
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-family: 'Nunito Semibold';
     font-size: 1rem;
     color: #415365;
     padding: 0.625rem;

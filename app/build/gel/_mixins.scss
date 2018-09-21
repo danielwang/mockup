@@ -1,7 +1,7 @@
 
 @mixin font-heading() {
 	font-weight: 400;
-	font-family: 'Nunito Bold';
+	font-family: 'Nunito Semibold';
 }
 
 @mixin font-cta() {
@@ -14,14 +14,14 @@
 	font-family: 'Proxima Nova Bold';
 }
 
-@mixin font-regular() {
-	font-weight: 400;
-	font-family: 'Proxima Nova';
-}
-
 @mixin font-semibold() {
 	font-weight: 400;
 	font-family: 'Proxima Nova Semibold';
+}
+
+@mixin font-regular() {
+	font-weight: 400;
+	font-family: 'Proxima Nova';
 }
 
 @mixin font-light() {
