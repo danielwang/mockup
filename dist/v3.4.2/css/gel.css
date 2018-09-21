@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
 /* *************************************** *\
  *   PageUp GEL - Theme 3.4.2
  *   Author: Daniel Wang
@@ -7409,14 +7410,6 @@ button.close {
   font-family: 'Proxima Nova Light';
   src: url('fonts/ProximaNova-Light.otf'); }
 
-@font-face {
-  font-family: 'Nunito Bold';
-  src: url('fonts/Nunito-Bold.otf'); }
-
-@font-face {
-  font-family: 'Nunito Semibold';
-  src: url('fonts/Nunito-Semibold.otf'); }
-
 html {
   height: 100%; }
 
@@ -7772,8 +7765,8 @@ label {
     margin-left: 8px; }
 
 .btn {
-  font-weight: 400;
-  font-family: 'Nunito Semibold'; }
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif; }
   .btn.loading {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
     background-size: 40px 40px;
@@ -8627,8 +8620,8 @@ select.form-control {
 
 .list-group-item {
   font-size: 1rem;
-  font-weight: 400;
-  font-family: 'Nunito Bold'; }
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif; }
   .list-group-item.active a {
     color: white; }
 /*Global Mixins*/
@@ -8817,8 +8810,8 @@ select.form-control {
     @media (min-width: 992px) {
         #gel-header .page-actions .item > a span {
           display: inline-block;
-          font-weight: 400;
-          font-family: 'Nunito Bold'; } }
+          font-weight: 700;
+          font-family: 'Nunito', sans-serif; } }
 
 #gel-subpages {
   position: sticky;
@@ -9274,8 +9267,8 @@ select.form-control {
   border-spacing: 0;
   border-radius: 0.5rem; }
   .table thead th {
-    font-weight: 400;
-    font-family: 'Nunito Bold';
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
     vertical-align: middle;
     border: 0;
     line-height: 1.2; }
@@ -9353,8 +9346,8 @@ select.form-control {
       .table tbody tr:last-of-type {
         margin-bottom: 0; }
       .table tbody th[scope="row"] {
-        font-weight: 400;
-        font-family: 'Nunito Bold';
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
         border: 0;
         background: white; }
       .table tbody td {
@@ -9366,8 +9359,8 @@ select.form-control {
       .table tbody td[data-title]:before {
         content: attr(data-title);
         float: left;
-        font-weight: 400;
-        font-family: 'Nunito Bold';
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
         width: 50%;
         color: #1d252d;
         position: absolute;
@@ -9457,8 +9450,8 @@ select.form-control {
 .nav-tabs {
   border-width: 2px; }
   .nav-tabs .nav-link {
-    font-weight: 400;
-    font-family: 'Nunito Bold';
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     color: #415365;
     padding: 0.625rem;

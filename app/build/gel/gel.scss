@@ -1,20 +1,15 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.4.2
+ *   PageUp GEL - Theme 3.5.0
  *   Author: Daniel Wang
- *	 Date: 20/09/2018
+ *	 Date: 21/09/2018
  *
 \* *************************************** */
-//google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
-
 @import "functions";
 @import "variables";
 
 
 // scope GEL .gel{
 @import "../bootstrap-4.1.0/bootstrap";
-
-
 
 //----
 @import "mixins";
@@ -34,7 +29,7 @@
 @import "buttons";
 @import "card";
 @import "checkboxes";
-// @import "circles";
+@import "circles";
 @import "custom-forms";
 @import "dropdown";
 @import "dropzone";
