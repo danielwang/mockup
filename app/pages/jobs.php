@@ -103,9 +103,9 @@
           </td>
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
-          <td class="text-center">
+          <td class="text-center sm-full">
             <a class="d-none d-md-block" aria-label="View application" href="job-card"> View <i aria-hidden="true" class="gel-icon-angle-right gel-icon-sm"></i></a>
-            <a class="btn btn-outline-primary btn-block d-md-none" href="job-card"> View </a>
+            <a class="btn btn-primary btn-block d-md-none" href="job-card"> View </a>
           </td>
         </tr>
         <tr class="clickable">
@@ -119,9 +119,9 @@
           </td>
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
-          <td class="text-center">
+          <td class="text-center sm-full">
             <a class="d-none d-md-block text-nowrap" aria-label="View application" href="job-card"> View <i aria-hidden="true" class="gel-icon-angle-right gel-icon-sm"></i></a>
-            <a class="btn btn-outline-primary btn-block d-md-none" href="job-card"> View </a>
+            <a class="btn btn-primary btn-block d-md-none" href="job-card"> View </a>
           </td>
         </tr>
       <?php } ?>
