@@ -8951,7 +8951,8 @@ select.form-control {
   #gel-subpages .page-tabs .nav-item {
     white-space: nowrap; }
   #gel-subpages .page-tabs .nav-item a {
-    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-family: 'Nunito Semibold';
     font-size: 1rem;
     opacity: 0.75;
     color: #fff;
