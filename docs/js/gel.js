@@ -88,8 +88,11 @@ el.onclick = checkAll; //again, function reference, no ()
 
 */
 
-
+/*****************************************
+  Scroller
+*****************************************/
 const outterWrapper = document.querySelector('[data-control="scroller-wrapper"]');
+const scroller = document.querySelector('.scroller');
 
 if (typeof(outterWrapper) != 'undefined' && outterWrapper != null){
   const innerContent = outterWrapper.querySelector('[data-control="scroller-content"]');
@@ -104,8 +107,14 @@ if (typeof(outterWrapper) != 'undefined' && outterWrapper != null){
     scrollerInit();
   } else {
     // hide scroller contrl on mobile touch devices
+    // if there is scroller control wrapper
+    if (typeof(scroller) != 'undefined' && scroller != null){
+        scroller.classList.add('d-none');
+    } else{
+    // hide buttons individually
     rightBtn.classList.add('d-none');
     leftBtn.classList.add('d-none');
+    }
   }
 
   function getOutterWrapperWidth() {
@@ -121,7 +130,7 @@ if (typeof(outterWrapper) != 'undefined' && outterWrapper != null){
   }
 
   function scrollerInit() {
-    console.log('ow: ' + getOutterWrapperWidth() + ' iw: ' + getInnerConcentWidth());
+    //console.log('ow: ' + getOutterWrapperWidth() + ' iw: ' + getInnerConcentWidth());
     // there is overflow
     if (getOutterWrapperWidth() < getInnerConcentWidth()) {
       //show scroller scroller.classList.remove('d-none');
@@ -130,7 +139,7 @@ if (typeof(outterWrapper) != 'undefined' && outterWrapper != null){
       scrollerReset();
     } else {
       // no overflow
-      console.log('sn');
+    //  console.log('sn');
       //scroller.classList.add('d-none');
       rightBtn.classList.add('d-none');
       leftBtn.classList.add('d-none');

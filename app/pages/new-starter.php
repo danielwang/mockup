@@ -88,7 +88,7 @@
         </thead>
         <tbody>
         <?php for ($c =1; $c <= 4; $c++) {?>
-          <tr class="section-heading"><td class="table-active" colspan="5"> <h5 class="mb-0">James's Day <?php echo $c ?></h5></td></tr>
+          <tr><td scope="row" class="section-heading" colspan="5"> <h5 class="mb-0">James's Day <?php echo $c ?></h5></td></tr>
           <tr>
             <th scope="row"><a href="#">Get your gears set up</a></th>
             <td data-title="Assigned to">Emily Employee</td>

@@ -87,6 +87,12 @@
       vertical-align: middle;
       font-weight: 400;
     }
+
+    td{
+      &.section-heading{
+        background: $smoke;
+      }
+    }
   }
 }
 /* *********************************\
@@ -129,12 +135,6 @@
         margin-bottom: $spacer * 2;
         border-radius: $border-radius;
         overflow: hidden;
-
-        &.section-heading td {
-           padding-left: $spacer;
-           background: $smoke-500;
-           border: 0;
-        }
       }
 
       tr:last-of-type {
@@ -154,6 +154,12 @@
         padding-left: 50%;
         position: relative;
 
+        &.section-heading{
+           padding-left: $spacer;
+           background: $smoke-500;
+           border: 0;
+        }
+        
         &[scope="row"]{
           padding-left: $spacer
         }

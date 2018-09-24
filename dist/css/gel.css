@@ -9431,6 +9431,8 @@ select.form-control {
   .table tbody td, .table tbody th {
     vertical-align: middle;
     font-weight: 400; }
+  .table tbody td.section-heading {
+    background: #ced8e2; }
 /* *********************************\
  responsive table viewport < 768
  \***********************************/
@@ -9460,10 +9462,6 @@ select.form-control {
       margin-bottom: 2rem;
       border-radius: 0.5rem;
       overflow: hidden; }
-      .table tbody tr.section-heading td {
-        padding-left: 1rem;
-        background: #ced8e2;
-        border: 0; }
       .table tbody tr:last-of-type {
         margin-bottom: 0; }
       .table tbody th[scope="row"] {
@@ -9477,8 +9475,12 @@ select.form-control {
         min-height: 3.25rem;
         padding-left: 50%;
         position: relative; }
-      .table tbody td[scope="row"] {
-        padding-left: 1rem; }
+        .table tbody td.section-heading {
+          padding-left: 1rem;
+          background: #ced8e2;
+          border: 0; }
+        .table tbody td[scope="row"] {
+          padding-left: 1rem; }
       .table tbody td[data-title]:before {
         content: attr(data-title);
         float: left;
