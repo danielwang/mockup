@@ -99,7 +99,7 @@
       white-space: nowrap;
 
       a {
-        font-family: $font-family-headings;
+        @include font-heading();
         font-size: 1rem;
         opacity: 0.75;
         color: $white;
