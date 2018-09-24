@@ -2966,7 +2966,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 15px; }
+  padding: 0.5rem 1rem; }
   .navbar > .container, .navbar > .container-fluid {
     display: flex;
     flex-wrap: wrap;
@@ -2977,7 +2977,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   display: inline-block;
   padding-top: 0.40625rem;
   padding-bottom: 0.40625rem;
-  margin-right: 15px;
+  margin-right: 1rem;
   font-size: 1rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -9116,9 +9116,11 @@ select.form-control {
   height: 3.75rem;
   z-index: 1020;
   font-weight: 400;
-  font-family: 'Proxima Nova Bold';
-  padding-left: 0;
-  padding-right: 0; }
+  font-family: 'Proxima Nova Bold'; }
+  @media (min-width: 576px) {
+  .navbar {
+    padding-left: 0;
+    padding-right: 0; } }
   .navbar .navbar-nav {
     align-items: stretch;
     flex-direction: row; }
@@ -9455,9 +9457,13 @@ select.form-control {
       .table thead th:first-of-type {
         text-align: left; }
     .table tbody tr {
-      margin-bottom: 2em;
+      margin-bottom: 2rem;
       border-radius: 0.5rem;
       overflow: hidden; }
+      .table tbody tr.section-heading td {
+        padding-left: 1rem;
+        background: #ced8e2;
+        border: 0; }
       .table tbody tr:last-of-type {
         margin-bottom: 0; }
       .table tbody th[scope="row"] {
@@ -9471,6 +9477,8 @@ select.form-control {
         min-height: 3.25rem;
         padding-left: 50%;
         position: relative; }
+      .table tbody td[scope="row"] {
+        padding-left: 1rem; }
       .table tbody td[data-title]:before {
         content: attr(data-title);
         float: left;

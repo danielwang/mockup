@@ -130,9 +130,10 @@
         border-radius: $border-radius;
         overflow: hidden;
 
-        &.section-heading {
-         padding-left: $spacer;
-         font-size: 2rem;
+        &.section-heading td {
+           padding-left: $spacer;
+           background: $smoke-500;
+           border: 0;
         }
       }
 
@@ -152,6 +153,10 @@
         min-height: 3.25rem; // empty cell
         padding-left: 50%;
         position: relative;
+
+        &[scope="row"]{
+          padding-left: $spacer
+        }
       }
 
       td[data-title]:before {

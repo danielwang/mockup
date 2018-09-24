@@ -93,33 +93,33 @@
       <tbody>
         <?php for ($x =1; $x <= 11; $x++) {?>
         <tr class="clickable">
+          <th scope="row"><a href="job-card">International Consultant on Early Childhood Development</a></th>
           <td data-title="Job ID">
             <?php echo $x * 2  + 53302042 ?>
           </td>
-          <th scope="row"><a href="job-card">International Consultant on Early Childhood Development</a></th>
           <td data-title="Recruiter">Peter Smith</td>
           <td data-title="Status">
             Offer Made
           </td>
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
-          <td class="text-center sm-full">
+          <td scope="row" class="text-center">
             <a class="d-none d-md-block" aria-label="View application" href="job-card"> View <i aria-hidden="true" class="gel-icon-angle-right gel-icon-sm"></i></a>
             <a class="btn btn-primary btn-block d-md-none" href="job-card"> View </a>
           </td>
         </tr>
         <tr class="clickable">
+          <th scope="row"><a href="job-card">Retail Customer Service Officer </a></th>
           <td data-title="Job ID">
             <?php echo $x + 53302042 ?>
           </td>
-          <th scope="row"><a href="job-card">Retail Customer Service Officer </a></th>
           <td data-title="Recruiter"> Arnold Schwarzenegger </td>
           <td data-title="Status">
             Approved to advertise
           </td>
           <td data-title="Opening date">Jul 14, 2017</td>
           <td data-title="Closing date">Jan 23, 2018</td>
-          <td class="text-center sm-full">
+          <td scope="row" class="text-center">
             <a class="d-none d-md-block text-nowrap" aria-label="View application" href="job-card"> View <i aria-hidden="true" class="gel-icon-angle-right gel-icon-sm"></i></a>
             <a class="btn btn-primary btn-block d-md-none" href="job-card"> View </a>
           </td>
