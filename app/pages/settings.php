@@ -1,4 +1,4 @@
-<?php $pageTitle = "Settings"; $parent = "adm";  $pageAction = true; include '../base-t1.php';?>
+<?php $pageTitle = "Settings"; $parent = "adm";  $pageLayout="-fluid"; $pageAction = false; include '../base-t1.php';?>
 
 <?php startblock('page-title') ?>
   Settings
@@ -6,10 +6,9 @@
 
 <?php startblock('page-tabs') ?>
 <nav id="gel-subpages" role="navigation">
-   <div class="container">
+   <div class="container<?php echo $pageLayout ?>">
       <ul class="page-tabs nav" role="tablist">
         <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#configure" role="tab" aria-controls="Tab one" aria-selected="true">Configure</a></li>
-        <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#settings" role="tab" aria-controls="Tab two" aria-selected="false">Settings</a></li>
         <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Client Bundles</a></li>
       </ul>
     </div>
@@ -50,7 +49,7 @@
     </div>
       <div class="offset-sm-1 col-sm-6">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" aria-label="Search" aria-describedby="settings-search">
+          <input type="search" class="form-control" aria-label="Search" aria-describedby="settings-search">
           <div class="input-group-append">
             <span class="btn input-group-text" id="settings-search">Search</span>
           </div>
@@ -58,7 +57,8 @@
       </div>
     </div>
     <div class="card mt-3">
-      <div class="row">
+<!-- home -->
+      <div class="row d-none">
         <div class="col-sm-5 col-xl-3">
           <div class="list-group list-group-flush nav" role="tablist">
             <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
@@ -119,13 +119,13 @@
           </div>
         </div>
       </div>
+
+<!-- tags -->
+      <table>
+        <tr><td>#</td><td><span class="badge badge-secondary">Secondary</span><span class="badge badge-secondary">Secondary</span><span class="badge badge-secondary">Secondary</span><span class="badge badge-secondary">Secondary</span></td></tr>
+        <tr><td>A</td><td>A</td></tr>
+      </table>
     </div>
-  </div>
-  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-    2
-  </div>
-  <div class="tab-pane" id="kp" role="tabpanel" aria-labelledby="kp-tab">
-    3
   </div>
   <div class="tab-pane" id="client-bundles" role="tabpanel" aria-labelledby="client-bundles-tab">
     <div class="alert alert-warning" role="alert">

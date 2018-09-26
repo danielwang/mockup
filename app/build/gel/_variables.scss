@@ -111,6 +111,7 @@ $slate-700: darken($slate, 18%);
 $slate-800: darken($slate, 27%);
 $slate-900: darken($slate, 36%);
 
+$smoke-400: lighten($smoke, 9%);
 $smoke-500: $smoke;
 $smoke-600: darken($smoke, 9%);
 $smoke-700: darken($smoke, 18%);
@@ -862,7 +863,7 @@ $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default
 
 // Badges
 
-$badge-font-size:                   .875em;
+$badge-font-size:                   1em;
 $badge-font-weight:                 400 !default;
 $badge-padding-y:                   .5em !default;
 $badge-padding-x:                   .75em !default;

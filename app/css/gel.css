@@ -3452,7 +3452,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .badge {
   display: inline-block;
   padding: 0.5em 0.75em;
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 400;
   line-height: 1;
   text-align: center;
@@ -7471,6 +7471,9 @@ label {
 
 .form-control:focus {
   box-shadow: 0 0 0px 1px #0063b0; }
+
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: searchfield; }
 /* selection styles */
 ::-moz-selection {
   color: #fff;
@@ -9587,6 +9590,41 @@ select.form-control {
     background: white;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem; }
+/** Tags **/
+.tags {
+  padding: 0;
+  margin: 0; }
+  .tags > li {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.5rem;
+    background-color: #ebeff3;
+    color: #415365;
+    overflow: hidden; }
+  .tags > li:empty {
+    display: none; }
+  .tags > li > a {
+    font-weight: 400;
+    font-family: 'Proxima Nova';
+    color: #415365;
+    margin: -0.5em -0.75em;
+    padding: 0.5em 0.75em; }
+  .tags > li > a:hover {
+    background-color: #9ee2ff; }
+  .tags > li > button {
+    padding: 0;
+    border: 0;
+    background: transparent; }
+  .tags > li > button [class^="gel-icon-"] {
+    font-size: 1rem;
+    color: #8198ae;
+    cursor: pointer; }
 /*==================================
  TIMELINE
  ==================================*/

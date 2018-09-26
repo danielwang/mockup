@@ -1,0 +1,48 @@
+/** Tags **/
+
+.tags{
+  padding: 0;
+  margin: 0;
+  > li {
+    display: inline-block;
+    padding: $badge-padding-y $badge-padding-x;
+    font-size: $badge-font-size;
+    font-weight: $badge-font-weight;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    @include border-radius($badge-border-radius);
+    background-color: $smoke-400;
+    color:$slate;
+    overflow: hidden;
+
+    // Empty badges collapse automatically
+    &:empty {
+      display: none;
+    }
+
+    //links
+    > a {
+      @include font-regular();
+      color: $slate;
+      margin: -($badge-padding-y) -($badge-padding-x);
+      padding: $badge-padding-y $badge-padding-x;
+
+      &:hover{
+        background-color: $azure-100;
+      }
+    }
+
+    > button{
+      padding: 0;
+      border: 0;
+      background: transparent;
+      [class^="gel-icon-"]{
+        font-size: 1rem;
+        color: $slate-200;
+        cursor: pointer;
+      }
+    }
+  }
+}
