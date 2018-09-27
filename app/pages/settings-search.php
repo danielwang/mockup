@@ -33,12 +33,7 @@
       </fieldset>
     </div>
       <div class="offset-sm-1 col-sm-6">
-        <div class="input-group mb-3">
-          <input type="search" class="form-control" aria-label="Search" aria-describedby="settings-search">
-          <div class="input-group-append">
-            <span class="btn input-group-text" id="settings-search">Search</span>
-          </div>
-        </div>
+      <?php include "partials/_tags-input-search.html" ?>
       </div>
     </div>
     <div class="card mt-3">
@@ -52,7 +47,17 @@
       </p> -->
       <div class="row">
         <div class="col-lg-3 col-xl-2">
-          <span class="badge badge-secondary">Secondary</span> <span class="badge badge-primary">Primary</span> <span class="badge badge-secondary">Secondary</span>
+          <ul class="tags" aria-label="tags">
+            <li>
+              <a href="#">Job</a>
+            </li>
+            <li class="active">
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">Onboarding</a>
+            </li>
+          </ul>
         </div>
         <div class="col-lg-5 col-xl-6">
           <h5>Recruitment</h5>
@@ -73,7 +78,17 @@
       <hr>
       <div class="row">
         <div class="col-lg-3 col-xl-2">
-          <span class="badge badge-secondary">customersatisfaction</span> <span class="badge badge-primary">Employee services</span>
+          <ul class="tags" aria-label="tags">
+            <li>
+              <a href="#">Job</a>
+            </li>
+            <li class="active">
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">Onboarding</a>
+            </li>
+          </ul>
         </div>
         <div class="col-lg-5 col-xl-6">
           <h5>Employee (Provider) details fields</h5>
@@ -90,7 +105,17 @@
       <hr>
       <div class="row">
         <div class="col-lg-3 col-xl-2">
-          <span class="badge badge-secondary">customersatisfaction</span> <span class="badge badge-primary">Employee services</span>
+          <ul class="tags" aria-label="tags">
+            <li>
+              <a href="#">Job</a>
+            </li>
+            <li class="active">
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">Onboarding</a>
+            </li>
+          </ul>
         </div>
         <div class="col-lg-5 col-xl-6">
           <h5><a href="#">Employee services system styling <i class="gel-icon-settings"></i></a> </h5>
@@ -106,7 +131,17 @@
       <hr>
       <div class="row">
         <div class="col-lg-3 col-xl-2">
-          <span class="badge badge-secondary">customersatisfaction</span> <span class="badge badge-primary">Employee services</span>
+          <ul class="tags" aria-label="tags">
+            <li>
+              <a href="#">Job</a>
+            </li>
+            <li class="active">
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">Onboarding</a>
+            </li>
+          </ul>
         </div>
         <div class="col-lg-5 col-xl-6">
           <h5>'Education History' section in ES Profile</h5>

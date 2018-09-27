@@ -1,6 +1,6 @@
 /** Tags **/
 
-.tags{
+ul.tags{
   padding: 0;
   margin: 0;
   > li {
@@ -14,8 +14,15 @@
     vertical-align: baseline;
     @include border-radius($badge-border-radius);
     background-color: $smoke-400;
-    color:$slate;
+    border: 1px solid $smoke-500;
+    color: $slate-600;
     overflow: hidden;
+    margin: 0 ($spacer * .25) ($spacer * .25) 0;
+    pointer-events:none;
+
+    &:hover, &:focus, &.active{
+      background-color: lighten($azure-100, 9%);
+    }
 
     // Empty badges collapse automatically
     &:empty {
@@ -25,13 +32,10 @@
     //links
     > a {
       @include font-regular();
-      color: $slate;
+      color: $slate-600;
       margin: -($badge-padding-y) -($badge-padding-x);
       padding: $badge-padding-y $badge-padding-x;
-
-      &:hover{
-        background-color: $azure-100;
-      }
+      pointer-events: all;
     }
 
     > button{
@@ -42,6 +46,7 @@
         font-size: 1rem;
         color: $slate-200;
         cursor: pointer;
+        pointer-events: all;
       }
     }
   }

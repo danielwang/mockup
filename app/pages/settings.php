@@ -47,13 +47,8 @@
         </div>
       </fieldset>
     </div>
-      <div class="offset-sm-1 col-sm-6">
-        <div class="input-group mb-3">
-          <input type="search" class="form-control" aria-label="Search" aria-describedby="settings-search">
-          <div class="input-group-append">
-            <span class="btn input-group-text" id="settings-search">Search</span>
-          </div>
-        </div>
+      <div class="col-sm-6">
+          <?php include "partials/_tags-input-search.html" ?>
       </div>
     </div>
     <div class="card mt-3">
@@ -121,10 +116,24 @@
       </div>
 
 <!-- tags -->
-      <table>
-        <tr><td>#</td><td><span class="badge badge-secondary">Secondary</span><span class="badge badge-secondary">Secondary</span><span class="badge badge-secondary">Secondary</span><span class="badge badge-secondary">Secondary</span></td></tr>
-        <tr><td>A</td><td>A</td></tr>
-      </table>
+      <div class="row">
+        <?php for ($c =1; $c <= 27; $c++) {?>
+          <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">  <?php for ($t =1; $t <= 3; $t++) {?>
+                <li>
+                  <a href="#">Tag short<?php echo ($c + 1) ?></a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong<?php echo ($c*2 + 2) ?></a>
+                </li>
+                <li>
+                  <a href="#">Employee services <?php echo ($c*3 + 3) ?></a>
+                </li>
+                <?php }?>
+              </ul>
+          </div>
+        <?php }?>
+      </div>
     </div>
   </div>
   <div class="tab-pane" id="client-bundles" role="tabpanel" aria-labelledby="client-bundles-tab">
