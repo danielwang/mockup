@@ -9000,7 +9000,7 @@ select.form-control {
   transition: transform 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  z-index: 1030;
+  z-index: 1031;
   -webkit-overflow-scrolling: touch; }
   @media (min-width: 1200px) {
   #gel-menu {
@@ -9620,6 +9620,8 @@ ul.tags {
     margin: -0.5em -0.75em;
     padding: 0.5em 0.75em;
     pointer-events: all; }
+  ul.tags > li > a:focus {
+    background-color: #ccf0ff; }
   ul.tags > li > button {
     padding: 0;
     border: 0;

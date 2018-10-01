@@ -36,6 +36,10 @@ ul.tags{
       margin: -($badge-padding-y) -($badge-padding-x);
       padding: $badge-padding-y $badge-padding-x;
       pointer-events: all;
+      
+      &:focus{
+        background-color: lighten($azure-100, 9%);
+      }
     }
 
     > button{
