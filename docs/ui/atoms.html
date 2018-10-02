@@ -159,7 +159,7 @@
     <nav id="gel-subpages" role="navigation">
      <div class="container">
         <ul class="page-tabs nav" role="tablist">
-          <li class="nav-item"><a class="nav-link active" id="avatars-tab" data-toggle="tab" href="#avatars" role="tab" aria-controls="avatars" aria-selected="1">Avatars</a></li><li class="nav-item"><a class="nav-link " id="badges-tab" data-toggle="tab" href="#badges" role="tab" aria-controls="badges" aria-selected="">Badges</a></li><li class="nav-item"><a class="nav-link " id="buttons-tab" data-toggle="tab" href="#buttons" role="tab" aria-controls="buttons" aria-selected="">Buttons</a></li><li class="nav-item"><a class="nav-link " id="checkboxes-tab" data-toggle="tab" href="#checkboxes" role="tab" aria-controls="checkboxes" aria-selected="">Checkboxes</a></li><li class="nav-item"><a class="nav-link " id="inputs-tab" data-toggle="tab" href="#inputs" role="tab" aria-controls="inputs" aria-selected="">Inputs</a></li><li class="nav-item"><a class="nav-link " id="loaders-tab" data-toggle="tab" href="#loaders" role="tab" aria-controls="loaders" aria-selected="">Loaders</a></li><li class="nav-item"><a class="nav-link " id="radios-tab" data-toggle="tab" href="#radios" role="tab" aria-controls="radios" aria-selected="">Radios</a></li><li class="nav-item"><a class="nav-link " id="toggles-tab" data-toggle="tab" href="#toggles" role="tab" aria-controls="toggles" aria-selected="">Toggles</a></li><li class="nav-item"><a class="nav-link " id="tooltips-tab" data-toggle="tab" href="#tooltips" role="tab" aria-controls="tooltips" aria-selected="">Tooltips</a></li>      </ul>
+          <li class="nav-item"><a class="nav-link active" id="avatars-tab" data-toggle="tab" href="#avatars" role="tab" aria-controls="avatars" aria-selected="1">Avatars</a></li><li class="nav-item"><a class="nav-link " id="badges-tab" data-toggle="tab" href="#badges" role="tab" aria-controls="badges" aria-selected="">Badges</a></li><li class="nav-item"><a class="nav-link " id="buttons-tab" data-toggle="tab" href="#buttons" role="tab" aria-controls="buttons" aria-selected="">Buttons</a></li><li class="nav-item"><a class="nav-link " id="checkboxes-tab" data-toggle="tab" href="#checkboxes" role="tab" aria-controls="checkboxes" aria-selected="">Checkboxes</a></li><li class="nav-item"><a class="nav-link " id="inputs-tab" data-toggle="tab" href="#inputs" role="tab" aria-controls="inputs" aria-selected="">Inputs</a></li><li class="nav-item"><a class="nav-link " id="loaders-tab" data-toggle="tab" href="#loaders" role="tab" aria-controls="loaders" aria-selected="">Loaders</a></li><li class="nav-item"><a class="nav-link " id="radios-tab" data-toggle="tab" href="#radios" role="tab" aria-controls="radios" aria-selected="">Radios</a></li><li class="nav-item"><a class="nav-link " id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="">Tags</a></li><li class="nav-item"><a class="nav-link " id="toggles-tab" data-toggle="tab" href="#toggles" role="tab" aria-controls="toggles" aria-selected="">Toggles</a></li><li class="nav-item"><a class="nav-link " id="tooltips-tab" data-toggle="tab" href="#tooltips" role="tab" aria-controls="tooltips" aria-selected="">Tooltips</a></li>      </ul>
     </div>
   </nav>
   <!-- page body -->
@@ -718,7 +718,51 @@
         <code>&lt;label&gt;</code>
         tag is mandatory, leave it empty tag when there is no label text</li>
 </ul>
-</div></div></div></div><div class="tab-pane " id="toggles" role="tabpanel" aria-labelledby="page-tab-toggles"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">The toggle switch represents a physical switch that allows users to turn things on or off.</blockquote>
+</div></div></div></div><div class="tab-pane " id="tags" role="tabpanel" aria-labelledby="page-tab-tags"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">Use when the content is possibly mapped into multiple categories and does not necessarily only fit into one hierarchical category.</blockquote>
+
+<div class="bg-white p-5 rounded">
+  <h5>Basic</h5>
+  <ul class="tags" aria-label="tags">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+  </ul>
+  <h5>Removable</h5>
+  <ul class="tags" aria-label="tags">
+    <li>User Experience Design
+      <button type="button">
+        <i class="gel-icon-close"></i>
+      </button>
+    </li>
+    <li>Graphic Design
+      <button type="button">
+        <i class="gel-icon-close"></i>
+      </button>
+    </li>
+    <li>User Interface Design
+      <button type="button">
+        <i class="gel-icon-close"></i>
+      </button>
+    </li>
+  </ul>
+
+  <h5>Linkable</h5>
+
+  <ul class="tags" aria-label="tags">
+    <li>
+      <a href="#">Job</a>
+    </li>
+    <li>
+      <a href="#">Profile</a>
+    </li>
+    <li>
+      <a href="#">Onboarding</a>
+    </li>
+    <li class="active">
+      <a href="#">Offer</a>
+    </li>
+  </ul>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="toggles" role="tabpanel" aria-labelledby="page-tab-toggles"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">The toggle switch represents a physical switch that allows users to turn things on or off.</blockquote>
 
 <h3>Default</h3>
 <div class="toggle">

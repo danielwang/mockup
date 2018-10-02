@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.5.0
+ *   PageUp GEL - Theme 3.6.0
  *   Author: Daniel Wang
- *	 Date: 21/09/2018
+ *	 Date: 01/10/2018
  *
  \* *************************************** */
 /*!
@@ -7835,6 +7835,14 @@ label {
   .segmented-control input[type="radio"]:checked + .btn-ctrl {
     background-color: #b9c6d2;
     color: #2f3c49; }
+/* input groups */
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text, .input-group > .input-group-append:not(:last-child) > .btn, .input-group > .input-group-append:not(:last-child) > .input-group-text, .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
+
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
 
 .card {
   padding: 1rem; }
@@ -9620,7 +9628,7 @@ ul.tags {
     margin: -0.5em -0.75em;
     padding: 0.5em 0.75em;
     pointer-events: all; }
-  ul.tags > li > a:focus {
+  ul.tags > li > a:hover, ul.tags > li > a:focus {
     background-color: #ccf0ff; }
   ul.tags > li > button {
     padding: 0;
@@ -9631,6 +9639,22 @@ ul.tags {
     color: #8198ae;
     cursor: pointer;
     pointer-events: all; }
+  .tags-input ul.tags > li {
+    margin-bottom: 0; }
+
+.tags-input .search-field {
+  background: none;
+  border: 0;
+  pointer-events: auto;
+  padding: 0; }
+  .tags-input .search-field:hover {
+    background: none; }
+  .tags-input .search-field input[type="text"] {
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    background: yellow; }
+  .tags-input .search-field input[type="text"]:focus {
+    outline: none; }
 /*==================================
  TIMELINE
  ==================================*/
@@ -11515,7 +11539,7 @@ sub, sup {
 
 @font-face {
   font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wk') format('truetype'), url('icons/gel-icon.woff?q0w0wk') format('woff'), url('icons/gel-icon.svg?q0w0wk#gel-icon') format('svg');
+  src: url('icons/gel-icon.ttf?q0w0wl') format('truetype'), url('icons/gel-icon.woff?q0w0wl') format('woff'), url('icons/gel-icon.svg?q0w0wl#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -11548,6 +11572,9 @@ sub, sup {
 
 .gel-icon-3x {
   font-size: 3rem; }
+
+.gel-icon-offer:before {
+  content: "\e981"; }
 
 .gel-icon-ellipsis:before {
   content: "\e91e"; }

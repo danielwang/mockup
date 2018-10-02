@@ -53,17 +53,18 @@
     </div>
     <div class="card mt-3">
 <!-- home -->
-      <div class="row d-none">
+      <div class="row">
         <div class="col-sm-5 col-xl-3">
           <div class="list-group list-group-flush nav" role="tablist">
             <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list2" role="tab"><i class="gel-icon-sourcing"></i> Sourcing</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-application"></i> Offers</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-application"></i> Application</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-offer"></i> Offers</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list4" role="tab"><i class="gel-icon-onboarding"></i> Onboarding</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list5" role="tab"><i class="gel-icon-star"></i> Performance</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list6" role="tab"><i class="gel-icon-learning"></i> Learning</a>
-            <a class="list-group-item list-group-item-action disabled" data-toggle="tab" href="#list7" role="tab"><i class="gel-icon-succession"></i> Succession</a>
-            <a class="list-group-item list-group-item-action disabled" data-toggle="tab" href="#list8" role="tab"><i class="gel-icon-cost"></i> Compensation</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list7" role="tab"><i class="gel-icon-succession"></i> Succession</a>
+            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list8" role="tab"><i class="gel-icon-cost"></i> Compensation</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list9" role="tab"><i class="gel-icon-integration"></i> Integration</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list10" role="tab"><i class="gel-icon-configure"></i> Configure</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-third-party"></i> Third Party Settings</a>
@@ -116,7 +117,7 @@
       </div>
 
 <!-- tags -->
-      <div class="row">
+      <div class="row d-none">
         <?php for ($c =1; $c <= 27; $c++) {?>
           <div class="col-1 mb-5 text-right"><h3>A</h3></div>
             <div class="col-11 mb-5"><ul class="tags" aria-label="tags">  <?php for ($t =1; $t <= 3; $t++) {?>

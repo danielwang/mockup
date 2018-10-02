@@ -36,8 +36,8 @@ ul.tags{
       margin: -($badge-padding-y) -($badge-padding-x);
       padding: $badge-padding-y $badge-padding-x;
       pointer-events: all;
-      
-      &:focus{
+
+      &:hover, &:focus{
         background-color: lighten($azure-100, 9%);
       }
     }
@@ -51,6 +51,31 @@ ul.tags{
         color: $slate-200;
         cursor: pointer;
         pointer-events: all;
+      }
+    }
+    // tags input search
+    .tags-input & {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tags-input{
+  .search-field{
+    background: none;
+    border: 0;
+    pointer-events: auto;
+    padding: 0;
+    &:hover{
+      background: none;
+    }
+
+    input[type="text"]{
+      padding: 0.5rem 0.75rem;
+      border:0;
+      background: yellow;
+      &:focus{
+        outline: none;
       }
     }
   }

@@ -5,8 +5,18 @@
 <?php endblock()?>
 
 <?php startblock('page-body');?>
-<div class="card">
-<div class="col-md-6"></div>
-<div class="col-md-6"></div>
-</div>
+
+Accessibility, Mobile responsive, Scalability, Maintainability, Consistency and Aesthetics.
+
+
+DOs:
+Native HTML tags, such as h1, a, p, strong etc
+Leverage GEL utility classes e.g  text-danger (To be documented in all utility classes in one place)
+Use GEL font icons
+
+Dont's
+No inline styles / CSS
+No inline Javascript
+No hard coded fixed pixels
+No stretching images
 <?php endblock()?>

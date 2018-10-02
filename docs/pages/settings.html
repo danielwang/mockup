@@ -340,28 +340,20 @@
 
   <!-- ************  page header ************ -->
         <header id="gel-header" role="banner">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
-                            <div class="col-md-9 col-lg-8">
+                            <div class="col-12">
                 <h1 class="page-title">Settings</h1>
                 <blockquote class="tagline"></blockquote>
-              </div>
-              <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
-                    <span class="item">
-    <a class="text-center" target="_blank" href="https://knowledgeportal.pageuppeople.com" title="Knowledge portal">
-      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i> <span>Knowledge Portal</span>
-    </a>
-  </span>
               </div>
                         </div>
           </div>
       </header>
    <!-- ************  page sub pages ************ -->
   <nav id="gel-subpages" role="navigation">
-   <div class="container">
+   <div class="container-fluid">
       <ul class="page-tabs nav" role="tablist">
         <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#configure" role="tab" aria-controls="Tab one" aria-selected="true">Configure</a></li>
-        <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#settings" role="tab" aria-controls="Tab two" aria-selected="false">Settings</a></li>
         <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#client-bundles" role="tab" aria-controls="Tab four" aria-selected="false">Client Bundles</a></li>
       </ul>
     </div>
@@ -369,7 +361,7 @@
 
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
-        		<section class="container">
+        		<section class="container-fluid">
 			
 <div class="tab-content">
   <div class="tab-pane active" id="configure" role="tabpanel" aria-labelledby="configure-tab">
@@ -393,17 +385,46 @@
         </div>
       </fieldset>
     </div>
-      <div class="offset-sm-1 col-sm-6">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" aria-label="Search" aria-describedby="settings-search">
-          <div class="input-group-append">
-            <span class="btn input-group-text" id="settings-search">Search</span>
-          </div>
-        </div>
-      </div>
+      <div class="col-sm-6">
+          <form>
+  <ul class="multi_value_field tags">
+    <li class="active">jobs
+      <button type="button">
+        <i class="gel-icon-close"></i>
+      </button>
+    </li>
+    <li class="search_field_item"><input type="text" autocomplete="off" tabindex="" style="width: 357px;"></li>
+  </ul>
+</form>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary" type="button" id="button-addon2">
+      <i class="gel-icon-search gel-icon-lg"></i>
+    </button>
+  </div>
+</div>
+
+<style>
+  .multi_value_field {
+    overflow: hidden;
+    list-style-type: none;
+    padding: 1px 3px;
+    height: auto!important;
+    border: 1px solid #ddd;
+    cursor: default;
+    text-align: left;
+    margin: 0 5px 0 0;
+    width: 530px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+</style>      </div>
     </div>
     <div class="card mt-3">
-      <div class="row">
+<!-- home -->
+      <div class="row d-none">
         <div class="col-sm-5 col-xl-3">
           <div class="list-group list-group-flush nav" role="tablist">
             <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
@@ -464,13 +485,821 @@
           </div>
         </div>
       </div>
+
+<!-- tags -->
+      <div class="row">
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short2</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong4</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 6</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short2</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong4</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 6</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short2</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong4</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 6</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short3</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong6</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 9</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short3</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong6</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 9</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short3</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong6</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 9</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short4</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong8</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 12</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short4</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong8</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 12</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short4</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong8</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 12</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short5</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong10</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 15</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short5</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong10</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 15</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short5</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong10</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 15</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short6</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong12</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 18</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short6</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong12</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 18</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short6</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong12</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 18</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short7</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong14</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 21</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short7</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong14</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 21</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short7</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong14</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 21</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short8</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong16</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 24</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short8</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong16</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 24</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short8</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong16</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 24</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short9</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong18</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 27</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short9</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong18</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 27</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short9</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong18</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 27</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short10</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong20</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 30</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short10</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong20</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 30</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short10</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong20</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 30</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short11</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong22</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 33</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short11</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong22</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 33</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short11</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong22</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 33</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short12</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong24</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 36</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short12</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong24</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 36</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short12</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong24</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 36</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short13</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong26</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 39</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short13</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong26</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 39</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short13</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong26</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 39</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short14</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong28</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 42</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short14</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong28</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 42</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short14</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong28</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 42</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short15</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong30</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 45</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short15</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong30</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 45</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short15</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong30</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 45</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short16</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong32</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 48</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short16</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong32</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 48</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short16</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong32</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 48</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short17</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong34</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 51</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short17</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong34</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 51</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short17</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong34</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 51</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short18</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong36</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 54</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short18</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong36</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 54</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short18</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong36</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 54</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short19</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong38</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 57</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short19</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong38</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 57</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short19</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong38</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 57</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short20</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong40</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 60</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short20</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong40</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 60</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short20</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong40</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 60</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short21</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong42</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 63</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short21</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong42</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 63</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short21</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong42</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 63</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short22</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong44</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 66</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short22</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong44</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 66</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short22</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong44</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 66</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short23</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong46</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 69</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short23</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong46</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 69</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short23</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong46</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 69</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short24</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong48</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 72</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short24</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong48</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 72</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short24</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong48</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 72</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short25</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong50</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 75</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short25</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong50</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 75</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short25</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong50</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 75</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short26</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong52</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 78</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short26</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong52</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 78</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short26</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong52</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 78</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short27</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong54</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 81</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short27</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong54</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 81</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short27</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong54</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 81</a>
+                </li>
+                              </ul>
+          </div>
+                  <div class="col-1 mb-5 text-right"><h3>A</h3></div>
+            <div class="col-11 mb-5"><ul class="tags" aria-label="tags">                  <li>
+                  <a href="#">Tag short28</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong56</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 84</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short28</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong56</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 84</a>
+                </li>
+                                <li>
+                  <a href="#">Tag short28</a>
+                </li>
+                <li>
+                  <a href="#">Tag looooooong56</a>
+                </li>
+                <li>
+                  <a href="#">Employee services 84</a>
+                </li>
+                              </ul>
+          </div>
+              </div>
     </div>
-  </div>
-  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-    2
-  </div>
-  <div class="tab-pane" id="kp" role="tabpanel" aria-labelledby="kp-tab">
-    3
   </div>
   <div class="tab-pane" id="client-bundles" role="tabpanel" aria-labelledby="client-bundles-tab">
     <div class="alert alert-warning" role="alert">
@@ -548,7 +1377,7 @@
 	</main>
   <!-- ************  page footer ************ -->
   <footer id="gel-footer" role="footer">
-    <div class="container">
+    <div class="container-fluid">
       <div class="d-flex justify-content-end">
         <div class="btn-group dropup">
           <button type="button" class="btn btn-sm btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -5,6 +5,26 @@
 function buildSolidIcons(){
   return  [
     ["logo", "logo"],
+    ["offer","offer"],
+    ["job", "job"],
+    ["knowledge portal", "knowledge-portal"],
+    ["analytics", "analytics"],
+    ["support", "support"],
+    ["employee", "employee"],
+    ["add-user", "add-user"],
+    ["resume","resume"],
+    ["third party","third-party"],
+    ["configure","configure"],
+    ["integration","integration"],
+    ["succession","succession"],
+    ["money","money"],
+    ["learning","learning"],
+    ["cost","cost"],
+    ["sourcing","sourcing"],
+    ["application","application"],
+    ["onboarding", "onboarding"],
+    ["team","team"],
+    ["control","control"],
     ["print", "print"],
     ["help", "help-pointer"],
     ["info", "info"],
@@ -39,15 +59,10 @@ function buildSolidIcons(){
     ["new", "new"],
     ["eye", "eye"],
     ["user", "user"],
-    ["job", "job"],
-    ["knowledge portal", "knowledge-portal"],
     ["refresh", "refresh"],
     ["lock", "lock"],
-    ["analytics", "analytics"],
     ["menu", "menu"],
-    ["support", "support"],
-    ["employee", "employee"],
-    ["add-user", "add-user"],
+    ["home","home"],
     ["preview", "preview"],
     ["copy", "copy"],
     ["close", "close"],
@@ -62,13 +77,11 @@ function buildSolidIcons(){
     ["drag","drag"],
     ["pencil","pencil"],
     ["history","history"],
-    ["home","home"],
     ["location","location"],
     ["add","add"],
     ["plus","plus"],
     ["tag","tag"],
     ["view","view"],
-    ["resume","resume"],
     ["slack","slack"],
     ["github","github"],
     ["edit","edit"],
@@ -79,22 +92,10 @@ function buildSolidIcons(){
     ["meh","meh"],
     ["smile","smile"],
     ["happy","happy"],
-    ["third party","third-party"],
-    ["configure","configure"],
-    ["integration","integration"],
-    ["succession","succession"],
-    ["money","money"],
-    ["learning","learning"],
-    ["cost","cost"],
-    ["sourcing","sourcing"],
-    ["application","application"],
-    ["onboarding", "onboarding"],
     ["clock","clock"],
     ["close app","close-app"],
     ["bell","bell"],
     ["target","target"],
-    ["team","team"],
-    ["control","control"],
     ["ellipsis","ellipsis"]
   ];
 }
@@ -170,7 +171,7 @@ $lineIcons = buildLineIcons();
           <h6 class="text-right"><?php echo count($solidIcons); ?> solid icons</h6>
           <div class="row">
             <?php for($i = 0; $i < ceil(count($solidIcons)) ; $i++){ ?>
-              <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2 text-center mb-4">
                   <div class="card border-0">
                     <h6><?php echo ucfirst($solidIcons[$i][0]);?></h6>
                     <p><a href="<?php echo ($resURL) ?>site-images/SVG/<?php echo $solidIcons[$i][1];?>.svg" data-toggle="tooltip" data-placement="top" title="Click to download SVG" download><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></a></p>
@@ -184,10 +185,10 @@ $lineIcons = buildLineIcons();
           <h6 class="text-right"><?php echo count($lineIcons); ?> line icons</h6>
           <div class="row">
           <?php for($i = 0; $i < ceil(count($lineIcons)) ; $i++){ ?>
-            <div class="col-6 col-sm-4 col-lg-3 text-center mb-4">
+            <div class="col-6 col-sm-4 col-lg-3 col-xl-2 text-center mb-4">
                 <div class="card border-0">
                   <h6><?php echo ucfirst($lineIcons[$i][0]);?></h6>
-                  <p><a href="<?php echo ($resURL) ?>images/SVG/<?php echo $lineIcons[$i][1];?>.svg" download><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></a></p>
+                  <p><a href="<?php echo ($resURL) ?>images/SVG/<?php echo $lineIcons[$i][1];?>.svg" data-toggle="tooltip" data-placement="top" title="Click to download SVG"  download><i class="gel-icon-2x gel-icon-<?php echo $lineIcons[$i][1];?>-o"></i></a></p>
                   <small><code>.gel-icon-<?php echo $lineIcons[$i][1];?>-o</code></small>
                 </div>
             </div>

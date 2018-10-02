@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.5.0
+ *   PageUp GEL - Theme 3.6.0
  *   Author: Daniel Wang
- *	 Date: 21/09/2018
+ *	 Date: 01/10/2018
  *
  \* *************************************** */
 /*!
@@ -3452,7 +3452,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .badge {
   display: inline-block;
   padding: 0.5em 0.75em;
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 400;
   line-height: 1;
   text-align: center;
@@ -8967,7 +8967,9 @@ select.form-control {
   #gel-subpages .page-tabs .nav-item a:hover {
     color: #fff;
     background-color: transparent;
-    opacity: 1; }
+    opacity: 1;
+    text-decoration: underline;
+    outline: none; }
   #gel-subpages .page-tabs .nav-item a.active {
     opacity: 1; }
     #gel-subpages .page-tabs .nav-item a.active::before {
@@ -8998,7 +9000,7 @@ select.form-control {
   transition: transform 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  z-index: 1030;
+  z-index: 1031;
   -webkit-overflow-scrolling: touch; }
   @media (min-width: 1200px) {
   #gel-menu {
@@ -9587,6 +9589,48 @@ select.form-control {
     background: white;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem; }
+/** Tags **/
+ul.tags {
+  padding: 0;
+  margin: 0; }
+  ul.tags > li {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.5rem;
+    background-color: #ebeff3;
+    border: 1px solid #ced8e2;
+    color: #2f3c49;
+    overflow: hidden;
+    margin: 0 0.25rem 0.25rem 0;
+    pointer-events: none; }
+  ul.tags > li:hover, ul.tags > li:focus, ul.tags > li.active {
+    background-color: #ccf0ff; }
+  ul.tags > li:empty {
+    display: none; }
+  ul.tags > li > a {
+    font-weight: 400;
+    font-family: 'Proxima Nova';
+    color: #2f3c49;
+    margin: -0.5em -0.75em;
+    padding: 0.5em 0.75em;
+    pointer-events: all; }
+  ul.tags > li > a:focus {
+    background-color: #ccf0ff; }
+  ul.tags > li > button {
+    padding: 0;
+    border: 0;
+    background: transparent; }
+  ul.tags > li > button [class^="gel-icon-"] {
+    font-size: 1rem;
+    color: #8198ae;
+    cursor: pointer;
+    pointer-events: all; }
 /*==================================
  TIMELINE
  ==================================*/

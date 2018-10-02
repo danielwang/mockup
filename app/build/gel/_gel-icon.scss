@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'gel-icon';
   src:
-    url('icons/gel-icon.ttf?q0w0wk') format('truetype'),
-    url('icons/gel-icon.woff?q0w0wk') format('woff'),
-    url('icons/gel-icon.svg?q0w0wk#gel-icon') format('svg');
+    url('icons/gel-icon.ttf?q0w0wl') format('truetype'),
+    url('icons/gel-icon.woff?q0w0wl') format('woff'),
+    url('icons/gel-icon.svg?q0w0wl#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,6 +44,9 @@
   font-size: 3rem;
 }
 
+.gel-icon-offer:before {
+  content: "\e981";
+}
 .gel-icon-ellipsis:before {
   content: "\e91e";
 }

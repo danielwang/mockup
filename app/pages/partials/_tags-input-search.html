@@ -1,28 +1,93 @@
-<form>
-  <ul class="multi_value_field tags">
+<form class="input-group tags-input">
+  <ul class="multi_value_field tags form-control">
     <li class="active">jobs
       <button type="button">
         <i class="gel-icon-close"></i>
       </button>
     </li>
-    <li class="search_field_item"><input type="text" autocomplete="off" tabindex="" style="width: 357px;"></li>
+    <li class="active">offer
+      <button type="button">
+        <i class="gel-icon-close"></i>
+      </button>
+    </li>
+    <li class="search_field_item search-field"><input type="text" autocomplete="off" tabindex="" style="width: 357px;"></li>
   </ul>
-</form>
-
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="autocomplete">
+    <ul>
+      <li choice_id="41" text_value="compensation" choice_type="TAG" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">compensation</span><span class="item-header-type">Tag</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="1958" text_value="Compensation" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Compensation</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="1960" text_value="Compensation projects" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Compensation projects</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="2118" text_value="Compensation letters" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Compensation letters</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="1967" text_value="Compensation review processes" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Compensation review processes</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="1966" text_value="Manage Compensation configuration" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Manage Compensation configuration</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="2149" text_value="Lock performance rating for compensation review" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Lock performance rating for compensation review</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="2194" text_value="Roll-up compensation summary by position" choice_type="TITLE" class="selected">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Roll-up compensation summary by position</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+    </ul>
+  </div>
   <div class="input-group-append">
     <button class="btn btn-primary" type="button" id="button-addon2">
       <i class="gel-icon-search gel-icon-lg"></i>
     </button>
   </div>
-</div>
+
+</form>
+
+<!-- <div class="input-group mb-3"> <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2"> <div class="input-group-append"> <button class="btn btn-primary"
+type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </button> </div> </div> -->
 
 <style>
   .multi_value_field {
     overflow: hidden;
     list-style-type: none;
-    padding: 1px 3px;
+    padding: 8px 0 0 8px !important;
     height: auto!important;
     border: 1px solid #ddd;
     cursor: default;
@@ -30,6 +95,33 @@
     margin: 0 5px 0 0;
     width: 530px;
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 8px;
+  }
+
+  .search_field_item {
+    background: none;
+    border: 0;
+    pointer-events: auto;
+
+  }
+
+  .autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.875rem;
+    color: #1d252d;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced8e2;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 4px rgba(8, 8, 8, .11);
   }
 </style>
