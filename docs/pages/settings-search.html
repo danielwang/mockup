@@ -355,63 +355,148 @@
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
         		<section class="container-fluid">
-			  <div class="row">
-    <div class="col-sm-3 mb-2 mb-sm-0">
-      <fieldset>
-        <legend class="sr-only">Home or Tags</legend>
-        <div class="btn-group btn-group-toggle segmented-control">
-          <label>
-            <input type="radio" name="options-home-tag" id="option1">
-            <span class="btn btn-ctrl btn">
-              Home
-            </span>
-          </label>
-          <label>
-            <input type="radio" name="options-home-tag" id="option2">
-            <span class="btn btn-ctrl btn">
-              Tags
-            </span>
-          </label>
-        </div>
-      </fieldset>
-    </div>
-      <div class="offset-sm-1 col-sm-6">
-      <form>
-  <ul class="multi_value_field tags">
-    <li class="active">jobs
-      <button type="button">
+			<div class="row">
+  <div class="col-sm-4 col-lg-3 col-xl-2 mb-2 mb-sm-0">
+    <fieldset>
+      <legend class="sr-only">Home or Tags</legend>
+      <div class="btn-group btn-group-toggle segmented-control">
+        <label>
+          <input type="radio" name="options-home-tag" id="option1" autocomplete="off" checked>
+          <span class="btn btn-ctrl btn">
+            Home
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-home-tag" id="option2" autocomplete="off">
+          <span class="btn btn-ctrl btn">
+            Tags
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+    <div class="col-sm-8 col-lg-6 col-xl-4 offset-xl-2">
+        <form class="input-group tags-input">
+  <ul class="multi_value_field tags form-control">
+    <li class="active">Tag = employeereferral
+      <button type="button" aria-label="remove">
         <i class="gel-icon-close"></i>
       </button>
     </li>
-    <li class="search_field_item"><input type="text" autocomplete="off" tabindex="" style="width: 357px;"></li>
+    <li class="active">Title = Employee Services
+      <button type="button" aria-label="remove">
+        <i class="gel-icon-close"></i>
+      </button>
+    </li>
+    <li class="search_field_item search-field">
+      <label for="tags-input-value" class="sr-only">search</label><input id="tags-input-value" type="text" autocomplete="off"/></li>
   </ul>
-</form>
-
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="autocomplete">
+    <ul class="list-unstyled">
+      <li choice_id="41" text_value="compensation" choice_type="TAG" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">compensation</span><span class="item-header-type">Tag</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="1958" text_value="Compensation" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Compensation</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="1960" text_value="Compensation projects" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Compensation projects</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="2118" text_value="Compensation letters" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Compensation letters</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="1967" text_value="Compensation review processes" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Compensation review processes</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="1966" text_value="Manage Compensation configuration" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Manage Compensation configuration</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="2149" text_value="Lock performance rating for compensation review" choice_type="TITLE" class="">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Lock performance rating for compensation review</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+      <li choice_id="2194" text_value="Roll-up compensation summary by position" choice_type="TITLE">
+        <div class="item-wrapper">
+          <div>
+            <span class="item-header-title">Roll-up compensation summary by position</span><span class="item-header-type">Title</span></div>
+          <div></div>
+        </div>
+      </li>
+    </ul>
+  </div>
   <div class="input-group-append">
-    <button class="btn btn-primary" type="button" id="button-addon2">
+    <button class="btn btn-primary" type="button" aria-label="Search">
       <i class="gel-icon-search gel-icon-lg"></i>
     </button>
   </div>
-</div>
+
+</form>
+
+<!-- <div class="input-group mb-3"> <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2"> <div class="input-group-append"> <button class="btn btn-primary"
+type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </button> </div> </div> -->
 
 <style>
   .multi_value_field {
-    overflow: hidden;
-    list-style-type: none;
-    padding: 1px 3px;
-    height: auto!important;
-    border: 1px solid #ddd;
-    cursor: default;
-    text-align: left;
-    margin: 0 5px 0 0;
-    width: 530px;
-    background-color: #fff;
-    border-radius: 3px;
+    padding: 2px 0 0 8px !important;
   }
-</style>      </div>
-    </div>
+
+  .search_field_item {
+    background: none;
+    border: 0;
+    pointer-events: auto;
+
+  }
+
+  .autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.875rem;
+    color: #1d252d;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced8e2;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 4px rgba(8, 8, 8, .11);
+    width: 100%;
+  }
+</style>    </div>
+  </div>
+
     <div class="card mt-3">
       <!-- <p class="alert alert-info alert-dismissible fade show" role="alert">
         <i class="gel-icon-info" aria-hidden="true"></i>
@@ -531,7 +616,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
   <section class="main-footer border-top fixed-bottom p-3 bg-white text-center">
       <button class="btn btn-primary">Save Changes</button>
   </section>

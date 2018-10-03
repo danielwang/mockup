@@ -28,7 +28,7 @@
 <div class="tab-content">
   <div class="tab-pane active" id="configure" role="tabpanel" aria-labelledby="configure-tab">
   <div class="row">
-    <div class="col-sm-3 mb-2 mb-sm-0">
+    <div class="col-sm-4 col-lg-3 col-xl-2 mb-2 mb-sm-0">
       <fieldset>
         <legend class="sr-only">Home or Tags</legend>
         <div class="btn-group btn-group-toggle segmented-control">
@@ -47,14 +47,14 @@
         </div>
       </fieldset>
     </div>
-      <div class="col-sm-6">
+      <div class="col-sm-8 col-lg-6 col-xl-4 offset-xl-2">
           <?php include "partials/_tags-input-search.html" ?>
       </div>
     </div>
     <div class="card mt-3">
 <!-- home -->
       <div class="row">
-        <div class="col-sm-5 col-xl-3">
+        <div class="col-sm-5 col-lg-3 col-xl-2">
           <div class="list-group list-group-flush nav" role="tablist">
             <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list2" role="tab"><i class="gel-icon-sourcing"></i> Sourcing</a>
@@ -71,7 +71,7 @@
             <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list12" role="tab"><i class="gel-icon-settings"></i> Other</a>
           </div>
         </div>
-        <div class="col-sm-7 col-xl-9">
+        <div class="col-sm-7 col-lg-9 col-xl-10">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane show active" id="list1" role="tabpanel" aria-labelledby="list-home-list">
               <h3>Jobs</h3>
@@ -202,8 +202,7 @@
             </ul>
           </div>
       </div>
-      <hr>
-      <div class="text-center">
+      <div class="text-center border-top fixed-bottom p-3 bg-white d-print-none">
         <button class="btn btn-primary">Save</button>
       </div>
     </div>

@@ -12,30 +12,31 @@
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
-  <div class="row">
-    <div class="col-sm-3 mb-2 mb-sm-0">
-      <fieldset>
-        <legend class="sr-only">Home or Tags</legend>
-        <div class="btn-group btn-group-toggle segmented-control">
-          <label>
-            <input type="radio" name="options-home-tag" id="option1">
-            <span class="btn btn-ctrl btn">
-              Home
-            </span>
-          </label>
-          <label>
-            <input type="radio" name="options-home-tag" id="option2">
-            <span class="btn btn-ctrl btn">
-              Tags
-            </span>
-          </label>
-        </div>
-      </fieldset>
-    </div>
-      <div class="offset-sm-1 col-sm-6">
-      <?php include "partials/_tags-input-search.html" ?>
+<div class="row">
+  <div class="col-sm-4 col-lg-3 col-xl-2 mb-2 mb-sm-0">
+    <fieldset>
+      <legend class="sr-only">Home or Tags</legend>
+      <div class="btn-group btn-group-toggle segmented-control">
+        <label>
+          <input type="radio" name="options-home-tag" id="option1" autocomplete="off" checked>
+          <span class="btn btn-ctrl btn">
+            Home
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="options-home-tag" id="option2" autocomplete="off">
+          <span class="btn btn-ctrl btn">
+            Tags
+          </span>
+        </label>
       </div>
+    </fieldset>
+  </div>
+    <div class="col-sm-8 col-lg-6 col-xl-4 offset-xl-2">
+        <?php include "partials/_tags-input-search.html" ?>
     </div>
+  </div>
+
     <div class="card mt-3">
       <!-- <p class="alert alert-info alert-dismissible fade show" role="alert">
         <i class="gel-icon-info" aria-hidden="true"></i>
@@ -155,7 +156,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
   <section class="main-footer border-top fixed-bottom p-3 bg-white text-center">
       <button class="btn btn-primary">Save Changes</button>
   </section>

@@ -1,27 +1,24 @@
 /** Tags **/
 
-ul.tags{
+.tags{
   padding: 0;
   margin: 0;
+  list-style: none;
   > li {
     display: inline-block;
     padding: $badge-padding-y $badge-padding-x;
-    font-size: $badge-font-size;
     font-weight: $badge-font-weight;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
     @include border-radius($badge-border-radius);
-    background-color: $smoke-400;
-    border: 1px solid $smoke-500;
-    color: $slate-600;
+    background-color: $smoke-500;
     overflow: hidden;
     margin: 0 ($spacer * .25) ($spacer * .25) 0;
-    pointer-events:none;
 
-    &:hover, &:focus, &.active{
-      background-color: lighten($azure-100, 9%);
+    &.active{
+      background-color: $blue-100;
     }
 
     // Empty badges collapse automatically
@@ -32,13 +29,12 @@ ul.tags{
     //links
     > a {
       @include font-regular();
-      color: $slate-600;
+      color: $body-color;
       margin: -($badge-padding-y) -($badge-padding-x);
       padding: $badge-padding-y $badge-padding-x;
-      pointer-events: all;
 
       &:hover, &:focus{
-        background-color: lighten($azure-100, 9%);
+        background-color: $blue-100;
       }
     }
 
@@ -48,35 +44,13 @@ ul.tags{
       background: transparent;
       [class^="gel-icon-"]{
         font-size: 1rem;
-        color: $slate-200;
+        color: $slate;
         cursor: pointer;
-        pointer-events: all;
       }
     }
     // tags input search
     .tags-input & {
       margin-bottom: 0;
-    }
-  }
-}
-
-.tags-input{
-  .search-field{
-    background: none;
-    border: 0;
-    pointer-events: auto;
-    padding: 0;
-    &:hover{
-      background: none;
-    }
-
-    input[type="text"]{
-      padding: 0.5rem 0.75rem;
-      border:0;
-      background: yellow;
-      &:focus{
-        outline: none;
-      }
     }
   }
 }

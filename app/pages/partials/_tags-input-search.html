@@ -1,19 +1,20 @@
 <form class="input-group tags-input">
   <ul class="multi_value_field tags form-control">
-    <li class="active">jobs
-      <button type="button">
+    <li class="active">Tag = employeereferral
+      <button type="button" aria-label="remove">
         <i class="gel-icon-close"></i>
       </button>
     </li>
-    <li class="active">offer
-      <button type="button">
+    <li class="active">Title = Employee Services
+      <button type="button" aria-label="remove">
         <i class="gel-icon-close"></i>
       </button>
     </li>
-    <li class="search_field_item search-field"><input type="text" autocomplete="off" tabindex="" style="width: 357px;"></li>
+    <li class="search_field_item search-field">
+      <label for="tags-input-value" class="sr-only">search</label><input id="tags-input-value" type="text" autocomplete="off"/></li>
   </ul>
   <div class="autocomplete">
-    <ul>
+    <ul class="list-unstyled">
       <li choice_id="41" text_value="compensation" choice_type="TAG" class="">
         <div class="item-wrapper">
           <div>
@@ -63,7 +64,7 @@
           <div></div>
         </div>
       </li>
-      <li choice_id="2194" text_value="Roll-up compensation summary by position" choice_type="TITLE" class="selected">
+      <li choice_id="2194" text_value="Roll-up compensation summary by position" choice_type="TITLE">
         <div class="item-wrapper">
           <div>
             <span class="item-header-title">Roll-up compensation summary by position</span><span class="item-header-type">Title</span></div>
@@ -73,7 +74,7 @@
     </ul>
   </div>
   <div class="input-group-append">
-    <button class="btn btn-primary" type="button" id="button-addon2">
+    <button class="btn btn-primary" type="button" aria-label="Search">
       <i class="gel-icon-search gel-icon-lg"></i>
     </button>
   </div>
@@ -85,17 +86,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
 
 <style>
   .multi_value_field {
-    overflow: hidden;
-    list-style-type: none;
-    padding: 8px 0 0 8px !important;
-    height: auto!important;
-    border: 1px solid #ddd;
-    cursor: default;
-    text-align: left;
-    margin: 0 5px 0 0;
-    width: 530px;
-    background-color: #fff;
-    border-radius: 8px;
+    padding: 2px 0 0 8px !important;
   }
 
   .search_field_item {
@@ -123,5 +114,6 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
     border: 1px solid #ced8e2;
     border-radius: 0.5rem;
     box-shadow: 0 3px 4px rgba(8, 8, 8, .11);
+    width: 100%;
   }
 </style>

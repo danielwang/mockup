@@ -22,7 +22,7 @@
 
       .nav-link {
         // accessibility
-        &:focus {
+        @include hover-focus(){
           outline: none;
           text-decoration: underline;
         }
