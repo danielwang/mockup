@@ -47,7 +47,7 @@
         </div>
       </fieldset>
     </div>
-      <div class="col-sm-8 col-lg-6 col-xl-4 offset-xl-2">
+      <div class="col-sm-8 col-lg-6 col-xl-6 offset-xl-1">
           <?php include "partials/_tags-input-search.html" ?>
       </div>
     </div>
@@ -145,7 +145,7 @@
     <div class="card">
       <div class="row">
           <div class="col-sm-4 col-xl-3">
-            <div class="toggle toggle-primary">
+            <div class="toggle toggle-success">
               <label>
                 <input type="checkbox" checked="">
                 <span>Recruitment</span>
@@ -170,7 +170,7 @@
       <hr>
       <div class="row">
           <div class="col-sm-4 col-xl-3">
-            <div class="toggle toggle-primary">
+            <div class="toggle toggle-success">
               <label>
                 <input type="checkbox" checked="">
                 <span>Performance</span>
@@ -189,7 +189,7 @@
       <hr>
       <div class="row">
           <div class="col-sm-4 col-xl-3">
-            <div class="toggle toggle-primary">
+            <div class="toggle toggle-success">
               <label>
                 <input type="checkbox" checked="">
                 <span>Advanced Screening - Background Checking</span>

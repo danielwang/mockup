@@ -8719,8 +8719,13 @@ select.form-control {
 
 .form-group > label {
   font-size: 1rem; }
-
+/* *************************************** *\
+ *
+ * Search components
+ *
+ \* *************************************** */
 .tags-input .tags {
+  padding: 0.25rem 0.25rem;
   overflow: hidden;
   text-overflow: ellipsis; }
   .tags-input .search-field {
@@ -8736,6 +8741,18 @@ select.form-control {
     font-size: 1rem; }
   .tags-input .search-field input[type="text"]:focus {
     outline: none; }
+  .tags-input .autocomplete {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 1000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced8e2;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 4px rgba(8, 8, 8, .11); }
   .tags-input .autocomplete ul {
     padding: 0;
     list-style: none;
@@ -8745,7 +8762,7 @@ select.form-control {
     border-bottom: 1px solid #ced8e2;
     cursor: pointer; }
   .tags-input .autocomplete ul li.selected, .tags-input .autocomplete ul li:hover {
-    color: #0063b0; }
+    background-color: #ced8e2; }
   .tags-input .autocomplete ul li:last-child {
     border-bottom: 0; }
 
@@ -9143,6 +9160,8 @@ select.form-control {
 
 .modal.show {
   display: block; }
+  .modal .modal-full {
+    max-width: 95vw; }
 
 .modal-header, .modal-body, .modal-footer {
   padding: 1rem 2rem; }

@@ -2,6 +2,10 @@
   &.show{
     display: block;
   }
+
+  .modal-full{
+    max-width: 95vw;
+  }
 }
 .modal-header, .modal-body, .modal-footer {
   padding: $spacer $spacer * 2;
