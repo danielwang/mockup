@@ -207,7 +207,7 @@ $theme-colors: () !default;
 $theme-colors: map-merge((
   "default":    $ctrl,
   "primary":    $primary,
-  "secondary":  $secondary,
+  "secondary":  $primary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -390,7 +390,7 @@ $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              $navy !default;
+$headings-color:              $body-color !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
