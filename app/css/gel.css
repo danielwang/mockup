@@ -8929,6 +8929,47 @@ select.form-control {
 
   100% {
     transform: translate(5px, 5px); } }
+/* ---------------------- *\
+ content skeleton loader
+ \*  ---------------------- */
+@keyframes content-placeholder-animation {
+  0% {
+    transform: translateX(-50%); }
+
+  100% {
+    transform: translateX(300%); } }
+
+.content-placeholder {
+  background: #fff; }
+  .content-placeholder-background {
+    animation: content-placeholder-animation 1s linear infinite;
+    background: -moz-linear-gradient(left, rgba(15, 15, 15, 0) 0%, rgba(219, 219, 219, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(15, 15, 15, 0) 0%, rgba(219, 219, 219, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(15, 15, 15, 0) 0%, rgba(219, 219, 219, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000f0f0f', endColorstr='#00ffffff',GradientType=1);
+    display: block;
+    height: inherit;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    will-change: transform; }
+  .content-placeholder-text {
+    background-color: #ebebeb;
+    display: block;
+    height: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
+  .content-placeholder-text:nth-child(3n+1) {
+    width: 75%; }
+  .content-placeholder-text:nth-child(2n+2) {
+    width: 65%; }
+  .content-placeholder-text:nth-child(5n) {
+    margin-bottom: 3rem; }
+  .content-placeholder-text:last-child {
+    width: 55%; }
 
 #gel-header {
   background-image: linear-gradient(to right, #0053a3 0%, #0053a3 100%);
