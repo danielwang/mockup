@@ -1,12 +1,27 @@
 .list-group-flush {
   border-right: 1px solid $grey-100;
+  @include media-breakpoint-down(sm) {
+    border-right: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: -1px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 
-  .list-group-item{
+  .list-group-item {
     background: transparent;
     border: 0;
     display: block;
+    white-space: nowrap;
+    // @include hover-focus {
+    //   text-decoration: underline;
+    // }
+    @include media-breakpoint-down(sm) {
+      white-space: nowrap;
+    }
 
-    &.active{
+    &.active {
       color: $azure;
 
       &::after {
@@ -21,17 +36,42 @@
         right: -8px;
         background: white;
         top: 15px;
+        @include media-breakpoint-down(sm) {
+          width: 10px;
+          height: 10px;
+          transform: rotate(45deg);
+          border-left: 1px solid $grey-100;
+          border-top: 1px solid $grey-100;
+          display: block;
+          content: "";
+          position: absolute;
+          bottom: -0.25rem;
+          background: white;
+          left: calc(50%);
+          margin-left: -5px;
+          top: auto;
+        }
       }
     }
   }
+
+    + .tab-content {
+      padding: $spacer;
+      margin-left: $spacer;
+      @include media-breakpoint-down(sm) {
+        border-top: 1px solid $grey-100;
+      }
+    }
 }
-.list-group{
-  &-item{
+
+.list-group {
+  &-item {
     font-size: 1rem;
     @include font-heading();
-    &.active{
+
+    &.active {
       a {
-        color: white
+        color: white;
       }
     }
     @extend %link-alt;
