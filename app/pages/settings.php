@@ -27,8 +27,8 @@
 
 <div class="tab-content">
   <div class="tab-pane active" id="configure" role="tabpanel" aria-labelledby="configure-tab">
-  <div class="row">
-    <div class="col-sm-4 col-lg-3 col-xl-2 mb-2 mb-sm-0">
+  <div class="row d-flex">
+    <div class="order-2 order-md-1 mt-2 mt-md-0 col-md-4 col-lg-3 col-xl-2">
       <fieldset>
         <legend class="sr-only">Home or Tags</legend>
         <div class="btn-group btn-group-toggle segmented-control">
@@ -47,10 +47,10 @@
         </div>
       </fieldset>
     </div>
-      <div class="col-sm-8 col-lg-6 col-xl-6 offset-xl-1">
-          <?php //include "partials/_tags-input-search.html" ?>
+    <div class="order-1 order-md-2 col-md-8 col-lg-6 col-xl-6 offset-xl-1">
+          <?php include "partials/_tags-input-search.html" ?>
       </div>
-    </div>
+  </div>
     <div class="card mt-3">
 <!-- home -->
     <div class="d-flex flex-column flex-md-row">
@@ -73,29 +73,29 @@
       <div class="tab-pane show active" id="list1" role="tabpanel" aria-labelledby="list-home-list">
         <h3>Jobs</h3>
         <ul class="row list-unstyled">
-          <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Recruitment Processes</a></li>
-          <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Job Approval</a></li>
+          <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Recruitment Processes</a></li>
+          <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Job Approval</a></li>
         </ul>
         <h4>Job Card fields</h4>
         <ul class="row list-unstyled">
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Agreement Types</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Companies</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Contract Types</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Cost Centres</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Generic Lists</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Industries</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Job Sectors</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Job Status</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Job Types</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Locations</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Organisational Hierarchy</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Pay Scales</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Personnel Areas</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Reasons</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Roles</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Sites</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Work Availability Preferences</a></li>
-            <li class="col-6 col-md-4 col-xl-3 mb-3"><a href="#">Work Types</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Agreement Types</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Companies</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Contract Types</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Cost Centres</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Generic Lists</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Industries</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Job Sectors</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Job Status</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Job Types</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Locations</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Organisational Hierarchy</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Pay Scales</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Personnel Areas</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Reasons</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Roles</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Sites</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Work Availability Preferences</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Work Types</a></li>
         </ul>
       </div>
       <div class="tab-pane" id="list2" role="tabpanel" aria-labelledby="list-profile-list"><h3>Sourcing</h3></div>

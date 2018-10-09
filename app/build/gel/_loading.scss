@@ -141,6 +141,7 @@ $speed: 1s; /*Global Mixins*/
     overflow: hidden;
     position: relative;
     width: 100%;
+    border-radius: $border-radius;
 
     &:nth-child(3n+1){  // 1 4 7
       width: 75%;

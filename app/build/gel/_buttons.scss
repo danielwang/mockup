@@ -1,13 +1,12 @@
 .btn {
   @include font-cta();
-
+  // min-height: $btn-min-height;
   &.loading {
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
-    background-size: 40px 40px;
-    animation: 2s linear 0s normal none infinite progress-bar-stripes;
-    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    @include gradient-striped();
+    background-size: $progress-height $progress-height;
+    animation: progress-bar-stripes $progress-bar-animation-timing;
     opacity: 0.65;
-    cursor: progress;
+    cursor: progress !important;
   }
 
   &.dropdown-toggle{
@@ -17,6 +16,11 @@
         display: none;
       }
     }
+  }
+
+  // responsive btn size, btn goes large on sm viewport
+  @include media-breakpoint-between(xs,sm){
+    @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
   }
 }
 
