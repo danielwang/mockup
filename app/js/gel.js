@@ -59,13 +59,21 @@ function setMenuState(val) {
   localStorage.setItem("menuState", val); // store the value in local browser
 }
 
-// click outside menu to close off menu
-document.addEventListener('click', function (e) {
-  if (!e.target.closest('#gel-menu') && !e.target.closest('.nav-toggle') && menu.classList.contains('open')) {
-    menu.classList.remove('open')
-  }
-})
+// click or touch outside menu to close off menu
 
+function closeMenu(e) {
+  e.preventDefault();
+  if (!e.target.closest('#gel-menu') && !e.target.closest('.nav-toggle') && menu.classList.contains('open')) {
+      menu.classList.remove('open');
+  }
+  if (e.keyCode == 27 && menu.classList.contains('open')) {
+      menu.classList.remove('open');
+  }
+}
+document.addEventListener('touchstart', closeMenu);
+document.addEventListener('click', closeMenu);
+// escape key to close off
+document.addEventListener('keyup',closeMenu);
 /*****************************************
     checkboxes select/unselect all
 *****************************************/
