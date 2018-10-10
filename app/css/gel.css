@@ -7442,9 +7442,6 @@ a {
   font-family: 'Proxima Nova Semibold';
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease; }
-  a:hover, a:focus {
-    text-decoration: underline;
-    outline: none; }
 
 .breadcrumb > li a, .list-group-item a {
   color: #415365; }
@@ -8241,9 +8238,6 @@ select.form-control {
     font-family: 'Proxima Nova';
     font-size: 1rem;
     margin-bottom: 0.25rem; }
-  .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
-    text-decoration: underline;
-    outline: none; }
   .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
     color: #00a1e5;
     background: transparent; }

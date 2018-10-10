@@ -76,10 +76,10 @@
     @include font-regular();
     font-size: 1rem;
     margin-bottom: $spacer * 0.25;
-    @include hover-focus {
-      text-decoration: underline;
-      outline: none;
-    }
+    // @include hover-focus {
+    //   text-decoration: underline;
+    //   outline: none;
+    // }
     &:hover, &:focus {
       color: $azure;
       background: transparent;

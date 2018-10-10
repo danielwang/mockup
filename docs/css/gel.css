@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.6.1
+ *   PageUp GEL - Theme 3.6.2
  *   Author: Daniel Wang
- *	 Date: 04/10/2018
+ *	 Date: 09/10/2018
  *
  \* *************************************** */
 /*!
@@ -7442,9 +7442,6 @@ a {
   font-family: 'Proxima Nova Semibold';
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease; }
-  a:hover, a:focus {
-    text-decoration: underline;
-    outline: none; }
 
 .breadcrumb > li a, .list-group-item a {
   color: #415365; }
@@ -8242,9 +8239,6 @@ select.form-control {
     font-size: 1rem;
     margin-bottom: 0.25rem; }
   .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
-    text-decoration: underline;
-    outline: none; }
-  .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
     color: #00a1e5;
     background: transparent; }
   .dropdown-menu .dropdown-item:hover [class^="gel-icon-"], .dropdown-menu .dropdown-item:focus [class^="gel-icon-"] {
@@ -9011,7 +9005,8 @@ select.form-control {
     margin-bottom: 1rem;
     overflow: hidden;
     position: relative;
-    width: 100%; }
+    width: 100%;
+    border-radius: 0.5rem; }
   .content-placeholder-text:nth-child(3n+1) {
     width: 75%; }
   .content-placeholder-text:nth-child(2n+2) {
