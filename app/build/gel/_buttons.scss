@@ -30,7 +30,6 @@
 }
 
 .btn-ctrl {
-  color: $ctrl;
   border-color: $ctrl-border-color;
   border-radius: 0.5rem;
   background-color: white;
@@ -51,7 +50,9 @@
     background-image: none;
     box-shadow: $ctrl-focus-box-shadow;
   }
-
+  &:hover{
+    background-color: $ctrl-hover-bg;
+  }
   .btn-sm{
     border-radius: .25rem;
   }
@@ -97,7 +98,6 @@
 
     &:checked + .btn-ctrl{
       background-color: $ctrl-active-bg;
-      color: $slate-600;
     }
   }
 

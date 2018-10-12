@@ -2,6 +2,7 @@
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 0.5rem;
+  border-bottom: 1px solid $border-color;
   // overflow: hidden;
   thead {
     th {
@@ -20,10 +21,12 @@
       border-top-right-radius: 0.5rem;
     }
     //sortable table header
-    &.thead-dark th {}
+    &.thead-dark th {
+        border: 1px solid $table-dark-bg;
+        border-collapse: collapse;
+    }
 
     &.thead-sortable th {
-      border-left: 1px solid $slate-600;
       white-space: nowrap;
 
       &.sorted{
@@ -36,6 +39,7 @@
 
       &:hover {
         background-color: $table-dark-hover-bg;
+        border-color: $table-dark-hover-bg;
       }
       a{
         color: $white;
@@ -71,6 +75,14 @@
   }
 
   tbody {
+    tr{
+      td:first-child, th:first-child{
+        border-left: 1px solid $border-color;
+      }
+      td:last-child{
+        border-right: 1px solid $border-color;
+      }
+    }
     tr:last-child {
       td:first-child,
       th {
@@ -90,7 +102,7 @@
 
     td{
       &.section-heading{
-        background: $smoke;
+        background: $table-active-bg;
       }
     }
   }
@@ -159,7 +171,7 @@
            background: $smoke-500;
            border: 0;
         }
-        
+
         &[scope="row"]{
           padding-left: $spacer
         }

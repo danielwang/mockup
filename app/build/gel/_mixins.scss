@@ -39,6 +39,10 @@
 	text-decoration: underline;
 	outline: none;
 }
+
+@mixin border(){
+	border: 1px solid $border-color;
+}
 // @mixin dropdown-menu (){
 // 	max-width: 16rem;
 // 	@include border-radius(0.5rem);
