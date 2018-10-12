@@ -132,7 +132,7 @@
 
     tbody {
       tr {
-        margin-bottom: $spacer * 2;
+        margin-bottom: $spacer;
         border-radius: $border-radius;
         overflow: hidden;
       }
@@ -159,7 +159,7 @@
            background: $smoke-500;
            border: 0;
         }
-        
+
         &[scope="row"]{
           padding-left: $spacer
         }

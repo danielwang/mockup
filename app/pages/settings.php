@@ -1,4 +1,4 @@
-<?php $pageTitle = "Settings"; $parent = "adm";  $pageLayout="-fluid"; $pageAction = false; include '../base-t1.php';?>
+<?php $pageTitle = "Settings"; $parent = "adm"; $pageAction = false; include '../base-t1.php';?>
 
 <?php startblock('page-title') ?>
   Settings
@@ -27,7 +27,7 @@
 
 <div class="tab-content">
   <div class="tab-pane active" id="configure" role="tabpanel" aria-labelledby="configure-tab">
-  <div class="row d-flex">
+  <div class="row">
     <div class="order-2 order-md-1 mt-2 mt-md-0 col-md-4 col-lg-3 col-xl-2">
       <fieldset>
         <legend class="sr-only">Home or Tags</legend>

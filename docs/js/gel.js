@@ -62,7 +62,6 @@ function setMenuState(val) {
 // click or touch outside menu to close off menu
 
 function closeMenu(e) {
-  e.preventDefault();
   if (!e.target.closest('#gel-menu') && !e.target.closest('.nav-toggle') && menu.classList.contains('open')) {
       menu.classList.remove('open');
   }
