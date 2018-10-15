@@ -22,7 +22,7 @@
     }
     //sortable table header
     &.thead-dark th {
-        border: 1px solid $table-dark-bg;
+        border-left: 1px solid $border-color;
         border-collapse: collapse;
     }
 
@@ -103,6 +103,17 @@
     td{
       &.section-heading{
         background: $table-active-bg;
+      }
+    }
+  }
+
+  &.table-bordered{
+    border:0;
+    tbody{
+      td, th{
+        border-top:0;
+        border-right: 0;
+        border-left: 1px solid $border-color;
       }
     }
   }

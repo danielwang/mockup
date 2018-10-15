@@ -48,7 +48,7 @@ $speed: 1s; /*Global Mixins*/
     border-radius: 50%;
     content: " ";
     @include bounding-box($ball-size);
-    background-color: $secondary;
+    background-color: $ctrl;
     position: absolute;
     bottom: 0;
     right: 0;
