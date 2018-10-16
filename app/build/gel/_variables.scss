@@ -189,6 +189,9 @@ $colors: map-merge((
 
 $ctrl:          $slate-800;
 $ctrl-border-color:   $slate-300;
+$inactive:      $slate-300;
+$active:        $blue;
+$disabled:      $slate-300;
 $primary:       $blue !default;
 $secondary:     $ctrl !default;
 $success:       $green !default;
@@ -503,7 +506,7 @@ $btn-font-weight:             $font-weight-normal !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
-$btn-disabled-opacity:        .35 !default;
+$btn-disabled-opacity:        1 !default;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, 0) !default;
 
 $btn-link-disabled-color:     $gray-600 !default;
@@ -545,7 +548,7 @@ $input-disabled-bg:                     $gray-200 !default;
 $input-color:                           $body-color !default;
 $input-border-color:                    $ctrl-border-color !default;
 $input-border-width:                    $input-btn-border-width !default;
-$input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
+$input-box-shadow:                      inset 0 0 0 rgba($black, .075) !default;
 
 $input-border-radius:                   $border-radius !default;
 $input-border-radius-lg:                $border-radius-lg !default;
@@ -890,7 +893,7 @@ $modal-dialog-margin-y-sm-up: 1.75rem !default;
 $modal-title-line-height:           $line-height-base !default;
 
 $modal-content-bg:               $white !default;
-$modal-content-border-color:     rgba($black, .2) !default;
+$modal-content-border-color:     $border-color !default;
 $modal-content-border-width:     $border-width !default;
 $modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
@@ -941,7 +944,7 @@ $progress-bar-transition:           width .6s ease !default;
 // List group
 
 $list-group-bg:                     $white !default;
-$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-color:           $border-color !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
@@ -950,7 +953,7 @@ $list-group-item-padding-x:         1.25rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           $white !default;
-$list-group-active-bg:              $ctrl-border-color !default;
+$list-group-active-bg:              $ctrl !default;
 $list-group-active-border-color:    $list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-500 !default;

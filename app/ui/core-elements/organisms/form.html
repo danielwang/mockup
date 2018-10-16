@@ -1,103 +1,82 @@
-<form class="card">
-  <div class="form-group">
-    <label for="title1">Label</label>
-    <input type="text" class="form-control" id="title1" placeholder="">
-  </div>
-  <div class="form-group">
-    <label for="group1">Select dropdown</label>
-    <select class="form-control" id="group1">
-      <option>Option 1</option>
-      <option>Option 2</option>
-      <option>Option 3</option>
-      <option>Option 4</option>
-      <option>Option 5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="date1">Date picker</label>
-    <input type="text" class="form-control" id="date1" placeholder="">
-  </div>
-  <div class="form-group">
-    <label for="description1">Textarea
-      <span class="help" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">
-        <i class="gel-icon-help"></i>
-      </span>
-    </label>
-    <textarea class="form-control"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="who1">Segmented control</label>
-    <fieldset>
-      <legend class="sr-only">visibility</legend>
-      <div class="btn-group btn-group-toggle segmented-control">
-        <label>
-          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
-          <span class="btn btn-ctrl">
-            All tasks
-          </span>
-        </label>
-        <label>
-          <input type="radio" name="options-seg" id="option2" autocomplete="off">
-          <span class="btn btn-ctrl">
-            Manager
-          </span>
-        </label>
-        <label>
-          <input type="radio" name="options-seg" id="option3" autocomplete="off">
-          <span class="btn btn-ctrl">
-            Employee
-          </span>
-        </label>
+<div class="card">
+  <form class="needs-validation" novalidate="novalidate">
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom01">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required="required">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
       </div>
-    </fieldset>
-  </div>
-  <div class="form-group">
-    <label for="who1">Radios buttons</label>
-    <div>
-      <div class="radio radio-inline">
-        <input type="radio" id="inlineRadio4-a" value="option4" name="radioInline4">
-        <label for="inlineRadio4-a">
-          consectetur
-        </label>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom02">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required="required">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
       </div>
-      <div class="radio radio-inline">
-        <input type="radio" id="inlineRadio4-b" value="option4" name="radioInline4">
-        <label for="inlineRadio4-b">
-          adipiscing
-        </label>
-      </div>
-      <div class="radio radio-inline">
-        <input type="radio" id="inlineRadio4-c" value="option4" name="radioInline4">
-        <label for="inlineRadio4-c">
-          eiusmod
-        </label>
-      </div>
-      <div class="radio radio-inline">
-        <input type="radio" id="inlineRadio4-d" value="option4" name="radioInline4">
-        <label for="inlineRadio4-d">
-          incididunt
-        </label>
-      </div>
-      <div class="radio radio-inline">
-        <input type="radio" id="inlineRadio4-e" value="option4" name="radioInline4">
-        <label for="inlineRadio4-e">
-          reprehenderit
-        </label>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustomUsername">Username</label>
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required="required">
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="form-group">
-    <div class="checkbox checkbox-default">
-      <input id="checkbox1" type="checkbox">
-      <label for="checkbox1">
-        Save it into favourite task list
-      </label>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom03">City</label>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="required">
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom04">State</label>
+        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required="required">
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Zip</label>
+        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required="required">
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="d-flex">
-    <button type="button" class="btn btn-outline-secondary mr-auto">Cancel</button>
-    <button type="button" class="btn btn-primary">Submit</button>
-  </div>
-</form>
+    <div class="form-group">
+      <div class="checkbox checkbox-primary">
+        <input class="form-check-input" id="checkbox2" type="checkbox" required="required"/>
+        <label class="form-check-label" for="checkbox2">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>

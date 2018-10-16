@@ -54,14 +54,14 @@
   }
 }
 
-@mixin button-outline-variant($color, $color-hover: lighten($color, 9%), $active-background: $white, $active-border: lighten($color, 9%)) {
+@mixin button-outline-variant($color, $color-hover: lighten($color, 9%), $active-background: lighten($color, 9%), $active-border: lighten($color, 9%)) {
   color: $color;
   background-color: $white;
   background-image: none;
   border-color: $color;
 
   &:hover {
-    color: $color-hover;
+    color: $white;
     background-color: $active-background;
     border-color: $active-border;
   }
@@ -117,7 +117,8 @@
     animation: 2s linear 0s normal none infinite progress-bar-stripes;
     -webkit-animation: progress-bar-stripes 2s linear infinite;
     opacity: 0.65;
-    cursor: progress;
+    cursor: progress !important;
+    pointer-events: none;
   }
 
   &.dropdown-toggle{

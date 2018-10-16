@@ -1,5 +1,5 @@
 .list-group-flush {
-  border-right: 1px solid $grey-100;
+  border-right: 1px solid $border-color;
 
   .list-group-item{
     background: transparent;
@@ -7,14 +7,14 @@
     display: block;
 
     &.active{
-      color: $azure;
+      color: $active;
 
       &::after {
         width: 15px;
         height: 15px;
         transform: rotate(-45deg);
-        border-left: 1px solid $grey-100;
-        border-top: 1px solid $grey-100;
+        border-left: 1px solid $border-color;
+        border-top: 1px solid $border-color;
         display: block;
         content: "";
         position: absolute;

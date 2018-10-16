@@ -84,8 +84,9 @@ $check-icon: "\e91d" !default;
 
     &:focus + label::before{
       outline: thin dotted;
-      outline: 8px auto -webkit-focus-ring-color;
-      outline-offset: -2px;
+      outline: 4px auto -webkit-focus-ring-color;
+      outline-offset: -1px;
+      border-color: $primary;
     }
 
     &:checked + label::after{
