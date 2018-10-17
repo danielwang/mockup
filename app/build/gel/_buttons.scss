@@ -74,7 +74,7 @@
   &.disabled,
   &:disabled {
     color: $disabled;
-    border-color: $disabled;  
+    border-color: $disabled;
     background-color: transparent;
   }
 
@@ -145,6 +145,7 @@
   border-color: $ctrl-border-color;
   border-radius: 0.5rem;
   background-color: white;
+  color: $body-color;
 
   &:not(:disabled):not(.disabled).active,
   &:not(:disabled):not(.disabled):active {
