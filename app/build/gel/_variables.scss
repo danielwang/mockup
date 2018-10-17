@@ -251,12 +251,26 @@ $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge((
   0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
+  1: ($spacer * .25), // 4px
+  2: ($spacer * .5),  // 8px
   3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3)
+  4: ($spacer * 1.5), // 24px
+  5: ($spacer * 3)    // 48px
 ), $spacers);
+
+
+// $spacers: map-merge((
+//   0: 0,
+//   1: ($spacer * .125),  // 2px
+//   2: ($spacer * .25),   // 4px
+//   3: ($spacer * .5),    // 8px
+//   4: $spacer,           // 16px
+//   5: ($spacer * 1.5),   // 24px
+//   6: ($spacer * 2),     // 32px
+//   7: ($spacer * 3),     // 48px
+//   8: ($spacer * 4),     // 64px
+// ), $spacers);
+
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;

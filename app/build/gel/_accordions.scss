@@ -1,4 +1,4 @@
-.accordion {
+.accordion, .panel {
   border-radius: 5px;
   overflow: hidden;
 
@@ -20,6 +20,13 @@
 
         &.collapsed:before {
           content: "\e92a";
+        }
+      }
+
+      &.light-header{
+        background: $slate-200;
+        a{
+          color: $body-color;
         }
       }
     }

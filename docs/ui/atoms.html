@@ -206,7 +206,7 @@
 </ul></div></div></div></div><div class="tab-pane " id="badges" role="tabpanel" aria-labelledby="page-tab-badges"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">Badges help highlight important information such as notifications or new and unread messages. Badges have circular borders and are only used to specify a number.</blockquote>
 
 <span class="badge badge-primary">Primary</span>
-<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-info">Info</span>
 <span class="badge badge-success">Success</span>
 <span class="badge badge-danger">Danger</span>
 <span class="badge badge-warning">Warning</span></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>Use Badges as visual indicators for numeric values, like tallies and other quantities. For status information, use
@@ -217,11 +217,9 @@
 <p>Each serving its own semantic purpose</p>
 <p>
   <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-secondary">Secondary</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-success">Success</button>
+  <!-- <button type="button" class="btn btn-info">Info</button> -->
+  <!-- <button type="button" class="btn btn-success">Success</button> -->
   <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-warning">Warning</button>
   <button type="button" class="btn btn-link">Button link</button>
   <!-- <button type="button" class="btn btn-light">Light</button> <button type="button" class="btn btn-dark">Dark</button> -->
 </p>
@@ -231,77 +229,44 @@
   <code>.btn-outline-*</code>
   ones to remove all background images and colors on any button.</p>
 <p>
-  <button type="button" class="btn btn-outline-primary">Primary</button>
-  <button type="button" class="btn btn-outline-secondary">Secondary</button>
-  <button type="button" class="btn btn-outline-info">Info</button>
-  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-primary">Secondary</button>
+  <!-- <button type="button" class="btn btn-outline-secondary">Secondary</button> <button type="button" class="btn btn-outline-info">Info</button> <button type="button" class="btn btn-outline-success">Success</button> -->
   <button type="button" class="btn btn-outline-danger">Danger</button>
-  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <!-- <button type="button" class="btn btn-outline-warning">Warning</button> -->
   <!-- <button type="button" class="btn btn-outline-info">Info</button> <button type="button" class="btn btn-outline-light">Light</button> <button type="button" class="btn btn-outline-dark">Dark</button> -->
-</p>
-<hr class="sg-hr"/>
-<h3>Disabled state</h3>
-<p>
-  <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
-  <button type="button" class="btn btn-secondary" disabled="disabled">Secondary</button>
-  <button type="button" class="btn btn-info" disabled="disabled">Info</button>
-  <button type="button" class="btn btn-success" disabled="disabled">Success</button>
-  <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
-  <button type="button" class="btn btn-warning" disabled="disabled">Warning</button>
-  <!-- <button type="button" class="btn btn-light">Light</button> <button type="button" class="btn btn-dark">Dark</button> -->
 </p>
 
 <hr class="sg-hr"/>
 <h3>Loading state</h3>
 <p>
-  <button type="button" class="btn btn-primary loading" disabled="disabled">Loading</button>
-  <button type="button" class="btn btn-danger loading" disabled="disabled">Deleting</button>
+  <button type="button" class="btn btn-primary loading">Loading</button>
+  <button type="button" class="btn btn-danger loading">Deleting</button>
 </p>
-<hr class="sg-hr"/>
-<h3>Sizes</h3>
-<div class="row">
-  <div class="col-md-6">
-    <p>
-      <code>.btn-lg</code>
-    </p>
-    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-    <button type="button" class="btn btn-outline-secondary btn-lg">Large button</button>
-  </div>
-  <div class="col-md-3">
-    <p>
-      <code>.btn</code>
-    </p>
-    <button type="button" class="btn btn-primary">Default</button>
-    <button type="button" class="btn btn-outline-secondary">Default</button>
-  </div>
-  <div class="col-md-3">
-    <p>
-      <code>.btn-sm</code>
-    </p>
-    <button type="button" class="btn btn-primary btn-sm">Small</button>
-    <button type="button" class="btn btn-outline-secondary btn-sm">Small</button>
-  </div>
-</div>
+<!-- <hr class="sg-hr"/> <h3>Sizes</h3> <div class="row"> <div class="col-md-6"> <p> <code>.btn-lg</code> </p> <button type="button" class="btn btn-primary btn-lg">Large button</button> <button type="button" class="btn btn-outline-secondary
+btn-lg">Large button</button> </div> <div class="col-md-3"> <p> <code>.btn</code> </p> <button type="button" class="btn btn-primary">Default</button> <button type="button" class="btn btn-outline-secondary">Default</button> </div> <div
+class="col-md-3"> <p> <code>.btn-sm</code> </p> <button type="button" class="btn btn-primary btn-sm">Small</button> <button type="button" class="btn btn-outline-secondary btn-sm">Small</button> </div> </div> -->
 
 <hr class="sg-hr"/>
 <h3>Block</h3>
 <div class="row">
   <div class="col-md-6">
-    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Block level button</button>
+    <button type="button" class="btn btn-primary btn-block">Block level button</button>
+  </div>
+  <div class="col-md-6">
+    <button type="button" class="btn btn-outline-primary btn-block">Block level button</button>
   </div>
 </div>
 
 <hr class="sg-hr"/>
 <h3>Controls</h3>
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-4">
     <button class="btn btn-ctrl" type="button">
       <i aria-hidden="true" class="gel-icon-settings"></i>
       Settings
     </button>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-4">
     <div class="dropdown">
       <button class="btn btn-ctrl dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Actions
@@ -313,13 +278,13 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-4">
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-      <button type="button" class="btn btn-ctrl btn-sm">
+      <button type="button" class="btn btn-ctrl">
         <i class="gel-icon-print"></i>
         Print</button>
       <div class="btn-group" role="group">
-        <button id="btnGroupDrop1" type="button" class="btn btn-ctrl btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button id="btnGroupDrop1" type="button" class="btn btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Actions
         </button>
         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -339,19 +304,19 @@
       <legend class="sr-only">Segmented Control</legend>
       <div class="btn-group btn-group-toggle segmented-control">
         <label>
-          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked"/>
           <span class="btn btn-ctrl">
             All
           </span>
         </label>
         <label>
-          <input type="radio" name="options-seg" id="option2" autocomplete="off">
+          <input type="radio" name="options-seg" id="option2" autocomplete="off"/>
           <span class="btn btn-ctrl">
             Manager
           </span>
         </label>
         <label>
-          <input type="radio" name="options-seg" id="option3" autocomplete="off">
+          <input type="radio" name="options-seg" id="option3" autocomplete="off"/>
           <span class="btn btn-ctrl">
             Employee
           </span>
@@ -359,27 +324,26 @@
       </div>
     </fieldset>
   </div>
-  <div class="col-md-4">
-    <fieldset>
-      <legend class="sr-only">Segmented Control Small</legend>
-      <div class="btn-group btn-group-toggle segmented-control">
-        <label>
-          <input type="radio" name="options-seg-sm" id="option1" autocomplete="off" checked="checked">
-          <span class="btn btn-ctrl btn-sm">
-            Active
-          </span>
-        </label>
-        <label>
-          <input type="radio" name="options-seg-sm" id="option2" autocomplete="off">
-          <span class="btn btn-ctrl btn-sm">
-            Inactive
-          </span>
-        </label>
-      </div>
-    </fieldset>
-  </div>
+  <!-- <div class="col-md-4"> <fieldset> <legend class="sr-only">Segmented Control Small</legend> <div class="btn-group btn-group-toggle segmented-control"> <label> <input type="radio" name="options-seg-sm" id="option1" autocomplete="off"
+  checked="checked"> <span class="btn btn-ctrl btn-sm"> Active </span> </label> <label> <input type="radio" name="options-seg-sm" id="option2" autocomplete="off"> <span class="btn btn-ctrl btn-sm"> Inactive </span> </label> </div> </fieldset> </div>
+  -->
 </div>
-<hr></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><h6 class="green">Do's</h6>
+
+<hr class="sg-hr"/>
+<h3>Disabled state</h3>
+<p>
+  <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
+  <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
+  <button type="button" class="btn btn-outline-primary disabled">Secondary</button>
+  <button type="button" class="btn btn-outline-danger disabled">Danger</button>
+</p>
+<p>
+  <button class="btn btn-ctrl disabled" type="button">
+    <i aria-hidden="true" class="gel-icon-settings"></i>
+    Settings
+  </button>
+  <button type="button" class="btn btn-link disabled">Link button</button>
+</p></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><h6 class="green">Do's</h6>
 <ul>
   <li>Use verbs for button labels (eg. "Save" instead of "OK")</li>
   <li>Where possible limit each screen to a single primary action. This helps to guide the user to complete a task.</li>
@@ -415,12 +379,7 @@
       <code>.checkbox-primary</code>
       etc.
     </p>
-    <div class="checkbox">
-      <input id="checkbox0" type="checkbox">
-      <label for="checkbox0">
-        Simple
-      </label>
-    </div>
+    <!-- <div class="checkbox"> <input id="checkbox0" type="checkbox"> <label for="checkbox0"> Simple </label> </div> -->
     <div class="checkbox checkbox-default">
       <input id="checkbox1" type="checkbox">
       <label for="checkbox1">
@@ -433,24 +392,9 @@
         Primary
       </label>
     </div>
-    <div class="checkbox checkbox-success">
-      <input id="checkbox3" type="checkbox">
-      <label for="checkbox3">
-        Success
-      </label>
-    </div>
-    <div class="checkbox checkbox-info">
-      <input id="checkbox4" type="checkbox">
-      <label for="checkbox4">
-        Info
-      </label>
-    </div>
-    <div class="checkbox checkbox-warning">
-      <input id="checkbox5" type="checkbox" checked="">
-      <label for="checkbox5">
-        Warning
-      </label>
-    </div>
+    <!-- <div class="checkbox checkbox-success"> <input id="checkbox3" type="checkbox"> <label for="checkbox3"> Success </label> </div> -->
+    <!-- <div class="checkbox checkbox-info"> <input id="checkbox4" type="checkbox"> <label for="checkbox4"> Info </label> </div> -->
+    <!-- <div class="checkbox checkbox-warning"> <input id="checkbox5" type="checkbox" checked=""> <label for="checkbox5"> Warning </label> </div> -->
     <div class="checkbox checkbox-danger">
       <input id="checkbox6" type="checkbox" checked="">
       <label for="checkbox6">
@@ -463,28 +407,8 @@
     Inline One </label> </div> <div class="checkbox checkbox-success checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option1" checked=""> <label for="inlineCheckbox2"> Inline Two </label> </div> <div class="checkbox checkbox-inline">
     <input type="checkbox" id="inlineCheckbox3" value="option1"> <label for="inlineCheckbox3"> Inline Three </label> </div> -->
   </fieldset>
-  <hr class="sg-hr"/>
-  <fieldset>
-    <legend>
-      Circled
-    </legend>
-    <p>
-      <code>.checkbox-circle</code>
-      for roundness.
-    </p>
-    <div class="checkbox checkbox-circle">
-      <input id="checkbox7" type="checkbox">
-      <label for="checkbox7">
-        Simply Rounded
-      </label>
-    </div>
-    <div class="checkbox checkbox-info checkbox-circle">
-      <input id="checkbox8" type="checkbox" checked="">
-      <label for="checkbox8">
-        Me too
-      </label>
-    </div>
-  </fieldset>
+  <!-- <hr class="sg-hr"/> <fieldset> <legend> Circled </legend> <p> <code>.checkbox-circle</code> for roundness. </p> <div class="checkbox checkbox-circle"> <input id="checkbox7" type="checkbox"> <label for="checkbox7"> Simply Rounded </label> </div>
+  <div class="checkbox checkbox-info checkbox-circle"> <input id="checkbox8" type="checkbox" checked=""> <label for="checkbox8"> Me too </label> </div> </fieldset> -->
   <hr class="sg-hr"/>
   <fieldset>
     <legend>
@@ -494,19 +418,19 @@
       Disabled state also supported.
     </p>
     <div class="checkbox">
-      <input id="checkbox9" type="checkbox" disabled="">
+      <input id="checkbox9" type="checkbox" disabled="disabled"/>
       <label for="checkbox9">
         Can't check this
       </label>
     </div>
-    <div class="checkbox checkbox-success">
-      <input id="checkbox10" type="checkbox" disabled="" checked="">
+    <div class="checkbox checkbox-primary">
+      <input id="checkbox10" type="checkbox" disabled="" checked=""/>
       <label for="checkbox10">
         This too
       </label>
     </div>
-    <div class="checkbox checkbox-warning checkbox-circle">
-      <input id="checkbox11" type="checkbox" disabled="" checked="">
+    <div class="checkbox checkbox-danger">
+      <input id="checkbox11" type="checkbox" disabled="" checked=""/>
       <label for="checkbox11">
         And this
       </label>
@@ -557,8 +481,8 @@
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <div class="form-group">
-    <label for="formControlRange">Example Range input</label>
-    <input type="range" class="form-control-range" id="formControlRange">
+    <label for="customRange1">Example range</label>
+    <input type="range" class="custom-range" id="customRange1">
   </div>
   <input class="form-control" type="text" placeholder="Readonly input here…" readonly="readonly">
   <hr class="sg-hr"/>
@@ -636,13 +560,13 @@
   </p>
   <div class="row">
     <div class="col-sm-6">
-      <div class="radio">
+      <div class="radio radio-primary">
         <input type="radio" name="radio1" id="radio1" value="option1" checked="">
         <label for="radio1">
           Small
         </label>
       </div>
-      <div class="radio">
+      <div class="radio radio-primary">
         <input type="radio" name="radio1" id="radio2" value="option2">
         <label for="radio2">
           Big
@@ -667,13 +591,13 @@
   <!-- <p>Radios without label text</p> <div class="radio"> <input type="radio" id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One"> <label></label> </div> <div class="radio radio-success"> <input type="radio"
   id="singleRadio2" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two"> <label></label> </div> -->
   <h4>Inline radios</h4>
-  <div class="radio radio-info radio-inline">
+  <div class="radio radio-primary radio-inline">
     <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
     <label for="inlineRadio1">
       Inline One
     </label>
   </div>
-  <div class="radio radio-inline">
+  <div class="radio radio-primary radio-inline">
     <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
     <label for="inlineRadio2">
       Inline Two
@@ -688,16 +612,16 @@
   <p>
     Disabled state also supported.
   </p>
-  <div class="radio radio-danger">
+  <div class="radio radio-primary">
     <input type="radio" name="radio3" id="radio5" value="option1" disabled="">
     <label for="radio5">
-      Next
+      Disabled
     </label>
   </div>
-  <div class="radio">
+  <div class="radio radio-primary">
     <input type="radio" name="radio3" id="radio6" value="option2" checked="" disabled="">
     <label for="radio6">
-      One
+      Disabled Checked
     </label>
   </div>
 </fieldset>
@@ -710,22 +634,22 @@
   <p>
     Radios can be made to look like checkboxes.
   </p>
-  <div class="checkbox checkbox">
+  <div class="checkbox checkbox-primary">
     <input type="radio" name="radio4" id="radio7" value="option1" checked="">
     <label for="radio7">
-      Default
+      Option 1
     </label>
   </div>
-  <div class="checkbox checkbox-success">
+  <div class="checkbox checkbox-primary">
     <input type="radio" name="radio4" id="radio8" value="option2">
     <label for="radio8">
-      Success
+      Option 2
     </label>
   </div>
-  <div class="checkbox checkbox-danger">
+  <div class="checkbox checkbox-primary">
     <input type="radio" name="radio4" id="radio9" value="option3">
     <label for="radio9">
-      Danger
+      Option 3
     </label>
   </div>
 </fieldset></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>Font Awesome Bootstrap Checkboxes & Radios plugin. Pure CSS way to make inputs look prettier. No Javascript!</p>
@@ -793,25 +717,25 @@
 </div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="toggles" role="tabpanel" aria-labelledby="page-tab-toggles"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">The toggle switch represents a physical switch that allows users to turn things on or off.</blockquote>
 
 <h3>Default</h3>
-<div class="toggle">
+<div class="toggle toggle-primary">
   <label>
     <input type="checkbox">
     <span>Default</span>
   </label>
 </div>
-<div class="toggle">
+<div class="toggle toggle-primary">
   <label>
     <input type="checkbox" checked="">
     <span>checked</span>
   </label>
 </div>
-<div class="toggle">
+<div class="toggle toggle-primary">
   <label>
     <input type="checkbox" disabled="">
     <span>disabled</span>
   </label>
 </div>
-<div class="toggle">
+<div class="toggle toggle-primary">
   <label>
     <input type="checkbox" disabled="" checked="">
     <span>disabled checked</span>
@@ -828,13 +752,6 @@
         <span>large</span>
       </label>
     </div>
-    <div class="toggle toggle-lg toggle-secondary">
-      <label>
-        <input type="checkbox" checked="">
-        <span>checked</span>
-      </label>
-    </div>
-
   </div>
   <div class="col-md-6">
     <h5>Medium</h5>
@@ -844,7 +761,7 @@
         <span>medium</span>
       </label>
     </div>
-    <div class="toggle toggle-md toggle-info">
+    <div class="toggle toggle-md toggle-primary">
       <label>
         <input type="checkbox" checked="">
         <span>medium</span>
