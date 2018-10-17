@@ -86,7 +86,7 @@
 }
 
 .alert-hint{
-  @include alert-variants($white, $slate-600, $border-color, $slate-600)
+  @include alert-variants($white, $body-color, $border-color, $slate-600)
 }
 
 .alert-info{

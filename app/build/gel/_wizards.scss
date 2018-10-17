@@ -16,7 +16,7 @@
       width: 30px;
       height: 30px;
       display: block;
-      background: $azure;
+      background: $green;
       top: 45px;
       left: 50%;
       margin-top: -15px;
@@ -27,7 +27,7 @@
         content: ' ';
         width: 14px;
         height: 14px;
-        background: $azure-300;
+        background: $green;
         border-radius: 50px;
         position: absolute;
         top: 8px;
@@ -41,12 +41,12 @@
       height: 4px;
       box-shadow: none;
       margin: 24px 0;
-      background-color: lighten($slate-100, 9%);
+      background-color: $slate-200;
 
       > .progress-bar {
         width: 0;
         box-shadow: none;
-        background: $azure-300;
+        background: $green;
       }
     }
 
@@ -98,7 +98,7 @@
 
   > .wizard-step.disabled {
     > .wizard-dot {
-      background-color: lighten($slate-100, 9%);
+      background-color: $slate-200;
 
       &:after {
         opacity: 0;
@@ -124,7 +124,7 @@
     padding-left: 50px;
 
     &:before {
-      background-color: lighten($slate-100, 9%);
+      background-color: $slate-200;
       content: "";
       display: block;
       height: 100%;
@@ -136,7 +136,7 @@
 
     &.complete {
       &:before {
-        background-color: $azure-300;
+        background-color: $green;
         color: #fff;
       }
 
@@ -145,7 +145,7 @@
           content: "\e91d";
           font-family: $gel-icon;
           color: white;
-          background: $azure;
+          background: $green;
         }
       }
     }

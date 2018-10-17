@@ -3,11 +3,9 @@
 <p>Each serving its own semantic purpose</p>
 <p>
   <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-secondary">Secondary</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-success">Success</button>
+  <!-- <button type="button" class="btn btn-info">Info</button> -->
+  <!-- <button type="button" class="btn btn-success">Success</button> -->
   <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-warning">Warning</button>
   <button type="button" class="btn btn-link">Button link</button>
   <!-- <button type="button" class="btn btn-light">Light</button> <button type="button" class="btn btn-dark">Dark</button> -->
 </p>
@@ -17,77 +15,44 @@
   <code>.btn-outline-*</code>
   ones to remove all background images and colors on any button.</p>
 <p>
-  <button type="button" class="btn btn-outline-primary">Primary</button>
-  <button type="button" class="btn btn-outline-secondary">Secondary</button>
-  <button type="button" class="btn btn-outline-info">Info</button>
-  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-primary">Secondary</button>
+  <!-- <button type="button" class="btn btn-outline-secondary">Secondary</button> <button type="button" class="btn btn-outline-info">Info</button> <button type="button" class="btn btn-outline-success">Success</button> -->
   <button type="button" class="btn btn-outline-danger">Danger</button>
-  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <!-- <button type="button" class="btn btn-outline-warning">Warning</button> -->
   <!-- <button type="button" class="btn btn-outline-info">Info</button> <button type="button" class="btn btn-outline-light">Light</button> <button type="button" class="btn btn-outline-dark">Dark</button> -->
-</p>
-<hr class="sg-hr"/>
-<h3>Disabled state</h3>
-<p>
-  <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
-  <button type="button" class="btn btn-secondary" disabled="disabled">Secondary</button>
-  <button type="button" class="btn btn-info" disabled="disabled">Info</button>
-  <button type="button" class="btn btn-success" disabled="disabled">Success</button>
-  <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
-  <button type="button" class="btn btn-warning" disabled="disabled">Warning</button>
-  <!-- <button type="button" class="btn btn-light">Light</button> <button type="button" class="btn btn-dark">Dark</button> -->
 </p>
 
 <hr class="sg-hr"/>
 <h3>Loading state</h3>
 <p>
-  <button type="button" class="btn btn-primary loading" disabled="disabled">Loading</button>
-  <button type="button" class="btn btn-danger loading" disabled="disabled">Deleting</button>
+  <button type="button" class="btn btn-primary loading">Loading</button>
+  <button type="button" class="btn btn-danger loading">Deleting</button>
 </p>
-<hr class="sg-hr"/>
-<h3>Sizes</h3>
-<div class="row">
-  <div class="col-md-6">
-    <p>
-      <code>.btn-lg</code>
-    </p>
-    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-    <button type="button" class="btn btn-outline-secondary btn-lg">Large button</button>
-  </div>
-  <div class="col-md-3">
-    <p>
-      <code>.btn</code>
-    </p>
-    <button type="button" class="btn btn-primary">Default</button>
-    <button type="button" class="btn btn-outline-secondary">Default</button>
-  </div>
-  <div class="col-md-3">
-    <p>
-      <code>.btn-sm</code>
-    </p>
-    <button type="button" class="btn btn-primary btn-sm">Small</button>
-    <button type="button" class="btn btn-outline-secondary btn-sm">Small</button>
-  </div>
-</div>
+<!-- <hr class="sg-hr"/> <h3>Sizes</h3> <div class="row"> <div class="col-md-6"> <p> <code>.btn-lg</code> </p> <button type="button" class="btn btn-primary btn-lg">Large button</button> <button type="button" class="btn btn-outline-secondary
+btn-lg">Large button</button> </div> <div class="col-md-3"> <p> <code>.btn</code> </p> <button type="button" class="btn btn-primary">Default</button> <button type="button" class="btn btn-outline-secondary">Default</button> </div> <div
+class="col-md-3"> <p> <code>.btn-sm</code> </p> <button type="button" class="btn btn-primary btn-sm">Small</button> <button type="button" class="btn btn-outline-secondary btn-sm">Small</button> </div> </div> -->
 
 <hr class="sg-hr"/>
 <h3>Block</h3>
 <div class="row">
   <div class="col-md-6">
-    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Block level button</button>
+    <button type="button" class="btn btn-primary btn-block">Block level button</button>
+  </div>
+  <div class="col-md-6">
+    <button type="button" class="btn btn-outline-primary btn-block">Block level button</button>
   </div>
 </div>
 
 <hr class="sg-hr"/>
 <h3>Controls</h3>
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-4">
     <button class="btn btn-ctrl" type="button">
       <i aria-hidden="true" class="gel-icon-settings"></i>
       Settings
     </button>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-4">
     <div class="dropdown">
       <button class="btn btn-ctrl dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Actions
@@ -99,13 +64,13 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-4">
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-      <button type="button" class="btn btn-ctrl btn-sm">
+      <button type="button" class="btn btn-ctrl">
         <i class="gel-icon-print"></i>
         Print</button>
       <div class="btn-group" role="group">
-        <button id="btnGroupDrop1" type="button" class="btn btn-ctrl btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button id="btnGroupDrop1" type="button" class="btn btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Actions
         </button>
         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -125,19 +90,19 @@
       <legend class="sr-only">Segmented Control</legend>
       <div class="btn-group btn-group-toggle segmented-control">
         <label>
-          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
+          <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked"/>
           <span class="btn btn-ctrl">
             All
           </span>
         </label>
         <label>
-          <input type="radio" name="options-seg" id="option2" autocomplete="off">
+          <input type="radio" name="options-seg" id="option2" autocomplete="off"/>
           <span class="btn btn-ctrl">
             Manager
           </span>
         </label>
         <label>
-          <input type="radio" name="options-seg" id="option3" autocomplete="off">
+          <input type="radio" name="options-seg" id="option3" autocomplete="off"/>
           <span class="btn btn-ctrl">
             Employee
           </span>
@@ -145,24 +110,23 @@
       </div>
     </fieldset>
   </div>
-  <div class="col-md-4">
-    <fieldset>
-      <legend class="sr-only">Segmented Control Small</legend>
-      <div class="btn-group btn-group-toggle segmented-control">
-        <label>
-          <input type="radio" name="options-seg-sm" id="option1" autocomplete="off" checked="checked">
-          <span class="btn btn-ctrl btn-sm">
-            Active
-          </span>
-        </label>
-        <label>
-          <input type="radio" name="options-seg-sm" id="option2" autocomplete="off">
-          <span class="btn btn-ctrl btn-sm">
-            Inactive
-          </span>
-        </label>
-      </div>
-    </fieldset>
-  </div>
+  <!-- <div class="col-md-4"> <fieldset> <legend class="sr-only">Segmented Control Small</legend> <div class="btn-group btn-group-toggle segmented-control"> <label> <input type="radio" name="options-seg-sm" id="option1" autocomplete="off"
+  checked="checked"> <span class="btn btn-ctrl btn-sm"> Active </span> </label> <label> <input type="radio" name="options-seg-sm" id="option2" autocomplete="off"> <span class="btn btn-ctrl btn-sm"> Inactive </span> </label> </div> </fieldset> </div>
+  -->
 </div>
-<hr>
+
+<hr class="sg-hr"/>
+<h3>Disabled state</h3>
+<p>
+  <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
+  <button type="button" class="btn btn-danger" disabled="disabled">Danger</button>
+  <button type="button" class="btn btn-outline-primary disabled">Secondary</button>
+  <button type="button" class="btn btn-outline-danger disabled">Danger</button>
+</p>
+<p>
+  <button class="btn btn-ctrl disabled" type="button">
+    <i aria-hidden="true" class="gel-icon-settings"></i>
+    Settings
+  </button>
+  <button type="button" class="btn btn-link disabled">Link button</button>
+</p>

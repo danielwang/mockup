@@ -54,7 +54,7 @@
         &:after {
             content: "";
             width: 3px;
-            background: #CCD5DB;
+            background: $border-color;
             display: block;
             position: absolute;
             top: 24px; bottom: 0; left: 6px;
@@ -95,8 +95,8 @@
                 top: 0;
                 bottom: 30px;
                 position: absolute;
-                border-top: 3px solid #CCD5DB;
-                border-bottom: 3px solid #CCD5DB;
+                border-top: 3px solid $border-color;
+                border-bottom: 3px solid $border-color;
             }
             &:after {
                 content: "";

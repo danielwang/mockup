@@ -1,5 +1,6 @@
 .list-group-flush {
   border-right: 1px solid $border-color;
+
   @include media-breakpoint-down(sm) {
     border-right: 0;
     margin-bottom: -1px;
@@ -18,8 +19,8 @@
       white-space: nowrap;
     }
 
-    &.active {
-      color: $azure;
+    &.active{
+      color: $active;
 
       &::after {
         width: 15px;

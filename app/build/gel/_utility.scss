@@ -76,7 +76,7 @@ $vsizes: map-merge((10: 10, 30: 30, 50: 50, 70: 70, 90: 90, 100: 100), $vsizes);
 
 .disabled {
   cursor: default;
-  color: $gray-500;
+  color: $disabled;
   pointer-events: none;
 }
 

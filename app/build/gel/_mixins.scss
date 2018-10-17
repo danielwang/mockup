@@ -40,6 +40,11 @@
 	outline: none;
 }
 
+
+@mixin border(){
+	border: 1px solid $border-color;
+}
+
 @mixin scroll-horizontal {
 	display: flex;
 	flex-direction: row;
@@ -52,6 +57,7 @@
 	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch; // Make it smooth scrolling on iOS devices
 	-ms-overflow-style: -ms-autohiding-scrollbar; //Hide the ugly scrollbars in Edge until the scrollable area is hovered
+
 }
 // @mixin dropdown-menu (){
 // 	max-width: 16rem;
