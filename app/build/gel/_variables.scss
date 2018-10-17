@@ -402,7 +402,7 @@ $display3-weight:             300 !default;
 $display4-weight:             300 !default;
 $display-line-height:         $headings-line-height !default;
 
-$lead-font-size:              1rem !default;
+$lead-font-size:              1.25rem !default;
 $lead-font-weight:            300 !default;
 
 $small-font-size:             .75rem !default;
@@ -457,7 +457,7 @@ $table-head-color:            $gray-700 !default;
 $table-dark-bg:               $heading-dark-bg;
 $table-dark-accent-bg:        rgba($white, .05) !default;
 $table-dark-hover-bg:         $slate-700 !default;
-$table-dark-border-color:     $slate-700;
+$table-dark-border-color:     $table-dark-bg;
 $table-dark-color:            white;
 
 
@@ -509,7 +509,7 @@ $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity:        1 !default;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, 0) !default;
 
-$btn-link-disabled-color:     $gray-600 !default;
+$btn-link-disabled-color:     $disabled !default;
 
 $btn-block-spacing-y:         .5rem !default;
 

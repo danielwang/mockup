@@ -13,16 +13,25 @@
 
     tr th:first-child {
       border-top-left-radius: 0.5rem;
-      border-left: 0;
+      border-left: 1px solid $border-color;
     }
 
     tr th:last-child {
       border-top-right-radius: 0.5rem;
+      border-right: 1px solid $border-color;
     }
     //sortable table header
     &.thead-dark th {
-        border-left: 1px solid $border-color;
         border-collapse: collapse;
+        border-bottom: 0;
+
+        &:first-child{
+          border-left-color: $table-dark-bg;
+        }
+
+        &:last-child{
+          border-right-color:  $table-dark-bg;
+        }
     }
 
     &.thead-sortable th {
@@ -105,15 +114,29 @@
       }
     }
   }
-
+  // bordered table
   &.table-bordered{
     border:0;
+    thead{
+      th{
+        border-right: 0;
+        border-left-color: $border-color;
+      }
+    }
     tbody{
       td, th{
         border-top:0;
         border-right: 0;
         border-left: 1px solid $border-color;
       }
+    }
+  }
+
+  // borderless
+  &.table-borderless{
+    border:0 !important;
+    th, td{
+      border:0 !important;
     }
   }
 }
@@ -154,9 +177,15 @@
 
     tbody {
       tr {
-        margin-bottom: $spacer * 2;
+        margin-bottom: $spacer;
         border-radius: $border-radius;
         overflow: hidden;
+
+        td:last-child{
+          border-bottom: 1px solid $border-color !important;
+          border-bottom-left-radius: $border-radius !important;
+          border-bottom-right-radius: $border-radius !important;
+        }
       }
 
       tr:last-of-type {
@@ -165,8 +194,12 @@
 
       th[scope="row"] {
         @include font-heading();
-        border: 0;
         background: white;
+        border-left: 1px solid $border-color !important;
+        border-right: 1px solid $border-color !important;
+        border-top-left-radius: $border-radius !important;
+        border-top-right-radius: $border-radius !important;
+        border-bottom-left-radius: 0 !important;
       }
 
       td {
@@ -175,10 +208,12 @@
         min-height: 3.25rem; // empty cell
         padding-left: 50%;
         position: relative;
+        border-left: 1px solid $border-color !important;
+        border-right: 1px solid $border-color !important;
 
         &.section-heading{
            padding-left: $spacer;
-           background: $smoke-500;
+           background: $slate-100;
            border: 0;
         }
 
@@ -195,6 +230,16 @@
         color: $body-color;
         position: absolute;
         left: $spacer;
+      }
+    }
+
+    &.table-bordered{
+      tbody{
+        th:first-child, td:first-child{
+          border-top:1px solid $border-color !important;
+          border-top-left-radius: $border-radius !important;
+          border-top-right-radius: $border-radius !important;
+        }
       }
     }
   }

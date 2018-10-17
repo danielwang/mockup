@@ -29,8 +29,8 @@
   &.disabled,
   &:disabled {
     color: white;  // color-yiq($background);
-    background-color: $slate-300;  //  $background;
-    border-color: $slate-300;  //$border;
+    background-color: $disabled;  //  $background;
+    border-color: $disabled;  //$border;
   }
 
   &:not(:disabled):not(.disabled):active,
@@ -73,7 +73,8 @@
 
   &.disabled,
   &:disabled {
-    color: $color;
+    color: $disabled;
+    border-color: $disabled;  
     background-color: transparent;
   }
 
