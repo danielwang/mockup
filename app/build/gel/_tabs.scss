@@ -20,7 +20,7 @@
       font-size: 1rem;
       padding-bottom: 1rem;
 
-      &:focus{
+      @include hover-focus {
         text-decoration: underline;
         outline: none;
       }

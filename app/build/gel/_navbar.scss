@@ -49,6 +49,9 @@
       height: 2rem;
       transition: transform 0.2s ease;
 
+      @include hover-focus {
+        text-decoration: none;
+      }
       &:active {
         transform: scale(0.9);
       }

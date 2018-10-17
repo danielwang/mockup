@@ -1,4 +1,4 @@
-<?php $pageTitle = "Settings"; $parent = "adm";  $pageLayout="-fluid"; $pageAction = false; include '../base-t1.php';?>
+<?php $pageTitle = "Settings"; $parent = "adm"; $pageAction = false; include '../base-t1.php';?>
 
 <?php startblock('page-title') ?>
   Settings
@@ -28,7 +28,7 @@
 <div class="tab-content">
   <div class="tab-pane active" id="configure" role="tabpanel" aria-labelledby="configure-tab">
   <div class="row">
-    <div class="col-sm-4 col-lg-3 col-xl-2 mb-2 mb-sm-0">
+    <div class="order-2 order-md-1 mt-2 mt-md-0 col-md-4 col-lg-3 col-xl-2">
       <fieldset>
         <legend class="sr-only">Home or Tags</legend>
         <div class="btn-group btn-group-toggle segmented-control">
@@ -47,74 +47,71 @@
         </div>
       </fieldset>
     </div>
-      <div class="col-sm-8 col-lg-6 col-xl-4 offset-xl-2">
+    <div class="order-1 order-md-2 col-md-8 col-lg-6 col-xl-6 offset-xl-1">
           <?php include "partials/_tags-input-search.html" ?>
       </div>
-    </div>
+  </div>
     <div class="card mt-3">
 <!-- home -->
-      <div class="row">
-        <div class="col-sm-5 col-lg-3 col-xl-2">
-          <div class="list-group list-group-flush nav" role="tablist">
-            <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list2" role="tab"><i class="gel-icon-sourcing"></i> Sourcing</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-application"></i> Application</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-offer"></i> Offers</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list4" role="tab"><i class="gel-icon-onboarding"></i> Onboarding</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list5" role="tab"><i class="gel-icon-star"></i> Performance</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list6" role="tab"><i class="gel-icon-learning"></i> Learning</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list7" role="tab"><i class="gel-icon-succession"></i> Succession</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list8" role="tab"><i class="gel-icon-cost"></i> Compensation</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list9" role="tab"><i class="gel-icon-integration"></i> Integration</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list10" role="tab"><i class="gel-icon-configure"></i> Configure</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-third-party"></i> Third Party Settings</a>
-            <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list12" role="tab"><i class="gel-icon-settings"></i> Other</a>
-          </div>
-        </div>
-        <div class="col-sm-7 col-lg-9 col-xl-10">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane show active" id="list1" role="tabpanel" aria-labelledby="list-home-list">
-              <h3>Jobs</h3>
-              <ul class="row list-unstyled">
-                <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Recruitment Processes</a></li>
-                <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Job Approval</a></li>
-              </ul>
-              <h4>Job Card fields</h4>
-              <ul class="row list-unstyled">
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Agreement Types</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Companies</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Contract Types</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Cost Centres</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Generic Lists</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Industries</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Job Sectors</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Job Status</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Job Types</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Locations</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Organisational Hierarchy</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Pay Scales</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Personnel Areas</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Reasons</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Roles</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Sites</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Work Availability Preferences</a></li>
-                  <li class="col-sm-6 col-xl-4 mb-3"><a href="#">Work Types</a></li>
-              </ul>
-            </div>
-            <div class="tab-pane" id="list2" role="tabpanel" aria-labelledby="list-profile-list"><h3>Sourcing</h3></div>
-            <div class="tab-pane" id="list3" role="tabpanel" aria-labelledby="list-messages-list"><h3>Offer</h3></div>
-            <div class="tab-pane" id="list4" role="tabpanel" aria-labelledby="list-settings-list"><h3>Onboarding</h3></div>
-            <div class="tab-pane" id="list5" role="tabpanel" aria-labelledby="list-profile-list"><h3>Performance</h3></div>
-            <div class="tab-pane" id="list6" role="tabpanel" aria-labelledby="list-messages-list"><h3>Learning</h3></div>
-            <div class="tab-pane" id="list7" role="tabpanel" aria-labelledby="list-settings-list"><h3>Succession</h3></div>
-            <div class="tab-pane" id="list8" role="tabpanel" aria-labelledby="list-profile-list"><h3>Compensation</h3></div>
-            <div class="tab-pane" id="list9" role="tabpanel" aria-labelledby="list-messages-list"><h3>Integration</h3></div>
-            <div class="tab-pane" id="list10" role="tabpanel" aria-labelledby="list-settings-list"><h3>Configure</h3></div>
-            <div class="tab-pane" id="list11" role="tabpanel" aria-labelledby="list-profile-list"><h3>Third party settings</h3></div>
-            <div class="tab-pane" id="list12" role="tabpanel" aria-labelledby="list-messages-list"><h3>Other</h3></div>
-          </div>
-        </div>
+    <div class="d-flex flex-column flex-md-row">
+    <div class="list-group list-group-flush nav" role="tablist">
+      <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list2" role="tab"><i class="gel-icon-sourcing"></i> Sourcing</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-application"></i> Application</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-offer"></i> Offers</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list4" role="tab"><i class="gel-icon-onboarding"></i> Onboarding</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list5" role="tab"><i class="gel-icon-star"></i> Performance</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list6" role="tab"><i class="gel-icon-learning"></i> Learning</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list7" role="tab"><i class="gel-icon-succession"></i> Succession</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list8" role="tab"><i class="gel-icon-cost"></i> Compensation</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list9" role="tab"><i class="gel-icon-integration"></i> Integration</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list10" role="tab"><i class="gel-icon-configure"></i> Configure</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-third-party"></i> Third Party Settings</a>
+      <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list12" role="tab"><i class="gel-icon-settings"></i> Other</a>
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane show active" id="list1" role="tabpanel" aria-labelledby="list-home-list">
+        <h3>Jobs</h3>
+        <ul class="row list-unstyled">
+          <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Recruitment Processes</a></li>
+          <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Job Approval</a></li>
+        </ul>
+        <h4>Job Card fields</h4>
+        <ul class="row list-unstyled">
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Agreement Types</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Companies</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Contract Types</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Cost Centres</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Generic Lists</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Industries</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Job Sectors</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Job Status</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Job Types</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Locations</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Organisational Hierarchy</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Pay Scales</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Personnel Areas</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Reasons</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Roles</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Sites</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Work Availability Preferences</a></li>
+            <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Work Types</a></li>
+        </ul>
       </div>
+      <div class="tab-pane" id="list2" role="tabpanel" aria-labelledby="list-profile-list"><h3>Sourcing</h3></div>
+      <div class="tab-pane" id="list3" role="tabpanel" aria-labelledby="list-messages-list"><h3>Offer</h3></div>
+      <div class="tab-pane" id="list4" role="tabpanel" aria-labelledby="list-settings-list"><h3>Onboarding</h3></div>
+      <div class="tab-pane" id="list5" role="tabpanel" aria-labelledby="list-profile-list"><h3>Performance</h3></div>
+      <div class="tab-pane" id="list6" role="tabpanel" aria-labelledby="list-messages-list"><h3>Learning</h3></div>
+      <div class="tab-pane" id="list7" role="tabpanel" aria-labelledby="list-settings-list"><h3>Succession</h3></div>
+      <div class="tab-pane" id="list8" role="tabpanel" aria-labelledby="list-profile-list"><h3>Compensation</h3></div>
+      <div class="tab-pane" id="list9" role="tabpanel" aria-labelledby="list-messages-list"><h3>Integration</h3></div>
+      <div class="tab-pane" id="list10" role="tabpanel" aria-labelledby="list-settings-list"><h3>Configure</h3></div>
+      <div class="tab-pane" id="list11" role="tabpanel" aria-labelledby="list-profile-list"><h3>Third party settings</h3></div>
+      <div class="tab-pane" id="list12" role="tabpanel" aria-labelledby="list-messages-list"><h3>Other</h3></div>
+    </div>
+  </div>
+
 
 <!-- tags -->
       <div class="row d-none">
@@ -145,7 +142,7 @@
     <div class="card">
       <div class="row">
           <div class="col-sm-4 col-xl-3">
-            <div class="toggle toggle-primary">
+            <div class="toggle toggle-success">
               <label>
                 <input type="checkbox" checked="">
                 <span>Recruitment</span>
@@ -154,23 +151,23 @@
           </div>
           <div class="col-sm-8 col-xl-9">
             <ul class="row list-unstyled">
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Advanced Analytics Report - Standard Analytics</strong><br/> <span class="text-muted">(bAdvancedAnalytics)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Base</strong><br/> <span class="text-muted"> (bBaseModule)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Internal forms</strong><br/> <span class="text-muted"> (bInternalForms)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Intranet</strong><br/> <span class="text-muted"> (bIntranetModule)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Job search</strong><br/> <span class="text-muted"> (bJobSearchModule)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Job template</strong><br/> <span class="text-muted"> (bJobTemplates)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Management reports</strong><br/> <span class="text-muted"> (bManagementReports)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Source management</strong><br/> <span class="text-muted"> (bJobSources)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Survey module</strong><br/> <span class="text-muted"> (bSurvey)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Users and groups</strong><br/> <span class="text-muted"> (bUsersAndGroups)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Advanced Analytics Report - Standard Analytics</strong><br/> <span class="text-muted">(bAdvancedAnalytics)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Base</strong><br/> <span class="text-muted"> (bBaseModule)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Internal forms</strong><br/> <span class="text-muted"> (bInternalForms)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Intranet</strong><br/> <span class="text-muted"> (bIntranetModule)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Job search</strong><br/> <span class="text-muted"> (bJobSearchModule)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Job template</strong><br/> <span class="text-muted"> (bJobTemplates)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Management reports</strong><br/> <span class="text-muted"> (bManagementReports)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Source management</strong><br/> <span class="text-muted"> (bJobSources)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Survey module</strong><br/> <span class="text-muted"> (bSurvey)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Users and groups</strong><br/> <span class="text-muted"> (bUsersAndGroups)</span></li>
             </ul>
           </div>
       </div>
       <hr>
       <div class="row">
           <div class="col-sm-4 col-xl-3">
-            <div class="toggle toggle-primary">
+            <div class="toggle toggle-success">
               <label>
                 <input type="checkbox" checked="">
                 <span>Performance</span>
@@ -179,17 +176,17 @@
           </div>
           <div class="col-sm-8 col-xl-9">
             <ul class="row list-unstyled">
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Advanced Analytics Report - Standard Analytics</strong><br/> <span class="text-muted">(bAdvancedAnalytics)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Base</strong><br/> <span class="text-muted"> (bBaseModule)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Management reports</strong><br/> <span class="text-muted"> (bManagementReports)</span></li>
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Performance management</strong><br/> <span class="text-muted"> (bPerformanceManagement)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Advanced Analytics Report - Standard Analytics</strong><br/> <span class="text-muted">(bAdvancedAnalytics)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Base</strong><br/> <span class="text-muted"> (bBaseModule)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Management reports</strong><br/> <span class="text-muted"> (bManagementReports)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Performance management</strong><br/> <span class="text-muted"> (bPerformanceManagement)</span></li>
             </ul>
           </div>
       </div>
       <hr>
       <div class="row">
           <div class="col-sm-4 col-xl-3">
-            <div class="toggle toggle-primary">
+            <div class="toggle toggle-success">
               <label>
                 <input type="checkbox" checked="">
                 <span>Advanced Screening - Background Checking</span>
@@ -198,7 +195,7 @@
           </div>
           <div class="col-sm-8 col-xl-9">
             <ul class="row list-unstyled">
-              <li class="col-sm-6 col-xl-4 mb-3"><strong>Background checking</strong><br/> <span class="text-muted">(bBackgroundCheckModule)</span></li>
+              <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><strong>Background checking</strong><br/> <span class="text-muted">(bBackgroundCheckModule)</span></li>
             </ul>
           </div>
       </div>

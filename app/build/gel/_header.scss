@@ -80,16 +80,7 @@
 
   .page-tabs {
     margin-left: -$grid-gutter-width/2;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-    align-content: flex-end;
-    max-width: 100%;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch; // Make it smooth scrolling on iOS devices
-    -ms-overflow-style: -ms-autohiding-scrollbar; //Hide the ugly scrollbars in Edge until the scrollable area is hovered
+    @include scroll-horizontal();
     &:empty {
       display: none;
     }

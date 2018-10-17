@@ -68,9 +68,10 @@ a{
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 
-  &:focus {
-    outline-offset: 3px;
-  }
+  // @include hover-focus {
+  //   text-decoration: underline;
+  //   outline: none;
+  // }
 }
 
 %link-alt{
