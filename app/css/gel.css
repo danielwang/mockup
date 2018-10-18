@@ -8221,14 +8221,14 @@ label {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
   .accordion .card:first-of-type .card-header {
-    border-top-left-radius: calc(0.5rem + 1px);
-    border-top-right-radius: calc(0.5rem + 1px); }
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important; }
   .accordion .card:last-of-type {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
   .accordion .card:last-of-type .card-header {
-    border-bottom-left-radius: calc(0.5rem + 1px) !important;
-    border-bottom-right-radius: calc(0.5rem + 1px) !important; }
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important; }
 
 .accordion, .panel {
   border-radius: 0.5rem;
@@ -8240,7 +8240,8 @@ label {
   .accordion .card .card-header a, .panel .card .card-header a {
     color: #fff;
     display: block;
-    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-family: 'Nunito Semibold';
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
@@ -8252,9 +8253,10 @@ label {
   .accordion .card .card-header a.collapsed:before, .panel .card .card-header a.collapsed:before {
     content: "\e92a"; }
   .accordion .card .card-header.light-header, .panel .card .card-header.light-header {
-    background: #fff; }
+    background: #f1f4f6; }
   .accordion .card .card-header.light-header a, .panel .card .card-header.light-header a {
-    color: #1d262d; }
+    color: #1d262d;
+    font-size: 0.875rem; }
   .accordion .card .card-body, .panel .card .card-body {
     border-top: 1px solid #bac6d2; }
 
@@ -8271,7 +8273,9 @@ label {
   .accordion-line article .accordion-header a {
     color: #0063b0;
     display: block;
-    font-family: 'Nunito', sans-serif; }
+    font-weight: 400;
+    font-family: 'Nunito Semibold';
+    font-size: 0.875rem; }
   .accordion-line article .accordion-header a:before {
     float: right;
     margin-left: 1rem;

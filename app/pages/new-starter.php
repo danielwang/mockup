@@ -22,33 +22,36 @@
         <div class="card-header light-header" role="tab" id="headingOne">
           <h5 class="mb-0">
             <a data-toggle="collapse" data-parent="#accordion2" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">
-              Mandatory tasks
+              Additional tasks
             </a>
           </h5>
         </div>
         <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
           <div class="card-body">
-            <p class="clearfix pb-1 pr-5">Organizational Introductions and Onboarding tasks
-              <span class="float-right clearfix mr-n-5">
+            <p class="d-flex justify-content-between">
+              <span>Organizational Introductions and Onboarding tasks</span>
+              <span>
                 <button type="button" aria-label="Add" class="btn btn-icon">
                   <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
                 </button>
               </span>
             </p>
-            <p class="clearfix pb-1 pr-5">New starter signed contract?<span class="float-right mr-n-5">
+            <p class="d-flex justify-content-between">
+              <span>New starter signed contract?</span>
+              <span>
                 <button type="button" aria-label="Add" class="btn btn-icon">
                   <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
                 </button>
               </span>
             </p>
-            <p class="clearfix pb-1 pr-5">On-site client visit
-              <span class="float-right mr-n-5">
+            <p class="d-flex justify-content-between">
+              <span>On-site client visit</span>
+              <span>
                 <button type="button" aria-label="Add" class="btn btn-icon">
                   <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
                 </button>
               </span>
             </p>
-
           </div>
         </div>
       </div>
