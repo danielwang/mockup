@@ -1,11 +1,51 @@
+//
+// Accordion
+//
+
+.accordion {
+  .card:not(:first-of-type):not(:last-of-type) {
+      margin-top:-1px;
+      margin-bottom: -1px;
+  }
+
+  .card:not(:first-of-type) {
+    .card-header:first-child {
+      border-radius: 0;
+    }
+  }
+
+  .card:first-of-type {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    .card-header{
+      border-top-left-radius: calc(#{$card-border-radius} + #{$card-border-width});
+      border-top-right-radius: calc(#{$card-border-radius} + #{$card-border-width});
+    }
+  }
+
+  .card:last-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    .card-header{
+      border-bottom-left-radius: calc(#{$card-border-radius} + #{$card-border-width}) !important;
+      border-bottom-right-radius: calc(#{$card-border-radius} + #{$card-border-width}) !important;
+    }
+  }
+}
+
+
 .accordion, .panel {
-  border-radius: 5px;
+  border-radius: $border-radius;
   overflow: hidden;
 
   .card {
     padding: 0;
 
     .card-header {
+      border-bottom: 0;
       a {
         color: $white;
         display: block;
@@ -24,11 +64,15 @@
       }
 
       &.light-header{
-        background: $slate-200;
+        background: $white;
         a{
           color: $body-color;
         }
       }
+    }
+
+    .card-body{
+      border-top:1px solid $border-color;
     }
   }
 }
@@ -45,7 +89,7 @@
     .accordion-header{
       padding: $spacer 0;
       a {
-        color: $azure;
+        color: $active;
         display: block;
         font-family: $font-family-headings;
         &:before {

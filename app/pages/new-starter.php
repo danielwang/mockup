@@ -17,29 +17,54 @@
       </div>
     </div>
     <p class="mb-4"><button class="btn btn-outline-primary btn-block">Notify Emily of updates</button></p>
-    <div class="row">
-      <div class="col-sm-6 col-lg-12">
-        <h4 class="mb-1">Additional tasks</h4>
-        <p class="border-bottom clearfix pb-1 pr-5">Organizational Introductions and Onboarding tasks
-          <span class="float-right clearfix mr-n-5"><a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a></span>
-        </p>
-        <p class="border-bottom clearfix pb-1 pr-5">New starter signed contract?<span class="float-right mr-n-5"><a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a></span></p>
-        <p class="border-bottom clearfix pb-1 pr-5">On-site client visit <span class="float-right mr-n-5"><a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a></span></p>
+    <div id="accordion2" class="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <div class="card-header light-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion2" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+              Mandatory tasks
+            </a>
+          </h5>
+        </div>
+        <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-body">
+            <p class="clearfix pb-1 pr-5">Organizational Introductions and Onboarding tasks
+              <span class="float-right clearfix mr-n-5">
+                <button type="button" aria-label="Add" class="btn btn-icon">
+                  <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
+                </button>
+              </span>
+            </p>
+            <p class="clearfix pb-1 pr-5">New starter signed contract?<span class="float-right mr-n-5">
+                <button type="button" aria-label="Add" class="btn btn-icon">
+                  <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
+                </button>
+              </span>
+            </p>
+            <p class="clearfix pb-1 pr-5">On-site client visit
+              <span class="float-right mr-n-5">
+                <button type="button" aria-label="Add" class="btn btn-icon">
+                  <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
+                </button>
+              </span>
+            </p>
+
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6 col-lg-12">
-        <h4 class="mt-4 mb-1">My Favourite tasks</h4>
-        <p class="border-bottom clearfix pb-1 pr-5">Probation Check
-          <span class="float-right mr-n-5">
-            <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-            <a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a>
-          </span>
-        </p>
-        <p class="border-bottom clearfix pb-1 pr-5">Coffee with new starter
-          <span class="float-right mr-n-5">
-            <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-            <a href="#" aria-label="Add"><i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i></a>
-          </span>
-        </p>
+      <div class="card">
+        <div class="card-header light-header" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+              My Favourite tasks
+            </a>
+          </h5>
+        </div>
+        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="card-body">
+            There are no tasks
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -96,13 +121,13 @@
             <td data-title="Status" class="text-success">Completed</td>
             <td scope="row">
               <span class="d-none d-md-flex justify-content-between align-items-center">
-                <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-                <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
-                <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+                <button type="button" class="btn btn-icon"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></button>
+                <button type="button" class="btn btn-icon" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></button>
+                <button type="button" class="btn btn-icon" aria-label="Drag and drop"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></button>
               </span>
               <span class="d-md-none d-flex justify-content-between">
-                <a href="#" class="btn btn-primary" aria-label="Edit">Edit</a>
-                <a href="#" class="btn btn-primary" aria-label="Delete" data-toggle="modal" data-target="#deleteTask">Delete</a>
+                <a href="#" class="btn btn-primary-outline" aria-label="Edit">Edit</a>
+                <a href="#" class="btn btn-primary-outline" aria-label="Delete" data-toggle="modal" data-target="#deleteTask">Delete</a>
               </span>
             </td>
           </tr>
@@ -113,9 +138,9 @@
             <td data-title="Status" class="text-danger">Overdue</td>
             <td scope="row">
               <span class="d-none d-md-flex justify-content-between align-items-center">
-                <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-                <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
-                <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+                <button type="button" class="btn btn-icon"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></button>
+                <button type="button" class="btn btn-icon" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></button>
+                <button type="button" class="btn btn-icon" aria-label="Drag and drop"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></button>
               </span>
               <span class="d-md-none d-flex justify-content-between">
                 <a href="#" class="btn btn-primary" aria-label="Edit">Edit</a>
@@ -130,9 +155,9 @@
             <td data-title="Status">Open</td>
             <td scope="row">
               <span class="d-none d-md-flex justify-content-between align-items-center">
-                <a href="#" aria-label="Edit"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></a>
-                <a href="#" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></a>
-                <a href="#" aria-label="Drag and drop" class="link-alt"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></a>
+                <button type="button" class="btn btn-icon"><i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i></button>
+                <button type="button" class="btn btn-icon" aria-label="Delete" data-toggle="modal" data-target="#deleteTask"><i class="gel-icon-trash" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete"></i></button>
+                <button type="button" class="btn btn-icon" aria-label="Drag and drop"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></button>
               </span>
               <span class="d-md-none d-flex justify-content-between">
                 <a href="#" class="btn btn-primary" aria-label="Edit">Edit</a>
