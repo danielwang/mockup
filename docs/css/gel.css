@@ -8147,7 +8147,7 @@ label {
  same in navbar.scss
  */
 #gel-main {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   flex: 1 0 auto; }
 
 #gel-footer {
@@ -8211,25 +8211,54 @@ label {
   background-size: 100px 110px, 100px 110px, 14px 110px, 14px 110px;
   background-attachment: local, local, scroll, scroll; }
 
-.accordion {
-  border-radius: 5px;
+.accordion .card:not(:first-of-type):not(:last-of-type) {
+  margin-top: -1px;
+  margin-bottom: -1px; }
+  .accordion .card:not(:first-of-type) .card-header:first-child {
+    border-radius: 0; }
+  .accordion .card:first-of-type {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .accordion .card:first-of-type .card-header {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important; }
+  .accordion .card:last-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .accordion .card:last-of-type .card-header {
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important; }
+
+.accordion, .panel {
+  border-radius: 0.5rem;
   overflow: hidden; }
-  .accordion .card {
+  .accordion .card, .panel .card {
     padding: 0; }
-  .accordion .card .card-header a {
+  .accordion .card .card-header, .panel .card .card-header {
+    border-bottom: 0; }
+  .accordion .card .card-header a, .panel .card .card-header a {
     color: #fff;
     display: block;
-    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-family: 'Nunito Semibold';
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  .accordion .card .card-header a:before {
+  .accordion .card .card-header a:before, .panel .card .card-header a:before {
     float: right;
     margin-left: 1rem;
     content: "\e92b";
     font-family: "gel-icon"; }
-  .accordion .card .card-header a.collapsed:before {
+  .accordion .card .card-header a.collapsed:before, .panel .card .card-header a.collapsed:before {
     content: "\e92a"; }
+  .accordion .card .card-header.light-header, .panel .card .card-header.light-header {
+    background: #f1f4f6; }
+  .accordion .card .card-header.light-header a, .panel .card .card-header.light-header a {
+    color: #1d262d;
+    font-size: 0.875rem; }
+  .accordion .card .card-body, .panel .card .card-body {
+    border-top: 1px solid #bac6d2; }
 
 .accordion-line {
   background: #fff;
@@ -8242,9 +8271,11 @@ label {
   .accordion-line article .accordion-header {
     padding: 1rem 0; }
   .accordion-line article .accordion-header a {
-    color: #00a1e5;
+    color: #0063b0;
     display: block;
-    font-family: 'Nunito', sans-serif; }
+    font-weight: 400;
+    font-family: 'Nunito Semibold';
+    font-size: 0.875rem; }
   .accordion-line article .accordion-header a:before {
     float: right;
     margin-left: 1rem;
@@ -9101,9 +9132,13 @@ label {
   .btn.dropdown-toggle + .dropdown-menu::after {
     display: none; }
 
-.btn-link:active:focus {
-  box-shadow: none !important;
-  text-decoration: underline; }
+.btn-icon {
+  background-color: transparent;
+  color: #536b81;
+  padding: 0.25rem;
+  border-radius: 0; }
+  .btn-icon:hover {
+    color: #8299ae; }
 
 .btn-ctrl {
   border-color: #bac6d2;
@@ -10849,7 +10884,8 @@ select.form-control {
     font-weight: 400;
     font-family: 'Nunito Semibold';
     vertical-align: middle;
-    line-height: 1.2; }
+    line-height: 1.2;
+    white-space: nowrap; }
   .table thead tr th:first-child {
     border-top-left-radius: 0.5rem;
     border-left: 1px solid #bac6d2; }
@@ -10905,7 +10941,7 @@ select.form-control {
     vertical-align: middle;
     font-weight: 400; }
   .table tbody td.section-heading {
-    background: #d6dde4; }
+    background: #f1f4f6; }
   .table.table-bordered {
     border: 0; }
   .table.table-bordered thead th {
@@ -11053,7 +11089,7 @@ select.form-control {
     text-decoration: underline;
     outline: none; }
   .nav-tabs-line .nav-item .nav-link.active {
-    color: #00a1e5;
+    color: #0063b0;
     position: relative; }
   .nav-tabs-line .nav-item .nav-link.active::before {
     width: 10px;
@@ -11121,7 +11157,7 @@ select.form-control {
     background: transparent; }
   .tags > li > button [class^="gel-icon-"] {
     font-size: 1rem;
-    color: #8299ae;
+    color: #536b81;
     cursor: pointer; }
   .tags-input .tags > li {
     margin-bottom: 0; }

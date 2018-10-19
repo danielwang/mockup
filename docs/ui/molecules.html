@@ -159,7 +159,7 @@
     <nav id="gel-subpages" role="navigation">
      <div class="container">
         <ul class="page-tabs nav" role="tablist">
-          <li class="nav-item"><a class="nav-link active" id="accordions-tab" data-toggle="tab" href="#accordions" role="tab" aria-controls="accordions" aria-selected="1">Accordions</a></li><li class="nav-item"><a class="nav-link " id="alerts-tab" data-toggle="tab" href="#alerts" role="tab" aria-controls="alerts" aria-selected="">Alerts</a></li><li class="nav-item"><a class="nav-link " id="breadcrumb-tab" data-toggle="tab" href="#breadcrumb" role="tab" aria-controls="breadcrumb" aria-selected="">Breadcrumb</a></li><li class="nav-item"><a class="nav-link " id="dropdowns-tab" data-toggle="tab" href="#dropdowns" role="tab" aria-controls="dropdowns" aria-selected="">Dropdowns</a></li><li class="nav-item"><a class="nav-link " id="lists-tab" data-toggle="tab" href="#lists" role="tab" aria-controls="lists" aria-selected="">Lists</a></li><li class="nav-item"><a class="nav-link " id="pagination-tab" data-toggle="tab" href="#pagination" role="tab" aria-controls="pagination" aria-selected="">Pagination</a></li><li class="nav-item"><a class="nav-link " id="popover-tab" data-toggle="tab" href="#popover" role="tab" aria-controls="popover" aria-selected="">Popover</a></li><li class="nav-item"><a class="nav-link " id="tables-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="tables" aria-selected="">Tables</a></li><li class="nav-item"><a class="nav-link " id="tabs-tab" data-toggle="tab" href="#tabs" role="tab" aria-controls="tabs" aria-selected="">Tabs</a></li><li class="nav-item"><a class="nav-link " id="wizards-tab" data-toggle="tab" href="#wizards" role="tab" aria-controls="wizards" aria-selected="">Wizards</a></li>      </ul>
+          <li class="nav-item"><a class="nav-link active" id="accordions-tab" data-toggle="tab" href="#accordions" role="tab" aria-controls="accordions" aria-selected="1">Accordions</a></li><li class="nav-item"><a class="nav-link " id="alerts-tab" data-toggle="tab" href="#alerts" role="tab" aria-controls="alerts" aria-selected="">Alerts</a></li><li class="nav-item"><a class="nav-link " id="breadcrumb-tab" data-toggle="tab" href="#breadcrumb" role="tab" aria-controls="breadcrumb" aria-selected="">Breadcrumb</a></li><li class="nav-item"><a class="nav-link " id="dropdowns-tab" data-toggle="tab" href="#dropdowns" role="tab" aria-controls="dropdowns" aria-selected="">Dropdowns</a></li><li class="nav-item"><a class="nav-link " id="lists-tab" data-toggle="tab" href="#lists" role="tab" aria-controls="lists" aria-selected="">Lists</a></li><li class="nav-item"><a class="nav-link " id="pagination-tab" data-toggle="tab" href="#pagination" role="tab" aria-controls="pagination" aria-selected="">Pagination</a></li><li class="nav-item"><a class="nav-link " id="panels-tab" data-toggle="tab" href="#panels" role="tab" aria-controls="panels" aria-selected="">Panels</a></li><li class="nav-item"><a class="nav-link " id="popover-tab" data-toggle="tab" href="#popover" role="tab" aria-controls="popover" aria-selected="">Popover</a></li><li class="nav-item"><a class="nav-link " id="tables-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="tables" aria-selected="">Tables</a></li><li class="nav-item"><a class="nav-link " id="tabs-tab" data-toggle="tab" href="#tabs" role="tab" aria-controls="tabs" aria-selected="">Tabs</a></li><li class="nav-item"><a class="nav-link " id="wizards-tab" data-toggle="tab" href="#wizards" role="tab" aria-controls="wizards" aria-selected="">Wizards</a></li>      </ul>
     </div>
   </nav>
   <!-- page body -->
@@ -168,92 +168,158 @@
       <div class='tab-content'><div class="tab-pane active" id="accordions" role="tabpanel" aria-labelledby="page-tab-accordions"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
   Use accordion elements to vertically stack related content. Each item can be expanded to reveal the content associated with that item. Only one item can be opened at a time.
 </blockquote>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="bg-white p-5 rounded mb-5">
+      <section id="accordion-sm" class="accordion-line" role="tablist" aria-multiselectable="true">
+        <article>
+          <div class="accordion-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-a" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </a>
+            </h5>
+          </div>
+          <div id="collapse-a" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingOne">
 
-<div class="card">
-  <section id="accordion-sm" class="accordion-line" role="tablist" aria-multiselectable="true">
-    <article>
-      <div class="accordion-header" role="tab" id="headingTwo">
-        <h5 class="mb-0">
-          <a data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-a" aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </a>
-        </h5>
-      </div>
-      <div id="collapse-a" class="accordion-body collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <table class="table table-borderless table-sm table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
 
-        <table class="table table-borderless table-sm table-striped">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+          </div>
+        </article>
+        <article>
+          <div class="accordion-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-b" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </a>
+            </h5>
+          </div>
+          <div id="collapse-b" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingTwo">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+          </div>
+        </article>
+        <article>
+          <div class="accordion-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-c" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </a>
+            </h5>
+          </div>
+          <div id="collapse-c" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingThree">
+            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div id="accordion2" class="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <div class="card-header light-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion2" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+              Mandatory tasks
+            </a>
+          </h5>
+        </div>
+        <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-body">
+            <p class="clearfix pb-1 pr-5">Organizational Introductions and Onboarding tasks
+              <span class="float-right clearfix mr-n-5">
+                <a href="#" aria-label="Add" class="link-alt">
+                  <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
+                </a>
+              </span>
+            </p>
+            <p class="clearfix pb-1 pr-5">New starter signed contract?<span class="float-right mr-n-5">
+                <a href="#" aria-label="Add" class="link-alt">
+                  <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
+                </a>
+              </span>
+            </p>
+            <p class="clearfix pb-1 pr-5">On-site client visit
+              <span class="float-right mr-n-5">
+                <a href="#" aria-label="Add" class="link-alt">
+                  <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
+                </a>
+              </span>
+            </p>
 
+          </div>
+        </div>
       </div>
-    </article>
-    <article>
-      <div class="accordion-header" role="tab" id="headingTwo">
-        <h5 class="mb-0">
-          <a class="collapsed" data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-b" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
-          </a>
-        </h5>
+      <div class="card">
+        <div class="card-header light-header" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+              My Favourite tasks
+            </a>
+          </h5>
+        </div>
+        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="card-body">
+            There are no tasks
+          </div>
+        </div>
       </div>
-      <div id="collapse-b" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingTwo">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
-        bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <div class="card">
+        <div class="card-header light-header" role="tab" id="headingThree">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+              Optional tasks
+            </a>
+          </h5>
+        </div>
+        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+            bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
       </div>
-    </article>
-    <article>
-      <div class="accordion-header" role="tab" id="headingThree">
-        <h5 class="mb-0">
-          <a class="collapsed" data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-c" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
-          </a>
-        </h5>
-      </div>
-      <div id="collapse-c" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingThree">
-
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
-        bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </article>
-  </section>
+    </div>
+  </div>
 </div>
 <!------------------------------------------------------>
 <hr class="sg-hr">
@@ -362,7 +428,7 @@
     <i class="gel-icon-close gel-icon-lg" aria-hidden="true"></i>
   </button>
 </div>
-<div class="p-3"></div>
+<hr class="sg-hr"/>
 <div class="notification notification-success" role="notification">
   <i class="gel-icon-tick-circle gel-icon-lg" aria-hidden="true"></i>
   This is a success notification!
@@ -748,7 +814,85 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
   <button type="button" class="btn btn-ctrl">Next
     <i class="gel-icon-angle-right"></i>
   </button>
-</p></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="popover" role="tabpanel" aria-labelledby="page-tab-popover"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+</p></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="panels" role="tabpanel" aria-labelledby="page-tab-panels"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
+  <div class="col-md-6">
+    <div class="panel">
+      <div class="card">
+        <div class="card-header light-header" role="tab">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion" href="#panelTwo" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Panel with light header
+            </a>
+          </h5>
+        </div>
+
+        <div id="panelTwo" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+            bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="panel">
+      <div class="card">
+        <div class="card-header light-header" role="tab">
+          <h5 class="mb-0">
+            Panel with light header
+          </h5>
+        </div>
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+          bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+          raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="sg-hr"/>
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel">
+      <div class="card">
+        <div class="card-header" role="tab">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion" href="#panelOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Panel dark header
+            </a>
+          </h5>
+        </div>
+
+        <div id="panelOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+            bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="panel">
+      <div class="card">
+        <div class="card-header" role="tab">
+          <h5 class="mb-0 text-white">
+            Panel with dark header
+          </h5>
+        </div>
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+          bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+          raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is how the element is used:</p></div></div></div></div><div class="tab-pane " id="popover" role="tabpanel" aria-labelledby="page-tab-popover"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
   Popovers add small overlays of content for housing secondary information. It’s important to keep secondary information simple and to a minimum. Also, avoid complex functionality.
 </blockquote>
 <div class="row">
@@ -1654,7 +1798,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>36</td>
       <td>Internal</td>
-      <td>67</td>
+      <td>3</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1692,7 +1836,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>37</td>
       <td>Internal</td>
-      <td>81</td>
+      <td>48</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1730,7 +1874,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>38</td>
       <td>Internal</td>
-      <td>47</td>
+      <td>84</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1768,7 +1912,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>39</td>
       <td>Internal</td>
-      <td>38</td>
+      <td>41</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1806,7 +1950,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>40</td>
       <td>Internal</td>
-      <td>14</td>
+      <td>81</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1844,7 +1988,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>41</td>
       <td>Internal</td>
-      <td>61</td>
+      <td>77</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1882,7 +2026,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>42</td>
       <td>Internal</td>
-      <td>94</td>
+      <td>33</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1920,7 +2064,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>43</td>
       <td>Internal</td>
-      <td>44</td>
+      <td>62</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1958,7 +2102,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>44</td>
       <td>Internal</td>
-      <td>27</td>
+      <td>20</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1996,7 +2140,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>45</td>
       <td>Internal</td>
-      <td>11</td>
+      <td>65</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2034,7 +2178,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>46</td>
       <td>Internal</td>
-      <td>6</td>
+      <td>43</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2072,7 +2216,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>47</td>
       <td>Internal</td>
-      <td>77</td>
+      <td>86</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2110,7 +2254,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>48</td>
       <td>Internal</td>
-      <td>82</td>
+      <td>11</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2148,7 +2292,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>49</td>
       <td>Internal</td>
-      <td>35</td>
+      <td>28</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2186,7 +2330,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>50</td>
       <td>Internal</td>
-      <td>98</td>
+      <td>90</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2224,7 +2368,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>51</td>
       <td>Internal</td>
-      <td>16</td>
+      <td>39</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2262,7 +2406,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>52</td>
       <td>Internal</td>
-      <td>2</td>
+      <td>37</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2300,7 +2444,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>53</td>
       <td>Internal</td>
-      <td>93</td>
+      <td>48</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2338,7 +2482,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>54</td>
       <td>Internal</td>
-      <td>61</td>
+      <td>94</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2376,7 +2520,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>55</td>
       <td>Internal</td>
-      <td>49</td>
+      <td>56</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2414,7 +2558,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>56</td>
       <td>Internal</td>
-      <td>100</td>
+      <td>15</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2452,7 +2596,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>57</td>
       <td>Internal</td>
-      <td>10</td>
+      <td>34</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2528,7 +2672,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>59</td>
       <td>Internal</td>
-      <td>31</td>
+      <td>65</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2566,7 +2710,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>60</td>
       <td>Internal</td>
-      <td>33</td>
+      <td>18</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2604,7 +2748,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>61</td>
       <td>Internal</td>
-      <td>57</td>
+      <td>15</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2642,7 +2786,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>62</td>
       <td>Internal</td>
-      <td>59</td>
+      <td>3</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2680,7 +2824,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>63</td>
       <td>Internal</td>
-      <td>68</td>
+      <td>58</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2718,7 +2862,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>64</td>
       <td>Internal</td>
-      <td>18</td>
+      <td>44</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2756,7 +2900,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>65</td>
       <td>Internal</td>
-      <td>96</td>
+      <td>49</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2794,7 +2938,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>66</td>
       <td>Internal</td>
-      <td>80</td>
+      <td>66</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2832,7 +2976,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>67</td>
       <td>Internal</td>
-      <td>9</td>
+      <td>80</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2870,7 +3014,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>68</td>
       <td>Internal</td>
-      <td>48</td>
+      <td>80</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2908,7 +3052,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>69</td>
       <td>Internal</td>
-      <td>51</td>
+      <td>86</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2946,7 +3090,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>70</td>
       <td>Internal</td>
-      <td>43</td>
+      <td>60</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2984,7 +3128,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>71</td>
       <td>Internal</td>
-      <td>81</td>
+      <td>93</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3022,7 +3166,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>72</td>
       <td>Internal</td>
-      <td>58</td>
+      <td>23</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3060,7 +3204,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>73</td>
       <td>Internal</td>
-      <td>65</td>
+      <td>29</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3098,7 +3242,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>74</td>
       <td>Internal</td>
-      <td>64</td>
+      <td>44</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3136,7 +3280,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>75</td>
       <td>Internal</td>
-      <td>11</td>
+      <td>20</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3174,7 +3318,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>76</td>
       <td>Internal</td>
-      <td>77</td>
+      <td>75</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3212,7 +3356,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>77</td>
       <td>Internal</td>
-      <td>38</td>
+      <td>31</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3250,7 +3394,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>78</td>
       <td>Internal</td>
-      <td>3</td>
+      <td>42</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3288,7 +3432,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>79</td>
       <td>Internal</td>
-      <td>59</td>
+      <td>63</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3326,7 +3470,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>80</td>
       <td>Internal</td>
-      <td>38</td>
+      <td>14</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3364,7 +3508,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>81</td>
       <td>Internal</td>
-      <td>63</td>
+      <td>79</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3402,7 +3546,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>82</td>
       <td>Internal</td>
-      <td>86</td>
+      <td>12</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3440,7 +3584,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>83</td>
       <td>Internal</td>
-      <td>18</td>
+      <td>26</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3478,7 +3622,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>84</td>
       <td>Internal</td>
-      <td>40</td>
+      <td>82</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3516,7 +3660,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>85</td>
       <td>Internal</td>
-      <td>51</td>
+      <td>91</td>
       <td>N</td>
       <td>website</td>
       <td>
