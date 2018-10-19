@@ -4,7 +4,7 @@
 
 <?php startblock('page-body');?>
 <div class="row">
-  <div class="col-lg-3">
+  <div class="col-lg-4 col-xxl-3">
     <h3>Emily Johnson</h3>
     <div class="row">
       <div class="col-sm-6 col-lg-12">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <p class="mb-4"><button class="btn btn-outline-primary btn-block">Notify Emily of updates</button></p>
-    <div id="accordion2" class="accordion" role="tablist" aria-multiselectable="true">
+    <div id="accordion2" class="accordion mb-4" role="tablist" aria-multiselectable="true">
       <div class="card">
         <div class="card-header light-header" role="tab" id="headingOne">
           <h5 class="mb-0">
@@ -27,26 +27,35 @@
           </h5>
         </div>
         <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-          <div class="card-body">
-            <p class="d-flex justify-content-between">
-              <span>Organizational Introductions and Onboarding tasks</span>
-              <span>
+          <div class="card-body pb-0">
+            <p class="row">
+              <span class="col-8">Organizational Introductions and Onboarding tasks</span>
+              <span class="col-4 text-right">
+                <button type="button" aria-label="Add" class="btn btn-icon">
+                  <i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i>
+                </button>
                 <button type="button" aria-label="Add" class="btn btn-icon">
                   <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
                 </button>
               </span>
             </p>
-            <p class="d-flex justify-content-between">
-              <span>New starter signed contract?</span>
-              <span>
+            <p class="row">
+              <span class="col-8">New starter signed contract?</span>
+              <span class="col-4 text-right">
+                <button type="button" aria-label="Add" class="btn btn-icon">
+                  <i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i>
+                </button>
                 <button type="button" aria-label="Add" class="btn btn-icon">
                   <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
                 </button>
               </span>
             </p>
-            <p class="d-flex justify-content-between">
-              <span>On-site client visit</span>
-              <span>
+            <p class="row">
+              <span class="col-8">On-site client visit</span>
+              <span class="col-4 text-right">
+                <button type="button" aria-label="Add" class="btn btn-icon">
+                  <i class="gel-icon-pencil" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit"></i>
+                </button>
                 <button type="button" aria-label="Add" class="btn btn-icon">
                   <i class="gel-icon-add" data-toggle="tooltip" data-placement="bottom" data-original-title="Add"></i>
                 </button>
@@ -64,14 +73,14 @@
           </h5>
         </div>
         <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-          <div class="card-body">
-            There are no tasks
+          <div class="card-body p-0">
+            <p>There are no tasks</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-lg-9">
+  <div class="col-lg-8 col-xxl-9">
      <div class="row">
       <div class="order-2 order-md-1 mt-3 mt-md-0 col-sm-8 col-md-7">
         <h5>Visibility</h5>

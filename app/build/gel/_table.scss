@@ -9,6 +9,7 @@
       @include font-heading();
       vertical-align: middle;
       line-height: 1.2;
+      white-space: nowrap;
     }
 
     tr th:first-child {

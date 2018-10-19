@@ -9135,7 +9135,7 @@ label {
 .btn-icon {
   background-color: transparent;
   color: #536b81;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 0; }
   .btn-icon:hover {
     color: #8299ae; }
@@ -10884,7 +10884,8 @@ select.form-control {
     font-weight: 400;
     font-family: 'Nunito Semibold';
     vertical-align: middle;
-    line-height: 1.2; }
+    line-height: 1.2;
+    white-space: nowrap; }
   .table thead tr th:first-child {
     border-top-left-radius: 0.5rem;
     border-left: 1px solid #bac6d2; }
