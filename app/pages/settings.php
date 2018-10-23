@@ -28,7 +28,7 @@
 <div class="tab-content">
   <div class="tab-pane active" id="configure" role="tabpanel" aria-labelledby="configure-tab">
   <div class="row">
-    <div class="order-2 order-md-1 mt-2 mt-md-0 col-md-4 col-lg-3 col-xl-2">
+    <div class="order-2 order-md-1 mt-2 mt-md-0 col-md-4 col-lg-3">
       <fieldset>
         <legend class="sr-only">Home or Tags</legend>
         <div class="btn-group btn-group-toggle segmented-control">
@@ -47,14 +47,14 @@
         </div>
       </fieldset>
     </div>
-    <div class="order-1 order-md-2 col-md-8 col-lg-6 col-xl-6 offset-xl-1">
+    <div class="order-1 order-md-2 col-md-8 col-lg-6 offset-xl-1">
           <?php include "partials/_tags-input-search.html" ?>
       </div>
   </div>
-    <div class="card mt-3">
+    <div class="card p-0 mt-3">
 <!-- home -->
     <div class="d-flex flex-column flex-md-row">
-    <div class="list-group list-group-flush nav" role="tablist">
+    <div class="list-group list-group-flush nav pt-md-3 pb-md-3 pl-md-3" role="tablist">
       <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab"><i class="gel-icon-job"></i> Jobs</a>
       <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list2" role="tab"><i class="gel-icon-sourcing"></i> Sourcing</a>
       <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list3" role="tab"><i class="gel-icon-application"></i> Application</a>
@@ -69,7 +69,7 @@
       <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-third-party"></i> Third Party Settings</a>
       <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list12" role="tab"><i class="gel-icon-settings"></i> Other</a>
     </div>
-    <div class="tab-content" id="nav-tabContent">
+    <div class="tab-content p-4" id="nav-tabContent">
       <div class="tab-pane show active" id="list1" role="tabpanel" aria-labelledby="list-home-list">
         <h3>Jobs</h3>
         <ul class="row list-unstyled">

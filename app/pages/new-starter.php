@@ -138,8 +138,8 @@
                 <button type="button" class="btn btn-icon" aria-label="Drag and drop"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></button>
               </span>
               <span class="d-md-none d-flex justify-content-between">
-                <a href="#" class="btn btn-primary-outline" aria-label="Edit">Edit</a>
-                <a href="#" class="btn btn-primary-outline" aria-label="Delete" data-toggle="modal" data-target="#deleteTask">Delete</a>
+                <a href="#" class="btn btn-outline-primary" aria-label="Edit">Edit</a>
+                <a href="#" class="btn btn-outline-primary" aria-label="Delete" data-toggle="modal" data-target="#deleteTask">Delete</a>
               </span>
             </td>
           </tr>
@@ -155,8 +155,8 @@
                 <button type="button" class="btn btn-icon" aria-label="Drag and drop"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></button>
               </span>
               <span class="d-md-none d-flex justify-content-between">
-                <a href="#" class="btn btn-primary" aria-label="Edit">Edit</a>
-                <a href="#" class="btn btn-primary" aria-label="Delete" data-toggle="modal" data-target="#deleteTask">Delete</a>
+                <a href="#" class="btn btn-outline-primary" aria-label="Edit">Edit</a>
+                <a href="#" class="btn btn-outline-primary" aria-label="Delete" data-toggle="modal" data-target="#deleteTask">Delete</a>
               </span>
             </td>
           </tr>
@@ -172,8 +172,8 @@
                 <button type="button" class="btn btn-icon" aria-label="Drag and drop"><i class="dragable gel-icon-drag" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag and drop to reorder the task"></i></button>
               </span>
               <span class="d-md-none d-flex justify-content-between">
-                <a href="#" class="btn btn-primary" aria-label="Edit">Edit</a>
-                <a href="#" class="btn btn-primary" aria-label="Delete" data-toggle="modal" data-target="#deleteTask">Delete</a>
+                <a href="#" class="btn btn-outline-primary" aria-label="Edit">Edit</a>
+                <a href="#" class="btn btn-outline-primary" aria-label="Delete" data-toggle="modal" data-target="#deleteTask">Delete</a>
               </span>
             </td>
           </tr>

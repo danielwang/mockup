@@ -889,13 +889,13 @@ $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default
 
 // Badges
 
-$badge-font-size:                   1em;
+$badge-font-size:                   1rem;
 $badge-font-weight:                 400 !default;
-$badge-padding-y:                   .5em !default;
-$badge-padding-x:                   .75em !default;
+$badge-padding-y:                   .5rem !default;
+$badge-padding-x:                   .75rem !default;
 $badge-border-radius:               $border-radius !default;
 
-$badge-pill-padding-x:              .6em !default;
+$badge-pill-padding-x:              .6rem !default;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
 $badge-pill-border-radius:          10rem !default;
