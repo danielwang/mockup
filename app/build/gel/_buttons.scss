@@ -2,21 +2,19 @@
 //
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
-
 @mixin button-variant($background, $border, $hover-background: lighten($background, 9%), $hover-border: lighten($border, 9%), $active-background: darken($background, 9%), $active-border: darken($border, 9%)) {
   color: color-yiq($background);
   @include gradient-bg($background);
   border-color: $border;
   @include box-shadow($btn-box-shadow);
-
   @include hover {
     color: color-yiq($hover-background);
     @include gradient-bg($hover-background);
     border-color: $hover-border;
   }
 
-  &:focus,
-  &.focus {
+  &.focus,
+  &:focus {
     // Avoid using mixin so we can pass custom focus shadow properly
     @if $enable-shadows {
       box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
@@ -24,17 +22,19 @@
       box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
     }
   }
-
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    color: white;  // color-yiq($background);
-    background-color: $disabled;  //  $background;
-    border-color: $disabled;  //$border;
+    color: white;
+    // color-yiq($background);
+    background-color: $disabled;
+    //  $background;
+    border-color: $disabled;
+    //$border;
   }
 
-  &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
   .show > &.dropdown-toggle {
     color: color-yiq($active-background);
     background-color: $active-background;
@@ -53,7 +53,6 @@
     }
   }
 }
-
 @mixin button-outline-variant($color, $color-hover: lighten($color, 9%), $active-background: lighten($color, 9%), $active-border: lighten($color, 9%)) {
   color: $color;
   background-color: $white;
@@ -66,8 +65,8 @@
     border-color: $active-border;
   }
 
-  &:focus,
-  &.focus {
+  &.focus,
+  &:focus {
     box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
   }
 
@@ -78,8 +77,8 @@
     background-color: transparent;
   }
 
-  &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
   .show > &.dropdown-toggle {
     color: color-yiq($active-background);
     background-color: $active-background;
@@ -95,14 +94,11 @@
     }
   }
 }
-
-
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     @include button-variant($value, $value);
   }
 }
-
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
@@ -121,21 +117,24 @@
     pointer-events: none;
   }
 
-  &.dropdown-toggle{
-    &+.dropdown-menu{
+  &.dropdown-toggle {
+    &+.dropdown-menu {
       margin-top: $spacer/4;
-      &::after{
+
+      &::after {
         display: none;
       }
     }
   }
-
   // responsive btn size, btn goes large on sm viewport
-//  @include media-breakpoint-between(xs,sm){
-//    @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
-//  }
+  @include media-breakpoint-between(xs,md) {
+    @include button-size($input-btn-padding-y-lg, $btn-padding-x, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+    //icons
+    [class^="gel-icon-"] {
+      font-size: 1.25rem !important;
+    }
+  }
 }
-
 // .btn-link{
 //   &:active{
 //     &:focus{
@@ -145,13 +144,26 @@
 //   }
 // }
 
-.btn-icon{
+.btn-icon {
   background-color: transparent;
   color: $slate-700;
   padding: 0.25rem;
   border-radius: 0;
-  &:hover{
+
+  &:hover {
     color: $slate-500;
+  }
+}
+
+.btn-sm {
+  [class^="gel-icon-"] {
+    font-size: 0.875rem;
+  }
+}
+
+.btn-lg {
+  [class^="gel-icon-"] {
+    font-size: 1.25rem;
   }
 }
 
@@ -177,11 +189,13 @@
     background-image: none;
     box-shadow: $ctrl-focus-box-shadow;
   }
-  &:hover{
+
+  &:hover {
     background-color: $ctrl-hover-bg;
   }
-  .btn-sm{
-    border-radius: .25rem;
+
+  .btn-sm {
+    border-radius: 0.25rem;
   }
 }
 
@@ -192,59 +206,59 @@
     flex: 1 1;
     margin-bottom: 0;
     min-width: 0;
-    .btn-ctrl{
+
+    .btn-ctrl {
       display: block;
       border-radius: 0;
       margin-left: -1px;
       @include text-truncate();
     }
-    &:first-child{
-      .btn-ctrl{
+
+    &:first-child {
+      .btn-ctrl {
         margin-left: 0;
         border-top-left-radius: $border-radius;
         border-bottom-left-radius: $border-radius;
       }
     }
-    &:last-child{
-      .btn-ctrl{
+
+    &:last-child {
+      .btn-ctrl {
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
       }
     }
-
   }
 
-  input[type="radio"]{
+  input[type="radio"] {
     position: absolute;
     clip: rect(0,0,0,0);
     pointer-events: none;
 
-    &:focus + .btn-ctrl{
+    &:focus + .btn-ctrl {
       box-shadow: $ctrl-focus-box-shadow;
     }
 
-    &:checked + .btn-ctrl{
+    &:checked + .btn-ctrl {
       background-color: $ctrl-active-bg;
     }
   }
-
 }
 /* input groups */
-
-.input-group > .input-group-prepend > .btn,
-.input-group > .input-group-prepend > .input-group-text,
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
 .input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
-.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text {
   @include border-right-radius($border-radius);
 }
 
 .input-group > .input-group-append > .btn,
 .input-group > .input-group-append > .input-group-text,
-.input-group > .input-group-prepend:not(:first-child) > .btn,
-.input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
-.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+.input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .input-group-text {
   @include border-right-radius($border-radius);
 }

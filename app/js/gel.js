@@ -60,6 +60,15 @@ function setMenuState(val) {
 }
 
 // click or touch outside menu to close off menu
+// closest polyfill
+// this.Element && function(ElementPrototype) {
+//     ElementPrototype.closest = ElementPrototype.closest ||
+//     function(selector) {
+//         var el = this;
+//         while (el.matches && !el.matches(selector)) el = el.parentNode;
+//         return el.matches ? el : null;
+//     }
+// }(Element.prototype);
 
 function closeMenu(e) {
   if (!e.target.closest('#gel-menu') && !e.target.closest('.nav-toggle') && menu.classList.contains('open')) {
