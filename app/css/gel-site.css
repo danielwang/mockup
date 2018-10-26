@@ -228,110 +228,11 @@
   font-size: 1rem;
 }
 
-.pageup-100 {
-  background-color: #4b7fd3;
-}
-.pageup-100::before {
-  content: "#4b7fd3";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.pageup-900 {
-  background-color: black;
-}
-.pageup-900::before {
-  content: "black";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.pageup-200 {
-  background-color: #2f67c1;
-}
-.pageup-200::before {
-  content: "#2f67c1";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.pageup-800 {
-  background-color: black;
-}
-.pageup-800::before {
-  content: "black";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.pageup-300 {
-  background-color: #26549c;
-}
-.pageup-300::before {
-  content: "#26549c";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.pageup-700 {
-  background-color: #020408;
-}
-.pageup-700::before {
-  content: "#020408";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.pageup-400 {
-  background-color: #1d4077;
-}
-.pageup-400::before {
-  content: "#1d4077";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.pageup-600 {
-  background-color: #0b182d;
-}
-.pageup-600::before {
-  content: "#0b182d";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.pageup-500 {
-  background-color: #142c52;
-}
-.pageup-500::before {
-  content: "#142c52";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
 .slate-100 {
-  background-color: #9dafc0;
+  background-color: #f1f4f6;
 }
 .slate-100::before {
-  content: "#9dafc0";
+  content: "#f1f4f6";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -339,75 +240,9 @@
 }
 
 .slate-900 {
-  background-color: black;
-}
-.slate-900::before {
-  content: "black";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.slate-200 {
-  background-color: #8198ae;
-}
-.slate-200::before {
-  content: "#8198ae";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.slate-800 {
-  background-color: #0b0e11;
-}
-.slate-800::before {
-  content: "#0b0e11";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.slate-300 {
-  background-color: #66819c;
-}
-.slate-300::before {
-  content: "#66819c";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.slate-700 {
-  background-color: #1d252d;
-}
-.slate-700::before {
-  content: "#1d252d";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.slate-400 {
-  background-color: #536a81;
-}
-.slate-400::before {
-  content: "#536a81";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.slate-600 {
   background-color: #2f3c49;
 }
-.slate-600::before {
+.slate-900::before {
   content: "#2f3c49";
   font-family: monospace;
   float: right;
@@ -415,11 +250,87 @@
   font-size: 1rem;
 }
 
-.slate-500 {
+.slate-200 {
+  background-color: #d6dde4;
+}
+.slate-200::before {
+  content: "#d6dde4";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-800 {
   background-color: #415365;
 }
-.slate-500::before {
+.slate-800::before {
   content: "#415365";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-300 {
+  background-color: #bac6d2;
+}
+.slate-300::before {
+  content: "#bac6d2";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-700 {
+  background-color: #536a81;
+}
+.slate-700::before {
+  content: "#536a81";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-400 {
+  background-color: #9eafc0;
+}
+.slate-400::before {
+  content: "#9eafc0";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-600 {
+  background-color: #66819c;
+}
+.slate-600::before {
+  content: "#66819c";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.slate-1000 {
+  background-color: #1d252d;
+}
+.slate-1000::before {
+  content: "#1d252d";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-500 {
+  background-color: #8298ae;
+}
+.slate-500::before {
+  content: "#8298ae";
   font-family: monospace;
   float: right;
   text-transform: uppercase;

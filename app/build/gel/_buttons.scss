@@ -127,22 +127,22 @@
     }
   }
   // responsive btn size, btn goes large on sm viewport
-  @include media-breakpoint-between(xs,md) {
-    @include button-size($input-btn-padding-y-lg, $btn-padding-x, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
-    //icons
-    [class^="gel-icon-"] {
-      font-size: 1.25rem !important;
+  // @include media-breakpoint-between(xs,md) {
+  //   @include button-size($input-btn-padding-y-lg, $btn-padding-x, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+  //   //icons
+  //   [class^="gel-icon-"] {
+  //     font-size: 1.25rem !important;
+  //   }
+  // }
+}
+.btn-link{
+  &:active{
+    &:focus{
+      box-shadow: none !important;
+      text-decoration: underline;
     }
   }
 }
-// .btn-link{
-//   &:active{
-//     &:focus{
-//       box-shadow: none !important;
-//       text-decoration: underline;
-//     }
-//   }
-// }
 
 .btn-icon {
   background-color: transparent;
@@ -155,17 +155,17 @@
   }
 }
 
-.btn-sm {
-  [class^="gel-icon-"] {
-    font-size: 0.875rem;
-  }
-}
-
-.btn-lg {
-  [class^="gel-icon-"] {
-    font-size: 1.25rem;
-  }
-}
+// .btn-sm {
+//   [class^="gel-icon-"] {
+//     font-size: 0.875rem;
+//   }
+// }
+//
+// .btn-lg {
+//   [class^="gel-icon-"] {
+//     font-size: 1.25rem;
+//   }
+// }
 
 .btn-ctrl {
   border-color: $ctrl-border-color;

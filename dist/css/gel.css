@@ -9131,14 +9131,10 @@ label {
     margin-top: 0.25rem; }
   .btn.dropdown-toggle + .dropdown-menu::after {
     display: none; }
-  @media (max-width: 991.98px) {
-  .btn {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 1.5rem; }
-    .btn [class^="gel-icon-"] {
-      font-size: 1.25rem !important; } }
+
+.btn-link:active:focus {
+  box-shadow: none !important;
+  text-decoration: underline; }
 
 .btn-icon {
   background-color: transparent;
@@ -9147,12 +9143,6 @@ label {
   border-radius: 0; }
   .btn-icon:hover {
     color: #8299ae; }
-
-.btn-sm [class^="gel-icon-"], .btn-group-sm > .btn [class^="gel-icon-"] {
-  font-size: 0.875rem; }
-
-.btn-lg [class^="gel-icon-"], .btn-group-lg > .btn [class^="gel-icon-"] {
-  font-size: 1.25rem; }
 
 .btn-ctrl {
   border-color: #bac6d2;
@@ -9607,7 +9597,7 @@ select.form-control {
   .dropdown-menu .dropdown-item:hover [class^="gel-icon-"], .dropdown-menu .dropdown-item:focus [class^="gel-icon-"] {
     color: #00a1e5; }
   .dropdown-menu .dropdown-item [class^="gel-icon-"] {
-    color: #bac6d2;
+    color: #8299ae;
     margin-right: 0.5rem;
     vertical-align: text-bottom;
     font-size: 1.1rem; }
@@ -10091,7 +10081,7 @@ select.form-control {
  *
  \* *************************************** */
 .tags-input .tags {
-  padding: 0.125rem 0.25rem 0 0.125rem;
+  padding: 0.125rem 0.25rem 0 0.25rem;
   overflow: hidden;
   text-overflow: ellipsis; }
   .tags-input .search-field {
@@ -10124,7 +10114,6 @@ select.form-control {
     list-style: none;
     margin: 0; }
   .tags-input .autocomplete ul li {
-    padding: 0.5rem 1rem;
     border-bottom: 1px solid #bac6d2;
     cursor: pointer; }
   .tags-input .autocomplete ul li.selected, .tags-input .autocomplete ul li:hover {
@@ -11144,13 +11133,12 @@ select.form-control {
   .tags > li {
     display: inline-block;
     padding: 0.25em 0.4em;
-    font-weight: 700;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: 0.5rem;
-    background-color: #ced8e2;
+    border-radius: 0.25rem;
+    background-color: #d6dde4;
     overflow: hidden;
     margin: 0 0.25rem 0.25rem 0; }
   .tags > li.active {
