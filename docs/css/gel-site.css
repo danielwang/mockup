@@ -2,6 +2,10 @@
  *  The styling for GEL site
 \* *************************************** */
 
+.sg-hr{
+  margin: 1.5rem 0;
+  border-color: transparent;
+}
 .sg-doc {
   background: #ffc none repeat scroll 0 0;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
@@ -13,4 +17,843 @@
   transition: all 0.15s linear 0s;
   transform: rotate(1deg);
   margin: 15px;
+}
+
+.sg-heading{
+  color: #142c52;
+  display: inline-block;
+  background: -webkit-linear-gradient(45deg,#0053a3,#49b3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-library [class^="gel-icon-"]{
+    color: #536a81;
+}
+.red-100 {
+  background-color: #ffaaa1;
+}
+.red-100::before {
+  content: "#ffaaa1";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.red-900 {
+  background-color: #300500;
+}
+.red-900::before {
+  content: "#300500";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.red-200 {
+  background-color: #ff8173;
+}
+.red-200::before {
+  content: "#ff8173";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.red-800 {
+  background-color: #5e0900;
+}
+.red-800::before {
+  content: "#5e0900";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.red-300 {
+  background-color: #ff5745;
+}
+.red-300::before {
+  content: "#ff5745";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.red-700 {
+  background-color: #8c0e00;
+}
+.red-700::before {
+  content: "#8c0e00";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.red-400 {
+  background-color: #ff2e17;
+}
+.red-400::before {
+  content: "#ff2e17";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.red-600 {
+  background-color: #ba1200;
+}
+.red-600::before {
+  content: "#ba1200";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.red-500 {
+  background-color: #e81700;
+}
+.red-500::before {
+  content: "#e81700";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-100 {
+  background-color: #d7c7e2;
+}
+.purple-100::before {
+  content: "#d7c7e2";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-900 {
+  background-color: #1e1427;
+}
+.purple-900::before {
+  content: "#1e1427";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-200 {
+  background-color: #c1a9d3;
+}
+.purple-200::before {
+  content: "#c1a9d3";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-800 {
+  background-color: #362345;
+}
+.purple-800::before {
+  content: "#362345";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-300 {
+  background-color: #ab8bc3;
+}
+.purple-300::before {
+  content: "#ab8bc3";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-700 {
+  background-color: #4e3363;
+}
+.purple-700::before {
+  content: "#4e3363";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-400 {
+  background-color: #956cb4;
+}
+.purple-400::before {
+  content: "#956cb4";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-600 {
+  background-color: #664282;
+}
+.purple-600::before {
+  content: "#664282";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.purple-500 {
+  background-color: #7E52A0;
+}
+.purple-500::before {
+  content: "#7E52A0";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-100 {
+  background-color: #f1f4f6;
+}
+.slate-100::before {
+  content: "#f1f4f6";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-900 {
+  background-color: #2f3c49;
+}
+.slate-900::before {
+  content: "#2f3c49";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-200 {
+  background-color: #d6dde4;
+}
+.slate-200::before {
+  content: "#d6dde4";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-800 {
+  background-color: #415365;
+}
+.slate-800::before {
+  content: "#415365";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-300 {
+  background-color: #bac6d2;
+}
+.slate-300::before {
+  content: "#bac6d2";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-700 {
+  background-color: #536a81;
+}
+.slate-700::before {
+  content: "#536a81";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-400 {
+  background-color: #9eafc0;
+}
+.slate-400::before {
+  content: "#9eafc0";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-600 {
+  background-color: #66819c;
+}
+.slate-600::before {
+  content: "#66819c";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.slate-1000 {
+  background-color: #1d252d;
+}
+.slate-1000::before {
+  content: "#1d252d";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.slate-500 {
+  background-color: #8298ae;
+}
+.slate-500::before {
+  content: "#8298ae";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-100 {
+  background-color: #69bdff;
+}
+.blue-100::before {
+  content: "#69bdff";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-900 {
+  background-color: black;
+}
+.blue-900::before {
+  content: "black";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-200 {
+  background-color: #3ba9ff;
+}
+.blue-200::before {
+  content: "#3ba9ff";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-800 {
+  background-color: #001626;
+}
+.blue-800::before {
+  content: "#001626";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-300 {
+  background-color: #0d95ff;
+}
+.blue-300::before {
+  content: "#0d95ff";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-700 {
+  background-color: #002f54;
+}
+.blue-700::before {
+  content: "#002f54";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-400 {
+  background-color: #007dde;
+}
+.blue-400::before {
+  content: "#007dde";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-600 {
+  background-color: #004982;
+}
+.blue-600::before {
+  content: "#004982";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.blue-500 {
+  background-color: #0063b0;
+}
+.blue-500::before {
+  content: "#0063b0";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-100 {
+  background-color: #9ee2ff;
+}
+.light-blue-100::before {
+  content: "#9ee2ff";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-900 {
+  background-color: #00202d;
+}
+.light-blue-900::before {
+  content: "#00202d";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-200 {
+  background-color: #70d4ff;
+}
+.light-blue-200::before {
+  content: "#70d4ff";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-800 {
+  background-color: #00405b;
+}
+.light-blue-800::before {
+  content: "#00405b";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-300 {
+  background-color: #42c7ff;
+}
+.light-blue-300::before {
+  content: "#42c7ff";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-700 {
+  background-color: #006089;
+}
+.light-blue-700::before {
+  content: "#006089";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-400 {
+  background-color: #14b9ff;
+}
+.light-blue-400::before {
+  content: "#14b9ff";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-600 {
+  background-color: #0081b7;
+}
+.light-blue-600::before {
+  content: "#0081b7";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.light-blue-500 {
+  background-color: #00a1e5;
+}
+.light-blue-500::before {
+  content: "#00a1e5";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-100 {
+  background-color: #ffd4b8;
+}
+.orange-100::before {
+  content: "#ffd4b8";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-900 {
+  background-color: #471c00;
+}
+.orange-900::before {
+  content: "#471c00";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-200 {
+  background-color: #ffb88a;
+}
+.orange-200::before {
+  content: "#ffb88a";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-800 {
+  background-color: #752e00;
+}
+.orange-800::before {
+  content: "#752e00";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-300 {
+  background-color: #ff9c5c;
+}
+.orange-300::before {
+  content: "#ff9c5c";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-700 {
+  background-color: #a34000;
+}
+.orange-700::before {
+  content: "#a34000";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-400 {
+  background-color: #ff802e;
+}
+.orange-400::before {
+  content: "#ff802e";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-600 {
+  background-color: #d15200;
+}
+.orange-600::before {
+  content: "#d15200";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.orange-500 {
+  background-color: #ff6400;
+}
+.orange-500::before {
+  content: "#ff6400";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-100 {
+  background-color: #7cf2a6;
+}
+.green-100::before {
+  content: "#7cf2a6";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-900 {
+  background-color: black;
+}
+.green-900::before {
+  content: "black";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-200 {
+  background-color: #52ee8a;
+}
+.green-200::before {
+  content: "#52ee8a";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-800 {
+  background-color: #042911;
+}
+.green-800::before {
+  content: "#042911";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-300 {
+  background-color: #28ea6e;
+}
+.green-300::before {
+  content: "#28ea6e";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-700 {
+  background-color: #085323;
+}
+.green-700::before {
+  content: "#085323";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-400 {
+  background-color: #14d158;
+}
+.green-400::before {
+  content: "#14d158";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-600 {
+  background-color: #0c7d34;
+}
+.green-600::before {
+  content: "#0c7d34";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.green-500 {
+  background-color: #10a746;
+}
+.green-500::before {
+  content: "#10a746";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-100 {
+  background-color: white;
+}
+.grey-100::before {
+  content: "white";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-900 {
+  background-color: #5c7c9c;
+}
+.grey-900::before {
+  content: "#5c7c9c";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-200 {
+  background-color: white;
+}
+.grey-200::before {
+  content: "white";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-800 {
+  background-color: #7793af;
+}
+.grey-800::before {
+  content: "#7793af";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-300 {
+  background-color: white;
+}
+.grey-300::before {
+  content: "white";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-700 {
+  background-color: #94aac0;
+}
+.grey-700::before {
+  content: "#94aac0";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-400 {
+  background-color: #ebeff3;
+}
+.grey-400::before {
+  content: "#ebeff3";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-600 {
+  background-color: #b1c1d1;
+}
+.grey-600::before {
+  content: "#b1c1d1";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.grey-500 {
+  background-color: #ced8e2;
+}
+.grey-500::before {
+  content: "#ced8e2";
+  font-family: monospace;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.swatches {
+  margin-bottom: 30px;
+}
+
+.swatch-title {
+  padding: 12px;
+  text-transform: capitalize;
+  color: white;
+}
+.swatch-title h3 {
+  margin: 0 0 50px;
+  font-size: inherit;
+  color: white;
+}
+
+.color-swatch:nth-child(n+7) {
+  color: #fff;
+}
+
+.color-swatch {
+  box-sizing: border-box;
+  padding: 12px;
+  display: block;
+  color: #000;
 }

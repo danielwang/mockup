@@ -9,43 +9,14 @@
   global $pageAction;
 ?>
 
-   <!-- Hiring manager centre, client branding -->
-   <?php if ($parent == "hm"){ ?>
-      <header role="Branding header" class="client-branding" style="background-color: #cccccc">
-          <div class="container-fluid">
-            <img class="logo" src="<?php echo ($resURL) ?>site-images/client-logo.png" alt="client'name logo" />
-          </div>
-      </header>
-   <?php } ?>
-   <?php emptyblock('page-notification') ?>
-   <!-- ************ topbar ************ -->
    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
-       <div class="container-fluid">
+       <div class="container">
          <!-- logo  -->
          <ul class="navbar-nav mr-auto">
-           <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
            <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="brand logo" src="<?php echo ($resURL) ?>site-images/pu-logo.png" width="100"/><?php endblock() ?></a></li>
-         </ul>
-         <ul class="navbar-nav">
-           <?php include ("_partials/nav/${parent}.html");?>
-           <!-- user panel -->
-           <?php include ("_partials/nav/user-panel.html");?>
-           <!-- help -->
-           <?php include ("_partials/nav/help.html");?>
          </ul>
        </div>
      </nav>
-   <!-- ************ menu ************  -->
-  <aside id="gel-menu" role='menu'>
-         <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
-
-         <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="brand logo" src="<?php echo ($resURL) ?>site-images/pu-logo.png" width="100"/><?php endblock() ?></a>
-         <?php include ("_partials/menu/user-panel.html");?>
-
-         <menu class="scroll">
-           <?php include ("_partials/menu/${parent}.html");?>
-         </menu>
-       </aside>
 
   <!-- ************  page header ************ -->
   <?php startblock('page-header');?>
