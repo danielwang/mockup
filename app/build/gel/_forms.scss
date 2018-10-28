@@ -24,6 +24,10 @@
     padding: $spacer * 0.125 $spacer * 0.25 0 $spacer * 0.25;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    &> li{
+      margin-bottom: 0;
+    }
   }
   .search-field{
     background: none;
