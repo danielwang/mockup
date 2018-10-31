@@ -11219,10 +11219,6 @@ select.form-control {
     left: 6px; }
   .timeline-item:last-child .timeline-marker:after {
     content: none; }
-
-.timeline-item:not(.period):hover .timeline-marker:before {
-  background: transparent;
-  border: 3px solid #00a1e5; }
 /*----- TIMELINE CONTENT -----*/
 .timeline-content {
   padding-bottom: 40px; }
@@ -11436,6 +11432,10 @@ sup {
 
 sub, sup {
   font-size: 0.75rem; }
+
+.lead {
+  font-weight: 400;
+  font-family: 'Proxima Nova Light'; }
 
 .text-12, .text-sm {
   font-size: 0.75rem; }
@@ -13223,7 +13223,7 @@ sub, sup {
 
 @font-face {
   font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wl') format('truetype'), url('icons/gel-icon.woff?q0w0wl') format('woff'), url('icons/gel-icon.svg?q0w0wl#gel-icon') format('svg');
+  src: url('icons/gel-icon.ttf?q0w0wm') format('truetype'), url('icons/gel-icon.woff?q0w0wm') format('woff'), url('icons/gel-icon.svg?q0w0wm#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -13646,3 +13646,6 @@ sub, sup {
 
 .gel-icon-view-o:before {
   content: "\e91c"; }
+
+.gel-icon-tick-o:before {
+  content: "\e982"; }

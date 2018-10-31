@@ -110,7 +110,7 @@ function buildLineIcons(){
     ["control","control"],["team","team"],["job","job"],["employee","employee"],
     ["recruitment","recruitment"],["learning","learning"],["analytics","analytics"],["orgchart","orgchart"],
     ["onboarding","onboarding"],["journal","journal"],["copy","copy"],["history","history"],["salary","salary"],
-    ["add","add"],["unlock","unlock"],["view","view"],["resume","application"],
+    ["add","add"],["unlock","unlock"],["view","view"],["resume","application"],["tick","tick"],
     ["sad","sad"],["frown","frown"],["meh","meh"],["smile","smile"],["happy","happy"]
   ];
 }

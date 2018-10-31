@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'gel-icon';
   src:
-    url('icons/gel-icon.ttf?q0w0wl') format('truetype'),
-    url('icons/gel-icon.woff?q0w0wl') format('woff'),
-    url('icons/gel-icon.svg?q0w0wl#gel-icon') format('svg');
+    url('icons/gel-icon.ttf?q0w0wm') format('truetype'),
+    url('icons/gel-icon.woff?q0w0wm') format('woff'),
+    url('icons/gel-icon.svg?q0w0wm#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -433,4 +433,7 @@
 }
 .gel-icon-view-o:before {
   content: "\e91c";
+}
+.gel-icon-tick-o:before {
+  content: "\e982";
 }

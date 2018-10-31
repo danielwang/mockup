@@ -63,10 +63,6 @@
             content: none;
         }
     }
-    .timeline-item:not(.period):hover .timeline-marker:before {
-        background: transparent;
-        border: 3px solid $azure;
-    }
 
     /*----- TIMELINE CONTENT -----*/
 
