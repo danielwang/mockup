@@ -7,7 +7,7 @@
   max-width: 100%;
   overflow-x: auto;
   flex-wrap: nowrap;
-  -webkit-overflow-scrolling: touch;
+  @include smooth-scrolling();
   margin-bottom: -1px;
   overflow-y: hidden;
   height: 3rem;

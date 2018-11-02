@@ -45,7 +45,11 @@
 	border: 1px solid $border-color;
 }
 
-@mixin scroll-horizontal {
+@mixin smooth-scrolling() {
+	-webkit-overflow-scrolling: touch; // Make it smooth scrolling on iOS devices
+	-ms-overflow-style: -ms-autohiding-scrollbar; //Hide the ugly scrollbars in Edge until the scrollable area is hovered
+}
+@mixin scroll-horizontal(){
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -55,9 +59,7 @@
 	max-width: 100%;
 	overflow-x: auto;
 	overflow-y: hidden;
-	-webkit-overflow-scrolling: touch; // Make it smooth scrolling on iOS devices
-	-ms-overflow-style: -ms-autohiding-scrollbar; //Hide the ugly scrollbars in Edge until the scrollable area is hovered
-
+  @include smooth-scrolling();
 }
 // @mixin dropdown-menu (){
 // 	max-width: 16rem;

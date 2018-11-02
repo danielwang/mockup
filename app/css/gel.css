@@ -8159,11 +8159,11 @@ label {
 /* selection styles */
 ::-moz-selection {
   color: #fff;
-  background: #8299ae; }
+  background: #536b81; }
 
 ::selection {
   color: #fff;
-  background: #8299ae; }
+  background: #536b81; }
 /*  Scroll bar styles
  * See Lea Verou's explanation background-attachment:
  * http://lea.verou.me/2012/04/background-attachment-local/
@@ -10495,7 +10495,8 @@ select.form-control {
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   z-index: 1031;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
   @media (min-width: 1200px) {
   #gel-menu {
     position: fixed; } }
@@ -10562,6 +10563,7 @@ select.form-control {
       overflow-x: hidden;
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
       overflow-y: auto;
       background: linear-gradient(#2f3d49 30%, #2f3d49), linear-gradient(#2f3d49, #2f3d49 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
       background: -webkit-linear-gradient(#2f3d49 30%, #2f3d49), -webkit-linear-gradient(#2f3d49, #2f3d49 70%) 0 100%, -webkit-radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), -webkit-radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
@@ -10602,6 +10604,10 @@ select.form-control {
   display: block; }
   .modal .modal-full {
     max-width: 95vw; }
+
+.modal-body {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
 
 .modal-header, .modal-body, .modal-footer {
   padding: 1rem 2rem; }
@@ -11042,7 +11048,8 @@ select.form-control {
   border-radius: 0.5rem;
   border: 1px solid #6c87a0;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
   @media (max-width: 767.98px) {
   .table-sticky {
     border: 0;
@@ -11081,6 +11088,7 @@ select.form-control {
   overflow-x: auto;
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   margin-bottom: -1px;
   overflow-y: hidden;
   height: 3rem; }

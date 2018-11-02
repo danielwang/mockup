@@ -8,12 +8,12 @@
 
 ::-moz-selection {
   color: $white;
-  background: $slate;
+  background: $slate-700;
 }
 
 ::selection {
   color: $white;
-  background: $slate-500;
+  background: $slate-700;
 }
 
 
@@ -24,8 +24,7 @@
 */
 
 .scroll{
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  @include smooth-scrolling();
 }
 
 .scroll::-webkit-scrollbar {

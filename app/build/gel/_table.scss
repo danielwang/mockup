@@ -260,7 +260,7 @@
     max-height: none;
   }
   overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  @include smooth-scrolling();
 
   table {
     width: 100%;
