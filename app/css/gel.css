@@ -10393,11 +10393,13 @@ select.form-control {
     color: white;
     font-size: 12px; }
   #gel-header .page-actions {
-    display: none; }
-  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 0.5rem; }
+  @media (min-width: 992px) {
     #gel-header .page-actions {
-      display: flex;
-      justify-content: flex-end;
+      order: 2;
       align-items: center; } }
   #gel-header .page-actions .item {
     position: relative; }
@@ -10413,7 +10415,6 @@ select.form-control {
   #gel-header .page-actions .item > a i {
     vertical-align: -5px; }
   #gel-header .page-actions .item > a span {
-    display: none;
     font-size: 1rem; }
     @media (min-width: 992px) {
         #gel-header .page-actions .item > a span {
@@ -10596,6 +10597,9 @@ select.form-control {
     white-space: nowrap;
     width: 200px;
     display: inherit; }
+  @media (min-width: 992px) {
+        #gel-menu ul li a {
+          font-size: 0.875rem; } }
   #gel-menu ul li a:hover {
     color: #11b1ee;
     margin-left: 8px; }

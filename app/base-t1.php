@@ -53,11 +53,11 @@
           <div class="container<?php echo $pageLayout ?>">
             <div class="row">
               <?php if($pageAction == true) { ?>
-              <div class="col-md-9 col-lg-8">
+              <div class="col-lg-8 order-2 order-lg-1">
                 <h1 class="page-title"><?php echo $pageTitle  ?></h1>
                 <blockquote class="tagline"><?php emptyblock('page-tagline');?></blockquote>
               </div>
-              <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
+              <div class="page-actions col-lg-4 mt-2">
                   <?php emptyblock('page-actions') ?>
               </div>
             <?php } else {?>

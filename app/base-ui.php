@@ -7,7 +7,7 @@
   include_once '_head.php';
   include_once 'ui/func.php';
   ?>
-  <nav id="gel-navbar" class="navbar navbar-expand-lg navbar-dark bg-navy" role="navigation">
+  <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
     <div class="container">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu gel-icon-2x"></i></span></li>
@@ -21,7 +21,7 @@
         <i class="gel-icon-lg gel-icon-bootstrap" aria-hidden="true"></i>
 
           </a></li> -->
-        <li class="nav-item"><a class="nav-link" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" title="Github">
+        <li class="nav-item mr-0"><a class="nav-link" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" title="Github">
             <i class="gel-icon-lg gel-icon-github" aria-hidden="true"></i></a>
       </ul>
     </div>
@@ -40,12 +40,12 @@
   <header id="gel-header" role="banner">
     <div class="container">
       <div class="row">
-        <div class="col-md-9 col-lg-8">
+        <div class="col-lg-8 order-2 order-lg-1">
           <h1 class="page-title"><?php echo $pageTitle  ?></h1>
           <blockquote class="tagline"><?php startblock('page-tagline');?>Tagline goes here<?php endblock() ?></blockquote>
         </div>
         <?php startblock('page-actions');?>
-          <div class="page-actions col-md-3 col-lg-4 mt-2 align-items-start">
+          <div class="page-actions col-lg-4 mt-lg-2">
           <span class="item">
             <a class="text-center" target="_blank" href="#" title="Download Sketch files">
               <i class="gel-icon-lg gel-icon-sketch" aria-hidden="true"></i> <span>Sketch</span>

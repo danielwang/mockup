@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL JS - v1.1.1
+ *   PageUp GEL JS - v1.2.0
  *   Author: Daniel Wang
- *	 Date: 09/10/2018
+ *	 Date: 29/10/2018
  *
 \* *************************************** */
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -61,14 +61,19 @@ function setMenuState(val) {
 
 // click or touch outside menu to close off menu
 // closest polyfill
-// this.Element && function(ElementPrototype) {
-//     ElementPrototype.closest = ElementPrototype.closest ||
-//     function(selector) {
-//         var el = this;
-//         while (el.matches && !el.matches(selector)) el = el.parentNode;
-//         return el.matches ? el : null;
-//     }
-// }(Element.prototype);
+if (window.Element && !Element.prototype.closest) {
+    Element.prototype.closest =
+    function(s) {
+        var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+            i,
+            el = this;
+        do {
+            i = matches.length;
+            while (--i >= 0 && matches.item(i) !== el) {};
+        } while ((i < 0) && (el = el.parentElement));
+        return el;
+    };
+}
 
 function closeMenu(e) {
   if (!e.target.closest('#gel-menu') && !e.target.closest('.nav-toggle') && menu.classList.contains('open')) {
