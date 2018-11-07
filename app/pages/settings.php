@@ -69,8 +69,8 @@
       <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list11" role="tab"><i class="gel-icon-third-party"></i> Third Party Settings</a>
       <a class="list-group-item list-group-item-action" data-toggle="tab" href="#list12" role="tab"><i class="gel-icon-settings"></i> Other</a>
     </div>
-    <div class="tab-content p-4" id="nav-tabContent">
-      <div class="tab-pane show active" id="list1" role="tabpanel" aria-labelledby="list-home-list">
+    <div class="tab-content p-4 flex-md-grow-1" id="nav-tabContent">
+      <div class="tab-pane show active position-sticky" style="top:8rem" id="list1" role="tabpanel" aria-labelledby="list-home-list">
         <h3>Jobs</h3>
         <ul class="row list-unstyled">
           <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Recruitment Processes</a></li>
@@ -108,7 +108,12 @@
       <div class="tab-pane" id="list9" role="tabpanel" aria-labelledby="list-messages-list"><h3>Integration</h3></div>
       <div class="tab-pane" id="list10" role="tabpanel" aria-labelledby="list-settings-list"><h3>Configure</h3></div>
       <div class="tab-pane" id="list11" role="tabpanel" aria-labelledby="list-profile-list"><h3>Third party settings</h3></div>
-      <div class="tab-pane" id="list12" role="tabpanel" aria-labelledby="list-messages-list"><h3>Other</h3></div>
+      <div class="tab-pane position-sticky" style="top: 8rem" id="list12" role="tabpanel" aria-labelledby="list-messages-list"><h3>Other</h3>
+        <ul class="row list-unstyled">
+          <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Link</a></li>
+          <li class="col-6 col-lg-4 col-xl-3 mb-3"><a href="#">Link</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 
