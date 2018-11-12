@@ -107,6 +107,9 @@
 
 .btn {
   @include font-cta();
+  // default mobile bigger buttons
+  // 42px height
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height, $btn-border-radius);
   // min-height: $btn-min-height;
   &.loading {
     @include gradient-striped();
@@ -126,15 +129,32 @@
       }
     }
   }
-  // responsive btn size, btn goes large on sm viewport
-  // @include media-breakpoint-between(xs,md) {
-  //   @include button-size($input-btn-padding-y-lg, $btn-padding-x, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
-  //   //icons
-  //   [class^="gel-icon-"] {
-  //     font-size: 1.25rem !important;
-  //   }
-  // }
+  // responsive btn size, btn goes small beyond lg viewports
+  @include media-breakpoint-between(lg,xxl) {
+    // 34px height
+    @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, 1.5rem, $btn-border-radius);
+    //icons
+    [class^="gel-icon-"] {
+      font-size: 1.25rem !important;
+    }
+  }
 }
+
+// responsive sm buttons
+.btn-sm {
+  // mobile 34px height
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, 1.5rem, $btn-border-radius);
+
+  @include media-breakpoint-between(lg,xxl) {
+    //  desktop 28px height
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-base, 1.125rem, $btn-border-radius-sm);
+    //icons
+    [class^="gel-icon-"] {
+      // font-size: 1.25rem !important;
+    }
+  }
+}
+
 .btn-link{
   &:active{
     &:focus{
@@ -154,6 +174,7 @@
     color: $slate-500;
   }
 }
+
 
 // .btn-sm {
 //   [class^="gel-icon-"] {
