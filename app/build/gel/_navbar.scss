@@ -116,7 +116,10 @@
         color: $white;
         width: 145px;
         background-color: #4f617d;
-
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+           /* IE10+ specific styles go here */
+           line-height: 1;
+        }
         &::placeholder {
           color: rgba(255, 255, 255, .5);
         }
@@ -136,7 +139,7 @@
         + .btn-submit {
           position: absolute;
           right: 0.5rem;
-          top: 0.75rem;
+          top: 0.85rem;
           z-index: 1;
           cursor: pointer;
           color: rgba(255, 255, 255, .5);

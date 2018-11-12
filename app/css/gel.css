@@ -10701,6 +10701,10 @@ select.form-control {
     color: #fff;
     width: 145px;
     background-color: #4f617d; }
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+        .navbar .navbar-nav .search-group input[type=search] {
+          /* IE10+ specific styles go here */
+          line-height: 1; } }
   .navbar .navbar-nav .search-group input[type=search]::placeholder {
     color: rgba(255, 255, 255, .5); }
   .navbar .navbar-nav .search-group input[type=search]:focus {
@@ -10714,7 +10718,7 @@ select.form-control {
   .navbar .navbar-nav .search-group input[type=search] + .btn-submit {
     position: absolute;
     right: 0.5rem;
-    top: 0.75rem;
+    top: 0.85rem;
     z-index: 1;
     cursor: pointer;
     color: rgba(255, 255, 255, .5);
