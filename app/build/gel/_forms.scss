@@ -1,13 +1,17 @@
+.form-control{
+  font-size: $font-size-lg;
+}
 .form-control-lg{
   height: $ctrl-size-lg;
 }
 
 .form-control-sm{
-  height: $ctrl-size-sm;
+  font-size: $font-size-base;
 }
+
 .form-group{
   > label {
-    font-size: 1rem;
+    font-size: $font-size-lg;
   }
 }
 

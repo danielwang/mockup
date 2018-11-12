@@ -150,7 +150,7 @@
     @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-base, 1.125rem, $btn-border-radius-sm);
     //icons
     [class^="gel-icon-"] {
-      // font-size: 1.25rem !important;
+      font-size: 1rem !important;
     }
   }
 }
