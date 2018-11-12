@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.7.2
+ *   PageUp GEL - Theme 3.7.3
  *   Author: Daniel Wang
- *	 Date: 29/10/2018
+ *	 Date: 12/11/2018
  *
  \* *************************************** */
 /*!
@@ -464,7 +464,7 @@ pre {
       max-width: 1140px; } }
   @media (min-width: 1600px) {
     .container {
-      max-width: 1540px; } }
+      max-width: 1560px; } }
 
 .container-fluid {
   width: 100%;
@@ -10701,6 +10701,10 @@ select.form-control {
     color: #fff;
     width: 145px;
     background-color: #4f617d; }
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+        .navbar .navbar-nav .search-group input[type=search] {
+          /* IE10+ specific styles go here */
+          line-height: 1; } }
   .navbar .navbar-nav .search-group input[type=search]::placeholder {
     color: rgba(255, 255, 255, .5); }
   .navbar .navbar-nav .search-group input[type=search]:focus {
@@ -10714,7 +10718,7 @@ select.form-control {
   .navbar .navbar-nav .search-group input[type=search] + .btn-submit {
     position: absolute;
     right: 0.5rem;
-    top: 0.75rem;
+    top: 0.85rem;
     z-index: 1;
     cursor: pointer;
     color: rgba(255, 255, 255, .5);
