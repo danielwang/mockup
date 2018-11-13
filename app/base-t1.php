@@ -76,8 +76,6 @@
 
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
-    <?php startblock('page-top')?>
-    <?php endblock()?>
 		<section class="container<?php echo $pageLayout ?>">
 			<?php startblock('page-body')?>
 			<?php endblock()?>

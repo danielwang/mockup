@@ -30,11 +30,7 @@
     </div>
 </nav>
 <?php endblock() ?>
-<?php startblock('page-top')?>
-<div class="bg-white h-25"></div>
-<?php endblock()?>
 <?php startblock('page-body');?>
-
 <div class="tab-content">
   <!-- ****************  current jobs ********************-->
   <div class="tab-pane d-print-block show active" id="current-jobs" role="tabpanel" aria-labelledby="applications-tab">

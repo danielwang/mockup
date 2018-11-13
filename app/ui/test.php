@@ -25,10 +25,10 @@
     </button>
     <div class="btn-group">
       <button type="button" class="btn btn-ctrl">
-        <i class="gel-icon-arrow-left" aria-hidden="true"></i>
+        <i class="gel-icon-angle-left" aria-hidden="true"></i>
       </button>
       <button type="button" class="btn btn-ctrl">
-        <i class="gel-icon-arrow-right" aria-hidden="true"></i>
+        <i class="gel-icon-angle-right" aria-hidden="true"></i>
       </button>
     </div>
   </div>
@@ -84,11 +84,11 @@
       </button>
       <div class="btn-group">
       <button type="button" class="btn btn-ctrl btn-sm">
-        <i class="gel-icon-arrow-left gel-icon-xs" aria-hidden="true"></i>
+        <i class="gel-icon-angle-left gel-icon-xs" aria-hidden="true"></i>
         <span class="sr-only">Scroll left</span>
       </button>
       <button type="button" class="btn btn-ctrl btn-sm">
-        <i class="gel-icon-arrow-right gel-icon-xs" aria-hidden="true"></i>
+        <i class="gel-icon-angle-right gel-icon-xs" aria-hidden="true"></i>
         <span class="sr-only">Scroll right</span>
       </button>
     </div>
