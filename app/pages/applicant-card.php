@@ -5,47 +5,20 @@
   <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
   This applicant has been entered by Referred Candidate <a class="notification-link" href="#">View referral</a>
 </div>
-<section id="popup-top" class="bg-navy" role="header">
+<section id="popup-top" role="header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <h2 class="text-white">Daniel Applicant</h2>
+        <div class="col-lg-5">
+          <h2 class="mb-lg-0"><a class="link-alt" data-toggle="collapse" href="#app-details" aria-expanded="false" aria-controls="AppDetails">Daniel Applicant</a></h2>
         </div>
-        <div class="col-md-4 col-lg-2 mb-3 mb-sm-0">
-          <fieldset data-toggle="tooltip" data-placement="bottom" data-original-title="Talent pool status">
-            <legend class="sr-only">Segmented Control Small</legend>
-            <div class="btn-group btn-group-toggle segmented-control">
-              <label>
-                <input type="radio" name="options-seg-sm" id="option1" autocomplete="off" checked="checked">
-                <span class="btn btn-ctrl btn-sm">
-                  Active
-                </span>
-              </label>
-              <label>
-                <input type="radio" name="options-seg-sm" id="option2" autocomplete="off">
-                <span class="btn btn-ctrl btn-sm">
-                  Inactive
-                </span>
-              </label>
-            </div>
-          </fieldset>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-          <div class="btn-group d-print-none" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-sm btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
-            <div class="btn-group" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Actions
-              </button>
-              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="#">Dropdown link</a>
-                <a class="dropdown-item" href="#">Dropdown link</a>
-              </div>
-            </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-3 mb-sm-0">
+          <div class="toggle toggle-success">
+            <label>
+              <input type="checkbox" checked="">
+              <span>Status</span>
+            </label>
           </div>
         </div>
-
         <div class="col-6 col-md-4 col-lg-2">
           <fieldset data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
             <legend class="sr-only">3 trays</legend>
@@ -72,9 +45,36 @@
             </div>
           </fieldset>
         </div>
+        <div class="col-md-4 col-lg-3 text-right">
+          <div class="btn-group d-print-none" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-sm btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Actions
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Control</a>
+                <a class="dropdown-item" href="#">Communicate</a>
+                <a class="dropdown-item" href="#">New task/reminder</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+                <a class="dropdown-item" href="#">Item</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="w-100 mt-4"></div>
-      <dl class="row">
+      <dl class="row mt-3 collapse show mb-0" id="app-details">
         <span class="col-6 col-md-4 col-lg-2">
           <dt>Gender</dt>
           <dd>Male</dd>
@@ -138,7 +138,15 @@
           <?php for ($x =1; $x <= 3; $x++) {?>
               <div class="row mb-4">
                 <div class="mb-4 mb-lg-0 col-md-12 col-lg-6">
-                  <h5><a class="d-print-none" href="#"><i class="gel-icon-info-pointer"></i></a> International Consultant on Early Childhood Development</h5>
+                  <div class="position-relative">
+                    <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
+                      <i class="gel-icon-info-pointer"></i>
+                    </a>
+                    <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+                      <?php include "partials/_i-button.html" ?>
+                    </div>
+                    <h5 class="d-inline">International Consultant on Early Childhood Development</h5>
+                  </div>
                   <div class="row">
                       <span class="col-6 col-sm-3"><sup class="text-black-50">Job ID:</sup><br/> <span>942130</span></span>
                       <span class="col-6 col-sm-3"><sup class="text-black-50">Submit date:</sup> <br/><span>17 Nov 2017</span></span>

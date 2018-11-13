@@ -26,9 +26,9 @@
 		</main>
     <div class="main-footer border-top fixed-bottom p-3 bg-white d-print-none">
       <section class="container">
-        <div class="d-flex">
-          <button type="button" class="btn btn-outline-secondary mr-auto"><i class="gel-icon-angle-left"></i> Previous</button>
-          <button type="button" class="btn btn-outline-secondary">Next <i class="gel-icon-angle-right"></i></button>
+        <div class="d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-primary"><i class="gel-icon-angle-left"></i> Previous</button>
+          <button type="button" class="btn btn-outline-primary">Next <i class="gel-icon-angle-right"></i></button>
         </div>
       </section>
     </div>
