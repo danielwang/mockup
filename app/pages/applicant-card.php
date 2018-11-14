@@ -5,22 +5,22 @@
   <i class="gel-icon-info gel-icon-lg" aria-hidden="true"></i>
   This applicant has been entered by Referred Candidate <a class="notification-link" href="#">View referral</a>
 </div>
-<section id="popup-top" role="header">
+<header id="popup-top" role="header">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
           <h2 class="mb-lg-0"><a class="link-alt" data-toggle="collapse" href="#app-details" aria-expanded="false" aria-controls="AppDetails">Daniel Applicant</a></h2>
         </div>
-        <div class="col-6 col-md-4 col-lg-2 mb-3 mb-sm-0">
-          <div class="toggle toggle-success">
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-3 mb-sm-0">
+          <div class="toggle toggle-md toggle-success">
             <label>
               <input type="checkbox" checked="">
               <span>Status</span>
             </label>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <fieldset data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+          <fieldset class="trays" data-container="body" data-toggle="popover" data-placement="bottom" data-persist="true" data-content="You can set applicants into a coloured tray and the system will remember these when you go back to the manage applications screen to perform a bulk action on each tray. Find out more information on <a href='#'>Knowlege Portal</a>">
             <legend class="sr-only">3 trays</legend>
             <div class="tray tray-green tray-lg">
               <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
@@ -45,30 +45,20 @@
             </div>
           </fieldset>
         </div>
-        <div class="col-md-4 col-lg-3 text-right">
+        <div class="col-sm-4 col-md-4 col-lg-3 text-right">
           <div class="btn-group d-print-none" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-sm btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
+            <button type="button" class="btn btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
             <div class="btn-group" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button id="btnGroupDrop1" type="button" class="btn btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Actions
               </button>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop1">
+              <div class="dropdown-menu dropdown-menu-right vh-30 overflow-y-auto scroll" aria-labelledby="btnGroupDrop1">
                 <a class="dropdown-item" href="#">Control</a>
                 <a class="dropdown-item" href="#">Communicate</a>
                 <a class="dropdown-item" href="#">New task/reminder</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
-                <a class="dropdown-item" href="#">Item</a>
+                <?php for ($m =1; $m <= 12; $m++) {?>
+                <a class="dropdown-item" href="#">Another action <?php echo $m ?></a>
+                <?php } ?>
               </div>
             </div>
           </div>
@@ -93,7 +83,7 @@
         </span>
         <span class="col-6 col-md-4 col-lg-2">
           <dt>Flags</dt>
-          <dd></dd>
+          <dd>  <i class="text-muted gel-icon-location"></i><i class="text-muted gel-icon-bullhorn"></i><i class="text-muted gel-icon-info"></i><i class="text-muted gel-icon-lock"></i></dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
           <dt>Number</dt>
@@ -117,7 +107,7 @@
         </span>
       </dl>
     </div>
-</section>
+</header>
 <?php endblock()?>
 
 <?php startblock('page-tabs') ?>
@@ -162,17 +152,18 @@
                   <a href="#">No offer</a>
                 </div>
                 <div class="col-6 col-lg-1">
-                  <i class="gel-icon-location"></i><i class="gel-icon-bullhorn"></i><i class="gel-icon-info"></i><i class="gel-icon-lock"></i>
+                  <i class="text-muted gel-icon-location"></i><i class="text-muted gel-icon-bullhorn"></i><i class="text-muted gel-icon-info"></i><i class="text-muted gel-icon-lock"></i>
                 </div>
                 <div class="col-6 col-lg-2 text-lg-right">
                   <div class="dropdown d-inline-block d-print-none">
                       <button class="btn btn-ctrl btn-sm dropdown-toggle mr-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Actions
                       </button>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-menu dropdown-menu-right vh-30 overflow-y-auto scroll" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Add activity</a>
+                        <?php for ($i =1; $i <= 22; $i++) {?>
+                        <a class="dropdown-item" href="#">Another action <?php echo $i ?></a>
+                        <?php } ?>
                       </div>
                     </div>
                 </div>

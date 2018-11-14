@@ -136,6 +136,7 @@
     //icons
     [class^="gel-icon-"] {
       font-size: 1.25rem !important;
+      line-height: 1.25;
     }
   }
 }
@@ -151,6 +152,7 @@
     //icons
     [class^="gel-icon-"] {
       font-size: 1rem !important;
+      line-height: 1;
     }
   }
 }
@@ -190,7 +192,7 @@
 
 .btn-ctrl {
   border-color: $ctrl-border-color;
-  border-radius: $border-radius;
+  border-radius: $ctrl-border-radius;
   background-color: white;
   color: $body-color;
 
@@ -238,15 +240,15 @@
     &:first-child {
       .btn-ctrl {
         margin-left: 0;
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
+        border-top-left-radius: $ctrl-border-radius;
+        border-bottom-left-radius: $ctrl-border-radius;
       }
     }
 
     &:last-child {
       .btn-ctrl {
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
+        border-top-right-radius: $ctrl-border-radius;
+        border-bottom-right-radius: $ctrl-border-radius;
       }
     }
   }
@@ -272,7 +274,7 @@
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-prepend > .btn,
 .input-group > .input-group-prepend > .input-group-text {
-  @include border-right-radius($border-radius);
+  @include border-right-radius($ctrl-border-radius);
 }
 
 .input-group > .input-group-append > .btn,
@@ -281,5 +283,5 @@
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
-  @include border-right-radius($border-radius);
+  @include border-right-radius($ctrl-border-radius);
 }

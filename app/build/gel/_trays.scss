@@ -6,61 +6,65 @@ $tray-colors: ()
 !default;
 $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tray-colors);
 
-.tray {
-  cursor: default;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  position: relative;
-
-  label {
-    cursor: pointer;
-    vertical-align: top;
-    position: relative;
+.trays{
+  display: inline;
+  .tray {
+    cursor: default;
+    display: inline-block;
     width: 40px;
     height: 40px;
-    transition: all 0.3s ease-out;
+    position: relative;
 
-    &::before {
-      font-family: $gel-icon;
-      content: $tray;
-      font-size: $tray-size;
-      position: absolute;
-      z-index: 2;
-      top: -14px;
-    }
-
-    &::after {
-      font-family: $gel-icon;
+    label {
       cursor: pointer;
-      text-align: center;
-      content: "";
-      background: $white;
-      z-index: 1;
+      vertical-align: top;
+      position: relative;
+      width: 40px;
+      height: 30px;
+      transition: all 0.3s ease-out;
+
+      &::before {
+        font-family: $gel-icon;
+        content: $tray;
+        font-size: $tray-size;
+        position: absolute;
+        z-index: 2;
+        top: -14px;
+        left: 0;
+      }
+
+      &::after {
+        font-family: $gel-icon;
+        cursor: pointer;
+        text-align: center;
+        content: "";
+        background: $white;
+        z-index: 1;
+        position: absolute;
+        width: 26px;
+        height: 24px;
+        top: 2px;
+        left: 7px;
+        font-size: 18px;
+      }
+
+      &:hover{
+        transform: translateY(-3px);
+      }
+    }
+
+    input[type="radio"] {
       position: absolute;
-      width: 26px;
-      height: 24px;
-      top: 2px;
-      left: 7px;
-      font-size: 18px;
-    }
+      clip: rect(0,0,0,0);
+      pointer-events: none;
 
-    &:hover{
-      transform: translateY(-3px);
-    }
-  }
+      &:checked + label::after {
+        content: $check-icon;
+      }
 
-  input[type="radio"] {
-    position: absolute;
-    clip: rect(0,0,0,0);
-    pointer-events: none;
-
-    &:checked + label::after {
-      content: $check-icon;
-    }
-
-    &:focus + label{
-      transform: translateY(-3px);
+      &:focus + label{
+        transform: translateY(-3px);
+      }
     }
   }
 }

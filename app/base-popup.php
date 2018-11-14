@@ -18,18 +18,19 @@
    </div>
 </nav>
 <!-- ************  page body ************ -->
-		<main id="gel-main" role="main">
-			<section class="container">
-				<?php startblock('page-body')?>
-				<?php endblock()?>
-			</section>
-		</main>
-    <div class="main-footer border-top fixed-bottom p-3 bg-white d-print-none">
-      <section class="container">
-        <div class="d-flex justify-content-between">
-          <button type="button" class="btn btn-outline-primary"><i class="gel-icon-angle-left"></i> Previous</button>
-          <button type="button" class="btn btn-outline-primary">Next <i class="gel-icon-angle-right"></i></button>
-        </div>
-      </section>
+<main id="gel-main" class="pb-5" role="main">
+	<section class="container">
+		<?php startblock('page-body')?>
+		<?php endblock()?>
+    <div class="my-5 py-5"></div>
+	</section>
+</main>
+<footer class="main-footer border-top fixed-bottom p-3 bg-white d-print-none">
+  <section class="container">
+    <div class="d-flex justify-content-between">
+      <button type="button" class="btn btn-outline-primary"><i class="gel-icon-angle-left"></i> Previous</button>
+      <button type="button" class="btn btn-outline-primary">Next <i class="gel-icon-angle-right"></i></button>
     </div>
+  </section>
+</footer>
 <?php include '_foot.html';?>

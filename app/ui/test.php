@@ -12,6 +12,7 @@
   </div>
 </div>
 <hr>
+<h5>Default</h5>
 <div class="row">
   <div class="col-lg-4 mb-3">
     <button type="button" class="btn btn-primary">Default</button>
@@ -54,6 +55,10 @@
   <div class="col-sm-6 col-lg-2">
     <select class="form-control">
       <option> Select</option>
+      <option>Option</option>
+      <option>Option</option>
+      <option>Option</option>
+      <option>Option</option>
     </select>
   </div>
   <div class="col-sm-6 col-lg-2 mb-3">
@@ -70,7 +75,8 @@
     </div>
   </div>
 </div>
-
+<hr>
+<h5>Small</h5>
 <div class="row">
   <div class="col-lg-4 mb-3">
       <button type="button" class="btn btn-primary btn-sm">Small</button>
@@ -115,6 +121,10 @@
   <div class="col-sm-6 col-lg-2">
     <select class="form-control form-control-sm">
       <option>Select</option>
+      <option>Option</option>
+      <option>Option</option>
+      <option>Option</option>
+      <option>Option</option>
     </select>
   </div>
   <div class="col-sm-6 col-lg-2 mb-3">
@@ -145,7 +155,7 @@
       </label>
     </div>
   </div>
-  <div class="col-sm-6 col-lg-3 mb-3">
+  <div class="col-sm-6 col-lg-2 mb-3">
     <div class="checkbox checkbox-primary">
       <input id="checkbox2" type="checkbox" checked="">
       <label for="checkbox2">
@@ -153,7 +163,7 @@
       </label>
     </div>
   </div>
-  <div class="col-sm-6 col-lg-3 mb-3">
+  <div class="col-sm-6 col-lg-2 mb-3">
     <div class="radio radio-primary">
         <input type="radio" name="radio1" id="radio1" value="option1" checked="">
         <label for="radio1">
@@ -161,5 +171,31 @@
         </label>
       </div>
   </div>
+    <div class="col-sm-6 col-lg-2 mb-3">
+      <fieldset class="trays" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
+        <legend class="sr-only">3 trays</legend>
+        <div class="tray tray-green tray-lg">
+          <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
+          <label for="radio-b-l-1">
+            <span class="sr-only">
+              Green</span>
+          </label>
+        </div>
+        <div class="tray tray-orange tray-lg">
+          <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
+          <label for="radio-b-l-2">
+            <span class="sr-only">
+              Orange</span>
+          </label>
+        </div>
+        <div class="tray tray-red tray-lg">
+          <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
+          <label for="radio-b-l-3">
+            <span class="sr-only">
+              Red</span>
+          </label>
+        </div>
+      </fieldset>
+    </div>
 </div>
 <?php endblock()?>

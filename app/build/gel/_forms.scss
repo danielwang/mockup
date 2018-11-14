@@ -2,11 +2,12 @@
   font-size: $font-size-lg;
 }
 .form-control-lg{
-  height: $ctrl-size-lg;
+  font-size: $ctrl-size-lg;
 }
 
 .form-control-sm{
   font-size: $font-size-base;
+  line-height: 1.125rem;
 }
 
 .form-group{
