@@ -123,10 +123,21 @@
 
   &.dropdown-toggle {
     &+.dropdown-menu {
-      margin-top: $spacer/4;
-
       &::after {
-        display: none;
+        position: absolute;
+        top: -8px;
+        left: auto;
+        right: 24px;
+        display: block;
+        content: "";
+        border-top: 1px solid #bac6d2;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 1px solid #bac6d2;
+        width: 14px;
+        height: 14px;
+        transform: rotate(45deg);
+        background: white;
       }
     }
   }

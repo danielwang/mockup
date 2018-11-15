@@ -1,57 +1,55 @@
-
-.dropdown-toggle{
+.dropdown-toggle {
   margin-right: $spacer;
   padding-right: 1.75rem;
 
-  &:after{
+  .btn-group &{
+    margin-right: 0;
+  }
+
+  &:after {
     vertical-align: baseline;
-    border:0;
+    border: 0;
     content: "\e92a";
     font-family: $gel-icon;
   }
-
   // dropup
   .dropup & {
-    &:after{
-        content: "\e92b";
-        border: 0;
-        vertical-align: baseline;
+    &:after {
+      content: "\e92b";
+      border: 0;
+      vertical-align: baseline;
     }
   }
 
-  &.no-caret{
+  &.no-caret {
     padding-right: 0;
-    margin-right:  0;
+    margin-right: 0;
 
-    &:after{
+    &:after {
       content: "" !important;
     }
 
-    &+ .dropdown-menu{
+    &+ .dropdown-menu {
       margin-top: 0;
-      &:after{
+
+      &:after {
         border: 0;
       }
     }
   }
-
 }
 
-.show > .dropdown-toggle{
-  &:after{
+.show > .dropdown-toggle {
+  &:after {
     content: "\e92b";
   }
 }
 
-.dropup.show > .dropdown-toggle{
-  &:after{
-      content: "\e92a";
-  }
-}
 
-.dropdown-menu{
+
+.dropdown-menu {
   padding: $spacer * 1.25;
-  margin-top: $spacer * 1.5;
+  margin-top: $spacer;
 
   &:after {
     position: absolute;
@@ -65,14 +63,13 @@
     border-left: 10px solid transparent;
   }
 
-  &.dropdown-menu-right{
+  &.dropdown-menu-right {
     left: auto;
-    right:-0.75rem;
+    right: -0.75rem;
   }
 
   .dropdown-item {
     color: $link-color-alt;
-
     @include font-regular();
     font-size: 1rem;
     margin-bottom: $spacer * 0.25;
@@ -80,7 +77,8 @@
     //   text-decoration: underline;
     //   outline: none;
     // }
-    &:hover, &:focus {
+    &:focus,
+    &:hover {
       color: $azure;
       background: transparent;
 
@@ -96,16 +94,15 @@
       font-size: 1.1rem;
     }
   }
-
 }
 
-.dropup{
-
-  .dropdown-menu{
+// dropup
+.dropup {
+  .dropdown-menu {
     bottom: 25px;
     box-shadow: 0 -3px 4px rgba(8, 8, 8, .11);
 
-    &:after{
+    &:after {
       top: auto;
       left: auto;
       bottom: -10px;
@@ -113,4 +110,9 @@
     }
   }
 
+  &.show > .dropdown-toggle {
+    &:after {
+      content: "\e92a";
+    }
+  }
 }

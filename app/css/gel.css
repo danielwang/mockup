@@ -9485,11 +9485,21 @@ label {
   cursor: progress !important;
   pointer-events: none; }
 
-.btn.dropdown-toggle + .dropdown-menu {
-  margin-top: 0.25rem; }
-
 .btn.dropdown-toggle + .dropdown-menu::after {
-  display: none; }
+  position: absolute;
+  top: -8px;
+  left: auto;
+  right: 24px;
+  display: block;
+  content: "";
+  border-top: 1px solid #bac6d2;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 1px solid #bac6d2;
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background: white; }
 
 @media (min-width: 992px) {
     .btn {
@@ -10002,6 +10012,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   margin-right: 1rem;
   padding-right: 1.75rem; }
 
+.btn-group .dropdown-toggle {
+  margin-right: 0; }
+
 .dropdown-toggle:after {
   vertical-align: baseline;
   border: 0;
@@ -10029,12 +10042,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 .show > .dropdown-toggle:after {
   content: "\e92b"; }
 
-.dropup.show > .dropdown-toggle:after {
-  content: "\e92a"; }
-
 .dropdown-menu {
   padding: 1.25rem;
-  margin-top: 1.5rem; }
+  margin-top: 1rem; }
 
 .dropdown-menu:after {
   position: absolute;
@@ -10058,11 +10068,11 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   font-size: 1rem;
   margin-bottom: 0.25rem; }
 
-.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+.dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:hover {
   color: #00a1e5;
   background: transparent; }
 
-.dropdown-menu .dropdown-item:hover [class^="gel-icon-"], .dropdown-menu .dropdown-item:focus [class^="gel-icon-"] {
+.dropdown-menu .dropdown-item:focus [class^="gel-icon-"], .dropdown-menu .dropdown-item:hover [class^="gel-icon-"] {
   color: #00a1e5; }
 
 .dropdown-menu .dropdown-item [class^="gel-icon-"] {
@@ -10080,6 +10090,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   left: auto;
   bottom: -10px;
   transform: rotate(180deg); }
+
+.dropup.show > .dropdown-toggle:after {
+  content: "\e92a"; }
 /*
  * The MIT License
  * Copyright (c) 2012 Matias Meno <m@tias.me>

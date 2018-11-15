@@ -51,20 +51,22 @@
               <button id="btnGroupDrop1" type="button" class="btn btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Actions
               </button>
-              <div class="dropdown-menu dropdown-menu-right max-vh-70 overflow-y-auto scroll" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="#">Control</a>
-                <a class="dropdown-item" href="#">Communicate</a>
-                <a class="dropdown-item" href="#">New task/reminder</a>
-                <div class="dropdown-divider"></div>
-                <?php for ($m =1; $m <= 8; $m++) {?>
-                <a class="dropdown-item" href="#">Another action <?php echo $m ?></a>
-                <?php } ?>
-                <div class="dropdown-divider"></div>
-                <div class="toggle toggle-success">
-                  <label>
-                    <input type="checkbox" checked="">
-                    <span>Active</span>
-                  </label>
+              <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="btnGroupDrop1">
+                <div class="max-vh-70 overflow-y-auto scroll p-4">
+                  <a class="dropdown-item" href="#">Control</a>
+                  <a class="dropdown-item" href="#">Communicate</a>
+                  <a class="dropdown-item" href="#">New task/reminder</a>
+                  <div class="dropdown-divider"></div>
+                  <?php for ($m =1; $m <= 8; $m++) {?>
+                  <a class="dropdown-item" href="#">Another action <?php echo $m ?></a>
+                  <?php } ?>
+                  <div class="dropdown-divider"></div>
+                  <div class="toggle toggle-success">
+                    <label>
+                      <input type="checkbox" checked="">
+                      <span>Active</span>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -189,11 +191,13 @@
                       <button class="btn btn-ctrl btn-sm dropdown-toggle mr-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Actions
                       </button>
-                      <div class="dropdown-menu dropdown-menu-right vh-30 overflow-y-auto scroll" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Add activity</a>
-                        <?php for ($i =1; $i <= 22; $i++) {?>
-                        <a class="dropdown-item" href="#">Another action <?php echo $i ?></a>
-                        <?php } ?>
+                      <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="dropdownMenuButton">
+                        <div class="vh-30 overflow-y-auto scroll p-4">
+                          <a class="dropdown-item" href="#">Add activity</a>
+                          <?php for ($i =1; $i <= 22; $i++) {?>
+                          <a class="dropdown-item" href="#">Another action <?php echo $i ?></a>
+                          <?php } ?>
+                        </div>
                       </div>
                     </div>
                 </div>
