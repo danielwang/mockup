@@ -164,12 +164,18 @@
     </div>
   </div>
   <div class="col-sm-6 col-lg-2 mb-3">
-    <div class="radio radio-primary">
-        <input type="radio" name="radio1" id="radio1" value="option1" checked="">
+    <div class="radio radio-inline radio-primary">
+        <input type="radio" name="radio1" id="radio1" value="option1" checked="" />
         <label for="radio1">
           Radio
         </label>
       </div>
+    <div class="radio radio-inline radio-primary">
+      <input type="radio" name="radio1" id="radio2" value="option1" />
+      <label for="radio2">
+        Radio 2
+      </label>
+    </div>
   </div>
     <div class="col-sm-6 col-lg-2 mb-3">
       <fieldset class="trays" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">

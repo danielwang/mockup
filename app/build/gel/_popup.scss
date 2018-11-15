@@ -6,6 +6,8 @@
     &:before{
       content: "\e92a";
       font-family: $gel-icon;
+      font-size: $font-size-lg;
+      margin-right: $spacer*0.5;
     }
     &.collapsed{
       &:before{

@@ -15,18 +15,9 @@
   border-radius: 50%;
   display: inline-block;
 }
-.dot-green {
-  @include dot-variant($green);
-}
 
-.dot-red {
-  @include dot-variant($red);
-}
-
-.dot-orange {
-  @include dot-variant($orange);
-}
-
-.dot-blue {
-  @include dot-variant($blue);
+@each $color, $value in $colors {
+  .dot-#{$color}{
+    @include dot-variant($color);
+  }
 }
