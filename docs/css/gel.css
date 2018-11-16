@@ -12105,7 +12105,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   position: absolute;
   width: 26px;
   height: 24px;
-  top: 2px;
+  top: -4px;
   left: 7px;
   font-size: 18px; }
 
@@ -12135,7 +12135,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   font-size: 12px;
   width: 16px;
   height: 16px;
-  top: -2px;
+  top: -6px;
   left: 4px; }
 
 .link-alt {

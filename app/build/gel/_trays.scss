@@ -32,7 +32,7 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
       font-size: 12px;
       width: 16px;
       height: 16px;
-      top: -2px;
+      top: -6px;
       left: 4px;
     }
   }
@@ -76,7 +76,7 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
         position: absolute;
         width: 26px;
         height: 24px;
-        top: 2px;
+        top: -4px;
         left: 7px;
         font-size: 18px;
       }
