@@ -2,9 +2,41 @@ $check-icon: "\e91d";
 $tray: "\e95d";
 $tray-size: 2.5rem;
 $tray-size-sm: 20px;
-$tray-colors: ()
-!default;
+$tray-colors: ()!default;
+
 $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tray-colors);
+@mixin tray-variant($color) {
+  label {
+    &::before {
+      color: $color;
+    }
+
+    &::after {
+      color: $color;
+    }
+  }
+}
+@each $color, $value in $tray-colors {
+  .tray-#{$color} {
+    @include tray-variant($value);
+  }
+}
+@mixin tray-size($size) {
+  label {
+    &::before {
+      top: -10px;
+      font-size: 1.5rem;
+    }
+
+    &::after {
+      font-size: 12px;
+      width: 16px;
+      height: 16px;
+      top: -2px;
+      left: 4px;
+    }
+  }
+}
 
 .trays{
   display: inline;
@@ -31,6 +63,7 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
         z-index: 2;
         top: -14px;
         left: 0;
+        line-height: 1.2
       }
 
       &::after {
@@ -66,43 +99,11 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
         transform: translateY(-3px);
       }
     }
-  }
-}
-@mixin tray-variant($color) {
-  label {
-    &::before {
-      color: $color;
-    }
 
-    &::after {
-      color: $color;
+    &.tray-sm {
+      width: 28px;
+      height: 20px;
+      @include tray-size($tray-size-sm);
     }
   }
-}
-@each $color, $value in $tray-colors {
-  .tray-#{$color} {
-    @include tray-variant($value);
-  }
-}
-@mixin tray-size($size) {
-  label {
-    &::before {
-      top: -10px;
-      font-size: 1.5rem;
-    }
-
-    &::after {
-      font-size: 12px;
-      width: 16px;
-      height: 16px;
-      top: -2px;
-      left: 4px;
-    }
-  }
-}
-
-.tray-sm {
-  width: 28px;
-  height: 20px;
-  @include tray-size($tray-size-sm);
 }

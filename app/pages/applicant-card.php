@@ -12,14 +12,14 @@
 <header id="popup-top" role="header">
     <div class="container">
       <div class="row">
-        <div class="order-3 col-lg-7 order-lg-1">
-          <h2 class="mb-lg-0">
+        <div class="order-2 col-md-6 col-lg-7 order-md-1">
+          <h2 class="mt-3 my-lg-0">
             <a class="link-alt" data-toggle="collapse" href="#app-details" aria-expanded="false" aria-controls="AppDetails">Daniel Johnson</a>
             <span class="dot-green" data-toggle="tooltip" data-placement="bottom" data-original-title="Active"></span>
           </h2>
         </div>
-        <div class="order-1 col-sm-4 col-md-4 col-lg-2">
-          <fieldset class="trays" data-container="body" data-toggle="popover" data-placement="bottom" data-persist="true" data-content="You can set applicants into a coloured tray and the system will remember these when you go back to the manage applications screen to perform a bulk action on each tray. Find out more information on <a href='#'>Knowlege Portal</a>">
+        <div class="order-1 col-md-6 col-lg-5 text-md-right">
+          <fieldset class="trays mr-3" data-container="body" data-toggle="popover" data-placement="bottom" data-persist="true" data-content="You can set applicants into a coloured tray and the system will remember these when you go back to the manage applications screen to perform a bulk action on each tray.">
             <legend class="sr-only">3 trays</legend>
             <div class="tray tray-green tray-lg">
               <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
@@ -43,9 +43,7 @@
               </label>
             </div>
           </fieldset>
-        </div>
-        <div class="order-2 col-sm-4 col-md-4 col-lg-3 text-lg-right">
-          <div class="btn-group d-print-none" role="group" aria-label="Button group with nested dropdown">
+          <div class="btn-group d-print-none" role="group" aria-label="Applicant actions">
             <button type="button" class="btn btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
             <div class="btn-group" role="group">
               <button id="btnGroupDrop1" type="button" class="btn btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

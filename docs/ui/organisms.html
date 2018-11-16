@@ -129,19 +129,19 @@
 </blockquote>
         </div>
                   <div class="page-actions col-lg-4 mt-lg-2">
-          <span class="item">
+          <!-- <span class="item">
             <a class="text-center" target="_blank" href="#" title="Download Sketch files">
               <i class="gel-icon-lg gel-icon-sketch" aria-hidden="true"></i> <span>Sketch</span>
             </a>
-          </span>
+          </span> -->
           <span class="item">
               <a class="text-center" target="_blank" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
-                <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
+                <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
               </a>
           </span>
           <span class="item">
-              <a class="text-center" target="_blank" href="#" title="Feedback">
-                <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
+              <a class="text-center" onclick="javascript: window.print();" href="#" title="Print">
+                <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
               </a>
           </span>
           </div>
@@ -744,7 +744,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
 </ul></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-md-4">
     <h3>Small</h3>
-    <fieldset class="d-inline-block" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
+    <fieldset class="trays" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
       <div class="tray tray-sm tray-green">
         <input type="radio" name="radio-sm" id="radio-sm-1" value="option2">
         <label for="radio-sm-1">
@@ -770,7 +770,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
   </div>
   <div class="col-md-8">
     <h3>Default</h3>
-    <fieldset class="d-inline-block" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
+    <fieldset class="trays" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
       <legend class="sr-only">3 trays</legend>
       <div class="tray tray-green tray-lg">
         <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
@@ -809,7 +809,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
   <tbody>
     <tr>
       <th scope="row">
-        <fieldset>
+        <fieldset class="trays">
           <div class="tray tray-sm tray-green">
             <input type="radio" name="radio-sm-a" id="radio-sm-a-1" value="option2">
             <label for="radio-sm-a-1">
@@ -838,7 +838,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
     </tr>
     <tr>
       <th scope="row">
-        <fieldset>
+        <fieldset class="trays">
           <div class="tray tray-sm tray-green">
             <input type="radio" name="radio-sm-b" id="radio-sm-b-1" value="option2">
             <label for="radio-sm-b-1">
@@ -867,7 +867,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
     </tr>
     <tr>
       <th scope="row">
-        <fieldset>
+        <fieldset class="trays">
           <div class="tray tray-sm tray-green">
             <input type="radio" name="radio-sm-c" id="radio-sm-c-1" value="option2">
             <label for="radio-sm-c-1">

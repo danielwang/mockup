@@ -12049,6 +12049,24 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 .marker-outline .timeline-item:hover .timeline-marker:before {
   background: #00a1e5; }
 
+.tray-red label::before {
+  color: #e81700; }
+
+.tray-red label::after {
+  color: #e81700; }
+
+.tray-orange label::before {
+  color: #ff6200; }
+
+.tray-orange label::after {
+  color: #ff6200; }
+
+.tray-green label::before {
+  color: #10a746; }
+
+.tray-green label::after {
+  color: #10a746; }
+
 .trays {
   display: inline; }
 
@@ -12074,7 +12092,8 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   position: absolute;
   z-index: 2;
   top: -14px;
-  left: 0; }
+  left: 0;
+  line-height: 1.2; }
 
 .trays .tray label::after {
   font-family: "gel-icon";
@@ -12104,33 +12123,15 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 .trays .tray input[type="radio"]:focus + label {
   transform: translateY(-3px); }
 
-.tray-red label::before {
-  color: #e81700; }
-
-.tray-red label::after {
-  color: #e81700; }
-
-.tray-orange label::before {
-  color: #ff6200; }
-
-.tray-orange label::after {
-  color: #ff6200; }
-
-.tray-green label::before {
-  color: #10a746; }
-
-.tray-green label::after {
-  color: #10a746; }
-
-.tray-sm {
+.trays .tray.tray-sm {
   width: 28px;
   height: 20px; }
 
-.tray-sm label::before {
+.trays .tray.tray-sm label::before {
   top: -10px;
   font-size: 1.5rem; }
 
-.tray-sm label::after {
+.trays .tray.tray-sm label::after {
   font-size: 12px;
   width: 16px;
   height: 16px;

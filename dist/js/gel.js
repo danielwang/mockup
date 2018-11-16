@@ -76,11 +76,13 @@ if (window.Element && !Element.prototype.closest) {
 }
 
 function closeMenu(e) {
-  if (!e.target.closest('#gel-menu') && !e.target.closest('.nav-toggle') && menu.classList.contains('open')) {
-      menu.classList.remove('open');
-  }
-  if (e.keyCode == 27 && menu.classList.contains('open')) {
-      menu.classList.remove('open');
+  if (menu) {
+    if (!e.target.closest('#gel-menu') && !e.target.closest('.nav-toggle') && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+    }
+    if (e.keyCode == 27 && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+    }
   }
 }
 document.addEventListener('touchstart', closeMenu);
