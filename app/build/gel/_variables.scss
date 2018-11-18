@@ -67,7 +67,7 @@ $pink:    #f50057 !default;
 $red:     #E81700 !default;
 $orange:  #ff6200 !default;
 $yellow:  #E1A931 !default;
-$green:   #10a746 !default;
+$green:   #328423 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $navy:    darken($blue, 18%)!default;
@@ -146,7 +146,7 @@ $red-800: darken($red, 27%);
 $red-900: darken($red, 36%);
 
 
-$green-100: lighten($green, 36%);
+$green-100: lighten($green, 56%);
 $green-200: lighten($green, 27%);
 $green-300: lighten($green, 18%);
 $green-400: lighten($green, 9%);
@@ -154,7 +154,7 @@ $green-500: $green;
 $green-600: darken($green, 9%);
 $green-700: darken($green, 18%);
 $green-800: darken($green, 27%);
-$green-900: darken($green, 36%);
+$green-900: darken($green, 16%);
 
 
 $orange-100: lighten($orange, 36%);

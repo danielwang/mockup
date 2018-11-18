@@ -55,7 +55,7 @@
   @include notification-variant($red-100,$red-500, $red-900)
 }
 .notification-success{
-  @include notification-variant($green-100,$green-600, $green-800)
+  @include notification-variant($green-100,$body-color, $body-color)
 }
 // @each $color, $value in $theme-colors {
 //   .notification-#{$color} {
@@ -70,7 +70,7 @@
 // }
 @mixin alert-variants($background, $color, $border-color, $icon-color) {
   color: $color;
-  background: rgba($background, 0.5);
+  background: $background;
   border-color: $border-color;
 
   .alert-link {
@@ -94,7 +94,7 @@
 }
 
 .alert-success{
-  @include alert-variants($green-100, $green-800, $green-600, $green-600)
+  @include alert-variants($green-100, $green-900, $green-100, $green-900)
 }
 
 .alert-danger{
