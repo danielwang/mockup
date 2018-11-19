@@ -60,12 +60,12 @@ $grays: map-merge((
 
 $grey:    #3d485b !default;
 $blue:    #0063b0 !default;
-$azure:   #00a1e5 !default;
+$azure:   #1AA5E6 !default;
 $indigo:  #6610f2 !default;
 $purple:  #7E52A0 !default;
 $pink:    #f50057 !default;
-$red:     #E81700 !default;
-$orange:  #ff6200 !default;
+$red:     #CD2F2F !default;
+$orange:  #FAC238 !default;
 $yellow:  #E1A931 !default;
 $green:   #328423 !default;
 $teal:    #20c997 !default;
@@ -131,8 +131,8 @@ $azure-400: lighten($azure, 9%);
 $azure-500: $azure;
 $azure-600: darken($azure, 9%);
 $azure-700: darken($azure, 18%);
-$azure-800: darken($azure, 27%);
-$azure-900: darken($azure, 36%);
+$azure-800: darken($azure, 24%);
+$azure-900: darken($azure, 27%);
 
 
 $red-100: lighten($red, 36%);
@@ -141,9 +141,9 @@ $red-300: lighten($red, 18%);
 $red-400: lighten($red, 9%);
 $red-500: $red;
 $red-600: darken($red, 9%);
-$red-700: darken($red, 18%);
-$red-800: darken($red, 27%);
-$red-900: darken($red, 36%);
+$red-700: darken($red, 12%);
+$red-800: darken($red, 15%);
+$red-900: darken($red, 18%);
 
 
 $green-100: lighten($green, 56%);
@@ -157,9 +157,9 @@ $green-800: darken($green, 27%);
 $green-900: darken($green, 16%);
 
 
-$orange-100: lighten($orange, 36%);
-$orange-200: lighten($orange, 27%);
-$orange-300: lighten($orange, 18%);
+$orange-100: lighten($orange, 27%);
+$orange-200: lighten($orange, 15%);
+$orange-300: lighten($orange, 12%);
 $orange-400: lighten($orange, 9%);
 $orange-500: $orange;
 $orange-600: darken($orange, 9%);
