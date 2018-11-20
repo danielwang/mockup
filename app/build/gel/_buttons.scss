@@ -145,7 +145,7 @@
   @include media-breakpoint-between(lg,xxl) {
     // 34px height
     height: 34px;
-    @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, 1.25rem, $btn-border-radius);
+    @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, 1.5rem, $btn-border-radius);
     //icons
     [class^="gel-icon-"] {
       font-size: 1.125rem !important;
@@ -250,6 +250,7 @@
       border-radius: 0;
       margin-left: -1px;
       @include text-truncate();
+      line-height: 1.5rem;
     }
 
     &:first-child {

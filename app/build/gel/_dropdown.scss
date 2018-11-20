@@ -1,5 +1,9 @@
+.dropdown{
+  display: inline-block;
+}
+
 .dropdown-toggle {
-  margin-right: $spacer;
+//  margin-right: $spacer;
   padding-right: 1.75rem;
 
   .btn-group &{
@@ -7,7 +11,7 @@
   }
 
   &:after {
-    vertical-align: baseline;
+    vertical-align: top;
     border: 0;
     content: "\e92a";
     font-family: $gel-icon;
@@ -17,7 +21,7 @@
     &:after {
       content: "\e92b";
       border: 0;
-      vertical-align: baseline;
+      vertical-align: top;
     }
   }
 
