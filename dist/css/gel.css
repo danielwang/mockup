@@ -9506,7 +9506,7 @@ label {
       height: 34px;
       padding: 0.25rem 1.5rem;
       font-size: 0.875rem;
-      line-height: 1.25rem;
+      line-height: 1.5rem;
       border-radius: 1.5rem; }
       .btn [class^="gel-icon-"] {
         font-size: 1.125rem !important;
@@ -9580,7 +9580,8 @@ label {
   margin-left: -1px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; }
+  white-space: nowrap;
+  line-height: 1.5rem; }
 
 .segmented-control label:first-child .btn-ctrl {
   margin-left: 0;
@@ -10008,15 +10009,17 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   background-position: right 8px bottom 8px;
   background-size: 10px 10px; }
 
+.dropdown {
+  display: inline-block; }
+
 .dropdown-toggle {
-  margin-right: 1rem;
   padding-right: 1.75rem; }
 
 .btn-group .dropdown-toggle {
   margin-right: 0; }
 
 .dropdown-toggle:after {
-  vertical-align: baseline;
+  vertical-align: top;
   border: 0;
   content: "\e92a";
   font-family: "gel-icon"; }
@@ -10024,7 +10027,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 .dropup .dropdown-toggle:after {
   content: "\e92b";
   border: 0;
-  vertical-align: baseline; }
+  vertical-align: top; }
 
 .dropdown-toggle.no-caret {
   padding-right: 0;
@@ -10927,7 +10930,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 @media (min-width: 992px) {
       #gel-header .page-actions {
         order: 2;
-        align-items: center; } }
+        align-items: start; } }
 
 #gel-header .page-actions .item {
   position: relative; }
@@ -11108,11 +11111,12 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   color: white; }
 
 #gel-menu menu {
-  margin-top: 3.75rem;
+  margin-top: 2rem;
   padding: 0 3rem 2rem; }
 
 @media (min-width: 1200px) {
       #gel-menu menu {
+        margin-top: 3.75rem;
         position: sticky;
         top: 3.75rem;
         height: calc(100vh - 3.75rem);
