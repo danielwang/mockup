@@ -8344,7 +8344,7 @@ label {
 
 .notification-success {
   color: #1d262d;
-  background-color: #d7f3d2; }
+  background-color: #afe7a5; }
   .notification-success [class^="gel-icon-"] {
     color: #1d262d;
     vertical-align: middle; }
@@ -8382,8 +8382,8 @@ label {
 
 .alert-success {
   color: #1a4412;
-  background: #d7f3d2;
-  border-color: #d7f3d2; }
+  background: #afe7a5;
+  border-color: #afe7a5; }
   .alert-success .alert-link {
     color: #1a4412;
     font-weight: 400;
@@ -10557,7 +10557,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   font-size: 1rem; }
 
 .form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn {
-  font-size: 3rem; }
+  font-size: 1rem; }
 
 .form-control-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-append > .btn {
   font-size: 0.875rem;

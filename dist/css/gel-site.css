@@ -31,10 +31,10 @@
     color: #536a81;
 }
 .red-100 {
-  background-color: #ffaaa1;
+  background-color: #F1C2C2;
 }
 .red-100::before {
-  content: "#ffaaa1";
+  content: "#F1C2C2";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -42,76 +42,10 @@
 }
 
 .red-900 {
-  background-color: #300500;
+  background-color: #821E1E;
 }
 .red-900::before {
-  content: "#300500";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.red-200 {
-  background-color: #ff8173;
-}
-.red-200::before {
-  content: "#ff8173";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.red-800 {
-  background-color: #5e0900;
-}
-.red-800::before {
-  content: "#5e0900";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.red-300 {
-  background-color: #ff5745;
-}
-.red-300::before {
-  content: "#ff5745";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.red-700 {
-  background-color: #8c0e00;
-}
-.red-700::before {
-  content: "#8c0e00";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.red-400 {
-  background-color: #ff2e17;
-}
-.red-400::before {
-  content: "#ff2e17";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.red-600 {
-  background-color: #ba1200;
-}
-.red-600::before {
-  content: "#ba1200";
+  content: "#821E1E";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -119,109 +53,10 @@
 }
 
 .red-500 {
-  background-color: #e81700;
+  background-color: #CD2F2F;
 }
 .red-500::before {
-  content: "#e81700";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-100 {
-  background-color: #d7c7e2;
-}
-.purple-100::before {
-  content: "#d7c7e2";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-900 {
-  background-color: #1e1427;
-}
-.purple-900::before {
-  content: "#1e1427";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-200 {
-  background-color: #c1a9d3;
-}
-.purple-200::before {
-  content: "#c1a9d3";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-800 {
-  background-color: #362345;
-}
-.purple-800::before {
-  content: "#362345";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-300 {
-  background-color: #ab8bc3;
-}
-.purple-300::before {
-  content: "#ab8bc3";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-700 {
-  background-color: #4e3363;
-}
-.purple-700::before {
-  content: "#4e3363";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-400 {
-  background-color: #956cb4;
-}
-.purple-400::before {
-  content: "#956cb4";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-600 {
-  background-color: #664282;
-}
-.purple-600::before {
-  content: "#664282";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.purple-500 {
-  background-color: #7E52A0;
-}
-.purple-500::before {
-  content: "#7E52A0";
+  content: "#CD2F2F";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -437,10 +272,10 @@
 }
 
 .light-blue-100 {
-  background-color: #9ee2ff;
+  background-color: #C0E6F8;
 }
 .light-blue-100::before {
-  content: "#9ee2ff";
+  content: "#C0E6F8";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -448,76 +283,10 @@
 }
 
 .light-blue-900 {
-  background-color: #00202d;
+  background-color: #0C4C6B;
 }
 .light-blue-900::before {
-  content: "#00202d";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.light-blue-200 {
-  background-color: #70d4ff;
-}
-.light-blue-200::before {
-  content: "#70d4ff";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.light-blue-800 {
-  background-color: #00405b;
-}
-.light-blue-800::before {
-  content: "#00405b";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.light-blue-300 {
-  background-color: #42c7ff;
-}
-.light-blue-300::before {
-  content: "#42c7ff";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.light-blue-700 {
-  background-color: #006089;
-}
-.light-blue-700::before {
-  content: "#006089";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.light-blue-400 {
-  background-color: #14b9ff;
-}
-.light-blue-400::before {
-  content: "#14b9ff";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.light-blue-600 {
-  background-color: #0081b7;
-}
-.light-blue-600::before {
-  content: "#0081b7";
+  content: "#0C4C6B";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -525,10 +294,10 @@
 }
 
 .light-blue-500 {
-  background-color: #00a1e5;
+  background-color: #1AA5E6;
 }
 .light-blue-500::before {
-  content: "#00a1e5";
+  content: "#1AA5E6";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -536,10 +305,10 @@
 }
 
 .orange-100 {
-  background-color: #ffd4b8;
+  background-color: #FCEBBE;
 }
 .orange-100::before {
-  content: "#ffd4b8";
+  content: "#FCEBBE";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -547,76 +316,10 @@
 }
 
 .orange-900 {
-  background-color: #471c00;
+  background-color: #775603;
 }
 .orange-900::before {
-  content: "#471c00";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.orange-200 {
-  background-color: #ffb88a;
-}
-.orange-200::before {
-  content: "#ffb88a";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.orange-800 {
-  background-color: #752e00;
-}
-.orange-800::before {
-  content: "#752e00";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.orange-300 {
-  background-color: #ff9c5c;
-}
-.orange-300::before {
-  content: "#ff9c5c";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.orange-700 {
-  background-color: #a34000;
-}
-.orange-700::before {
-  content: "#a34000";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.orange-400 {
-  background-color: #ff802e;
-}
-.orange-400::before {
-  content: "#ff802e";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.orange-600 {
-  background-color: #d15200;
-}
-.orange-600::before {
-  content: "#d15200";
+  content: "#775603";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -624,10 +327,11 @@
 }
 
 .orange-500 {
-  background-color: #ff6400;
+  background-color: #FAC238;
+  color: #343a40 !important;
 }
 .orange-500::before {
-  content: "#ff6400";
+  content: "#FAC238";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -635,10 +339,10 @@
 }
 
 .green-100 {
-  background-color: #7cf2a6;
+  background-color: #D9F3D2;
 }
 .green-100::before {
-  content: "#7cf2a6";
+  content: "#D9F3D2";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
@@ -646,186 +350,22 @@
 }
 
 .green-900 {
-  background-color: black;
+  background-color: #1A4412;
 }
 .green-900::before {
-  content: "black";
+  content: "#1A4412";
   font-family: monospace;
   float: right;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-.green-200 {
-  background-color: #52ee8a;
-}
-.green-200::before {
-  content: "#52ee8a";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.green-800 {
-  background-color: #042911;
-}
-.green-800::before {
-  content: "#042911";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.green-300 {
-  background-color: #28ea6e;
-}
-.green-300::before {
-  content: "#28ea6e";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.green-700 {
-  background-color: #085323;
-}
-.green-700::before {
-  content: "#085323";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.green-400 {
-  background-color: #14d158;
-}
-.green-400::before {
-  content: "#14d158";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.green-600 {
-  background-color: #0c7d34;
-}
-.green-600::before {
-  content: "#0c7d34";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
 
 .green-500 {
-  background-color: #10a746;
+  background-color: #328423;
 }
 .green-500::before {
-  content: "#10a746";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-100 {
-  background-color: white;
-}
-.grey-100::before {
-  content: "white";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-900 {
-  background-color: #5c7c9c;
-}
-.grey-900::before {
-  content: "#5c7c9c";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-200 {
-  background-color: white;
-}
-.grey-200::before {
-  content: "white";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-800 {
-  background-color: #7793af;
-}
-.grey-800::before {
-  content: "#7793af";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-300 {
-  background-color: white;
-}
-.grey-300::before {
-  content: "white";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-700 {
-  background-color: #94aac0;
-}
-.grey-700::before {
-  content: "#94aac0";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-400 {
-  background-color: #ebeff3;
-}
-.grey-400::before {
-  content: "#ebeff3";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-600 {
-  background-color: #b1c1d1;
-}
-.grey-600::before {
-  content: "#b1c1d1";
-  font-family: monospace;
-  float: right;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.grey-500 {
-  background-color: #ced8e2;
-}
-.grey-500::before {
-  content: "#ced8e2";
+  content: "#328423";
   font-family: monospace;
   float: right;
   text-transform: uppercase;

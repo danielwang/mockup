@@ -10,13 +10,13 @@
 ?>
 
    <!-- Hiring manager centre, client branding -->
-   <?php if ($parent == "hm"){ ?>
+   <!-- <?php // if ($parent == "hm"){ ?>
       <header role="Branding header" class="client-branding" style="background-color: #cccccc">
           <div class="container-fluid">
             <img class="logo" src="<?php echo ($resURL) ?>site-images/client-logo.png" alt="client'name logo" />
           </div>
       </header>
-   <?php } ?>
+   <?php //} ?> -->
    <?php emptyblock('page-notification') ?>
    <!-- ************ topbar ************ -->
    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">

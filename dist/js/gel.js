@@ -85,10 +85,13 @@ function closeMenu(e) {
     }
   }
 }
-document.addEventListener('touchstart', closeMenu);
+
 document.addEventListener('click', closeMenu);
+// touch devices
+document.addEventListener('touchstart', closeMenu);
 // escape key to close off
 document.addEventListener('keyup',closeMenu);
+
 /*****************************************
     checkboxes select/unselect all
 *****************************************/

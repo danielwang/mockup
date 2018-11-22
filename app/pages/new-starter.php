@@ -82,7 +82,7 @@
   </div>
   <div class="col-lg-8 col-xxl-9">
      <div class="row">
-      <div class="order-2 order-md-1 mt-3 mt-md-0 col-sm-8 col-md-7">
+      <div class="order-2 order-md-1 mt-3 mt-md-0 col-md-7">
         <h5>Visibility</h5>
         <fieldset>
           <legend class="sr-only">visibility</legend>
@@ -108,7 +108,7 @@
           </div>
         </fieldset>
       </div>
-      <div class="order-1 order-md-2 col-sm-4 offset-md-2 col-md-3 d-flex justify-content-end align-items-end mt-3">
+      <div class="order-1 order-md-2 offset-md-2 col-md-3 d-flex justify-content-end align-items-end mt-3">
         <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#createModal">Create a task</button>
       </div>
     </div>
