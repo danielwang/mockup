@@ -10062,7 +10062,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 .dropdown-menu.dropdown-menu-right {
   left: auto;
-  right: -0.75rem; }
+  right: -0.65rem; }
 
 .dropdown-menu .dropdown-item {
   color: #2f3d49;
@@ -11220,7 +11220,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 .navbar .navbar-nav .dropdown-menu {
   top: 2.5rem;
-  right: -0.25rem;
+  right: -1.25rem;
   left: auto;
   max-width: 20rem;
   position: absolute; }
@@ -11251,12 +11251,10 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 @media (min-width: 768px) {
         .navbar .navbar-nav .user-panel {
-          display: flex;
-          margin-right: 0; }
-          .navbar .navbar-nav .user-panel .nav-link {
-            padding-right: 0; }
-          .navbar .navbar-nav .user-panel .dropdown-menu {
-            right: -0.625rem; } }
+          display: flex; } }
+
+.navbar .navbar-nav .user-panel .dropdown-toggle:after {
+  vertical-align: -0.15rem; }
 
 .navbar .navbar-nav .recent-items {
   display: none; }
@@ -11267,6 +11265,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 .navbar .navbar-nav .nav-help {
   margin-right: 0; }
+
+.navbar .navbar-nav .nav-help .dropdown-menu {
+  right: 0; }
 
 .navbar .navbar-nav .nav-help .dropdown-toggle:after {
   display: none; }
