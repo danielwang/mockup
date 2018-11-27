@@ -187,6 +187,7 @@ $colors: map-merge((
 ), $colors);
 
 $border-color:  $slate-300 !default;
+$divider-color: $slate-200 !default;
 $ctrl:          $slate-800;
 $ctrl-border-color:   $border-color;
 $inactive:      $slate-300;
@@ -430,7 +431,7 @@ $text-muted:                  $gray-600 !default;
 $blockquote-small-color:      $gray-600 !default;
 $blockquote-font-size:        1.25rem !default;
 
-$hr-border-color:             lighten($border-color, 9%) !default; //slate-50
+$hr-border-color:             lighten($border-color, 9%) !default; //slate-200
 $hr-border-width:             $border-width !default;
 
 $mark-padding:                .2em !default;

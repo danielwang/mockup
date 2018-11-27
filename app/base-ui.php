@@ -70,9 +70,9 @@
   <?php if ($hasSubPage) { startblock('page-tabs') ?>
   <nav id="gel-subpages" role="navigation">
      <div class="container">
-        <ul class="page-tabs nav" role="tablist">
-          <?php pageTabs($pageTitle);  ?>
-      </ul>
+        <nav class="page-tabs nav" role="tablist">
+            <?php pageTabs($pageTitle);  ?>
+        </nav>
     </div>
   </nav>
   <?php endblock(); }?>

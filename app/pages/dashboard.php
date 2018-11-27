@@ -20,13 +20,13 @@
 <?php startblock('page-tabs') ?>
 <nav id="gel-subpages" role="navigation">
    <div class="container">
-      <ul class="page-tabs nav" role="tablist">
-        <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="Tab one" aria-selected="true">Current Jobs</a></li>
-        <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a></li>
-      </ul>
+      <nav class="page-tabs nav" role="tablist">
+        <a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="current-jobs" aria-selected="true">Current Jobs</a>
+        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a>
+        <a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a>
+        <a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a>
+        <a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a>
+      </nav>
     </div>
 </nav>
 <?php endblock() ?>

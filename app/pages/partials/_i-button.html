@@ -1,4 +1,4 @@
-<p>
+<article class="px-3">
   <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
@@ -17,25 +17,20 @@
   <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-<?php echo ($x) ?>" role="tab" aria-controls="Details" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-<?php echo ($x) ?>" role="tab" aria-controls="Applications" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-<?php echo ($x) ?>" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-<?php echo ($x) ?>" role="tab" aria-controls="Notes" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-<?php echo ($x) ?>" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-<?php echo ($x) ?>" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-<?php echo ($x) ?>" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-<?php echo ($x) ?>" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-<?php echo ($x) ?>" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">

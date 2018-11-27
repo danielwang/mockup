@@ -23,7 +23,7 @@ function pageTabs($type) {
 			$active = "";
 			$selected = false;
 		}
-		echo '<li class="nav-item"><a class="nav-link '. $active  .'" id="' . $tabname  .'" data-toggle="tab" href="#' . $filename .  '" role="tab" aria-controls="' . $filename . '" aria-selected="'. $selected  .'">' . $title . '</a></li>';
+		echo '<a class="nav-link '. $active  .'" id="' . $tabname  .'" data-toggle="tab" href="#' . $filename .  '" role="tab" aria-controls="' . $filename . '" aria-selected="'. $selected  .'">' . $title . '</a>';
 	endforeach;
 }
 
