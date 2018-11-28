@@ -1,5 +1,6 @@
 .form-control{
-  font-size: $font-size-lg;
+  font-size: $font-size-base;
+  line-height: $line-height;
 }
 .form-control-lg{
   font-size: $font-size-lg;
@@ -10,11 +11,6 @@
   line-height: 1.125rem;
 }
 
-.form-group{
-  > label {
-    font-size: $font-size-lg;
-  }
-}
 
 /* *************************************** *\
  *

@@ -106,14 +106,20 @@
       <li>
         <a href="templates">Templates</a>
       </li>
+      <li>
+        <a href="states">States</a>
+      </li>
     </ul>
   </li>
   <!-- <li class="submenu"> <h4>Documentations</h4> <ul> <li> <a href="#">Class Naming Convention</a> </li> </ul> </li> -->
   <li class="submenu">
-    <h4>Downloads</h4>
+    <h4>More</h4>
     <ul>
       <li>
-        <a href="#">Logo</a>
+        <a href="utilities">Utility classes</a>
+      </li>
+      <li>
+        <a href="customization">Customization</a>
       </li>
     </ul>
   </li>
@@ -151,8 +157,8 @@
   <!-- ************  page sub pages ************ -->
     <nav id="gel-subpages" role="navigation">
      <div class="container">
-        <ul class="page-tabs nav" role="tablist">
-          <li class="nav-item"><a class="nav-link active" id="accordions-tab" data-toggle="tab" href="#accordions" role="tab" aria-controls="accordions" aria-selected="1">Accordions</a></li><li class="nav-item"><a class="nav-link " id="alerts-tab" data-toggle="tab" href="#alerts" role="tab" aria-controls="alerts" aria-selected="">Alerts</a></li><li class="nav-item"><a class="nav-link " id="breadcrumb-tab" data-toggle="tab" href="#breadcrumb" role="tab" aria-controls="breadcrumb" aria-selected="">Breadcrumb</a></li><li class="nav-item"><a class="nav-link " id="dropdowns-tab" data-toggle="tab" href="#dropdowns" role="tab" aria-controls="dropdowns" aria-selected="">Dropdowns</a></li><li class="nav-item"><a class="nav-link " id="lists-tab" data-toggle="tab" href="#lists" role="tab" aria-controls="lists" aria-selected="">Lists</a></li><li class="nav-item"><a class="nav-link " id="pagination-tab" data-toggle="tab" href="#pagination" role="tab" aria-controls="pagination" aria-selected="">Pagination</a></li><li class="nav-item"><a class="nav-link " id="panels-tab" data-toggle="tab" href="#panels" role="tab" aria-controls="panels" aria-selected="">Panels</a></li><li class="nav-item"><a class="nav-link " id="popover-tab" data-toggle="tab" href="#popover" role="tab" aria-controls="popover" aria-selected="">Popover</a></li><li class="nav-item"><a class="nav-link " id="tables-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="tables" aria-selected="">Tables</a></li><li class="nav-item"><a class="nav-link " id="tabs-tab" data-toggle="tab" href="#tabs" role="tab" aria-controls="tabs" aria-selected="">Tabs</a></li><li class="nav-item"><a class="nav-link " id="wizards-tab" data-toggle="tab" href="#wizards" role="tab" aria-controls="wizards" aria-selected="">Wizards</a></li>      </ul>
+        <nav class="page-tabs nav" role="tablist">
+            <a class="nav-link active" id="accordions-tab" data-toggle="tab" href="#accordions" role="tab" aria-controls="accordions" aria-selected="1">Accordions</a><a class="nav-link " id="alerts-tab" data-toggle="tab" href="#alerts" role="tab" aria-controls="alerts" aria-selected="">Alerts</a><a class="nav-link " id="breadcrumb-tab" data-toggle="tab" href="#breadcrumb" role="tab" aria-controls="breadcrumb" aria-selected="">Breadcrumb</a><a class="nav-link " id="dropdowns-tab" data-toggle="tab" href="#dropdowns" role="tab" aria-controls="dropdowns" aria-selected="">Dropdowns</a><a class="nav-link " id="lists-tab" data-toggle="tab" href="#lists" role="tab" aria-controls="lists" aria-selected="">Lists</a><a class="nav-link " id="pagination-tab" data-toggle="tab" href="#pagination" role="tab" aria-controls="pagination" aria-selected="">Pagination</a><a class="nav-link " id="panels-tab" data-toggle="tab" href="#panels" role="tab" aria-controls="panels" aria-selected="">Panels</a><a class="nav-link " id="popover-tab" data-toggle="tab" href="#popover" role="tab" aria-controls="popover" aria-selected="">Popover</a><a class="nav-link " id="stepper-tab" data-toggle="tab" href="#stepper" role="tab" aria-controls="stepper" aria-selected="">Stepper</a><a class="nav-link " id="tables-tab" data-toggle="tab" href="#tables" role="tab" aria-controls="tables" aria-selected="">Tables</a><a class="nav-link " id="tabs-tab" data-toggle="tab" href="#tabs" role="tab" aria-controls="tabs" aria-selected="">Tabs</a>        </nav>
     </div>
   </nav>
   <!-- page body -->
@@ -577,7 +583,7 @@
   </div>
 </div>
 <hr class="sg-hr"/>
-<div class="card">
+<div class="bg-white p-5 rounded mb-5">
   <div class="d-flex flex-column flex-md-row">
     <div class="list-group list-group-flush nav" id="myList" role="tablist">
       <a class="list-group-item list-group-item-action active" data-toggle="tab" href="#list1" role="tab">List one</a>
@@ -935,7 +941,73 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
   </div>
 </div>
 
-<!-- <button type="button" id="popover-via-click" class="btn btn-default" data-content="You clicked the button and as a result, this message box simply.. popped.<br>Now simply click anywhere to dismiss.">Click to open</button> --></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="tables" role="tabpanel" aria-labelledby="page-tab-tables"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">A table is a specific pattern for comparing datasets in a very direct an analytical way.</blockquote>
+<!-- <button type="button" id="popover-via-click" class="btn btn-default" data-content="You clicked the button and as a result, this message box simply.. popped.<br>Now simply click anywhere to dismiss.">Click to open</button> --></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="stepper" role="tabpanel" aria-labelledby="page-tab-stepper"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">A stepper presents a series of steps or conditions that the user needs to complete in order to accomplish a goal
+</blockquote>
+
+<h3>Vertical</h3>
+<div class="stepper stepper-vertical">
+  <div class="stepper-step complete">
+    <a class="stepper-dot" href="#"></a>
+    <h5 class="stepper-stepnum">Step 1</h5>
+    <div class="stepper-info">Lorem ipsum dolor sit amet.</div>
+  </div>
+  <div class="stepper-step complete">
+    <a class="stepper-dot" href="#"></a>
+    <h5 class="stepper-stepnum">Step 2</h5>
+    <div class="stepper-info">Vestibulum ante ipsum primis in faucibus orci luctus et.
+    </div>
+  </div>
+  <div class="stepper-step active">
+    <a class="stepper-dot" href="#"></a>
+    <h5 class="stepper-stepnum">Step 3</h5>
+    <div class="stepper-info">Ultrices posuere cubilia Curae.</div>
+  </div>
+
+  <div class="stepper-step disabled">
+    <a class="stepper-dot" href="#"></a>
+    <h5 class="stepper-stepnum">Step 4</h5>
+    <div class="stepper-info">Duis porta ipsum vitae mi bibendum bibendum.</div>
+  </div>
+  <div class="stepper-step disabled">
+    <a class="stepper-dot" href="#"></a>
+    <h5 class="stepper-stepnum">Step 5</h5>
+    <div class="stepper-info">Lorem ipsum dolor sit amet.</div>
+  </div>
+</div>
+
+<h3>Horizontal</h3>
+<div class="row stepper">
+  <div class="col-4 stepper-step complete">
+    <h5 class="text-center stepper-stepnum">Step 1</h5>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+    <a href="#" class="stepper-dot"></a>
+    <div class="stepper-info text-center">Lorem ipsum dolor sit amet.</div>
+  </div>
+
+  <div class="col-4 stepper-step active">
+    <!-- complete -->
+    <h5 class="text-center stepper-stepnum">Step 2</h5>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+    <a href="#" class="stepper-dot"></a>
+    <div class="stepper-info text-center">Integer semper dolor ac auctor rutrum.
+    </div>
+  </div>
+
+  <div class="col-4 stepper-step disabled">
+    <!-- active -->
+    <h5 class="text-center stepper-stepnum">Step 3</h5>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+    <a href="#" class="stepper-dot"></a>
+    <div class="stepper-info text-center">
+      Curabitur mollis magna at blandit vestibulum.</div>
+  </div>
+</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="tables" role="tabpanel" aria-labelledby="page-tab-tables"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">A table is a specific pattern for comparing datasets in a very direct an analytical way.</blockquote>
 <h3>Small table
 </h3>
 <table class="table">
@@ -1813,7 +1885,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>36</td>
       <td>Internal</td>
-      <td>92</td>
+      <td>74</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1851,7 +1923,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>37</td>
       <td>Internal</td>
-      <td>25</td>
+      <td>3</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1889,7 +1961,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>38</td>
       <td>Internal</td>
-      <td>81</td>
+      <td>24</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1927,7 +1999,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>39</td>
       <td>Internal</td>
-      <td>18</td>
+      <td>31</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -1965,7 +2037,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>40</td>
       <td>Internal</td>
-      <td>8</td>
+      <td>10</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2003,7 +2075,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>41</td>
       <td>Internal</td>
-      <td>30</td>
+      <td>20</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2041,7 +2113,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>42</td>
       <td>Internal</td>
-      <td>37</td>
+      <td>77</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2079,7 +2151,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>43</td>
       <td>Internal</td>
-      <td>77</td>
+      <td>50</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2117,7 +2189,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>44</td>
       <td>Internal</td>
-      <td>100</td>
+      <td>41</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2155,7 +2227,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>45</td>
       <td>Internal</td>
-      <td>94</td>
+      <td>53</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2193,7 +2265,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>46</td>
       <td>Internal</td>
-      <td>14</td>
+      <td>23</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2231,7 +2303,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>47</td>
       <td>Internal</td>
-      <td>23</td>
+      <td>9</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2269,7 +2341,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>48</td>
       <td>Internal</td>
-      <td>11</td>
+      <td>25</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2307,7 +2379,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>49</td>
       <td>Internal</td>
-      <td>56</td>
+      <td>91</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2345,7 +2417,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>50</td>
       <td>Internal</td>
-      <td>21</td>
+      <td>75</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2383,7 +2455,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>51</td>
       <td>Internal</td>
-      <td>19</td>
+      <td>78</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2421,7 +2493,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>52</td>
       <td>Internal</td>
-      <td>9</td>
+      <td>13</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2459,7 +2531,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>53</td>
       <td>Internal</td>
-      <td>88</td>
+      <td>29</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2497,7 +2569,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>54</td>
       <td>Internal</td>
-      <td>86</td>
+      <td>16</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2535,7 +2607,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>55</td>
       <td>Internal</td>
-      <td>67</td>
+      <td>76</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2573,7 +2645,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>56</td>
       <td>Internal</td>
-      <td>70</td>
+      <td>90</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2611,7 +2683,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>57</td>
       <td>Internal</td>
-      <td>66</td>
+      <td>48</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2649,7 +2721,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>58</td>
       <td>Internal</td>
-      <td>36</td>
+      <td>24</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2687,7 +2759,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>59</td>
       <td>Internal</td>
-      <td>51</td>
+      <td>76</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2725,7 +2797,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>60</td>
       <td>Internal</td>
-      <td>93</td>
+      <td>45</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2763,7 +2835,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>61</td>
       <td>Internal</td>
-      <td>72</td>
+      <td>45</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2801,7 +2873,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>62</td>
       <td>Internal</td>
-      <td>27</td>
+      <td>77</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2839,7 +2911,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>63</td>
       <td>Internal</td>
-      <td>41</td>
+      <td>19</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2877,7 +2949,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>64</td>
       <td>Internal</td>
-      <td>71</td>
+      <td>11</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2915,7 +2987,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>65</td>
       <td>Internal</td>
-      <td>21</td>
+      <td>2</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2953,7 +3025,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>66</td>
       <td>Internal</td>
-      <td>82</td>
+      <td>32</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -2991,7 +3063,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>67</td>
       <td>Internal</td>
-      <td>18</td>
+      <td>48</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3029,7 +3101,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>68</td>
       <td>Internal</td>
-      <td>46</td>
+      <td>45</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3067,7 +3139,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>69</td>
       <td>Internal</td>
-      <td>37</td>
+      <td>85</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3105,7 +3177,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>70</td>
       <td>Internal</td>
-      <td>15</td>
+      <td>13</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3143,7 +3215,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>71</td>
       <td>Internal</td>
-      <td>51</td>
+      <td>93</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3181,7 +3253,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>72</td>
       <td>Internal</td>
-      <td>85</td>
+      <td>64</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3219,7 +3291,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>73</td>
       <td>Internal</td>
-      <td>98</td>
+      <td>57</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3257,7 +3329,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>74</td>
       <td>Internal</td>
-      <td>77</td>
+      <td>76</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3295,7 +3367,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>75</td>
       <td>Internal</td>
-      <td>70</td>
+      <td>3</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3333,7 +3405,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>76</td>
       <td>Internal</td>
-      <td>79</td>
+      <td>66</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3371,7 +3443,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>77</td>
       <td>Internal</td>
-      <td>72</td>
+      <td>22</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3409,7 +3481,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>78</td>
       <td>Internal</td>
-      <td>42</td>
+      <td>35</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3447,7 +3519,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>79</td>
       <td>Internal</td>
-      <td>25</td>
+      <td>9</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3485,7 +3557,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>80</td>
       <td>Internal</td>
-      <td>44</td>
+      <td>64</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3523,7 +3595,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>81</td>
       <td>Internal</td>
-      <td>2</td>
+      <td>97</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3561,7 +3633,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>82</td>
       <td>Internal</td>
-      <td>6</td>
+      <td>73</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3599,7 +3671,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>83</td>
       <td>Internal</td>
-      <td>52</td>
+      <td>58</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3637,7 +3709,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>84</td>
       <td>Internal</td>
-      <td>40</td>
+      <td>79</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3675,7 +3747,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
       <td>United Arab Emirates</td>
       <td>85</td>
       <td>Internal</td>
-      <td>20</td>
+      <td>72</td>
       <td>N</td>
       <td>website</td>
       <td>
@@ -3733,7 +3805,7 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
   </div>
 </div>
 <hr class="sg-hr">
-<div class="card">
+<div class="bg-white p-5 rounded mb-5">
   <ul class="nav nav-tabs-line" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
@@ -3770,78 +3842,12 @@ class="gel-icon-angle-right"></i> </button> </div> <p></p> -->
     <code>.nav-line</code>
   </li>
 </ul>
-</div></div></div></div><div class="tab-pane " id="wizards" role="tabpanel" aria-labelledby="page-tab-wizards"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">A wizard presents a series of steps or conditions that the user needs to complete in order to accomplish a goal
-</blockquote>
-
-<h3>Vertical</h3>
-<div class="wizard wizard-vertical">
-  <div class="wizard-step complete">
-    <a class="wizard-dot" href="#"></a>
-    <h5 class="wizard-stepnum">Step 1</h5>
-    <div class="wizard-info">Lorem ipsum dolor sit amet.</div>
-  </div>
-  <div class="wizard-step complete">
-    <a class="wizard-dot" href="#"></a>
-    <h5 class="wizard-stepnum">Step 2</h5>
-    <div class="wizard-info">Vestibulum ante ipsum primis in faucibus orci luctus et.
-    </div>
-  </div>
-  <div class="wizard-step active">
-    <a class="wizard-dot" href="#"></a>
-    <h5 class="wizard-stepnum">Step 3</h5>
-    <div class="wizard-info">Ultrices posuere cubilia Curae.</div>
-  </div>
-
-  <div class="wizard-step disabled">
-    <a class="wizard-dot" href="#"></a>
-    <h5 class="wizard-stepnum">Step 4</h5>
-    <div class="wizard-info">Duis porta ipsum vitae mi bibendum bibendum.</div>
-  </div>
-  <div class="wizard-step disabled">
-    <a class="wizard-dot" href="#"></a>
-    <h5 class="wizard-stepnum">Step 5</h5>
-    <div class="wizard-info">Lorem ipsum dolor sit amet.</div>
-  </div>
-</div>
-
-<h3>Horizontal</h3>
-<div class="row wizard">
-  <div class="col-4 wizard-step complete">
-    <h5 class="text-center wizard-stepnum">Step 1</h5>
-    <div class="progress">
-      <div class="progress-bar"></div>
-    </div>
-    <a href="#" class="wizard-dot"></a>
-    <div class="wizard-info text-center">Lorem ipsum dolor sit amet.</div>
-  </div>
-
-  <div class="col-4 wizard-step active">
-    <!-- complete -->
-    <h5 class="text-center wizard-stepnum">Step 2</h5>
-    <div class="progress">
-      <div class="progress-bar"></div>
-    </div>
-    <a href="#" class="wizard-dot"></a>
-    <div class="wizard-info text-center">Integer semper dolor ac auctor rutrum.
-    </div>
-  </div>
-
-  <div class="col-4 wizard-step disabled">
-    <!-- active -->
-    <h5 class="text-center wizard-stepnum">Step 3</h5>
-    <div class="progress">
-      <div class="progress-bar"></div>
-    </div>
-    <a href="#" class="wizard-dot"></a>
-    <div class="wizard-info text-center">
-      Curabitur mollis magna at blandit vestibulum.</div>
-  </div>
-</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div></div>		</section>
+</div></div></div></div></div>		</section>
 	</main>
   <footer id="gel-footer" role="footer">
     <div class="container">
       <div class="row">
-        <div class="col-6">Design by DUX team 2018</div>
+        <div class="col-6">Design by DUX team 2019</div>
         <div class="col-6 text-right">
           <a href="#">PageUp</a>
         </div>

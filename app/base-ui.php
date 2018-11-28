@@ -94,7 +94,7 @@
   <footer id="gel-footer" role="footer">
     <div class="container">
       <div class="row">
-        <div class="col-6">Design by DUX team 2018</div>
+        <div class="col-6">Design by DUX team 2019</div>
         <div class="col-6 text-right">
           <a href="#">PageUp</a>
         </div>

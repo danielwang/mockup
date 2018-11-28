@@ -353,14 +353,14 @@
                 <blockquote class="tagline"></blockquote>
               </div>
               <div class="page-actions col-lg-4 mt-2">
-                    <span class="item">
+                    <span class="item mr-3">
     <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown" data-persist="true">
       <i class="gel-icon-lg gel-icon-user" aria-hidden="true"></i> <span>Team and Users</span>
     </a>
-    <div class="dropdown-menu dropdown-menu-right">
+    <div class="dropdown-menu dropdown-menu-right p-0">
       <div class="scroll overflow-y-auto max-vh-70 vw-90 vw-sm-70 vw-lg-50 vw-xl-30">
   <section id="accordion-sm" class="accordion-line" role="tablist" aria-multiselectable="true">
-    <article>
+    <article class="px-3">
       <div class="accordion-header" role="tab" id="headingTwo">
         <h5 class="mb-0">
           <a data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-a" aria-expanded="false" aria-controls="collapseOne">
@@ -414,7 +414,7 @@
 
       </div>
     </article>
-    <article>
+    <article class="px-3">
       <div class="accordion-header" role="tab" id="headingTwo">
         <h5 class="mb-0">
           <a class="collapsed" data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-b" aria-expanded="false" aria-controls="collapseTwo">
@@ -467,7 +467,7 @@
         </table>
       </div>
     </article>
-    <article>
+    <article class="px-3">
       <div class="accordion-header" role="tab" id="headingThree">
         <h5 class="mb-0">
           <a class="collapsed" data-toggle="collapse" data-parent="#accordion-sm" href="#collapse-c" aria-expanded="false" aria-controls="collapseThree">
@@ -531,13 +531,13 @@
    <!-- ************  page sub pages ************ -->
   <nav id="gel-subpages" role="navigation">
    <div class="container">
-      <ul class="page-tabs nav" role="tablist">
-        <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="Tab one" aria-selected="true">Current Jobs</a></li>
-        <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a></li>
-      </ul>
+      <nav class="page-tabs nav" role="tablist">
+        <a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="current-jobs" aria-selected="true">Current Jobs</a>
+        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a>
+        <a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a>
+        <a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a>
+        <a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a>
+      </nav>
     </div>
 </nav>
 
@@ -549,7 +549,7 @@
   <div class="tab-pane d-print-block show active" id="current-jobs" role="tabpanel" aria-labelledby="applications-tab">
         <div id="gel-main-masthead" roll="masthead">
   <div class="container">
-    <div class="d-flex flex-nowrap justify-content-center">
+    <div class="row d-flex flex-nowrap justify-content-center">
       <div class="border-right pr-3">
         <a href="#_" class="circle" style="width:4rem; height:4rem">142</a>
         Total Jobs
@@ -608,11 +608,31 @@
             </div>
             <!-- <div class="filter"> <input type="checkbox" id="f-8"/> <label for="f-8" class="circle">35<sub class="dot-red"> <span class="sr-only">notification indicator</span></sub> </label> <label for="f-8">Security / Offer Check</label> </div> <div
             class="filter"> <input type="checkbox" id="f-9"/> <label for="f-9" class="circle">19</label> <label for="f-9">Offer Confirmation</label> </div> -->
-                        <!-- <div class="filter"> <input type="checkbox" id="f-11"/> <label for="f-10" class="circle">21</label> <label for="f-10">Job Statuses</label> </div> -->
-                        <!-- <div class="filter"> <input type="checkbox" id="f-11"/> <label for="f-10" class="circle">21</label> <label for="f-10">Job Statuses</label> </div> -->
-                        <!-- <div class="filter"> <input type="checkbox" id="f-11"/> <label for="f-10" class="circle">21</label> <label for="f-10">Job Statuses</label> </div> -->
-                        <!-- <div class="filter"> <input type="checkbox" id="f-11"/> <label for="f-10" class="circle">21</label> <label for="f-10">Job Statuses</label> </div> -->
-                        <!-- <div class="filter"> <input type="checkbox" id="f-11"/> <label for="f-10" class="circle">21</label> <label for="f-10">Job Statuses</label> </div> -->
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
+                        <div class="filter">
+              <input type="checkbox" id="f-11"/>
+              <label for="f-10" class="circle">21</label>
+              <label for="f-10">Job Statuses</label>
+            </div>
                       </div>
         </section>
       </div>
@@ -667,45 +687,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-1" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-1" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-1" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-1" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-1" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-1" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-1" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-1" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-1" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -886,45 +901,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-2" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-2" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-2" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-2" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-2" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-2" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-2" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-2" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-2" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -1105,45 +1115,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-3" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-3" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-3" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-3" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-3" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-3" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-3" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-3" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-3" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -1324,45 +1329,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-4" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-4" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-4" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-4" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-4" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-4" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-4" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-4" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-4" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -1543,45 +1543,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-5" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-5" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-5" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-5" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-5" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-5" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-5" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-5" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-5" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -1762,45 +1757,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-6" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-6" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-6" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-6" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-6" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-6" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-6" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-6" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-6" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -1981,45 +1971,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-7" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-7" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-7" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-7" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-7" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-7" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-7" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-7" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-7" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -2200,45 +2185,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-8" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-8" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-8" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-8" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-8" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-8" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-8" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-8" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-8" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -2419,45 +2399,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-9" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-9" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-9" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-9" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-9" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-9" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-9" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-9" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-9" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -2638,45 +2613,40 @@
             <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
               <i class="gel-icon-info-pointer"></i>
             </a>
-            <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
-              <p>
-  <a href="#" class="link-alt mr-4">
+            <div class="dropdown-menu px-0 vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
+              <article class="px-3">
+  <a href="#" class="link-alt mr-4" aria-label="Copy job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Copy job" class="gel-icon-copy gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Notes">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Notes" class="gel-icon-notes gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Invite">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Invite" class="gel-icon-add-user gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Preview">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Preview" class="gel-icon-preview gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Close job">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Close job" class="gel-icon-close-app gel-icon-lg"></i>
   </a>
-  <a href="#" class="link-alt mr-4">
+  <a href="#" class="link-alt mr-4" aria-label="Cost">
     <i data-toggle="tooltip" data-placement="bottom" data-original-title="Cost" class="gel-icon-cost gel-icon-lg"></i>
   </a>
-</p>
-<ul class="nav nav-tabs-line" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#i-btn-details-10" role="tab" aria-controls="home" aria-selected="true">Details
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-applications-10" role="tab" aria-controls="profile" aria-selected="false">Applications
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-10" role="tab" aria-controls="profile" aria-selected="false">Sourcing
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#i-btn-notes-10" role="tab" aria-controls="profile" aria-selected="false">Notes
-    </a>
-  </li>
-</ul>
+</article>
+<nav class="nav nav-tabs-line" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#i-btn-details-10" role="tab" aria-controls="Details" aria-selected="true">Details
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-applications-10" role="tab" aria-controls="Applications" aria-selected="false">Applications
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-sourcing-10" role="tab" aria-controls="Sourcing" aria-selected="false">Sourcing
+  </a>
+
+  <a class="nav-link" data-toggle="tab" href="#i-btn-notes-10" role="tab" aria-controls="Notes" aria-selected="false">Notes
+  </a>
+</nav>
 <div class="tab-content">
   <div class="tab-pane active" id="i-btn-details-10" role="tabpanel" aria-labelledby="details-tab">
     <dl class="row mb-0">
@@ -2862,7 +2832,7 @@
 </div>
 <div class="row">
   <div class="col-md-6">
-    <div class="card h-100">
+    <div class="card p-0 h-100">
       <ul class="nav nav-tabs-line" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#my-task" role="tab" aria-controls="home" aria-selected="true">My tasks to action
@@ -3114,7 +3084,7 @@
     </div>
   </form>
 
-  <table class="table mt-5">
+  <table class="table table-striped mt-5">
     <thead>
       <tr>
         <th scope="col">#</th>

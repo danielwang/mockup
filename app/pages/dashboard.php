@@ -8,11 +8,11 @@
     </div> -->
 <?php // endblock() ?>
 <?php startblock('page-actions') ?>
-  <span class="item">
+  <span class="item mr-3">
     <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown" data-persist="true">
       <i class="gel-icon-lg gel-icon-user" aria-hidden="true"></i> <span>Team and Users</span>
     </a>
-    <div class="dropdown-menu dropdown-menu-right">
+    <div class="dropdown-menu dropdown-menu-right p-0">
       <?php include "partials/_team-user-selector.html" ?>
     </div>
   </span>

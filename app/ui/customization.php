@@ -14,11 +14,10 @@
 </div>
 <!-- ****************  Do's **************** -->
 <div class="row mb-5">
-  <div class="col-sm-2 col-lg-1">
-    <h1 class="text-sm-right text-success">Do's</h1>
-  </div>
-  <div class="col-sm-8 col-lg-5">
-    <ul class="timeline">
+  <div class="col-md-6">
+    <section class="bg-white p-5 rounded">
+      <h1 class="text-success mb-5">Do's</h1>
+      <ul class="timeline">
       <li class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
@@ -70,74 +69,77 @@
           </p>
         </div>
       </li>
-    </ul>
+      </ul>
+    </section>
   </div>
-<!-- **************** Don'ts **************** -->
-  <div class="col-sm-2 col-lg-1">
-    <h1 class="text-sm-right text-danger">Don'ts</h1>
-  </div>
-  <div class="col-sm-8 col-lg-5">
-    <ul class="timeline bad">
-      <li class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h4 class="timeline-title">No Javascript injection</h4>
-          <p>Changing the product interaction and behavior is forbidden. Don't try injecting any Javascript in the Header or Footer into the system.</p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h4 class="timeline-title">No inline styles</h4>
-          <p>text-danger  (To be documented in all utility classes in one place)
-          </p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h4 class="timeline-title">No stretching images</h4>
-          <p>When uploading the images from RTE, don't hard code any width or height at the same time to stretch image.
-          </p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h4 class="timeline-title">No random icons from internet</h4>
-          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
-            mollis pretium. Pellentesque ut neque.
-          </p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h4 class="timeline-title">No CSS hacks applied </h4>
-          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
-            mollis pretium. Pellentesque ut neque.
-          </p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h4 class="timeline-title">No background image/logo </h4>
-          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
-            mollis pretium. Pellentesque ut neque.
-          </p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <h4 class="timeline-title">Override a language item by HTML</h4>
-          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
-            mollis pretium. Pellentesque ut neque.
-          </p>
-        </div>
-      </li>
-    </ul>
+
+  <div class="col-md-6">
+    <!-- **************** Don'ts **************** -->
+    <section class="bg-white p-5 rounded">
+
+        <h1 class="text-danger mb-5">Don'ts</h1>
+        <ul class="timeline bad">
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">No Javascript injection</h4>
+              <p>Changing the product interaction and behavior is forbidden. Don't try injecting any Javascript in the Header or Footer into the system.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">No inline styles</h4>
+              <p>text-danger  (To be documented in all utility classes in one place)
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">No stretching images</h4>
+              <p>When uploading the images from RTE, don't hard code any width or height at the same time to stretch image.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">No random icons from internet</h4>
+              <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+                mollis pretium. Pellentesque ut neque.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">No CSS hacks applied </h4>
+              <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+                mollis pretium. Pellentesque ut neque.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">No background image/logo </h4>
+              <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+                mollis pretium. Pellentesque ut neque.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">Override a language item by HTML</h4>
+              <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+                mollis pretium. Pellentesque ut neque.
+              </p>
+            </div>
+          </li>
+        </ul>
+    </section>
   </div>
 </div>
 <style>

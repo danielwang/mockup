@@ -1,0 +1,182 @@
+.stepper {
+  padding: 0 0 10px;
+  margin-bottom: 30px;
+
+  > .stepper-step {
+    padding: 0;
+    position: relative;
+
+    .stepper-stepnum {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    > .stepper-dot {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      display: block;
+      background: $azure;
+      top: 45px;
+      left: 50%;
+      margin-top: -15px;
+      margin-left: -15px;
+      border-radius: 50%;
+
+      &:after {
+        content: ' ';
+        width: 14px;
+        height: 14px;
+        background: $azure;
+        border-radius: 50px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+    }
+
+    > .progress {
+      position: relative;
+      border-radius: 0;
+      height: 4px;
+      box-shadow: none;
+      margin: 24px 0;
+      background-color: $slate-200;
+
+      > .progress-bar {
+        width: 0;
+        box-shadow: none;
+        background: $azure;
+      }
+    }
+
+    &:first-child.active {
+      > .progress {
+        > .progress-bar {
+          width: 0;
+        }
+      }
+    }
+
+    &:last-child.active {
+      > .progress {
+        > .progress-bar {
+          width: 100%;
+        }
+      }
+    }
+
+    &:first-child {
+      > .progress {
+        left: 50%;
+        width: 50%;
+      }
+    }
+
+    &:last-child {
+      > .progress {
+        width: 50%;
+      }
+    }
+  }
+
+  > .stepper-step.complete {
+    > .progress {
+      > .progress-bar {
+        width: 100%;
+      }
+    }
+  }
+
+  > .stepper-step.active {
+    > .progress {
+      > .progress-bar {
+        width: 50%;
+      }
+    }
+  }
+
+  > .stepper-step.disabled {
+    > .stepper-dot {
+      background-color: $slate-200;
+
+      &:after {
+        opacity: 0;
+      }
+    }
+
+    a.stepper-dot {
+      pointer-events: none;
+    }
+  }
+
+  .stepper-info {
+    color: $grey;
+  }
+}
+/* vertical stepper */
+
+.stepper-vertical {
+  padding-bottom: 50px;
+
+  > .stepper-step {
+    height: 80px;
+    padding-left: 50px;
+
+    &:before {
+      background-color: $slate-200;
+      content: "";
+      display: block;
+      height: 100%;
+      margin-left: -30px;
+      position: absolute;
+      top: 15px;
+      width: 2px;
+    }
+
+    &.complete {
+      &:before {
+        background-color: $azure;
+        color: #fff;
+      }
+
+      .stepper-dot {
+        &:after {
+          content: "\e91d";
+          font-family: $gel-icon;
+          color: white;
+          background: $azure;
+        }
+      }
+    }
+
+    &.active {}
+
+    &.disabled {}
+
+    > .stepper-dot {
+      left: 12px;
+      top: 0;
+      margin: 0;
+      height: 18px;
+      width: 18px;
+
+      &::after {
+        border-radius: 50px;
+        content: " ";
+        height: 14px;
+        left: 2px;
+        position: absolute;
+        top: 2px;
+        width: 14px;
+        line-height: 14px;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        width: 0;
+      }
+    }
+  }
+}
