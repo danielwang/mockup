@@ -1,6 +1,19 @@
+.form-group{
+  label{
+    margin-bottom: .25rem;
+    @include font-semibold();
+    line-height: 1.5;
+  }
+}
+
 .form-control{
   font-size: $font-size-base;
   line-height: $line-height;
+
+  &:disabled {
+    color: $slate-600;
+    cursor: not-allowed;
+  }
 }
 .form-control-lg{
   font-size: $font-size-lg;

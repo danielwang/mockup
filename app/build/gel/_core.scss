@@ -85,10 +85,6 @@ a{
   }
 }
 
-label{
-  margin-bottom: .375rem;
-  @include font-semibold();
-}
 /* Commented out responsive gutter on fluid layout,
    because it will break monilith hybrid page alignment,
    same in navbar.scss

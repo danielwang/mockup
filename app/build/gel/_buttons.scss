@@ -107,6 +107,7 @@
 
 .btn {
   @include font-cta();
+  @include text-truncate();
   // default mobile bigger buttons
   // 42px height
   height: 42px;

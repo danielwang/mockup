@@ -192,7 +192,7 @@ $ctrl:          $slate-800;
 $ctrl-border-color:   $border-color;
 $inactive:      $slate-300;
 $active:        $blue;
-$disabled:      $slate-300;
+$disabled:      $slate-200;
 $primary:       $blue !default;
 $secondary:     $ctrl !default;
 $success:       $green !default;
@@ -606,7 +606,7 @@ $form-check-input-margin-x:             .25rem !default;
 $form-check-inline-margin-x:            .75rem !default;
 $form-check-inline-input-margin-x:      .3125rem !default;
 
-$form-group-margin-bottom:              1rem !default;
+$form-group-margin-bottom:              1.5rem !default;
 
 $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $gray-200 !default;

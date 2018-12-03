@@ -141,12 +141,12 @@
 <?php endblock()?>
 
 <?php startblock('page-tabs') ?>
-<ul class="page-tabs nav mt-0 d-print-none" role="tablist">
-  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#applications" role="applications" aria-controls="applications" aria-selected="true">Applications</a></li>
-  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#history" role="History" aria-controls="History" aria-selected="false">History</a></li>
-  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#crm" role="tab" aria-controls="CRM" aria-selected="false">CRM</a></li>
-  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a></li>
-</ul>
+<nav class="page-tabs nav mt-0 d-print-none" role="tablist">
+  <a class="nav-link active" data-toggle="tab" href="#applications" role="applications" aria-controls="applications" aria-selected="true">Applications</a>
+  <a class="nav-link" data-toggle="tab" href="#history" role="History" aria-controls="History" aria-selected="false">History</a>
+  <a class="nav-link" data-toggle="tab" href="#crm" role="tab" aria-controls="CRM" aria-selected="false">CRM</a>
+  <a class="nav-link" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a>
+</nav>
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
