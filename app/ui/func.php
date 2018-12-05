@@ -51,11 +51,11 @@ function showMarkup($type, $format) {
 		echo '<div class="tab-pane ' . $active . '" id="' . $filename  .'" role="tabpanel" aria-labelledby="' . $tabname  .'">';
 		echo '<div class="row"><div class="col-md-6 col-lg-7">'; // left column demos
 		include 'core-elements/' . $type . '/' . $file;
-		echo '</div><div class="col-md-6 col-lg-5"><div class="sg-doc">'; // right column notes
+		echo '</div><div class="col-md-6 col-lg-5"><aside>'; // right column notes
 				if (file_exists($note)) { // if has notes
 					include $note;
 				}
-		echo '</div></div></div></div>';
+		echo '</aside></div></div></div>';
 	endforeach;
 }
 

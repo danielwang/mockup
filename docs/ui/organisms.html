@@ -30,7 +30,7 @@
   <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
     <div class="container">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><span class="nav-toggle"><i class="gel-icon-menu gel-icon-2x"></i></span></li>
+        <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
         <li class="nav-item"><a title="PageUp Global Experience Language" class="logo" href="../"> <img alt="PageUp Global Experience Language" src="../site-images/gel-logo.png" width="60"/> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
       </ul>
       <ul class="navbar-nav">
@@ -172,49 +172,61 @@
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
   dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>The width of the box should be relative to the parent grid. No hard coded pixels needed.</p></div></div></div></div><div class="tab-pane " id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"><div class="card">
   <form class="needs-validation" novalidate="novalidate">
-    <div class="form-row">
-      <div class="col-md-4 mb-3">
-        <label for="validationCustom01">First name</label>
-        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required="required">
-        <div class="valid-feedback">
-          Looks good!
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="validationCustom01">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required="required">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationCustom02">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required="required">
-        <div class="valid-feedback">
-          Looks good!
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="validationCustom02">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required="required">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationCustomUsername">Username</label>
-        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required="required">
-        <div class="invalid-feedback">
-          Please choose a username.
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="validationCustomUsername">Username</label>
+          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required="required">
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
         </div>
       </div>
     </div>
-    <div class="form-row">
-      <div class="col-md-4 mb-3">
-        <label for="validationCustom03">City</label>
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="required">
-        <div class="invalid-feedback">
-          Please provide a valid city.
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="validationCustom03">City</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="required">
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationCustom04">State</label>
-        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required="required">
-        <div class="invalid-feedback">
-          Please provide a valid state.
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="validationCustom04">State</label>
+          <input type="text" class="form-control" id="validationCustom04" placeholder="State" required="required">
+          <div class="invalid-feedback">
+            Please provide a valid state.
+          </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationCustom05">Zip</label>
-        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required="required">
-        <div class="invalid-feedback">
-          Please provide a valid zip.
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="validationCustom05">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required="required">
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
         </div>
       </div>
     </div>
