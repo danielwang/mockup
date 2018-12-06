@@ -125,7 +125,7 @@
         <?php for ($c =1; $c <= 4; $c++) {?>
           <tr><td scope="row" class="section-heading" colspan="5"> <h5 class="mb-0 float-left mt-1">James's Day <?php echo $c ?></h5> <button class="float-right btn btn-sm btn-ctrl"><i class="gel-icon-sm gel-icon-add"></i> Add</button></td></tr>
           <tr>
-            <th scope="row"><a href="#">Get your gears set up</a></th>
+            <th scope="row"><a href="#" data-toggle="modal" data-target="#responsiveModal">Get your gears set up</a></th>
             <td data-title="Assigned to">Emily Employee</td>
             <td data-title="Due date">06 March 2018 </td>
             <td data-title="Status" class="text-success">Completed</td>
@@ -252,6 +252,27 @@
       <div class="modal-footer d-flex justify-content-between">
         <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Delete task Modal -->
+<div class="modal fade" id="responsiveModal" tabindex="-1" role="dialog" aria-labelledby="responsiveModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-fit-content" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Responsive modal</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+<div>Using your FOXID, log into Foxlink and&nbsp;complete the tasks listed below:<br><br>1. <strong>Complete&nbsp;Electronic W2 Consent</strong><br>Log into FoxLink -&gt; select the Employee tab and click "My Payroll/HR" -&gt; the Electronic W2 Consent will be located under the&nbsp;"Taxes" section.<br><img height="260" width="885" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/679daae8-b6f7-49e3-8aa1-185595bb5682.png"><br>2. <strong>Complete Ethnicity Race Survey</strong><br>Log into FoxLink -&gt; select the Employee tab and&nbsp;click "Administration" -&gt; the Ethnicity Race Survey will be located under the "Ethnicity Race" section.<br><img height="338" width="538" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/c9dad9cf-6259-48c1-bd79-f658e62008fb.png"><br>3. <strong>Register for the Rollins Alert System</strong><br>Log into FoxLink -&gt; select the Community tab -&gt; the Rollins Alert System will be located under the "Campus Safety" section.<br><img height="293" width="878" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/5d7a19de-c744-418d-ad3c-357bb13ea830.png"><br>4. <strong>Review Public Directory Photo Options<br></strong>Would you like your R-Card photo to appear in the College's public directory? <br>Log into FoxLink -&gt; select the Employee tab and&nbsp;click "Administration" -&gt; the Public Directory Photo option will be located under the "Campus Directory" section.<br><img height="332" width="528" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/448d67b0-4e8f-4c83-bbeb-a1536721b53a.png"><br>5. <strong>Birthdays!</strong><br>Want to know somebody's birthday? Check out the Birthdays! link.<br>Log into FoxLink -&gt; select the Community tab -&gt; the "Birthdays!" will be located under the "Campus Only Access" section.<br><img height="267" width="892" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/d21cc98a-49f1-422d-b9f1-ddaff041e288.png"><br>For more information please visit: <a rel="noopener noreferrer" href="https://www.rollins.edu/it/accounts/foxlink.html">https://www.rollins.edu/it/accounts/foxlink</a>.</div>
+      </div>
+      <div class="modal-footer d-flex justify-content-between">
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Action</button>
       </div>
     </div>
   </div>
