@@ -11184,6 +11184,10 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 .modal .modal-fit-content {
   max-width: min-content; }
 
+@media (min-width: 992px) {
+      .modal .modal-fit-content {
+        min-width: 800px; } }
+
 .modal-body {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
