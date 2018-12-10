@@ -100,16 +100,6 @@ $css = array(
 );
 minifyCSS($css);
 
-// copy files to dist
-copy('css/gel.css', '../dist/css/gel.css');
-copy('css/gel.min.css', '../dist/css/gel.min.css');
-copy('css/gel-scoped.css', '../dist/css/gel-scoped.css');
-copy('css/gel-scoped.min.css', '../dist/css/gel-scoped.min.css');
-copy('js/gel.js', '../dist/js/gel.js');
-copy('css/icons/gel-icon.svg', '../dist/css/icons/gel-icon.svg');
-copy('css/icons/gel-icon.ttf', '../dist/css/icons/gel-icon.ttf');
-copy('css/icons/gel-icon.woff', '../dist/css/icons/gel-icon.woff');
-
 //copy files to docs
 copy('js/gel.js', '../docs/js/gel.js');
 copy('css/gel.css', '../docs/css/gel.css');
@@ -119,16 +109,15 @@ copy('css/icons/gel-icon.ttf', '../docs/css/icons/gel-icon.ttf');
 copy('css/icons/gel-icon.woff', '../docs/css/icons/gel-icon.woff');
 
 /* Deploy Process
-  0. increase version num and date in gel.scss
+  0. increase version num v3.x.x and date in gel.scss
   1. uncomment .gel class in gel.scss
   2. generate the gel.css file
   3. save gel.css as gel-scoped.css
   4. remove the empty .gel class inside the stylesheet, .gel html => html.gel
   5. rename selector .gel body {} => .gel {}
   6. comment out .gel in scss and re generate new gel.css
-  7. run minify-css
-  8. copy files to S3
-  9. don't forget font icons
+``7. run 'php release.php v3.x.x' in terminal
+  8. copy files to S3, don't forget font icons
 */
 
 ?>

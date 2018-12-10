@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.8.0
+ *   PageUp GEL - Theme 3.8.1
  *   Author: Daniel Wang
- *	 Date: 04/12/2018
+ *	 Date: 10/12/2018
  *
  \* *************************************** */
 /*!
@@ -11180,6 +11180,13 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 .modal .modal-full {
   max-width: 95vw; }
+
+.modal .modal-fit-content {
+  max-width: min-content; }
+
+@media (min-width: 992px) {
+      .modal .modal-fit-content {
+        min-width: 800px; } }
 
 .modal-body {
   -webkit-overflow-scrolling: touch;
