@@ -122,26 +122,26 @@
     pointer-events: none;
   }
 
-  &.dropdown-toggle {
-    &+.dropdown-menu {
-      &::after {
-        position: absolute;
-        top: -8px;
-        left: auto;
-        right: 24px;
-        display: block;
-        content: "";
-        border-top: 1px solid #bac6d2;
-        border-right: 0;
-        border-bottom: 0;
-        border-left: 1px solid #bac6d2;
-        width: 14px;
-        height: 14px;
-        transform: rotate(45deg);
-        background: white;
-      }
-    }
-  }
+  // &.dropdown-toggle {
+  //   &+.dropdown-menu {
+  //     &::after {
+  //       position: absolute;
+  //       top: -8px;
+  //       left: auto;
+  //       right: 24px;
+  //       display: block;
+  //       content: "";
+  //       border-top: 1px solid #bac6d2;
+  //       border-right: 0;
+  //       border-bottom: 0;
+  //       border-left: 1px solid #bac6d2;
+  //       width: 14px;
+  //       height: 14px;
+  //       transform: rotate(45deg);
+  //       background: white;
+  //     }
+  //   }
+  // }
   // responsive btn size, btn goes small beyond lg viewports
   @include media-breakpoint-between(lg,xxl) {
     // 34px height

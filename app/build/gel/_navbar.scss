@@ -34,9 +34,9 @@
     }
 
     .dropdown-menu {
-      top: $spacer * 2.5;
-      right: -1.25rem;
+      top: $navbar-height;
       left: auto;
+      margin-top: 0;
       max-width: 20rem;
       position: absolute;
     }

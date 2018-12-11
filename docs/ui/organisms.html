@@ -170,7 +170,7 @@
 <div class="card">
   <h5>This is a card</h5>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>The width of the box should be relative to the parent grid. No hard coded pixels needed.</p></div></div></div></div><div class="tab-pane " id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"><div class="card">
+  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div></div><div class="col-md-6 col-lg-5"><aside><p>The width of the box should be relative to the parent grid. No hard coded pixels needed.</p></aside></div></div></div><div class="tab-pane " id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"><div class="card">
   <form class="needs-validation" novalidate="novalidate">
     <div class="row">
       <div class="col-md-4">
@@ -263,7 +263,7 @@
       });
     }, false);
   })();
-</script></div><div class="col-md-6 col-lg-5"><div class="sg-doc"><p>This is how the element is used:</p>
+</script></div><div class="col-md-6 col-lg-5"><aside><p>This is how the element is used:</p>
 <ul>
   <li>Put
     <code>.required</code>
@@ -276,30 +276,37 @@
     <a href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js</a>
     into your application.</li>
 </ul>
-</div></div></div></div><div class="tab-pane " id="modals" role="tabpanel" aria-labelledby="page-tab-modals"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+</aside></div></div></div><div class="tab-pane " id="modals" role="tabpanel" aria-labelledby="page-tab-modals"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
   A modal is a box with content displayed on top of the page to capture the user’s attention for an specific action inside the same process. Modals are subordinated to pages.
 </blockquote>
+<p>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalMsg">
+    Small
+  </button>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Centered modal
-</button>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Centered modal
+  </button>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fullScreenModal">
-  Full screen modal
-</button>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+    Long content modal
+  </button>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Long content modal
-</button>
+</p>
+<p>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fullScreenModal">
+    Full screen modal
+  </button>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalMsg">
-  Small
-</button>
-
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fitContentModal">
+    Fit content modal
+  </button>
+</p>
 <!-- Modal long-->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -423,7 +430,35 @@
       </div>
     </div>
   </div>
-</div></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="ratings" role="tabpanel" aria-labelledby="page-tab-ratings"><div class="row"><div class="col-md-6 col-lg-7"><h3>Stars rating</h3>
+</div>
+
+<!-- Modal fit content -->
+<div class="modal fade" id="fitContentModal" tabindex="-1" role="dialog" aria-labelledby="fitContentModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-fit-content" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Fit content modal</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+        </button>
+      </div>
+      <div class="modal-body vh-70 overflow-y-auto">
+        <div>Using your FOXID, log into Foxlink and&nbsp;complete the tasks listed below:<br><br>1.
+          <strong>Complete&nbsp;Electronic W2 Consent</strong><br>Log into FoxLink -&gt; select the Employee tab and click "My Payroll/HR" -&gt; the Electronic W2 Consent will be located under the&nbsp;"Taxes" section.<br><img height="260" width="885" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/679daae8-b6f7-49e3-8aa1-185595bb5682.png"><br>2.
+          <strong>Complete Ethnicity Race Survey</strong><br>Log into FoxLink -&gt; select the Employee tab and&nbsp;click "Administration" -&gt; the Ethnicity Race Survey will be located under the "Ethnicity Race" section.<br><img height="338" width="538" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/c9dad9cf-6259-48c1-bd79-f658e62008fb.png"><br>3.
+          <strong>Register for the Rollins Alert System</strong><br>Log into FoxLink -&gt; select the Community tab -&gt; the Rollins Alert System will be located under the "Campus Safety" section.<br><img height="293" width="878" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/5d7a19de-c744-418d-ad3c-357bb13ea830.png"><br>4.
+          <strong>Review Public Directory Photo Options<br></strong>Would you like your R-Card photo to appear in the College's public directory?
+          <br>Log into FoxLink -&gt; select the Employee tab and&nbsp;click "Administration" -&gt; the Public Directory Photo option will be located under the "Campus Directory" section.<br><img height="332" width="528" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/448d67b0-4e8f-4c83-bbeb-a1536721b53a.png"><br>5.
+          <strong>Birthdays!</strong><br>Want to know somebody's birthday? Check out the Birthdays! link.<br>Log into FoxLink -&gt; select the Community tab -&gt; the "Birthdays!" will be located under the "Campus Only Access" section.<br><img height="267" width="892" src="https://publicstorage.dc4.pageuppeople.com/777/ProviderAsset/scribble/d21cc98a-49f1-422d-b9f1-ddaff041e288.png"><br>For more information please visit:
+          <a rel="noopener noreferrer" href="https://www.rollins.edu/it/accounts/foxlink.html">https://www.rollins.edu/it/accounts/foxlink</a>.</div>
+      </div>
+      <div class="modal-footer d-flex justify-content-between">
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Action</button>
+      </div>
+    </div>
+  </div>
+</div></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div><div class="tab-pane " id="ratings" role="tabpanel" aria-labelledby="page-tab-ratings"><div class="row"><div class="col-md-6 col-lg-7"><h3>Stars rating</h3>
 <div class="card">
   <div class="star-rating">
     <input id="star-5" type="radio" name="rating" value="star-5">
@@ -486,7 +521,7 @@ type="radio" name="options-sm" id="option3" autocomplete="off"> 3 </label> <labe
 name="options-sm" id="option5" autocomplete="off"> 5 </label> <label class="btn btn-sm btn-ctrl"> <input type="radio" name="options-sm" id="option6" autocomplete="off"> 6 </label> <label class="btn btn-sm btn-ctrl"> <input type="radio"
 name="options-sm" id="option7" autocomplete="off"> 7 </label> <label class="btn btn-sm btn-ctrl"> <input type="radio" name="options-sm" id="option8" autocomplete="off"> 8 </label> <label class="btn btn-sm btn-ctrl"> <input type="radio"
 name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn btn-sm btn-ctrl"> <input type="radio" name="options-sm" id="option10" autocomplete="off"> 10 </label> </div> <div class="d-flex justify-content-between mt-2">
-<span>Poor</span> <span>Excellent</span> </div> </div> --></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="search" role="tabpanel" aria-labelledby="page-tab-search"><div class="row"><div class="col-md-6 col-lg-7"><form class="input-group tags-input">
+<span>Poor</span> <span>Excellent</span> </div> </div> --></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div><div class="tab-pane " id="search" role="tabpanel" aria-labelledby="page-tab-search"><div class="row"><div class="col-md-6 col-lg-7"><form class="input-group tags-input">
   <ul class="tags form-control">
     <li class="active">Tag = employeereferral
       <button type="button" aria-label="remove">
@@ -599,7 +634,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
     box-shadow: 0 3px 4px rgba(8, 8, 8, .11);
     width: 100%;
   }
-</style></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="timelines" role="tabpanel" aria-labelledby="page-tab-timelines"><div class="row"><div class="col-md-6 col-lg-7"><h3>Basic</h3>
+</style></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div><div class="tab-pane " id="timelines" role="tabpanel" aria-labelledby="page-tab-timelines"><div class="row"><div class="col-md-6 col-lg-7"><h3>Basic</h3>
 
 <ul class="timeline">
   <li class="timeline-item">
@@ -753,7 +788,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
       </p>
     </div>
   </li>
-</ul></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
+</ul></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-md-4">
     <h3>Small</h3>
     <fieldset class="trays" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
@@ -907,7 +942,7 @@ type="button" id="button-addon2"> <i class="gel-icon-search gel-icon-lg"></i> </
       <td>Thornton</td>
     </tr>
   </tbody>
-</table></div><div class="col-md-6 col-lg-5"><div class="sg-doc"></div></div></div></div></div>		</section>
+</table></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div></div>		</section>
 	</main>
   <footer id="gel-footer" role="footer">
     <div class="container">

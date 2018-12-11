@@ -3,11 +3,17 @@
 <?php startblock('page-actions') ?>
 <span class="item">
   <a class="text-center" href="#_" title="Help">
+    <i class="gel-icon-lg gel-icon-application" aria-hidden="true"></i> <span>View applications</span>
+  </a>
+</span>
+<span class="item">
+  <a class="text-center" href="#_" title="Help">
     <i class="gel-icon-lg gel-icon-print" aria-hidden="true"></i> <span>Print</span>
   </a>
 </span>
   <span class="item">
     <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown">
+      <i class="gel-icon-lg gel-icon-ellipsis d-xl-none" aria-hidden="true"></i>
       <span>Actions</span>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
@@ -35,14 +41,8 @@
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <div class="card">
+<div class="card">
 
-    </div>
-  </div>
-  <div class="col-md-2"></div>
 </div>
 
 <?php endblock()?>

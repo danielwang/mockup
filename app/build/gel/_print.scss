@@ -2,18 +2,30 @@
   @media print {
     body, h1, h2, h3, h4, h5, h6, th{
       color: #000000 !important;
+      background-color: white;
+    }
+    pre, blockquote{
+      border:0
+    }
+    #gel-header, #gel-subpages{
+      background-color: white;
+      background-image: none;
+    }
+    #gel-header * {
+      color: #000000;
+    }
+    #gel-subpages .page-tabs a{
+      color: #000000;
+
+      &.active{
+        border-bottom: 3px solid #000;
+      }
     }
     #gel-footer,
     #gel-menu,
     #gel-navbar,
     .page-actions {
       display: none !important;
-    }
-    #popup-top{
-      color: #000000 !important;
-      h2{
-        color: #000000 !important;
-      }
     }
   }
 }

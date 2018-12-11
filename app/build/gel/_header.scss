@@ -41,6 +41,7 @@
 
     .item {
       position: relative;
+      white-space: nowrap;
 
       > a {
         margin-left: 20px;
@@ -58,14 +59,24 @@
 
         i {
           vertical-align: -5px;
+
+          + span{
+            display: none;
+            @include media-breakpoint-up(xl) {
+              // larger than md: 992px
+              display: inline-block;
+            }
+          }
         }
 
         span {
           font-size: 1rem;
-          @include media-breakpoint-up(lg) {
-            // larger than md: 992px
-            display: inline-block;
-            @include font-heading();
+        }
+
+        &.dropdown-toggle:after{
+          @include media-breakpoint-down(lg) {
+            // smaller than md: 768px
+            content: "";
           }
         }
       }

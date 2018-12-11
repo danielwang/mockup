@@ -92,14 +92,6 @@ function moveFilesToDocs($src){
 }
 
 
-// generate minified gel.css output to dist dir
-include_once("vendor/minifier.php");
-$css = array(
-    "css/gel-scoped.css" => "css/gel-scoped.min.css",
-    "css/gel.css" => "css/gel.min.css"
-);
-minifyCSS($css);
-
 //copy files to docs
 copy('js/gel.js', '../docs/js/gel.js');
 copy('css/gel.css', '../docs/css/gel.css');

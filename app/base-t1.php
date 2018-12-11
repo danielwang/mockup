@@ -53,7 +53,7 @@
           <div class="container<?php echo $pageLayout ?>">
             <div class="row">
               <?php if($pageAction == true) { ?>
-              <div class="col-lg-8 order-2 order-lg-1">
+              <div class="col-lg-8 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h1 class="page-title"><?php echo $pageTitle  ?></h1>
                 <blockquote class="tagline"><?php emptyblock('page-tagline');?></blockquote>
               </div>
