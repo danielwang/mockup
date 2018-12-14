@@ -7,6 +7,7 @@ function buildSolidIcons(){
     ["logo", "logo"],
     ["offer","offer"],
     ["job", "job"],
+    ["Position Description","doc"],
     ["knowledge portal", "knowledge-portal"],
     ["analytics", "analytics"],
     ["support", "support"],
@@ -56,6 +57,7 @@ function buildSolidIcons(){
     ["close", "close-circle"],
     ["trash", "trash"],
     ["notes", "notes"],
+    ["Document","doc"],
     ["new", "new"],
     ["eye", "eye"],
     ["user", "user"],
@@ -157,24 +159,23 @@ $lineIcons = buildLineIcons();
     </ul>
     <ul class="nav nav-tabs nav-fill" role="tablist">
       <li class="nav-item">
-         <a class="nav-link active" id="solid-icons-tab" data-toggle="tab" href="#solid-icons" role="tab" aria-controls="solid-icons" aria-selected="true">Solid Icons</a>
+         <a class="nav-link active" id="solid-icons-tab" data-toggle="tab" href="#solid-icons" role="tab" aria-controls="solid-icons" aria-selected="true">Solid Icons (<?php echo count($solidIcons); ?> )</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link" id="line-icons-tab" data-toggle="tab" href="#line-icons" role="tab" aria-controls="line-icons" aria-selected="false">Line Icons</a>
+         <a class="nav-link" id="line-icons-tab" data-toggle="tab" href="#line-icons" role="tab" aria-controls="line-icons" aria-selected="false">Line Icons (<?php echo count($lineIcons); ?> )</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link" id="illustrations-tab" data-toggle="tab" href="#illustrations" role="tab" aria-controls="illustrations" aria-selected="false">Illustrations</a>
+         <a class="nav-link" id="illustrations-tab" data-toggle="tab" href="#illustrations" role="tab" aria-controls="illustrations" aria-selected="false">Illustrations (18)</a>
        </li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="solid-icons" role="tabpanel" aria-labelledby="solid-icons-tab">
-          <h6 class="text-right"><?php echo count($solidIcons); ?> solid icons</h6>
           <div class="row">
             <?php for($i = 0; $i < ceil(count($solidIcons)) ; $i++){ ?>
               <div class="col-6 col-sm-4 col-lg-3 col-xl-2 text-center mb-4">
                   <div class="card border-0">
                     <h6><?php echo ucfirst($solidIcons[$i][0]);?></h6>
-                    <p><a href="<?php echo ($resURL) ?>site-images/SVG/<?php echo $solidIcons[$i][1];?>.svg" data-toggle="tooltip" data-placement="top" title="Click to download SVG" download><i class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></a></p>
+                    <p><a href="<?php echo ($resURL) ?>site-images/SVG/<?php echo $solidIcons[$i][1];?>.svg" download><i data-toggle="tooltip" data-placement="top" title="Click to download SVG" class="gel-icon-2x gel-icon-<?php echo $solidIcons[$i][1];?>"></i></a></p>
                     <small><code>.gel-icon-<?php echo $solidIcons[$i][1];?></code></small>
                   </div>
               </div>
@@ -213,6 +214,9 @@ $lineIcons = buildLineIcons();
             <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/paperplane.svg" alt="Shortlisting"></div>
             <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/key.svg" alt="Advertising"></div>
             <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/personas.svg" alt="Shortlisting"></div>
+            <div class="w-100"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/tick.svg" alt="success"></div>
+            <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/error.svg" alt="error"></div>
         </div>
       </div>
     </div>
