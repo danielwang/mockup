@@ -16,14 +16,18 @@
     content: "\e92a";
     font-family: $gel-icon;
     width: auto;
+    height: auto;
+    transform: rotate(0);
+    transition: transform 0.3s ease-in-out 0s;
   }
   // dropup
   .dropup & {
     &:after {
       content: "\e92b";
       border: 0;
-      vertical-align: top;
       width: auto;
+      height: auto;
+      vertical-align: bottom;
     }
   }
 
@@ -47,7 +51,7 @@
 
 .show > .dropdown-toggle {
   &:after {
-    content: "\e92b";
+    transform: rotate(-180deg);
   }
 }
 
@@ -56,23 +60,6 @@
 .dropdown-menu {
   padding: $spacer * 0.75 $spacer * 1.25;
   margin-top: $spacer * 0.25;
-
-  // &:after {
-  //   position: absolute;
-  //   top: -10px;
-  //   left: auto;
-  //   right: 10px;
-  //   display: inline-block;
-  //   content: "";
-  //   border-right: 10px solid transparent;
-  //   border-bottom: 10px solid rgb(255, 255, 255);
-  //   border-left: 10px solid transparent;
-  // }
-  //
-  // &.dropdown-menu-right {
-  //   left: auto;
-  //   right: -0.65rem;
-  // }
 
   .dropdown-item {
     color: $link-color-alt;
@@ -115,10 +102,10 @@
     //   transform: rotate(180deg);
     // }
   }
-
-  &.show > .dropdown-toggle {
-    &:after {
-      content: "\e92a";
-    }
-  }
+  //
+  // &.show > .dropdown-toggle {
+  //   &:after {
+  //     content: "\e92a";
+  //   }
+  // }
 }

@@ -363,8 +363,8 @@ $border-width:                1px !default;
 $border-color:                $slate-100 !default;
 
 
-$border-radius:               .5rem !default;
-$border-radius-lg:            .75rem !default;
+$border-radius:               .375rem !default;
+$border-radius-lg:            .5rem !default;
 $border-radius-sm:            .25rem !default;
 
 $component-active-color:      $white !default;
@@ -918,6 +918,7 @@ $modal-title-line-height:           $line-height-base !default;
 $modal-content-bg:               $white !default;
 $modal-content-border-color:     $border-color !default;
 $modal-content-border-width:     $border-width !default;
+$modal-content-border-radius:    $border-radius;
 $modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
 

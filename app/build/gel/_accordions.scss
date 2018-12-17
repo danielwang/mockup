@@ -99,12 +99,14 @@
           margin-left: $spacer;
           content: "\e92b";
           font-family: $gel-icon;
+          transform: rotate(0);
+          transition: transform 0.3s ease-in-out 0s;
         }
 
         &.collapsed{
           color: $link-color-alt;
           &:before {
-            content: "\e92a";
+            transform: rotate(180deg);
           }
         }
       }
