@@ -98,7 +98,7 @@ document.addEventListener('keyup',closeMenu);
 const topbar = document.getElementById("gel-navbar");
 const subpagesNav = document.getElementById("gel-subpages");
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.addEventListener('scroll', function() {
   var currentScrollPos = window.pageYOffset;
   //topbar
   if (typeof(topbar) != 'undefined' && topbar != null){
@@ -118,7 +118,7 @@ window.onscroll = function() {
   }
 
   prevScrollpos = currentScrollPos;
-}
+});
 
 /*****************************************
   Scroller
