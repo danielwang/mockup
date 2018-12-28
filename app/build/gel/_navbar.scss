@@ -4,6 +4,7 @@
   height: $navbar-height;
   z-index: $zindex-sticky;
   @include font-bold();
+  @include transition(top 0.3s ease-in-out);
 
   @include media-breakpoint-up(sm) {
     padding-left: 0;

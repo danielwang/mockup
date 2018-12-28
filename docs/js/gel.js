@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL JS - v1.2.0
+ *   PageUp GEL JS - v1.3.0
  *   Author: Daniel Wang
- *	 Date: 29/10/2018
+ *	 Date: 28/12/2018
  *
 \* *************************************** */
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
 /*****************************************
     Menu toggle
 *****************************************/
-var menu = document.getElementById('gel-menu');
-var menuIcons = document.getElementsByClassName('nav-toggle');
+const menu = document.getElementById('gel-menu');
+const menuIcons = document.getElementsByClassName('nav-toggle');
 
 function toggleMenu() {
   // sliding menu toggle
@@ -93,31 +93,32 @@ document.addEventListener('touchstart', closeMenu);
 document.addEventListener('keyup',closeMenu);
 
 /*****************************************
-    checkboxes select/unselect all
+    Hide topbar on Scroll
 *****************************************/
-/* function checkAll() {
+const topbar = document.getElementById("gel-navbar");
+const subpagesNav = document.getElementById("gel-subpages");
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  //topbar
+  if (typeof(topbar) != 'undefined' && topbar != null){
+    if (prevScrollpos > currentScrollPos) {
+      topbar.style.top = "0";
+    } else {
+      topbar.style.top = "-3.75rem";
+    }
+  }
+  // subpages nav
+  if (typeof(subpagesNav) != 'undefined' && subpagesNav != null){
+    if (prevScrollpos > currentScrollPos) {
+      subpagesNav.style.top = "3.75rem";
+    } else {
+      subpagesNav.style.top = "-3.75rem";
+    }
+  }
 
-var inputs = document.querySelectorAll('.check');
-for (var i = 0; i < inputs.length; i++) {
-  inputs[i].checked = true;
+  prevScrollpos = currentScrollPos;
 }
-
-this.onclick = uncheckAll;
-}
-
-function uncheckAll() {
-var inputs = document.querySelectorAll('.check');
-for (var i = 0; i < inputs.length; i++) {
-  inputs[i].checked = false;
-}
-
-this.onclick = checkAll; //function reference to original function
-}
-
-var el = document.getElementById("checkall"); //let for ES6 aficionados
-el.onclick = checkAll; //again, function reference, no ()
-
-*/
 
 /*****************************************
   Scroller

@@ -10940,7 +10940,12 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   top: 3.75rem;
   z-index: 999;
   background-image: linear-gradient(to right, #0063b0 0%, #0063b0 100%);
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  transition: top 0.3s ease-in-out; }
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #gel-subpages {
+      transition: none; } }
 
 #gel-subpages .page-tabs {
   margin-left: -15px;
@@ -11177,7 +11182,12 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   height: 3.75rem;
   z-index: 1020;
   font-weight: 400;
-  font-family: 'Proxima Nova Bold'; }
+  font-family: 'Proxima Nova Bold';
+  transition: top 0.3s ease-in-out; }
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .navbar {
+      transition: none; } }
 
 @media (min-width: 576px) {
     .navbar {

@@ -84,12 +84,12 @@
   }
 }
 
-#gel-subpages {
+##{$prefix}-subpages {
   position: sticky;
   top: $navbar-height;
   z-index: $zindex-sticky - 21; // 999 just below the dropdown
   @include gradient-x($header-bg-start, $header-bg-end);
-
+  @include transition(top 0.3s ease-in-out);
   .page-tabs {
     margin-left: -$grid-gutter-width/2;
     @include scroll-horizontal();

@@ -8,4 +8,6 @@
 <blockquote class="blockquote">
       Developers can build entirely new UI components without writing any new CSS
 </blockquote>
+
+<?php include ('core-elements/more/utilities.html'); ?>
 <?php endblock()?>
