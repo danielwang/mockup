@@ -1,5 +1,5 @@
  <?php
-
+ //run 'php release.php v3.x.x' in terminal
  $v = $argv[1];
  // create folder for the release version
  $dir= '../dist/' . $v;
