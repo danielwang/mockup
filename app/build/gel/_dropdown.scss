@@ -4,7 +4,7 @@
 
 .dropdown-toggle {
 //  margin-right: $spacer;
-  padding-right: 1.75rem;
+  padding-right: 2.5rem;
 
   .btn-group &{
     margin-right: 0;
@@ -19,6 +19,8 @@
     height: auto;
     transform: rotate(0);
     transition: transform 0.3s ease-in-out 0s;
+    position: absolute;
+    right: 1.25rem;
   }
   // dropup
   .dropup & {

@@ -30,6 +30,8 @@
 
         &.dropdown-toggle:after {
           color: rgba($navbar-dark-color, .5);
+          position: static;
+          right: auto;
         }
       }
     }

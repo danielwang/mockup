@@ -65,3 +65,10 @@ sub,sup{
 .text-24{
   font-size: 1.5rem // 24px
 }
+
+// responsive size, fonts goes bigger beyond lg viewports
+// @include media-breakpoint-down(lg) {
+//   body{
+//     font-size: $font-size-lg;
+//   }
+// }

@@ -9617,18 +9617,21 @@ a {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-left: 5px; }
+  padding-left: 5px;
+  margin-bottom: 1rem !important;
+  font-size: 1rem;
+  font-family: 'Proxima Nova' !important; }
 
 .checkbox label::before {
   cursor: pointer;
   content: "";
   display: inline-block;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: -2px;
   left: 0;
-  margin-left: -1.25rem;
+  margin-left: -1.5rem;
   border: 1px solid #bac6d2;
   border-radius: 4px;
   background-color: #fff;
@@ -9644,12 +9647,12 @@ a {
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 0;
+  left: 1px;
   top: -2px;
-  margin-left: -1.25rem;
+  font-size: 1rem;
+  margin-left: -1.5rem;
   padding-left: 3px;
   padding-top: 0;
-  font-size: 1rem;
   color: #0063b0; }
 
 .checkbox input[type="checkbox"], .checkbox input[type="radio"] {
@@ -9685,6 +9688,16 @@ a {
 .checkbox.checkbox-inline {
   margin-top: 0;
   display: inline; }
+
+@media (min-width: 992px) {
+  .checkbox label {
+    font-size: 0.875rem; }
+    .checkbox label::before {
+      width: 1.25rem;
+      height: 1.25rem; }
+    .checkbox label::after {
+      font-size: 0.875rem;
+      left: 0; } }
 
 .checkbox-default input[type="checkbox"]:checked + label::before, .checkbox-default input[type="radio"]:checked + label::before {
   background-color: #0063b0;
@@ -9730,25 +9743,28 @@ a {
 
 .radio {
   cursor: default;
-  padding-left: 4px; }
+  padding-left: 4px;
+  line-height: 1.5rem; }
 
 .radio label {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-left: 5px; }
+  padding-left: 5px;
+  font-size: 1rem;
+  font-family: 'Proxima Nova' !important; }
 
 .radio label::before {
   cursor: pointer;
   content: "";
   display: inline-block;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
   top: 0;
   left: 0;
-  margin-left: -20px;
+  margin-left: -1.5rem;
   border: 1px solid #bac6d2;
   border-radius: 50%;
   background-color: #fff;
@@ -9763,11 +9779,11 @@ a {
   display: inline-block;
   position: absolute;
   content: " ";
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   left: 4px;
   top: 4px;
-  margin-left: -20px;
+  margin-left: -1.5rem;
   border-radius: 50%;
   background-color: #8299ae;
   transform: scale(0, 0);
@@ -9800,6 +9816,18 @@ a {
 .radio.radio-inline {
   margin-right: 1rem;
   display: inline; }
+
+@media (min-width: 992px) {
+  .radio {
+    line-height: 1.25rem; }
+    .radio label {
+      font-size: 0.875rem; }
+      .radio label::before {
+        width: 1.25rem;
+        height: 1.25rem; }
+      .radio label::after {
+        width: 12px;
+        height: 12px; } }
 
 .radio-default input[type="radio"] + label::after {
   background-color: #0063b0; }
@@ -9855,7 +9883,7 @@ a {
 .radio-success input[type="radio"]:checked + label::after {
   background-color: #328423; }
 
-label .was-validated .form-check-input:invalid .checkbox:before, label .form-check-input.is-invalid .checkbox:before, label .was-validated .form-check-input:invalid .radio:before, label .form-check-input.is-invalid .radio:before {
+label .form-check-input.is-invalid .checkbox:before, label .was-validated .form-check-input:invalid .checkbox:before, label .form-check-input.is-invalid .radio:before, label .was-validated .form-check-input:invalid .radio:before {
   border-color: #cd2f2f; }
 
 .job-status-filters {
@@ -9996,7 +10024,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   display: inline-block; }
 
 .dropdown-toggle {
-  padding-right: 1.75rem; }
+  padding-right: 2.5rem; }
 
 .btn-group .dropdown-toggle {
   margin-right: 0; }
@@ -10009,7 +10037,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   width: auto;
   height: auto;
   transform: rotate(0);
-  transition: transform 0.3s ease-in-out 0s; }
+  transition: transform 0.3s ease-in-out 0s;
+  position: absolute;
+  right: 1.25rem; }
 
 .dropup .dropdown-toggle:after {
   content: "\e92b";
@@ -11210,7 +11240,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   text-decoration: underline; }
 
 .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
-  color: rgba(255, 255, 255, .5); }
+  color: rgba(255, 255, 255, .5);
+  position: static;
+  right: auto; }
 
 .navbar .navbar-nav .dropdown-menu {
   top: 3.75rem;
@@ -12189,6 +12221,10 @@ sub, sup {
 
 .text-24 {
   font-size: 1.5rem; }
+
+@media (max-width: 1199.98px) {
+  body {
+    font-size: 1rem; } }
 /*******************************************************
  Variables
  *******************************************************/

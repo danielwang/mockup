@@ -142,7 +142,7 @@
   //     }
   //   }
   // }
-  // responsive btn size, btn goes small beyond lg viewports
+  // responsive btn size, btn goes smaller beyond lg viewports
   @include media-breakpoint-between(lg,xxl) {
     // 34px height
     height: 34px;
