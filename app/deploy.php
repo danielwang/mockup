@@ -1,23 +1,24 @@
  <?php
 /*
 Deploy script is to generate static htmls and copy
-the assets into docs folder, the github pages mockup site will be 
+the assets into docs folder, the github pages mockup site will be
 updated as soon as commit the code change into github
 */
 
 /* read php files from folders */
 $folders = array("pages", "ui");
 for ($i = 0; $i < count($folders); $i++) {
-  echo "<ul><li>";
+  echo "***** Start generating ***** \n";
   //generate files
   recurseDir($folders[$i]);
-  echo "</li></ul>";
+  echo "***** End generating ***** \n\n\n";
   //move html files to docs dir
   moveFilesToDocs($folders[$i]);
+  echo "\n\n\n";
 }
 
 function recurseDir($folderpath) {
-	echo "<ul><li><b>$folderpath</b></li>";
+	echo "=====$folderpath====\n";
   // check if has sub folders
   $files = scandir($folderpath);
 
@@ -31,12 +32,11 @@ function recurseDir($folderpath) {
       //   echo "</li>";
       // }else{
         $folderpath = str_replace('/', DIRECTORY_SEPARATOR, $folderpath);
-        echo "<li>$folderpath -> $file</li>";
+        echo "$folderpath -> $file \n";
         viewSource($folderpath, $file);
       // }
     }
   }
-  echo "</ul>";
   // chdir("../");
   // echo getcwd();
 }
@@ -86,6 +86,7 @@ function moveFilesToDocs($src){
   foreach ($files as $fname) {
     if($fname != '.' && $fname != '..') {
       rename($fname, $dest.$fname);
+      echo "moving $dest.$fname \n";
     }
   }
 }
@@ -93,11 +94,19 @@ function moveFilesToDocs($src){
 
 //copy files to docs
 copy('js/gel.js', '../docs/js/gel.js');
+echo "copied gel.js \n";
 copy('css/gel.css', '../docs/css/gel.css');
+echo "copied gel..css \n";
 copy('css/gel-site.css', '../docs/css/gel-site.css');
+echo "copied gel-site.css \n";
 copy('css/icons/gel-icon.svg', '../docs/css/icons/gel-icon.svg');
+echo "copied gel-icon.svg \n";
 copy('css/icons/gel-icon.ttf', '../docs/css/icons/gel-icon.ttf');
+echo "copied gel-icon.ttf \n";
 copy('css/icons/gel-icon.woff', '../docs/css/icons/gel-icon.woff');
+echo "copied gel-icon.woff \n";
+
+echo "****************** Deploy finished ******************  \n";
 
 /* Deploy Process
   0. increase version num v3.x.x and date in gel.scss
