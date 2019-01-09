@@ -183,7 +183,7 @@
         overflow: hidden;
 
         td:last-child{
-          border-bottom: 1px solid $border-color !important;
+          border-bottom: 1px solid $border-color;
           border-bottom-left-radius: $border-radius !important;
           border-bottom-right-radius: $border-radius !important;
         }
@@ -196,8 +196,8 @@
       th[scope="row"] {
         @include font-heading();
         background: white;
-        border-left: 1px solid $border-color !important;
-        border-right: 1px solid $border-color !important;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
         border-top-left-radius: $border-radius !important;
         border-top-right-radius: $border-radius !important;
         border-bottom-left-radius: 0 !important;
@@ -215,7 +215,7 @@
         &.section-heading{
            padding-left: $spacer;
            background: $slate-100;
-           border: 0;
+           border: 0 !important;
         }
 
         &[scope="row"]{
@@ -241,6 +241,13 @@
           border-top-left-radius: $border-radius !important;
           border-top-right-radius: $border-radius !important;
         }
+      }
+    }
+
+    &.table-borderless {
+      tr{
+        border-top: 1px solid $border-color;
+        border-radius: 0;
       }
     }
   }

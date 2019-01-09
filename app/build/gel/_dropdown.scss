@@ -5,6 +5,9 @@
 .dropdown-toggle {
 //  margin-right: $spacer;
   padding-right: 2.5rem;
+  @include media-breakpoint-down(lg) {
+    padding-right:0;
+  }
 
   .btn-group &{
     margin-right: 0;

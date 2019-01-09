@@ -34,7 +34,7 @@
             <thead>
               <tr>
                 <th class="text-center" scope="col">Select</th>
-                <th class="text-center" scope="col">Summary</th>
+                <th scope="col">Summary</th>
                 <th class="text-center" scope="col">Qualified Prospect</th>
                 <th class="text-center" scope="col">Prospect</th>
                 <th class="text-center" scope="col">Qualified Lead</th>
@@ -46,7 +46,7 @@
             <tbody>
             <?php for ($x =1; $x <= 8; $x++) {?>
               <tr>
-                <th scope="row"  class="text-center">
+                <th scope="row" class="text-right">
                   <div class="checkbox checkbox-default">
                     <input id="checkbox1-<?php echo $x; ?>" type="checkbox" checked>
                     <label for="checkbox1-<?php echo $x; ?>">
@@ -58,8 +58,8 @@
                 <td data-title="Prospect" class="text-center"><?php echo 2*$x + 8; ?></td>
                 <td data-title="Qualified Lead" class="text-center"><?php echo 2*$x + 2; ?></td>
                 <td data-title="Lead" class="text-center"><?php echo 2*$x + 4; ?></td>
-                <td data-title="Column 2" class="text-center"><?php echo 2*$x + 69; ?></td>
-                <td data-title="Column 3" class="text-center">
+                <td data-title="Total" class="text-center"><?php echo 2*$x + 69; ?></td>
+                <td scope="row">
                   <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Remove from Dossier">
                     <i class="gel-icon-close"></i>
                   </button>

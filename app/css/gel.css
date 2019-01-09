@@ -10026,6 +10026,10 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 .dropdown-toggle {
   padding-right: 2.5rem; }
 
+@media (max-width: 1199.98px) {
+    .dropdown-toggle {
+      padding-right: 0; } }
+
 .btn-group .dropdown-toggle {
   margin-right: 0; }
 
@@ -11732,7 +11736,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
       border-radius: 0.375rem;
       overflow: hidden; }
       .table tbody tr td:last-child {
-        border-bottom: 1px solid #bac6d2 !important;
+        border-bottom: 1px solid #bac6d2;
         border-bottom-left-radius: 0.375rem !important;
         border-bottom-right-radius: 0.375rem !important; }
       .table tbody tr:last-of-type {
@@ -11741,8 +11745,8 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
         font-weight: 400;
         font-family: 'Nunito Semibold';
         background: white;
-        border-left: 1px solid #bac6d2 !important;
-        border-right: 1px solid #bac6d2 !important;
+        border-left: 1px solid #bac6d2;
+        border-right: 1px solid #bac6d2;
         border-top-left-radius: 0.375rem !important;
         border-top-right-radius: 0.375rem !important;
         border-bottom-left-radius: 0 !important; }
@@ -11757,7 +11761,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
       .table tbody td.section-heading {
         padding-left: 1rem;
         background: #f1f4f6;
-        border: 0; }
+        border: 0 !important; }
       .table tbody td[scope="row"] {
         padding-left: 1rem; }
       .table tbody td[data-title]:before {
@@ -11772,7 +11776,10 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
     .table.table-bordered tbody th:first-child, .table.table-bordered tbody td:first-child {
       border-top: 1px solid #bac6d2 !important;
       border-top-left-radius: 0.375rem !important;
-      border-top-right-radius: 0.375rem !important; } }
+      border-top-right-radius: 0.375rem !important; }
+    .table.table-borderless tr {
+      border-top: 1px solid #bac6d2;
+      border-radius: 0; } }
 /* *********************************\
  sticky header and column
  \***********************************/
