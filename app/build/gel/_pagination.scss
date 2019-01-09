@@ -1,0 +1,17 @@
+.pagination-inline {
+  display: flex;
+  @include list-unstyled();
+  @include border-radius();
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-base, $line-height-sm, $border-radius-sm);
+  .page-item {
+    margin: 0 $spacer/4;
+    .page-link {
+      background: none;
+      border: 0;
+    }
+    &.active .page-link {
+      background:  $pagination-active-bg;
+      border-radius: $border-radius;
+    }
+  }
+}

@@ -8,10 +8,13 @@
       font-family: $gel-icon;
       font-size: $font-size-lg;
       margin-right: $spacer*0.5;
+      display: inline-block;
+      transform: rotate(0);
+      transition: transform 0.3s ease-in-out 0s;
     }
     &.collapsed{
       &:before{
-        content: "\e92b";
+        transform: rotate(-180deg);
       }
     }
   }

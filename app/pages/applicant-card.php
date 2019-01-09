@@ -73,55 +73,55 @@
       </div>
       <dl class="row mt-3 collapse show mb-0 d-print-flex" id="app-details">
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Gender</dt>
+          <dt class="text-sm">Gender</dt>
           <dd>Male</dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Phone</dt>
+          <dt class="text-sm">Phone</dt>
           <dd>+61 4123 111 111</dd>
         </span>
         <span class="col-6 col-md-4 col-lg-4">
-          <dt>Address</dt>
+          <dt class="text-sm">Address</dt>
           <dd>91 William Street, Melbourne, VIC, Australia</dd>
         </span>
         <span class="col-6 col-md-4 col-lg-4">
-          <dt>Email</dt>
+          <dt class="text-sm">Email</dt>
           <dd><a href="mailto:peters+daniels@pageuppeople.com">daniel.applicant@company.com</a></dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Birthday</dt>
+          <dt class="text-sm">Birthday</dt>
           <dd>01/01/1999</dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Number</dt>
+          <dt class="text-sm">Number</dt>
           <dd>10923445</dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Nationality</dt>
+          <dt class="text-sm">Nationality</dt>
           <dd>Australia</dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Linked Employee</dt>
+          <dt class="text-sm">Linked Employee</dt>
           <dd><a href="#"> Relink</a></dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Orininal Source</dt>
+          <dt class="text-sm">Orininal Source</dt>
           <dd><a href="#">Seek</a></dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Profile</dt>
+          <dt class="text-sm">Profile</dt>
           <dd><a href="#">View</a></dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Job mail</dt>
+          <dt class="text-sm">Job mail</dt>
           <dd>No</dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Employment status</dt>
+          <dt class="text-sm">Employment status</dt>
           <dd>Never employed or contracted</dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>e-Zines comms hold</dt>
+          <dt class="text-sm">e-Zines comms hold</dt>
           <dd>
             <div class="toggle toggle-success">
               <label>
@@ -132,7 +132,7 @@
           </dd>
         </span>
         <span class="col-6 col-md-4 col-lg-2">
-          <dt>Flags</dt>
+          <dt class="text-sm">Flags</dt>
           <dd>  <i class="text-muted gel-icon-location"></i><i class="text-muted gel-icon-bullhorn"></i><i class="text-muted gel-icon-info"></i><i class="text-muted gel-icon-lock"></i></dd>
         </span>
       </dl>
@@ -167,11 +167,11 @@
                     </div>
                     <h5 class="d-inline">International Consultant on Early Childhood Development <span class="badge badge-info">Undisclose</span></h5>
                   </div>
-                  <div class="row">
-                      <span class="col-6 col-sm-3"><sup class="text-black-50">Job ID:</sup><br/> <span>942130</span></span>
-                      <span class="col-6 col-sm-3"><sup class="text-black-50">Submit date:</sup> <br/><span>17 Nov 2017</span></span>
-                      <span class="col-6 col-sm-3"><sup class="text-black-50">Recruiter:</sup> <br/><span>Daniel Wang</span></span>
-                      <span class="col-6 col-sm-3"><sup class="text-black-50">Applied via:</sup> <br/><span>Linkedin</span></span>
+                  <div class="row mt-3">
+                      <span class="col-6 col-sm-3"><dt class="text-sm">Job ID</dt><dd>942130</dd></span>
+                      <span class="col-6 col-sm-3"><dt class="text-sm">Submit date:</dt><dd>17 Nov 2017</dd></span>
+                      <span class="col-6 col-sm-3"><dt class="text-sm">Recruiter:</dt><dd>Daniel Wang</dd></span>
+                      <span class="col-6 col-sm-3"><dt class="text-sm">Applied via:</dt><dd>Linkedin</dd></span>
                   </div>
                 </div>
                 <div class="col-6 col-lg-2">
