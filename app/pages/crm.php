@@ -7,7 +7,7 @@
 <?php startblock('page-actions') ?>
 <span class="item mr-3">
   <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown" data-persist="true">
-    <i class="gel-icon-lg gel-icon-user" aria-hidden="true"></i> <span>Team and Users</span>
+    <i class="gel-icon-lg gel-icon-control" aria-hidden="true"></i> <span>Team and Users</span>
   </a>
 </span>
 <?php endblock() ?>

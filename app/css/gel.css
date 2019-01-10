@@ -8433,13 +8433,37 @@ a {
   width: 80px;
   height: 80px; }
 
-.badge {
+.badge-info {
+  color: #0c4c6b;
+  background-color: #c0e6f8;
+  border-radius: 1.5rem;
+  padding: 0.25rem 0.5rem;
   font-weight: 400;
   font-family: 'Proxima Nova Semibold'; }
 
-.badge-outline {
-  color: #ff5722;
-  border: 1px solid currentColor; }
+.badge-warning {
+  color: #775603;
+  background-color: #fdebbe;
+  border-radius: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: 400;
+  font-family: 'Proxima Nova Semibold'; }
+
+.badge-danger {
+  color: #821e1e;
+  background-color: #f1c2c2;
+  border-radius: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: 400;
+  font-family: 'Proxima Nova Semibold'; }
+
+.badge-success {
+  color: #1a4412;
+  background-color: #afe7a5;
+  border-radius: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: 400;
+  font-family: 'Proxima Nova Semibold'; }
 /**  dots/indicator **/
 .dot-blue {
   background-color: blue;

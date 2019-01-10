@@ -1,11 +1,24 @@
-.badge {
+@mixin badge-variant($bg, $color) {
+  color: $color;
+  background-color: $bg;
+  border-radius: $btn-border-radius;
+  padding: $input-btn-padding-y-sm  $input-btn-padding-x-sm;
   @include font-semibold();
 }
 
-.badge-outline {
-  color: #FF5722;
-  border: 1px solid currentColor;
+.badge-info{
+  @include badge-variant($azure-100,$azure-900)
 }
+.badge-warning{
+  @include badge-variant($orange-100,$orange-900)
+}
+.badge-danger{
+  @include badge-variant($red-100,$red-900)
+}
+.badge-success{
+  @include badge-variant($green-100,$green-900)
+}
+
 
 /**  dots/indicator **/
 @mixin dot-variant($color) {
