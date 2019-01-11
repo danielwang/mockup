@@ -47,10 +47,9 @@
     .card-header {
       border-bottom: 0;
       a {
-        color: $white;
+        color: $body-color;
         display: block;
         @include font-heading();
-        @include text-truncate();
         &:before {
           float: right;
           margin-left: $spacer;

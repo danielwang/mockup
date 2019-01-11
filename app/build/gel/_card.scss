@@ -1,5 +1,13 @@
 .card{
   padding: $card-spacer-x;
+
+  .card-header {
+    height: 3.25rem;
+    h5{
+      @include text-truncate();
+    }
+  }
+
   .illustrations{
     margin: $spacer/2 auto 0;
     width: 3.5rem;

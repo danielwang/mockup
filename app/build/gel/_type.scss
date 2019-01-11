@@ -38,6 +38,7 @@ sup{
 }
 sub,sup{
   font-size: 0.75rem;
+  letter-spacing: 0.0325rem;
 }
 .lead{
   @include font-light();
@@ -45,6 +46,7 @@ sub,sup{
 
 .text-12, .text-sm{
   font-size: 0.75rem; //12px
+  letter-spacing: 0.0325rem;
 }
 
 .text-14{

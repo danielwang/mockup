@@ -17,15 +17,14 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
-<div class="panel">
-  <div class="card">
-    <div class="card-header light-header" role="tab">
-      <h5 class="mb-0">
+<div class="card">
+    <div class="d-flex justify-content-between align-items-center" role="tab">
+      <h3 class="mb-0">
         Talent Dossier
-      </h5>
+      </h3>
+      <button class="btn btn-primary">Add</button>
     </div>
-    <div class="card-body">
-      <div class="row">
+    <div class="row">
         <div class="col-xl-8 col-xxl-4">
           <div id="crm-chart"></div>
         </div>
@@ -116,8 +115,6 @@
           </nav>
         </div>
       </div>
-    </div>
-  </div>
 </div>
 
 <script>
