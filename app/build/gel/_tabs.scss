@@ -14,33 +14,31 @@
 
   .nav-link {
     color: $link-color-alt;
-    font-size: 1rem;
+    font-size: $font-size-lg;
     padding: $spacer;
     white-space: nowrap;
+    opacity: 0.75;
 
     @include hover-focus {
       text-decoration: underline;
       outline: none;
+      opacity: 1;
     }
 
     &.active {
       // border-bottom: 4px solid currentcolor;
       color: $active;
       position: relative;
+      opacity: 1;
 
       &::before {
-        width: 10px;
-        height: 10px;
-        transform: rotate(45deg);
-        border-left: 1px solid $grey-100;
-        border-top: 1px solid $grey-100;
+        width: 100%;
         display: block;
+        border-bottom: $blue 2px solid;
         content: "";
         position: absolute;
-        bottom: -0.25rem;
-        background: white;
-        left: calc(50%);
-        margin-left: -5px;
+        bottom: 1px;
+        left: 0;
       }
     }
   }

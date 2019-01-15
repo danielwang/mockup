@@ -117,6 +117,89 @@
       </div>
 </div>
 
+<div class="row mt-4">
+  <div class="col-xl-8">
+    <div class="card h-100">
+      <h3 class="mb-0">Communication</h3>
+      <table class="table table-borderless table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Message</th>
+            <th class="text-center" scope="col">Sent</th>
+            <th class="text-center" scope="col">Opened %</th>
+            <th class="text-center" scope="col">Click-through %</th>
+            <th class="text-center" scope="col">Bounced %</th>
+          </tr>
+        </thead>
+        <tbody>
+        <?php for ($x =1; $x <= 8; $x++) {?>
+          <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center"><?php echo 2*$x + 1; ?></td>
+            <td data-title="Opened %" class="text-center"><?php echo 2*$x + 8; ?></td>
+            <td data-title="Click-through %" class="text-center"><?php echo 2*$x + 2; ?></td>
+            <td data-title="Bounced %" class="text-center"><?php echo 2*$x + 4; ?></td>
+          </tr>
+        <?php } ?>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-xl-4 mt-4 mt-xl-0">
+    <div class="card h-100">
+      <div class="d-flex justify-content-between align-items-center mb-3" role="tab">
+        <h3 class="mb-0">
+          My tasks
+        </h3>
+        <button class="btn btn-outline-primary">Add</button>
+      </div>
+      <?php for ($x =1; $x <= 4; $x++) {?>
+      <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#">Finalise longlist for VP Security role</a>
+        </div>
+        <div class="col-4 col-lg-3 text-red">
+          Due in 6 days
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+      <?php }?>
+      <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#" class="link-alt text-line-through">Finalise longlist for VP Security role</a>
+        </div>
+        <div class="col-4 col-lg-3">2 days ago</div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#" class="link-alt text-line-through">Follow up with Bob Jones</a>
+        </div>
+        <div class="col-4 col-lg-3">3 days ago</div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
 <script>
 
 Highcharts.chart('crm-chart', {

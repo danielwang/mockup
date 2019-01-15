@@ -69,6 +69,10 @@ sub,sup{
   font-size: 1.5rem // 24px
 }
 
+.text-line-through{
+  text-decoration: line-through;
+}
+
 // responsive size, fonts goes bigger beyond lg viewports
 // @include media-breakpoint-down(lg) {
 //   body{

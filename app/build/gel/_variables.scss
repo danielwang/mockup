@@ -254,22 +254,18 @@ $spacers: map-merge((
   2: ($spacer * .5),  // 8px
   3: $spacer,
   4: ($spacer * 1.5), // 24px
-  5: ($spacer * 3)    // 48px
+  5: ($spacer * 2),   // 32px
+  6: ($spacer * 3),   // 48px
+  7: ($spacer * 4)    // 64px
 ), $spacers);
 
-
-// $spacers: map-merge((
-//   0: 0,
-//   1: ($spacer * .125),  // 2px
-//   2: ($spacer * .25),   // 4px
-//   3: ($spacer * .5),    // 8px
-//   4: $spacer,           // 16px
-//   5: ($spacer * 1.5),   // 24px
-//   6: ($spacer * 2),     // 32px
-//   7: ($spacer * 3),     // 48px
-//   8: ($spacer * 4),     // 64px
-// ), $spacers);
-
+$spacer-1:  map-get($spacers, 1);
+$spacer-2:  map-get($spacers, 2);
+$spacer-3:  map-get($spacers, 3);
+$spacer-4:  map-get($spacers, 4);
+$spacer-5:  map-get($spacers, 5);
+$spacer-6:  map-get($spacers, 6);
+$spacer-6:  map-get($spacers, 7);
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;
@@ -451,8 +447,8 @@ $hr-margin-y:                 $spacer !default;
 //
 
 $menu-bg:                     $slate-700;
-$header-bg-start:             $slate-200;
-$header-bg-end:               $slate-200;
+$header-bg-start:             $white;
+$header-bg-end:               $white;
 $heading-dark-bg:             $slate-600;
 // Tables
 //
@@ -826,8 +822,8 @@ $jumbotron-bg:                      $gray-200 !default;
 
 // Cards
 
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-y:                     $spacer-4 !default;
+$card-spacer-x:                     $spacer-4 !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 $border-color !default;
