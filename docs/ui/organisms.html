@@ -173,7 +173,7 @@
   dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div></div><div class="col-md-6 col-lg-5"><aside><p>The width of the box should be relative to the parent grid. No hard coded pixels needed.</p></aside></div></div></div><div class="tab-pane " id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"><div class="card">
   <form class="needs-validation" novalidate="novalidate">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-6 col-xxl-4">
         <div class="form-group">
           <label for="validationCustom01">First name</label>
           <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required="required">
@@ -182,7 +182,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-6 col-xxl-4">
         <div class="form-group">
           <label for="validationCustom02">Last name</label>
           <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required="required">
@@ -191,44 +191,74 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-6 col-xxl-4">
+        <div class="form-group">
+          <label for="validationCustom03">Preferred name</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xxl-4">
         <div class="form-group">
           <label for="validationCustomUsername">Username</label>
           <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required="required">
           <div class="invalid-feedback">
+            <i class="gel-icon-error" aria-hidden="true"></i>
             Please choose a username.
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-6 col-xxl-4">
         <div class="form-group">
           <label for="validationCustom03">City</label>
           <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="required">
           <div class="invalid-feedback">
+            <i class="gel-icon-error" aria-hidden="true"></i>
             Please provide a valid city.
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-6 col-xxl-4">
         <div class="form-group">
           <label for="validationCustom04">State</label>
           <input type="text" class="form-control" id="validationCustom04" placeholder="State" required="required">
           <div class="invalid-feedback">
+            <i class="gel-icon-error" aria-hidden="true"></i>
             Please provide a valid state.
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-6 col-xxl-4">
         <div class="form-group">
           <label for="validationCustom05">Zip</label>
           <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required="required">
           <div class="invalid-feedback">
+            <i class="gel-icon-error" aria-hidden="true"></i>
             Please provide a valid zip.
           </div>
         </div>
       </div>
+      <div class="col-lg-6 col-xxl-4">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Languages</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option value="en">English</option>
+            <option value="en-us">English (US)</option>
+            <option value="es">Español (Spanish)</option>
+            <option value="de">Deutsch (German)</option>
+            <option value="tr">Türkçe (Turkish)</option>
+            <option value="zh-s">简体中文 (Chinese, Simplified)</option>
+            <option value="ja">日本語 (Japanese)</option>
+            <option value="nl">Nederlands (Dutch)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Introduction</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
     <div class="form-group">
       <div class="checkbox checkbox-primary">
@@ -237,6 +267,7 @@
           Agree to terms and conditions
         </label>
         <div class="invalid-feedback">
+          <i class="gel-icon-error" aria-hidden="true"></i>
           You must agree before submitting.
         </div>
       </div>

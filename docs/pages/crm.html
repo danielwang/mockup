@@ -358,7 +358,7 @@
               <div class="page-actions col-lg-4 mt-2">
                   <span class="item mr-3">
   <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown" data-persist="true">
-    <i class="gel-icon-lg gel-icon-user" aria-hidden="true"></i> <span>Team and Users</span>
+    <i class="gel-icon-lg gel-icon-control" aria-hidden="true"></i> <span>Team and Users</span>
   </a>
 </span>
               </div>
@@ -374,15 +374,14 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
-<div class="panel">
-  <div class="card">
-    <div class="card-header light-header" role="tab">
-      <h5 class="mb-0">
+<div class="card">
+    <div class="d-flex justify-content-between align-items-center" role="tab">
+      <h3 class="mb-0">
         Talent Dossier
-      </h5>
+      </h3>
+      <button class="btn btn-primary">Add</button>
     </div>
-    <div class="card-body">
-      <div class="row">
+    <div class="row">
         <div class="col-xl-8 col-xxl-4">
           <div id="crm-chart"></div>
         </div>
@@ -611,10 +610,199 @@
           </nav>
         </div>
       </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-xl-8">
+    <div class="card h-100">
+      <h3 class="mb-0">Communication</h3>
+      <table class="table table-borderless table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Message</th>
+            <th class="text-center" scope="col">Sent</th>
+            <th class="text-center" scope="col">Opened %</th>
+            <th class="text-center" scope="col">Click-through %</th>
+            <th class="text-center" scope="col">Bounced %</th>
+          </tr>
+        </thead>
+        <tbody>
+                  <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center">3</td>
+            <td data-title="Opened %" class="text-center">10</td>
+            <td data-title="Click-through %" class="text-center">4</td>
+            <td data-title="Bounced %" class="text-center">6</td>
+          </tr>
+                  <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center">5</td>
+            <td data-title="Opened %" class="text-center">12</td>
+            <td data-title="Click-through %" class="text-center">6</td>
+            <td data-title="Bounced %" class="text-center">8</td>
+          </tr>
+                  <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center">7</td>
+            <td data-title="Opened %" class="text-center">14</td>
+            <td data-title="Click-through %" class="text-center">8</td>
+            <td data-title="Bounced %" class="text-center">10</td>
+          </tr>
+                  <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center">9</td>
+            <td data-title="Opened %" class="text-center">16</td>
+            <td data-title="Click-through %" class="text-center">10</td>
+            <td data-title="Bounced %" class="text-center">12</td>
+          </tr>
+                  <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center">11</td>
+            <td data-title="Opened %" class="text-center">18</td>
+            <td data-title="Click-through %" class="text-center">12</td>
+            <td data-title="Bounced %" class="text-center">14</td>
+          </tr>
+                  <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center">13</td>
+            <td data-title="Opened %" class="text-center">20</td>
+            <td data-title="Click-through %" class="text-center">14</td>
+            <td data-title="Bounced %" class="text-center">16</td>
+          </tr>
+                  <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center">15</td>
+            <td data-title="Opened %" class="text-center">22</td>
+            <td data-title="Click-through %" class="text-center">16</td>
+            <td data-title="Bounced %" class="text-center">18</td>
+          </tr>
+                  <tr>
+            <th scope="row" nowrap>
+              02 May 2018
+            </th>
+            <td data-title="Message">Privacy policy update notice</td>
+            <td data-title="Sent" class="text-center">17</td>
+            <td data-title="Opened %" class="text-center">24</td>
+            <td data-title="Click-through %" class="text-center">18</td>
+            <td data-title="Bounced %" class="text-center">20</td>
+          </tr>
+                </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-xl-4 mt-4 mt-xl-0">
+    <div class="card h-100">
+      <div class="d-flex justify-content-between align-items-center mb-3" role="tab">
+        <h3 class="mb-0">
+          My tasks
+        </h3>
+        <button class="btn btn-outline-primary">Add</button>
+      </div>
+            <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#">Finalise longlist for VP Security role</a>
+        </div>
+        <div class="col-4 col-lg-3 text-red">
+          Due in 6 days
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+            <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#">Finalise longlist for VP Security role</a>
+        </div>
+        <div class="col-4 col-lg-3 text-red">
+          Due in 6 days
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+            <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#">Finalise longlist for VP Security role</a>
+        </div>
+        <div class="col-4 col-lg-3 text-red">
+          Due in 6 days
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+            <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#">Finalise longlist for VP Security role</a>
+        </div>
+        <div class="col-4 col-lg-3 text-red">
+          Due in 6 days
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+            <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#" class="link-alt text-line-through">Finalise longlist for VP Security role</a>
+        </div>
+        <div class="col-4 col-lg-3">2 days ago</div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-6 col-lg-7">
+          <a href="#" class="link-alt text-line-through">Follow up with Bob Jones</a>
+        </div>
+        <div class="col-4 col-lg-3">3 days ago</div>
+        <div class="col-2">
+          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+            <i class="gel-icon-trash"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
     </div>
   </div>
 </div>
-
 <script>
 
 Highcharts.chart('crm-chart', {
