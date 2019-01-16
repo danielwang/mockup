@@ -5,10 +5,21 @@
 <?php endblock() ?>
 
 <?php startblock('page-actions') ?>
-<span class="item mr-3">
+<span class="item">
   <a class="dropdown-toggle text-center" href="#_" title="Help" data-toggle="dropdown" data-persist="true">
     <i class="gel-icon-lg gel-icon-control" aria-hidden="true"></i> <span>Team and Users</span>
   </a>
+  <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="dropdownMenuButton" aria-expanded="false">
+      <div class="vh-max-50 overflow-y-auto scroll p-4">
+        <a class="dropdown-item" href="#">Firstname Lastname</a>
+        <a class="dropdown-item" href="#">Firstname Lastname 1</a>
+        <a class="dropdown-item" href="#">Firstname Lastname 2</a>
+        <a class="dropdown-item" href="#">Firstname Lastname 3</a>
+        <a class="dropdown-item" href="#">Firstname Lastname 4</a>
+        <a class="dropdown-item" href="#">Firstname Lastname 5</a>
+        <a class="dropdown-item" href="#">Firstname Lastname 6</a>
+      </div>
+    </div>
 </span>
 <?php endblock() ?>
 
@@ -18,11 +29,11 @@
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
 <div class="card">
-    <div class="d-flex justify-content-between align-items-center" role="tab">
+    <div class="d-flex justify-content-between align-items-center">
       <h3 class="mb-0">
         Talent Dossier
       </h3>
-      <button class="btn btn-primary">Add</button>
+      <button class="btn btn-primary" aria-label="Add talent pool to dossier">Add</button>
     </div>
     <div class="row">
         <div class="col-xl-8 col-xxl-4">
@@ -43,12 +54,12 @@
               </tr>
             </thead>
             <tbody>
-            <?php for ($x =1; $x <= 8; $x++) {?>
+            <?php for ($x =1; $x <= 6; $x++) {?>
               <tr>
-                <th scope="row" class="text-right">
-                  <div class="checkbox checkbox-default">
+                <th scope="row" class="text-center">
+                  <div class="checkbox checkbox-default" data-toggle="tooltip" data-placement="bottom" data-original-title="Select to visualize data">
                     <input id="checkbox1-<?php echo $x; ?>" type="checkbox" checked>
-                    <label for="checkbox1-<?php echo $x; ?>">
+                    <label for="checkbox1-<?php echo $x; ?>" ><span class="sr-only">Select Account Manager talent pool into graphic</span>
                     </label>
                   </div>
                 </th>
@@ -59,12 +70,52 @@
                 <td data-title="Lead" class="text-center"><?php echo 2*$x + 4; ?></td>
                 <td data-title="Total" class="text-center"><?php echo 2*$x + 69; ?></td>
                 <td scope="row">
-                  <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Remove from Dossier">
-                    <i class="gel-icon-close"></i>
+                  <button type="button" class="btn btn-icon" aria-label="remove fromm dossier" data-toggle="tooltip" data-placement="top" data-original-title="Remove from Dossier">
+                    <i  class="gel-icon-close"></i>
                   </button>
                 </td>
               </tr>
             <?php } ?>
+            <tr>
+               <th scope="row" class="text-center">
+                 <div class="checkbox checkbox-default" data-toggle="tooltip" data-placement="bottom" data-original-title="Select to visualize data">
+                   <input id="checkbox1-7" type="checkbox">
+                   <label for="checkbox1-7"><span class="sr-only">Select Account Manager talent pool into graphic</span>
+                   </label>
+                 </div>
+               </th>
+               <td data-title="Summary"><a href="#_">Senior Project Manager</a></td>
+               <td data-title="Qualified Prospect" class="text-center">15</td>
+               <td data-title="Prospect" class="text-center">22</td>
+               <td data-title="Qualified Lead" class="text-center">16</td>
+               <td data-title="Lead" class="text-center">18</td>
+               <td data-title="Total" class="text-center">83</td>
+               <td scope="row">
+                 <button type="button" class="btn btn-icon" aria-label="remove fromm dossier" data-toggle="tooltip" data-placement="top" data-original-title="Remove from Dossier">
+                   <i class="gel-icon-close"></i>
+                 </button>
+               </td>
+             </tr>
+             <tr>
+               <th scope="row" class="text-center">
+                 <div class="checkbox checkbox-default" data-toggle="tooltip" data-placement="bottom" data-original-title="Select to visualize data">
+                   <input id="checkbox1-8" type="checkbox">
+                   <label for="checkbox1-8"><span class="sr-only">Select Account Manager talent pool into graphic</span>
+                   </label>
+                 </div>
+               </th>
+               <td data-title="Summary"><a href="#_">Software Development Agile Coach</a></td>
+               <td data-title="Qualified Prospect" class="text-center">17</td>
+               <td data-title="Prospect" class="text-center">24</td>
+               <td data-title="Qualified Lead" class="text-center">18</td>
+               <td data-title="Lead" class="text-center">20</td>
+               <td data-title="Total" class="text-center">85</td>
+               <td scope="row">
+                 <button type="button" class="btn btn-icon" aria-label="remove fromm dossier" data-toggle="tooltip" data-placement="top" data-original-title="Remove from Dossier">
+                   <i class="gel-icon-close"></i>
+                 </button>
+               </td>
+             </tr>
             </tbody>
           </table>
 
@@ -155,7 +206,7 @@
         <h3 class="mb-0">
           My tasks
         </h3>
-        <button class="btn btn-outline-primary">Add</button>
+        <button class="btn btn-outline-primary" aria-label="Add a task">Add</button>
       </div>
       <?php for ($x =1; $x <= 4; $x++) {?>
       <div class="row">
@@ -187,11 +238,11 @@
       <hr>
       <div class="row">
         <div class="col-6 col-lg-7">
-          <a href="#" class="link-alt text-line-through">Follow up with Bob Jones</a>
+          <del><a href="#" class="link-alt">Follow up with Bob Jones</a></del>
         </div>
         <div class="col-4 col-lg-3">3 days ago</div>
         <div class="col-2">
-          <button type="button" class="btn btn-icon" aria-label="remove" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
+          <button type="button" class="btn btn-icon" aria-label="remove task" data-toggle="tooltip" data-placement="bottom" data-original-title="Delete">
             <i class="gel-icon-trash"></i>
           </button>
         </div>

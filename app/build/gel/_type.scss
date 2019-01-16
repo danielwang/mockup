@@ -71,6 +71,15 @@ sub,sup{
 
 .text-line-through{
   text-decoration: line-through;
+  &:hover{
+    text-decoration: line-through !important;
+  }
+}
+
+del{
+  a:hover{
+    text-decoration: none !important;
+  }
 }
 
 // responsive size, fonts goes bigger beyond lg viewports

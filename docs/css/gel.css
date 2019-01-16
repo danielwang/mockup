@@ -8484,6 +8484,9 @@ a {
 #gel-main {
   padding: 2rem 0;
   flex: 1 0 auto; }
+  #gel-main a:hover, #gel-main a:focus {
+    text-decoration: underline;
+    outline: none; }
 
 #gel-footer {
   flex-shrink: 0;
@@ -12625,6 +12628,12 @@ sub, sup {
 
 .text-line-through {
   text-decoration: line-through; }
+
+.text-line-through:hover {
+  text-decoration: line-through !important; }
+
+del a:hover {
+  text-decoration: none !important; }
 /*******************************************************
  Variables
  *******************************************************/
