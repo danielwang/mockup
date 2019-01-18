@@ -1,11 +1,11 @@
 $check-icon: "\e91d";
-$tray: "\e95d";
-$tray-size: 2.5rem;
-$tray-size-sm: 20px;
-$tray-colors: ()!default;
+$bucket: "\e915";
+$bucket-size: 2.5rem;
+$bucket-size-sm: 20px;
+$bucket-colors: ()!default;
 
-$tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tray-colors);
-@mixin tray-variant($color) {
+$bucket-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $bucket-colors);
+@mixin bucket-variant($color) {
   label {
     &::before {
       color: $color;
@@ -16,12 +16,12 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
     }
   }
 }
-@each $color, $value in $tray-colors {
-  .tray-#{$color} {
-    @include tray-variant($value);
+@each $color, $value in $bucket-colors {
+  .bucket-#{$color} {
+    @include bucket-variant($value);
   }
 }
-@mixin tray-size($size) {
+@mixin bucket-size($size) {
   label {
     &::before {
       top: -10px;
@@ -38,9 +38,9 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
   }
 }
 
-.trays{
+.buckets{
   display: inline;
-  .tray {
+  .bucket {
     cursor: default;
     display: inline-block;
     width: 40px;
@@ -56,9 +56,12 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
       transition: all 0.3s ease-out;
 
       &::before {
-        font-family: $gel-icon;
-        content: $tray;
-        font-size: $tray-size;
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        border:2px solid $blue;
+        transform: rotate(45deg);
         position: absolute;
         z-index: 2;
         top: -14px;
@@ -100,10 +103,10 @@ $tray-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $tra
       }
     }
 
-    &.tray-sm {
+    &.bucket-sm {
       width: 28px;
       height: 20px;
-      @include tray-size($tray-size-sm);
+      @include bucket-size($bucket-size-sm);
     }
   }
 }

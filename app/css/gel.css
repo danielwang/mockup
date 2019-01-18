@@ -9019,6 +9019,98 @@ a {
   margin-top: 0;
   margin-left: 8px; }
 
+.bucket-red label::before {
+  color: #cd2f2f; }
+
+.bucket-red label::after {
+  color: #cd2f2f; }
+
+.bucket-orange label::before {
+  color: #fac238; }
+
+.bucket-orange label::after {
+  color: #fac238; }
+
+.bucket-green label::before {
+  color: #328423; }
+
+.bucket-green label::after {
+  color: #328423; }
+
+.buckets {
+  display: inline; }
+
+.buckets .bucket {
+  cursor: default;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative; }
+
+.buckets .bucket label {
+  cursor: pointer;
+  vertical-align: top;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  transition: all 0.3s ease-out; }
+
+.buckets .bucket label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 2px solid #0063b0;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 2;
+  top: -14px;
+  left: 0;
+  line-height: 1.2; }
+
+.buckets .bucket label::after {
+  font-family: "gel-icon";
+  cursor: pointer;
+  text-align: center;
+  content: "";
+  background: #fff;
+  z-index: 1;
+  position: absolute;
+  width: 26px;
+  height: 24px;
+  top: -4px;
+  left: 7px;
+  font-size: 18px; }
+
+.buckets .bucket label:hover {
+  transform: translateY(-3px); }
+
+.buckets .bucket input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none; }
+
+.buckets .bucket input[type="radio"]:checked + label::after {
+  content: "\e91d"; }
+
+.buckets .bucket input[type="radio"]:focus + label {
+  transform: translateY(-3px); }
+
+.buckets .bucket.bucket-sm {
+  width: 28px;
+  height: 20px; }
+
+.buckets .bucket.bucket-sm label::before {
+  top: -10px;
+  font-size: 1.5rem; }
+
+.buckets .bucket.bucket-sm label::after {
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  top: -6px;
+  left: 4px; }
+
 .btn-primary {
   color: #fff;
   background-color: #0063b0;
@@ -12470,95 +12562,6 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 .marker-outline .timeline-item:hover .timeline-marker:before {
   background: #1aa5e6; }
-
-.tray-red label::before {
-  color: #cd2f2f; }
-
-.tray-red label::after {
-  color: #cd2f2f; }
-
-.tray-orange label::before {
-  color: #fac238; }
-
-.tray-orange label::after {
-  color: #fac238; }
-
-.tray-green label::before {
-  color: #328423; }
-
-.tray-green label::after {
-  color: #328423; }
-
-.trays {
-  display: inline; }
-
-.trays .tray {
-  cursor: default;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  position: relative; }
-
-.trays .tray label {
-  cursor: pointer;
-  vertical-align: top;
-  position: relative;
-  width: 40px;
-  height: 30px;
-  transition: all 0.3s ease-out; }
-
-.trays .tray label::before {
-  font-family: "gel-icon";
-  content: "\e95d";
-  font-size: 2.5rem;
-  position: absolute;
-  z-index: 2;
-  top: -14px;
-  left: 0;
-  line-height: 1.2; }
-
-.trays .tray label::after {
-  font-family: "gel-icon";
-  cursor: pointer;
-  text-align: center;
-  content: "";
-  background: #fff;
-  z-index: 1;
-  position: absolute;
-  width: 26px;
-  height: 24px;
-  top: -4px;
-  left: 7px;
-  font-size: 18px; }
-
-.trays .tray label:hover {
-  transform: translateY(-3px); }
-
-.trays .tray input[type="radio"] {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  pointer-events: none; }
-
-.trays .tray input[type="radio"]:checked + label::after {
-  content: "\e91d"; }
-
-.trays .tray input[type="radio"]:focus + label {
-  transform: translateY(-3px); }
-
-.trays .tray.tray-sm {
-  width: 28px;
-  height: 20px; }
-
-.trays .tray.tray-sm label::before {
-  top: -10px;
-  font-size: 1.5rem; }
-
-.trays .tray.tray-sm label::after {
-  font-size: 12px;
-  width: 16px;
-  height: 16px;
-  top: -6px;
-  left: 4px; }
 
 .link-alt {
   color: #1d262d;
