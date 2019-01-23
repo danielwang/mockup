@@ -1,112 +1,88 @@
-$check-icon: "\e91d";
-$bucket: "\e915";
+$bucket-empty: "\e984";
 $bucket-size: 2.5rem;
 $bucket-size-sm: 20px;
-$bucket-colors: ()!default;
+// $buckets: ()!default;
+// $buckets: map-merge(("1": "\e915", "2": "\e985", "3": "\e986"), $buckets);
+// $bucket-colors: ()!default;
+// $bucket-colors: map-merge(("1": $green, "2": $blue, "3": $orange), $bucket-colors);
 
-$bucket-colors: map-merge(("red": $red, "orange": $orange, "green": $green,), $bucket-colors);
-@mixin bucket-variant($color) {
-  label {
-    &::before {
-      color: $color;
-    }
+$buckets: (
+  1: ($indigo, "\e915"),
+  2: ($orange, "\e985"),
+  3: ($teal, "\e986")
+);
 
-    &::after {
-      color: $color;
-    }
-  }
-}
-@each $color, $value in $bucket-colors {
-  .bucket-#{$color} {
-    @include bucket-variant($value);
-  }
-}
-@mixin bucket-size($size) {
-  label {
-    &::before {
-      top: -10px;
-      font-size: 1.5rem;
-    }
-
-    &::after {
-      font-size: 12px;
-      width: 16px;
-      height: 16px;
-      top: -6px;
-      left: 4px;
-    }
-  }
-}
-
-.buckets{
+.buckets {
   display: inline;
-  .bucket {
-    cursor: default;
-    display: inline-block;
+}
+
+@mixin bucket-variant($color, $code) {
+  cursor: default;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+
+  label {
+    cursor: pointer;
+    vertical-align: top;
+    position: relative;
     width: 40px;
     height: 40px;
-    position: relative;
+    transition: all 0.3s ease-out;
 
-    label {
-      cursor: pointer;
-      vertical-align: top;
-      position: relative;
-      width: 40px;
-      height: 30px;
-      transition: all 0.3s ease-out;
-
-      &::before {
-        content: "";
-        width: 30px;
-        height: 30px;
-        border-radius: 4px;
-        border:2px solid $blue;
-        transform: rotate(45deg);
-        position: absolute;
-        z-index: 2;
-        top: -14px;
-        left: 0;
-        line-height: 1.2
-      }
-
-      &::after {
-        font-family: $gel-icon;
-        cursor: pointer;
-        text-align: center;
-        content: "";
-        background: $white;
-        z-index: 1;
-        position: absolute;
-        width: 26px;
-        height: 24px;
-        top: -4px;
-        left: 7px;
-        font-size: 18px;
-      }
-
-      &:hover{
-        transform: translateY(-3px);
-      }
-    }
-
-    input[type="radio"] {
+    &::before {
+      color: $color;
+      content: $bucket-empty;
       position: absolute;
-      clip: rect(0,0,0,0);
-      pointer-events: none;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      line-height: 1.2;
+      font-family: $gel-icon;
+      font-size: 2rem;
+    }
+  }
 
-      &:checked + label::after {
-        content: $check-icon;
-      }
+  input[type="radio"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
 
-      &:focus + label{
-        transform: translateY(-3px);
-      }
+    &:checked + label::before {
+      content: $code;
     }
 
-    &.bucket-sm {
-      width: 28px;
-      height: 20px;
-      @include bucket-size($bucket-size-sm);
+    &:focus + label {
+      border-bottom: $color 1px solid;
     }
   }
 }
+@each $type, $style in $buckets {
+  .bucket-#{$type} {
+     @include bucket-variant(nth($style, 1), nth($style, 2));
+   }
+}
+// @each $color, $colorvalue in $bucket-colors {
+//   @each $num, $value in $buckets {
+//     .bucket-#{$color}-#{$num} {
+//       @include bucket-variant($colorvalue, $value);
+//     }
+//   }
+// }
+// @mixin bucket-size($size) {
+//   label {
+//     &::before {
+//       top: -10px;
+//       font-size: 1.5rem;
+//     }
+//
+//     &::after {
+//       font-size: 12px;
+//       width: 16px;
+//       height: 16px;
+//       top: -6px;
+//       left: 4px;
+//     }
+//   }
+// }
