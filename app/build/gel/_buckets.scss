@@ -1,14 +1,10 @@
 $bucket-size: 2.5rem;
 $bucket-size-sm: 20px;
-// $buckets: ()!default;
-// $buckets: map-merge(("1": "\e915", "2": "\e985", "3": "\e986"), $buckets);
-// $bucket-colors: ()!default;
-// $bucket-colors: map-merge(("1": $green, "2": $blue, "3": $orange), $bucket-colors);
 
 $buckets: (
-  1: ($indigo, "\e915"),
-  2: ($orange, "\e985"),
-  3: ($teal, "\e986")
+  1: ($purple, "\e985"),
+  2: ($amber, "\e986"),
+  3: ($teal, "\e987")
 );
 
 .buckets {
@@ -52,8 +48,16 @@ $buckets: (
       content: $code;
     }
 
-    &:focus + label {
-      border-bottom: $color 1px solid;
+    &:focus + label::after {
+      width: 18px;
+      height: 18px;
+      content: "";
+      position: absolute;
+      box-shadow: 0 0 0px 6px rgba($color, .25);
+      border-radius: 3px;
+      transform: rotate(45deg);
+      top: 10px;
+      left: 7px;
     }
   }
 }

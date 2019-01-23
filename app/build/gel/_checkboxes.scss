@@ -19,6 +19,10 @@ $height-sm: $width-sm;
       color: #fff;
     }
   }
+  #{$parent} input[type="checkbox"]:focus + label::before{
+    border-color: $color;
+    box-shadow: 0 0 0 3px rgba($color, .35);
+  }
 }
 // @mixin checkbox-variant-indeterminate($parent, $color) {
 //   #{$parent} input[type="checkbox"]:indeterminate + label,
@@ -54,7 +58,7 @@ $height-sm: $width-sm;
       position: absolute;
       width: $width;
       height: $height;
-      top: -2px;
+      top: 0;
       left: 0;
       margin-left: -$width;
       border: 1px solid $ctrl-border-color;
@@ -69,9 +73,9 @@ $height-sm: $width-sm;
       position: absolute;
       width: 16px;
       height: 16px;
-      left: 1px;
-      top: -2px;
-      font-size: $font-size-lg;
+      left: -4px;
+      top: -3px;
+      font-size: $font-size-lg * 1.25;
       margin-left: -$width;
       padding-left: 3px;
       padding-top: 0;
@@ -86,13 +90,6 @@ $height-sm: $width-sm;
     cursor: pointer;
     opacity: 0;
     z-index: 1;
-
-    &:focus + label::before {
-      outline: thin dotted;
-      outline: 4px auto -webkit-focus-ring-color;
-      outline-offset: -1px;
-      border-color: $primary;
-    }
 
     &:checked + label::after {
       font-family: $gel-icon;
@@ -144,8 +141,9 @@ $height-sm: $width-sm;
       }
 
       &::after {
-        font-size: $font-size-base;
-        left: 0;
+        font-size: $font-size-lg;
+        left: -3px;
+        top: -2px;
       }
     }
   }
@@ -180,6 +178,11 @@ $height-sm: $width-sm;
 
       &::after {
         background-color: $color;
+      }
+    }
+    &:focus + label{
+      &::before{
+        box-shadow: 0 0 0 3px rgba($color, .35);
       }
     }
   }
@@ -239,12 +242,6 @@ $height-sm: $width-sm;
     cursor: pointer;
     opacity: 0;
     z-index: 1;
-
-    &:focus + label::before {
-      outline: thin dotted;
-      outline: 5px auto -webkit-focus-ring-color;
-      outline-offset: -2px;
-    }
 
     &:checked + label::after {
       transform: scale(1, 1);

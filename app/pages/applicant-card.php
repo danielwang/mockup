@@ -18,28 +18,28 @@
             <span class="dot-green" data-toggle="tooltip" data-placement="bottom" data-original-title="Active"></span>
           </h2>
         </div>
-        <div class="order-1 col-md-6 col-lg-5 text-md-right">
-          <fieldset class="trays mr-3" data-container="body" data-toggle="popover" data-placement="bottom" data-persist="true" data-content="You can set applicants into a coloured tray and the system will remember these when you go back to the manage applications screen to perform a bulk action on each tray.">
-            <legend class="sr-only">3 trays</legend>
-            <div class="tray tray-green tray-lg">
+        <div class="order-1 col-md-6 col-lg-5 d-flex align-items-center justify-content-md-end">
+          <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets">
+            <legend class="sr-only">3 buckets</legend>
+            <div class="bucket-1 bucket-lg">
               <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
               <label for="radio-b-l-1">
                 <span class="sr-only">
-                  Green</span>
+                  Bucket 1</span>
               </label>
             </div>
-            <div class="tray tray-orange tray-lg">
+            <div class="bucket-2 bucket-lg">
               <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
               <label for="radio-b-l-2">
                 <span class="sr-only">
-                  Orange</span>
+                  Bucket 2</span>
               </label>
             </div>
-            <div class="tray tray-red tray-lg">
+            <div class="bucket-3 bucket-lg">
               <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
               <label for="radio-b-l-3">
                 <span class="sr-only">
-                  Red</span>
+                  Bucket 3</span>
               </label>
             </div>
           </fieldset>

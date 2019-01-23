@@ -158,13 +158,191 @@
     <nav id="gel-subpages" role="navigation">
      <div class="container">
         <nav class="page-tabs nav" role="tablist">
-            <a class="nav-link active" id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="cards" aria-selected="1">Cards</a><a class="nav-link " id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="">Form</a><a class="nav-link " id="modals-tab" data-toggle="tab" href="#modals" role="tab" aria-controls="modals" aria-selected="">Modals</a><a class="nav-link " id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="">Ratings</a><a class="nav-link " id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="">Search</a><a class="nav-link " id="timelines-tab" data-toggle="tab" href="#timelines" role="tab" aria-controls="timelines" aria-selected="">Timelines</a><a class="nav-link " id="trays-tab" data-toggle="tab" href="#trays" role="tab" aria-controls="trays" aria-selected="">Trays</a>        </nav>
+            <a class="nav-link active" id="buckets-tab" data-toggle="tab" href="#buckets" role="tab" aria-controls="buckets" aria-selected="1">Buckets</a><a class="nav-link " id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="cards" aria-selected="">Cards</a><a class="nav-link " id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="">Form</a><a class="nav-link " id="modals-tab" data-toggle="tab" href="#modals" role="tab" aria-controls="modals" aria-selected="">Modals</a><a class="nav-link " id="ratings-tab" data-toggle="tab" href="#ratings" role="tab" aria-controls="ratings" aria-selected="">Ratings</a><a class="nav-link " id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="">Search</a><a class="nav-link " id="timelines-tab" data-toggle="tab" href="#timelines" role="tab" aria-controls="timelines" aria-selected="">Timelines</a>        </nav>
     </div>
   </nav>
   <!-- page body -->
 	<main id="gel-main">
 		<section class="container">
-      <div class='tab-content'><div class="tab-pane active" id="cards" role="tabpanel" aria-labelledby="page-tab-cards"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+      <div class='tab-content'><div class="tab-pane active" id="buckets" role="tabpanel" aria-labelledby="page-tab-buckets"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
+  <div class="col-md-4">
+    <h3>Small</h3>
+    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets">
+      <div class="bucket-sm bucket-1">
+        <input type="radio" name="radio-sm" id="radio-sm-1" value="option2">
+        <label for="radio-sm-1">
+          <span class="sr-only">
+            Green</span>
+        </label>
+      </div>
+      <div class="bucket-sm bucket-2">
+        <input type="radio" name="radio-sm" id="radio-sm-2" value="option1">
+        <label for="radio-sm-2">
+          <span class="sr-only">
+            Orange</span>
+        </label>
+      </div>
+      <div class="bucket-sm bucket-3">
+        <input type="radio" name="radio-sm" id="radio-sm-3" value="option3">
+        <label for="radio-sm-3">
+          <span class="sr-only">
+            Red</span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <div class="col-md-8">
+    <h3>Default</h3>
+    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets">
+      <legend class="sr-only">3 buckets</legend>
+      <div class="bucket-1 bucket-lg">
+        <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
+        <label for="radio-b-l-1">
+          <span class="sr-only">
+            Bucket 1</span>
+        </label>
+      </div>
+      <div class="bucket-2 bucket-lg">
+        <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
+        <label for="radio-b-l-2">
+          <span class="sr-only">
+            Bucket 2</span>
+        </label>
+      </div>
+      <div class="bucket-3 bucket-lg">
+        <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
+        <label for="radio-b-l-3">
+          <span class="sr-only">
+            Bucket 3</span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+</div>
+<h3>Examples</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+        <fieldset class="buckets">
+          <div class="bucket-sm bucket-1">
+            <input type="radio" name="radio-sm-a" id="radio-sm-a-1" value="option2">
+            <label for="radio-sm-a-1">
+              <span class="sr-only">
+                Green</span>
+            </label>
+          </div>
+          <div class="bucket-sm bucket-2">
+            <input type="radio" name="radio-sm-a" id="radio-sm-a-2" value="option1">
+            <label for="radio-sm-a-2">
+              <span class="sr-only">
+                Orange</span>
+            </label>
+          </div>
+          <div class="bucket-sm bucket-3">
+            <input type="radio" name="radio-sm-a" id="radio-sm-a-3" value="option3">
+            <label for="radio-sm-a-3">
+              <span class="sr-only">
+                Red</span>
+            </label>
+          </div>
+        </fieldset>
+      </th>
+      <td>Mark</td>
+      <td>Otto</td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <fieldset class="buckets">
+          <div class="bucket-sm bucket-1">
+            <input type="radio" name="radio-sm-b" id="radio-sm-b-1" value="option2">
+            <label for="radio-sm-b-1">
+              <span class="sr-only">
+                Green</span>
+            </label>
+          </div>
+          <div class="bucket-sm bucket-2">
+            <input type="radio" name="radio-sm-b" id="radio-sm-b-2" value="option1">
+            <label for="radio-sm-b-2">
+              <span class="sr-only">
+                Orange</span>
+            </label>
+          </div>
+          <div class="bucket-sm bucket-3">
+            <input type="radio" name="radio-sm-b" id="radio-sm-b-3" value="option3">
+            <label for="radio-sm-b-3">
+              <span class="sr-only">
+                Red</span>
+            </label>
+          </div>
+        </fieldset>
+      </th>
+      <td>Larry</td>
+      <td>the Bird</td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <fieldset class="buckets">
+          <div class="bucket-sm bucket-1">
+            <input type="radio" name="radio-sm-c" id="radio-sm-c-1" value="option2">
+            <label for="radio-sm-c-1">
+              <span class="sr-only">
+                Green</span>
+            </label>
+          </div>
+          <div class="bucket-sm bucket-2">
+            <input type="radio" name="radio-sm-c" id="radio-sm-c-2" value="option1">
+            <label for="radio-sm-c-2">
+              <span class="sr-only">
+                Orange</span>
+            </label>
+          </div>
+          <div class="bucket-sm bucket-3">
+            <input type="radio" name="radio-sm-c" id="radio-sm-c-3" value="option3">
+            <label for="radio-sm-c-3">
+              <span class="sr-only">
+                Red</span>
+            </label>
+          </div>
+        </fieldset>
+      </th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="text/javascript">
+  var bucket = document.getElementsByName('radio-b-l');
+  var setCheck;
+  for (x = 0; x < bucket.length; x++) {
+    bucket[x].addEventListener('click', toggleRadio);
+    bucket[x].addEventListener('keydown', toggleRadio);
+  }
+  function toggleRadio(e) {
+    if (e.which == "1") { // click event
+      if (setCheck != this) {
+        setCheck = this;
+      } else {
+        this.checked = false;
+        setCheck = null;
+      }
+    } else { // press esc or backspace to deselect radio
+      if (e.keyCode == 27 || e.keyCode == 8) {
+        this.checked = false;
+        setCheck = null;
+      }
+    }
+  }
+</script></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div><div class="tab-pane " id="cards" role="tabpanel" aria-labelledby="page-tab-cards"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
   A card can be used to display content related to a single subject. The content can consist of multiple elements of varying types and sizes.</blockquote>
 
 <div class="card">
@@ -193,11 +371,8 @@
       </div>
       <div class="col-lg-6 col-xxl-4">
         <div class="form-group">
-          <label for="validationCustom03">Preferred name</label>
-          <input type="text" class="form-control" id="validationCustom03" placeholder="">
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom03">Mobile</label>
+          <input type="tel" class="form-control" id="validationCustom03" required="required">
         </div>
       </div>
       <div class="col-lg-6 col-xxl-4">
@@ -274,6 +449,12 @@
     </div>
     <button class="btn btn-primary" type="submit">Submit</button>
   </form>
+
+  <form action="/action_page.php">
+    Username:
+    <input type="text" name="usrname" class="form-control" required="required"/>
+    <input type="submit">
+  </form>
 </div>
 <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -294,20 +475,9 @@
       });
     }, false);
   })();
-</script></div><div class="col-md-6 col-lg-5"><aside><p>This is how the element is used:</p>
-<ul>
-  <li>Put
-    <code>.required</code>
-    after
-    <code>.control-label</code>
-    to indicate mandatory field.</li>
-  <li>The switch toggle are built by purely CSS, it does not require javascript</li>
-  <li>The checkbox and radio button are built by purely CSS, it does not require javascript</li>
-  <li>Searchable Select is a Bootstrap plugin, bootstrap-combobox.css is already builtin the Styleguide, you just need to download
-    <a href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js</a>
-    into your application.</li>
-</ul>
-</aside></div></div></div><div class="tab-pane " id="modals" role="tabpanel" aria-labelledby="page-tab-modals"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
+</script></div><div class="col-md-6 col-lg-5"><aside><!-- <p>This is how the element is used:</p> <ul> <li>Put <code>.required</code> after <code>.control-label</code> to indicate mandatory field.</li> <li>The switch toggle are built by purely CSS, it does not require javascript</li> <li>The checkbox
+and radio button are built by purely CSS, it does not require javascript</li> <li>Searchable Select is a Bootstrap plugin, bootstrap-combobox.css is already builtin the Styleguide, you just need to download <a
+href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js</a> into your application.</li> </ul> --></aside></div></div></div><div class="tab-pane " id="modals" role="tabpanel" aria-labelledby="page-tab-modals"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
   A modal is a box with content displayed on top of the page to capture the user’s attention for an specific action inside the same process. Modals are subordinated to pages.
 </blockquote>
 <p>
@@ -722,161 +892,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
       </p>
     </div>
   </li>
-</ul></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div><div class="tab-pane " id="trays" role="tabpanel" aria-labelledby="page-tab-trays"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
-  <div class="col-md-4">
-    <h3>Small</h3>
-    <fieldset class="trays" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
-      <div class="tray tray-sm tray-green">
-        <input type="radio" name="radio-sm" id="radio-sm-1" value="option2">
-        <label for="radio-sm-1">
-          <span class="sr-only">
-            Green</span>
-        </label>
-      </div>
-      <div class="tray tray-sm tray-orange">
-        <input type="radio" name="radio-sm" id="radio-sm-2" value="option1">
-        <label for="radio-sm-2">
-          <span class="sr-only">
-            Orange</span>
-        </label>
-      </div>
-      <div class="tray tray-sm tray-red">
-        <input type="radio" name="radio-sm" id="radio-sm-3" value="option3">
-        <label for="radio-sm-3">
-          <span class="sr-only">
-            Red</span>
-        </label>
-      </div>
-    </fieldset>
-  </div>
-  <div class="col-md-8">
-    <h3>Default</h3>
-    <fieldset class="trays" data-toggle="tooltip" data-placement="bottom" data-original-title="Trays">
-      <legend class="sr-only">3 trays</legend>
-      <div class="tray tray-green tray-lg">
-        <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
-        <label for="radio-b-l-1">
-          <span class="sr-only">
-            Green</span>
-        </label>
-      </div>
-      <div class="tray tray-orange tray-lg">
-        <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
-        <label for="radio-b-l-2">
-          <span class="sr-only">
-            Orange</span>
-        </label>
-      </div>
-      <div class="tray tray-red tray-lg">
-        <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
-        <label for="radio-b-l-3">
-          <span class="sr-only">
-            Red</span>
-        </label>
-      </div>
-    </fieldset>
-  </div>
-</div>
-<h3>Examples</h3>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">
-        <fieldset class="trays">
-          <div class="tray tray-sm tray-green">
-            <input type="radio" name="radio-sm-a" id="radio-sm-a-1" value="option2">
-            <label for="radio-sm-a-1">
-              <span class="sr-only">
-                Green</span>
-            </label>
-          </div>
-          <div class="tray tray-sm tray-orange">
-            <input type="radio" name="radio-sm-a" id="radio-sm-a-2" value="option1">
-            <label for="radio-sm-a-2">
-              <span class="sr-only">
-                Orange</span>
-            </label>
-          </div>
-          <div class="tray tray-sm tray-red">
-            <input type="radio" name="radio-sm-a" id="radio-sm-a-3" value="option3">
-            <label for="radio-sm-a-3">
-              <span class="sr-only">
-                Red</span>
-            </label>
-          </div>
-        </fieldset>
-      </th>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
-    <tr>
-      <th scope="row">
-        <fieldset class="trays">
-          <div class="tray tray-sm tray-green">
-            <input type="radio" name="radio-sm-b" id="radio-sm-b-1" value="option2">
-            <label for="radio-sm-b-1">
-              <span class="sr-only">
-                Green</span>
-            </label>
-          </div>
-          <div class="tray tray-sm tray-orange">
-            <input type="radio" name="radio-sm-b" id="radio-sm-b-2" value="option1">
-            <label for="radio-sm-b-2">
-              <span class="sr-only">
-                Orange</span>
-            </label>
-          </div>
-          <div class="tray tray-sm tray-red">
-            <input type="radio" name="radio-sm-b" id="radio-sm-b-3" value="option3">
-            <label for="radio-sm-b-3">
-              <span class="sr-only">
-                Red</span>
-            </label>
-          </div>
-        </fieldset>
-      </th>
-      <td>Larry</td>
-      <td>the Bird</td>
-    </tr>
-    <tr>
-      <th scope="row">
-        <fieldset class="trays">
-          <div class="tray tray-sm tray-green">
-            <input type="radio" name="radio-sm-c" id="radio-sm-c-1" value="option2">
-            <label for="radio-sm-c-1">
-              <span class="sr-only">
-                Green</span>
-            </label>
-          </div>
-          <div class="tray tray-sm tray-orange">
-            <input type="radio" name="radio-sm-c" id="radio-sm-c-2" value="option1">
-            <label for="radio-sm-c-2">
-              <span class="sr-only">
-                Orange</span>
-            </label>
-          </div>
-          <div class="tray tray-sm tray-red">
-            <input type="radio" name="radio-sm-c" id="radio-sm-c-3" value="option3">
-            <label for="radio-sm-c-3">
-              <span class="sr-only">
-                Red</span>
-            </label>
-          </div>
-        </fieldset>
-      </th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-    </tr>
-  </tbody>
-</table></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div></div>		</section>
+</ul></div><div class="col-md-6 col-lg-5"><aside></aside></div></div></div></div>		</section>
 	</main>
   <footer id="gel-footer" role="footer">
     <div class="container">
