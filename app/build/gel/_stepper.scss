@@ -16,7 +16,7 @@
       width: 30px;
       height: 30px;
       display: block;
-      background: $azure;
+      background: $blue;
       top: 45px;
       left: 50%;
       margin-top: -15px;
@@ -27,7 +27,7 @@
         content: ' ';
         width: 14px;
         height: 14px;
-        background: $azure;
+        background: $white;
         border-radius: 50px;
         position: absolute;
         top: 8px;
@@ -46,7 +46,7 @@
       > .progress-bar {
         width: 0;
         box-shadow: none;
-        background: $azure;
+        background: $blue;
       }
     }
 
@@ -136,7 +136,7 @@
 
     &.complete {
       &:before {
-        background-color: $azure;
+        background-color: $blue;
         color: #fff;
       }
 
@@ -145,7 +145,7 @@
           content: "\e91d";
           font-family: $gel-icon;
           color: white;
-          background: $azure;
+          background: $blue;
         }
       }
     }

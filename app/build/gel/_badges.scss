@@ -10,7 +10,7 @@
   @include badge-variant($azure-100,$azure-900)
 }
 .badge-warning{
-  @include badge-variant($orange-100,$orange-900)
+  @include badge-variant($yellow-100,$yellow-900)
 }
 .badge-danger{
   @include badge-variant($red-100,$red-900)

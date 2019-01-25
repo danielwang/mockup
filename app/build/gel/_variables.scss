@@ -67,7 +67,7 @@ $purple:  #512DA8 !default;
 $pink:    #FF4081 !default;
 $red:     #CD2F2F !default;
 $orange:  #E68755 !default;
-$yellow:  #E1A931 !default;
+$yellow:  #FAC238 !default;
 $green:   #328423 !default;
 $teal:    #009688 !default;
 $cyan:    #00bcd4 !default;
@@ -156,15 +156,15 @@ $green-800: darken($green, 27%);
 $green-900: darken($green, 16%);
 
 
-$orange-100: lighten($orange, 27%);
-$orange-200: lighten($orange, 15%);
-$orange-300: lighten($orange, 12%);
-$orange-400: lighten($orange, 9%);
-$orange-500: $orange;
-$orange-600: darken($orange, 9%);
-$orange-700: darken($orange, 18%);
-$orange-800: darken($orange, 27%);
-$orange-900: darken($orange, 36%);
+$yellow-100: lighten($yellow, 27%);
+$yellow-200: lighten($yellow, 15%);
+$yellow-300: lighten($yellow, 12%);
+$yellow-400: lighten($yellow, 9%);
+$yellow-500: $yellow;
+$yellow-600: darken($yellow, 9%);
+$yellow-700: darken($yellow, 18%);
+$yellow-800: darken($yellow, 27%);
+$yellow-900: darken($yellow, 36%);
 
 $colors: () !default;
 $colors: map-merge((
@@ -486,7 +486,7 @@ $input-btn-line-height:       $line-height-base !default;
 $input-min-height:            2.75rem;
 
 $input-btn-focus-width:       .2rem !default;
-$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
+$input-btn-focus-color:       rgba($component-active-bg, .35) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
 $input-btn-padding-y-sm:      .25rem !default;

@@ -111,12 +111,12 @@ a{
   padding: $spacer * 2 0;
   flex: 1 0 auto;
 
-  a{
-    @include hover-focus {
-      text-decoration: underline;
-      outline: none;
-    }
-  }
+  // a{
+  //   @include hover-focus {
+  //     text-decoration: underline;
+  //     outline: none;
+  //   }
+  // }
 }
 
 ##{$prefix}-footer{

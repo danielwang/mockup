@@ -29,12 +29,12 @@
 }
 
 
-@mixin notification-variant($background, $icon-color, $color) {
+@mixin notification-variant($background, $color) {
   color: $color;
   @include gradient-bg($background);
 
   [class^="gel-icon-"]{
-    color: $icon-color;
+    color: $color;
     vertical-align: middle;
   }
 
@@ -46,28 +46,18 @@
 }
 
 .notification-info{
-  @include notification-variant($azure-100,$body-color, $body-color)
+  @include notification-variant($azure-100, $azure-900)
 }
 .notification-warning{
-  @include notification-variant($orange-500,$body-color, $body-color)
+  @include notification-variant($yellow-100,$yellow-900)
 }
 .notification-danger{
-  @include notification-variant($red-500,$white, $white)
+  @include notification-variant($red-100,$red-900)
 }
 .notification-success{
-  @include notification-variant($green-100,$body-color, $body-color)
+  @include notification-variant(lighten($green-100, 9%), $green-900)
 }
-// @each $color, $value in $theme-colors {
-//   .notification-#{$color} {
-//     @include notification-variant(darken($value, 9%), $value, $white);
-//   }
-// }
 
-// @each $color, $value in $theme-colors {
-//   .alert-#{$color} {
-//     @include alert-variant(lighten($value, 45%), $value, darken($value, 18%));
-//   }
-// }
 @mixin alert-variants($background, $color, $border-color, $icon-color) {
   color: $color;
   background: $background;
@@ -85,16 +75,12 @@
   }
 }
 
-.alert-hint{
-  @include alert-variants($white, $body-color, $border-color, $slate-600)
-}
-
 .alert-info{
   @include alert-variants($azure-100, $azure-900, $azure-100, $azure-900)
 }
 
 .alert-success{
-  @include alert-variants($green-100, $green-900, $green-100, $green-900)
+  @include alert-variants(lighten($green-100, 9%), $green-900, lighten($green-100, 9%), $green-900)
 }
 
 .alert-danger{
@@ -102,5 +88,5 @@
 }
 
 .alert-warning{
-  @include alert-variants($orange-100, $orange-900, $orange-100, $orange-900)
+  @include alert-variants($yellow-100, $yellow-900, $yellow-100, $yellow-900)
 }

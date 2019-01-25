@@ -53,7 +53,7 @@ $buckets: (
       height: 18px;
       content: "";
       position: absolute;
-      box-shadow: 0 0 0px 6px rgba($color, .25);
+      box-shadow: 0 0 0px 4px rgba($color, .25);
       border-radius: 3px;
       transform: rotate(45deg);
       top: 10px;
@@ -66,13 +66,7 @@ $buckets: (
      @include bucket-variant(nth($style, 1), nth($style, 2));
    }
 }
-// @each $color, $colorvalue in $bucket-colors {
-//   @each $num, $value in $buckets {
-//     .bucket-#{$color}-#{$num} {
-//       @include bucket-variant($colorvalue, $value);
-//     }
-//   }
-// }
+
 // @mixin bucket-size($size) {
 //   label {
 //     &::before {
