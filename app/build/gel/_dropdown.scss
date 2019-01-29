@@ -4,7 +4,7 @@
 
 .dropdown-toggle {
 //  margin-right: $spacer;
-  padding-right: 2.5rem;
+  padding-right: 2rem;
   @include media-breakpoint-down(lg) {
     padding-right:0;
   }
@@ -23,7 +23,7 @@
     transform: rotate(0);
     transition: transform 0.3s ease-in-out 0s;
     position: absolute;
-    right: 1.25rem;
+    right: 1rem;
   }
   // dropup
   .dropup & {
@@ -37,7 +37,7 @@
   }
 
   &.no-caret {
-    padding-right: 0;
+    padding-right: $spacer;
     margin-right: 0;
 
     &:after {
@@ -45,8 +45,6 @@
     }
 
     &+ .dropdown-menu {
-      margin-top: 0;
-
       &:after {
         border: 0;
       }

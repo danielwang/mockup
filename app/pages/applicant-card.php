@@ -181,13 +181,13 @@
                 <div class="col-6 col-lg-1">
                   <a href="#">No offer</a>
                 </div>
-                <div class="col-6 col-lg-1">
+                <div class="col-6 col-lg-2">
                   <i class="text-muted gel-icon-location"></i><i class="text-muted gel-icon-bullhorn"></i><i class="text-muted gel-icon-info"></i><i class="text-muted gel-icon-lock"></i>
                 </div>
-                <div class="col-6 col-lg-2 text-lg-right">
-                  <div class="dropdown d-inline-block d-print-none">
-                      <button class="btn btn-ctrl btn-sm dropdown-toggle mr-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Actions
+                <div class="col-6 col-lg-1 text-lg-right">
+                  <div class="dropdown d-inline-block d-print-none" data-toggle="tooltip" data-placement="top" data-original-title="Actions">
+                      <button class="btn btn-ctrl btn-sm dropdown-toggle no-caret mr-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="gel-icon-ellipsis"></i>
                       </button>
                       <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="dropdownMenuButton">
                         <div class="vh-30 overflow-y-auto scroll p-4">
@@ -300,5 +300,27 @@
   </div>
 </div>
 
-
+<script type="text/javascript">
+  var bucket = document.getElementsByName('radio-b-l');
+  var setCheck;
+  for (x = 0; x < bucket.length; x++) {
+    bucket[x].addEventListener('click', toggleRadio);
+    bucket[x].addEventListener('keydown', toggleRadio);
+  }
+  function toggleRadio(e) {
+    if (e.which == "1") { // click event
+      if (setCheck != this) {
+        setCheck = this;
+      } else {
+        this.checked = false;
+        setCheck = null;
+      }
+    } else { // press esc or backspace to deselect radio
+      if (e.keyCode == 27 || e.keyCode == 8) {
+        this.checked = false;
+        setCheck = null;
+      }
+    }
+  }
+</script>
 <?php endblock()?>

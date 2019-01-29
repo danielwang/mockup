@@ -406,10 +406,10 @@ $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              $body-color !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5.5rem !default;
-$display3-size:               4.5rem !default;
-$display4-size:               3.5rem !default;
+$display1-size:               3.75rem !default;
+$display2-size:               3rem !default;
+$display3-size:               2.25rem !default;
+$display4-size:               1.75rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;
@@ -505,11 +505,11 @@ $input-btn-border-width:      $border-width !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 $btn-padding-y:               $input-btn-padding-y !default;
-$btn-padding-x:               1.5rem !default;
+$btn-padding-x:               1rem !default;
 $btn-line-height:             $input-btn-line-height !default;
 $btn-min-height:              $input-min-height;
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
-$btn-padding-x-sm:            1rem !default;
+$btn-padding-x-sm:            .75rem !default;
 $btn-line-height-sm:          $input-btn-line-height-sm !default;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;

@@ -8,8 +8,7 @@ $height: $width;
 $width-sm: 1.25rem;
 $height-sm: $width-sm;
 @mixin checkbox-variant($parent, $color) {
-  #{$parent} input[type="checkbox"]:checked + label,
-  #{$parent} input[type="radio"]:checked + label {
+  #{$parent} input[type="checkbox"]:checked + label{
     &::before {
       background-color: $color;
       border-color: $color;
@@ -83,8 +82,7 @@ $height-sm: $width-sm;
     }
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  input[type="checkbox"]{
     position: static;
     margin-left: 0;
     cursor: pointer;
@@ -119,9 +117,9 @@ $height-sm: $width-sm;
     }
   }
 
-  &.checkbox-circle label::before {
-    border-radius: 50%;
-  }
+  // &.checkbox-circle label::before {
+  //   border-radius: 50%;
+  // }
 
   &.checkbox-inline {
     margin-top: 0;
