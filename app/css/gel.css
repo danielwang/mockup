@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.9.0
+ *   PageUp GEL - Theme 3.9.1
  *   Author: Daniel Wang
- *	 Date: 23/01/2018
+ *	 Date: 30/01/2018
  *
  \* *************************************** */
 /*!
@@ -3383,10 +3383,10 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   padding: 1.5rem; }
 
 .card-title {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
 
 .card-subtitle {
-  margin-top: -0.75rem;
+  margin-top: -0.5rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3398,7 +3398,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     margin-left: 1.5rem; }
 
 .card-header {
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   margin-bottom: 0;
   background-color: #f1f4f6;
   border-bottom: 1px solid #bac6d2; }
@@ -3408,7 +3408,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     border-top: 0; }
 
 .card-footer {
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   background-color: #f1f4f6;
   border-top: 1px solid #bac6d2; }
   .card-footer:last-child {
@@ -3416,7 +3416,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .card-header-tabs {
   margin-right: -0.75rem;
-  margin-bottom: -1.5rem;
+  margin-bottom: -1rem;
   margin-left: -0.75rem;
   border-bottom: 0; }
 
@@ -3506,7 +3506,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
           border-radius: 0; } }
 
 .card-columns .card {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
   @media (min-width: 576px) {
   .card-columns {
     column-count: 3;
@@ -11430,16 +11430,17 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   width: 55%; }
 
 #gel-header {
-  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+  background-image: linear-gradient(to right, #0063b0 0%, #0063b0 100%);
   background-repeat: repeat-x;
-  padding: 1.25rem 0;
+  color: white;
+  padding: 1rem 0;
   -webkit-transition: font-size 0.5s ease;
   -moz-transition: font-size 0.5s ease;
   -o-transition: font-size 0.5s ease;
-  transition: padding 0.5s ease;
-  border-bottom: solid 1px #bac6d2; }
+  transition: padding 0.5s ease; }
 
 #gel-header h1.page-title {
+  color: white;
   margin: 0;
   -webkit-transition: font-size 0.5s ease;
   -moz-transition: font-size 0.5s ease;
@@ -11451,6 +11452,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   font-size: 1.125rem; }
 
 #gel-header h6 {
+  color: white;
   font-size: 12px; }
 
 #gel-header .page-actions {
@@ -11469,7 +11471,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   white-space: nowrap; }
 
 #gel-header .page-actions .item > a {
-  margin-left: 20px; }
+  margin-left: 20px;
+  color: white;
+  padding: 0; }
 
 #gel-header .page-actions .item > a:focus {
   outline: none; }
@@ -11496,7 +11500,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   position: sticky;
   top: 3.75rem;
   z-index: 999;
-  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+  background-image: linear-gradient(to right, #0063b0 0%, #0063b0 100%);
   background-repeat: repeat-x;
   transition: top 0.3s ease-in-out; }
 
@@ -11523,41 +11527,45 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 #gel-subpages .page-tabs a {
   white-space: nowrap;
-  color: #1d262d;
+  font-weight: 400;
+  font-family: 'Nunito Semibold';
   font-size: 1rem;
   opacity: 0.75;
+  color: #fff;
   padding: 1rem;
   position: relative; }
 
 #gel-subpages .page-tabs a:focus {
+  color: #fff;
   background-color: transparent;
   text-decoration: underline;
   outline: none;
   opacity: 1; }
 
 #gel-subpages .page-tabs a:hover {
+  color: #fff;
   background-color: transparent;
   opacity: 1;
   text-decoration: underline;
   outline: none; }
 
 #gel-subpages .page-tabs a.active {
-  opacity: 1;
-  color: #0063b0; }
+  opacity: 1; }
 
 #gel-subpages .page-tabs a.active::before {
   content: "";
   position: absolute;
   bottom: 0;
-  border-width: 2px;
+  border-width: 0 0.5rem 0.5rem;
   border-style: solid;
-  border-color: #0063b0;
-  width: 100%;
-  left: 0; }
+  border-color: #f1f4f6 transparent;
+  display: block;
+  width: 0;
+  left: calc(50%);
+  margin-left: -0.5rem; }
 
 #gel-header + #gel-subpages {
-  margin-top: -1rem;
-  border-bottom: solid 1px #bac6d2; }
+  margin-top: -1rem; }
 
 #gel-menu {
   position: absolute;
@@ -13125,7 +13133,8 @@ del a:hover {
   content: "\e91d";
   font-family: "gel-icon";
   color: white;
-  background: #0063b0; }
+  background: #0063b0;
+  text-indent: -2px; }
 
 .stepper-vertical > .stepper-step > .stepper-dot {
   left: 12px;

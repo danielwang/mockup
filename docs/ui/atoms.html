@@ -264,6 +264,18 @@
     </button>
   </div>
   <div class="col-md-4">
+    <div class="btn-group" data-toggle="tooltip" data-placement="top" data-original-title="More">
+      <button type="button" class="btn btn-ctrl dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i aria-hidden="true" class="gel-icon-ellipsis"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
     <div class="dropdown">
       <button class="btn btn-ctrl dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Actions
@@ -277,8 +289,9 @@
   </div>
   <div class="col-md-4">
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-      <button type="button" class="btn btn-ctrl">
-        Print</button>
+      <button type="button" class="btn btn-ctrl" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
+        <i class="gel-icon-trash"></i>
+      </button>
       <div class="btn-group" role="group">
         <button id="btnGroupDrop1" type="button" class="btn btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Actions
@@ -427,23 +440,14 @@
         Primary
       </label>
     </div>
-    <!-- <div class="checkbox checkbox-success"> <input id="checkbox3" type="checkbox"> <label for="checkbox3"> Success </label> </div> -->
-    <!-- <div class="checkbox checkbox-info"> <input id="checkbox4" type="checkbox"> <label for="checkbox4"> Info </label> </div> -->
-    <!-- <div class="checkbox checkbox-warning"> <input id="checkbox5" type="checkbox" checked=""> <label for="checkbox5"> Warning </label> </div> -->
     <div class="checkbox checkbox-danger">
       <input id="checkbox6" type="checkbox" checked="">
       <label for="checkbox6">
         Check me out
       </label>
     </div>
-    <!-- <p>Checkboxes without label text</p> <div class="checkbox"> <input type="checkbox" id="singleCheckbox1" value="option1" aria-label="Single checkbox One"> <label></label> </div> <div class="checkbox checkbox-primary"> <input type="checkbox"
-    class="styled styled-primary" id="singleCheckbox2" value="option2" checked="" aria-label="Single checkbox Two"> <label></label> </div> <p>Checkboxes with indeterminate state</p> <div class="checkbox checkbox-primary"> <input
-    id="indeterminateCheckbox" type="checkbox" onclick="changeState(this)"> <label></label> </div> <p>Inline checkboxes</p> <div class="checkbox checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1"> <label for="inlineCheckbox1">
-    Inline One </label> </div> <div class="checkbox checkbox-success checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option1" checked=""> <label for="inlineCheckbox2"> Inline Two </label> </div> <div class="checkbox checkbox-inline">
-    <input type="checkbox" id="inlineCheckbox3" value="option1"> <label for="inlineCheckbox3"> Inline Three </label> </div> -->
+
   </fieldset>
-  <!-- <hr class="sg-hr"/> <fieldset> <legend> Circled </legend> <p> <code>.checkbox-circle</code> for roundness. </p> <div class="checkbox checkbox-circle"> <input id="checkbox7" type="checkbox"> <label for="checkbox7"> Simply Rounded </label> </div>
-  <div class="checkbox checkbox-info checkbox-circle"> <input id="checkbox8" type="checkbox" checked=""> <label for="checkbox8"> Me too </label> </div> </fieldset> -->
   <hr class="sg-hr"/>
   <fieldset>
     <legend>
@@ -626,6 +630,7 @@
       </div>
     </div>
   </div>
+  <hr class="sg-hr"/>
   <!-- <p>Radios without label text</p> <div class="radio"> <input type="radio" id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One"> <label></label> </div> <div class="radio radio-success"> <input type="radio"
   id="singleRadio2" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two"> <label></label> </div> -->
   <h4>Inline radios</h4>
@@ -660,34 +665,6 @@
     <input type="radio" name="radio3" id="radio6" value="option2" checked="" disabled="">
     <label for="radio6">
       Disabled Checked
-    </label>
-  </div>
-</fieldset>
-<hr class="sg-hr"/>
-<h3>Checkboxes Style</h3>
-<fieldset>
-  <legend class="sr-only">
-    As Checkboxes
-  </legend>
-  <p>
-    Radios can be made to look like checkboxes.
-  </p>
-  <div class="checkbox checkbox-primary">
-    <input type="radio" name="radio4" id="radio7" value="option1" checked="">
-    <label for="radio7">
-      Option 1
-    </label>
-  </div>
-  <div class="checkbox checkbox-primary">
-    <input type="radio" name="radio4" id="radio8" value="option2">
-    <label for="radio8">
-      Option 2
-    </label>
-  </div>
-  <div class="checkbox checkbox-primary">
-    <input type="radio" name="radio4" id="radio9" value="option3">
-    <label for="radio9">
-      Option 3
     </label>
   </div>
 </fieldset></div><div class="col-md-6 col-lg-5"><aside><p>Font Awesome Bootstrap Checkboxes & Radios plugin. Pure CSS way to make inputs look prettier. No Javascript!</p>

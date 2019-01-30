@@ -167,7 +167,7 @@
       <div class='tab-content'><div class="tab-pane active" id="buckets" role="tabpanel" aria-labelledby="page-tab-buckets"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-md-4">
     <h3>Small</h3>
-    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets">
+    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets" aria-label="3 buckets">
       <div class="bucket-sm bucket-1">
         <input type="radio" name="radio-sm" id="radio-sm-1" value="option2">
         <label for="radio-sm-1">
@@ -193,8 +193,7 @@
   </div>
   <div class="col-md-8">
     <h3>Default</h3>
-    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets">
-      <legend class="sr-only">3 buckets</legend>
+    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets" aria-label="3 buckets">
       <div class="bucket-1 bucket-lg">
         <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
         <label for="radio-b-l-1">
@@ -232,7 +231,7 @@
   <tbody>
     <tr>
       <th scope="row">
-        <fieldset class="buckets">
+        <fieldset class="buckets" aria-label="3 buckets">
           <div class="bucket-sm bucket-1">
             <input type="radio" name="radio-sm-a" id="radio-sm-a-1" value="option2">
             <label for="radio-sm-a-1">
@@ -261,7 +260,7 @@
     </tr>
     <tr>
       <th scope="row">
-        <fieldset class="buckets">
+        <fieldset class="buckets" aria-label="3 buckets">
           <div class="bucket-sm bucket-1">
             <input type="radio" name="radio-sm-b" id="radio-sm-b-1" value="option2">
             <label for="radio-sm-b-1">
@@ -290,7 +289,7 @@
     </tr>
     <tr>
       <th scope="row">
-        <fieldset class="buckets">
+        <fieldset class="buckets" aria-label="3 buckets">
           <div class="bucket-sm bucket-1">
             <input type="radio" name="radio-sm-c" id="radio-sm-c-1" value="option2">
             <label for="radio-sm-c-1">
@@ -449,12 +448,6 @@
     </div>
     <button class="btn btn-primary" type="submit">Submit</button>
   </form>
-
-  <form action="/action_page.php">
-    Username:
-    <input type="text" name="usrname" class="form-control" required="required"/>
-    <input type="submit">
-  </form>
 </div>
 <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -513,9 +506,9 @@ href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLongTitle">Modal title</h2>
+        <h2 class="modal-title" id="exampleModalLongTitle">Modal - long content</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body vh-70 overflow-y-auto">
@@ -553,14 +546,63 @@ href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js
       <div class="modal-header">
         <h2 class="modal-title" id="exampleModalCenterTitle">Modal title</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">
         <h5>Modal content</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <form>
+  <div class="form-group">
+    <label for="title1">Title</label>
+    <input type="text" class="form-control" id="title1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="group1">Group</label>
+    <select class="form-control" id="group1">
+      <option>Before your first day</option>
+      <option>Your first day</option>
+      <option>Your first 2 weeks</option>
+      <option>Your first 6 months</option>
+      <option>The end of your first 6 months</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="who1">Task allocated to</label>
+    <div>
+      <div class="radio radio-default radio-inline">
+        <input type="radio" id="inlineRadio1" value="option1" name="radioInline">
+        <label for="inlineRadio1">
+          Both
+        </label>
       </div>
+      <div class="radio radio-default radio-inline">
+        <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+        <label for="inlineRadio2">
+          Manager
+        </label>
+      </div>
+      <div class="radio radio-default radio-inline">
+        <input type="radio" id="inlineRadio3" value="option3" name="radioInline">
+        <label for="inlineRadio3">
+          Employee
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="checkbox checkbox-default checkbox-inline">
+      <input id="checkbox3" type="checkbox">
+      <label for="checkbox3">
+        Save it into favourite task list
+      </label>
+    </div>
+  </div>
+</form>      </div>
       <div class="modal-footer justify-content-between">
         <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Submit</button>
@@ -576,7 +618,7 @@ href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js
       <div class="modal-header">
         <h2 class="modal-title" id="exampleModalCenterTitle">Modal title</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">
@@ -598,7 +640,7 @@ href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js
     <div class="modal-content">
       <div class="modal-header border-bottom-0">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body">
@@ -640,7 +682,7 @@ href="https://github.com/danielfarrell/bootstrap-combobox">bootstrap-combobox.js
       <div class="modal-header">
         <h2 class="modal-title">Fit content modal</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close-o gel-icon-lg"></span>
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
       </div>
       <div class="modal-body vh-70 overflow-y-auto">

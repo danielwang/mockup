@@ -448,8 +448,8 @@ $hr-margin-y:                 $spacer !default;
 //
 
 $menu-bg:                     $slate-700;
-$header-bg-start:             $white;
-$header-bg-end:               $white;
+$header-bg-start:             $blue;
+$header-bg-end:               $blue;
 $heading-dark-bg:             $slate-600;
 // Tables
 //
@@ -823,7 +823,7 @@ $jumbotron-bg:                      $gray-200 !default;
 
 // Cards
 
-$card-spacer-y:                     $spacer-4 !default;
+$card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer-4 !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
