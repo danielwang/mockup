@@ -44,7 +44,7 @@
             </div>
           </fieldset>
           <div class="btn-group d-print-none" role="group" aria-label="Applicant actions">
-            <button type="button" class="btn btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
+            <button type="button" class="btn btn-ctrl" onclick="javascript: window.print();" aria-label="Print"><i class="gel-icon-print"></i></button>
             <div class="btn-group" role="group">
               <button id="btnGroupDrop1" type="button" class="btn btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Actions
@@ -71,7 +71,7 @@
           </div>
         </div>
       </div>
-      <dl class="row mt-3 collapse show mb-0 d-print-flex" id="app-details">
+      <dl class="row mt-3 collapse show mb-0 d-print-flex" id="app-details" aria-label="Applicant details">
         <span class="col-6 col-md-4 col-lg-2">
           <dt class="text-sm">Gender</dt>
           <dd>Male</dd>
@@ -236,7 +236,7 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Line manager review 1</h5>
+          <h4 class="timeline-title">Line manager review 1</h4>
           <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
             mollis pretium. Pellentesque ut neque.</p>
         </div>
@@ -248,7 +248,7 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Status changed to 'HR shortlist'</h5>
+          <h4 class="timeline-title">Status changed to 'HR shortlist'</h4>
           <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
             mollis pretium. Pellentesque ut neque.
           </p>
@@ -260,7 +260,7 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Application submitted</h5>
+          <h4 class="timeline-title">Application submitted</h4>
           <p>Scoring breakdown: <br>
             0/20 points: 'No' for 'Are you a National of the country where this position is based?' <br>
             20/20 points: 'Yes' for 'Do you have a background or experience working with/in Emergency country context?' <br>
@@ -278,7 +278,7 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</h5>
+          <h4 class="timeline-title">Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</h4>
           <p><a class="btn btn-outline-primary btn-sm" href="#">View</a>  <a class="btn btn-outline-primary btn-sm"href="#">PDF</a>  <a class="btn btn-outline-primary btn-sm" href="#">Reprocess</a>
           </p>
         </div>

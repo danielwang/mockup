@@ -4238,13 +4238,13 @@ button.close {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid #bac6d2;
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem; }
   .modal-header .close {
-    padding: 1rem;
-    margin: -1rem -1rem -1rem auto; }
+    padding: 1rem 1.5rem;
+    margin: -1rem 1.5rem -1rem 1.5rem -1rem 1.5rem auto; }
 
 .modal-title {
   margin-bottom: 0;
@@ -4253,13 +4253,13 @@ button.close {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem; }
+  padding: 1rem 1.5rem; }
 
 .modal-footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-top: 1px solid #bac6d2; }
   .modal-footer > :not(:first-child) {
     margin-left: 0.25rem; }
@@ -8477,10 +8477,7 @@ a {
   color: #1d262d; }
   .list-group-item a:hover {
     color: #1aa5e6; }
-/* Commented out responsive gutter on fluid layout,
- because it will break monilith hybrid page alignment,
- same in navbar.scss
- */
+
 #gel-main {
   padding: 2rem 0;
   flex: 1 0 auto; }
@@ -8490,7 +8487,7 @@ a {
   border-top: 1px solid #bac6d2;
   padding: 1rem 0;
   color: #6c757d;
-  font-size: 12px; }
+  font-size: 0.75rem; }
 /* selection styles */
 ::-moz-selection {
   color: #fff;
@@ -10111,7 +10108,7 @@ a {
 
 .checkbox {
   cursor: default;
-  padding-left: 4px; }
+  margin-left: 0.5rem; }
 
 .checkbox label {
   cursor: pointer;
@@ -10260,7 +10257,7 @@ a {
 
 .radio {
   cursor: default;
-  padding-left: 4px;
+  margin-left: 0.5rem;
   line-height: 1.5rem; }
 
 .radio label {
@@ -11472,8 +11469,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 #gel-header .page-actions .item > a {
   margin-left: 20px;
-  color: white;
-  padding: 0; }
+  color: white; }
 
 #gel-header .page-actions .item > a:focus {
   outline: none; }
@@ -11731,11 +11727,8 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
 
-.modal-header, .modal-body, .modal-footer {
-  padding: 1rem 2rem; }
-
 .modal-header .close {
-  margin: -0.5rem -1rem -0.5rem auto; }
+  margin: -1rem -1rem -0.5rem auto; }
 
 .navbar {
   position: sticky;
@@ -12379,7 +12372,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 .nav-tabs-line .nav-link:hover, .nav-tabs-line .nav-link:focus {
   text-decoration: underline;
-  outline: none;
+  outline: none !important;
   opacity: 1; }
 
 .nav-tabs-line .nav-link.active {
@@ -12497,7 +12490,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   width: 15px; }
 
 .timeline-marker:before {
-  background: #1aa5e6;
+  background: #0063b0;
   border: 3px solid transparent;
   border-radius: 100%;
   content: "";
@@ -12629,10 +12622,10 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
  ----------------------------------------------*/
 .marker-outline .timeline-marker:before {
   background: transparent;
-  border-color: #1aa5e6; }
+  border-color: #0063b0; }
 
 .marker-outline .timeline-item:hover .timeline-marker:before {
-  background: #1aa5e6; }
+  background: #0063b0; }
 
 .link-alt {
   color: #1d262d;

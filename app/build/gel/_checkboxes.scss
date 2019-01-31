@@ -38,7 +38,7 @@ $height-sm: $width-sm;
 
 .checkbox {
   cursor: default;
-  padding-left: 4px;
+  margin-left: $spacer-2;
 
   label {
     cursor: pointer;
@@ -188,7 +188,7 @@ $height-sm: $width-sm;
 
 .radio {
   cursor: default;
-  padding-left: 4px;
+  margin-left: $spacer-2;
   line-height: $height;
 
   label {

@@ -68,11 +68,6 @@ a{
   @include font-semibold();
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-
-  // @include hover-focus {
-  //   text-decoration: underline;
-  //   outline: none;
-  // }
 }
 
 %link-alt{
@@ -85,38 +80,10 @@ a{
   }
 }
 
-/* Commented out responsive gutter on fluid layout,
-   because it will break monilith hybrid page alignment,
-   same in navbar.scss
- */
-// .container-fluid{
-//   padding-left: $grid-gutter-width / 2;
-//   padding-right: $grid-gutter-width / 2;
-//
-//   @include media-breakpoint-up(md) {
-//     padding-left: $grid-gutter-width;
-//     padding-right: $grid-gutter-width;
-//   }
-//   @include media-breakpoint-up(lg) {
-//     padding-left: $grid-gutter-width * 1.5;
-//     padding-right: $grid-gutter-width * 1.5;
-//   }
-//   @include media-breakpoint-up(xl) {
-//     padding-left: $grid-gutter-width * 2;
-//     padding-right: $grid-gutter-width * 2;
-//   }
-// }
 
 ##{$prefix}-main {
-  padding: $spacer * 2 0;
+  padding: $spacer-5 0;
   flex: 1 0 auto;
-
-  // a{
-  //   @include hover-focus {
-  //     text-decoration: underline;
-  //     outline: none;
-  //   }
-  // }
 }
 
 ##{$prefix}-footer{
@@ -124,5 +91,5 @@ a{
   border-top: 1px solid $border-color;
   padding: $spacer 0;
   color: $text-muted;
-  font-size: 12px;
+  font-size: $font-size-sm;
 }

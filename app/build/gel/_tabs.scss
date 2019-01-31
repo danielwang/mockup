@@ -21,7 +21,7 @@
 
     @include hover-focus {
       text-decoration: underline;
-      outline: none;
+      outline: none !important;
       opacity: 1;
     }
 

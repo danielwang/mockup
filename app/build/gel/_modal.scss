@@ -17,10 +17,10 @@
     @include smooth-scrolling();
 }
 
-.modal-header, .modal-body, .modal-footer {
-  padding: $spacer $spacer * 2;
-}
+// .modal-header, .modal-body, .modal-footer {
+//   padding: $spacer $spacer-4;
+// }
 
 .modal-header .close {
-  margin: (-$modal-header-padding/2) (-$modal-header-padding) (-$modal-header-padding/2) auto;
+  margin: (-$spacer) (-$spacer) (-$spacer/2) auto;
 }
