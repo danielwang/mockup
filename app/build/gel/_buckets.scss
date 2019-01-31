@@ -2,9 +2,9 @@ $bucket-size: 2.5rem;
 $bucket-size-sm: 20px;
 
 $buckets: (
-  1: ($purple, "\e985"),
-  2: ($amber, "\e986"),
-  3: ($teal, "\e987")
+  1: ($green, "\e985"),
+  2: ($orange, "\e986"),
+  3: ($red, "\e987")
 );
 
 .buckets {
@@ -39,7 +39,7 @@ $buckets: (
     }
   }
 
-  input[type="radio"] {
+  input[type="checkbox"] {
     position: absolute;
     clip: rect(0,0,0,0);
     pointer-events: none;

@@ -19,24 +19,23 @@
           </h2>
         </div>
         <div class="order-1 col-md-6 col-lg-5 d-flex align-items-center justify-content-md-end">
-          <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets">
-            <legend class="sr-only">3 buckets</legend>
+          <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets" aria-label="3 buckets" onclick="selectBucket(event)">
             <div class="bucket-1 bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
+              <input type="checkbox" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
               <label for="radio-b-l-1">
                 <span class="sr-only">
                   Bucket 1</span>
               </label>
             </div>
             <div class="bucket-2 bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
+              <input type="checkbox" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
               <label for="radio-b-l-2">
                 <span class="sr-only">
                   Bucket 2</span>
               </label>
             </div>
             <div class="bucket-3 bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
+              <input type="checkbox" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
               <label for="radio-b-l-3">
                 <span class="sr-only">
                   Bucket 3</span>
@@ -301,26 +300,22 @@
 </div>
 
 <script type="text/javascript">
-  var bucket = document.getElementsByName('radio-b-l');
-  var setCheck;
-  for (x = 0; x < bucket.length; x++) {
-    bucket[x].addEventListener('click', toggleRadio);
-    bucket[x].addEventListener('keydown', toggleRadio);
+function selectBucket(e) {
+  console.log(e);
+  e = e || event;
+  //  console.log(e);
+  var cb = e.srcElement || e.target;
+  if (cb.type !== 'checkbox') {
+    return true;
   }
-  function toggleRadio(e) {
-    if (e.which == "1") { // click event
-      if (setCheck != this) {
-        setCheck = this;
-      } else {
-        this.checked = false;
-        setCheck = null;
-      }
-    } else { // press esc or backspace to deselect radio
-      if (e.keyCode == 27 || e.keyCode == 8) {
-        this.checked = false;
-        setCheck = null;
-      }
+  var name = e.srcElement.name;
+  var cbxs = document.getElementsByName(name),
+    i = cbxs.length;
+  while (i--) {
+    if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+      cbxs[i].checked = false;
     }
   }
+}
 </script>
 <?php endblock()?>

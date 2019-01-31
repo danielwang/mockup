@@ -167,24 +167,24 @@
       <div class='tab-content'><div class="tab-pane active" id="buckets" role="tabpanel" aria-labelledby="page-tab-buckets"><div class="row"><div class="col-md-6 col-lg-7"><div class="row">
   <div class="col-md-4">
     <h3>Small</h3>
-    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets" aria-label="3 buckets">
-      <div class="bucket-sm bucket-1">
-        <input type="radio" name="radio-sm" id="radio-sm-1" value="option2">
-        <label for="radio-sm-1">
+    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets" aria-label="3 buckets" onclick="selectBucket(event)">
+      <div class=" bucket-sm bucket-1">
+        <input type="checkbox" name="bucket" id="bucket-1" value="option2">
+        <label for="bucket-1">
           <span class="sr-only">
             Green</span>
         </label>
       </div>
       <div class="bucket-sm bucket-2">
-        <input type="radio" name="radio-sm" id="radio-sm-2" value="option1">
-        <label for="radio-sm-2">
+        <input type="checkbox" name="bucket" id="bucket-2" value="option1">
+        <label for="bucket-2">
           <span class="sr-only">
             Orange</span>
         </label>
       </div>
       <div class="bucket-sm bucket-3">
-        <input type="radio" name="radio-sm" id="radio-sm-3" value="option3">
-        <label for="radio-sm-3">
+        <input type="checkbox" name="bucket" id="bucket-3" value="option3">
+        <label for="bucket-3">
           <span class="sr-only">
             Red</span>
         </label>
@@ -193,23 +193,23 @@
   </div>
   <div class="col-md-8">
     <h3>Default</h3>
-    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets" aria-label="3 buckets">
+    <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets" aria-label="3 buckets" onclick="selectBucket(event)">
       <div class="bucket-1 bucket-lg">
-        <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
+        <input type="checkbox" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
         <label for="radio-b-l-1">
           <span class="sr-only">
             Bucket 1</span>
         </label>
       </div>
       <div class="bucket-2 bucket-lg">
-        <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
+        <input type="checkbox" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
         <label for="radio-b-l-2">
           <span class="sr-only">
             Bucket 2</span>
         </label>
       </div>
       <div class="bucket-3 bucket-lg">
-        <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
+        <input type="checkbox" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
         <label for="radio-b-l-3">
           <span class="sr-only">
             Bucket 3</span>
@@ -231,24 +231,24 @@
   <tbody>
     <tr>
       <th scope="row">
-        <fieldset class="buckets" aria-label="3 buckets">
+        <fieldset class="buckets" aria-label="3 buckets" onclick="selectBucket(event)">
           <div class="bucket-sm bucket-1">
-            <input type="radio" name="radio-sm-a" id="radio-sm-a-1" value="option2">
-            <label for="radio-sm-a-1">
+            <input type="checkbox" name="bucket-a" id="bucket-a-1" value="option2">
+            <label for="bucket-a-1">
               <span class="sr-only">
                 Green</span>
             </label>
           </div>
           <div class="bucket-sm bucket-2">
-            <input type="radio" name="radio-sm-a" id="radio-sm-a-2" value="option1">
-            <label for="radio-sm-a-2">
+            <input type="checkbox" name="bucket-a" id="bucket-a-2" value="option1">
+            <label for="bucket-a-2">
               <span class="sr-only">
                 Orange</span>
             </label>
           </div>
           <div class="bucket-sm bucket-3">
-            <input type="radio" name="radio-sm-a" id="radio-sm-a-3" value="option3">
-            <label for="radio-sm-a-3">
+            <input type="checkbox" name="bucket-a" id="bucket-a-3" value="option3">
+            <label for="bucket-a-3">
               <span class="sr-only">
                 Red</span>
             </label>
@@ -260,24 +260,24 @@
     </tr>
     <tr>
       <th scope="row">
-        <fieldset class="buckets" aria-label="3 buckets">
+        <fieldset class="buckets" aria-label="3 buckets" onclick="selectBucket(event)">
           <div class="bucket-sm bucket-1">
-            <input type="radio" name="radio-sm-b" id="radio-sm-b-1" value="option2">
-            <label for="radio-sm-b-1">
+            <input type="checkbox" name="bucket-b" id="bucket-b-1" value="option2">
+            <label for="bucket-b-1">
               <span class="sr-only">
                 Green</span>
             </label>
           </div>
           <div class="bucket-sm bucket-2">
-            <input type="radio" name="radio-sm-b" id="radio-sm-b-2" value="option1">
-            <label for="radio-sm-b-2">
+            <input type="checkbox" name="bucket-b" id="bucket-b-2" value="option1">
+            <label for="bucket-b-2">
               <span class="sr-only">
                 Orange</span>
             </label>
           </div>
           <div class="bucket-sm bucket-3">
-            <input type="radio" name="radio-sm-b" id="radio-sm-b-3" value="option3">
-            <label for="radio-sm-b-3">
+            <input type="checkbox" name="bucket-b" id="bucket-b-3" value="option3">
+            <label for="bucket-b-3">
               <span class="sr-only">
                 Red</span>
             </label>
@@ -289,24 +289,24 @@
     </tr>
     <tr>
       <th scope="row">
-        <fieldset class="buckets" aria-label="3 buckets">
+        <fieldset class="buckets" aria-label="3 buckets" onclick="selectBucket(event)">
           <div class="bucket-sm bucket-1">
-            <input type="radio" name="radio-sm-c" id="radio-sm-c-1" value="option2">
-            <label for="radio-sm-c-1">
+            <input type="checkbox" name="bucket-c" id="bucket-c-1" value="option2">
+            <label for="bucket-c-1">
               <span class="sr-only">
                 Green</span>
             </label>
           </div>
           <div class="bucket-sm bucket-2">
-            <input type="radio" name="radio-sm-c" id="radio-sm-c-2" value="option1">
-            <label for="radio-sm-c-2">
+            <input type="checkbox" name="bucket-c" id="bucket-c-2" value="option1">
+            <label for="bucket-c-2">
               <span class="sr-only">
                 Orange</span>
             </label>
           </div>
           <div class="bucket-sm bucket-3">
-            <input type="radio" name="radio-sm-c" id="radio-sm-c-3" value="option3">
-            <label for="radio-sm-c-3">
+            <input type="checkbox" name="bucket-c" id="bucket-c-3" value="option3">
+            <label for="bucket-c-3">
               <span class="sr-only">
                 Red</span>
             </label>
@@ -320,24 +320,20 @@
 </table>
 
 <script type="text/javascript">
-  var bucket = document.getElementsByName('radio-b-l');
-  var setCheck;
-  for (x = 0; x < bucket.length; x++) {
-    bucket[x].addEventListener('click', toggleRadio);
-    bucket[x].addEventListener('keydown', toggleRadio);
-  }
-  function toggleRadio(e) {
-    if (e.which == "1") { // click event
-      if (setCheck != this) {
-        setCheck = this;
-      } else {
-        this.checked = false;
-        setCheck = null;
-      }
-    } else { // press esc or backspace to deselect radio
-      if (e.keyCode == 27 || e.keyCode == 8) {
-        this.checked = false;
-        setCheck = null;
+  function selectBucket(e) {
+    console.log(e);
+    e = e || event;
+    //  console.log(e);
+    var cb = e.srcElement || e.target;
+    if (cb.type !== 'checkbox') {
+      return true;
+    }
+    var name = e.srcElement.name;
+    var cbxs = document.getElementsByName(name),
+      i = cbxs.length;
+    while (i--) {
+      if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+        cbxs[i].checked = false;
       }
     }
   }
@@ -345,7 +341,7 @@
   A card can be used to display content related to a single subject. The content can consist of multiple elements of varying types and sizes.</blockquote>
 
 <div class="card">
-  <h5>This is a card</h5>
+  <h3>Card heading</h3>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
   dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div></div><div class="col-md-6 col-lg-5"><aside><p>The width of the box should be relative to the parent grid. No hard coded pixels needed.</p></aside></div></div></div><div class="tab-pane " id="form" role="tabpanel" aria-labelledby="page-tab-form"><div class="row"><div class="col-md-6 col-lg-7"><div class="card">
   <form class="needs-validation" novalidate="novalidate">
@@ -789,7 +785,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.</p>
     </div>
@@ -800,7 +796,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>
@@ -812,7 +808,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>
@@ -824,7 +820,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>
@@ -841,7 +837,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.</p>
     </div>
@@ -852,7 +848,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>
@@ -864,7 +860,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>
@@ -876,7 +872,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>
@@ -893,7 +889,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.</p>
     </div>
@@ -904,7 +900,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>
@@ -916,7 +912,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>
@@ -928,7 +924,7 @@ name="options-sm" id="option9" autocomplete="off"> 9 </label> <label class="btn 
     </div>
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h5 class="timeline-title">Event Title</h5>
+      <h4 class="timeline-title">Event Title</h4>
       <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
         mollis pretium. Pellentesque ut neque.
       </p>

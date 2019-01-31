@@ -9026,7 +9026,7 @@ a {
   transition: all 0.3s ease-out; }
 
 .bucket-1 label::before {
-  color: #512da8;
+  color: #328423;
   content: "\e984";
   position: absolute;
   z-index: 2;
@@ -9036,20 +9036,20 @@ a {
   font-family: "gel-icon";
   font-size: 2rem; }
 
-.bucket-1 input[type="radio"] {
+.bucket-1 input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
 
-.bucket-1 input[type="radio"]:checked + label::before {
+.bucket-1 input[type="checkbox"]:checked + label::before {
   content: "\e985"; }
 
-.bucket-1 input[type="radio"]:focus + label::after {
+.bucket-1 input[type="checkbox"]:focus + label::after {
   width: 18px;
   height: 18px;
   content: "";
   position: absolute;
-  box-shadow: 0 0 0px 4px rgba(81, 45, 168, .25);
+  box-shadow: 0 0 0px 4px rgba(50, 132, 35, .25);
   border-radius: 3px;
   transform: rotate(45deg);
   top: 10px;
@@ -9071,7 +9071,7 @@ a {
   transition: all 0.3s ease-out; }
 
 .bucket-2 label::before {
-  color: #ffc107;
+  color: #e68755;
   content: "\e984";
   position: absolute;
   z-index: 2;
@@ -9081,20 +9081,20 @@ a {
   font-family: "gel-icon";
   font-size: 2rem; }
 
-.bucket-2 input[type="radio"] {
+.bucket-2 input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
 
-.bucket-2 input[type="radio"]:checked + label::before {
+.bucket-2 input[type="checkbox"]:checked + label::before {
   content: "\e986"; }
 
-.bucket-2 input[type="radio"]:focus + label::after {
+.bucket-2 input[type="checkbox"]:focus + label::after {
   width: 18px;
   height: 18px;
   content: "";
   position: absolute;
-  box-shadow: 0 0 0px 4px rgba(255, 193, 7, .25);
+  box-shadow: 0 0 0px 4px rgba(230, 135, 85, .25);
   border-radius: 3px;
   transform: rotate(45deg);
   top: 10px;
@@ -9116,7 +9116,7 @@ a {
   transition: all 0.3s ease-out; }
 
 .bucket-3 label::before {
-  color: #009688;
+  color: #cd2f2f;
   content: "\e984";
   position: absolute;
   z-index: 2;
@@ -9126,20 +9126,20 @@ a {
   font-family: "gel-icon";
   font-size: 2rem; }
 
-.bucket-3 input[type="radio"] {
+.bucket-3 input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
 
-.bucket-3 input[type="radio"]:checked + label::before {
+.bucket-3 input[type="checkbox"]:checked + label::before {
   content: "\e987"; }
 
-.bucket-3 input[type="radio"]:focus + label::after {
+.bucket-3 input[type="checkbox"]:focus + label::after {
   width: 18px;
   height: 18px;
   content: "";
   position: absolute;
-  box-shadow: 0 0 0px 4px rgba(0, 150, 136, .25);
+  box-shadow: 0 0 0px 4px rgba(205, 47, 47, .25);
   border-radius: 3px;
   transform: rotate(45deg);
   top: 10px;

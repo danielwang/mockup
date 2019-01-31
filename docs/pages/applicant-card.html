@@ -50,24 +50,23 @@
           </h2>
         </div>
         <div class="order-1 col-md-6 col-lg-5 d-flex align-items-center justify-content-md-end">
-          <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets">
-            <legend class="sr-only">3 buckets</legend>
+          <fieldset class="buckets" data-toggle="tooltip" data-placement="bottom" data-original-title="Buckets" aria-label="3 buckets" onclick="selectBucket(event)">
             <div class="bucket-1 bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
+              <input type="checkbox" name="radio-b-l" id="radio-b-l-1" value="option-b-l">
               <label for="radio-b-l-1">
                 <span class="sr-only">
                   Bucket 1</span>
               </label>
             </div>
             <div class="bucket-2 bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
+              <input type="checkbox" name="radio-b-l" id="radio-b-l-2" value="option-b-l">
               <label for="radio-b-l-2">
                 <span class="sr-only">
                   Bucket 2</span>
               </label>
             </div>
             <div class="bucket-3 bucket-lg">
-              <input type="radio" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
+              <input type="checkbox" name="radio-b-l" id="radio-b-l-3" value="option-b-l">
               <label for="radio-b-l-3">
                 <span class="sr-only">
                   Bucket 3</span>
@@ -75,7 +74,7 @@
             </div>
           </fieldset>
           <div class="btn-group d-print-none" role="group" aria-label="Applicant actions">
-            <button type="button" class="btn btn-ctrl" onclick="javascript: window.print();"><i class="gel-icon-print"></i></button>
+            <button type="button" class="btn btn-ctrl" onclick="javascript: window.print();" aria-label="Print"><i class="gel-icon-print"></i></button>
             <div class="btn-group" role="group">
               <button id="btnGroupDrop1" type="button" class="btn btn-ctrl dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Actions
@@ -107,7 +106,7 @@
           </div>
         </div>
       </div>
-      <dl class="row mt-3 collapse show mb-0 d-print-flex" id="app-details">
+      <dl class="row mt-3 collapse show mb-0 d-print-flex" id="app-details" aria-label="Applicant details">
         <span class="col-6 col-md-4 col-lg-2">
           <dt class="text-sm">Gender</dt>
           <dd>Male</dd>
@@ -885,7 +884,7 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Line manager review 1</h5>
+          <h4 class="timeline-title">Line manager review 1</h4>
           <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
             mollis pretium. Pellentesque ut neque.</p>
         </div>
@@ -897,7 +896,7 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Status changed to 'HR shortlist'</h5>
+          <h4 class="timeline-title">Status changed to 'HR shortlist'</h4>
           <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
             mollis pretium. Pellentesque ut neque.
           </p>
@@ -909,7 +908,7 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Application submitted</h5>
+          <h4 class="timeline-title">Application submitted</h4>
           <p>Scoring breakdown: <br>
             0/20 points: 'No' for 'Are you a National of the country where this position is based?' <br>
             20/20 points: 'Yes' for 'Do you have a background or experience working with/in Emergency country context?' <br>
@@ -927,7 +926,7 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</h5>
+          <h4 class="timeline-title">Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</h4>
           <p><a class="btn btn-outline-primary btn-sm" href="#">View</a>  <a class="btn btn-outline-primary btn-sm"href="#">PDF</a>  <a class="btn btn-outline-primary btn-sm" href="#">Reprocess</a>
           </p>
         </div>
@@ -950,27 +949,23 @@
 </div>
 
 <script type="text/javascript">
-  var bucket = document.getElementsByName('radio-b-l');
-  var setCheck;
-  for (x = 0; x < bucket.length; x++) {
-    bucket[x].addEventListener('click', toggleRadio);
-    bucket[x].addEventListener('keydown', toggleRadio);
+function selectBucket(e) {
+  console.log(e);
+  e = e || event;
+  //  console.log(e);
+  var cb = e.srcElement || e.target;
+  if (cb.type !== 'checkbox') {
+    return true;
   }
-  function toggleRadio(e) {
-    if (e.which == "1") { // click event
-      if (setCheck != this) {
-        setCheck = this;
-      } else {
-        this.checked = false;
-        setCheck = null;
-      }
-    } else { // press esc or backspace to deselect radio
-      if (e.keyCode == 27 || e.keyCode == 8) {
-        this.checked = false;
-        setCheck = null;
-      }
+  var name = e.srcElement.name;
+  var cbxs = document.getElementsByName(name),
+    i = cbxs.length;
+  while (i--) {
+    if (cbxs[i].type && cbxs[i].type == 'checkbox' && cbxs[i].id !== cb.id) {
+      cbxs[i].checked = false;
     }
   }
+}
 </script>
     <div class="my-5 py-5"></div>
 	</section>
