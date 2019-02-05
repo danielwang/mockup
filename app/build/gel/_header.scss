@@ -1,16 +1,15 @@
-// page header
+// white page header
 
 ##{$prefix}-header {
   @include gradient-x($header-bg-start, $header-bg-end);
-  color: white;
-  padding: 1rem 0;
+  padding: 1.25rem 0;
   -webkit-transition: font-size 0.5s ease;
   -moz-transition: font-size 0.5s ease;
   -o-transition: font-size 0.5s ease;
   transition: padding 0.5s ease;
+  border-bottom: solid 1px $slate-300;
 
   h1.page-title {
-    color: white;
     margin: 0;
     -webkit-transition: font-size 0.5s ease;
     -moz-transition: font-size 0.5s ease;
@@ -24,7 +23,6 @@
   }
 
   h6 {
-    color: white;
     font-size: 12px;
   }
 
@@ -45,7 +43,6 @@
 
       > a {
         margin-left: 20px;
-        color: white;
 
         &:focus {
           // tab focus ally
@@ -98,22 +95,19 @@
 
       a {
         white-space: nowrap;
-        @include font-heading();
+        color: $body-color;
         font-size: 1rem;
         opacity: 0.75;
-        color: $white;
         padding: $spacer;
         position: relative;
 
         &:focus {
-          color: #fff;
           background-color: transparent;
           @include focus-state();
           opacity: 1;
         }
 
         &:hover {
-          color: #fff;
           background-color: transparent;
           opacity: 1;
           @include focus-state();
@@ -121,18 +115,17 @@
 
         &.active {
           opacity: 1;
+          color: $blue;
 
           &::before {
             content: "";
             position: absolute;
             bottom: 0;
-            border-width: 0 0.5rem 0.5rem;
+            border-width: 2px;
             border-style: solid;
-            border-color: $body-bg transparent;
-            display: block;
-            width: 0;
-            left: calc(50%);
-            margin-left: -0.5rem;
+            border-color: $blue;
+            width: 100%;
+            left: 0;
           }
         }
       }
@@ -142,4 +135,5 @@
 
 #gel-header + #gel-subpages {
   margin-top: -1rem;
+  border-bottom: solid 1px $slate-300;
 }

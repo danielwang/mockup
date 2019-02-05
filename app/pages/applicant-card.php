@@ -132,7 +132,7 @@
         </span>
         <span class="col-6 col-md-4 col-lg-2">
           <dt class="text-sm">Flags</dt>
-          <dd>  <i class="text-muted gel-icon-location"></i><i class="text-muted gel-icon-bullhorn"></i><i class="text-muted gel-icon-info"></i><i class="text-muted gel-icon-lock"></i></dd>
+          <dd><i data-toggle="tooltip" data-placement="bottom" data-original-title="Label of this icon" class="text-muted gel-icon-bell"></i><i class="text-muted gel-icon-bulb"></i><i class="text-muted gel-icon-car"></i><i class="text-muted gel-icon-globe"></i></dd>
         </span>
       </dl>
     </div>

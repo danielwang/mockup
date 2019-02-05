@@ -88,6 +88,7 @@ a{
 ##{$prefix}-main {
   padding: $spacer-5 0;
   flex: 1 0 auto;
+  display: flex;
 }
 
 ##{$prefix}-footer{

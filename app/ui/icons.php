@@ -98,7 +98,10 @@ function buildSolidIcons(){
     ["close app","close-app"],
     ["bell","bell"],
     ["target","target"],
-    ["ellipsis","ellipsis"]
+    ["ellipsis","ellipsis"],
+    ["block","block"],["bomb","bomb"],["box","box"],["bulb","bulb"],["car","car"],
+    ["chessboard","chessboard"],["flag","flag"],["globe","globe"],["paw","paw"],["phone","phone"],
+    ["recycle","recycle"],["reticle","reticle"],["trophy","trophy"],["people","people"]
   ];
 }
 

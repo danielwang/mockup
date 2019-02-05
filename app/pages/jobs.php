@@ -227,7 +227,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary mr-auto" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Apply</button>
       </div>
     </div>

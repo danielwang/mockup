@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.9.2
+ *   PageUp GEL - Theme 3.10.0
  *   Author: Daniel Wang
- *	 Date: 01/02/2018
+ *	 Date: 05/02/2018
  *
  \* *************************************** */
 /*!
@@ -8483,7 +8483,8 @@ a {
 
 #gel-main {
   padding: 2rem 0;
-  flex: 1 0 auto; }
+  flex: 1 0 auto;
+  display: flex; }
 
 #gel-footer {
   flex-shrink: 0;
@@ -11127,7 +11128,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   background: none; }
 
 .tags-input .search-field input[type="text"] {
-  padding: 0.5rem 0.75rem 0.25rem 0.5rem;
+  padding: 0.315rem 0.75rem 0.25rem 0.5rem;
   border: 0;
   font-size: 1rem; }
 
@@ -11435,17 +11436,16 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   width: 55%; }
 
 #gel-header {
-  background-image: linear-gradient(to right, #0063b0 0%, #0063b0 100%);
+  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
   background-repeat: repeat-x;
-  color: white;
-  padding: 1rem 0;
+  padding: 1.25rem 0;
   -webkit-transition: font-size 0.5s ease;
   -moz-transition: font-size 0.5s ease;
   -o-transition: font-size 0.5s ease;
-  transition: padding 0.5s ease; }
+  transition: padding 0.5s ease;
+  border-bottom: solid 1px #bac6d2; }
 
 #gel-header h1.page-title {
-  color: white;
   margin: 0;
   -webkit-transition: font-size 0.5s ease;
   -moz-transition: font-size 0.5s ease;
@@ -11457,7 +11457,6 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   font-size: 1.125rem; }
 
 #gel-header h6 {
-  color: white;
   font-size: 12px; }
 
 #gel-header .page-actions {
@@ -11476,8 +11475,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   white-space: nowrap; }
 
 #gel-header .page-actions .item > a {
-  margin-left: 20px;
-  color: white; }
+  margin-left: 20px; }
 
 #gel-header .page-actions .item > a:focus {
   outline: none; }
@@ -11504,7 +11502,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   position: sticky;
   top: 3.75rem;
   z-index: 999;
-  background-image: linear-gradient(to right, #0063b0 0%, #0063b0 100%);
+  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
   background-repeat: repeat-x;
   transition: top 0.3s ease-in-out; }
 
@@ -11531,45 +11529,41 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 
 #gel-subpages .page-tabs a {
   white-space: nowrap;
-  font-weight: 400;
-  font-family: 'Nunito Semibold';
+  color: #1d262d;
   font-size: 1rem;
   opacity: 0.75;
-  color: #fff;
   padding: 1rem;
   position: relative; }
 
 #gel-subpages .page-tabs a:focus {
-  color: #fff;
   background-color: transparent;
   text-decoration: underline;
   outline: none;
   opacity: 1; }
 
 #gel-subpages .page-tabs a:hover {
-  color: #fff;
   background-color: transparent;
   opacity: 1;
   text-decoration: underline;
   outline: none; }
 
 #gel-subpages .page-tabs a.active {
-  opacity: 1; }
+  opacity: 1;
+  color: #0063b0; }
 
 #gel-subpages .page-tabs a.active::before {
   content: "";
   position: absolute;
   bottom: 0;
-  border-width: 0 0.5rem 0.5rem;
+  border-width: 2px;
   border-style: solid;
-  border-color: #f1f4f6 transparent;
-  display: block;
-  width: 0;
-  left: calc(50%);
-  margin-left: -0.5rem; }
+  border-color: #0063b0;
+  width: 100%;
+  left: 0; }
 
 #gel-header + #gel-subpages {
-  margin-top: -1rem; }
+  margin-top: -1rem;
+  border-bottom: solid 1px #bac6d2; }
 
 #gel-menu {
   position: absolute;
@@ -14678,7 +14672,7 @@ del a:hover {
 
 @font-face {
   font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wr') format('truetype'), url('icons/gel-icon.woff?q0w0wr') format('woff'), url('icons/gel-icon.svg?q0w0wr#gel-icon') format('svg');
+  src: url('icons/gel-icon.ttf?q0w0ws') format('truetype'), url('icons/gel-icon.woff?q0w0ws') format('woff'), url('icons/gel-icon.svg?q0w0ws#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -14712,17 +14706,65 @@ del a:hover {
 .gel-icon-3x {
   font-size: 3rem; }
 
+.gel-icon-block:before {
+  content: "\e98a"; }
+
+.gel-icon-bomb:before {
+  content: "\e98b"; }
+
+.gel-icon-box:before {
+  content: "\e98c"; }
+
+.gel-icon-bulb:before {
+  content: "\e997"; }
+
+.gel-icon-car:before {
+  content: "\e998"; }
+
+.gel-icon-chessboard:before {
+  content: "\e999"; }
+
+.gel-icon-flag:before {
+  content: "\e99a"; }
+
+.gel-icon-globe:before {
+  content: "\e98d"; }
+
+.gel-icon-paw:before {
+  content: "\e98f"; }
+
+.gel-icon-phone:before {
+  content: "\e990"; }
+
+.gel-icon-recycle:before {
+  content: "\e991"; }
+
+.gel-icon-reticle:before {
+  content: "\e992"; }
+
+.gel-icon-trophy:before {
+  content: "\e995"; }
+
+.gel-icon-people:before {
+  content: "\e996"; }
+
+.gel-icon-tick:before {
+  content: "\e91d"; }
+
+.gel-icon-close:before {
+  content: "\e940"; }
+
+.gel-icon-logo-o:before {
+  content: "\e984"; }
+
 .gel-icon-bucket-3:before {
   content: "\e986"; }
 
 .gel-icon-bucket-1:before {
-  content: "\e915"; }
-
-.gel-icon-bucket-2:before {
   content: "\e985"; }
 
-.gel-icon-offer:before {
-  content: "\e981"; }
+.gel-icon-bucket-2:before {
+  content: "\e987"; }
 
 .gel-icon-ellipsis:before {
   content: "\e91e"; }
@@ -14735,9 +14777,6 @@ del a:hover {
 
 .gel-icon-clock:before {
   content: "\e976"; }
-
-.gel-icon-close-app:before {
-  content: "\e977"; }
 
 .gel-icon-bell:before {
   content: "\e978"; }
@@ -14822,6 +14861,9 @@ del a:hover {
 
 .gel-icon-logout:before {
   content: "\e95b"; }
+
+.gel-icon-close-circle:before {
+  content: "\e92e"; }
 
 .gel-icon-tick-circle:before {
   content: "\e92d"; }
@@ -14931,8 +14973,14 @@ del a:hover {
 .gel-icon-arrow-right:before {
   content: "\e926"; }
 
-.gel-icon-arrow-left:before {
+.gel-icon-arrow-down:before {
+  content: "\e915"; }
+
+.gel-icon-arrow-up:before {
   content: "\e927"; }
+
+.gel-icon-arrow-left:before {
+  content: "\e988"; }
 
 .gel-icon-upload:before {
   content: "\e928"; }
@@ -14970,6 +15018,9 @@ del a:hover {
 .gel-icon-user:before {
   content: "\e934"; }
 
+.gel-icon-employee:before {
+  content: "\e93c"; }
+
 .gel-icon-job:before {
   content: "\e935"; }
 
@@ -14991,14 +15042,20 @@ del a:hover {
 .gel-icon-support:before {
   content: "\e93b"; }
 
-.gel-icon-employee:before {
-  content: "\e93c"; }
-
 .gel-icon-add-user:before {
   content: "\e93d"; }
 
 .gel-icon-notes:before {
   content: "\e930"; }
+
+.gel-icon-doc:before {
+  content: "\e983"; }
+
+.gel-icon-close-app:before {
+  content: "\e977"; }
+
+.gel-icon-offer:before {
+  content: "\e981"; }
 
 .gel-icon-new:before {
   content: "\e931"; }
@@ -15012,26 +15069,17 @@ del a:hover {
 .gel-icon-copy:before {
   content: "\e93f"; }
 
-.gel-icon-close-circle:before {
-  content: "\e92e"; }
-
-.gel-icon-close:before {
-  content: "\e940"; }
-
-.gel-icon-tick:before {
-  content: "\e91d"; }
-
 .gel-icon-calendar:before {
   content: "\e91f"; }
-
-.gel-icon-logo-o:before {
-  content: "\e984"; }
 
 .gel-icon-menu-o:before {
   content: "\e90a"; }
 
 .gel-icon-close-o:before {
   content: "\e910"; }
+
+.gel-icon-tick-o:before {
+  content: "\e982"; }
 
 .gel-icon-beta-o:before {
   content: "\e904"; }
@@ -15110,9 +15158,3 @@ del a:hover {
 
 .gel-icon-view-o:before {
   content: "\e91c"; }
-
-.gel-icon-tick-o:before {
-  content: "\e982"; }
-
-.gel-icon-doc:before {
-  content: "\e983"; }

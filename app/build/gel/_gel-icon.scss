@@ -1,9 +1,162 @@
+$gel-icon-block: "\e98a";
+$gel-icon-bomb: "\e98b";
+$gel-icon-box: "\e98c";
+$gel-icon-bulb: "\e997";
+$gel-icon-car: "\e998";
+$gel-icon-chessboard: "\e999";
+$gel-icon-flag: "\e99a";
+$gel-icon-globe: "\e98d";
+$gel-icon-paw: "\e98f";
+$gel-icon-phone: "\e990";
+$gel-icon-recycle: "\e991";
+$gel-icon-reticle: "\e992";
+$gel-icon-trophy: "\e995";
+$gel-icon-people: "\e996";
+$gel-icon-tick: "\e91d";
+$gel-icon-close: "\e940";
+$gel-icon-logo-o: "\e984";
+$gel-icon-bucket-3: "\e986";
+$gel-icon-bucket-1: "\e985";
+$gel-icon-bucket-2: "\e987";
+$gel-icon-ellipsis: "\e91e";
+$gel-icon-sort-up: "\e97c";
+$gel-icon-sort-down: "\e97d";
+$gel-icon-clock: "\e976";
+$gel-icon-bell: "\e978";
+$gel-icon-target: "\e979";
+$gel-icon-team: "\e97b";
+$gel-icon-control: "\e97a";
+$gel-icon-application: "\e974";
+$gel-icon-onboarding: "\e975";
+$gel-icon-third-party: "\e96b";
+$gel-icon-configure: "\e96d";
+$gel-icon-integration: "\e96e";
+$gel-icon-succession: "\e96f";
+$gel-icon-money: "\e970";
+$gel-icon-learning: "\e971";
+$gel-icon-cost: "\e972";
+$gel-icon-sourcing: "\e973";
+$gel-icon-sad-o: "\e966";
+$gel-icon-sad: "\e968";
+$gel-icon-frown-o: "\e965";
+$gel-icon-frown: "\e969";
+$gel-icon-meh-o: "\e963";
+$gel-icon-meh: "\e967";
+$gel-icon-smile-o: "\e964";
+$gel-icon-smile: "\e96c";
+$gel-icon-happy-o: "\e962";
+$gel-icon-happy: "\e96a";
+$gel-icon-star: "\e961";
+$gel-icon-tray: "\e95d";
+$gel-icon-login: "\e95a";
+$gel-icon-logout: "\e95b";
+$gel-icon-close-circle: "\e92e";
+$gel-icon-tick-circle: "\e92d";
+$gel-icon-error: "\e921";
+$gel-icon-info: "\e922";
+$gel-icon-warning: "\e943";
+$gel-icon-logo: "\e933";
+$gel-icon-beta: "\e958";
+$gel-icon-beta-feedback: "\e923";
+$gel-icon-alpha: "\e955";
+$gel-icon-alpha-feedback: "\e956";
+$gel-icon-feedback: "\e920";
+$gel-icon-bookmark: "\e952";
+$gel-icon-folder: "\e953";
+$gel-icon-image: "\e954";
+$gel-icon-settings: "\e951";
+$gel-icon-chat: "\e945";
+$gel-icon-database: "\e946";
+$gel-icon-drag: "\e947";
+$gel-icon-pencil: "\e948";
+$gel-icon-history: "\e949";
+$gel-icon-home: "\e94a";
+$gel-icon-location: "\e94b";
+$gel-icon-add: "\e944";
+$gel-icon-plus: "\e94c";
+$gel-icon-tag: "\e94e";
+$gel-icon-view: "\e94f";
+$gel-icon-slack: "\e942";
+$gel-icon-sketch: "\e957";
+$gel-icon-github: "\e960";
+$gel-icon-edit: "\e950";
+$gel-icon-print: "\e941";
+$gel-icon-help: "\e959";
+$gel-icon-help-pointer: "\e95c";
+$gel-icon-info-pointer: "\e97e";
+$gel-icon-search: "\e924";
+$gel-icon-bullhorn: "\e925";
+$gel-icon-arrow-right: "\e926";
+$gel-icon-arrow-down: "\e915";
+$gel-icon-arrow-up: "\e927";
+$gel-icon-arrow-left: "\e988";
+$gel-icon-upload: "\e928";
+$gel-icon-download: "\e929";
+$gel-icon-left-end: "\e97f";
+$gel-icon-angle-left: "\e95e";
+$gel-icon-right-end: "\e980";
+$gel-icon-angle-right: "\e95f";
+$gel-icon-angle-down: "\e92a";
+$gel-icon-angle-up: "\e92b";
+$gel-icon-share: "\e92c";
+$gel-icon-trash: "\e92f";
+$gel-icon-eye: "\e932";
+$gel-icon-user: "\e934";
+$gel-icon-employee: "\e93c";
+$gel-icon-job: "\e935";
+$gel-icon-knowledge-portal: "\e936";
+$gel-icon-refresh: "\e937";
+$gel-icon-lock: "\e938";
+$gel-icon-analytics: "\e939";
+$gel-icon-menu: "\e93a";
+$gel-icon-support: "\e93b";
+$gel-icon-add-user: "\e93d";
+$gel-icon-notes: "\e930";
+$gel-icon-doc: "\e983";
+$gel-icon-close-app: "\e977";
+$gel-icon-offer: "\e981";
+$gel-icon-new: "\e931";
+$gel-icon-preview: "\e93e";
+$gel-icon-resume: "\e94d";
+$gel-icon-copy: "\e93f";
+$gel-icon-calendar: "\e91f";
+$gel-icon-menu-o: "\e90a";
+$gel-icon-close-o: "\e910";
+$gel-icon-tick-o: "\e982";
+$gel-icon-beta-o: "\e904";
+$gel-icon-bullhorn-o: "\e916";
+$gel-icon-print-o: "\e913";
+$gel-icon-feedback-o: "\e909";
+$gel-icon-support-o: "\e90f";
+$gel-icon-profile-o: "\e914";
+$gel-icon-search-o: "\e919";
+$gel-icon-applicant-o: "\e902";
+$gel-icon-control-o: "\e906";
+$gel-icon-team-o: "\e91a";
+$gel-icon-job-o: "\e90c";
+$gel-icon-application-o: "\e903";
+$gel-icon-employee-o: "\e908";
+$gel-icon-recruitment-o: "\e917";
+$gel-icon-learning-o: "\e90e";
+$gel-icon-analytics-o: "\e901";
+$gel-icon-orgchart-o: "\e912";
+$gel-icon-onboarding-o: "\e911";
+$gel-icon-journal-o: "\e90d";
+$gel-icon-copy-o: "\e907";
+$gel-icon-history-o: "\e90b";
+$gel-icon-salary-o: "\e918";
+$gel-icon-close-circle-o: "\e905";
+$gel-icon-add-o: "\e900";
+$gel-icon-unlock-o: "\e91b";
+$gel-icon-view-o: "\e91c";
+
+
 @font-face {
   font-family: 'gel-icon';
   src:
-    url('icons/gel-icon.ttf?q0w0wr') format('truetype'),
-    url('icons/gel-icon.woff?q0w0wr') format('woff'),
-    url('icons/gel-icon.svg?q0w0wr#gel-icon') format('svg');
+    url('icons/gel-icon.ttf?q0w0ws') format('truetype'),
+    url('icons/gel-icon.woff?q0w0ws') format('woff'),
+    url('icons/gel-icon.svg?q0w0ws#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -45,409 +198,758 @@
   font-size: 3rem;
 }
 
-
-.gel-icon-bucket-3:before {
-  content: "\e986";
-}
-.gel-icon-bucket-1:before {
-  content: "\e915";
-}
-.gel-icon-bucket-2:before {
-  content: "\e985";
-}
-.gel-icon-offer:before {
-  content: "\e981";
-}
-.gel-icon-ellipsis:before {
-  content: "\e91e";
-}
-.gel-icon-sort-up:before {
-  content: "\e97c";
-}
-.gel-icon-sort-down:before {
-  content: "\e97d";
-}
-.gel-icon-clock:before {
-  content: "\e976";
-}
-.gel-icon-close-app:before {
-  content: "\e977";
-}
-.gel-icon-bell:before {
-  content: "\e978";
-}
-.gel-icon-target:before {
-  content: "\e979";
-}
-.gel-icon-team:before {
-  content: "\e97b";
-}
-.gel-icon-control:before {
-  content: "\e97a";
-}
-.gel-icon-application:before {
-  content: "\e974";
-}
-.gel-icon-onboarding:before {
-  content: "\e975";
-}
-.gel-icon-third-party:before {
-  content: "\e96b";
-}
-.gel-icon-configure:before {
-  content: "\e96d";
-}
-.gel-icon-integration:before {
-  content: "\e96e";
-}
-.gel-icon-succession:before {
-  content: "\e96f";
-}
-.gel-icon-money:before {
-  content: "\e970";
-}
-.gel-icon-learning:before {
-  content: "\e971";
-}
-.gel-icon-cost:before {
-  content: "\e972";
-}
-.gel-icon-sourcing:before {
-  content: "\e973";
-}
-.gel-icon-sad-o:before {
-  content: "\e966";
-}
-.gel-icon-sad:before {
-  content: "\e968";
-}
-.gel-icon-frown-o:before {
-  content: "\e965";
-}
-.gel-icon-frown:before {
-  content: "\e969";
-}
-.gel-icon-meh-o:before {
-  content: "\e963";
-}
-.gel-icon-meh:before {
-  content: "\e967";
-}
-.gel-icon-smile-o:before {
-  content: "\e964";
-}
-.gel-icon-smile:before {
-  content: "\e96c";
-}
-.gel-icon-happy-o:before {
-  content: "\e962";
-}
-.gel-icon-happy:before {
-  content: "\e96a";
-}
-.gel-icon-star:before {
-  content: "\e961";
-}
-.gel-icon-tray:before {
-  content: "\e95d";
-}
-.gel-icon-login:before {
-  content: "\e95a";
-}
-.gel-icon-logout:before {
-  content: "\e95b";
-}
-.gel-icon-tick-circle:before {
-  content: "\e92d";
-}
-.gel-icon-error:before {
-  content: "\e921";
-}
-.gel-icon-info:before {
-  content: "\e922";
-}
-.gel-icon-warning:before {
-  content: "\e943";
-}
-.gel-icon-logo:before {
-  content: "\e933";
-}
-.gel-icon-beta:before {
-  content: "\e958";
-}
-.gel-icon-beta-feedback:before {
-  content: "\e923";
-}
-.gel-icon-alpha:before {
-  content: "\e955";
-}
-.gel-icon-alpha-feedback:before {
-  content: "\e956";
-}
-.gel-icon-feedback:before {
-  content: "\e920";
-}
-.gel-icon-bookmark:before {
-  content: "\e952";
-}
-.gel-icon-folder:before {
-  content: "\e953";
-}
-.gel-icon-image:before {
-  content: "\e954";
-}
-.gel-icon-settings:before {
-  content: "\e951";
-}
-.gel-icon-chat:before {
-  content: "\e945";
-}
-.gel-icon-database:before {
-  content: "\e946";
-}
-.gel-icon-drag:before {
-  content: "\e947";
-}
-.gel-icon-pencil:before {
-  content: "\e948";
-}
-.gel-icon-history:before {
-  content: "\e949";
-}
-.gel-icon-home:before {
-  content: "\e94a";
-}
-.gel-icon-location:before {
-  content: "\e94b";
-}
-.gel-icon-add:before {
-  content: "\e944";
-}
-.gel-icon-plus:before {
-  content: "\e94c";
-}
-.gel-icon-tag:before {
-  content: "\e94e";
-}
-.gel-icon-view:before {
-  content: "\e94f";
-}
-.gel-icon-slack:before {
-  content: "\e942";
-}
-.gel-icon-sketch:before {
-  content: "\e957";
-}
-.gel-icon-github:before {
-  content: "\e960";
-}
-.gel-icon-edit:before {
-  content: "\e950";
-}
-.gel-icon-print:before {
-  content: "\e941";
-}
-.gel-icon-help:before {
-  content: "\e959";
-}
-.gel-icon-help-pointer:before {
-  content: "\e95c";
-}
-.gel-icon-info-pointer:before {
-  content: "\e97e";
-}
-.gel-icon-search:before {
-  content: "\e924";
-}
-.gel-icon-bullhorn:before {
-  content: "\e925";
-}
-.gel-icon-arrow-right:before {
-  content: "\e926";
-}
-.gel-icon-arrow-left:before {
-  content: "\e927";
-}
-.gel-icon-upload:before {
-  content: "\e928";
-}
-.gel-icon-download:before {
-  content: "\e929";
-}
-.gel-icon-left-end:before {
-  content: "\e97f";
-}
-.gel-icon-angle-left:before {
-  content: "\e95e";
-}
-.gel-icon-right-end:before {
-  content: "\e980";
-}
-.gel-icon-angle-right:before {
-  content: "\e95f";
-}
-.gel-icon-angle-down:before {
-  content: "\e92a";
-}
-.gel-icon-angle-up:before {
-  content: "\e92b";
-}
-.gel-icon-share:before {
-  content: "\e92c";
-}
-.gel-icon-trash:before {
-  content: "\e92f";
-}
-.gel-icon-eye:before {
-  content: "\e932";
-}
-.gel-icon-user:before {
-  content: "\e934";
-}
-.gel-icon-job:before {
-  content: "\e935";
-}
-.gel-icon-knowledge-portal:before {
-  content: "\e936";
-}
-.gel-icon-refresh:before {
-  content: "\e937";
-}
-.gel-icon-lock:before {
-  content: "\e938";
-}
-.gel-icon-analytics:before {
-  content: "\e939";
-}
-.gel-icon-menu:before {
-  content: "\e93a";
-}
-.gel-icon-support:before {
-  content: "\e93b";
-}
-.gel-icon-employee:before {
-  content: "\e93c";
-}
-.gel-icon-add-user:before {
-  content: "\e93d";
-}
-.gel-icon-notes:before {
-  content: "\e930";
-}
-.gel-icon-new:before {
-  content: "\e931";
-}
-.gel-icon-preview:before {
-  content: "\e93e";
-}
-.gel-icon-resume:before {
-  content: "\e94d";
-}
-.gel-icon-copy:before {
-  content: "\e93f";
-}
-.gel-icon-close-circle:before {
-  content: "\e92e";
-}
-.gel-icon-close:before {
-  content: "\e940";
-}
-.gel-icon-tick:before {
-  content: "\e91d";
-}
-.gel-icon-calendar:before {
-  content: "\e91f";
-}
-.gel-icon-logo-o:before {
-  content: "\e984";
-}
-.gel-icon-menu-o:before {
-  content: "\e90a";
-}
-.gel-icon-close-o:before {
-  content: "\e910";
-}
-.gel-icon-beta-o:before {
-  content: "\e904";
-}
-.gel-icon-bullhorn-o:before {
-  content: "\e916";
-}
-.gel-icon-print-o:before {
-  content: "\e913";
-}
-.gel-icon-feedback-o:before {
-  content: "\e909";
-}
-.gel-icon-support-o:before {
-  content: "\e90f";
-}
-.gel-icon-profile-o:before {
-  content: "\e914";
-}
-.gel-icon-search-o:before {
-  content: "\e919";
-}
-.gel-icon-applicant-o:before {
-  content: "\e902";
-}
-.gel-icon-control-o:before {
-  content: "\e906";
-}
-.gel-icon-team-o:before {
-  content: "\e91a";
-}
-.gel-icon-job-o:before {
-  content: "\e90c";
-}
-.gel-icon-application-o:before {
-  content: "\e903";
-}
-.gel-icon-employee-o:before {
-  content: "\e908";
-}
-.gel-icon-recruitment-o:before {
-  content: "\e917";
-}
-.gel-icon-learning-o:before {
-  content: "\e90e";
-}
-.gel-icon-analytics-o:before {
-  content: "\e901";
-}
-.gel-icon-orgchart-o:before {
-  content: "\e912";
-}
-.gel-icon-onboarding-o:before {
-  content: "\e911";
-}
-.gel-icon-journal-o:before {
-  content: "\e90d";
-}
-.gel-icon-copy-o:before {
-  content: "\e907";
-}
-.gel-icon-history-o:before {
-  content: "\e90b";
-}
-.gel-icon-salary-o:before {
-  content: "\e918";
-}
-.gel-icon-close-circle-o:before {
-  content: "\e905";
-}
-.gel-icon-add-o:before {
-  content: "\e900";
-}
-.gel-icon-unlock-o:before {
-  content: "\e91b";
-}
-.gel-icon-view-o:before {
-  content: "\e91c";
-}
-.gel-icon-tick-o:before {
-  content: "\e982";
-}
-.gel-icon-doc:before{
-  content: "\e983";
+.gel-icon-block {
+  &:before {
+    content: $gel-icon-block;
+  }
+}
+.gel-icon-bomb {
+  &:before {
+    content: $gel-icon-bomb;
+  }
+}
+.gel-icon-box {
+  &:before {
+    content: $gel-icon-box;
+  }
+}
+.gel-icon-bulb {
+  &:before {
+    content: $gel-icon-bulb;
+  }
+}
+.gel-icon-car {
+  &:before {
+    content: $gel-icon-car;
+  }
+}
+.gel-icon-chessboard {
+  &:before {
+    content: $gel-icon-chessboard;
+  }
+}
+.gel-icon-flag {
+  &:before {
+    content: $gel-icon-flag;
+  }
+}
+.gel-icon-globe {
+  &:before {
+    content: $gel-icon-globe;
+  }
+}
+.gel-icon-paw {
+  &:before {
+    content: $gel-icon-paw;
+  }
+}
+.gel-icon-phone {
+  &:before {
+    content: $gel-icon-phone;
+  }
+}
+.gel-icon-recycle {
+  &:before {
+    content: $gel-icon-recycle;
+  }
+}
+.gel-icon-reticle {
+  &:before {
+    content: $gel-icon-reticle;
+  }
+}
+.gel-icon-trophy {
+  &:before {
+    content: $gel-icon-trophy;
+  }
+}
+.gel-icon-people {
+  &:before {
+    content: $gel-icon-people;
+  }
+}
+.gel-icon-tick {
+  &:before {
+    content: $gel-icon-tick;
+  }
+}
+.gel-icon-close {
+  &:before {
+    content: $gel-icon-close;
+  }
+}
+.gel-icon-logo-o {
+  &:before {
+    content: $gel-icon-logo-o;
+  }
+}
+.gel-icon-bucket-3 {
+  &:before {
+    content: $gel-icon-bucket-3;
+  }
+}
+.gel-icon-bucket-1 {
+  &:before {
+    content: $gel-icon-bucket-1;
+  }
+}
+.gel-icon-bucket-2 {
+  &:before {
+    content: $gel-icon-bucket-2;
+  }
+}
+.gel-icon-ellipsis {
+  &:before {
+    content: $gel-icon-ellipsis;
+  }
+}
+.gel-icon-sort-up {
+  &:before {
+    content: $gel-icon-sort-up;
+  }
+}
+.gel-icon-sort-down {
+  &:before {
+    content: $gel-icon-sort-down;
+  }
+}
+.gel-icon-clock {
+  &:before {
+    content: $gel-icon-clock;
+  }
+}
+.gel-icon-bell {
+  &:before {
+    content: $gel-icon-bell;
+  }
+}
+.gel-icon-target {
+  &:before {
+    content: $gel-icon-target;
+  }
+}
+.gel-icon-team {
+  &:before {
+    content: $gel-icon-team;
+  }
+}
+.gel-icon-control {
+  &:before {
+    content: $gel-icon-control;
+  }
+}
+.gel-icon-application {
+  &:before {
+    content: $gel-icon-application;
+  }
+}
+.gel-icon-onboarding {
+  &:before {
+    content: $gel-icon-onboarding;
+  }
+}
+.gel-icon-third-party {
+  &:before {
+    content: $gel-icon-third-party;
+  }
+}
+.gel-icon-configure {
+  &:before {
+    content: $gel-icon-configure;
+  }
+}
+.gel-icon-integration {
+  &:before {
+    content: $gel-icon-integration;
+  }
+}
+.gel-icon-succession {
+  &:before {
+    content: $gel-icon-succession;
+  }
+}
+.gel-icon-money {
+  &:before {
+    content: $gel-icon-money;
+  }
+}
+.gel-icon-learning {
+  &:before {
+    content: $gel-icon-learning;
+  }
+}
+.gel-icon-cost {
+  &:before {
+    content: $gel-icon-cost;
+  }
+}
+.gel-icon-sourcing {
+  &:before {
+    content: $gel-icon-sourcing;
+  }
+}
+.gel-icon-sad-o {
+  &:before {
+    content: $gel-icon-sad-o;
+  }
+}
+.gel-icon-sad {
+  &:before {
+    content: $gel-icon-sad;
+  }
+}
+.gel-icon-frown-o {
+  &:before {
+    content: $gel-icon-frown-o;
+  }
+}
+.gel-icon-frown {
+  &:before {
+    content: $gel-icon-frown;
+  }
+}
+.gel-icon-meh-o {
+  &:before {
+    content: $gel-icon-meh-o;
+  }
+}
+.gel-icon-meh {
+  &:before {
+    content: $gel-icon-meh;
+  }
+}
+.gel-icon-smile-o {
+  &:before {
+    content: $gel-icon-smile-o;
+  }
+}
+.gel-icon-smile {
+  &:before {
+    content: $gel-icon-smile;
+  }
+}
+.gel-icon-happy-o {
+  &:before {
+    content: $gel-icon-happy-o;
+  }
+}
+.gel-icon-happy {
+  &:before {
+    content: $gel-icon-happy;
+  }
+}
+.gel-icon-star {
+  &:before {
+    content: $gel-icon-star;
+  }
+}
+.gel-icon-tray {
+  &:before {
+    content: $gel-icon-tray;
+  }
+}
+.gel-icon-login {
+  &:before {
+    content: $gel-icon-login;
+  }
+}
+.gel-icon-logout {
+  &:before {
+    content: $gel-icon-logout;
+  }
+}
+.gel-icon-close-circle {
+  &:before {
+    content: $gel-icon-close-circle;
+  }
+}
+.gel-icon-tick-circle {
+  &:before {
+    content: $gel-icon-tick-circle;
+  }
+}
+.gel-icon-error {
+  &:before {
+    content: $gel-icon-error;
+  }
+}
+.gel-icon-info {
+  &:before {
+    content: $gel-icon-info;
+  }
+}
+.gel-icon-warning {
+  &:before {
+    content: $gel-icon-warning;
+  }
+}
+.gel-icon-logo {
+  &:before {
+    content: $gel-icon-logo;
+  }
+}
+.gel-icon-beta {
+  &:before {
+    content: $gel-icon-beta;
+  }
+}
+.gel-icon-beta-feedback {
+  &:before {
+    content: $gel-icon-beta-feedback;
+  }
+}
+.gel-icon-alpha {
+  &:before {
+    content: $gel-icon-alpha;
+  }
+}
+.gel-icon-alpha-feedback {
+  &:before {
+    content: $gel-icon-alpha-feedback;
+  }
+}
+.gel-icon-feedback {
+  &:before {
+    content: $gel-icon-feedback;
+  }
+}
+.gel-icon-bookmark {
+  &:before {
+    content: $gel-icon-bookmark;
+  }
+}
+.gel-icon-folder {
+  &:before {
+    content: $gel-icon-folder;
+  }
+}
+.gel-icon-image {
+  &:before {
+    content: $gel-icon-image;
+  }
+}
+.gel-icon-settings {
+  &:before {
+    content: $gel-icon-settings;
+  }
+}
+.gel-icon-chat {
+  &:before {
+    content: $gel-icon-chat;
+  }
+}
+.gel-icon-database {
+  &:before {
+    content: $gel-icon-database;
+  }
+}
+.gel-icon-drag {
+  &:before {
+    content: $gel-icon-drag;
+  }
+}
+.gel-icon-pencil {
+  &:before {
+    content: $gel-icon-pencil;
+  }
+}
+.gel-icon-history {
+  &:before {
+    content: $gel-icon-history;
+  }
+}
+.gel-icon-home {
+  &:before {
+    content: $gel-icon-home;
+  }
+}
+.gel-icon-location {
+  &:before {
+    content: $gel-icon-location;
+  }
+}
+.gel-icon-add {
+  &:before {
+    content: $gel-icon-add;
+  }
+}
+.gel-icon-plus {
+  &:before {
+    content: $gel-icon-plus;
+  }
+}
+.gel-icon-tag {
+  &:before {
+    content: $gel-icon-tag;
+  }
+}
+.gel-icon-view {
+  &:before {
+    content: $gel-icon-view;
+  }
+}
+.gel-icon-slack {
+  &:before {
+    content: $gel-icon-slack;
+  }
+}
+.gel-icon-sketch {
+  &:before {
+    content: $gel-icon-sketch;
+  }
+}
+.gel-icon-github {
+  &:before {
+    content: $gel-icon-github;
+  }
+}
+.gel-icon-edit {
+  &:before {
+    content: $gel-icon-edit;
+  }
+}
+.gel-icon-print {
+  &:before {
+    content: $gel-icon-print;
+  }
+}
+.gel-icon-help {
+  &:before {
+    content: $gel-icon-help;
+  }
+}
+.gel-icon-help-pointer {
+  &:before {
+    content: $gel-icon-help-pointer;
+  }
+}
+.gel-icon-info-pointer {
+  &:before {
+    content: $gel-icon-info-pointer;
+  }
+}
+.gel-icon-search {
+  &:before {
+    content: $gel-icon-search;
+  }
+}
+.gel-icon-bullhorn {
+  &:before {
+    content: $gel-icon-bullhorn;
+  }
+}
+.gel-icon-arrow-right {
+  &:before {
+    content: $gel-icon-arrow-right;
+  }
+}
+.gel-icon-arrow-down {
+  &:before {
+    content: $gel-icon-arrow-down;
+  }
+}
+.gel-icon-arrow-up {
+  &:before {
+    content: $gel-icon-arrow-up;
+  }
+}
+.gel-icon-arrow-left {
+  &:before {
+    content: $gel-icon-arrow-left;
+  }
+}
+.gel-icon-upload {
+  &:before {
+    content: $gel-icon-upload;
+  }
+}
+.gel-icon-download {
+  &:before {
+    content: $gel-icon-download;
+  }
+}
+.gel-icon-left-end {
+  &:before {
+    content: $gel-icon-left-end;
+  }
+}
+.gel-icon-angle-left {
+  &:before {
+    content: $gel-icon-angle-left;
+  }
+}
+.gel-icon-right-end {
+  &:before {
+    content: $gel-icon-right-end;
+  }
+}
+.gel-icon-angle-right {
+  &:before {
+    content: $gel-icon-angle-right;
+  }
+}
+.gel-icon-angle-down {
+  &:before {
+    content: $gel-icon-angle-down;
+  }
+}
+.gel-icon-angle-up {
+  &:before {
+    content: $gel-icon-angle-up;
+  }
+}
+.gel-icon-share {
+  &:before {
+    content: $gel-icon-share;
+  }
+}
+.gel-icon-trash {
+  &:before {
+    content: $gel-icon-trash;
+  }
+}
+.gel-icon-eye {
+  &:before {
+    content: $gel-icon-eye;
+  }
+}
+.gel-icon-user {
+  &:before {
+    content: $gel-icon-user;
+  }
+}
+.gel-icon-employee {
+  &:before {
+    content: $gel-icon-employee;
+  }
+}
+.gel-icon-job {
+  &:before {
+    content: $gel-icon-job;
+  }
+}
+.gel-icon-knowledge-portal {
+  &:before {
+    content: $gel-icon-knowledge-portal;
+  }
+}
+.gel-icon-refresh {
+  &:before {
+    content: $gel-icon-refresh;
+  }
+}
+.gel-icon-lock {
+  &:before {
+    content: $gel-icon-lock;
+  }
+}
+.gel-icon-analytics {
+  &:before {
+    content: $gel-icon-analytics;
+  }
+}
+.gel-icon-menu {
+  &:before {
+    content: $gel-icon-menu;
+  }
+}
+.gel-icon-support {
+  &:before {
+    content: $gel-icon-support;
+  }
+}
+.gel-icon-add-user {
+  &:before {
+    content: $gel-icon-add-user;
+  }
+}
+.gel-icon-notes {
+  &:before {
+    content: $gel-icon-notes;
+  }
+}
+.gel-icon-doc {
+  &:before {
+    content: $gel-icon-doc;
+  }
+}
+.gel-icon-close-app {
+  &:before {
+    content: $gel-icon-close-app;
+  }
+}
+.gel-icon-offer {
+  &:before {
+    content: $gel-icon-offer;
+  }
+}
+.gel-icon-new {
+  &:before {
+    content: $gel-icon-new;
+  }
+}
+.gel-icon-preview {
+  &:before {
+    content: $gel-icon-preview;
+  }
+}
+.gel-icon-resume {
+  &:before {
+    content: $gel-icon-resume;
+  }
+}
+.gel-icon-copy {
+  &:before {
+    content: $gel-icon-copy;
+  }
+}
+.gel-icon-calendar {
+  &:before {
+    content: $gel-icon-calendar;
+  }
+}
+.gel-icon-menu-o {
+  &:before {
+    content: $gel-icon-menu-o;
+  }
+}
+.gel-icon-close-o {
+  &:before {
+    content: $gel-icon-close-o;
+  }
+}
+.gel-icon-tick-o {
+  &:before {
+    content: $gel-icon-tick-o;
+  }
+}
+.gel-icon-beta-o {
+  &:before {
+    content: $gel-icon-beta-o;
+  }
+}
+.gel-icon-bullhorn-o {
+  &:before {
+    content: $gel-icon-bullhorn-o;
+  }
+}
+.gel-icon-print-o {
+  &:before {
+    content: $gel-icon-print-o;
+  }
+}
+.gel-icon-feedback-o {
+  &:before {
+    content: $gel-icon-feedback-o;
+  }
+}
+.gel-icon-support-o {
+  &:before {
+    content: $gel-icon-support-o;
+  }
+}
+.gel-icon-profile-o {
+  &:before {
+    content: $gel-icon-profile-o;
+  }
+}
+.gel-icon-search-o {
+  &:before {
+    content: $gel-icon-search-o;
+  }
+}
+.gel-icon-applicant-o {
+  &:before {
+    content: $gel-icon-applicant-o;
+  }
+}
+.gel-icon-control-o {
+  &:before {
+    content: $gel-icon-control-o;
+  }
+}
+.gel-icon-team-o {
+  &:before {
+    content: $gel-icon-team-o;
+  }
+}
+.gel-icon-job-o {
+  &:before {
+    content: $gel-icon-job-o;
+  }
+}
+.gel-icon-application-o {
+  &:before {
+    content: $gel-icon-application-o;
+  }
+}
+.gel-icon-employee-o {
+  &:before {
+    content: $gel-icon-employee-o;
+  }
+}
+.gel-icon-recruitment-o {
+  &:before {
+    content: $gel-icon-recruitment-o;
+  }
+}
+.gel-icon-learning-o {
+  &:before {
+    content: $gel-icon-learning-o;
+  }
+}
+.gel-icon-analytics-o {
+  &:before {
+    content: $gel-icon-analytics-o;
+  }
+}
+.gel-icon-orgchart-o {
+  &:before {
+    content: $gel-icon-orgchart-o;
+  }
+}
+.gel-icon-onboarding-o {
+  &:before {
+    content: $gel-icon-onboarding-o;
+  }
+}
+.gel-icon-journal-o {
+  &:before {
+    content: $gel-icon-journal-o;
+  }
+}
+.gel-icon-copy-o {
+  &:before {
+    content: $gel-icon-copy-o;
+  }
+}
+.gel-icon-history-o {
+  &:before {
+    content: $gel-icon-history-o;
+  }
+}
+.gel-icon-salary-o {
+  &:before {
+    content: $gel-icon-salary-o;
+  }
+}
+.gel-icon-close-circle-o {
+  &:before {
+    content: $gel-icon-close-circle-o;
+  }
+}
+.gel-icon-add-o {
+  &:before {
+    content: $gel-icon-add-o;
+  }
+}
+.gel-icon-unlock-o {
+  &:before {
+    content: $gel-icon-unlock-o;
+  }
+}
+.gel-icon-view-o {
+  &:before {
+    content: $gel-icon-view-o;
+  }
 }

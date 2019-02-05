@@ -57,7 +57,7 @@
                 <h1 class="page-title"><?php echo $pageTitle  ?></h1>
                 <blockquote class="tagline"><?php emptyblock('page-tagline');?></blockquote>
               </div>
-              <div class="page-actions col-lg-4 mt-2">
+              <div class="page-actions col-lg-4 mt-2 mt-lg-0">
                   <?php emptyblock('page-actions') ?>
               </div>
             <?php } else {?>
