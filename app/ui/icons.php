@@ -44,6 +44,8 @@ function buildSolidIcons(){
     ["bullhorn", "bullhorn"],
     ["arrow right", "arrow-right"],
     ["arrow left", "arrow-left"],
+    ["arrow up", "arrow-up"],
+    ["arrow down", "arrow-down"],
     ["upload", "upload"],
     ["download", "download"],
     ["angle down", "angle-down"],

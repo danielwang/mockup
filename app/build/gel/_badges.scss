@@ -31,6 +31,6 @@
 
 @each $color, $value in $colors {
   .dot-#{$color}{
-    @include dot-variant($color);
+    @include dot-variant($value);
   }
 }

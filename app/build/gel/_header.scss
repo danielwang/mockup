@@ -40,6 +40,7 @@
     .item {
       position: relative;
       white-space: nowrap;
+      margin-left: $spacer;
 
       > a {
         margin-left: 20px;
