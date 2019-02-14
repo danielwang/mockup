@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.10.0
+ *   PageUp GEL - Theme 3.10.1
  *   Author: Daniel Wang
- *	 Date: 05/02/2018
+ *	 Date: 14/02/2018
  *
  \* *************************************** */
 /*!
@@ -1516,7 +1516,7 @@ pre {
     color: #6c757d;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
-    background-color: #9eb0c0;
+    background-color: #d6dde4;
     opacity: 1; }
 
 select.form-control:not([size]):not([multiple]) {
@@ -2821,7 +2821,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   .custom-control-input:disabled ~ .custom-control-label {
     color: #9eb0c0; }
   .custom-control-input:disabled ~ .custom-control-label::before {
-    background-color: #9eb0c0; }
+    background-color: #d6dde4; }
 
 .custom-control-label {
   margin-bottom: 0; }
@@ -2900,7 +2900,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     background-image: none; }
   .custom-select:disabled {
     color: #9eb0c0;
-    background-color: #9eb0c0; }
+    background-color: #d6dde4; }
   .custom-select::-ms-expand {
     opacity: 0; }
 
@@ -10166,10 +10166,11 @@ a {
   content: "\e91d"; }
 
 .checkbox input[type="checkbox"]:disabled + label {
-  opacity: 0.65; }
+  opacity: 0.65;
+  cursor: not-allowed; }
 
 .checkbox input[type="checkbox"]:disabled + label::before {
-  background-color: #9eb0c0;
+  background-color: #d6dde4;
   cursor: not-allowed; }
 
 .checkbox input[type="checkbox"]:disabled + label::after {
@@ -10315,10 +10316,12 @@ a {
   transform: scale(1, 1); }
 
 .radio input[type="radio"]:disabled + label {
-  opacity: 0.65; }
+  opacity: 0.65;
+  cursor: not-allowed; }
 
 .radio input[type="radio"]:disabled + label::before {
-  cursor: not-allowed; }
+  cursor: not-allowed;
+  background-color: #d6dde4; }
 
 .radio input[type="radio"]:disabled + label::after {
   cursor: not-allowed; }
@@ -10551,13 +10554,6 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 .dropdown {
   display: inline-block; }
 
-.dropdown-toggle {
-  padding-right: 2rem; }
-
-@media (max-width: 1199.98px) {
-    .dropdown-toggle {
-      padding-right: 0; } }
-
 .btn-group .dropdown-toggle {
   margin-right: 0; }
 
@@ -10580,9 +10576,8 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   height: auto;
   vertical-align: bottom; }
 
-.dropdown-toggle.no-caret {
-  padding-right: 1rem;
-  margin-right: 0; }
+.dropdown-toggle:not(.no-caret) {
+  padding-right: 2rem; }
 
 .dropdown-toggle.no-caret:after {
   content: "" !important; }
@@ -11497,7 +11492,8 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   z-index: 999;
   background-image: linear-gradient(to right, #fff 0%, #fff 100%);
   background-repeat: repeat-x;
-  transition: top 0.3s ease-in-out; }
+  transition: top 0.3s ease-in-out;
+  border-bottom: solid 1px #bac6d2; }
 
 @media screen and (prefers-reduced-motion: reduce) {
     #gel-subpages {
@@ -12828,6 +12824,17 @@ del a:hover {
 
 .toggle input:checked + span:before {
   transition: background 0.2s ease-in; }
+
+.toggle input:disabled + span {
+  opacity: 0.65;
+  cursor: not-allowed; }
+
+.toggle input:disabled + span::before {
+  cursor: not-allowed;
+  background-color: #d6dde4; }
+
+.toggle input:disabled + span::after {
+  cursor: not-allowed; }
 /*******************************************************
  Slider B
  *******************************************************/

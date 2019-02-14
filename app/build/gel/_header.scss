@@ -87,6 +87,7 @@
   z-index: $zindex-sticky - 21; // 999 just below the dropdown
   @include gradient-x($header-bg-start, $header-bg-end);
   @include transition(top 0.3s ease-in-out);
+  border-bottom: solid 1px $slate-300;
   .page-tabs {
     margin-left: -$grid-gutter-width/2;
     @include scroll-horizontal();

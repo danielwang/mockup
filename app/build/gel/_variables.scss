@@ -191,6 +191,7 @@ $ctrl-border-color:   $border-color;
 $inactive:      $slate-300;
 $active:        $blue;
 $disabled:      $slate-400;
+$disabled-bg:   $slate-200;
 $primary:       $blue !default;
 $secondary:     $ctrl !default;
 $success:       $green !default;
@@ -559,7 +560,7 @@ $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-line-height-lg:                  $input-btn-line-height-lg !default;
 
 $input-bg:                              $white !default;
-$input-disabled-bg:                     $disabled !default;
+$input-disabled-bg:                     $disabled-bg !default;
 
 $input-color:                           $body-color !default;
 $input-border-color:                    $ctrl-border-color !default;
@@ -614,7 +615,7 @@ $custom-control-indicator-bg:           $gray-300 !default;
 $custom-control-indicator-bg-size:      50% 50% !default;
 $custom-control-indicator-box-shadow:   none;
 
-$custom-control-indicator-disabled-bg:          $disabled !default;
+$custom-control-indicator-disabled-bg:          $disabled-bg !default;
 $custom-control-label-disabled-color:     $disabled !default;
 
 $custom-control-indicator-checked-color:        $component-active-color !default;
@@ -647,7 +648,7 @@ $custom-select-line-height:         $input-btn-line-height !default;
 $custom-select-color:               $input-color !default;
 $custom-select-disabled-color:      $disabled !default;
 $custom-select-bg:                  $white !default;
-$custom-select-disabled-bg:         $disabled !default;
+$custom-select-disabled-bg:         $disabled-bg !default;
 $custom-select-bg-size:             8px 10px !default; // In pixels because image dimensions
 $custom-select-indicator-color:     $gray-800 !default;
 $custom-select-indicator:           str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"), "#", "%23") !default;
