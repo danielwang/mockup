@@ -3,12 +3,6 @@
 }
 
 .dropdown-toggle {
-//  margin-right: $spacer;
-  padding-right: 2rem;
-  @include media-breakpoint-down(lg) {
-    padding-right:0;
-  }
-
   .btn-group &{
     margin-right: 0;
   }
@@ -36,9 +30,13 @@
     }
   }
 
+  &:not(.no-caret) {
+    padding-right: $spacer-5;
+  }
+
   &.no-caret {
-    padding-right: $spacer;
-    margin-right: 0;
+    // padding-right: $spacer;
+    // margin-right: 0;
 
     &:after {
       content: "" !important;

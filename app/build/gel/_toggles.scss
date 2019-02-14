@@ -137,8 +137,20 @@ Main Slider
       transition: background .2s ease-in;
     }
 
-  }
+    &:disabled + span {
+      opacity: 0.65;
+      cursor: not-allowed;
 
+      &::before {
+        cursor: not-allowed;
+        background-color: $input-disabled-bg;
+      }
+
+      &::after {
+        cursor: not-allowed;
+      }
+    }
+  }
 }
 
 
