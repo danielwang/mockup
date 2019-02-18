@@ -293,9 +293,37 @@
   </div>
   <div class="tab-pane d-print-block" id="resume" role="tabpanel" aria-labelledby="resume-tab">
     <h3 class="d-none d-print-block">Resume</h3>
-    Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse
-    potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+    <section class="text-center mt-5">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	      viewBox="0 0 234.1 214.1" style="enable-background:new 0 0 234.1 214.1;" xml:space="preserve" width="75px" height="76px">
+        <style type="text/css">
+        	.st0{fill:#AFBFD0;}
+        	.st1{fill:#CCD9E5;}
+        	.st2{fill:#CCD9E5;}
+        	.st3{fill:#8193A4;}
+        </style>
+        <g>
+        	<path class="st0" d="M32.4,101.9v78.7c0,5.9,6.6,10.7,14.7,10.7h5.6c8.1,0,14.7-4.8,14.7-10.7v-78.7H32.4z"/>
+        	<path class="st1" d="M66.7,193v-88.4H55.6V180c0,5.3-0.3,9.8-10.6,10.8v2.3h21.7V193z"/>
+        	<path class="st2" d="M165.8,180H82.5V33.6h106.9v128.2c0,0,1.3,18.3-18.2,18.3"/>
+        	<path class="st3" d="M51,196.3h-1.1c-11.8,0-21.4-9.6-21.4-21.4V99.1h38.4V17.8h138.7v152.4c0,0.3,0.2,9.8-7,17.3
+        		c-5.5,5.7-13.7,8.6-24.3,8.6c-31.2,0-104.1,0.2-121,0.2C52.6,196.3,51.8,196.3,51,196.3z M34,104.6V175c0,8.7,7.1,15.8,15.8,15.9
+        		v-0.1c0,0,1.1,0,3.2,0c7.8-1,13.9-7.7,13.9-15.8v-70.4L34,104.6L34,104.6z M72.4,23.3V175c0,6.2-2.7,11.8-6.9,15.7
+        		c27.2-0.1,82.7-0.2,108.8-0.2c9.1,0,15.9-2.3,20.3-6.9c5.6-5.8,5.5-13.3,5.5-13.4v-147L72.4,23.3L72.4,23.3z"/>
+        	<path class="st3" d="M160.6,65.8h-58c-1.5,0-2.7-1.2-2.7-2.7c0-1.5,1.2-2.7,2.7-2.7h58c1.5,0,2.7,1.2,2.7,2.7
+        		C163.3,64.5,162.1,65.8,160.6,65.8z"/>
+        	<path class="st3" d="M160.6,95.1h-58c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h58c1.5,0,2.7,1.2,2.7,2.7
+        		C163.3,93.9,162.1,95.1,160.6,95.1z"/>
+        	<path class="st3" d="M180.5,124.5h-77.9c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h77.9c1.5,0,2.7,1.2,2.7,2.7
+        		C183.2,123.2,182,124.5,180.5,124.5z"/>
+        	<path class="st3" d="M160.6,153.8h-58c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h58c1.5,0,2.7,1.2,2.7,2.7
+        		C163.3,152.6,162.1,153.8,160.6,153.8z"/>
+        </g>
+        </svg>
+        <h5 class="mt-4 mb-3 text-muted">Lorem ipsum dolor sit amet, empor incididunt ut labore et dolore magna aliqua.
+        </h5>
+        <button class="btn btn-link">Download resume</button>
+    </section>
   </div>
 </div>
 

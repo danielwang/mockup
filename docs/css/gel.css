@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.10.1
+ *   PageUp GEL - Theme 3.10.2
  *   Author: Daniel Wang
- *	 Date: 14/02/2018
+ *	 Date: 18/02/2018
  *
  \* *************************************** */
 /*!
@@ -37,7 +37,6 @@
   --cyan: #00bcd4;
   --white: #fff;
   --gray: #6c757d;
-  --gray-dark: #343a40;
   --navy: #002f54;
   --primary: #0063b0;
   --secondary: #1d262d;
@@ -1790,7 +1789,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 1.5rem;
@@ -2682,8 +2681,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     border-bottom-left-radius: 0; }
 
 .dropdown-toggle-split {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem; }
+  padding-right: 0.5625rem;
+  padding-left: 0.5625rem; }
   .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropright .dropdown-toggle-split::after {
     margin-left: 0; }
   .dropleft .dropdown-toggle-split::before {
@@ -8798,196 +8797,189 @@ a {
   font-family: 'Proxima Nova Semibold'; }
 /**  dots/indicator **/
 .dot-blue {
-  background-color: blue;
+  background-color: #0063b0;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-indigo {
-  background-color: indigo;
+  background-color: #303f9f;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-purple {
-  background-color: purple;
+  background-color: #512da8;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-pink {
-  background-color: pink;
+  background-color: #ff4081;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-red {
-  background-color: red;
+  background-color: #cd2f2f;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-orange {
-  background-color: orange;
+  background-color: #e68755;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-yellow {
-  background-color: yellow;
+  background-color: #fac238;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-green {
-  background-color: green;
+  background-color: #328423;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-teal {
-  background-color: teal;
+  background-color: #009688;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-cyan {
-  background-color: cyan;
+  background-color: #00bcd4;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-white {
-  background-color: white;
+  background-color: #fff;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-gray {
-  background-color: gray;
+  background-color: #6c757d;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-gray-dark {
-  background-color: gray-dark;
+  background-color: #343a40;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-blue {
-  background-color: blue;
+  background-color: #0063b0;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-azure {
-  background-color: azure;
+  background-color: #1aa5e6;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-indigo {
-  background-color: indigo;
+  background-color: #303f9f;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-purple {
-  background-color: purple;
+  background-color: #512da8;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-pink {
-  background-color: pink;
+  background-color: #ff4081;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-red {
-  background-color: red;
+  background-color: #cd2f2f;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-orange {
-  background-color: orange;
+  background-color: #e68755;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-yellow {
-  background-color: yellow;
+  background-color: #fac238;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-green {
-  background-color: green;
+  background-color: #328423;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-teal {
-  background-color: teal;
+  background-color: #009688;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-cyan {
-  background-color: cyan;
+  background-color: #00bcd4;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-white {
-  background-color: white;
+  background-color: #fff;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-gray {
-  background-color: gray;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block; }
-
-.dot-gray-dark {
-  background-color: gray-dark;
+  background-color: #6c757d;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block; }
 
 .dot-navy {
-  background-color: navy;
+  background-color: #002f54;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -9982,7 +9974,7 @@ a {
 @media (min-width: 992px) {
     .btn {
       height: 34px;
-      padding: 0.25rem 1rem;
+      padding: 0.25rem 0.75rem;
       font-size: 0.875rem;
       line-height: 1.5rem;
       border-radius: 1.5rem; }
@@ -9992,7 +9984,7 @@ a {
 
 .btn-sm, .btn-group-sm > .btn {
   height: 34px;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   border-radius: 1.5rem; }
@@ -11457,17 +11449,16 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 #gel-header .page-actions {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
-  margin-bottom: 0.5rem; }
+  align-items: center; }
 
 @media (min-width: 992px) {
       #gel-header .page-actions {
-        order: 2;
-        align-items: start; } }
+        order: 2; } }
 
 #gel-header .page-actions .item {
   position: relative;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-left: 1rem; }
 
 #gel-header .page-actions .item > a {
   margin-left: 20px; }
@@ -11485,9 +11476,6 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
     @media (min-width: 1200px) {
           #gel-header .page-actions .item > a i + span {
             display: inline-block; } }
-
-#gel-header .page-actions .item > a span {
-  font-size: 1rem; }
 
 @media (max-width: 1199.98px) {
             #gel-header .page-actions .item > a.dropdown-toggle:after {
@@ -11507,7 +11495,6 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
       transition: none; } }
 
 #gel-subpages .page-tabs {
-  margin-left: -15px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -13236,9 +13223,6 @@ del a:hover {
 .bg-gray {
   background-color: #6c757d !important; }
 
-.bg-gray-dark {
-  background-color: #343a40 !important; }
-
 .bg-navy {
   background-color: #002f54 !important; }
 
@@ -13319,9 +13303,6 @@ del a:hover {
 
 .text-gray {
   color: #6c757d !important; }
-
-.text-gray-dark {
-  color: #343a40 !important; }
 
 .text-navy {
   color: #002f54 !important; }
