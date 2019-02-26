@@ -4,7 +4,7 @@
 
  a[data-toggle="collapse"] {
     &:before{
-      content: "\e92a";
+      content: $gel-icon-angle-down;
       font-family: $gel-icon;
       font-size: $font-size-lg;
       margin-right: $spacer*0.5;

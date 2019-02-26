@@ -142,7 +142,7 @@
 
       .stepper-dot {
         &:after {
-          content: "\e91d";
+          content: $gel-icon-tick;
           font-family: $gel-icon;
           color: white;
           background: $blue;

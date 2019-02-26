@@ -1,14 +1,15 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.10.2
+ *   PageUp GEL - Theme 3.10.3
  *   Author: Daniel Wang
- *	 Date: 18/02/2018
- *
+ *	 Date: 25/02/2018
+ *   Special edition (header)
 \* *************************************** */
 @import "functions";
 @import "variables";
 
 
-// scope GEL.gel{
+// scope GEL
+//.gel{
 @import "../bootstrap-4.1.0/bootstrap";
 
 //----
@@ -52,14 +53,16 @@
 @import "toggles";
 @import "stepper";
 @import "utility";
-
 //----
 @import "branding";
-
 //----
 @import "print";
 // end scope}
 
-
 // GEL icons
 @import "gel-icon";
+
+// Hack
+// .live .gel {
+//   @import "header-blue";
+// }

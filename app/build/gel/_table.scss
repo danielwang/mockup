@@ -61,7 +61,7 @@
 
         &.sort-up{
           &:after{
-            content: "\e97c";
+            content: $gel-icon-sort-up;
             font-family: $gel-icon;
             position: absolute;
             font-size: 1.25rem;
@@ -71,7 +71,7 @@
         }
         &.sort-down{
           &:after{
-            content: "\e97d";
+            content: $gel-icon-sort-down;
             font-family: $gel-icon;
             position: absolute;
             right: -$spacer * 1.5;

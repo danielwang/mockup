@@ -57,13 +57,6 @@
                   <?php for ($m =1; $m <= 8; $m++) {?>
                   <a class="dropdown-item" href="#">Another action <?php echo $m ?></a>
                   <?php } ?>
-                  <div class="dropdown-divider"></div>
-                  <div class="toggle toggle-success">
-                    <label>
-                      <input type="checkbox" checked="">
-                      <span>Active</span>
-                    </label>
-                  </div>
                 </div>
               </div>
             </div>

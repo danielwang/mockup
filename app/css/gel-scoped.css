@@ -1,9 +1,93 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.10.2
+ *   PageUp GEL - Theme 3.10.3
  *   Author: Daniel Wang
- *	 Date: 18/02/2018
- *
+ *	 Date: 25/02/2018
+ *   Special edition (header)
  \* *************************************** */
+.gel {
+  /*!
+   * Bootstrap v4.1.0 (https://getbootstrap.com/)
+   * Copyright 2011-2018 The Bootstrap Authors
+   * Copyright 2011-2018 Twitter, Inc.
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   */
+  /* selection styles */
+  /*  Scroll bar styles
+   * See Lea Verou's explanation background-attachment:
+   * http://lea.verou.me/2012/04/background-attachment-local/
+   */
+  /* Track */
+  /* Handle */
+  /**  dots/indicator **/
+  /* input groups */
+  /*
+   * The MIT License
+   * Copyright (c) 2012 Matias Meno <m@tias.me>
+   * https://github.com/enyo/dropzone/
+   */
+  /* *************************************** *\
+   *
+   * Search components
+   *
+   \* *************************************** */
+  /*Global Mixins*/
+  /*Global Spinner*/
+  /*Balls Spinner Animation*/
+  /* ---------------------- *\
+   content skeleton loader
+   \*  ---------------------- */
+  /* Commented out responsive gutter on fluid layout,
+   because it will break monilith hybrid page alignment,
+   same in core.scss
+   */
+  /* *********************************\
+   responsive table viewport < 768
+   \***********************************/
+  /* *********************************\
+   sticky header and column
+   \***********************************/
+  /** Tags **/
+  /*==================================
+   TIMELINE
+   ==================================*/
+  /*-- GENERAL STYLES
+   ------------------------------*/
+  /*----- TIMELINE ITEM -----*/
+  /*----- TIMELINE INFO -----*/
+  /*----- TIMELINE MARKER -----*/
+  /*----- TIMELINE CONTENT -----*/
+  /*----- TIMELINE PERIOD -----*/
+  /*----------------------------------------------
+   MOD: TIMELINE SPLIT
+   ----------------------------------------------*/
+  /*----------------------------------------------
+   MOD: TIMELINE CENTERED
+   ----------------------------------------------*/
+  /*----------------------------------------------
+   MOD: MARKER OUTLINE
+   ----------------------------------------------*/
+  /*******************************************************
+   Variables
+   *******************************************************/
+  /*******************************************************
+   Animation
+   *******************************************************/
+  /*******************************************************
+   Main Slider basics
+   *******************************************************/
+  /*******************************************************
+   Main Slider
+   *******************************************************/
+  /*******************************************************
+   Slider B
+   *******************************************************/
+  /*******************************************************
+   Sizes
+   *******************************************************/
+  /*******************************************************
+   Variations
+   *******************************************************/
+  /* vertical stepper */ }
   .gel :root {
     --blue: #0063b0;
     --indigo: #303f9f;
@@ -57,7 +141,7 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; }
   .gel *, .gel *::before, .gel *::after {
     box-sizing: border-box; }
-  html .gel{
+  .gel html {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -68,7 +152,7 @@
       width: device-width; }
   .gel article, .gel aside, .gel dialog, .gel figcaption, .gel figure, .gel footer, .gel header, .gel hgroup, .gel main, .gel nav, .gel section {
     display: block; }
-  .gel {
+  .gel body {
     margin: 0;
     font-family: 'Proxima Nova', sans-serif;
     font-size: 0.875rem;
@@ -12564,3 +12648,137 @@
 
 .gel-icon-view-o:before {
   content: "\e91c"; }
+
+  .live .gel #gel-header {
+    background-image: linear-gradient(to right, #0063b0 0%, #0063b0 100%);
+    background-repeat: repeat-x;
+    color: white;
+    padding: 1rem 0;
+    -webkit-transition: font-size 0.5s ease;
+    -moz-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
+    transition: padding 0.5s ease; }
+
+  .live .gel #gel-header h1.page-title {
+    color: white;
+    margin: 0;
+    -webkit-transition: font-size 0.5s ease;
+    -moz-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
+    transition: font-size 0.5s ease; }
+
+  .live .gel #gel-header blockquote.tagline {
+    margin: 0.75rem 0 0;
+    font-size: 1.125rem; }
+
+  .live .gel #gel-header h6 {
+    color: white;
+    font-size: 12px; }
+
+  .live .gel #gel-header .page-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 0.5rem; }
+
+  @media (min-width: 992px) {
+          .live .gel #gel-header .page-actions {
+            order: 2;
+            align-items: start; } }
+
+  .live .gel #gel-header .page-actions .item {
+    position: relative;
+    white-space: nowrap; }
+
+  .live .gel #gel-header .page-actions .item > a {
+    margin-left: 20px;
+    color: white; }
+    .live .gel #gel-header .page-actions .item > a:focus {
+      outline: none; }
+      .live .gel #gel-header .page-actions .item > a:focus span {
+        text-decoration: underline;
+        outline: none; }
+    .live .gel #gel-header .page-actions .item > a i {
+      vertical-align: -5px; }
+      .live .gel #gel-header .page-actions .item > a i + span {
+        display: none; }
+        @media (min-width: 1200px) {
+            .live .gel #gel-header .page-actions .item > a i + span {
+              display: inline-block; } }
+    .live .gel #gel-header .page-actions .item > a span {
+      font-size: 1rem; }
+    @media (max-width: 1199.98px) {
+              .live .gel #gel-header .page-actions .item > a.dropdown-toggle:after {
+                content: ""; } }
+
+  .live .gel #gel-subpages {
+    position: sticky;
+    top: 3.75rem;
+    z-index: 999;
+    background-image: linear-gradient(to right, #0063b0 0%, #0063b0 100%);
+    background-repeat: repeat-x;
+    transition: top 0.3s ease-in-out; }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+        .live .gel #gel-subpages {
+          transition: none; } }
+
+  .live .gel #gel-subpages .page-tabs {
+    margin-left: -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    align-content: flex-end;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+
+  .live .gel #gel-subpages .page-tabs:empty {
+    display: none; }
+
+  .live .gel #gel-subpages .page-tabs a {
+    white-space: nowrap;
+    font-weight: 400;
+    font-family: 'Nunito Semibold';
+    font-size: 1rem;
+    opacity: 0.75;
+    color: #fff;
+    padding: 1rem;
+    position: relative; }
+
+  .live .gel #gel-subpages .page-tabs a:focus {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: underline;
+    outline: none;
+    opacity: 1; }
+
+  .live .gel #gel-subpages .page-tabs a:hover {
+    color: #fff;
+    background-color: transparent;
+    opacity: 1;
+    text-decoration: underline;
+    outline: none; }
+
+  .live .gel #gel-subpages .page-tabs a.active {
+    opacity: 1;
+    color: white; }
+    .live .gel #gel-subpages .page-tabs a.active::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      border-width: 0 0.5rem 0.5rem;
+      border-style: solid;
+      border-color: #f1f4f6 transparent;
+      display: block;
+      width: 0;
+      left: calc(50%);
+      margin-left: -0.5rem; }
+
+  .live .gel #gel-header + #gel-subpages {
+    margin-top: -1rem;
+    border-bottom: 0; }

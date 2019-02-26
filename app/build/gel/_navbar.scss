@@ -46,10 +46,12 @@
 
     .nav-toggle {
       color: $white;
-      margin-left: -6px;
       padding: 0;
       width: 2rem;
       height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transition: transform 0.2s ease;
 
       @include hover-focus {

@@ -2,9 +2,9 @@ $bucket-size: 2.5rem;
 $bucket-size-sm: 20px;
 
 $buckets: (
-  1: ($green, "\e985"),
-  2: ($orange, "\e986"),
-  3: ($red, "\e987")
+  1: ($green, $gel-icon-bucket-1),
+  2: ($orange, $gel-icon-bucket-2),
+  3: ($red, $gel-icon-bucket-3)
 );
 
 .buckets {
@@ -28,7 +28,7 @@ $buckets: (
 
     &::before {
       color: $color;
-      content: "\e984";
+      content: $gel-icon-bucket-empty;
       position: absolute;
       z-index: 2;
       top: 0;

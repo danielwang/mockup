@@ -10,7 +10,7 @@
   <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
     <div class="container">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-lg"></i></a></li>
         <li class="nav-item"><a title="PageUp Global Experience Language" class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="PageUp Global Experience Language" src="<?php echo ($resURL) ?>site-images/gel-logo.png" width="60"/><?php endblock() ?> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
       </ul>
       <ul class="navbar-nav">
@@ -28,7 +28,7 @@
   </nav>
   <!-- ************ menu ************  -->
   <aside id="gel-menu" role='menu'>
-    <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
+    <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></a>
 
     <a href="<?php echo ($resURL) ?>" class="logo"> <?php startblock('logo') ?><img alt="logo" src="<?php echo ($resURL) ?>site-images/pageup-gel-logo.png" width="120"/><?php endblock() ?></a>
 

@@ -2,7 +2,7 @@
 // Checkboxes
 //  http://flatlogic.github.io/awesome-bootstrap-checkbox/demo/1.0.0/
 // --------------------------------------------------
-$check-icon: "\e91d" !default;
+$check-icon: $gel-icon-tick;
 $width: 1.5rem;
 $height: $width;
 $width-sm: 1.25rem;
@@ -72,7 +72,7 @@ $height-sm: $width-sm;
       position: absolute;
       width: 16px;
       height: 16px;
-      left: -4px;
+      left: 0;
       top: -3px;
       font-size: $font-size-lg * 1.25;
       margin-left: -$width;
@@ -141,7 +141,7 @@ $height-sm: $width-sm;
 
       &::after {
         font-size: $font-size-lg;
-        left: -3px;
+        left: -1px;
         top: -2px;
       }
     }

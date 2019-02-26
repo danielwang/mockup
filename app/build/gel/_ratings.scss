@@ -1,22 +1,23 @@
 $face-colors: ()!default;
 $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green, "yellow": $yellow, "lime": #75ad37), $face-colors);
-@mixin face-variants($outline, $solid) {
+@mixin face-variants($face) {
   input[type="radio"] {
     @include hidden-radio();
     + label {
       &::before {
-        content: $outline;
+        content: $face;
       }
     }
 
     &:checked {
       &+ label {
         &::before {
-          content: $solid;
+          content: $face;
         }
       }
       &~ span{
-        @include font-semibold();
+        @include font-bold();
+        text-decoration: underline;
       }
     }
   }
@@ -29,7 +30,7 @@ $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green, "yello
 
     + label {
       &::before {
-        color: $color;
+        color: $inactive;
       }
 
     }
@@ -37,10 +38,6 @@ $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green, "yello
     &:checked + label {
       &::before {
         color: $color;
-      }
-
-      &::after {
-        background-color: darken($color, 22%); //900
       }
     }
   }
@@ -100,23 +97,23 @@ $face-colors: map-merge(("red": $red, "orange": $orange, "green": $green, "yello
   }
 
   .face-red {
-    @include face-variants("\e966", "\e968")
+    @include face-variants($gel-icon-sad)
   }
 
   .face-orange {
-    @include face-variants("\e965","\e969")
+    @include face-variants($gel-icon-frown)
   }
 
   .face-yellow {
-    @include face-variants("\e963","\e967")
+    @include face-variants($gel-icon-meh)
   }
 
   .face-lime {
-    @include face-variants("\e964","\e96c")
+    @include face-variants($gel-icon-smile)
   }
 
   .face-green {
-    @include face-variants("\e962","\e96a")
+    @include face-variants($gel-icon-happy)
   }
 }
 // ********************** Star Rating ************************\\

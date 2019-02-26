@@ -10,7 +10,7 @@
   &:after {
     vertical-align: top;
     border: 0;
-    content: "\e92a";
+    content: $gel-icon-angle-down;
     font-family: $gel-icon;
     width: auto;
     height: auto;
@@ -22,7 +22,7 @@
   // dropup
   .dropup & {
     &:after {
-      content: "\e92b";
+      content: $gel-icon-angle-up;
       border: 0;
       width: auto;
       height: auto;
@@ -106,7 +106,7 @@
   //
   // &.show > .dropdown-toggle {
   //   &:after {
-  //     content: "\e92a";
+  //     content: $gel-icon-angle-down;
   //   }
   // }
 }

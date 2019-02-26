@@ -53,12 +53,12 @@
         &:before {
           float: right;
           margin-left: $spacer;
-          content: "\e92b";
+          content: $gel-icon-angle-up;
           font-family: $gel-icon;
         }
 
         &.collapsed:before {
-          content: "\e92a";
+          content: $gel-icon-angle-down;
         }
       }
 
@@ -96,7 +96,7 @@
         &:before {
           float: right;
           margin-left: $spacer;
-          content: "\e92b";
+          content: $gel-icon-angle-up;
           font-family: $gel-icon;
           transform: rotate(0);
           transition: transform 0.3s ease-in-out 0s;
