@@ -85,7 +85,7 @@ function buildSolidIcons(){
     ["add","add"],
     ["plus","plus"],
     ["tag","tag"],
-    ["view","view"],
+    ["view","eye"],
     ["slack","slack"],
     ["github","github"],
     ["edit","edit"],
@@ -97,13 +97,13 @@ function buildSolidIcons(){
     ["smile","smile"],
     ["happy","happy"],
     ["clock","clock"],
-    ["close app","close-app"],
+    ["app close","app-close"],
     ["bell","bell"],
     ["target","target"],
     ["ellipsis","ellipsis"],
     ["block","block"],["bomb","bomb"],["box","box"],["bulb","bulb"],["car","car"],
     ["chessboard","chessboard"],["flag","flag"],["globe","globe"],["paw","paw"],["phone","phone"],
-    ["recycle","recycle"],["reticle","reticle"],["trophy","trophy"],["people","people"]
+    ["recycle","recycle"],["reticle","reticle"],["trophy","trophy"],["person","person"]
   ];
 }
 

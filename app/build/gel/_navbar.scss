@@ -157,6 +157,10 @@
     }
   }
 }
+
+.navbar-light{
+  background-color: $slate-200;
+}
 /* Commented out responsive gutter on fluid layout,
    because it will break monilith hybrid page alignment,
    same in core.scss

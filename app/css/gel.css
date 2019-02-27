@@ -3751,7 +3751,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #d6dde4;
   border-radius: 0.5rem; }
   @media (min-width: 576px) {
   .jumbotron {
@@ -11072,6 +11072,25 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #be2626; }
+/*
+ * Page: 400 and 500 error pages
+ * ------------------------------
+ */
+.error-page .pup {
+  bottom: -45px;
+  float: right;
+  height: 324px;
+  position: relative;
+  width: 400px; }
+
+.error-page .error-code {
+  color: #79c390;
+  font-size: 50px;
+  left: 54px;
+  position: absolute;
+  top: 45px;
+  transform: rotate(-21deg);
+  z-index: 3; }
 
 .form-group label {
   margin-bottom: 0.25rem;
@@ -11858,6 +11877,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   height: 30px; }
   .navbar .navbar-nav .search-group input[type=search] + .btn-submit:focus {
     outline: 1px solid currentcolor; }
+
+.navbar-light {
+  background-color: #d6dde4; }
 /* Commented out responsive gutter on fluid layout,
  because it will break monilith hybrid page alignment,
  same in core.scss
@@ -13115,8 +13137,7 @@ del a:hover {
   content: "\e921";
   font-family: "gel-icon";
   color: white;
-  background: #0063b0;
-  text-indent: -2px; }
+  background: #0063b0; }
 
 .stepper-vertical > .stepper-step > .stepper-dot {
   left: 12px;
@@ -14552,6 +14573,9 @@ del a:hover {
       .ml-xxl-n-7, .mx-xxl-n-7 {
         margin-left: -4rem !important; } }
 
+.container-max {
+  max-width: 1140px; }
+
 .dragable {
   cursor: move; }
 
@@ -14651,7 +14675,7 @@ del a:hover {
   #gel-footer, #gel-menu, #gel-navbar, .page-actions {
     display: none !important; } }
 /* *************************************** *\
- *   PageUp GEL - Icons 2.8.1
+ *   PageUp GEL - Icons 2.8.0
  *   Author: Daniel Wang
  *	 Date: 25/02/2018
  \* *************************************** */

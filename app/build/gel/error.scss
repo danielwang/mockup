@@ -1,0 +1,23 @@
+/*
+ * Page: 400 and 500 error pages
+ * ------------------------------
+ */
+
+.error-page {
+  .pup {
+    bottom: -45px;
+    float: right;
+    height: 324px;
+    position: relative;
+    width: 400px;
+  }
+  .error-code {
+    color: #79c390;
+    font-size: 50px;
+    left: 54px;
+    position: absolute;
+    top: 45px;
+    transform: rotate(-21deg);
+    z-index: 3;
+  }
+}
