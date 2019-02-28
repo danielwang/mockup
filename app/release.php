@@ -11,6 +11,7 @@
      "css/gel-scoped.css" => "css/gel-scoped.min.css",
      "css/gel.css" => "css/gel.min.css"
  );
+ echo "******** starting ******** \n";
  minifyCSS($css);
 
  // copy files to dist
@@ -19,7 +20,10 @@
  $imagesSrc = "images";
  $dest = $dir;
  shell_exec("cp -r $cssSrc $dest");
+ echo "Copying CSS  \n";
  shell_exec("cp -r $jsSrc $dest");
+ echo "Copying JS  \n";
  shell_exec("cp -r $imagesSrc $dest");
-
+ echo "Copying images  \n";
+ echo "****************** release " . $v . " has finished ******************  \n";
  ?>

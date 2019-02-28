@@ -84,7 +84,7 @@
   @include transition(top 0.3s ease-in-out);
   border-bottom: solid 1px $slate-300;
   .page-tabs {
-    //margin-left: -$grid-gutter-width/2;
+    margin-left: -$spacer;
     @include scroll-horizontal();
     &:empty {
       display: none;
@@ -121,8 +121,7 @@
             border-width: 2px;
             border-style: solid;
             border-color: $blue;
-            width: 100%;
-            left: 0;
+            width: calc(100% - #{$spacer} * 2);
           }
         }
       }

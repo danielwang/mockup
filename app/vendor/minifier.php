@@ -29,6 +29,7 @@
 			fwrite($handler, getMinified($url, file_get_contents($key)));
 			fclose($handler);
 			echo "File " . $value . " is minified!";
+			echo "\n";
 		}
 	}
 

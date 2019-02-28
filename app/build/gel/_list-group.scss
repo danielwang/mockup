@@ -37,6 +37,9 @@
     &.active{
       color: $active;
 
+      [class^="gel-icon-"] {
+        color: $active;
+      }
       &::after {
         width: 15px;
         height: 15px;
