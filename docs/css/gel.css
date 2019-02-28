@@ -1,8 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - Theme 3.10.3
+ *   PageUp GEL - version 3.10.4
  *   Author: Daniel Wang
- *	 Date: 25/02/2018
- *   Special edition (header)
+ *	  Date: 01/03/2018
  \* *************************************** */
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
@@ -11218,6 +11217,9 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 .list-group-flush .list-group-item.active {
   color: #0063b0; }
 
+.list-group-flush .list-group-item.active [class^="gel-icon-"] {
+  color: #0063b0; }
+
 .list-group-flush .list-group-item.active::after {
   width: 15px;
   height: 15px;
@@ -11531,6 +11533,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
       transition: none; } }
 
 #gel-subpages .page-tabs {
+  margin-left: -1rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -11577,8 +11580,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   border-width: 2px;
   border-style: solid;
   border-color: #0063b0;
-  width: 100%;
-  left: 0; }
+  width: calc(100% - 1rem * 2); }
 
 #gel-header + #gel-subpages {
   margin-top: -1rem;
