@@ -18,6 +18,21 @@
     @include media-breakpoint-down(sm) {
       white-space: nowrap;
     }
+    [class^="gel-icon-"] {
+      color: $slate-500;
+      vertical-align: text-top;
+      margin-right: $spacer-2;
+    }
+
+    &:focus,
+    &:hover {
+      color: $azure;
+      background: transparent;
+
+      [class^="gel-icon-"] {
+        color: $link-color-alt-hover;
+      }
+    }
 
     &.active{
       color: $active;

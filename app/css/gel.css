@@ -8995,8 +8995,12 @@ a {
   line-height: 32px; }
 
 .breadcrumb > li + li:before {
-  content: "\e95f";
-  font-family: "gel-icon"; }
+  content: "\e939";
+  font-family: "gel-icon";
+  font-size: 1rem;
+  vertical-align: top;
+  color: #8299ae;
+  margin: 0 0.25rem; }
 
 .breadcrumb > li.dropdown:hover ul.dropdown-menu {
   display: block;
@@ -10007,12 +10011,12 @@ a {
 
 .btn-icon {
   background-color: transparent;
-  color: #2f3d49;
+  color: #8299ae;
   padding: 0.25rem;
   border-radius: 0; }
 
 .btn-icon:hover {
-  color: #8299ae; }
+  color: #0063b0; }
 
 .btn-ctrl {
   border-color: #bac6d2;
@@ -10611,7 +10615,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   color: #8299ae;
   margin-right: 0.5rem;
   vertical-align: text-bottom;
-  font-size: 1.25rem; }
+  font-size: 1.125rem; }
 
 .dropup .dropdown-menu {
   bottom: 25px;
@@ -11198,6 +11202,18 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
 @media (max-width: 767.98px) {
       .list-group-flush .list-group-item {
         white-space: nowrap; } }
+
+.list-group-flush .list-group-item [class^="gel-icon-"] {
+  color: #8299ae;
+  vertical-align: text-top;
+  margin-right: 0.5rem; }
+
+.list-group-flush .list-group-item:focus, .list-group-flush .list-group-item:hover {
+  color: #1aa5e6;
+  background: transparent; }
+
+.list-group-flush .list-group-item:focus [class^="gel-icon-"], .list-group-flush .list-group-item:hover [class^="gel-icon-"] {
+  color: #1aa5e6; }
 
 .list-group-flush .list-group-item.active {
   color: #0063b0; }
@@ -14681,7 +14697,7 @@ del a:hover {
  \* *************************************** */
 @font-face {
   font-family: 'gel-icon';
-  src: url('icons/gel-icon.ttf?q0w0wp') format('truetype'), url('icons/gel-icon.woff?q0w0wp') format('woff'), url('icons/gel-icon.svg?q0w0wp#gel-icon') format('svg');
+  src: url('icons/gel-icon.ttf?q0w0ws') format('truetype'), url('icons/gel-icon.woff?q0w0ws') format('woff'), url('icons/gel-icon.svg?q0w0ws#gel-icon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -14715,15 +14731,6 @@ del a:hover {
 .gel-icon-3x {
   font-size: 3rem; }
 
-.gel-icon-add-circle-o:before {
-  content: "\e918"; }
-
-.gel-icon-close-circle-o:before {
-  content: "\e922"; }
-
-.gel-icon-tick-circle-o:before {
-  content: "\e925"; }
-
 .gel-icon-add-folder-o:before {
   content: "\e901"; }
 
@@ -14748,23 +14755,47 @@ del a:hover {
 .gel-icon-camera-o:before {
   content: "\e908"; }
 
-.gel-icon-alert-o:before {
+.gel-icon-tick-circle-o:before {
+  content: "\e925"; }
+
+.gel-icon-circle-o:before {
+  content: "\e900"; }
+
+.gel-icon-dot-circle:before {
   content: "\e909"; }
 
-.gel-icon-clip-o:before {
-  content: "\e90a"; }
+.gel-icon-dot-circle-o:before {
+  content: "\e92e"; }
+
+.gel-icon-close-circle-o:before {
+  content: "\e922"; }
+
+.gel-icon-add-circle-o:before {
+  content: "\e918"; }
+
+.gel-icon-warning-o:before {
+  content: "\e98d"; }
+
+.gel-icon-info-o:before {
+  content: "\e917"; }
+
+.gel-icon-help-o:before {
+  content: "\e915"; }
 
 .gel-icon-clock-o:before {
   content: "\e90b"; }
+
+.gel-icon-cost-o:before {
+  content: "\e90e"; }
+
+.gel-icon-clip-o:before {
+  content: "\e90a"; }
 
 .gel-icon-cloud-o:before {
   content: "\e90c"; }
 
 .gel-icon-configure-o:before {
   content: "\e90d"; }
-
-.gel-icon-cost-o:before {
-  content: "\e90e"; }
 
 .gel-icon-download-o:before {
   content: "\e90f"; }
@@ -14783,12 +14814,6 @@ del a:hover {
 
 .gel-icon-feedback-o:before {
   content: "\e914"; }
-
-.gel-icon-help-o:before {
-  content: "\e915"; }
-
-.gel-icon-info-o:before {
-  content: "\e917"; }
 
 .gel-icon-key:before {
   content: "\e926"; }
@@ -14847,14 +14872,26 @@ del a:hover {
 .gel-icon-user-o:before {
   content: "\e92d"; }
 
-.gel-icon-menu:before {
-  content: "\e92e"; }
+.gel-icon-refresh:before {
+  content: "\e93b"; }
+
+.gel-icon-undo:before {
+  content: "\e935"; }
 
 .gel-icon-ellipsis:before {
   content: "\e931"; }
 
 .gel-icon-drag:before {
   content: "\e930"; }
+
+.gel-icon-add:before {
+  content: "\e92f"; }
+
+.gel-icon-tick:before {
+  content: "\e921"; }
+
+.gel-icon-close:before {
+  content: "\e942"; }
 
 .gel-icon-left-end:before {
   content: "\e933"; }
@@ -14877,12 +14914,6 @@ del a:hover {
 .gel-icon-search:before {
   content: "\e932"; }
 
-.gel-icon-refresh:before {
-  content: "\e93b"; }
-
-.gel-icon-undo:before {
-  content: "\e935"; }
-
 .gel-icon-logo:before {
   content: "\e93c"; }
 
@@ -14904,6 +14935,12 @@ del a:hover {
 .gel-icon-home:before {
   content: "\e943"; }
 
+.gel-icon-error:before {
+  content: "\e96e"; }
+
+.gel-icon-circle:before {
+  content: "\e99e"; }
+
 .gel-icon-tick-circle:before {
   content: "\e944"; }
 
@@ -14912,6 +14949,9 @@ del a:hover {
 
 .gel-icon-info:before {
   content: "\e946"; }
+
+.gel-icon-warning:before {
+  content: "\e9be"; }
 
 .gel-icon-help:before {
   content: "\e947"; }
@@ -15003,6 +15043,9 @@ del a:hover {
 .gel-icon-extension:before {
   content: "\e963"; }
 
+.gel-icon-succession:before {
+  content: "\e9bf"; }
+
 .gel-icon-integration:before {
   content: "\e964"; }
 
@@ -15036,9 +15079,6 @@ del a:hover {
 .gel-icon-eraser:before {
   content: "\e96d"; }
 
-.gel-icon-error:before {
-  content: "\e96e"; }
-
 .gel-icon-folder-add:before {
   content: "\e971"; }
 
@@ -15047,6 +15087,18 @@ del a:hover {
 
 .gel-icon-folder-open:before {
   content: "\e973"; }
+
+.gel-icon-bucket-empty:before {
+  content: "\e984"; }
+
+.gel-icon-bucket-2:before {
+  content: "\e9b3"; }
+
+.gel-icon-bucket-3:before {
+  content: "\e990"; }
+
+.gel-icon-bucket-1:before {
+  content: "\e9b1"; }
 
 .gel-icon-history:before {
   content: "\e974"; }
@@ -15117,9 +15169,6 @@ del a:hover {
 .gel-icon-recycle:before {
   content: "\e98c"; }
 
-.gel-icon-succession:before {
-  content: "\e98d"; }
-
 .gel-icon-support:before {
   content: "\e98e"; }
 
@@ -15164,9 +15213,6 @@ del a:hover {
 
 .gel-icon-car:before {
   content: "\e99d"; }
-
-.gel-icon-target:before {
-  content: "\e99e"; }
 
 .gel-icon-bell:before {
   content: "\e99f"; }
@@ -15240,14 +15286,11 @@ del a:hover {
 .gel-icon-sketch:before {
   content: "\e9b6"; }
 
-.gel-icon-slack:before {
-  content: "\e9b7"; }
-
 .gel-icon-github:before {
   content: "\e9b8"; }
 
-.gel-icon-add:before {
-  content: "\e900"; }
+.gel-icon-slack:before {
+  content: "\e9b7"; }
 
 .gel-icon-sad:before {
   content: "\e9b9"; }
@@ -15264,20 +15307,5 @@ del a:hover {
 .gel-icon-happy:before {
   content: "\e9bd"; }
 
-.gel-icon-tick:before {
-  content: "\e921"; }
-
-.gel-icon-close:before {
-  content: "\e942"; }
-
-.gel-icon-bucket-empty:before {
-  content: "\e984"; }
-
-.gel-icon-bucket-3:before {
-  content: "\e990"; }
-
-.gel-icon-bucket-1:before {
-  content: "\e9b1"; }
-
-.gel-icon-bucket-2:before {
-  content: "\e9b3"; }
+.gel-icon-menu:before {
+  content: "\e9c0"; }

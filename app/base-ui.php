@@ -67,15 +67,17 @@
     </div>
   </header>
   <!-- ************  page sub pages ************ -->
-  <?php if ($hasSubPage) { startblock('page-tabs') ?>
-  <nav id="gel-subpages" role="navigation">
-     <div class="container">
-        <nav class="page-tabs nav" role="tablist">
-            <?php pageTabs($pageTitle);  ?>
-        </nav>
-    </div>
-  </nav>
-  <?php endblock(); }?>
+  <?php startblock('page-tabs');?>
+    <?php if ($hasSubPage) { ?>
+      <nav id="gel-subpages" role="navigation">
+         <div class="container">
+            <nav class="page-tabs nav" role="tablist">
+                <?php pageTabs($pageTitle);  ?>
+            </nav>
+        </div>
+      </nav>
+    <?php }?>
+  <?php endblock();?>
 <!-- page body -->
 	<main id="gel-main">
 		<section class="container">

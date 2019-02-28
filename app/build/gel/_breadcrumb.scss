@@ -8,8 +8,12 @@
     line-height: 32px;
 
     &+ li:before {
-      content: "\e95f";
+      content: $gel-icon-angle-right;
       font-family: $gel-icon;
+      font-size: $font-size-lg;
+      vertical-align: top;
+      color: $slate-500;
+      margin: 0 $spacer-1;
     }
 
     &.dropdown {
