@@ -30,7 +30,7 @@
   <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
     <div class="container">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-2x"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-lg"></i></a></li>
         <li class="nav-item"><a title="PageUp Global Experience Language" class="logo" href="../"> <img alt="PageUp Global Experience Language" src="../site-images/gel-logo.png" width="60"/> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
       </ul>
       <ul class="navbar-nav">
@@ -48,7 +48,7 @@
   </nav>
   <!-- ************ menu ************  -->
   <aside id="gel-menu" role='menu'>
-    <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close-o gel-icon-2x"></i></a>
+    <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></a>
 
     <a href="../" class="logo"> <img alt="logo" src="../site-images/pageup-gel-logo.png" width="120"/></a>
 
@@ -155,13 +155,13 @@
     </div>
   </header>
   <!-- ************  page sub pages ************ -->
-    <nav id="gel-subpages" role="navigation">
-     <div class="container">
-        <nav class="page-tabs nav" role="tablist">
-            <a class="nav-link active" id="avatars-tab" data-toggle="tab" href="#avatars" role="tab" aria-controls="avatars" aria-selected="1">Avatars</a><a class="nav-link " id="badges-tab" data-toggle="tab" href="#badges" role="tab" aria-controls="badges" aria-selected="">Badges</a><a class="nav-link " id="buttons-tab" data-toggle="tab" href="#buttons" role="tab" aria-controls="buttons" aria-selected="">Buttons</a><a class="nav-link " id="checkboxes-tab" data-toggle="tab" href="#checkboxes" role="tab" aria-controls="checkboxes" aria-selected="">Checkboxes</a><a class="nav-link " id="inputs-tab" data-toggle="tab" href="#inputs" role="tab" aria-controls="inputs" aria-selected="">Inputs</a><a class="nav-link " id="radios-tab" data-toggle="tab" href="#radios" role="tab" aria-controls="radios" aria-selected="">Radios</a><a class="nav-link " id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="">Tags</a><a class="nav-link " id="toggles-tab" data-toggle="tab" href="#toggles" role="tab" aria-controls="toggles" aria-selected="">Toggles</a><a class="nav-link " id="tooltips-tab" data-toggle="tab" href="#tooltips" role="tab" aria-controls="tooltips" aria-selected="">Tooltips</a>        </nav>
-    </div>
-  </nav>
-  <!-- page body -->
+            <nav id="gel-subpages" role="navigation">
+         <div class="container">
+            <nav class="page-tabs nav" role="tablist">
+                <a class="nav-link active" id="avatars-tab" data-toggle="tab" href="#avatars" role="tab" aria-controls="avatars" aria-selected="1">Avatars</a><a class="nav-link " id="badges-tab" data-toggle="tab" href="#badges" role="tab" aria-controls="badges" aria-selected="">Badges</a><a class="nav-link " id="buttons-tab" data-toggle="tab" href="#buttons" role="tab" aria-controls="buttons" aria-selected="">Buttons</a><a class="nav-link " id="checkboxes-tab" data-toggle="tab" href="#checkboxes" role="tab" aria-controls="checkboxes" aria-selected="">Checkboxes</a><a class="nav-link " id="inputs-tab" data-toggle="tab" href="#inputs" role="tab" aria-controls="inputs" aria-selected="">Inputs</a><a class="nav-link " id="radios-tab" data-toggle="tab" href="#radios" role="tab" aria-controls="radios" aria-selected="">Radios</a><a class="nav-link " id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="">Tags</a><a class="nav-link " id="toggles-tab" data-toggle="tab" href="#toggles" role="tab" aria-controls="toggles" aria-selected="">Toggles</a><a class="nav-link " id="tooltips-tab" data-toggle="tab" href="#tooltips" role="tab" aria-controls="tooltips" aria-selected="">Tooltips</a>            </nav>
+        </div>
+      </nav>
+      <!-- page body -->
 	<main id="gel-main">
 		<section class="container">
       <div class='tab-content'><div class="tab-pane active" id="avatars" role="tabpanel" aria-labelledby="page-tab-avatars"><div class="row"><div class="col-md-6 col-lg-7"><blockquote class="blockquote">
@@ -269,6 +269,9 @@
       <i aria-hidden="true" class="gel-icon-settings"></i>
       Settings
     </button>
+    <button class="float-right btn btn-sm btn-ctrl">
+      <i class="gel-icon-sm gel-icon-add"></i>
+      Add</button>
     <button type="button" class="btn btn-icon">
       <i class="gel-icon-print" data-toggle="tooltip" data-placement="top" data-original-title="Print"></i>
     </button>
@@ -805,16 +808,16 @@
 </blockquote>
 <div class="row">
   <div class="col-sm-3">
-    <i class="gel-icon-2x gray gel-icon-job" data-toggle="tooltip" data-placement="left" title="" data-original-title="Job"></i>
+    <i class="gel-icon-2x text-muted gel-icon-job" data-toggle="tooltip" data-placement="left" title="" data-original-title="Job"></i>
   </div>
   <div class="col-sm-3">
-    <i class="gel-icon-2x gray gel-icon-employee" data-toggle="tooltip" data-placement="top" title="" data-original-title="Employee"></i>
+    <i class="gel-icon-2x text-muted gel-icon-employee" data-toggle="tooltip" data-placement="top" title="" data-original-title="Employee"></i>
   </div>
   <div class="col-sm-3">
-    <i class="gel-icon-2x gray gel-icon-user" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Applicant"></i>
+    <i class="gel-icon-2x text-muted gel-icon-user" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Applicant"></i>
   </div>
   <div class="col-sm-3">
-    <i class="gel-icon-2x gray gel-icon-support" data-toggle="tooltip" data-placement="right" title="" data-original-title="Live support"></i>
+    <i class="gel-icon-2x text-muted gel-icon-support" data-toggle="tooltip" data-placement="right" title="" data-original-title="Live support"></i>
   </div>
 </div></div><div class="col-md-6 col-lg-5"><aside><p>
   Tooltips help users understand unknown or unfamiliar objects that aren’t described directly in the user interface.

@@ -105,18 +105,27 @@ function moveFilesToDocs($src){
 
 
 //copy files to docs
-copy('js/gel.js', '../docs/js/gel.js');
-echo "copied gel.js \n";
-copy('css/gel.css', '../docs/css/gel.css');
-echo "copied gel..css \n";
-copy('css/gel-site.css', '../docs/css/gel-site.css');
-echo "copied gel-site.css \n";
-copy('css/icons/gel-icon.svg', '../docs/css/icons/gel-icon.svg');
-echo "copied gel-icon.svg \n";
-copy('css/icons/gel-icon.ttf', '../docs/css/icons/gel-icon.ttf');
-echo "copied gel-icon.ttf \n";
-copy('css/icons/gel-icon.woff', '../docs/css/icons/gel-icon.woff');
-echo "copied gel-icon.woff \n";
+// copy('js/gel.js', '../docs/js/gel.js');
+// echo "copied gel.js \n";
+// copy('css/gel.css', '../docs/css/gel.css');
+// echo "copied gel..css \n";
+// copy('css/gel-site.css', '../docs/css/gel-site.css');
+// echo "copied gel-site.css \n";
+// copy('css/icons/gel-icon.svg', '../docs/css/icons/gel-icon.svg');
+// echo "copied gel-icon.svg \n";
+// copy('css/icons/gel-icon.ttf', '../docs/css/icons/gel-icon.ttf');
+// echo "copied gel-icon.ttf \n";
+// copy('css/icons/gel-icon.woff', '../docs/css/icons/gel-icon.woff');
+// echo "copied gel-icon.woff \n";
+
+// copy files to dist
+$cssSrc = "css";
+$jsSrc = "js";
+$imagesSrc = "images";
+$dest = '../docs';
+shell_exec("cp -r $cssSrc $dest");
+shell_exec("cp -r $jsSrc $dest");
+shell_exec("cp -r $imagesSrc $dest");
 
 echo "****************** Deploy finished ******************  \n";
 
