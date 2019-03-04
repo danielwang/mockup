@@ -1,5 +1,5 @@
 <!-- ******************
-*** T5 template ***
+*** T1 product template ***
 ******************  -->
 <!DOCTYPE html>
 <html lang="en" class="gel">
@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="noindex">
-      <title>Typography - PageUp GEL</title>
+      <title>Typography - MockUp</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
@@ -26,34 +26,22 @@
   </head>
   <body>
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
+          <script>
+      function popupWindow(url) {
+         window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=150,left=150,width=1280,height=960");
+      }
+      </script>
     
-  <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
-    <div class="container">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-lg"></i></a></li>
-        <li class="nav-item"><a title="PageUp Global Experience Language" class="logo" href="../"> <img alt="PageUp Global Experience Language" src="../site-images/gel-logo.png" width="60"/> <sub class="badge badge-info"><small>WIP</small></sub></a></li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Slack" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
-          <i aria-hidden="true" class="gel-icon-lg gel-icon-slack" title="Slack"></i>
-        </a></li>
-        <!-- <li class="nav-item"><a data-toggle="tooltip" data-placement="bottom" data-original-title="Bootstrap 4" class="nav-link" target="_blank" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/" title="Bootstrap 4">
-        <i class="gel-icon-lg gel-icon-bootstrap" aria-hidden="true"></i>
-
-          </a></li> -->
-        <li class="nav-item mr-0"><a class="nav-link" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" title="Github">
-            <i class="gel-icon-lg gel-icon-github" aria-hidden="true"></i></a>
-      </ul>
-    </div>
-  </nav>
-  <!-- ************ menu ************  -->
-  <aside id="gel-menu" role='menu'>
-    <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></a>
-
-    <a href="../" class="logo"> <img alt="logo" src="../site-images/pageup-gel-logo.png" width="120"/></a>
-
-    <menu class="scroll">
-      <ul>
+   <!-- ************ menu ************  -->
+  <aside id="gel-menu" class="sg bg-navy" role='menu'>
+     <a href="../" class="logo d-block"> <img alt="brand logo" src="../site-images/pageup-gel-logo.png" width="136"/></a>
+     <!-- <form class="search-group form-inline" role="search">
+      <label class="sr-only" for="quick-search" aria-label="Search">
+         Search</label>
+      <input id="quick-search" class="form-control" placeholder="search" type="Search">
+    </form> -->
+     <menu class="scroll">
+       <ul>
   <li class="submenu">
     <h4>Introduction</h4>
     <ul>
@@ -123,42 +111,27 @@
       </li>
     </ul>
   </li>
-</ul>    </menu>
-  </aside>
-<!-- page header -->
-  <header id="gel-header" class="py-lg-4" role="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 order-2 order-lg-1">
-          <h1 class="page-title">Typography</h1>
-          <blockquote class="tagline">Text is the primary way that users digest content and accomplish work, so it’s important to use good typographic principles to establish a clear visual hierarchy and to maximize legibility
+</ul>     </menu>
+   </aside>
+
+  <!-- ************  page body ************ -->
+	<main class="sg d-flex flex-column flex-fill" role="main">
+    <!-- ************  page header ************ -->
+    <header id="gel-header" class="py-3 py-xl-5" role="banner">
+        <div class="container py-3 py-xl-5">
+          <div class="row">
+            <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
+              <h1 class="display-3 text-primary">Typography</h1>
+              <blockquote class="tagline text-muted">Text is the primary way that users digest content and accomplish work, so it’s important to use good typographic principles to establish a clear visual hierarchy and to maximize legibility
 </blockquote>
-        </div>
-                  <div class="page-actions col-lg-4 mt-lg-2">
-          <!-- <span class="item">
-            <a class="text-center" target="_blank" href="#" title="Download Sketch files">
-              <i class="gel-icon-lg gel-icon-sketch" aria-hidden="true"></i> <span>Sketch</span>
-            </a>
-          </span> -->
-          <span class="item">
-              <a class="text-center" target="_blank" href="https://pageup.slack.com/messages/C2X8J0V70/team/" title="Slack">
-                <i aria-hidden="true" class="gel-icon-lg gel-icon-feedback" title="Feedback"></i> <span>Feedback</span>
-              </a>
-          </span>
-          <span class="item">
-              <a class="text-center" onclick="javascript: window.print();" href="#" title="Print">
-                <i aria-hidden="true" class="gel-icon-lg gel-icon-print" title="Print"></i> <span>Print</span>
-              </a>
-          </span>
+            </div>
           </div>
-              </div>
-    </div>
-  </header>
-  <!-- ************  page sub pages ************ -->
-        <!-- page body -->
-	<main id="gel-main">
-		<section class="container">
-        <div class="row">
+        </div>
+    </header>
+    		<section class="container flex-grow-1 py-5">
+      <div class="row">
+        <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
+  			  <div class="row">
   <div class="col-md-6">
     <h5>
       <code>Proxima Nova</code>
@@ -231,18 +204,27 @@
       <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
     </dl>
   </div>
-</div>		</section>
-	</main>
-  <footer id="gel-footer" role="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">Design by DUX team 2019</div>
-        <div class="col-6 text-right">
-          <a href="#">PageUp</a>
+</div>      </div>
+		</section>
+    <footer id="gel-footer" role="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a class="text-muted" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Slack" href="https://pageup.slack.com/messages/C2X8J0V70/team/">
+              <i aria-hidden="true" class="gel-icon-slack" title="Slack"></i>
+            </a>
+            <a class="text-muted" data-toggle="tooltip" data-placement="top" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" data-original-title="Github">
+                <i class="gel-icon-github" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-6 text-right">
+            Design by DUX team 2019
+            <a target="_blank" href="https://www.pageuppeople.com/">PageUp</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+	</main>
+  <!-- ************  page footer ************ -->
 <!-- BETA feedback -->
 <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">

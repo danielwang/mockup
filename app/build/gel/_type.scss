@@ -45,28 +45,28 @@ sub,sup{
 }
 
 .text-12, .text-sm{
-  font-size: 0.75rem; //12px
-  letter-spacing: 0.0325rem;
+  font-size: 0.75rem !important; //12px
+  letter-spacing: 0.0325rem !important;
 }
 
 .text-14{
-  font-size: 0.875rem; //14px
+  font-size: 0.875rem !important; //14px
 }
 
 .text-16, .text-lg{
-  font-size: 1rem; //16px
+  font-size: 1rem !important; //16px
 }
 
 .text-18{
-  font-size: 1.125rem; //20px
+  font-size: 1.125rem !important; //20px
 }
 
 .text-20{
-  font-size: 1.25rem;  //24px
+  font-size: 1.25rem !important;  //24px
 }
 
 .text-24{
-  font-size: 1.5rem // 24px
+  font-size: 1.5rem !important; // 24px
 }
 
 .text-line-through{

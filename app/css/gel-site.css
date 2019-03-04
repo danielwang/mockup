@@ -2,6 +2,21 @@
  *  The styling for GEL site
 \* *************************************** */
 
+#gel-menu.sg {
+  width: 250px;
+  transform: translateX(0);
+}
+
+main.sg{
+  padding-left: 250px;
+}
+
+.sg menu{
+  background: linear-gradient(#002F53 30%, #002F53),
+              linear-gradient(#002F53, #002F53 70%) 0 100%,
+              radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+              radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100% !important;
+}
 .sg-hr{
   margin: 1.5rem 0;
   border-color: transparent;

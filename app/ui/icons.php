@@ -1,4 +1,4 @@
-<?php $pageTitle = "Iconography"; $hasSubPage = false; include '../base-ui.php';?>
+<?php $pageTitle = "Iconography"; $hasSubPage = true; include '../base-t3.php';?>
 
 <?php
 
@@ -24,21 +24,15 @@ $illustrations = imageList('illustrations');
 <?php endblock() ?>
 
 <?php startblock('page-tabs') ?>
-<nav id="gel-subpages" role="navigation">
-   <div class="container">
-      <nav class="page-tabs nav" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="icons-tab" data-toggle="tab" href="#icons" role="tab" aria-controls="icons" aria-selected="true">Icons <span class="badge badge-info"><?php echo count($icons); ?></span></a>
+          <a class="nav-link active" id="icons-tab" data-toggle="tab" href="#icons" role="tab" aria-controls="icons" aria-selected="true">Icons <span class="badge badge-info text-sm"><?php echo count($icons); ?></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="illustrations-tab" data-toggle="tab" href="#illustrations" role="tab" aria-controls="change-log" aria-selected="false">Illustrations <span class="badge badge-info"><?php echo count($illustrations); ?></span></a>
+          <a class="nav-link" id="illustrations-tab" data-toggle="tab" href="#illustrations" role="tab" aria-controls="change-log" aria-selected="false">Illustrations <span class="badge badge-info  text-sm"><?php echo count($illustrations); ?></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="usage-tab" data-toggle="tab" href="#usage" role="tab" aria-controls="usage" aria-selected="false">How to use</a>
         </li>
-      </nav>
-  </div>
-</nav>
   <!-- Nav tabs -->
 <?php endblock() ?>
 
@@ -46,10 +40,10 @@ $illustrations = imageList('illustrations');
 <!-- Tab panes -->
 <div class="tab-content">
 <!-- icon library -->
-  <div class="tab-pane bg-white py-3 rounded active" id="icons" role="tabpanel" aria-labelledby="icons-tab">
+  <div class="tab-pane active" id="icons" role="tabpanel" aria-labelledby="icons-tab">
     <div class="row">
       <?php for($i = 0; $i < ceil(count($icons)) ; $i++){ ?>
-        <div class="col-6 col-sm-4 col-lg-3 col-xl-2 text-center mb-4">
+        <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 text-center mb-4">
             <div class="p-1 m-1 text-center">
               <h6><?php echo $icons[$i];?></h6>
               <p><a class="text-muted" href="<?php echo ($resURL) ?>site-images/SVG/<?php echo $icons[$i];?>.svg" download><i data-toggle="tooltip" data-placement="top" title="Click to download SVG" class="gel-icon-2x gel-icon-<?php echo $icons[$i];?>"></i></a></p>

@@ -4,7 +4,7 @@
 <div class="error-page">
   <div class="row">
     <div class="col-md-7">
-      <h1 class="display-3">Uh oh...
+      <h1 class="display-1 text-muted">404
       </h1>
       <p class="lead">We've been unable to fetch the page you're after - it doesn't exist.</p>
       <p>
@@ -14,7 +14,7 @@
     <div class="col-md-5">
       <div class="pup">
         <span class="error-code">404!</span>
-        <img class="img-responsive error-image" src="<?php echo ($resURL) ?>site-images/pup.png" title="error page">
+        <img class="img-fluid error-image" src="<?php echo ($resURL) ?>site-images/pup.png" title="error page">
       </div>
     </div>
   </div>

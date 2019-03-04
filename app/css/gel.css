@@ -12693,23 +12693,23 @@ sub, sup {
   font-family: 'Proxima Nova Light'; }
 
 .text-12, .text-sm {
-  font-size: 0.75rem;
-  letter-spacing: 0.0325rem; }
+  font-size: 0.75rem !important;
+  letter-spacing: 0.0325rem !important; }
 
 .text-14 {
-  font-size: 0.875rem; }
+  font-size: 0.875rem !important; }
 
 .text-16, .text-lg {
-  font-size: 1rem; }
+  font-size: 1rem !important; }
 
 .text-18 {
-  font-size: 1.125rem; }
+  font-size: 1.125rem !important; }
 
 .text-20 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem !important; }
 
 .text-24 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem !important; }
 
 .text-line-through {
   text-decoration: line-through; }
