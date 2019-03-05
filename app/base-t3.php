@@ -23,12 +23,12 @@
    </aside>
 
   <!-- ************  page body ************ -->
-	<main class="sg d-flex flex-column flex-fill" role="main">
+	<main class="sg d-flex flex-column flex-fill" role="main layout">
     <!-- ************  page header ************ -->
     <header id="gel-header" class="py-3 py-xl-5" role="banner">
         <div class="container py-3 py-xl-5">
           <div class="row">
-            <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
+            <div class="offset-xl-1 col-xl-11 offset-xxl-2 col-xxl-8">
               <h1 class="display-3 text-primary"><?php echo $pageTitle  ?></h1>
               <blockquote class="tagline text-muted"><?php emptyblock('page-tagline');?></blockquote>
             </div>
@@ -39,7 +39,7 @@
       <nav id="gel-subpages" role="navigation">
          <div class="container">
            <div class="row">
-             <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
+             <div class="offset-xl-1 col-xl-11 offset-xxl-2 col-xxl-8">
                 <nav class="page-tabs nav" role="tablist">
                   <?php startblock('page-tabs') ?>
                   <?php endblock() ?>
@@ -49,11 +49,13 @@
          </div>
        </nav>
     <?php } ?>
-		<section class="container flex-grow-1 py-5">
-      <div class="row">
+		<section class="container flex-grow-1 py-5" role="main content">
+      <div  class="row">
         <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
-  			<?php startblock('page-body')?>
-  			<?php endblock()?>
+          <!-- ***************  page content starts  ******************-->
+    			<?php startblock('page-body')?>
+    			<?php endblock()?>
+          <!-- *************** page content ends *************** -->
       </div>
 		</section>
     <footer id="gel-footer" role="footer">

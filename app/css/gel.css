@@ -3750,7 +3750,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #d6dde4;
+  background-color: #f1f4f6;
   border-radius: 0.5rem; }
   @media (min-width: 576px) {
   .jumbotron {
@@ -12668,7 +12668,7 @@ dt {
   font-size: 1rem;
   font-weight: 400;
   font-family: 'Proxima Nova Semibold';
-  color: #2f3d49; }
+  color: #536b81; }
 
 dd {
   margin-bottom: 1rem;
