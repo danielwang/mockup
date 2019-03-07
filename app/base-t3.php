@@ -17,8 +17,8 @@
          Search</label>
       <input id="quick-search" class="form-control" placeholder="search" type="Search">
     </form> -->
-     <menu class="scroll">
-       <?php include ("_partials/menu/ui.html");?>
+     <menu class="scroll p-0">
+       <?php include ("_partials/menu/ui.php");?>
      </menu>
    </aside>
 
