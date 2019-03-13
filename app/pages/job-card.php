@@ -9,7 +9,7 @@
   <span class="item">
     <div class="btn-group show" data-toggle="tooltip" data-placement="top" data-original-title="More actions">
       <button type="button" class="btn btn-ctrl dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i aria-hidden="true" class="gel-icon-ellipsis-v"></i>
+        <i aria-hidden="true" class="gel-icon-ellipsis"></i>
       </button>
       <div class="dropdown-menu dropdown-menu-right" aria-expanded="true">
         <a class="dropdown-item" href="#">Action</a>

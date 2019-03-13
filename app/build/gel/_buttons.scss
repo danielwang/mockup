@@ -139,7 +139,7 @@
 .btn-sm {
   // mobile 34px height
   height: 34px;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, 1.25rem, $btn-border-radius);
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, 1.5rem, $btn-border-radius);
 
   @include media-breakpoint-between(lg,xxl) {
     //  desktop 28px height

@@ -95,30 +95,30 @@ document.addEventListener('keyup',closeMenu);
 /*****************************************
     Hide topbar on Scroll
 *****************************************/
-const topbar = document.getElementById("gel-navbar");
-const subpagesNav = document.getElementById("gel-subpages");
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  //topbar
-  if (typeof(topbar) != 'undefined' && topbar != null){
-    if (prevScrollpos > currentScrollPos) {
-      topbar.style.top = "0";
-    } else {
-      topbar.style.top = "-3.75rem";
-    }
-  }
-  // subpages nav
-  if (typeof(subpagesNav) != 'undefined' && subpagesNav != null){
-    if (prevScrollpos > currentScrollPos) {
-      subpagesNav.style.top = "3.75rem";
-    } else {
-      subpagesNav.style.top = "-3.75rem";
-    }
-  }
-
-  prevScrollpos = currentScrollPos;
-};
+// const topbar = document.getElementById("gel-navbar");
+// const subpagesNav = document.getElementById("gel-subpages");
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   //topbar
+//   if (typeof(topbar) != 'undefined' && topbar != null){
+//     if (prevScrollpos > currentScrollPos) {
+//       topbar.style.top = "0";
+//     } else {
+//       topbar.style.top = "-3.75rem";
+//     }
+//   }
+//   // subpages nav
+//   if (typeof(subpagesNav) != 'undefined' && subpagesNav != null){
+//     if (prevScrollpos > currentScrollPos) {
+//       subpagesNav.style.top = "3.75rem";
+//     } else {
+//       subpagesNav.style.top = "-3.75rem";
+//     }
+//   }
+//
+//   prevScrollpos = currentScrollPos;
+// };
 
 /*****************************************
   Scroller

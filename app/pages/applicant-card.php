@@ -199,7 +199,7 @@
   <div class="tab-pane d-print-block" id="history" role="tabpanel" aria-labelledby="history-tab">
     <h3 class="d-none d-print-block">History</h3>
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-md-4 col-xl-3">
         <div class="form-group">
           <label for="group1">Jobs</label>
           <select class="form-control" id="group1">
@@ -208,7 +208,7 @@
           </select>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-md-4 col-xl-3">
         <div class="form-group">
           <label for="group1">Item</label>
           <select class="form-control" id="group1">
@@ -224,35 +224,38 @@
     <ul class="timeline timeline-split mt-3 mb-3">
       <li class="timeline-item">
         <div class="timeline-info">
-          <span>Saturday, 2 Dec 2017, 5:22am</span>
+          <p class="text-label mb-2">Saturday, 2 Dec 2017, 5:22am</p>
+          <span>Daniel Recruiter</span>
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h4 class="timeline-title">Line manager review 1</h4>
-          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
-            mollis pretium. Pellentesque ut neque.</p>
+          <h5 class="timeline-title">Communication</h5>
+          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm"></i> Casual Customer Sales & Service Consultant Chadstone</p>
+          <p>E-mail: Invitation to online testing, to: John Smith <john.smith@hotmail.com>, From: hrteam@company.com </p>
+          <p><a class="btn btn-outline-primary btn-sm" href="#">View</a></p>
         </div>
       </li>
       <li class="timeline-item">
         <div class="timeline-info">
-          <p>Wednesday, 22 Nov 2017 9:33am</p>
-          <span class="muted">Daniel Recruiter</span>
+          <p class="text-label mb-2">Wednesday, 22 Nov 2017 9:33am</p>
+          <span>Scott Hiringmanager</span>
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h4 class="timeline-title">Status changed to 'HR shortlist'</h4>
-          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
-            mollis pretium. Pellentesque ut neque.
+          <h5 class="timeline-title">Activity</h5>
+          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm"></i> Casual Customer Sales & Service Consultant Chadstone</p>
+          <p>Status changed to 'HR shortlist'
           </p>
         </div>
       </li>
       <li class="timeline-item">
         <div class="timeline-info">
-          <span>Monday, 20 Nov 2017, 9:53am</span>
+          <p class="text-label mb-2">Monday, 20 Nov 2017, 9:53am</p>
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h4 class="timeline-title">Application submitted</h4>
+          <h5 class="timeline-title">Application submitted</h5>
+          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm"></i> Casual Customer Sales & Service Consultant Chadstone</p>
           <p>Scoring breakdown: <br>
             0/20 points: 'No' for 'Are you a National of the country where this position is based?' <br>
             20/20 points: 'Yes' for 'Do you have a background or experience working with/in Emergency country context?' <br>
@@ -266,11 +269,14 @@
       </li>
       <li class="timeline-item">
         <div class="timeline-info">
-          <span>Monday, 20 Nov 2017, 9:50am</span>
+          <p class="text-label mb-2">Monday, 20 Nov 2017, 9:53am</p>
+          <span>System</span>
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h4 class="timeline-title">Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</h4>
+          <h5 class="timeline-title">Document</h5>
+          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm"></i> Casual Customer Sales & Service Consultant Chadstone</p>
+          <p>Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</p>
           <p><a class="btn btn-outline-primary btn-sm" href="#">View</a>  <a class="btn btn-outline-primary btn-sm"href="#">PDF</a>  <a class="btn btn-outline-primary btn-sm" href="#">Reprocess</a>
           </p>
         </div>

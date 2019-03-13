@@ -40,8 +40,15 @@ sub,sup{
   font-size: 0.75rem;
   letter-spacing: 0.0325rem;
 }
+
 .lead{
   @include font-light();
+}
+
+.text-label{
+  @include font-semibold();
+  color: $slate-600;
+  font-size: $font-size-sm;
 }
 
 .text-12, .text-sm{
