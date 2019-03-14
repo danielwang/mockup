@@ -10,7 +10,7 @@ updated as soon as commit the code change into github
   1. uncomment .gel class in gel.scss
   2. generate the gel.css file
   3. save gel.css as gel-scoped.css
-  4. remove the empty .gel class inside the stylesheet, .gel html => html.gel
+  4. remove the empty .gel class inside the stylesheet, .gel html => html
   5. rename selector .gel body {} => .gel {}
   6. comment out .gel in scss and re generate new gel.css
 ``7. run 'php release.php v3.x.x' in terminal
