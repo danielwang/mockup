@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - version 3.10.5
+ *   PageUp GEL - version 3.10.4
  *   Author: Daniel Wang
- *	  Date: 14/03/2018
+ *	  Date: 01/03/2018
  \* *************************************** */
 
   .gel :root {
@@ -31,7 +31,6 @@
     --cyan: #00bcd4;
     --white: #fff;
     --gray: #6c757d;
-    --slate: #8299ae;
     --navy: #002f54;
     --primary: #0063b0;
     --secondary: #1d262d;
@@ -58,7 +57,7 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; }
   .gel *, .gel *::before, .gel *::after {
     box-sizing: border-box; }
-  html {
+  html .gel  {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -1450,7 +1449,7 @@
     vertical-align: middle;
     user-select: none;
     border: 1px solid transparent;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.75rem;
     font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 1.5rem;
@@ -2316,8 +2315,8 @@
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
   .gel .dropdown-toggle-split {
-    padding-right: 0.75rem;
-    padding-left: 0.75rem; }
+    padding-right: 0.5625rem;
+    padding-left: 0.5625rem; }
     .gel .dropdown-toggle-split::after, .dropup .gel .dropdown-toggle-split::after, .dropright .gel .dropdown-toggle-split::after {
       margin-left: 0; }
     .dropleft .gel .dropdown-toggle-split::before {
@@ -3319,7 +3318,7 @@
   .gel .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    background-color: #f1f4f6;
+    background-color: #d6dde4;
     border-radius: 0.5rem; }
     @media (min-width: 576px) {
   .gel .jumbotron {
@@ -7408,12 +7407,6 @@
       height: 10px;
       border-radius: 50%;
       display: inline-block; }
-    .gel .dot-slate {
-      background-color: #8299ae;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: inline-block; }
     .gel .dot-navy {
       background-color: #002f54;
       width: 10px;
@@ -8208,7 +8201,7 @@
     @media (min-width: 992px) {
   .gel .btn {
     height: 34px;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.75rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
     border-radius: 1.5rem; }
@@ -8217,9 +8210,9 @@
       line-height: 1.25; } }
   .gel .btn-sm, .gel .btn-group-sm > .btn {
     height: 34px;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.75rem;
     font-size: 0.875rem;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
     border-radius: 1.5rem; }
     @media (min-width: 992px) {
   .gel .btn-sm, .gel .btn-group-sm > .btn {
@@ -10255,6 +10248,7 @@
     .gel .timeline-item:last-child {
       padding-bottom: 0; }
   .gel .timeline-info {
+    font-size: 12px;
     margin: 0 0 0.5em 0;
     white-space: nowrap; }
   .gel .timeline-marker {
@@ -10281,13 +10275,13 @@
       background: #bac6d2;
       display: block;
       position: absolute;
-      top: 20px;
+      top: 24px;
       bottom: 0;
       left: 6px; }
     .timeline-item:last-child .gel .timeline-marker:after {
       content: none; }
   .gel .timeline-content {
-    padding-bottom: 1.5rem; }
+    padding-bottom: 40px; }
     .gel .timeline-content p:last-child {
       margin-bottom: 0; }
   .gel .period {
@@ -10333,8 +10327,7 @@
       padding-left: 30px; }
 
     .gel .timeline-split .timeline-info, .gel .timeline-centered .timeline-info {
-      padding-right: 30px;
-      text-align: right; }
+      padding-right: 30px; }
 
     .gel .timeline-split .period .timeline-title, .gel .timeline-centered .period .timeline-title {
       position: relative;
@@ -10417,7 +10410,7 @@
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Proxima Nova Semibold';
-    color: #536b81; }
+    color: #2f3d49; }
   .gel dd {
     margin-bottom: 1rem;
     overflow: hidden;
@@ -10435,24 +10428,19 @@
   .gel .lead {
     font-weight: 400;
     font-family: 'Proxima Nova Light'; }
-  .gel .text-label {
-    font-weight: 400;
-    font-family: 'Proxima Nova Semibold';
-    color: #536b81;
-    font-size: 0.75rem; }
   .gel .text-12, .gel .text-sm {
-    font-size: 0.75rem !important;
-    letter-spacing: 0.0325rem !important; }
+    font-size: 0.75rem;
+    letter-spacing: 0.0325rem; }
   .gel .text-14 {
-    font-size: 0.875rem !important; }
+    font-size: 0.875rem; }
   .gel .text-16, .gel .text-lg {
-    font-size: 1rem !important; }
+    font-size: 1rem; }
   .gel .text-18 {
-    font-size: 1.125rem !important; }
+    font-size: 1.125rem; }
   .gel .text-20 {
-    font-size: 1.25rem !important; }
+    font-size: 1.25rem; }
   .gel .text-24 {
-    font-size: 1.5rem !important; }
+    font-size: 1.5rem; }
   .gel .text-line-through {
     text-decoration: line-through; }
     .gel .text-line-through:hover {
@@ -10846,8 +10834,6 @@
       background-color: #fff !important; }
     .gel .bg-gray {
       background-color: #6c757d !important; }
-    .gel .bg-slate {
-      background-color: #8299ae !important; }
     .gel .bg-navy {
       background-color: #002f54 !important; }
     .gel .text-blue {
@@ -10902,8 +10888,6 @@
       color: #fff !important; }
     .gel .text-gray {
       color: #6c757d !important; }
-    .gel .text-slate {
-      color: #8299ae !important; }
     .gel .text-navy {
       color: #002f54 !important; }
     .gel .vw-10 {
