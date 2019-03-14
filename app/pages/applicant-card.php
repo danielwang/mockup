@@ -160,10 +160,10 @@
                     <h5 class="d-inline">International Consultant on Early Childhood Development <span class="badge badge-info">Undisclose</span></h5>
                   </div>
                   <div class="row mt-3">
-                      <span class="col-6 col-xxl-3"><dt class="text-sm">Job ID</dt><dd>942130</dd></span>
-                      <span class="col-6 col-xxl-3"><dt class="text-sm">Submit date:</dt><dd>17 Nov 2017</dd></span>
-                      <span class="col-6 col-xxl-3"><dt class="text-sm">Recruiter:</dt><dd><a href="#" class="link-alt">Daniel Wang</a></dd></span>
-                      <span class="col-6 col-xxl-3"><dt class="text-sm">Applied via:</dt><dd><a href="#" class="link-alt">Linkedin</a></dd></span>
+                      <span class="col-6 col-md-3 col-lg-6 col-xxl-3"><dt class="text-sm">Job ID</dt><dd>942130</dd></span>
+                      <span class="col-6 col-md-3 col-lg-6 col-xxl-3"><dt class="text-sm">Submit date:</dt><dd>17 Nov 2017</dd></span>
+                      <span class="col-6 col-md-3 col-lg-6 col-xxl-3"><dt class="text-sm">Recruiter:</dt><dd><a href="#" class="link-alt">Daniel Wang</a></dd></span>
+                      <span class="col-6 col-md-3 col-lg-6 col-xxl-3"><dt class="text-sm">Applied via:</dt><dd><a href="#" class="link-alt">Linkedin</a></dd></span>
                   </div>
                 </div>
                 <div class="col-6 col-lg-2">
