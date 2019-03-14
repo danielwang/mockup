@@ -56,7 +56,7 @@
             background: $border-color;
             display: block;
             position: absolute;
-            top: 24px; bottom: 0; left: 6px;
+            top: 20px; bottom: 0; left: 6px;
         }
         .timeline-item:last-child &:after {
             content: none;
@@ -66,7 +66,7 @@
     /*----- TIMELINE CONTENT -----*/
 
     .timeline-content {
-        padding-bottom: 40px;
+        padding-bottom: $spacer-4;
         p:last-child {
             margin-bottom: 0;
         }

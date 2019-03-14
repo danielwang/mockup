@@ -152,7 +152,7 @@
                 <div class="mb-4 mb-lg-0 col-md-12 col-lg-6">
                   <div class="position-relative">
                     <a aria-label="View more job info" href="#" class="dropdown-toggle text-center no-caret" title="More job info" data-toggle="dropdown" data-persist="true">
-                      <i class="gel-icon-info-pointer"></i>
+                      <i class="gel-icon-info"></i>
                     </a>
                     <div class="dropdown-menu vw-90 vw-sm-70 vw-lg-50 vw-xl-30" style="z-index:1">
                       <?php include "partials/_i-button.html" ?>
@@ -160,10 +160,10 @@
                     <h5 class="d-inline">International Consultant on Early Childhood Development <span class="badge badge-info">Undisclose</span></h5>
                   </div>
                   <div class="row mt-3">
-                      <span class="col-6 col-sm-3"><dt class="text-sm">Job ID</dt><dd>942130</dd></span>
-                      <span class="col-6 col-sm-3"><dt class="text-sm">Submit date:</dt><dd>17 Nov 2017</dd></span>
-                      <span class="col-6 col-sm-3"><dt class="text-sm">Recruiter:</dt><dd>Daniel Wang</dd></span>
-                      <span class="col-6 col-sm-3"><dt class="text-sm">Applied via:</dt><dd>Linkedin</dd></span>
+                      <span class="col-6 col-xxl-3"><dt class="text-sm">Job ID</dt><dd>942130</dd></span>
+                      <span class="col-6 col-xxl-3"><dt class="text-sm">Submit date:</dt><dd>17 Nov 2017</dd></span>
+                      <span class="col-6 col-xxl-3"><dt class="text-sm">Recruiter:</dt><dd><a href="#" class="link-alt">Daniel Wang</a></dd></span>
+                      <span class="col-6 col-xxl-3"><dt class="text-sm">Applied via:</dt><dd><a href="#" class="link-alt">Linkedin</a></dd></span>
                   </div>
                 </div>
                 <div class="col-6 col-lg-2">
@@ -229,10 +229,22 @@
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h5 class="timeline-title">Communication</h5>
-          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm"></i> Casual Customer Sales & Service Consultant Chadstone</p>
-          <p>E-mail: Invitation to online testing, to: John Smith <john.smith@hotmail.com>, From: hrteam@company.com </p>
-          <p><a class="btn btn-outline-primary btn-sm" href="#">View</a></p>
+          <h5 class="timeline-title">Communication <span class="text-sm text-red"> <i class="gel-icon-warning gel-icon-xs"></i> Bounced</span> </h5>
+          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm text-slate"></i> Casual Customer Sales & Service Consultant Chadstone</p>
+          <p class="mb-2">E-mail: Invitation to online testing, to: John Smith <john.smith@hotmail.com>, From: hrteam@company.com </p>
+          <p><a href="#">View</a></p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-info">
+          <p class="text-label mb-2">Saturday, 2 Dec 2017, 5:22am</p>
+          <span>Daniel Recruiter</span>
+        </div>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h5 class="timeline-title">Note <span class="text-sm"> <i class="gel-icon-flag gel-icon-xs text-yellow"></i> yellow note</span></h5>
+          <p class="mb-2">Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.</p>
+          <p><a href="#" class="mr-2">Edit</a> <a href="#" class="mr-2">Delete</a></p>
         </div>
       </li>
       <li class="timeline-item">
@@ -243,7 +255,7 @@
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <h5 class="timeline-title">Activity</h5>
-          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm"></i> Casual Customer Sales & Service Consultant Chadstone</p>
+          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm text-slate"></i> Casual Customer Sales & Service Consultant Chadstone</p>
           <p>Status changed to 'HR shortlist'
           </p>
         </div>
@@ -255,7 +267,7 @@
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <h5 class="timeline-title">Application submitted</h5>
-          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm"></i> Casual Customer Sales & Service Consultant Chadstone</p>
+          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm text-slate"></i> Casual Customer Sales & Service Consultant Chadstone</p>
           <p>Scoring breakdown: <br>
             0/20 points: 'No' for 'Are you a National of the country where this position is based?' <br>
             20/20 points: 'Yes' for 'Do you have a background or experience working with/in Emergency country context?' <br>
@@ -275,9 +287,9 @@
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <h5 class="timeline-title">Document</h5>
-          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm"></i> Casual Customer Sales & Service Consultant Chadstone</p>
-          <p>Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</p>
-          <p><a class="btn btn-outline-primary btn-sm" href="#">View</a>  <a class="btn btn-outline-primary btn-sm"href="#">PDF</a>  <a class="btn btn-outline-primary btn-sm" href="#">Reprocess</a>
+          <p class="text-label mb-2"><i class="gel-icon-job gel-icon-sm text-slate"></i> Casual Customer Sales & Service Consultant Chadstone</p>
+          <p class="mb-2">Cover letter: Application Letter Dep REP Guine.pdf Size: 119kb</p>
+          <p><a href="#" class="mr-2">View</a>  <a href="#" class="mr-2">PDF</a>  <a href="#">Reprocess</a>
           </p>
         </div>
       </li>

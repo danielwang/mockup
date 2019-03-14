@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL - version 3.10.4
+ *   PageUp GEL - version 3.10.5
  *   Author: Daniel Wang
- *	  Date: 01/03/2018
+ *	  Date: 14/03/2018
  \* *************************************** */
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
@@ -36,6 +36,7 @@
   --cyan: #00bcd4;
   --white: #fff;
   --gray: #6c757d;
+  --slate: #8299ae;
   --navy: #002f54;
   --primary: #0063b0;
   --secondary: #1d262d;
@@ -1788,7 +1789,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 1.5rem;
@@ -2680,8 +2681,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     border-bottom-left-radius: 0; }
 
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem; }
+  padding-right: 0.75rem;
+  padding-left: 0.75rem; }
   .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropright .dropdown-toggle-split::after {
     margin-left: 0; }
   .dropleft .dropdown-toggle-split::before {
@@ -8977,6 +8978,13 @@ a {
   border-radius: 50%;
   display: inline-block; }
 
+.dot-slate {
+  background-color: #8299ae;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block; }
+
 .dot-navy {
   background-color: #002f54;
   width: 10px;
@@ -9977,7 +9985,7 @@ a {
 @media (min-width: 992px) {
     .btn {
       height: 34px;
-      padding: 0.25rem 0.75rem;
+      padding: 0.25rem 1rem;
       font-size: 0.875rem;
       line-height: 1.5rem;
       border-radius: 1.5rem; }
@@ -9987,9 +9995,9 @@ a {
 
 .btn-sm, .btn-group-sm > .btn {
   height: 34px;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 1rem;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   border-radius: 1.5rem; }
 
 @media (min-width: 992px) {
@@ -12496,7 +12504,6 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   padding-bottom: 0; }
 /*----- TIMELINE INFO -----*/
 .timeline-info {
-  font-size: 12px;
   margin: 0 0 0.5em 0;
   white-space: nowrap; }
 /*----- TIMELINE MARKER -----*/
@@ -12526,7 +12533,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   background: #bac6d2;
   display: block;
   position: absolute;
-  top: 24px;
+  top: 20px;
   bottom: 0;
   left: 6px; }
 
@@ -12534,7 +12541,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   content: none; }
 /*----- TIMELINE CONTENT -----*/
 .timeline-content {
-  padding-bottom: 40px; }
+  padding-bottom: 1.5rem; }
 
 .timeline-content p:last-child {
   margin-bottom: 0; }
@@ -12585,7 +12592,8 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
     .timeline-split .timeline-content, .timeline-centered .timeline-content {
       padding-left: 30px; }
     .timeline-split .timeline-info, .timeline-centered .timeline-info {
-      padding-right: 30px; }
+      padding-right: 30px;
+      text-align: right; }
     .timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
       position: relative;
       left: -45px; } }
@@ -12691,6 +12699,12 @@ sub, sup {
 .lead {
   font-weight: 400;
   font-family: 'Proxima Nova Light'; }
+
+.text-label {
+  font-weight: 400;
+  font-family: 'Proxima Nova Semibold';
+  color: #536b81;
+  font-size: 0.75rem; }
 
 .text-12, .text-sm {
   font-size: 0.75rem !important;
@@ -13255,6 +13269,9 @@ del a:hover {
 .bg-gray {
   background-color: #6c757d !important; }
 
+.bg-slate {
+  background-color: #8299ae !important; }
+
 .bg-navy {
   background-color: #002f54 !important; }
 
@@ -13335,6 +13352,9 @@ del a:hover {
 
 .text-gray {
   color: #6c757d !important; }
+
+.text-slate {
+  color: #8299ae !important; }
 
 .text-navy {
   color: #002f54 !important; }
