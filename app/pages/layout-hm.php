@@ -13,7 +13,7 @@ Welcome John, this is your manager dashboard where you will see all your tasks o
 <?php startblock('page-body');?>
 
 <!-- 4 cards in a row without guidelines  -->
-<!-- <div class="row">
+<div class="row">
   <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
     <div class="card h-100 text-center">
       <img class="illustrations" src="<?php echo ($resURL) ?>images/illustrations/pd.svg" alt="Position Description panel">
@@ -105,10 +105,10 @@ Welcome John, this is your manager dashboard where you will see all your tasks o
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- 3 cards in a row with guidelines  -->
-<div class="row">
+<!-- <div class="row">
   <div class="col-xl-9">
     <div class="row">
       <div class="col-md-6 col-lg-4 mb-4">
@@ -159,5 +159,5 @@ Welcome John, this is your manager dashboard where you will see all your tasks o
        <p>Lorem ipsum dolort ametetur adipiscing elit, sed do eiusmod tempor edr incididunt ut labore et dolore magna aliqua. </p>
        <p><a href="#">Ut enim ad minim</a> sersn veniam, quisre sedo nostrud<p>
   </div>
-</div>
+</div> -->
 <?php endblock()?>

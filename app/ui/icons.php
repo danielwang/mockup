@@ -56,9 +56,14 @@ $illustrations = imageList('illustrations');
 <!-- how to use -->
   <div class="tab-pane bg-white py-3 rounded" id="illustrations" role="tabpanel" aria-labelledby="usage-tab">
     <div class="row">
-        <?php for($i = 0; $i < ceil(count($illustrations)) ; $i++){ ?>
+        <!-- <?php //for($i = 0; $i < ceil(count($illustrations)) ; $i++){ ?>
           <div class="col-2 mb-5 text-center"><img width="48px" src="<?php echo ($resURL) ?>images/illustrations/<?php echo $illustrations[$i] ?>.svg" alt="Position Description" /></div>
+        <?php // } ?> -->
+        <?php echo "[" ?>
+        <?php for($i = 0; $i < ceil(count($illustrations)) ; $i++){ ?>
+        <?php echo "'" . $illustrations[$i] . "', " ?>
         <?php  } ?>
+        <?php echo "]" ?>
     </div>
   </div>
 <!-- change log -->
