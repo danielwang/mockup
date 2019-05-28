@@ -30,6 +30,8 @@
  // 	unlink($cssfile);
  // }
 
+/*
+  //take the scss to generate the css
  $cssfile = $resURL . 'css/gel.css';
  if (file_exists($cssfile)) {
  	unlink($cssfile);
@@ -44,5 +46,5 @@
  //$scssIn = file_get_contents('build/bootstrap/bootstrap.scss');
  $cssOut = $scss->compile('@import "gel.scss"');
  file_put_contents($resURL . 'css/gel.css', $cssOut);
-
+*/
 ?>

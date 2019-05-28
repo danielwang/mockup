@@ -1,7 +1,7 @@
-/* *************************************** *\
- *   PageUp GEL - version 3.10.5
+/*! *************************************** *\
+ *   PageUp GEL - version 3.10.7
  *   Author: Daniel Wang
- *	  Date: 14/03/2018
+ *	  Date: 01/04/2018
  \* *************************************** */
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
@@ -8456,7 +8456,6 @@ body {
   overflow-y: auto;
   letter-spacing: 0.0128em;
   height: auto;
-  min-height: 100%;
   width: 100%;
   position: relative;
   display: flex;
@@ -11795,7 +11794,7 @@ select.form-control.form-control-sm, .input-group-sm > select.form-control.form-
   text-decoration: underline; }
 
 .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 1);
   position: static;
   right: auto; }
 

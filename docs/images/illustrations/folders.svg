@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.221;fill:#D5AD50;enable-background:new    ;}
-	.st1{fill:#FFCD54;}
-	.st2{fill:#333D56;}
-	.st3{fill:#D5AD50;}
+	.st0{fill:#3BA9FF;}
+	.st1{fill:#FECC53;}
+	.st2{fill:#FFCD54;}
+	.st3{fill:#69BDFF;}
 </style>
-<title>Illustration / Folders</title>
-<desc>Created with Sketch.</desc>
-<g id="Illustration-_x2F_-Folders">
-	<path id="Combined-Shape" class="st0" d="M2,35h37.4v11H2V35z M42,28.5h2.4v4.9H42V28.5z"/>
-	<path id="Combined-Shape_1_" class="st1" d="M19.6,17.4v0.5h-3.3L14.3,14l-2-1.1V6h7.3v4H42v7.4h0V35h-2.6V17.4H19.6z M5.8,17.1H13
-		v4.1h22.7V35H5.8V17.1z"/>
-	<path id="Combined-Shape_2_" class="st2" d="M8.6,13V5.1c0-1.7,1.4-3.1,3-3.1h8.4c1.7,0,3,1.4,3,3.1v1.1H46V35h-6.6v11H2V16.1
-		C2,14.4,3.4,13,5,13H8.6z M39.4,33.3h4.9V7.9H21.4V5.1c0-0.8-0.6-1.4-1.4-1.4h-8.4c-0.8,0-1.4,0.6-1.4,1.4V13h3.2
-		c1.7,0,3,1.4,3,3.1v1.1h22.9V33.3z M37.7,18.9H14.8v-2.8c0-0.8-0.6-1.4-1.4-1.4H5c-0.8,0-1.4,0.6-1.4,1.4v28.3h34.1V18.9z"/>
-	<path id="Combined-Shape_3_" class="st3" d="M5.8,35h29.9v6.6H5.8V35z M39.4,28.5H42v4.9h-2.6V28.5z"/>
-</g>
+<path class="st0" d="M28,5H17c-0.6,0-1-0.4-1-1V3.5C16,2.6,15.3,2,14.5,2H9C7.9,2,7,2.9,7,4v5h4.5c0.8,0,1.5,0.7,1.5,1.5V11
+	c0,0.6,0.4,1,1,1h11c1.1,0,2,0.9,2,2v7h1c1.1,0,2-0.9,2-2V7C30,5.9,29.1,5,28,5z"/>
+<path id="Rectangle_3_" class="st1" d="M4,11h5.5c0.8,0,1.5,0.7,1.5,1.5V13c0,0.6,0.4,1,1,1h11c1.1,0,2,0.9,2,2v12c0,1.1-0.9,2-2,2
+	l0,0H4c-1.1,0-2-0.9-2-2V13C2,11.9,2.9,11,4,11z"/>
+<path id="Combined-Shape" class="st2" d="M11.8,14H2v-1c0-1.1,0.9-2,2-2h5.5c0.8,0,1.5,0.7,1.5,1.5V13C11,13.5,11.3,13.9,11.8,14z
+	 M23,30L23,30L23,30H4H23z"/>
+<path class="st3" d="M28,5H17c0,0,0,0,0,0H7v4h4.5c0.8,0,1.5,0.7,1.5,1.5V11c0,0.6,0.4,1,1,1h11c1.1,0,2,0.9,2,2v7h1
+	c1.1,0,2-0.9,2-2V7C30,5.9,29.1,5,28,5z"/>
 </svg>
