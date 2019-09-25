@@ -16,6 +16,11 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://ui.pageuppeople.com/gel/css/gel.min.css">
     <link rel="stylesheet" href="../css/fonts/BLOKK/blokkfont.css">
+    <style>
+        .demo-block {
+            background-color: #D6DDE4
+        }
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -330,8 +335,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 order-2 order-lg-1 mt-3 mt-lg-0">
-                    <h1 class="page-title">Master page template</h1>
-                    <blockquote class="tagline">Sub heading goes here</blockquote>
+                    <h1 class="page-title text-muted blokk">Pagetemplate with viewports
+                        <span class="badge badge-warning d-sm-none"> XS < 576px </span> <span
+                                class="d-none badge badge-info d-sm-inline-block d-md-none"> SM ≥ 576px
+                        </span>
+                        <span class="d-none badge badge-success d-md-inline-block d-lg-none"> MD ≥ 768px
+                        </span>
+                        <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">LG ≥ 992px
+                        </span>
+                        <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">XL ≥ 1200px
+                        </span>
+                        <span class="d-none badge badge-info d-xxl-inline-block">XXL ≥ 1600px
+                        </span>
+                    </h1>
+                    <blockquote class="tagline blokk">Subheading goes here</blockquote>
                 </div>
                 <div class="page-actions col-lg-4 mt-2 mt-lg-0">
                     <span class="item">
@@ -345,65 +362,119 @@
     <nav id="gel-subpages" role="navigation">
         <div class="container">
             <nav class="page-tabs nav" role="tablist">
-                <a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab"
+                <a class="nav-link active" id="tab-1" data-toggle="tab" href="#sidebar" role="tab"
                     aria-controls="current-jobs" aria-selected="true">Sidebar content</a>
-                <a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two"
+                <a class="nav-link" id="tab-2" data-toggle="tab" href="#content" role="tab" aria-controls="Tab two"
                     aria-selected="false">Content only</a>
-                <a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three"
+                <a class="nav-link " id="tab-3" data-toggle="tab" href="#aside" role="tab" aria-controls="Tab three"
                     aria-selected="false">Content aside</a>
-                <a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab"
-                    aria-controls="Tab four" aria-selected="false">Four Columns</a>
-                <a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab"
-                    aria-controls="Tab three" aria-selected="false">Focus content</a>
+                <a class="nav-link " id="tab-4" data-toggle="tab" href="#columns" role="tab" aria-controls="Tab four"
+                    aria-selected="false">Columns</a>
+                <a class="nav-link " id="tab-3" data-toggle="tab" href="#foucs" role="tab" aria-controls="Tab three"
+                    aria-selected="false">Focus content</a>
             </nav>
         </div>
     </nav>
     <!-- ************  page body ************ -->
     <main id="gel-main" role="main">
         <section class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card h-100 blokk">
-                        Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                        labore etdolore magna aliqua.
+            <div class="tab-content">
+                <div class="tab-pane d-print-block show active" id="sidebar" role="tabpanel" aria-labelledby="sidebar">
+                    <div class="row">
+                        <div class="col-lg-4 col-xxl-3">
+                            <div class="vh-50 rounded demo-block d-flex justify-content-center">
+                                <h1 class="align-self-center text-muted">Secondary block</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-xxl-9">
+                            <div class="vh-100 rounded demo-block d-flex justify-content-center">
+                                <h1 class="align-self-center text-muted">Primary block</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card h-100 blokk">
-                        laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                        voluptate velitesse cillum doloreeu fugiat nulla
+                <div class="tab-pane d-print-block" id="content" role="tabpanel" aria-labelledby="applications-tab">
+                    <div class="vh-100 rounded demo-block d-flex justify-content-center">
+                        <h1 class="align-self-center text-muted">Content Only</h1>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card h-100 blokk">
-                        nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
+                <div class="tab-pane d-print-block" id="aside" role="tabpanel" aria-labelledby="applications-tab">
+                    <div class="row">
+                        <div class="col-lg-8 col-xxl-9">
+                            <div class="vh-100 rounded demo-block d-flex justify-content-center">
+                                <h1 class="align-self-center text-muted">Primary block</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xxl-3">
+                            <div class="vh-50 rounded demo-block d-flex justify-content-center">
+                                <h1 class="align-self-center text-muted">Secondary block</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card h-100 blokk">
-                        Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
+                <div class="tab-pane d-print-block" id="columns" role="tabpanel" aria-labelledby="applications-tab">
+                    <div class="alert alert-info alert-dismissible fade show blokk" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i aria-hidden="true" class="gel-icon-close"></i>
+                        </button>
+                        Tasks allow users to keep track of their current and upcoming recruitment related tasks. Please
+                        see more information on
+                        <a target="_blank" class="alert-link" href="#">link</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card h-100 blokk">
+                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
+                                labore etdolore magna aliqua.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card h-100 blokk">
+                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
+                                voluptate velitesse cillum doloreeu fugiat nulla
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card h-100 blokk">
+                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card h-100 blokk">
+                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card h-100 blokk">
+                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
+                                labore etdolore magna aliqua.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card h-100 blokk">
+                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
+                                voluptate velitesse cillum doloreeu fugiat nulla
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card h-100 blokk">
+                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card h-100 blokk">
+                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card h-100 blokk">
-                        Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                        labore etdolore magna aliqua.
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card h-100 blokk">
-                        laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                        voluptate velitesse cillum doloreeu fugiat nulla
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card h-100 blokk">
-                        nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <div class="card h-100 blokk">
-                        Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
+                <div class="tab-pane d-print-block" id="foucs" role="tabpanel" aria-labelledby="applications-tab">
+                    <div class="row">
+                        <div class="offset-lg-2 col-lg-8">
+                            <div class="vh-50 rounded demo-block d-flex justify-content-center">
+                                <h1 class="align-self-center text-muted">Focus block</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
