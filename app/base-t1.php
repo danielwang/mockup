@@ -10,15 +10,12 @@
   global $blokk;
 ?>
 
-   <!-- Hiring manager centre, client branding -->
-   <!-- <?php // if ($parent == "hm"){ ?>
-      <header role="Branding header" class="client-branding" style="background-color: #cccccc">
-          <div class="container-fluid">
-            <img class="logo" src="<?php echo ($resURL) ?>site-images/client-logo.png" alt="client'name logo" />
-          </div>
-      </header>
-   <?php //} ?> -->
-   <?php emptyblock('page-notification') ?>
+<?php startblock('page-notification') ?>
+<div role="notification" class="mb-0 alert notification-info alert-dismissible fade show"><i aria-hidden="true" class="gel-icon-info gel-icon-lg"></i>
+    This is a info notification
+    <a href="#" class="notification-link">check it out!</a><button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button></div>
+<?php endblock() ?>
+
    <!-- ************ topbar ************ -->
    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
        <div class="container-fluid">
@@ -44,7 +41,7 @@
          <?php include ("_partials/menu/user-panel.html");?>
 
          <menu class="scroll">
-           <?php include ("_partials/menu/${parent}.html");?>
+           <?php //include ("_partials/menu/${parent}.html");?>
          </menu>
        </aside>
 
@@ -59,7 +56,8 @@
                 <blockquote class="tagline"><?php emptyblock('page-tagline');?></blockquote>
               </div>
               <div class="page-actions col-lg-4 mt-2 mt-lg-0">
-                  <?php emptyblock('page-actions') ?>
+                  <?php startblock('page-actions') ?>
+                  <?php endblock()?>
               </div>
             <?php } else {?>
               <div class="col-12">
@@ -76,11 +74,12 @@
   <?php endblock() ?>
 
   <!-- ************  page body ************ -->
-	<main id="gel-main" role="main">
+	<main id="gel-main" role="main" class="position-relative">
 		<section class="container<?php echo $pageLayout ?>">
 			<?php startblock('page-body')?>
 			<?php endblock()?>
-		</section>
+    </section>
+    <?php include ("_drawer.html");?>          
 	</main>
   <!-- ************  page footer ************ -->
 <?php include '_foot.html';?>

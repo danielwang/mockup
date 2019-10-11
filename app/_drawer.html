@@ -1,0 +1,40 @@
+<!-- drawer -->
+<aside id="gel-drawer" role="">
+    <a href="#" aria-label="Close menu" class="drawer-knob" aria-expanded="true"><i aria-hidden="true"
+            class="gel-icon-close gel-icon-lg"></i></a>
+    <div class="drawer-inner">
+    </div>
+</aside>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        initDrawer();
+    });
+    /*****************************************
+        Menu toggle
+    *****************************************/
+
+    const main = document.getElementById('gel-main');
+    const drawer = document.getElementById('gel-drawer');
+    const drawerIcons = document.getElementsByClassName('drawer-knob');
+    function initDrawer() {
+        let offset = main.offsetTop;
+        drawer.style.top = offset + 'px';
+        toggleDrawer();
+    }
+    function toggleDrawer() {
+        // sliding menu toggle
+        for (var i = 0; i < drawerIcons.length; i++) {
+            drawerIcons[i].addEventListener('click', function () {
+                drawer.classList.toggle('open');
+                if (drawer.classList == "") {
+                    setAriaExpanded('false');
+                    //  setMenuState(false);
+                } else {
+                    setAriaExpanded('true');
+                    //  setMenuState(true);
+                }
+            });
+        }
+    }
+</script>
