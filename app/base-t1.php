@@ -7,6 +7,7 @@
   include_once '_head.php';
   global $pageLayout;
   global $pageAction;
+  global $blokk;
 ?>
 
    <!-- Hiring manager centre, client branding -->

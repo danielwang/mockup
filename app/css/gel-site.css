@@ -1,23 +1,50 @@
 /* *************************************** *\
  *  The styling for GEL site
 \* *************************************** */
+@font-face {
+  font-family: "BLOKK";
+  src: url("fonts/BLOKK/BLOKKNeue-Regular.eot");
+  src: url("fonts/BLOKK/BLOKKNeue-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/BLOKK/BLOKKNeue-Regular.woff2") format("woff2"), url("fonts/BLOKK/BLOKKNeue-Regular.woff") format("woff"),
+    url("fonts/BLOKK/BLOKKNeue-Regular.otf") format("opentype"),
+    url("fonts/BLOKK/BLOKKNeue-Regular.ttf") format("truetype"),
+    url("fonts/BLOKK/BLOKKNeue-Regular.svg#BLOKKRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "BLOKK";
+    src: url("fonts/BLOKK/BLOKKNeue-Regular.svg") format("svg");
+  }
+}
+
+.blokk * {
+  font-family: "BLOKK" !important;
+  color: #bac6d2;
+}
+
+.blokk * [class*=" gel-icon-"],
+[class^="gel-icon-"] {
+  font-family: gel-icon !important;
+}
 
 #gel-menu.sg {
   width: 250px;
   transform: translateX(0);
 }
 
-main.sg{
+main.sg {
   padding-left: 250px;
 }
 
-.sg menu{
-  background: linear-gradient(#002F53 30%, #002F53),
-              linear-gradient(#002F53, #002F53 70%) 0 100%,
-              radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-              radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100% !important;
+.sg menu {
+  background: linear-gradient(#002f53 30%, #002f53), linear-gradient(#002f53, #002f53 70%) 0 100%,
+    radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100% !important;
 }
-.sg-hr{
+.sg-hr {
   margin: 1.5rem 0;
   border-color: transparent;
 }
@@ -34,7 +61,7 @@ main.sg{
   margin: 15px;
 }
 
-.sg-heading{
+.sg-heading {
   color: #0063b0;
   display: inline-block;
   /* background: -webkit-linear-gradient(45deg,#0053a3,#49b3ff);
@@ -42,11 +69,11 @@ main.sg{
   -webkit-text-fill-color: transparent; */
 }
 
-.icon-library [class^="gel-icon-"]{
-    color: #536a81;
+.icon-library [class^="gel-icon-"] {
+  color: #536a81;
 }
 .red-100 {
-  background-color: #F1C2C2;
+  background-color: #f1c2c2;
 }
 .red-100::before {
   content: "#F1C2C2";
@@ -57,7 +84,7 @@ main.sg{
 }
 
 .red-900 {
-  background-color: #821E1E;
+  background-color: #821e1e;
 }
 .red-900::before {
   content: "#821E1E";
@@ -68,7 +95,7 @@ main.sg{
 }
 
 .red-500 {
-  background-color: #CD2F2F;
+  background-color: #cd2f2f;
 }
 .red-500::before {
   content: "#CD2F2F";
@@ -254,7 +281,7 @@ main.sg{
 }
 
 .light-blue-100 {
-  background-color: #C0E6F8;
+  background-color: #c0e6f8;
 }
 .light-blue-100::before {
   content: "#C0E6F8";
@@ -265,7 +292,7 @@ main.sg{
 }
 
 .light-blue-900 {
-  background-color: #0C4C6B;
+  background-color: #0c4c6b;
 }
 .light-blue-900::before {
   content: "#0C4C6B";
@@ -276,7 +303,7 @@ main.sg{
 }
 
 .light-blue-500 {
-  background-color: #1AA5E6;
+  background-color: #1aa5e6;
 }
 .light-blue-500::before {
   content: "#1AA5E6";
@@ -287,7 +314,7 @@ main.sg{
 }
 
 .orange-100 {
-  background-color: #FCEBBE;
+  background-color: #fcebbe;
 }
 .orange-100::before {
   content: "#FCEBBE";
@@ -309,7 +336,7 @@ main.sg{
 }
 
 .orange-500 {
-  background-color: #FAC238;
+  background-color: #fac238;
   color: #343a40 !important;
 }
 .orange-500::before {
@@ -321,7 +348,7 @@ main.sg{
 }
 
 .green-100 {
-  background-color: #D9F3D2;
+  background-color: #d9f3d2;
 }
 .green-100::before {
   content: "#D9F3D2";
@@ -332,7 +359,7 @@ main.sg{
 }
 
 .green-900 {
-  background-color: #1A4412;
+  background-color: #1a4412;
 }
 .green-900::before {
   content: "#1A4412";
@@ -341,7 +368,6 @@ main.sg{
   text-transform: uppercase;
   font-size: 1rem;
 }
-
 
 .green-500 {
   background-color: #328423;
@@ -369,7 +395,7 @@ main.sg{
   color: white;
 }
 
-.color-swatch:nth-child(n+7) {
+.color-swatch:nth-child(n + 7) {
   color: #fff;
 }
 

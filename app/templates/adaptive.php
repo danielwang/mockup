@@ -1,4 +1,4 @@
-<?php $pageTitle = "Admin Page Template"; $parent = "adm"; include '../base-t1.php';?>
+<?php $blokk = true; $pageTitle = "Adaptive Template"; $parent = "adm"; include '../base-t1.php';?>
 
 <?php //startblock('page-notification') ?>
     <!-- <div id="gel-notification" class="gel-notification-error">
