@@ -416,14 +416,24 @@ main.sg {
   z-index: 1031;
   border-left: 1px solid #ddd;
   padding: 1rem;
-  transform: translateX(100%);
+  transform: translateX(95%);
   transition: transform 0.3s ease-in 0s;
+}
+#gel-drawer #gel-drawer-knob:before {
+  content: "\E938";
+  font-family: "gel-icon";
+  font-size: 1.5rem;
 }
 #gel-drawer.open {
   transform: translateX(0);
   box-shadow: -3px 3px 10px #ddd;
 }
-.drawer-knob {
+#gel-drawer.open #gel-drawer-knob:before {
+  content: "\E939";
+  font-family: "gel-icon";
+  font-size: 1.5rem;
+}
+#gel-drawer-knob {
   margin-left: -3rem;
 }
 .drawer-inner {

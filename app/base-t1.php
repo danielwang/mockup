@@ -74,12 +74,12 @@
   <?php endblock() ?>
 
   <!-- ************  page body ************ -->
-	<main id="gel-main" role="main" class="position-relative">
+	<main id="gel-main" role="main">
 		<section class="container<?php echo $pageLayout ?>">
 			<?php startblock('page-body')?>
 			<?php endblock()?>
     </section>
-    <?php include ("_drawer.html");?>          
-	</main>
+  </main>
+  <?php include ("_drawer.html");?> 
   <!-- ************  page footer ************ -->
 <?php include '_foot.html';?>

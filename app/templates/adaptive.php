@@ -19,10 +19,7 @@
 </nav>
 <?php endblock() ?>
 <?php startblock('page-body');?>
-<div role="alert" class="alert alert-success alert-dismissible fade show"><i aria-hidden="true" class="gel-icon-tick-circle"></i>
-  You should check in on some of those fields below.
-  <button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button></div>
-  <div class="row">
+  <div class="scrollable row">
                         <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
                             <div class="card h-100 blokk">
                                 <h5><span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12

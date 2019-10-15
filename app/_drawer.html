@@ -1,7 +1,8 @@
 <!-- drawer -->
 <aside id="gel-drawer" role="">
-    <a href="#" aria-label="Close menu" class="drawer-knob" aria-expanded="true"><i aria-hidden="true"
-            class="gel-icon-close gel-icon-lg"></i></a>
+    <button type="button" id="gel-drawer-knob" aria-label="Close drawer" class="btn btn-icon" aria-expanded="true">
+        <span class="sr-only">Open Drawer</span>
+    </button>
     <div class="drawer-inner">
     </div>
 </aside>
@@ -9,32 +10,32 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         initDrawer();
+        toggleDrawer();
     });
     /*****************************************
         Menu toggle
     *****************************************/
-
+    const header = document.getElementById('gel-header');
+    const subnav = document.getElementById('gel-subpages');
     const main = document.getElementById('gel-main');
     const drawer = document.getElementById('gel-drawer');
-    const drawerIcons = document.getElementsByClassName('drawer-knob');
+    const knob = document.getElementById('gel-drawer-knob');
     function initDrawer() {
         let offset = main.offsetTop;
+        main.style.height = 'calc(100vh - offset + "px")';
         drawer.style.top = offset + 'px';
-        toggleDrawer();
     }
+
     function toggleDrawer() {
-        // sliding menu toggle
-        for (var i = 0; i < drawerIcons.length; i++) {
-            drawerIcons[i].addEventListener('click', function () {
-                drawer.classList.toggle('open');
-                if (drawer.classList == "") {
-                    setAriaExpanded('false');
-                    //  setMenuState(false);
-                } else {
-                    setAriaExpanded('true');
-                    //  setMenuState(true);
-                }
-            });
-        }
+        knob.addEventListener('click', function () {
+            drawer.classList.toggle('open');
+            if (drawer.classList == "") {
+                setAriaExpanded('false');
+                //  setMenuState(false);
+            } else {
+                setAriaExpanded('true');
+                //  setMenuState(true);
+            }
+        });
     }
 </script>
