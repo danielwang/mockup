@@ -408,35 +408,85 @@ main.sg {
 
 #gel-drawer {
   width: 300px;
-  height: calc(100vh - 9rem);
+  height: calc(100vh - 3.75rem); /* 9rem*/
   background: #ffffff;
   position: fixed;
-  top: 0;
+  top: 3.75rem;
   right: 0;
-  z-index: 1031;
-  border-left: 1px solid #ddd;
+  z-index: 999;
+  border-left: 1px solid #bac6d2;
   padding: 1rem;
-  transform: translateX(95%);
+  transform: translateX(100%);
   transition: transform 0.3s ease-in 0s;
-}
-#gel-drawer #gel-drawer-knob:before {
-  content: "\E938";
-  font-family: "gel-icon";
-  font-size: 1.5rem;
 }
 #gel-drawer.open {
   transform: translateX(0);
-  box-shadow: -3px 3px 10px #ddd;
+  box-shadow: -3px 3px 10px #bac6d2;
 }
-#gel-drawer.open #gel-drawer-knob:before {
+.drawer-knob button:before {
+  content: "\E938";
+  font-family: "gel-icon";
+  font-size: 1.5rem;
+  color: #2f3c49; /* slate-700*/
+}
+#gel-drawer.open .drawer-knob {
+  background: white;
+}
+#gel-drawer.open .drawer-knob button:before {
   content: "\E939";
   font-family: "gel-icon";
   font-size: 1.5rem;
+  color: #2f3c49; /* slate-700*/
 }
-#gel-drawer-knob {
-  margin-left: -3rem;
+.drawer-knob {
+  width: 34px;
+  height: 34px;
+  left: -34px;
+  top: calc((100vh - 3.75rem) - ((100vh - 3.75rem) / 1.618));
+  position: absolute;
+  background: #d6dde4; /* slate-200 */
+  margin-top: -34px;
+  border: 1px solid #bac6d2;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-right: 0;
 }
+
+/* .drawer-knob:before {
+  content: "";
+  width: 34px;
+  height: 17px;
+  border-top: 1px solid #bac6d2;
+  transform: skewY(-30deg);
+  background: white;
+  position: absolute;
+  top: -7px;
+  right: 0;
+  z-index: 1;
+  border-left: 1px solid #bac6d2;
+  border-top-left-radius: 10px;
+}
+.drawer-knob:after {
+  content: "";
+  width: 34px;
+  height: 17px;
+  border-bottom: 1px solid #bac6d2;
+  transform: skewY(30deg);
+  background: white;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  z-index: 1;
+  border-left: 1px solid #bac6d2;
+  border-top-left-radius: 10px;
+}
+
+.drawer-knob button {
+  position: absolute;
+  z-index: 5;
+} */
 .drawer-inner {
+  height: 100%;
   max-height: 100%;
-  overflow-x: scroll;
+  overflow-y: auto;
 }

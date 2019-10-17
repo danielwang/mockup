@@ -291,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-  <footer class="main-footer border-top fixed-bottom p-2 bg-white d-print-none text-center">
+  <footer class="main-footer border-top fixed-bottom p-2 bg-white d-print-none text-center" style="z-index: 999">
     <section class="container">
       <button type="button" class="btn btn-primary">Save</button>
     </section>
