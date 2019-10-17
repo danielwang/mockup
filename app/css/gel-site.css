@@ -406,6 +406,15 @@ main.sg {
   color: #000;
 }
 
+/** blokk **/
+.demo-block-s {
+  background-color: #ffffff;
+}
+
+.demo-block {
+  background-color: #ffffff;
+}
+
 #gel-drawer {
   width: 300px;
   height: calc(100vh - 3.75rem); /* 9rem*/
@@ -426,7 +435,7 @@ main.sg {
 .drawer-knob button:before {
   content: "\E938";
   font-family: "gel-icon";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #2f3c49; /* slate-700*/
 }
 #gel-drawer.open .drawer-knob {
@@ -435,17 +444,15 @@ main.sg {
 #gel-drawer.open .drawer-knob button:before {
   content: "\E939";
   font-family: "gel-icon";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #2f3c49; /* slate-700*/
 }
 .drawer-knob {
-  width: 34px;
-  height: 34px;
-  left: -34px;
+  left: -30px;
   top: calc((100vh - 3.75rem) - ((100vh - 3.75rem) / 1.618));
   position: absolute;
   background: #d6dde4; /* slate-200 */
-  margin-top: -34px;
+  margin-top: -32px;
   border: 1px solid #bac6d2;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;

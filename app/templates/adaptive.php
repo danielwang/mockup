@@ -1,8 +1,8 @@
-<?php $blokk = false; $pageAction = true; $pageTitle = "Adaptive Template"; $parent = "adm"; include '../base-t1.php';?>
+<?php $blokk = true; $pageAction = true; $pageTitle = "Adaptive Template"; $parent = "adm"; include '../base-t3.php';?>
 <?php emptyblock('page-notification') ?>
 <?php startblock('page-actions') ?>
   <span class="item">
-      <button type="button" class="btn btn-primary">Action</button>
+      <button type="button" class="btn btn-ctrl">Action</button>
   </span>
 <?php endblock() ?>
 <?php startblock('page-tabs') ?>
@@ -19,278 +19,41 @@
 </nav>
 <?php endblock() ?>
 <?php startblock('page-body');?>
-  <div class="scrollable row">
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                <h5><span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                                    </span>
-                                    <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-6
-                                    </span>
-                                    <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
-                                    </span>
-                                    <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
-                                    </span>
-                                    <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
-                                    </span></h5>
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                <h5><span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                                    </span>
-                                    <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-6
-                                    </span>
-                                    <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
-                                    </span>
-                                    <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
-                                    </span>
-                                    <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
-                                    </span></h5>
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                <h5><span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                                    </span>
-                                    <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-6
-                                    </span>
-                                    <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
-                                    </span>
-                                    <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
-                                    </span>
-                                    <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
-                                    </span></h5>
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                <h5><span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                                    </span>
-                                    <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-6
-                                    </span>
-                                    <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
-                                    </span>
-                                    <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
-                                    </span>
-                                    <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
-                                    </span></h5>
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                <h5><span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                                    </span>
-                                    <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-6
-                                    </span>
-                                    <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
-                                    </span>
-                                    <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
-                                    </span>
-                                    <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
-                                    </span></h5>
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Lorem ipsum dolor sitamet, consectetur adipiscingelit, seddoeiusmod tempor incididuntut
-                                labore etdolore magna aliqua.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                laboris nisiut aliquip exea commodo consequat. Duis auteirure dolor ineprehenderitin
-                                voluptate velitesse cillum doloreeu fugiat nulla
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                nonproident, suntnculpa qui officia deseruntmollit animidestlaborum cupidatat pariatur.
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xxl-3 mb-4">
-                            <div class="card h-100 blokk">
-                                Utenimad minimveniam, quis nostrud exercitation ullamco Excepteur sint occaecat
-                            </div>
-                        </div>
-                    </div>
+<div class="row">
+    <div class="col-lg-4 col-xxl-3">
+        <div class="vh-50 rounded demo-block-s d-flex justify-content-center mb-5 mb-md-0">
+            <h1 class="align-self-center text-muted">Sidebar
+                <span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
+                </span>
+                <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-12
+                </span>
+                <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
+                </span>
+                <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
+                </span>
+                <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
+                </span>
+            </h1>
+
+        </div>
+    </div>
+    <div class="col-lg-8 col-xxl-9">
+        <div class="vh-100 rounded demo-block d-flex justify-content-center">
+            <h1 class="align-self-center text-muted">Primary content
+                <span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
+                </span>
+                <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-12
+                </span>
+                <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-8
+                </span>
+                <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-8
+                </span>
+                <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-9
+                </span>
+            </h1>
+        </div>
+    </div>
+    </div>
   <footer class="main-footer border-top fixed-bottom p-2 bg-white d-print-none text-center" style="z-index: 999">
     <section class="container">
       <button type="button" class="btn btn-primary">Save</button>

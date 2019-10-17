@@ -7,7 +7,6 @@
   include_once '_head.php';
   global $pageLayout;
   global $pageAction;
-  global $blokk;
 ?>
 
 <?php startblock('page-notification') ?>
@@ -41,7 +40,7 @@
          <?php include ("_partials/menu/user-panel.html");?>
 
          <menu class="scroll">
-           <?php //include ("_partials/menu/${parent}.html");?>
+           <?php include ("_partials/menu/${parent}.html");?>
          </menu>
        </aside>
 
