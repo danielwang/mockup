@@ -18,7 +18,7 @@ updated as soon as commit the code change into github
 */
 
 /* read php files from folders */
-$folders = array("pages", "ui");
+$folders = array("pages", "ui", "templates");
 for ($i = 0; $i < count($folders); $i++) {
   echo "***** Start generating ***** \n";
   //generate files
@@ -57,7 +57,7 @@ function recurseDir($folderpath) {
 function viewSource($folderpath, $page){
   chdir($folderpath); // go to the dir
   // define the URL to load
-  $url = 'http://localhost:9000/mockup/app/'. $folderpath . '/' . $page;
+  $url = 'http://localhost:8888/mockup/app/'. $folderpath . '/' . $page;
   $url = str_replace('\\', '/',$url);
   //echo $url;
   //start cURL

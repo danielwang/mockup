@@ -1,5 +1,5 @@
 <!-- ******************
-*** T1 product template ***
+*** T3  blokk ***
 ******************  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -31,146 +31,147 @@
          window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=150,left=150,width=1280,height=960");
       }
       </script>
-    
+    <div <div role="notification" class="mb-0 alert notification-info alert-dismissible fade show"><i aria-hidden="true" class="gel-icon-info gel-icon-lg"></i>
+    This is a info notification
+    <a href="#" class="notification-link">check it out!</a><button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button></div>
+
+   <!-- ************ topbar ************ -->
+   <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
+       <div class="container-fluid">
+         <!-- logo  -->
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-lg"></i></a></li>
+           <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../site-images/pu-logo.png" width="100"/></a></li>
+         </ul>
+         <ul class="navbar-nav">
+           <br />
+<b>Notice</b>:  Undefined variable: parent in <b>/Applications/MAMP/htdocs/mockup/app/base-t3.php</b> on line <b>28</b><br />
+<br />
+<b>Warning</b>:  include(_partials/nav/.html): failed to open stream: No such file or directory in <b>/Applications/MAMP/htdocs/mockup/app/base-t3.php</b> on line <b>28</b><br />
+<br />
+<b>Warning</b>:  include(): Failed opening '_partials/nav/.html' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.1.6/lib/php') in <b>/Applications/MAMP/htdocs/mockup/app/base-t3.php</b> on line <b>28</b><br />
+           <!-- user panel -->
+           <li id="nav-user-panel" class="nav-item user-panel">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="../site-images/avatar.svg" alt="John's profile">
+    John
+  </a>
+  <div class="dropdown-menu dropdown-menu-right user-menu">
+    <!-- User name -->
+    <header class="user-header">
+      <h5 class="margin-bottom-none">John Smith</h5>
+      <p>john.smith@pageuppeople.com</p>
+      <p>
+        <button type="button" class="btn btn-primary">
+          View Profile</button>
+      </p>
+    </header>
+    <footer>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-logo"></i>
+        Switch back to Live
+      </a>
+      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#feedbackModal">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-beta-feedback"></i>
+        Give Beta feedback
+      </a>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-alpha"></i>
+        Experiment Alpha
+      </a>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="logout" class="gel-icon-logout"></i>
+        Log out</a>
+    </footer>
+  </div>
+</li>           <!-- help -->
+           <li id="nav-help" class="nav-help nav-item">
+  <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" aria-label="Help">
+    <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
+    <span class="sr-only">Help</span></a>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a href="#" class="dropdown-item" title="Print">
+      <i class="gel-icon-print" aria-hidden="true"></i>
+      Print
+    </a>
+    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal2">
+      <i class="gel-icon-feedback" aria-hidden="true"></i>
+      Feedback</a>
+    <a href="#" class="dropdown-item" title="Knowledge portal">
+      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i>
+      Knowledge portal</a>
+    <a href="#" class="dropdown-item" title="Live support">
+      <i class="gel-icon-support" aria-hidden="true"></i>
+      Live Support</a>
+    <a href="#" class="dropdown-item" title="Raise support case">
+      <i class="gel-icon-bullhorn" aria-hidden="true"></i>
+      Raise support case</a>
+  </div>
+</li>         </ul>
+       </div>
+     </nav>
    <!-- ************ menu ************  -->
-  <aside id="gel-menu" class="sg bg-navy" role='menu'>
-     <a href="../" class="logo d-block"> <img alt="brand logo" src="../site-images/pageup-gel-logo.png" width="136"/></a>
-     <!-- <form class="search-group form-inline" role="search">
-      <label class="sr-only" for="quick-search" aria-label="Search">
-         Search</label>
-      <input id="quick-search" class="form-control" placeholder="search" type="Search">
-    </form> -->
-     <menu class="scroll p-0">
-       <style>
-  #gel-menu ul li {
-    margin-bottom: 0;
-  }
-  #gel-menu menu .submenu{
-    border-top: 1px solid #536a81;
-    border-bottom: 1px solid #536a81;
-  }
-  #gel-menu menu .submenu:not(:first-child){
-    margin-top: -1px;
-  }
+  <aside id="gel-menu" role='menu'>
+         <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></a>
 
-  #gel-menu menu .submenu > a:after{
-    content: "\e93a";
-    font-family: "gel-icon";
-    transform: rotate(0);
-    transition: transform 0.3s ease-in-out 0s;
-    float: right;
-    margin-top: -1.5rem;
-  }
-  #gel-menu menu .submenu > a.collapsed:after{
-    transform: rotate(180deg);
-  }
-  #gel-menu menu .submenu > a{
-    background-color: #00264a;
-    width: auto;
-  }
-  #gel-menu menu .submenu > a.collapsed{
-    background-color: #002f54;
-  }
-  #gel-menu menu .submenu ul.collapse, #gel-menu menu .submenu ul.collapsing {
-    background-color: #00264a;
-  }
-  #gel-menu ul li a:hover {
-    margin-left: 0;
-  }
-</style>
-
-<ul>
-  <li class="submenu mb-0">
-    <a  class="px-5 py-3 collapsed" data-toggle="collapse" data-parent="#accordion" href="#intro" aria-expanded="true" aria-controls="collapseOne">
-     <h4 class="text-white mb-0">Introduction</h4>
-    </a>
-    <ul id="intro" class="collapse">
-      <li>
-        <a class="px-5 py-2 text-16" href="introduction">What is GEL?</a>
-      </li>
-      <li>
-        <a class="px-5 py-2 text-16" href="principles">Design Principles</a>
-      </li>
-      <li>
-        <a class="px-5 py-2 text-16" href="accessibility">Accessibility</a>
-      </li>
-      <li>
-        <a class="px-5 py-2 text-16" href="personas">Personas</a>
-      </li>
-      <li>
-        <a class="px-5 py-2 text-16" href="installation">Installation</a>
-      </li>
-    </ul>
-  </li>
-  <li class="submenu mb-0">
-    <a class="px-5 py-3 collapsed" data-toggle="collapse" data-parent="#" href="#foundations" aria-expanded="true" aria-controls="collapseOne">
-     <h4 class="text-white mb-0">Foundations</h4>
-    </a>
-    <ul id="foundations" class="collapse">
-      <li>
-        <a class="px-5 py-2 text-16" href="colours">Colour Palettes</a>
-      </li>
-      <li>
-        <a class="px-5 py-2 text-16" href="typography">Typography</a>
-      </li>
-      <li>
-        <a class="px-5 py-2 text-16" href="icons">Iconography</a>
-      </li>
-      <li>
-        <a class="px-5 py-2 text-16" href="grids">Responsive Grids</a>
-      </li>
-    </ul>
-  </li>
-  <li class="submenu mb-0">
-    <a class="px-5 py-3 collapsed" data-toggle="collapse" data-parent="#" href="#elements" aria-expanded="true" aria-controls="collapseOne">
-     <h4 class="text-white mb-0">Elements</h4>
-    </a>
-    <ul id="elements" class="collapse">
-      <a class="px-5 py-2 text-16" href="#">Avatars</a><a class="px-5 py-2 text-16" href="#">Badges</a><a class="px-5 py-2 text-16" href="#">Buttons</a><a class="px-5 py-2 text-16" href="#">Checkboxes</a><a class="px-5 py-2 text-16" href="#">Inputs</a><a class="px-5 py-2 text-16" href="#">Radios</a><a class="px-5 py-2 text-16" href="#">Tags</a><a class="px-5 py-2 text-16" href="#">Toggles</a><a class="px-5 py-2 text-16" href="#">Tooltips</a>    </ul>
-  </li>
-  <li class="submenu mb-0">
-    <a class="px-5 py-3 collapsed" data-toggle="collapse" data-parent="#" href="#components" aria-expanded="true" aria-controls="collapseOne">
-     <h4 class="text-white mb-0">Components</h4>
-    </a>
-    <ul id="components" class="collapse">
-      <a class="px-5 py-2 text-16" href="#">Accordions</a><a class="px-5 py-2 text-16" href="#">Alerts</a><a class="px-5 py-2 text-16" href="#">Breadcrumb</a><a class="px-5 py-2 text-16" href="#">Dropdowns</a><a class="px-5 py-2 text-16" href="#">Lists</a><a class="px-5 py-2 text-16" href="#">Pagination</a><a class="px-5 py-2 text-16" href="#">Panels</a><a class="px-5 py-2 text-16" href="#">Popover</a><a class="px-5 py-2 text-16" href="#">Stepper</a><a class="px-5 py-2 text-16" href="#">Tables</a><a class="px-5 py-2 text-16" href="#">Tabs</a>      <a class="px-5 py-2 text-16" href="#">Buckets</a><a class="px-5 py-2 text-16" href="#">Cards</a><a class="px-5 py-2 text-16" href="#">Form</a><a class="px-5 py-2 text-16" href="#">Modals</a><a class="px-5 py-2 text-16" href="#">Ratings</a><a class="px-5 py-2 text-16" href="#">Search</a><a class="px-5 py-2 text-16" href="#">Timelines</a>    </ul>
-  </li>
-
-  <!-- <li class="submenu">
-    <h4 class="text-white mb-0">More</h4>
+         <a href="../" class="logo"> <img alt="brand logo" src="../site-images/pu-logo.png" width="100"/></a>
+         <article class="user-menu">
+  <header id="user-menu-hd" class="margin-bottom-none collapsed" data-toggle="collapse" data-target="#user-menu-ft">
+    <p><img class="avatar" src="../site-images/avatar.svg" alt="John's profile"/>
+      <strong>
+        John Smith
+      </strong>
+    </p>
+  </header>
+  <footer id="user-menu-ft" class="collapse">
+    <p>
+      <button type="button" class="btn btn-primary">
+        View Profile</button>
+    </p>
     <ul>
       <li>
-        <a href="utilities">Utility classes</a>
+        <a class="dropdown-item" href="#">
+          <i aria-hidden="true" title="beta switch" class="gel-icon-logo"></i>
+          Switch to Live
+        </a>
       </li>
       <li>
-        <a href="customization">Customization</a>
+        <a class="dropdown-item" href="#">
+          <i aria-hidden="true" title="beta switch" class="gel-icon-beta-feedback"></i>
+          Beta Feedback
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i aria-hidden="true" title="beta switch" class="gel-icon-logout"></i>
+          Log Out</a>
       </li>
     </ul>
-  </li> -->
-</ul>
-     </menu>
-   </aside>
+  </footer>
+</article>
+         <menu class="scroll">
+           <br />
+<b>Notice</b>:  Undefined variable: parent in <b>/Applications/MAMP/htdocs/mockup/app/base-t3.php</b> on line <b>44</b><br />
+<br />
+<b>Warning</b>:  include(_partials/menu/.html): failed to open stream: No such file or directory in <b>/Applications/MAMP/htdocs/mockup/app/base-t3.php</b> on line <b>44</b><br />
+<br />
+<b>Warning</b>:  include(): Failed opening '_partials/menu/.html' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.1.6/lib/php') in <b>/Applications/MAMP/htdocs/mockup/app/base-t3.php</b> on line <b>44</b><br />
+         </menu>
+       </aside>
 
-  <!-- ************  page body ************ -->
-	<main class="sg d-flex flex-column flex-fill" role="main layout">
-    <!-- ************  page header ************ -->
-    <header id="gel-header" class="py-3 py-xl-5" role="banner">
-        <div class="container py-3 py-xl-5">
-          <div class="row">
-            <div class="offset-xl-1 col-xl-11 offset-xxl-2 col-xxl-8">
-              <h1 class="display-3 text-primary">Iconography</h1>
-              <blockquote class="tagline text-muted">  The design of system icons is simple, modern, friendly, and sometimes quirky. Each icon is reduced to its minimal form, with every idea edited to its essence. The designs ensure readability and clarity even at small sizes.
+  <!-- ************  page header ************ -->
+        <header id="gel-header" role="banner">
+          <div class="container">
+            <div class="row">
+                            <div class="col-12">
+                <h1 class="page-title">Iconography</h1>
+                <blockquote class="tagline">  The design of system icons is simple, modern, friendly, and sometimes quirky. Each icon is reduced to its minimal form, with every idea edited to its essence. The designs ensure readability and clarity even at small sizes.
 </blockquote>
-            </div>
+              </div>
+                        </div>
           </div>
-        </div>
-    </header>
-          <nav id="gel-subpages" role="navigation">
-         <div class="container">
-           <div class="row">
-             <div class="offset-xl-1 col-xl-11 offset-xxl-2 col-xxl-8">
-                <nav class="page-tabs nav" role="tablist">
-                          <li class="nav-item">
+      </header>
+   <!-- ************  page sub pages ************ -->
+          <li class="nav-item">
           <a class="nav-link active" id="icons-tab" data-toggle="tab" href="#icons" role="tab" aria-controls="icons" aria-selected="true">Icons <span class="badge badge-info text-sm">193</span></a>
         </li>
         <li class="nav-item">
@@ -180,16 +181,11 @@
           <a class="nav-link" id="usage-tab" data-toggle="tab" href="#usage" role="tab" aria-controls="usage" aria-selected="false">How to use</a>
         </li>
   <!-- Nav tabs -->
-                </nav>
-              </div>
-            </div>
-         </div>
-       </nav>
-    		<section class="container flex-grow-1 py-5" role="main content">
-      <div  class="row">
-        <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
-          <!-- ***************  page content starts  ******************-->
-    			<!-- Tab panes -->
+
+  <!-- ************  page body ************ -->
+	<main id="gel-main" role="main">
+		<section class="container">
+			<!-- Tab panes -->
 <div class="tab-content">
 <!-- icon library -->
   <div class="tab-pane active" id="icons" role="tabpanel" aria-labelledby="icons-tab">
@@ -1573,27 +1569,41 @@
     </div>
 </div>
 
-          <!-- *************** page content ends *************** -->
-      </div>
-		</section>
-    <footer id="gel-footer" role="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <a class="text-muted" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Slack" href="https://pageup.slack.com/messages/C2X8J0V70/team/">
-              <i aria-hidden="true" class="gel-icon-slack" title="Slack"></i>
-            </a>
-            <a class="text-muted" data-toggle="tooltip" data-placement="top" target="_blank" href="https://github.com/PageUpPeopleOrg/PU-Styleguide" data-original-title="Github">
-                <i class="gel-icon-github" aria-hidden="true"></i></a>
-          </div>
-          <div class="col-6 text-right">
-            Design by DUX team 2019
-            <a target="_blank" href="https://www.pageuppeople.com/">PageUp</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-	</main>
+    </section>
+  </main>
+  <!-- drawer -->
+<aside id="gel-drawer" role="complementary">
+    <div class="drawer-knob">
+        <button type="button" aria-label="Close drawer" class="btn btn-icon" aria-expanded="true">
+        </button>
+    </div>
+    <div class="drawer-inner">
+    </div>
+</aside>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        toggleDrawer();
+    });
+    /*****************************************
+        Menu toggle
+    *****************************************/
+    const drawer = document.querySelector('#gel-drawer');
+    const knob = document.querySelector('.drawer-knob');
+
+    function toggleDrawer() {
+        knob.addEventListener('click', function () {
+            drawer.classList.toggle('open');
+            if (drawer.classList == "") {
+                setAriaExpanded('false');
+                //  setMenuState(false);
+            } else {
+                setAriaExpanded('true');
+                //  setMenuState(true);
+            }
+        });
+    }
+</script> 
   <!-- ************  page footer ************ -->
 <!-- BETA feedback -->
 <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1783,4 +1793,4 @@
 </div><script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
 <script src="../js/gel.js"></script>
 </body>
-</html>
+</html></div>

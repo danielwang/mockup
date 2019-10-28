@@ -7,7 +7,7 @@
 // echo "<p>latest <a href='index.html'>Styleguide</a> has been generated</p>";
 
 /* read php files from folders */
-$folders = array("pages", "ui");
+$folders = array("pages", "ui", "templates");
 for ($i = 0; $i < count($folders); $i++) {
   echo "<ul><li>";
   recurseDir($folders[$i]);

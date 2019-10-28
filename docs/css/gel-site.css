@@ -458,42 +458,10 @@ main.sg {
   border-bottom-left-radius: 6px;
   border-right: 0;
 }
-
-/* .drawer-knob:before {
-  content: "";
-  width: 34px;
-  height: 17px;
-  border-top: 1px solid #bac6d2;
-  transform: skewY(-30deg);
-  background: white;
-  position: absolute;
-  top: -7px;
-  right: 0;
-  z-index: 1;
-  border-left: 1px solid #bac6d2;
-  border-top-left-radius: 10px;
-}
-.drawer-knob:after {
-  content: "";
-  width: 34px;
-  height: 17px;
-  border-bottom: 1px solid #bac6d2;
-  transform: skewY(30deg);
-  background: white;
-  position: absolute;
-  top: 24px;
-  right: 0;
-  z-index: 1;
-  border-left: 1px solid #bac6d2;
-  border-top-left-radius: 10px;
-}
-
-.drawer-knob button {
-  position: absolute;
-  z-index: 5;
-} */
 .drawer-inner {
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
 }
+.avatar{width:36px;height:36px;line-height:36px;font-size:.875rem}.avatar,.avatar-sm{background:#d6dde4;text-align:center;display:inline-block;font-weight:400;font-family:Proxima Nova Semibold;border-radius:50%}.avatar-sm{width:24px;height:24px;line-height:24px;font-size:.75rem}.avatar-md{width:48px;height:48px;line-height:48px;font-size:1.25rem}.avatar-lg,.avatar-md{background:#d6dde4;text-align:center;display:inline-block;font-weight:400;font-family:Proxima Nova Semibold;border-radius:50%}.avatar-lg{width:80px;height:80px;line-height:80px;font-size:1.5rem}
+.commentary .comment{list-style:none;margin:0;padding:0}.commentary .comment-item:not(:last-child){margin-bottom:1rem;border-bottom:1px solid #bac6d2;padding-bottom:.5rem}.commentary .comment-head{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.commentary .comment-head .comment-info{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;margin-left:.5rem;margin-right:.5rem}.commentary .comment-head .comment-info h5{margin-bottom:0}.commentary .comment-head .comment-info time{color:#536b81;font-weight:400;font-family:Proxima Nova Semibold;font-size:.75rem}.commentary .comment-head .comment-action{margin-top:.25rem;margin-right:.25rem}.commentary .comment-head .comment-action [class^=gel-icon-]{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.commentary .comment-body{margin:.5rem 0}.commentary .commentbox{background-color:#f1f4f6;border-radius:.375rem;display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:1rem}.commentary .commentbox.expanded{padding:1rem}.commentary .commentbox-input{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}

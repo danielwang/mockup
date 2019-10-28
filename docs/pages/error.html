@@ -1,5 +1,5 @@
 <!-- ******************
-*** T2 product template ***
+*** T2 SPA template ***
 ******************  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -32,41 +32,85 @@
       }
       </script>
     
-  <!-- ************  page jumbotron ************ -->
-  <header class="jumbotron" role="jumbotron">
-    <div class="container container-max">
-      <div class="error-page">
-  <div class="row">
-    <div class="col-sm-7 d-flex align-items-center order-2 order-sm-1">
-      <section>
-        <h1 class="display-1">500
-        </h1>
-        <h1>Our bad, this makes us very sad</h2>
-        <p>Our technical team has been advised of the situation. Maybe try refreshing the page later.</p>
-        <dl class="row mt-5">
-          <span class="col-6 col-xl-7">
-            <dt class="text-sm">Date and time</dt>
-            <dd>4 Mar 2019, 9:34am UTC+11:00</dd>
-          </span>
-          <span class="col-6 col-xl-5">
-            <dt class="text-sm">Reference</dt>
-            <dd>12456384</dd>
-          </span>
-        </dl>
-        <p>
-          <a href="#" class="btn btn-outline-primary">Contact Us</a>
-        </p>
-      </section>
-    </div>
-    <div class="col-sm-5 order-1">
-        <img class="img-fluid error-image" src="https://ui.pageuppeople.com/gel/images/illustrations/error.svg" title="error page">
-    </div>
+<!-- ************ navbar ************ -->
+<nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
+  <div class="container-fluid">
+    <!-- logo  -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../site-images/pu-logo.png" width="100"/></a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <!-- user panel -->
+      <li id="nav-user-panel" class="nav-item user-panel">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="../site-images/avatar.svg" alt="John's profile">
+    John
+  </a>
+  <div class="dropdown-menu dropdown-menu-right user-menu">
+    <!-- User name -->
+    <header class="user-header">
+      <h5 class="margin-bottom-none">John Smith</h5>
+      <p>john.smith@pageuppeople.com</p>
+      <p>
+        <button type="button" class="btn btn-primary">
+          View Profile</button>
+      </p>
+    </header>
+    <footer>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-logo"></i>
+        Switch back to Live
+      </a>
+      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#feedbackModal">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-beta-feedback"></i>
+        Give Beta feedback
+      </a>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="beta switch" class="gel-icon-alpha"></i>
+        Experiment Alpha
+      </a>
+      <a class="dropdown-item" href="#">
+        <i aria-hidden="true" title="logout" class="gel-icon-logout"></i>
+        Log out</a>
+    </footer>
   </div>
-</div>
-    </div>
+</li>      <!-- help -->
+      <li id="nav-help" class="nav-help nav-item">
+  <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" aria-label="Help">
+    <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
+    <span class="sr-only">Help</span></a>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a href="#" class="dropdown-item" title="Print">
+      <i class="gel-icon-print" aria-hidden="true"></i>
+      Print
+    </a>
+    <a href="#" class="dropdown-item" title="Feedback" data-toggle="modal" data-target="#feedbackModal2">
+      <i class="gel-icon-feedback" aria-hidden="true"></i>
+      Feedback</a>
+    <a href="#" class="dropdown-item" title="Knowledge portal">
+      <i class="gel-icon-knowledge-portal" aria-hidden="true"></i>
+      Knowledge portal</a>
+    <a href="#" class="dropdown-item" title="Live support">
+      <i class="gel-icon-support" aria-hidden="true"></i>
+      Live Support</a>
+    <a href="#" class="dropdown-item" title="Raise support case">
+      <i class="gel-icon-bullhorn" aria-hidden="true"></i>
+      Raise support case</a>
+  </div>
+</li>    </ul>
+  </div>
+</nav>
+<!-- ************  page header ************ -->
+  <header id="gel-header" role="banner">
+      <div class="containercontainer-max">
+        <div class="row">
+                    <div class="col-12">
+            <h1 class="page-title">Error</h1>
+            <blockquote class="tagline"></blockquote>
+          </div>
+                </div>
+      </div>
   </header>
-
-  <!-- ************  page body ************ -->
+    <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
         		<section class="container container-max">
 			<hr class="mb-5"/>
