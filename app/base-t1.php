@@ -1,5 +1,5 @@
 <!-- ******************
-*** T1 product template ***
+*** T1 generic template ***
 ******************  -->
 <?php
   $site = "MockUp";
@@ -15,7 +15,7 @@
     <a href="#" class="notification-link">check it out!</a><button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button></div>
 <?php endblock() ?>
 
-   <!-- ************ topbar ************ -->
+   <!-- ************ navbar ************ -->
    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
        <div class="container-fluid">
          <!-- logo  -->
