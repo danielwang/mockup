@@ -1,4 +1,4 @@
-<?php $pageTitle = "Operations Manager"; $pageAction = true; $parent = "adm"; include '../base-t2.php';?>
+<?php $pageTitle = "Operations Manager"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <style>
 .toc a {
@@ -41,14 +41,33 @@
     right:2rem;
     display: none;
 }
-@media (max-width: 768px){
-.mobilePanel{
+
+.smoothscroll{
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+}
+.mid-panel{
+   height:80vh;
+   overflow: auto;
+}
+.timeline{
+   height:70vh;
+   overflow: auto;
+   display: block;
+}
+
+.thirdPanel{
+   
+}
+@media (max-width: 767px){
+.thirdPanel{
     position: fixed;
     display: block !important;
     max-width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background: white;
     z-index: 1000;
+    top: 5.75rem;
 }
 }
 </style>
@@ -58,22 +77,24 @@
 <?php endblock() ?>
 
 <?php startblock('page-actions') ?>
-<span class="badge badge-warning d-sm-none"><i class="gel-icon-iphone"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> XS &lt; 576px </span> 
-<span class="d-none badge badge-info d-sm-inline-block d-md-none"><i class="gel-icon-iphone"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> - SM ≥ 576px
-</span>
-<span class="d-none badge badge-success d-md-inline-block d-lg-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet"></i><i class="gel-icon-laptop disabled"></i> - MD ≥ 768px
-</span>
-<span class="d-none badge badge-danger d-lg-inline-block d-xl-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet"></i><i class="gel-icon-laptop disabled"></i> - LG ≥ 992px
-</span>
-<span class="d-none badge badge-warning d-xl-inline-block d-xxl-none"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop"></i> - XL ≥ 1200px
-</span>
-<span class="d-none badge badge-info d-xxl-inline-block"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop"></i> - XXL ≥ 1600px
-</span>
+<div class="viewport-detector">
+   <span class="badge badge-warning d-sm-none"><i class="gel-icon-iphone"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> XS &lt; 576px </span> 
+   <span class="d-none badge badge-info d-sm-inline-block d-md-none"><i class="gel-icon-iphone rotate-90"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> - SM ≥ 576px
+   </span>
+   <span class="d-none badge badge-success d-md-inline-block d-lg-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet rotate-90"></i><i class="gel-icon-laptop disabled"></i> - MD ≥ 768px
+   </span>
+   <span class="d-none badge badge-danger d-lg-inline-block d-xl-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet"></i><i class="gel-icon-laptop disabled"></i> - LG ≥ 992px
+   </span>
+   <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop"></i> - XL ≥ 1200px
+   </span>
+   <span class="d-none badge badge-info d-xxl-inline-block"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop scale-x"></i> - XXL ≥ 1600px
+   </span>
+</div>
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
 <div class="row">
-   <div class="d-none d-lg-block col-lg-3 col-xl-2 col-xxl-2">
+   <div class="d-none d-xl-flex col-xl-2 justify-content-xxl-end">
       <nav role="navigation" aria-label="Table of content" class="toc">
          <h4 aria-hidden="true">Content</h4>
          <ol>
@@ -87,8 +108,9 @@
          </ol>
       </nav>
    </div>
-   <div class="col-md-7 col-lg-6 col-xxl-6">
+   <div class="smoothscroll mid-panel mt-n-5 pt-5 col-md-7 col-lg-8 col-xl-6 col-xxl-5 offset-xxl-1">
       <form novalidate="novalidate" class="card needs-validation">
+         <h3>Section Heading one</h3>
          <div class="row">
             <div class="col-lg-6 col-xxl-4">
                <div class="form-group">
@@ -171,6 +193,7 @@
          </div>
       </form>
       <form novalidate="novalidate" class="card needs-validation mt-5 ">
+         <h3>Section Heading Two</h3>
          <div class="row">
             <div class="col-lg-6 col-xxl-4">
                <div class="form-group">
@@ -253,7 +276,7 @@
          </div>
       </form>
    </div>
-   <div class="d-none d-md-block col-md-5 col-lg-3 col-xxl-4 mobilePanel">
+   <div class="d-none d-md-block col-md-5 col-lg-4 col-xl-3 offset-xl-1 col-xxl-3 mt-n-5 border-left bg-white thirdPanel">
    <div class="">
     <ul role="tablist" class="nav nav-tabs-line">
         <li class="nav-item"><a data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link active">History</a></li>
@@ -261,7 +284,7 @@
     </ul>
     <div id="myTabContent" class="tab-content">
         <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane show active">
-            <ul class="timeline">
+            <ul class="timeline smoothscroll">
             <li class="timeline-item">
                 <div class="timeline-info"><span class="text-label">March 12, 2016</span></div>
                 <div class="timeline-marker"></div>
@@ -305,11 +328,11 @@
             </ul>
         </div>
         <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane">
-        <article class="commentary">
-            <ol aria-label="comments" class="comment" style="max-height: 200px; height: 500px; overflow-y: auto;">
+            <article class="commentary d-flex flex-column justify-content-between h-100">
+            <ol aria-label="comments" class="comment smoothscroll" style="max-height: 300px; height: 500px; overflow-y: auto;">
                 <li class="comment-item">
                     <div class="comment-head">
-                        <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" class="img-fluid"></span>
+                        <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" width="35px"></span>
                         <span class="comment-info">
                         <h5>Peter Parker</h5>
                         <time aria-label="time">1 day ago</time>
@@ -335,7 +358,7 @@
                 </li>
                 <li class="comment-item">
                     <div class="comment-head">
-                        <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" class="img-fluid"></span>
+                        <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" width="35px"></span>
                         <span class="comment-info">
                         <h5>Peter Parker</h5>
                         <time aria-label="time">3 hours ago</time>
@@ -361,7 +384,7 @@
                 </li>
                 <li class="comment-item">
                     <div class="comment-head">
-                        <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" class="img-fluid"></span>
+                        <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" width="35px"></span>
                         <span class="comment-info">
                         <h5>Peter Parker</h5>
                         <time aria-label="time">1 hours ago</time>
@@ -387,7 +410,7 @@
                 </li>
             </ol>
             <div aria-label="comment box" class="commentbox expanded">
-                <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" class="img-fluid"></span>
+                <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" width="35px"></span>
                 <div class="commentbox-input">
                     <label for="comment-input-expanded" class="sr-only">Make a comment</label>
                     <textarea id="comment-input-expanded" class="form-control"></textarea>
