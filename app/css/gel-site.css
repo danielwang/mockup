@@ -19,7 +19,7 @@
     src: url("fonts/BLOKK/BLOKKNeue-Regular.svg") format("svg");
   }
 }
-
+html { scroll-behavior:smooth }
 .blokk * {
   font-family: "BLOKK" !important;
   color: #bac6d2;
