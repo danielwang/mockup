@@ -1,6 +1,6 @@
-<?php $pageTitle = "Error"; $pageLayout="container-max"; include '../base-t2.php';?>
+<?php $pageTitle = "Error"; $pageLayout=" container-max"; include '../base-t4.php';?>
 
-<?php startblock('jumbotron');?>
+<?php startblock('page-body')?>
 <div class="error-page">
   <div class="row">
     <div class="col-sm-7 d-flex align-items-center order-2 order-sm-1">
@@ -29,17 +29,4 @@
     </div>
   </div>
 </div>
-<?php endblock()?>
-<?php startblock('page-body')?>
-<hr class="mb-5"/>
-<h3>Exception</h3>
-<p>System.IndexOutOfRangeException: Index 0 is either negative or above rows count.<br />
-at System.Data.DataView.GetRow(Int32 index)<br />
-at System.Data.DataView.get_Item(Int32 recordIndex)<br />
-at PageUp.DB.TableAccess.GetField(String strFieldName) in C:\repos\pageup\Assemblies\DB\TableAccess.cs:line 342<br />
-at PageUp.DB.TableAccess.GetFieldObject(String strFieldName, Object objDefault) in C:\repos\pageup\Assemblies\DB\TableAccess.cs:line 401<br />
-at PageUp.DB.TableAccess.GetFieldInt(String strFieldName) in C:\repos\pageup\Assemblies\DB\TableAccess.cs:line 369<br />
-at PageUp.BusinessLayer.ApplicantCardBL.GetAppCardData(Int32 applicantId, Int32 applicationId, Int32 pageSize, Boolean shouldFilterNotes, Boolean isGridInvalid, String checkBoxes, Nullable`1 guid, Boolean isPUAdmin) in C:\Repos\pageup\Assemblies\PageUp.BusinessLayer\ApplicantCardBL.cs:line 145<br />
-at PageUp.People.Admin.Controllers.ApplicantController.Index(Int32 lApplicantId, Nullable`1 sGuid, Int32 lApplicationId, Boolean bGridInvalid, Int32 lDocumentId, Boolean stripHtml, Boolean printable, String sCheckBoxes, Boolean bFilterNotes) in C:\Repos\pageup\WebSites\PageUpPeople\Controllers\ApplicantController.cs:line 261<br />
-at lambda_method(Closure , ControllerBase , Object[] )</p>
 <?php endblock()?>
