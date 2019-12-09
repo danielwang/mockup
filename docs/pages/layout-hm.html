@@ -1,5 +1,5 @@
 <!-- ******************
-*** T3  blokk ***
+*** T1 generic template ***
 ******************  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="noindex">
-      <title>Global Experience Language - MockUp</title>
+      <title>Hiring manager dashboard - MockUp</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
@@ -31,11 +31,12 @@
          window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=150,left=150,width=1280,height=960");
       }
       </script>
-    <div <div role="notification" class="mb-0 alert notification-info alert-dismissible fade show"><i aria-hidden="true" class="gel-icon-info gel-icon-lg"></i>
+    
+<div role="notification" class="mb-0 alert notification-info alert-dismissible fade show"><i aria-hidden="true" class="gel-icon-info gel-icon-lg"></i>
     This is a info notification
     <a href="#" class="notification-link">check it out!</a><button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button></div>
 
-   <!-- ************ topbar ************ -->
+   <!-- ************ navbar ************ -->
    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
        <div class="container-fluid">
          <!-- logo  -->
@@ -44,11 +45,61 @@
            <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../site-images/pu-logo.png" width="100"/></a></li>
          </ul>
          <ul class="navbar-nav">
-           <br />
-<b>Warning</b>:  include(_partials/nav/ui.html): failed to open stream: No such file or directory in <b>/Applications/MAMP/htdocs/mockup/app/base-t3.php</b> on line <b>28</b><br />
-<br />
-<b>Warning</b>:  include(): Failed opening '_partials/nav/ui.html' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.1.6/lib/php') in <b>/Applications/MAMP/htdocs/mockup/app/base-t3.php</b> on line <b>28</b><br />
-           <!-- user panel -->
+           <li class="nav-item d-none d-xl-flex">
+  <a class="nav-link" href="jobs">Jobs</a>
+</li>
+<li class="nav-item d-none d-xl-flex">
+  <a class="nav-link" href="#">Applicants</a>
+</li>
+<li class="nav-item d-none d-xl-flex">
+  <a class="nav-link" href="#">Reports</a>
+</li>
+<li class="nav-item d-none d-xl-flex">
+  <a class="nav-link" href="settings">Settings</a>
+</li>
+<li class="nav-item">
+  <form class="search-group form-inline" role="search">
+    <label class="sr-only" for="quick-search" aria-label="Quick Search">
+      Quick Search</label>
+    <input id="quick-search" class="form-control" placeholder="Quick search" type="search">
+    <button class="btn-submit">
+      <i aria-hidden="true" class="gel-icon-search gel-icon-lg"></i>
+      <span class="sr-only">Quick Search</span>
+    </button>
+  </form>
+</li>
+<li class="nav-item recent-items">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recent items</a>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a title="Daniel Appllicant" class="dropdown-item" href="#" onclick="popupWindow('../pages/applicant-card')">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Mr Daniel Appllicant</a>
+    <a title="Elizabeth Appllicant" class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Miss Elizabeth Appllicant</a>
+    <a title="Senior project manager" class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
+      Senior project manager</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
+      Administrator - Head Office</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Bobby Employee</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
+      Miss Elizabeth Appllicant</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Frank Employee</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Position Description" class="gel-icon-doc"></i>
+      Business Development Executive</a>
+    <a class="dropdown-item" href="#">
+      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
+      Alexsander Employee</a>
+  </div>
+</li>           <!-- user panel -->
            <li id="nav-user-panel" class="nav-item user-panel">
   <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="../site-images/avatar.svg" alt="John's profile">
     John
@@ -149,71 +200,58 @@
          <menu class="scroll">
            <ul>
   <li class="submenu">
-    <h4>Introduction</h4>
+    <h4>Dashboard</h4>
     <ul>
       <li>
-        <a href="introduction">What is GEL?</a>
-      </li>
-      <li>
-        <a href="principles">Design Principles</a>
-      </li>
-      <li>
-        <a href="accessibility">Accessibility</a>
-      </li>
-      <li>
-        <a href="personas">Personas</a>
-      </li>
-      <li>
-        <a href="installation">Installation</a>
+        <a href="layout-hm">My Home</a>
       </li>
     </ul>
   </li>
   <li class="submenu">
-    <h4>Foundations</h4>
+    <h4>My Jobs</h4>
     <ul>
       <li>
-        <a href="colours">Colour Palettes</a>
+        <a href="#">New requisition</a>
       </li>
       <li>
-        <a href="typography">Typography</a>
+        <a href="#">New contractor requisition</a>
       </li>
       <li>
-        <a href="icons">Iconography</a>
+        <a href="jobs">Requisitions open</a>
       </li>
       <li>
-        <a href="grids">Responsive Grids</a>
+        <a href="empty">Advertisements</a>
+      </li>
+      <li>
+        <a href="#">Assigned applications</a>
+      </li>
+      <li>
+        <a href="#">Interviews</a>
+      </li>
+      <li>
+        <a href="new-starter">New starter</a>
       </li>
     </ul>
   </li>
   <li class="submenu">
-    <h4>Core elements</h4>
+    <h4>Events</h4>
     <ul>
       <li>
-        <a href="atoms">Atoms</a>
+        <a href="#">New event</a>
       </li>
       <li>
-        <a href="molecules">Molecules</a>
-      </li>
-      <li>
-        <a href="organisms">Organisms</a>
-      </li>
-      <li>
-        <a href="templates">Templates</a>
-      </li>
-      <li>
-        <a href="states">States</a>
+        <a href="#">Manage events</a>
       </li>
     </ul>
   </li>
-  <!-- <li class="submenu"> <h4>Documentations</h4> <ul> <li> <a href="#">Class Naming Convention</a> </li> </ul> </li> -->
   <li class="submenu">
     <h4>More</h4>
     <ul>
       <li>
-        <a href="utilities">Utility classes</a>
+        <a href="#">Reports</a>
       </li>
       <li>
-        <a href="customization">Customization</a>
+        <a href="settings">Settings</a>
       </li>
     </ul>
   </li>
@@ -225,108 +263,167 @@
           <div class="container">
             <div class="row">
                             <div class="col-12">
-                <h1 class="page-title">Global Experience Language</h1>
-                <blockquote class="tagline">Transform the way our customers use and interact with our product by creating experiences that are simple and delightful</blockquote>
+                <h1 class="page-title">Hiring manager dashboard</h1>
+                <blockquote class="tagline">Welcome John, this is your manager dashboard where you will see all your tasks organised in various stages.
+</blockquote>
               </div>
                         </div>
           </div>
       </header>
    <!-- ************  page sub pages ************ -->
-    
+  
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
 		<section class="container">
 			
+<!-- 4 cards in a row without guidelines  -->
 <div class="row">
-  <div class="col-md-6 col-xl-8 mb-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h4 class="sg-heading mb-4">What is GEL?</h4>
-        <p class="text-16">
-          PageUp GEL offers visual style, accessible UI components, charts, editorial guidance, UX patterns, and branding released as a HTML & CSS framework, Sketch, and other PDF & AI templates and documented at gel.pageuppeople.com produced by UX team in
-          order to serve 10+ web apps, a few native app and limited branding products and experiences.
-          <p></div>
-        </div>
-      </div>
-      <div class="col-md-6 col-xl-4 mb-4">
-        <a class="card h-100 text-center" href="principles">
-          <img class="illustrations" src="../images/illustrations/pencil.svg">
-          <div class="card-body">
-            <h4 class="sg-heading mb-4">Design Principles</h4>
-            <p class="text-muted">Understand how we approach design for our products with our core principles.</p>
-          </div>
-        </a>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/pd.svg" alt="Position Description panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Position Description</h4>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">16</span> Lorem ipsum dolor</a></p>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">23</span> Ametetur adipiscing</a></p>
+        <p class="mt-4"><a title="Manage position descriptions" role="button" href="#" class="btn btn-outline-primary btn-block text-truncate">Manage position descriptions</a></p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xl-4 mb-4">
-        <div class="card h-100 text-center">
-          <img class="illustrations" src="../images/illustrations/core.svg">
-          <div class="card-body">
-            <h4 class="sg-heading mb-4">Foundations</h4>
-            <p class="text-left">Foundations are broken down into two levels. Digital foundations are applicable to all our digital products — think of them as the overarching brand and digital guidelines. These can be brand look, tone, formatting, and guiding principles.
-            </p>
-            <p class="text-left">Product foundations are specific to a particular product(s), and cover guidelines for things like:</p>
-            <ul class="text-left">
-              <li>
-                <a href="typography">Typography</a>
-              </li>
-              <li>
-                <a href="colours">Colour Palettes</a>
-              </li>
-              <li>
-                <a href="icons">Iconography</a>
-              </li>
-              <li>
-                <a href="grids">Responsive Grids</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/job.svg" alt="Jobs panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Jobs</h4>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">11</span> Requisition</a></p>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">25</span> Team requisition open</a></p>
+        <p class="mt-4"><button title="Create a job" type="button" class="btn btn-outline-primary btn-block">Create a requisition</button></p>
+        <p><button title="Raise a contractor requisition" type="button" class="btn btn-outline-primary btn-block text-truncate">New contractor requisition</button></p>
       </div>
-      <div class="col-xl-8 mb-4">
-        <div class="row">
-          <div class="col-xl-12 mb-4">
-            <div class="card h-100" href="atoms">
-              <img class="ml-3 max-vw-50 max-vw-md-30 max-vw-xxl-10" src="../images/illustrations/atomicstory.svg">
-              <div class="card-body">
-                <h4 class="sg-heading mb-4">Core Components</h4>
-                <p>It provides HTML, CSS, SASS and JavaScript to describe how all of the core interface elements should look and behave. The GUI can also be used as a point of reference for UX and UI designers.</p>
-                <p>Atomic design is the methodology we follow. There are five distinct levels in atomic design,
-                  <a href="atoms">Atoms</a>,
-                  <a href="molecules">Molecules</a>,
-                  <a href="organisms">Oraganisms</a>,
-                  <a href="templates">Templates</a>
-                  and
-                  <a target="_blank" href="https://mockup.pageuppeople.com/">Pages</a>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/approval.svg" alt="Approval panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Approval</h4>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">6</span> Awaiting your approval</a></p>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">9</span> Approved</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/sourcing.svg" alt="Advertising panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Advertising</h4>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">12</span> Advertisements</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/list.svg" alt="Shortlisting panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Shortlisting</h4>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">1</span> Jobs have applicants for review</a></p>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">2</span> Applicants assigned to you for review</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/panel.svg" alt="Panel panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Panel</h4>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">3</span> Jobs requiring panel review</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/interview.svg" alt="Interview panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Interview</h4>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">4</span> Scheduled interviews</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/offer.svg" alt="Offer panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Offer</h4>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">5</span> Offers awaiting your approval</a></p>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">10</span> New starters</a></p>
+        <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">46</span> New starter tasks</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+    <div class="card h-100 text-center">
+      <img class="illustrations" src="../images/illustrations/contract.svg" alt="Contract panel">
+      <div class="card-body text-16">
+        <h4 class="mb-4">Contract</h4>
+        <p class="card-text"><a class="text-20" href="#">8</a> <a class="link-alt" href="jobs">Lorem ipsum dolor</a></p>
+        <p class="card-text"><a class="text-20" href="#">21</a> <a class="link-alt" href="jobs">Ametetur adipiscing</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="row">
-          <div class="col-sm-6 mb-4 mb-sm-0">
-            <a class="card h-100 text-center" href="accessibility">
-              <img class="illustrations" src="../images/illustrations/key.svg">
-              <div class="card-body">
-                <h4 class="sg-heading mb-4">Accessibility</h4>
-                <p class="text-muted">Products should be accessible to everyone, including those with vision, hearing, cognitive, or motor impairments.</p>
-              </div>
-            </a>
+<!-- 3 cards in a row with guidelines  -->
+<!-- <div class="row">
+  <div class="col-xl-9">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/job.svg" alt="Jobs panel">
+          <div class="card-body text-16">
+            <h4 class="mb-4">Jobs</h4>
+            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">11</span> Requisition</a></p>
+            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">25</span> Team requisition open</a></p>
+            <p class="mt-4"><button title="Create a job" type="button" class="btn btn-outline-primary btn-block">Create a requisition</button></p>
+            <p><button title="Raise a contractor requisition" type="button" class="btn btn-outline-primary btn-block text-truncate">New contractor requisition</button></p>
           </div>
-          <div class="col-sm-6">
-            <div class="card h-100 text-center">
-              <img class="illustrations" src="../images/illustrations/personas.svg" alt="Position Description">
-              <div class="card-body">
-                <h4 class="sg-heading mb-4">Personas</h4>
-                <p>Understand how we approach design for our products with our core principles.</p>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/approval.svg" alt="Approval panel">
+          <div class="card-body text-16">
+            <h4 class="mb-4">Approval</h4>
+            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">6</span> Awaiting your approval</a></p>
+            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">9</span> Approved</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/sourcing.svg" alt="Advertising panel">
+          <div class="card-body text-16">
+            <h4 class="mb-4">Advertising</h4>
+            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">12</span> Advertisements</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="illustrations" src="../images/illustrations/list.svg" alt="Shortlisting panel">
+          <div class="card-body text-16">
+            <h4 class="mb-4">Shortlisting</h4>
+            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">1</span> Jobs have applicants for review</a></p>
+            <p class="card-text"><a class="link-alt" href="jobs"><span class="text-20 text-blue">2</span> Applicants assigned to you for review</a></p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="col-xl-3">
+    <h4>Guidelines / Tips</h4>
+       <p>Lorem ipsum dolort ametetur adipiscing elit, sed do eiusmod tempor edr incididunt ut labore et dolore magna aliqua. </p>
+       <p><a href="#">Ut enim ad minim</a> sersn veniam, quisre sedo nostrud<p>
+  </div>
+</div> -->
     </section>
   </main>
   <!-- drawer -->
@@ -527,4 +624,4 @@
 </div><script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
 <script src="../js/gel.js"></script>
 </body>
-</html></div>
+</html>

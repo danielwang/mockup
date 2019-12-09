@@ -13,7 +13,7 @@
       <meta name="description" content="PageUp GEL Templates">
       <meta name="author" content="daniel.wang" >
       <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://ui.pageuppeople.com/gel/beta/css/gel.min.css">
+      <link rel="stylesheet" href="https://ui.pageuppeople.com/gel/rc/gel.min.css">
       <link rel="stylesheet" href="../css/gel-site.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -258,31 +258,7 @@
     </div>
     <div class="drawer-inner">
     </div>
-</aside>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        toggleDrawer();
-    });
-    /*****************************************
-        Menu toggle
-    *****************************************/
-    const drawer = document.querySelector('#gel-drawer');
-    const knob = document.querySelector('.drawer-knob');
-
-    function toggleDrawer() {
-        knob.addEventListener('click', function () {
-            drawer.classList.toggle('open');
-            if (drawer.classList == "") {
-                setAriaExpanded('false');
-                //  setMenuState(false);
-            } else {
-                setAriaExpanded('true');
-                //  setMenuState(true);
-            }
-        });
-    }
-</script> 
+</aside> 
   <!-- ************  page footer ************ -->
 <!-- BETA feedback -->
 <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
