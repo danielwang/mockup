@@ -141,7 +141,7 @@ form.card:focus-within{
          </ol>
       </nav>
    </div>
-   <div class="smoothscroll mid-panel mt-n-5 pt-5 col-md-7 col-lg-8 col-xl-6 col-xxl-5 offset-xxl-1">
+   <div class="scroll mid-panel mt-n-5 pt-5 col-md-7 col-lg-8 col-xl-6 col-xxl-5 offset-xxl-1">
       <div data-spy="scroll" data-target="#toc-example" data-offset="0">
          <div class="row">
                <div class="col-12">
@@ -248,7 +248,7 @@ form.card:focus-within{
          </ul>
          <div id="myTabContent" class="tab-content">
             <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane show active">
-                  <ul class="timeline smoothscroll">
+                  <ul class="timeline scroll">
                   <li class="timeline-item">
                      <div class="timeline-info"><span class="text-label">March 12, 2016</span></div>
                      <div class="timeline-marker"></div>
@@ -293,7 +293,7 @@ form.card:focus-within{
             </div>
             <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane">
                   <article class="commentary d-flex flex-column justify-content-between h-100">
-                  <ol aria-label="comments" class="comment smoothscroll" style="max-height: 300px; height: 500px; overflow-y: auto;">
+                  <ol aria-label="comments" class="comment scroll" style="max-height: 300px; height: 500px; overflow-y: auto;">
                      <li class="comment-item">
                         <div class="comment-head">
                               <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" width="35px"></span>

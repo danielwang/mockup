@@ -7,27 +7,3 @@
     <div class="drawer-inner">
     </div>
 </aside>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        toggleDrawer();
-    });
-    /*****************************************
-        Menu toggle
-    *****************************************/
-    const drawer = document.querySelector('#gel-drawer');
-    const knob = document.querySelector('.drawer-knob');
-
-    function toggleDrawer() {
-        knob.addEventListener('click', function () {
-            drawer.classList.toggle('open');
-            if (drawer.classList == "") {
-                setAriaExpanded('false');
-                //  setMenuState(false);
-            } else {
-                setAriaExpanded('true');
-                //  setMenuState(true);
-            }
-        });
-    }
-</script>

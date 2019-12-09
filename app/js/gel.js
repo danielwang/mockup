@@ -1,7 +1,7 @@
 /* *************************************** *\
- *   PageUp GEL JS - v1.3.0
+ *   PageUp GEL JS - v1.4.0
  *   Author: Daniel Wang
- *	 Date: 28/12/2018
+ *	 Date: 04/12/2019
  *
 \* *************************************** */
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // read menu state from localStorage
   //  menuState();
   toggleMenu();
-//  setDropdownPosition();
+  toggleDrawer();
 });
 
 
@@ -91,6 +91,24 @@ document.addEventListener('click', closeMenu);
 document.addEventListener('touchstart', closeMenu);
 // escape key to close off
 document.addEventListener('keyup',closeMenu);
+
+/*****************************************
+   Drawer
+*****************************************/
+
+const drawer = document.querySelector('#gel-drawer');
+const knob = document.querySelector('.drawer-knob');
+
+function toggleDrawer() {
+  knob.addEventListener('click', function () {
+    drawer.classList.toggle('open');
+    if (drawer.classList == "") {
+      setAriaExpanded('false');
+    } else {
+      setAriaExpanded('true');
+    }
+  });
+}
 
 /*****************************************
     Hide topbar on Scroll
@@ -239,3 +257,4 @@ if (typeof(outterWrapper) != 'undefined' && outterWrapper != null){
     scrollerReset();
   });
 }
+
