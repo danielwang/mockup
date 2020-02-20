@@ -1,0 +1,10 @@
+<nav role="navigation" aria-label="Table of content" class="toc position-sticky" style="top: 60px" >
+    <h4 aria-hidden="true">Content</h4>
+    <ol>
+       <li class="active"><a href="#section1" aria-selected="true">Section heading 1</a>
+       </li>
+       <?php for ($r=1; $r <= 16; $r++) {?>   
+       <li><a href="#section<?php echo $r ?>" aria-selected="false">Section heading <?php echo $r ?>   </a></li>
+       <?php } ?>
+    </ol>
+ </nav>

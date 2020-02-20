@@ -13,9 +13,10 @@
 <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
   <div class="container-fluid">
     <!-- logo  -->
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav">
       <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="brand logo" src="<?php echo ($resURL) ?>site-images/pu-logo.png" width="100"/><?php endblock() ?></a></li>
     </ul>
+    <?php include "partials/_viewport-detector.html" ?>
     <ul class="navbar-nav">
       <!-- user panel -->
       <?php include ("_partials/nav/user-panel.html");?>
@@ -26,7 +27,7 @@
 </nav>
 <!-- ************  page header ************ -->
 <?php startblock('page-header');?>
-  <header id="gel-header" role="banner">
+  <header id="gel-header" class="position-sticky" role="banner" style="z-index:1; transition: all 0.5s ease 0s;">
       <div class="container<?php echo $pageLayout ?>">
         <div class="row">
           <?php if($pageAction == true) { ?>

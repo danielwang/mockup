@@ -112,34 +112,13 @@ form.card:focus-within{
 <?php endblock() ?>
 
 <?php startblock('page-actions') ?>
-<div class="viewport-detector">
-   <span class="badge badge-warning d-sm-none"><i class="gel-icon-iphone"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> XS &lt; 576px </span> 
-   <span class="d-none badge badge-info d-sm-inline-block d-md-none"><i class="gel-icon-iphone rotate-90"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> - SM ≥ 576px
-   </span>
-   <span class="d-none badge badge-success d-md-inline-block d-lg-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet rotate-90"></i><i class="gel-icon-laptop disabled"></i> - MD ≥ 768px
-   </span>
-   <span class="d-none badge badge-danger d-lg-inline-block d-xl-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet"></i><i class="gel-icon-laptop disabled"></i> - LG ≥ 992px
-   </span>
-   <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop"></i> - XL ≥ 1200px
-   </span>
-   <span class="d-none badge badge-info d-xxl-inline-block"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop scale-x"></i> - XXL ≥ 1600px
-   </span>
-</div>
+   <?php include "partials/_viewport-detector.html" ?>
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
 <div class="row">
    <div class="d-none d-xl-flex col-xl-2 justify-content-xxl-end">
-      <nav id="toc-example" role="navigation" aria-label="Table of content" class="toc" >
-         <h4 aria-hidden="true">Content</h4>
-         <ol>
-            <li class="active"><a href="#section1" aria-selected="true">Section heading 1</a>
-            </li>
-            <?php for ($r=2; $r <= 6; $r++) {?>   
-            <li><a href="#section<?php echo $r ?>" aria-selected="false">Section heading <?php echo $r ?>   </a></li>
-            <?php } ?>
-         </ol>
-      </nav>
+      <?php include "partials/_toc.html" ?>
    </div>
    <div class="scroll mid-panel mt-n-5 pt-5 col-md-7 col-lg-8 col-xl-6 col-xxl-5 offset-xxl-1">
       <div data-spy="scroll" data-target="#toc-example" data-offset="0">

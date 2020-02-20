@@ -1,0 +1,40 @@
+<article class="commentary d-flex flex-column justify-content-between h-100">
+    <ol aria-label="comments" class="comment flex-grow-1 scroll" style="height: 580px; overflow-y: auto;">
+        <?php for ($r=1; $r <= 6; $r++) {?>   
+        <li class="comment-item">
+            <div class="comment-head">
+                <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" width="35px"></span>
+                <span class="comment-info">
+                <h5>Peter Parker</h5>
+                <time aria-label="time">1 day ago</time>
+                </span>
+                <span class="comment-action">
+                <div class="dropdown d-inline-block">
+                    <button type="button" title="Actions" aria-label="actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-icon btn-sm dropdown-toggle no-caret mr-0"><i aria-hidden="true" data-toggle="tooltip" data-placement="top" data-original-title="Actions" class="gel-icon-ellipsis"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right"><a href="#" class="dropdown-item">Edit</a><a href="#" class="text-danger dropdown-item">Delete</a></div>
+                </div>
+                </span>
+            </div>
+            <div class="comment-body">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident <a href="#section<?php echo $r ?>">Something wrong on Section <?php echo $r ?></a></div>
+        </li>
+        <li class="comment-item">
+            <div class="comment-head">
+                <span aria-hidden="true" class="avatar">DW</span>
+                <span class="comment-info">
+                <h5>Daniel Wang</h5>
+                <time aria-label="time">3 hours ago</time>
+                </span>
+            </div>
+            <div class="comment-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </li>
+        <?php } ?>
+    </ol>
+    <div aria-label="comment box" class="commentbox expanded">
+        <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" width="35px"></span>
+        <div class="commentbox-input">
+            <label for="comment-input-expanded" class="sr-only">Make a comment</label>
+            <textarea id="comment-input-expanded" class="form-control"></textarea>
+            <div class="text-right mt-2"><button type="button" class="btn btn-link btn-sm">Cancel</button><button type="button" class="btn btn-outline-primary btn-sm">Send</button></div>
+        </div>
+    </div>
+</article>
