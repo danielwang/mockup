@@ -23,6 +23,7 @@ html { scroll-behavior:smooth }
 .blokk * {
   font-family: "BLOKK" !important;
   color: #bac6d2;
+  word-spacing: -1rem;
 }
 
 .blokk * [class*=" gel-icon-"],
