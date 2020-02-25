@@ -1,13 +1,31 @@
 <?php $pageTitle = "Collaborative Form - Page Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <style>
+#gel-navbar, #gel-header, .position-sticky{
+  position:-webkit-sticky;
+}
 
+.toc ol {
+  border-left: solid 1px #bac6d2;
+}
+.toc ol li > a.active {
+  border-left: 3px solid #0063b0;
+  margin-left: -2px;
+  color: #0063b0;
+}
 .pupdoc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 15px;
 }
-
+.pupdoc .card{
+   transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+.pupdoc .card:focus-within{
+   box-shadow: -5px 0 0 0rem rgba(0,99,176,1);
+   border-color: #0063b0;
+   transform: scale(1.01);
+}
 .pupdoc-left-col{
     grid-column-start:1;
     justify-self: end;
@@ -17,6 +35,7 @@
     grid-column-end:4;
     justify-self: center;
     max-width:720px;
+    transition: all .5s ease 0s;
 }
 .pupdoc-right-col{
     grid-column-start:4;
@@ -24,16 +43,26 @@
     margin: -2rem -1rem 0 0;
     transform: translateX(100%);
     transition: all .5s ease 0s;
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    height: calc(100vh - 130px);
 }
 .pupdoc-right-col .knob{
   position: absolute;
+  z-index: 1;
+  top:0.5rem;
+  left: 1rem;
 }
 .open .pupdoc-right-col{
   transform: translateX(0);
 }
 
+.toc{
+  transition: all 0.3s ease 0s;
+}
 .timeline{
-   height:70vh;
+   height: calc(100vh - 294px);
    overflow: auto;
    display: block;
 }
@@ -43,75 +72,56 @@
 
 @media screen and (max-width: 1200px){
   .pupdoc-left-col{
-      display:none;
+    justify-self: start;
+    grid-column-start:1;
+    grid-column-end:2;  
   }
   .pupdoc-middle-col {
-      grid-column-start:1;
+      grid-column-start:2;
       grid-column-end:5;
   }
   .pupdoc-right-col{
-      display:block;
+      display:none;
       grid-column-start:3;
       grid-column-end:5;
-      transform: translateX(calc(100% - 50px));
       height: calc(100vh - 77px - 60px);
   }
-
+  .open .pupdoc-left-col{
+    display:none;
+  }
   .open .pupdoc-middle-col{
+    grid-column-start:1;
     grid-column-end:3;
   }
+  .open .pupdoc-right-col{
+    display:block;
+  }
 }
+/* iPad portrait down */
 @media screen and (max-width: 992px){
+  .pupdoc-left-col{
+    display:none;  
+  }
+  .pupdoc-middle-col{
+    grid-column-start:1;
+    grid-column-end:5;
+  }
   .open .pupdoc-middle-col{
     grid-column-end:5;
+    display:none; 
   }
 
   .open .pupdoc-right-col{
     margin:0;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 0 !important;
     left: 0;
     z-index: 9999;
     height: 100vh;
     width: 100vw;
-    transform: translateX(0);
   }
+
 } 
-/* 
-
-.pupdoc-middle-col {
-    grid-column-start:1;
-    grid-column-end:5
-}
-.pupdoc-right-col{
-
-  transform: translateX(100%);
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-.full-screen{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    height: 100vh;
-    width: 100vw;
-    transform: translateX(0);
-  }
-
-
-
-
-@media screen and (min-width: 1200px){
-    
-}
-
-@media screen and (min-width: 1600px){
-    .pupdoc-left-col{
-        justify-self: end;
-    }
-} */
-
 
 </style>
 
@@ -122,11 +132,6 @@
 <span class="avatar ml-n-1" title="John Smith">PR</span>
 <span class="avatar ml-n-1" title="John Smith">AB</span>
 
-<span class="item">
-  <a class="btn btn-primary" href="#_" title="Help">
-    Action
-  </a>
-</span>
 <span class="item">
   <div class="btn-group show" data-toggle="tooltip" data-placement="top" data-original-title="More actions">
     <button type="button" class="btn btn-ctrl dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -143,7 +148,7 @@
 </span>
 <span class="item">
     <button type="button" class="knob btn btn-ctrl" >
-      <i aria-hidden="true" class="gel-icon-chat"></i>
+      <i aria-hidden="true" class="gel-icon-happy"></i>
     </button>
 </span>    
 <?php endblock() ?>
@@ -154,7 +159,7 @@
     <?php include "partials/_toc.html" ?>
    </aside>
    <main class="pupdoc-middle-col">
-    <div role="alert" class="alert alert-info alert-dismissible fade show">
+    <div role="alert" class="alert alert-success alert-dismissible fade show">
         <i aria-hidden="true" class="gel-icon-info"></i>
         A simple primary alert with
         <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
@@ -162,13 +167,11 @@
         <i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i>
         </button>
     </div>
-        <div data-spy="scroll" data-target="#toc-example" data-offset="0">
-        <?php include "partials/_form.html" ?>
-        </div>
+    <?php include "partials/_form.html" ?>
    </main>
    <aside class="pupdoc-right-col border-left bg-white"> <!-- mt-n-5 mr-n-3  -->
       <button type="button" class="knob btn btn-icon" >
-        <i aria-hidden="true" class="gel-icon-angle-right"></i>
+        <i aria-hidden="true" class="gel-icon-close gel-icon-2x"></i>
       </button>
       <div class="h-100">
          <ul role="tablist" class="nav nav-tabs-line justify-content-center">
@@ -198,7 +201,8 @@
 const topbar = document.getElementById("gel-navbar");
 const header = document.getElementById("gel-header");
 const footer = document.querySelector('#sticky-footer');
-
+const leftcol = document.querySelector('.pupdoc-left-col .toc');
+const rightcol = document.querySelector('.pupdoc-right-col');
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
@@ -213,12 +217,16 @@ window.onscroll = function() {
         header.style.top = topbar.clientHeight + 'px';
         topbar.style.top = 0;
         footer.style.transform = "translateY(100%)"; // off canvas
+        leftcol.style.top = topbar.clientHeight + header.clientHeight + 30 + 'px';
+        rightcol.style.top = topbar.clientHeight + header.clientHeight + 'px';
       } else {
         //scolling down, hide the navbar and header
         console.log('scrolling down');
         header.style.top = -(header.clientHeight) +'px';
         topbar.style.top = -(topbar.clientHeight) +'px';
         footer.style.transform = "translateY(0)";
+        leftcol.style.top = '15px';
+        rightcol.style.top = 0;
       }
     }
     prevScrollpos = currentScrollPos;
