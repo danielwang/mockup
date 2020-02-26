@@ -58,6 +58,20 @@
 .open .gel-doc-aside{
   transform: translateX(0);
 }
+
+.gel-doc-footer {
+  transition: all .5s ease 0s;
+  position: sticky;
+  position:-webkit-sticky;
+  bottom: 0;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin: 0 -15px -2rem -15px;
+  background-color: white;
+  border-top: 1px solid #bac6d2;
+  padding: 0.5rem 0;
+}
+
 .open .gel-doc-footer{
     grid-column-start:1;
     grid-column-end:4;
@@ -71,17 +85,7 @@
    overflow: auto;
    display: block;
 }
-.gel-doc-footer {
-  transition: all .5s ease 0s;
-  position: sticky;
-  bottom: 0;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  margin: 0 -15px -2rem -15px;
-  background-color: white;
-  border-top: 1px solid #bac6d2;
-  padding: 0.5rem 0;
-}
+
 
 @media screen and (max-width: 1200px){
   .gel-doc-nav{
