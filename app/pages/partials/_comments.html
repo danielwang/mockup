@@ -32,6 +32,12 @@
     <div aria-label="comment box" class="commentbox expanded">
         <span aria-hidden="true" class="avatar"><img alt="Peter Parker" src="https://gel.pageuppeople.com/img/avatar.1a9433e0.svg" width="35px"></span>
         <div class="commentbox-input">
+            <select class="form-control form-control-sm mb-3" id="group1">
+                <option>Choose section (optional)</option>
+                <?php for ($r=1; $r <= 16; $r++) {?>
+                <option>Sections<?php echo $r ?></option>
+                <?php } ?>
+            </select>
             <label for="comment-input-expanded" class="sr-only">Make a comment</label>
             <textarea id="comment-input-expanded" class="form-control"></textarea>
             <div class="text-right mt-2"><button type="button" class="btn btn-link btn-sm">Cancel</button><button type="button" class="btn btn-outline-primary btn-sm">Send</button></div>

@@ -22,7 +22,7 @@
          <!-- logo  -->
          <ul class="navbar-nav mr-auto">
            <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-lg"></i></a></li>
-           <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="brand logo" src="<?php echo ($resURL) ?>site-images/pu-logo.png" width="100"/><?php endblock() ?></a></li>
+           <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="brand logo" src="<?php echo ($resURL) ?>site-images/pu-logo.png" width="135"/><?php endblock() ?></a></li>
          </ul>
          <ul class="navbar-nav">
            <?php include ("_partials/nav/${parent}.html");?>

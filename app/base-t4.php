@@ -12,7 +12,7 @@
        <div class="container <?php echo $pageLayout ?>">
          <!-- logo  -->
          <ul class="navbar-nav mr-auto">
-           <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="brand logo" src="<?php echo ($resURL) ?>site-images/pu-logo.png" width="100"/><?php endblock() ?></a></li>
+           <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="brand logo" src="<?php echo ($resURL) ?>site-images/pu-logo.png" width="135"/><?php endblock() ?></a></li>
          </ul>
        </div>
      </nav>
