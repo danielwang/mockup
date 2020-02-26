@@ -1,0 +1,270 @@
+<?php $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
+
+<style>
+#gel-navbar, #gel-header, .position-sticky{
+  position:-webkit-sticky;
+}
+
+.toc ol {
+  border-left: solid 1px #bac6d2;
+}
+.toc ol li > a.active {
+  border-left: 3px solid #0063b0;
+  margin-left: -2px;
+  color: #0063b0;
+}
+#gel-doc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+}
+.gel-doc-nav{
+    grid-column-start:1;
+    justify-self: end;
+}
+.gel-doc-main {
+    grid-column-start:2;
+    grid-column-end:4;
+    justify-self: center;
+    max-width:720px;
+    transition: all .5s ease 0s;
+}
+
+.gel-doc-main .card{
+   transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+.gel-doc-main .card:focus-within{
+   box-shadow: -5px 0 0 0rem rgba(0,99,176,1);
+   border-color: #0063b0;
+   transform: scale(1.01);
+}
+.gel-doc-aside{
+    grid-column-start:4;
+    grid-column-end:5;
+    margin: -2rem -1rem 0 0;
+    transform: translateX(100%);
+    transition: all .5s ease 0s;
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    height: calc(100vh - 130px);
+}
+.gel-doc-aside .knob{
+  position: absolute;
+  z-index: 1;
+  top:0.5rem;
+  left: 1rem;
+}
+.open .gel-doc-aside{
+  transform: translateX(0);
+}
+.open .gel-doc-footer{
+    grid-column-start:1;
+    grid-column-end:4;
+}
+
+.toc{
+  transition: all 0.3s ease 0s;
+}
+.timeline{
+   height: calc(100vh - 152px);
+   overflow: auto;
+   display: block;
+}
+.gel-doc-footer {
+  transition: all .5s ease 0s;
+  position: sticky;
+  bottom: 0;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin: 0 -15px -2rem -15px;
+  background-color: white;
+  border-top: 1px solid #bac6d2;
+  padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 1200px){
+  .gel-doc-nav{
+    justify-self: start;
+    grid-column-start:1;
+    grid-column-end:2;  
+  }
+  .gel-doc-main {
+      grid-column-start:2;
+      grid-column-end:5;
+  }
+  .gel-doc-aside{
+      display:none;
+      grid-column-start:3;
+      grid-column-end:5;
+      height: calc(100vh - 77px - 60px);
+  }
+  .open .gel-doc-nav{
+    display:none;
+  }
+  .open .gel-doc-main{
+    grid-column-start:1;
+    grid-column-end:3;
+  }
+  .open .gel-doc-aside{
+    display:block;
+  }
+}
+/* iPad portrait down */
+@media screen and (max-width: 992px){
+  .gel-doc-nav{
+    display:none;  
+  }
+  .gel-doc-main{
+    grid-column-start:1;
+    grid-column-end:5;
+  }
+  .open .gel-doc-main{
+    grid-column-end:5;
+    display:none; 
+  }
+
+  .open .gel-doc-aside{
+    margin:0;
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw;
+  }
+
+} 
+
+</style>
+
+<?php startblock('page-actions') ?>
+
+<span class="avatar ml-n-1" title="John Smith">JS</span>
+<span class="avatar ml-n-1" title="John Smith">DW</span>
+<span class="avatar ml-n-1" title="John Smith">PR</span>
+<span class="avatar ml-n-1" title="John Smith">AB</span>
+
+<span class="item">
+  <div class="btn-group show" data-toggle="tooltip" data-placement="top" data-original-title="More actions">
+    <button type="button" class="btn btn-ctrl dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i aria-hidden="true" class="gel-icon-ellipsis"></i>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-expanded="true">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+</span>
+<span class="item">
+    <button type="button" class="knob btn btn-ctrl" >
+      <i aria-hidden="true" class="gel-icon-team"></i>
+      <span class="dot-red align-top position-absolute"></span>
+    </button>
+</span>    
+<?php endblock() ?>
+
+<?php startblock('page-body');?>
+<div id="gel-doc">
+   <!-- gel-doc-nav -->
+   <aside class="gel-doc-nav">
+    <?php include "partials/_toc.html" ?>
+   </aside>
+   <!-- gel-doc-main -->
+   <main class="gel-doc-main">
+    <div role="alert" class="alert alert-success alert-dismissible fade show">
+        <i aria-hidden="true" class="gel-icon-info"></i>
+        A simple primary alert with
+        <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        <button type="button" data-dismiss="alert" aria-label="Close" class="close">
+        <i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i>
+        </button>
+    </div>
+    <?php include "partials/_form.html" ?>
+   </main>
+   <!-- gel-doc-aside -->
+   <aside class="gel-doc-aside border-left bg-white"> <!-- mt-n-5 mr-n-3  -->
+      <button type="button" class="knob btn btn-icon" >
+        <i aria-hidden="true" class="gel-icon-close gel-icon-2x"></i>
+      </button>
+      <div class="h-100">
+         <ul role="tablist" class="nav nav-tabs-line justify-content-center">
+            <li class="nav-item"><a data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link active">History</a></li>
+            <li class="nav-item"><a data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link">Comments <sup class="dot-red align-text-top"></sup></a></li>
+         </ul>
+         <div id="myTabContent" class="tab-content">
+            <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane show active">
+                <?php include "partials/_timeline.html" ?>
+            </div>
+            <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane h-100">
+                <?php include "partials/_comments.html" ?>
+            </div>
+         </div>
+      </div>
+   </aside>
+  <!-- gel-doc-footer -->
+  <footer class="gel-doc-footer d-print-none text-center">
+      <section class="container">
+      <button type="button" class="btn btn-outline-primary">Close</button>
+      <button type="button" class="btn btn-primary">Save</button>
+      </section>
+  </footer>
+</div>
+
+
+<script>
+const topbar = document.getElementById("gel-navbar");
+const header = document.getElementById("gel-header");
+const footer = document.querySelector('.gel-doc-footer');
+const leftcol = document.querySelector('.gel-doc-nav .toc');
+const rightcol = document.querySelector('.gel-doc-aside');
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+
+  var currentScrollPos = window.pageYOffset;
+
+  if (currentScrollPos = topbar.offsetTop){
+    if (typeof(header) != 'undefined' && header != null){
+      if (prevScrollpos >= currentScrollPos) {
+        //scrolling up, hide the sticky footer
+        console.log('scrolling up');
+        header.style.top = topbar.clientHeight + 'px';
+        topbar.style.top = 0;
+        footer.style.transform = "translateY(100%)"; // off canvas
+        leftcol.style.top = topbar.clientHeight + header.clientHeight + 30 + 'px';
+        rightcol.style.top = topbar.clientHeight + header.clientHeight + 'px';
+      } else {
+        //scolling down, hide the navbar and header, show sticky footer
+        console.log('scrolling down');
+        header.style.top = -(header.clientHeight) +'px';
+        topbar.style.top = -(topbar.clientHeight) +'px';
+        footer.style.transform = "translateY(0)";
+        leftcol.style.top = '15px';
+        rightcol.style.top = 0;
+        //rightcol.style.height = 'calc(100vh - ' + footer.clientHeight + 'px)';
+        rightcol.style.height = '100vh';
+      }
+    }
+    prevScrollpos = currentScrollPos;
+    // remove bottom border on sticky header when scroll on of the page
+    if (window.pageYOffset == 0){
+      topbar.classList.remove('border-bottom');
+    }
+  }
+};
+
+
+const rightPanel = document.querySelector('#gel-doc');
+document.querySelectorAll('.knob').forEach(item => {
+  item.addEventListener('click', event => {
+    rightPanel.classList.toggle('open');
+  })
+})
+
+</script>
+
+<?php endblock()?>
