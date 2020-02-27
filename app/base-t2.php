@@ -49,7 +49,7 @@
       </div>
   </header>
   <?php endblock() ?>
-  <!-- ************  page body ************ -->
+  <!-- ************  page body  class="blokk" ************ -->
 	<main id="gel-main" role="main">
     <?php startblock('page-top')?>
     <?php endblock()?>

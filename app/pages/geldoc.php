@@ -23,8 +23,7 @@
     justify-self: end;
 }
 .gel-doc-main {
-    grid-column-start:2;
-    grid-column-end:4;
+    grid-column: 2/4;
     justify-self: center;
     max-width:720px;
     transition: all .5s ease 0s;
@@ -39,8 +38,7 @@
    transform: scale(1.01);
 }
 .gel-doc-aside{
-    grid-column-start:4;
-    grid-column-end:5;
+    grid-column: 4/5;
     margin: -2rem -1rem 0 0;
     transform: translateX(100%);
     transition: all .5s ease 0s;
@@ -64,8 +62,7 @@
   position: sticky;
   position:-webkit-sticky;
   bottom: 0;
-  grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column: 1/5;
   margin: 0 -15px -2rem -15px;
   background-color: white;
   border-top: 1px solid #bac6d2;
@@ -73,8 +70,7 @@
 }
 
 .open .gel-doc-footer{
-    grid-column-start:1;
-    grid-column-end:4;
+    grid-column:1/4;
 }
 
 .toc{
@@ -90,28 +86,27 @@
 @media screen and (max-width: 1200px){
   .gel-doc-nav{
     justify-self: start;
-    grid-column-start:1;
-    grid-column-end:2;  
+    grid-column: 1/2;
   }
   .gel-doc-main {
-      grid-column-start:2;
-      grid-column-end:5;
+      grid-column: 2/5;
   }
   .gel-doc-aside{
       display:none;
-      grid-column-start:3;
-      grid-column-end:5;
+      grid-column: 3/5;
       height: calc(100vh - 77px - 60px);
   }
   .open .gel-doc-nav{
     display:none;
   }
   .open .gel-doc-main{
-    grid-column-start:1;
-    grid-column-end:3;
+    grid-column: 1/3;
   }
   .open .gel-doc-aside{
     display:block;
+  }
+  .open .gel-doc-footer{
+    grid-column:1/3;
   }
 }
 /* iPad portrait down */
@@ -120,8 +115,7 @@
     display:none;  
   }
   .gel-doc-main{
-    grid-column-start:1;
-    grid-column-end:5;
+    grid-column: 1/5;
   }
   .open .gel-doc-main{
     grid-column-end:5;
@@ -179,14 +173,14 @@
    </aside>
    <!-- gel-doc-main -->
    <main class="gel-doc-main">
-    <div role="alert" class="alert alert-success alert-dismissible fade show">
+    <!-- <div role="alert" class="alert alert-success alert-dismissible fade show">
         <i aria-hidden="true" class="gel-icon-info"></i>
         A simple primary alert with
         <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
         <button type="button" data-dismiss="alert" aria-label="Close" class="close">
         <i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i>
         </button>
-    </div>
+    </div> -->
     <?php include "partials/_form.html" ?>
    </main>
    <!-- gel-doc-aside -->
@@ -195,19 +189,21 @@
         <i aria-hidden="true" class="gel-icon-close gel-icon-2x"></i>
       </button>
       <div class="h-100">
-         <ul role="tablist" class="nav nav-tabs-line justify-content-center">
-            <li class="nav-item"><a data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link active">History</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link">Comments <sup class="dot-red align-text-top"></sup></a></li>
-         </ul>
-         <div id="myTabContent" class="tab-content">
-            <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane show active">
-                <?php include "partials/_timeline.html" ?>
+        <div class="d-flex flex-column">
+            <ul role="tablist" class="nav nav-tabs-line justify-content-center">
+                <li class="nav-item"><a data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link active">History</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link">Comments <sup class="dot-red align-text-top"></sup></a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content flex-fill">
+                <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane show active">
+                    <?php include "partials/_timeline.html" ?>
+                </div>
+                <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane h-100">
+                    <?php include "partials/_comments.html" ?>
+                </div>
             </div>
-            <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane h-100">
-                <?php include "partials/_comments.html" ?>
-            </div>
-         </div>
-      </div>
+        </div>
+      </div>  
    </aside>
   <!-- gel-doc-footer -->
   <footer class="gel-doc-footer d-print-none text-center">
@@ -226,6 +222,7 @@ const footer = document.querySelector('.gel-doc-footer');
 const leftcol = document.querySelector('.gel-doc-nav .toc');
 const rightcol = document.querySelector('.gel-doc-aside');
 var prevScrollpos = window.pageYOffset;
+let topOffSet = (topbar.clientHeight + header.clientHeight)  + 'px';
 
 window.onscroll = function() {
 
@@ -241,6 +238,7 @@ window.onscroll = function() {
         footer.style.transform = "translateY(100%)"; // off canvas
         leftcol.style.top = topbar.clientHeight + header.clientHeight + 30 + 'px';
         rightcol.style.top = topbar.clientHeight + header.clientHeight + 'px';
+        rightcol.style.height = 'calc(100vh' -(topOffSet) + ')';
       } else {
         //scolling down, hide the navbar and header, show sticky footer
         console.log('scrolling down');
@@ -249,8 +247,8 @@ window.onscroll = function() {
         footer.style.transform = "translateY(0)";
         leftcol.style.top = '15px';
         rightcol.style.top = 0;
-        //rightcol.style.height = 'calc(100vh - ' + footer.clientHeight + 'px)';
         rightcol.style.height = '100vh';
+        //
       }
     }
     prevScrollpos = currentScrollPos;
