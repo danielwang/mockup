@@ -4,7 +4,9 @@
 #gel-navbar, #gel-header, .position-sticky{
   position:-webkit-sticky;
 }
-
+/* :target {
+    margin-top: 200px;
+} */
 .toc ol {
   border-left: solid 1px #bac6d2;
 }
@@ -16,7 +18,7 @@
 #gel-doc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 15px;
+    grid-column-gap: 30px;
 }
 .gel-doc-nav{
     grid-column-start:1;
@@ -29,17 +31,17 @@
     transition: all .5s ease 0s;
 }
 
-.gel-doc-main .card{
+.gel-doc-section{
    transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
-.gel-doc-main .card:focus-within{
+.gel-doc-section:focus-within{
    box-shadow: -5px 0 0 0rem rgba(0,99,176,1);
    border-color: #0063b0;
    transform: scale(1.01);
 }
 .gel-doc-aside{
     grid-column: 4/5;
-    margin: -2rem -1rem 0 0;
+    margin: -2rem -1rem -2rem 0;
     transform: translateX(100%);
     transition: all .5s ease 0s;
     position: sticky;
@@ -63,7 +65,7 @@
   position:-webkit-sticky;
   bottom: 0;
   grid-column: 1/5;
-  margin: 0 -15px -2rem -15px;
+  margin: 0 -30px -2rem -15px;
   background-color: white;
   border-top: 1px solid #bac6d2;
   padding: 0.5rem 0;

@@ -1,14 +1,6 @@
-<div class="form-group">
-    <input type="text" id="validationCustom01" placeholder="" value="Operations Manager" required="required" class="form-control form-control-lg">
-    <div class="valid-feedback">
-    Looks good!
-    </div>
-</div>
- 
-  
 <form novalidate="novalidate" class="needs-validation ">
     <?php for ($r=1; $r <= 16; $r++) {?> 
-    <div class="card mb-5" id="section<?php echo $r ?>">
+    <section class="gel-doc-section card mb-5" id="section<?php echo $r ?>">
         <h3>Section Heading <?php echo $r ?></h3>
         <div class="row">
         <div class="col-sm-6 col-xl-4">
@@ -69,6 +61,6 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </section>    
 <?php } ?>      
 </form>

@@ -50,7 +50,7 @@
   </header>
   <?php endblock() ?>
   <!-- ************  page body  class="blokk" ************ -->
-	<main id="gel-main" role="main">
+	<main id="gel-main"  role="main">
     <?php startblock('page-top')?>
     <?php endblock()?>
 		<section class="container<?php echo $pageLayout ?>">
