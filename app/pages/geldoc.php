@@ -1,6 +1,9 @@
 <?php $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <style>
+.lead {
+    line-height: 1.2;
+}
 #gel-navbar, #gel-header, .position-sticky{
   position:-webkit-sticky;
 }
@@ -139,12 +142,12 @@
 </style>
 
 <?php startblock('page-actions') ?>
-
-<span class="avatar ml-n-1" title="John Smith">JS</span>
-<span class="avatar ml-n-1" title="John Smith">DW</span>
-<span class="avatar ml-n-1" title="John Smith">PR</span>
-<span class="avatar ml-n-1" title="John Smith">AB</span>
-
+  <a href="#" data-toggle="modal" data-target="#collaboratorsModal">
+    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="/mockup/app/site-images/avatar/users-1.svg" /></span>
+    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="/mockup/app/site-images/avatar/users-3.svg" /></span>
+    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="/mockup/app/site-images/avatar/users-2.svg" /></span>
+    <span class="avatar" title="John Smith">AB</span>
+  </a>
 <span class="item">
   <div class="btn-group show" data-toggle="tooltip" data-placement="top" data-original-title="More actions">
     <button type="button" class="btn btn-ctrl dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -161,7 +164,13 @@
 </span>
 <span class="item">
     <button type="button" class="knob btn btn-ctrl" >
-      <i aria-hidden="true" class="gel-icon-team"></i>
+      <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="push-line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <rect id="Rectangle" stroke="#536A81" stroke-width="2" x="3" y="3" width="18" height="18" rx="3"></rect>
+              <polyline id="Path" stroke="#536A81" stroke-width="1.65139094" stroke-linecap="round" stroke-linejoin="round" points="16.0500488 9.89453125 14 12 16.0500488 14.1323242"></polyline>
+              <line x1="9.5" y1="3.5" x2="9.5" y2="20.5" id="Line-2" stroke="#536A81" stroke-width="2" stroke-linecap="square"></line>
+          </g>
+      </svg>
       <span class="dot-red align-top position-absolute"></span>
     </button>
 </span>    

@@ -1,5 +1,5 @@
 <!-- ******************
-*** T2 SPA template ***
+*** T2 GEL Doc template ***
 ******************  -->
 <?php
   $site = "MockUp";
@@ -27,7 +27,7 @@
 </nav>
 <!-- ************  page header ************ -->
 <?php startblock('page-header');?>
-  <header id="gel-header" class="position-sticky" role="banner" style="z-index:1; transition: all 0.5s ease 0s;">
+  <header id="gel-header" class="position-sticky blokk" role="banner" style="z-index:1; transition: all 0.5s ease 0s;">
       <div class="container<?php echo $pageLayout ?>">
         <div class="row">
           <?php if($pageAction == true) { ?>
@@ -50,13 +50,14 @@
   </header>
   <?php endblock() ?>
   <!-- ************  page body  class="blokk" ************ -->
-	<main id="gel-main"  role="main">
+	<main id="gel-main"  role="main" class="blokk">
     <?php startblock('page-top')?>
     <?php endblock()?>
 		<section class="container<?php echo $pageLayout ?>">
 			<?php startblock('page-body')?>
 			<?php endblock()?>
-		</section>
+    </section>
+    <?php include '../ui/_partials/modal.html';?>
 	</main>
   <!-- ************  page footer ************ -->
 
