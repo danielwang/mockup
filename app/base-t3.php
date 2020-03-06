@@ -1,5 +1,5 @@
 <!-- ******************
-*** T3  blokk ***
+*** T3  data page ***
 ******************  -->
 <?php
   $site = "MockUp";
@@ -9,13 +9,6 @@
   global $pageAction;
   global $blokk;
 ?>
-<div <?php if($blokk == true) { echo 'class="blokk"' ; }?>
-<?php startblock('page-notification') ?>
-<div role="notification" class="mb-0 alert notification-info alert-dismissible fade show"><i aria-hidden="true" class="gel-icon-info gel-icon-lg"></i>
-    This is a info notification
-    <a href="#" class="notification-link">check it out!</a><button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button></div>
-<?php endblock() ?>
-
    <!-- ************ topbar ************ -->
    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
        <div class="container-fluid">
@@ -80,7 +73,6 @@
 			<?php endblock()?>
     </section>
   </main>
-  <?php include ("_drawer.html");?> 
   <!-- ************  page footer ************ -->
 <?php include '_foot.html';?>
 </div>

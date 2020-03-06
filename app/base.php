@@ -23,5 +23,6 @@
 			<?php startblock('page-body')?>
 			<?php endblock()?>
 		</section>
-	</main>
+  </main>
+<?php include ("_drawer.html");?> 
 <?php include '_foot.html';?>

@@ -1,5 +1,5 @@
 <!-- ******************
-*** T1 generic template ***
+*** T1 standard template ***
 ******************  -->
 <?php
   $site = "MockUp";

@@ -24,7 +24,7 @@
         <!-- IE fix: polyfill js must be in head, so IE render content properly-->
   	  <script type="text/javascript" src="<?php echo ($resURL) ?>js/polyfill.min.js"></script>
   </head>
-  <body data-spy="scroll" data-target="#toc" data-offset="130">
+  <body data-spy="scroll" data-target="#toc" data-offset="130" <?php if($blokk == true) { echo 'class="blokk"' ; }?>>
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
     <?php if($site=="MockUp") { ?>
       <script>
