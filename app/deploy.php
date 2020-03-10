@@ -20,7 +20,7 @@ updated as soon as commit the code change into github
 */
 
 /* read php files from folders */
-$folders = array("pages", "templates");
+$folders = array("pages","layouts", "templates");
 for ($i = 0; $i < count($folders); $i++) {
   echo "***** Start generating ***** \n";
   //generate files

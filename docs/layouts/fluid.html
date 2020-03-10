@@ -1,5 +1,5 @@
 <!-- ******************
-*** T3  blokk ***
+*** T3  data page ***
 ******************  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="noindex">
-      <title>Adaptive Template - MockUp</title>
+      <title>Fluid Layout - MockUp</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
@@ -24,21 +24,20 @@
         <!-- IE fix: polyfill js must be in head, so IE render content properly-->
   	  <script type="text/javascript" src="../js/polyfill.min.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="130"   >
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
           <script>
       function popupWindow(url) {
          window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=150,left=150,width=1280,height=960");
       }
       </script>
-    <div class="blokk"
-   <!-- ************ topbar ************ -->
+       <!-- ************ topbar ************ -->
    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
        <div class="container-fluid">
          <!-- logo  -->
          <ul class="navbar-nav mr-auto">
            <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-lg"></i></a></li>
-           <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../site-images/pu-logo.png" width="100"/></a></li>
+           <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../site-images/pu-logo.png" width="135"/></a></li>
          </ul>
          <ul class="navbar-nav">
            <li class="nav-item d-none d-xl-flex">
@@ -342,274 +341,47 @@
 
   <!-- ************  page header ************ -->
         <header id="gel-header" role="banner">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
                             <div class="col-lg-8 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h1 class="page-title">Adaptive Template</h1>
+                <h1 class="page-title">Fluid Layout</h1>
                 <blockquote class="tagline"></blockquote>
               </div>
               <div class="page-actions col-lg-4 mt-2 mt-lg-0">
                     <span class="item">
-      <button type="button" class="btn btn-ctrl">Action</button>
+      <button type="button" class="btn btn-primary">Action</button>
   </span>
               </div>
                         </div>
           </div>
       </header>
    <!-- ************  page sub pages ************ -->
-  <nav id="gel-subpages" role="navigation">
-   <div class="container">
-      <nav class="page-tabs nav" role="tablist">
-        <a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="current-jobs" aria-selected="true">Current Jobs</a>
-        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a>
-        <a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a>
-        <a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a>
-        <a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a>
-      </nav>
-    </div>
-</nav>
-
+    
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
-		<section class="container">
-			<div class="row">
-    <div class="col-lg-4 col-xxl-3">
-        <div class="vh-50 rounded demo-block-s d-flex justify-content-center mb-5 mb-md-0">
-            <h1 class="align-self-center text-muted">Sidebar
-                <span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                </span>
-                <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-12
-                </span>
-                <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
-                </span>
-                <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
-                </span>
-                <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
-                </span>
+		<section class="container-fluid">
+			    <div class="vh-70 rounded border demo-block d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1 class="align-self-center text-muted">Fluid 100% width container 
             </h1>
-
-        </div>
+            <div class="viewport-detector">
+    <span class="badge badge-warning d-sm-none"><i class="gel-icon-iphone"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> XS &lt; 576px </span> 
+    <span class="d-none badge badge-info d-sm-inline-block d-md-none"><i class="gel-icon-iphone rotate-90"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> - SM ≥ 576px
+    </span>
+    <span class="d-none badge badge-success d-md-inline-block d-lg-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet rotate-90"></i><i class="gel-icon-laptop disabled"></i> - MD ≥ 768px
+    </span>
+    <span class="d-none badge badge-danger d-lg-inline-block d-xl-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet"></i><i class="gel-icon-laptop disabled"></i> - LG ≥ 992px
+    </span>
+    <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop"></i> - XL ≥ 1200px
+    </span>
+    <span class="d-none badge badge-info d-xxl-inline-block"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop scale-x"></i> - XXL ≥ 1600px
+    </span>
+ </div>        </div>
     </div>
-    <div class="col-lg-8 col-xxl-9">
-        <div class="vh-100 rounded demo-block d-flex justify-content-center">
-            <h1 class="align-self-center text-muted">Primary content
-                <span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                </span>
-                <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-12
-                </span>
-                <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-8
-                </span>
-                <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-8
-                </span>
-                <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-9
-                </span>
-            </h1>
-        </div>
-    </div>
-    </div>
-  <footer class="main-footer border-top fixed-bottom p-2 bg-white d-print-none text-center" style="z-index: 999">
-    <section class="container">
-      <button type="button" class="btn btn-primary">Save</button>
-    </section>
-  </footer>
     </section>
   </main>
-  <!-- drawer -->
-<aside id="gel-drawer" role="complementary">
-    <div class="drawer-knob">
-        <button type="button" aria-label="Close drawer" class="btn btn-icon" aria-expanded="true">
-        </button>
-    </div>
-    <div class="drawer-inner">
-    </div>
-</aside> 
   <!-- ************  page footer ************ -->
-<!-- BETA feedback -->
-<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel">Beta Feedback</h2>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="lead">
-          We love hearing your thoughts on upgrades and recent releases. Please provide us with your feedback below:
-        </p>
-        <div class="row">
-          <div class="col-12 mt-3">
-            <h4>How was your experience in Beta today?</h4>
-          </div>
-          <div class="col-sm-8 col-md-6">
-            <div class="smileys mt-3">
-              <div class="face face-red">
-                <input type="radio" name="smiley" value="bad" class="bad" id="smiley-bad"/>
-                <label for="smiley-bad"></label>
-                <span>Bad</span>
-              </div>
-              <div class="face face-orange">
-                <input type="radio" name="smiley" value="poor" class="poor" id="smiley-poor"/>
-                <label for="smiley-poor"></label>
-                <span>Poor</span>
-              </div>
-              <div class="face face-yellow">
-                <input type="radio" name="smiley" value="fair" class="fair" id="smiley-fair"/>
-                <label for="smiley-fair"></label>
-                <span>Fair</span>
-              </div>
-              <div class="face face-lime">
-                <input type="radio" name="smiley" value="good" class="good" id="smiley-good"/>
-                <label for="smiley-good"></label>
-                <span>Good</span>
-              </div>
-              <div class="face face-green">
-                <input type="radio" name="smiley" value="excellent" class="excellent" id="smiley-excellent"/>
-                <label for="smiley-excellent"></label>
-                <span>Excellent</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group mt-3">
-              <label>Why did you give this rating?</label>
-              <textarea class="form-control" rows="4"></textarea>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group">
-              <label>Attach a screen capture of your feedback below:</label>
-              <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
-                <div class="dz-message needsclick gray">
-                  <h3 class="text-muted">Drag &amp; Drop files here</h3>
-                  <span class="note needsclick">
-                    Or
-                    <a href="#_">browse</a>
-                    from local drive
-                  </span>
-                  <p>
-                    <small>Max 5MB in size, Word, PDF, or JPG formats</small>
-                  </p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Alpha feedback -->
-<div class="modal fade" id="feedbackModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel2">Alpha Feedback</h2>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="lead">
-          Welcome and thanks in advance for taking the time to provide us feedback on your experience.
-        </p>
-        <div class="row">
-          <div class="col-12 mt-2 mb-1">
-            <h4>What do you think of the new design?</h4>
-          </div>
-          <div class="col-sm-8">
-            <fieldset>
-              <legend class="sr-only">Segmented Control</legend>
-              <div class="btn-group btn-group-toggle segmented-control">
-                <label>
-                  <input type="radio" name="options-seg" id="option1" autocomplete="off" checked="checked">
-                  <span class="btn btn-ctrl">
-                    Much better
-                  </span>
-                </label>
-                <label>
-                  <input type="radio" name="options-seg" id="option2" autocomplete="off">
-                  <span class="btn btn-ctrl">
-                    No difference
-                  </span>
-                </label>
-                <label>
-                  <input type="radio" name="options-seg" id="option3" autocomplete="off">
-                  <span class="btn btn-ctrl">
-                    Worse
-                  </span>
-                </label>
-              </div>
-            </fieldset>
-          </div>
-          <div class="col-12">
-            <div class="form-group mt-2">
-              <label>Do you have any additional feedback?</label>
-              <textarea class="form-control" rows="4"></textarea>
-            </div>
-          </div>
-          <div class="col-12 mt-3 mb-2">
-            <h4>
-              Is there anything that the seems to be 'broken' with the introduction of the new design?</h4>
-          </div>
-          <div class="col-sm-4">
-            <fieldset>
-              <legend class="sr-only">Segmented Control</legend>
-              <div class="btn-group btn-group-toggle segmented-control">
-                <label>
-                  <input type="radio" name="options-yn" id="option1" autocomplete="off" checked="checked">
-                  <span class="btn btn-ctrl">
-                    Yes
-                  </span>
-                </label>
-                <label>
-                  <input type="radio" name="options-yn" id="option2" autocomplete="off">
-                  <span class="btn btn-ctrl">
-                    No
-                  </span>
-                </label>
-              </div>
-            </fieldset>
-          </div>
-          <div class="col-12">
-            <div class="form-group mt-1">
-              <label>Please provide details of what is broken</label>
-              <textarea class="form-control" rows="4"></textarea>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group">
-              <label>Attach a screen capture of your feedback below:</label>
-              <form action="/upload-target" class="dropzone gel-dropzone needsclick dz-clickable">
-                <div class="dz-message needsclick gray">
-                  <h3 class="text-muted">Drag &amp; Drop files here</h3>
-                  <span class="note needsclick">
-                    Or
-                    <a href="#_">browse</a>
-                    from local drive
-                  </span>
-                  <p>
-                    <small>Max 5MB in size, Word, PDF, or JPG formats</small>
-                  </p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </div>
-</div><script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
 <script src="../js/gel.js"></script>
 </body>
 </html></div>
