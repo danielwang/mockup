@@ -1,11 +1,13 @@
  <?php
 /*
+Run php deploy.php 
+
 Deploy script is to generate static htmls and copy
 the assets into docs folder, the github pages mockup site will be
 updated as soon as commit the code change into github
 */
 
-/* Deploy Process
+/* Deploy Process (no longer generating GEL CSS from here)
   0. increase version num v3.x.x and date in gel.scss
   1. uncomment .gel class in gel.scss
   2. generate the gel.css file
@@ -18,7 +20,7 @@ updated as soon as commit the code change into github
 */
 
 /* read php files from folders */
-$folders = array("pages", "ui", "templates");
+$folders = array("pages", "templates");
 for ($i = 0; $i < count($folders); $i++) {
   echo "***** Start generating ***** \n";
   //generate files

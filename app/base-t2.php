@@ -16,7 +16,7 @@
     <ul class="navbar-nav">
       <li class="nav-item"><a class="logo" href="<?php echo ($resURL) ?>"><?php startblock('logo') ?> <img alt="brand logo" src="<?php echo ($resURL) ?>site-images/pu-logo.png" width="135"/><?php endblock() ?></a></li>
     </ul>
-    <?php include "partials/_viewport-detector.html" ?>
+    <?php include "_partials/_viewport-detector.html" ?>
     <ul class="navbar-nav">
       <!-- user panel -->
       <?php include ("_partials/nav/user-panel.html");?>

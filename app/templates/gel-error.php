@@ -1,4 +1,4 @@
-<?php $pageTitle = "Error"; $pageLayout=" container-max"; include '../base-t4.php';?>
+<?php $blokk = true; $pageTitle = "GEL Error"; $pageLayout=" container-max"; include '../base-t4.php';?>
 
 <?php startblock('page-body')?>
 <div class="error-page">
@@ -20,7 +20,7 @@
           </span>
         </dl>
         <p>
-          <a href="#" class="btn btn-outline-primary">Contact Us</a>
+          <a href="#" class="btn btn-primary">Contact Us</a>
         </p>
       </section>
     </div>
