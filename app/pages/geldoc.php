@@ -143,9 +143,9 @@
 
 <?php startblock('page-actions') ?>
   <a href="#" data-toggle="modal" data-target="#collaboratorsModal">
-    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="/mockup/app/site-images/avatar/users-1.svg" /></span>
-    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="/mockup/app/site-images/avatar/users-3.svg" /></span>
-    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="/mockup/app/site-images/avatar/users-2.svg" /></span>
+    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="<?php echo ($resURL) ?>site-images/avatar/users-1.svg" /></span>
+    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="<?php echo ($resURL) ?>site-images/avatar/users-3.svg" /></span>
+    <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="<?php echo ($resURL) ?>site-images/avatar/users-2.svg" /></span>
     <span class="avatar" title="John Smith">AB</span>
   </a>
 <span class="item">
