@@ -1,4 +1,4 @@
-<?php $parent = "adm"; $pageAction = true; $blokk=true; $pageLayout="-fluid"; $pageTitle = "Fluid layout - Large table"; include '../base-t3.php';?>
+<?php $blokk = false; $parent = "adm"; $pageAction = true; $blokk=true; $pageLayout="-fluid"; $pageTitle = "Fluid layout - Large table"; include '../base-t3.php';?>
 
 <?php startblock('page-actions') ?>
 <span class="item">

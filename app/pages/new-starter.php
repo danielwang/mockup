@@ -1,4 +1,4 @@
-<?php $pageTitle = "New Starter Tasks"; $parent = "hm"; $pageAction = true; include '../base-t1.php';?>
+<?php $blokk = false; $pageTitle = "New Starter Tasks"; $parent = "hm"; $pageAction = true; include '../base-t1.php';?>
 
 <?php emptyblock('page-tabs') ?>
 

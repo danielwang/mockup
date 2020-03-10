@@ -1,4 +1,4 @@
-<?php $pageTitle = "CRM Dashboard"; $pageAction = true; $parent = "adm"; include '../base-t1.php';?>
+<?php $blokk = false; $pageTitle = "CRM Dashboard"; $pageAction = true; $parent = "adm"; include '../base-t1.php';?>
 
 <?php startblock('page-title') ?>
   CRM Dashboard

@@ -1,4 +1,4 @@
-<?php $pageTitle = "Settings"; $parent = "adm"; $pageAction = false; include '../base-t1.php';?>
+<?php $blokk = false; $pageTitle = "Settings"; $parent = "adm"; $pageAction = false; include '../base-t1.php';?>
 
 <?php startblock('page-title') ?>
   Settings

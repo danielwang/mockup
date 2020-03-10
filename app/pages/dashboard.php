@@ -1,4 +1,4 @@
-<?php $pageTitle = "Recruitment Dashboard"; $pageAction = true; $parent = "adm"; include '../base-t1.php';?>
+<?php $blokk = false; $pageTitle = "Recruitment Dashboard"; $pageAction = true; $parent = "adm"; include '../base-t1.php';?>
 
 <?php //startblock('page-notification') ?>
     <!-- <div id="gel-notification" class="gel-notification-error">

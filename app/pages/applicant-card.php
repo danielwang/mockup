@@ -1,4 +1,4 @@
-<?php $pageTitle = "Applicant card"; include '../base-popup.php';?>
+<?php $blokk = false; $pageTitle = "Applicant card"; include '../base-popup.php';?>
 
 <?php startblock('popup-top');?>
   <div class="notification notification-info d-print-none" role="notification">

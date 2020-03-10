@@ -1,4 +1,4 @@
-<?php $parent = "hm"; $pageTitle = "Empty State"; include '../base-t1.php';?>
+<?php $blokk = false; $parent = "hm"; $pageTitle = "Empty State"; include '../base-t1.php';?>
 
 <?php emptyblock('page-tabs') ?>
 

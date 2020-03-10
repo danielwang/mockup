@@ -1,5 +1,5 @@
 <!-- ******************
-*** T1 standard template ***
+*** T3  data page ***
 ******************  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="noindex">
-      <title>Empty State - MockUp</title>
+      <title>GEL Standard - MockUp</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
@@ -24,19 +24,14 @@
         <!-- IE fix: polyfill js must be in head, so IE render content properly-->
   	  <script type="text/javascript" src="../js/polyfill.min.js"></script>
   </head>
-  <body data-spy="scroll" data-target="#toc" data-offset="130"   >
+  <body data-spy="scroll" data-target="#toc" data-offset="130"  class="blokk" >
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
           <script>
       function popupWindow(url) {
          window.open(url, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=150,left=150,width=1280,height=960");
       }
       </script>
-    
-<div role="notification" class="mb-0 alert notification-info alert-dismissible fade show"><i aria-hidden="true" class="gel-icon-info gel-icon-lg"></i>
-    This is a info notification
-    <a href="#" class="notification-link">check it out!</a><button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button></div>
-
-   <!-- ************ navbar ************ -->
+       <!-- ************ topbar ************ -->
    <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
        <div class="container-fluid">
          <!-- logo  -->
@@ -203,44 +198,124 @@
     <h4>Dashboard</h4>
     <ul>
       <li>
-        <a href="layout-hm">My Home</a>
+        <a href="dashboard">Recruiter Dashboard</a>
+      </li>
+      <li>
+        <a href="layout-hm">Hiring Manager Dashboard</a>
+      </li>
+      <li>
+        <a href="crm">CRM Dashboard</a>
       </li>
     </ul>
   </li>
   <li class="submenu">
-    <h4>My Jobs</h4>
+    <h4>Jobs</h4>
     <ul>
       <li>
-        <a href="#">New requisition</a>
+        <a href="#">New job</a>
       </li>
       <li>
-        <a href="#">New contractor requisition</a>
+        <a href="#">New contractor job</a>
       </li>
       <li>
-        <a href="jobs">Requisitions open</a>
+        <a href="#">My panel jobs</a>
       </li>
       <li>
-        <a href="empty">Advertisements</a>
+        <a href="#">Manage jobs</a>
       </li>
       <li>
-        <a href="#">Assigned applications</a>
+        <a href="jobs">My jobs</a>
       </li>
       <li>
-        <a href="#">Interviews</a>
+        <a href="#">My sourced jobs</a>
       </li>
       <li>
-        <a href="new-starter">New starter</a>
+        <a href="#">My job approvals</a>
+      </li>
+      <li>
+        <a href="#">Manage job templates</a>
+      </li>
+      <li>
+        <a href="#">Manage forms</a>
+      </li>
+
+    </ul>
+  </li>
+  <li class="submenu">
+    <h4>Applicants</h4>
+    <ul>
+      <li>
+        <a href="#">New applicant</a>
+      </li>
+      <li>
+        <a href="#">Applicant search</a>
+      </li>
+      <li>
+        <a href="#">Talent search</a>
+      </li>
+      <li>
+        <a href="#">Manage applicant pool</a>
+      </li>
+      <li>
+        <a href="#">Manage applications</a>
+      </li>
+      <li>
+        <a href="#">My applicants</a>
+      </li>
+      <li>
+        <a href="#">Shortlisted applicants</a>
+      </li>
+      <li>
+        <a href="#">Manage offer approvals</a>
+      </li>
+      <li>
+        <a href="#">My new starters</a>
+      </li>
+      <li>
+        <a href="#">My new starter tasks</a>
+      </li>
+      <li>
+        <a href="#">My contracts</a>
+      </li>
+      <li>
+        <a title="Manage reference check requests" href="#">Manage reference check requests</a>
+      </li>
+      <li>
+        <a href="#">Communication centre</a>
       </li>
     </ul>
   </li>
   <li class="submenu">
-    <h4>Events</h4>
+    <h4>Assessments</h4>
     <ul>
       <li>
-        <a href="#">New event</a>
+        <a href="#">Menu item one</a>
       </li>
       <li>
-        <a href="#">Manage events</a>
+        <a href="#">Menu item two</a>
+      </li>
+      <li>
+        <a href="#">Menu item three</a>
+      </li>
+      <li>
+        <a href="#">Menu item four</a>
+      </li>
+    </ul>
+  </li>
+  <li class="submenu">
+    <h4>Event</h4>
+    <ul>
+      <li>
+        <a href="#">Menu item one</a>
+      </li>
+      <li>
+        <a href="#">Menu item two</a>
+      </li>
+      <li>
+        <a href="#">Menu item three</a>
+      </li>
+      <li>
+        <a href="#">Menu item four</a>
       </li>
     </ul>
   </li>
@@ -248,10 +323,16 @@
     <h4>More</h4>
     <ul>
       <li>
-        <a href="#">Reports</a>
+        <a href="#">Menu item one</a>
       </li>
       <li>
-        <a href="settings">Settings</a>
+        <a href="#">Menu item two</a>
+      </li>
+      <li>
+        <a href="#">Menu item three</a>
+      </li>
+      <li>
+        <a href="#">Menu item four</a>
       </li>
     </ul>
   </li>
@@ -262,62 +343,78 @@
         <header id="gel-header" role="banner">
           <div class="container">
             <div class="row">
-                            <div class="col-12">
-                <h1 class="page-title">Empty State</h1>
+                            <div class="col-lg-8 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h1 class="page-title">GEL Standard</h1>
                 <blockquote class="tagline"></blockquote>
+              </div>
+              <div class="page-actions col-lg-4 mt-2 mt-lg-0">
+                    <span class="item">
+      <button type="button" class="btn btn-ctrl">Action</button>
+  </span>
               </div>
                         </div>
           </div>
       </header>
    <!-- ************  page sub pages ************ -->
-  
+  <nav id="gel-subpages" role="navigation">
+   <div class="container">
+      <nav class="page-tabs nav" role="tablist">
+        <a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="current-jobs" aria-selected="true">Current Jobs</a>
+        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a>
+        <a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a>
+        <a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a>
+        <a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a>
+      </nav>
+    </div>
+</nav>
+
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
 		<section class="container">
-			
-<section class="text-center mt-5">
-  <svg width="75px" height="76px" viewBox="0 0 75 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-      <desc>Created with Sketch.</desc>
-      <defs></defs>
-      <g id="Desktop-1170px-XL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="My_Jobs-Empty-state" transform="translate(-710.000000, -244.000000)">
-              <g id="Page-1" transform="translate(710.000000, 244.000000)">
-                  <g id="Group-4">
-                      <path d="M68.8113084,38.6008128 L68.8113084,67.4106075 C68.8113084,68.6471444 67.790495,69.6587505 66.5421927,69.6587505 L8.68724696,69.6587505 C7.43894461,69.6587505 6.41813121,68.6471444 6.41813121,67.4106075 L6.41813121,38.3199406" id="Fill-1" fill="#AFBFD0"></path>
-                      <path d="M6.44157297,38.56212 L6.44157297,18.8486217 C6.44157297,17.6085885 7.4612316,16.5946515 8.70722442,16.5946515 L66.5633249,16.5946515 C67.8093177,16.5946515 68.8289764,17.6085885 68.8289764,18.8486217 L68.8289764,38.56212" id="Fill-3" fill="#CDD9E5"></path>
-                      <path d="M70.3478404,10.4309638 L4.92224696,10.4309638 C2.3829159,10.4309638 0.303181818,12.5299298 0.303181818,15.0927429 L0.303181818,71.2333829 C0.303181818,73.7973614 2.3829159,75.895162 4.92224696,75.895162 L70.3478404,75.895162 C72.8883263,75.895162 74.9669056,73.7973614 74.9669056,71.2333829 L74.9669056,15.0927429 C74.9669056,12.5299298 72.8883263,10.4309638 70.3478404,10.4309638 M70.3478404,12.7618533 C71.6215477,12.7618533 72.657373,13.8072573 72.657373,15.0927429 L72.657373,71.2333829 C72.657373,72.517703 71.6215477,73.5642724 70.3478404,73.5642724 L4.92224696,73.5642724 C3.64969452,73.5642724 2.61271439,72.517703 2.61271439,71.2333829 L2.61271439,15.0927429 C2.61271439,13.8072573 3.64969452,12.7618533 4.92224696,12.7618533 L70.3478404,12.7618533" id="Fill-5" fill="#8193A4"></path>
-                      <path d="M53.0821214,12.7265403 L50.7725888,12.7265403 L50.7725888,5.82710731 C50.7725888,3.89946166 49.2182734,2.330773 47.3082899,2.330773 L28.1137647,2.330773 C26.2037813,2.330773 24.6494659,3.89946166 24.6494659,5.82710731 L24.6494659,11.457371 L22.3399333,11.457371 L22.3399333,5.82710731 C22.3399333,2.61397608 24.9300741,-0.000116544477 28.1137647,-0.000116544477 L47.3082899,-0.000116544477 C50.4919806,-0.000116544477 53.0821214,2.61397608 53.0821214,5.82710731 L53.0821214,12.7265403 Z" id="Fill-8" fill="#8193A4"></path>
-                      <polygon id="Fill-10" fill="#8193A4" points="2.08775764 39.4851523 73.5389216 39.4851523 73.5389216 37.1542627 2.08775764 37.1542627"></polygon>
-                      <path d="M23.1190541,46.137511 L18.7829067,46.137511 C17.5138185,46.137511 16.4733741,45.0897762 16.4733741,43.8066215 L16.4733741,33.3176185 C16.4733741,32.0356293 17.5138185,30.986729 18.7829067,30.986729 L23.1190541,30.986729 C24.389297,30.986729 25.4285867,32.0356293 25.4285867,33.3176185 L25.4285867,43.8066215 C25.4285867,45.0897762 24.389297,46.137511 23.1190541,46.137511" id="Fill-12" fill="#FFFFFF"></path>
-                      <path d="M23.1190541,30.986729 L18.7829067,30.986729 C17.5138185,30.986729 16.4733741,32.0356293 16.4733741,33.3176185 L16.4733741,43.8066215 C16.4733741,45.0897762 17.5138185,46.137511 18.7829067,46.137511 L23.1190541,46.137511 C24.389297,46.137511 25.4285867,45.0897762 25.4285867,43.8066215 L25.4285867,33.3176185 C25.4285867,32.0356293 24.389297,30.986729 23.1190541,30.986729 Z M18.7829067,43.8066215 L23.1190541,43.8066215 L23.1190541,33.3176185 L18.7829067,33.3176185 L18.7829067,43.8066215 Z" id="Fill-13" fill="#8193A4"></path>
-                      <path d="M56.6072764,46.137511 L52.271129,46.137511 C51.0020409,46.137511 49.9615964,45.0897762 49.9615964,43.8066215 L49.9615964,33.3176185 C49.9615964,32.0356293 51.0020409,30.986729 52.271129,30.986729 L56.6072764,30.986729 C57.8775193,30.986729 58.916809,32.0356293 58.916809,33.3176185 L58.916809,43.8066215 C58.916809,45.0897762 57.8775193,46.137511 56.6072764,46.137511" id="Fill-14" fill="#FFFFFF"></path>
-                      <path d="M56.6072764,30.986729 L52.271129,30.986729 C51.0020409,30.986729 49.9615964,32.0356293 49.9615964,33.3176185 L49.9615964,43.8066215 C49.9615964,45.0897762 51.0020409,46.137511 52.271129,46.137511 L56.6072764,46.137511 C57.8775193,46.137511 58.916809,45.0897762 58.916809,43.8066215 L58.916809,33.3176185 C58.916809,32.0356293 57.8775193,30.986729 56.6072764,30.986729 Z M52.271129,43.8066215 L56.6072764,43.8066215 L56.6072764,33.3176185 L52.271129,33.3176185 L52.271129,43.8066215 Z" id="Fill-15" fill="#8193A4"></path>
-                      <path d="M5.84051711,38.3197075 L5.55182554,38.3197075 L5.84051711,38.3197075 Z" id="Fill-16" fill="#C6CCC8"></path>
-                      <polygon id="Fill-17" fill="#8193A4" points="26.9152328 23.9777442 29.2247654 23.9777442 29.2247654 21.6468546 26.9152328 21.6468546"></polygon>
-                      <polygon id="Fill-18" fill="#8193A4" points="46.1132223 23.9777442 48.4227549 23.9777442 48.4227549 21.6468546 46.1132223 21.6468546"></polygon>
-                      <polygon id="Fill-19" fill="#8193A4" points="36.5136502 23.9777442 38.8231827 23.9777442 38.8231827 21.6468546 36.5136502 21.6468546"></polygon>
-                  </g>
-              </g>
-          </g>
-      </g>
-  </svg>
-  <h5 class="mt-4 mb-3 text-muted">There are no jobs, would you like to raise a new one? </h5>
-  <button class="btn btn-primary">Create new job</button>
-</section>
+			<div class="row">
+    <div class="col-lg-4 col-xxl-3">
+        <div class="vh-50 rounded demo-block-s d-flex justify-content-center mb-5 mb-md-0">
+            <h1 class="align-self-center text-muted">Sidebar
+                <span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
+                </span>
+                <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-12
+                </span>
+                <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
+                </span>
+                <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
+                </span>
+                <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
+                </span>
+            </h1>
+
+        </div>
+    </div>
+    <div class="col-lg-8 col-xxl-9">
+        <div class="vh-100 rounded demo-block d-flex justify-content-center">
+            <h1 class="align-self-center text-muted">Primary content
+                <span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
+                </span>
+                <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-12
+                </span>
+                <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-8
+                </span>
+                <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-8
+                </span>
+                <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-9
+                </span>
+            </h1>
+        </div>
+    </div>
+    </div>
+  <footer class="main-footer border-top fixed-bottom p-2 bg-white d-print-none text-center" style="z-index: 999">
+    <section class="container">
+      <button type="button" class="btn btn-primary">Save</button>
+    </section>
+  </footer>
     </section>
   </main>
-  <!-- drawer -->
-<aside id="gel-drawer" role="complementary">
-    <div class="drawer-knob">
-        <button type="button" aria-label="Close drawer" class="btn btn-icon" aria-expanded="true">
-        </button>
-    </div>
-    <div class="drawer-inner">
-    </div>
-</aside> 
   <!-- ************  page footer ************ -->
 <script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
 <script src="../js/gel.js"></script>
 </body>
-</html>
+</html></div>

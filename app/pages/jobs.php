@@ -1,4 +1,4 @@
-<?php $pageTitle = "My Jobs"; $pageLayout="-fluid"; $parent = "hm"; include '../base-t1.php';?>
+<?php $blokk = false; $pageTitle = "My Jobs"; $pageLayout="-fluid"; $parent = "hm"; include '../base-t1.php';?>
 
 <?php emptyblock('page-tabs') ?>
 
