@@ -1,4 +1,4 @@
-<?php $parent = "hm"; $pageTitle = "Login"; include '../base-t5.php';?>
+<?php $blokk=false; $parent = "hm"; $pageTitle = "Login"; include '../base-t5.php';?>
 
 <?php startblock('page-body');?>
 

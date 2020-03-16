@@ -7,6 +7,13 @@
 #gel-navbar, #gel-header, .position-sticky{
   position:-webkit-sticky;
 }
+#gel-navbar, #gel-header{
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
 /* :target {
     margin-top: 200px;
 } */
@@ -16,7 +23,7 @@
 .toc ol li > a.active {
   border-left: 3px solid #0063b0;
   margin-left: -2px;
-  color: #0063b0;
+  color: #0063b0 !important;
 }
 #gel-doc {
     display: grid;
@@ -68,7 +75,7 @@
   position:-webkit-sticky;
   bottom: 0;
   grid-column: 1/5;
-  margin: 0 -30px -2rem -15px;
+  margin: 0 -15px -2rem -15px;
   background-color: white;
   border-top: 1px solid #bac6d2;
   padding: 0.5rem 0;
@@ -76,6 +83,7 @@
 
 .open .gel-doc-footer{
     grid-column:1/4;
+    margin-right: -30px;
 }
 
 .toc{
@@ -112,6 +120,7 @@
   }
   .open .gel-doc-footer{
     grid-column:1/3;
+    margin-right: -30px;
   }
 }
 /* iPad portrait down */
@@ -138,6 +147,14 @@
   }
 
 } 
+
+
+/* @media print {
+  .gel-doc-main{
+    grid-column: 1/5;
+  }
+} */
+
 
 </style>
 

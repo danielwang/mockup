@@ -27,7 +27,7 @@
 </nav>
 <!-- ************  page header ************ -->
 <?php startblock('page-header');?>
-  <header id="gel-header" class="position-sticky blokky" role="banner" style="z-index:1; transition: all 0.5s ease 0s;">
+  <header id="gel-header" class="position-sticky blokk" role="banner" style="z-index:1;">
       <div class="container<?php echo $pageLayout ?>">
         <div class="row">
           <?php if($pageAction == true) { ?>
@@ -50,7 +50,7 @@
   </header>
   <?php endblock() ?>
   <!-- ************  page body  class="blokk" ************ -->
-	<main id="gel-main"  role="main" class="blokky">
+	<main id="gel-main"  role="main" class="blokk">
     <?php startblock('page-top')?>
     <?php endblock()?>
 		<section class="container<?php echo $pageLayout ?>">

@@ -1,5 +1,5 @@
 <!-- ******************
-*** T4 special page, eg . 404 500 template ***
+*** T5 special page, login ***
 ******************  -->
 <?php
   $site = "MockUp";
