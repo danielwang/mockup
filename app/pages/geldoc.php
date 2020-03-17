@@ -44,10 +44,11 @@
 .gel-doc-section{
    transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
-.gel-doc-section:focus-within{
+.gel-doc-section:focus-within, .gel-doc-section:focus{
    box-shadow: -5px 0 0 0rem rgba(0,99,176,1);
    border-color: #0063b0;
    transform: scale(1.01);
+   outline:0;
 }
 .gel-doc-aside{
     grid-column: 4/5;
