@@ -30,21 +30,21 @@
  // 	unlink($cssfile);
  // }
 
-/*
+
   //take the scss to generate the css
- $cssfile = $resURL . 'css/gel.css';
+ $cssfile = $resURL . 'css/gelmock-site.css';
  if (file_exists($cssfile)) {
  	unlink($cssfile);
  }
 
- // Compile less to output a css file
+ // Compile scss to output a css file
  require $resURL . 'vendor/scssphp/scss.inc.php';
  use Leafo\ScssPhp\Compiler;
 
  $scss = new Compiler();
  $scss->setImportPaths($resURL ."build/gel/");
  //$scssIn = file_get_contents('build/bootstrap/bootstrap.scss');
- $cssOut = $scss->compile('@import "gel.scss"');
- file_put_contents($resURL . 'css/gel.css', $cssOut);
-*/
+ $cssOut = $scss->compile('@import "gelmock-site.scss"');
+ file_put_contents($resURL . 'css/gelmock-site.css', $cssOut);
+
 ?>

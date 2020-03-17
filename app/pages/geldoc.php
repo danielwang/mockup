@@ -1,164 +1,5 @@
 <?php $blokk = false;  $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
-<style>
-.lead {
-    line-height: 1.2;
-}
-#gel-navbar, #gel-header, .position-sticky{
-  position:-webkit-sticky;
-}
-#gel-navbar, #gel-header{
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-}
-
-/* :target {
-    margin-top: 200px;
-} */
-.toc ol {
-  border-left: solid 1px #bac6d2;
-}
-.toc ol li > a.active {
-  border-left: 3px solid #0063b0;
-  margin-left: -2px;
-  color: #0063b0 !important;
-}
-#gel-doc {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px;
-}
-.gel-doc-nav{
-    grid-column-start:1;
-    justify-self: end;
-}
-.gel-doc-main {
-    grid-column: 2/4;
-    justify-self: center;
-    max-width:720px;
-    transition: all .5s ease 0s;
-}
-
-.gel-doc-section{
-   transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
-}
-.gel-doc-section:focus-within, .gel-doc-section:focus{
-   box-shadow: -5px 0 0 0rem rgba(0,99,176,1);
-   border-color: #0063b0;
-   transform: scale(1.01);
-   outline:0;
-}
-.gel-doc-aside{
-    grid-column: 4/5;
-    margin: -2rem -1rem -2rem 0;
-    transform: translateX(100%);
-    transition: all .5s ease 0s;
-    position: sticky;
-    position:-webkit-sticky;
-    top: 0;
-    height: calc(100vh - 130px);
-}
-.gel-doc-aside .knob{
-  position: absolute;
-  z-index: 1;
-  top:0.5rem;
-  left: 1rem;
-}
-.open .gel-doc-aside{
-  transform: translateX(0);
-}
-
-.gel-doc-footer {
-  transition: all .5s ease 0s;
-  position: sticky;
-  position:-webkit-sticky;
-  bottom: 0;
-  grid-column: 1/5;
-  margin: 0 -15px -2rem -15px;
-  background-color: white;
-  border-top: 1px solid #bac6d2;
-  padding: 0.5rem 0;
-}
-
-.open .gel-doc-footer{
-    grid-column:1/4;
-    margin-right: -30px;
-}
-
-.toc{
-  transition: all 0.3s ease 0s;
-}
-.timeline{
-   height: calc(100vh - 152px);
-   overflow: auto;
-   display: block;
-}
-
-
-@media screen and (max-width: 1200px){
-  .gel-doc-nav{
-    justify-self: start;
-    grid-column: 1/2;
-  }
-  .gel-doc-main {
-      grid-column: 2/5;
-  }
-  .gel-doc-aside{
-      display:none;
-      grid-column: 3/5;
-      height: calc(100vh - 77px - 60px);
-  }
-  .open .gel-doc-nav{
-    display:none;
-  }
-  .open .gel-doc-main{
-    grid-column: 1/3;
-  }
-  .open .gel-doc-aside{
-    display:block;
-  }
-  .open .gel-doc-footer{
-    grid-column:1/3;
-    margin-right: -30px;
-  }
-}
-/* iPad portrait down */
-@media screen and (max-width: 992px){
-  .gel-doc-nav{
-    display:none;  
-  }
-  .gel-doc-main{
-    grid-column: 1/5;
-  }
-  .open .gel-doc-main{
-    grid-column-end:5;
-    display:none; 
-  }
-
-  .open .gel-doc-aside{
-    margin:0;
-    position: fixed;
-    top: 0 !important;
-    left: 0;
-    z-index: 9999;
-    height: 100vh;
-    width: 100vw;
-  }
-
-} 
-
-
-/* @media print {
-  .gel-doc-main{
-    grid-column: 1/5;
-  }
-} */
-
-
-</style>
-
 <?php startblock('page-actions') ?>
   <a href="#" data-toggle="modal" data-target="#collaboratorsModal">
     <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="<?php echo ($resURL) ?>site-images/avatar/users-1.svg" /></span>
@@ -195,7 +36,7 @@
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
-<div id="gel-doc">
+<div class="gel-doc">
    <!-- gel-doc-nav -->
    <aside class="gel-doc-nav">
     <?php include "partials/_toc.html" ?>
@@ -289,7 +130,7 @@ window.onscroll = function() {
 };
 
 
-const rightPanel = document.querySelector('#gel-doc');
+const rightPanel = document.querySelector('.gel-doc');
 document.querySelectorAll('.knob').forEach(item => {
   item.addEventListener('click', event => {
     rightPanel.classList.toggle('open');

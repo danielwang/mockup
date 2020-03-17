@@ -1,0 +1,215 @@
+@import "functions";
+@import "variables";
+@import "colors";
+@import "../bootstrap-4.1.0/mixins/breakpoints";
+
+/* *************************************** *\
+ *  The styling for blokk
+\* *************************************** */
+@font-face {
+    font-family: "BLOKK";
+    src: url("fonts/BLOKK/BLOKKNeue-Regular.eot");
+    src: url("fonts/BLOKK/BLOKKNeue-Regular.eot?#iefix") format("embedded-opentype"),
+      url("fonts/BLOKK/BLOKKNeue-Regular.woff2") format("woff2"), url("fonts/BLOKK/BLOKKNeue-Regular.woff") format("woff"),
+      url("fonts/BLOKK/BLOKKNeue-Regular.otf") format("opentype"),
+      url("fonts/BLOKK/BLOKKNeue-Regular.ttf") format("truetype"),
+      url("fonts/BLOKK/BLOKKNeue-Regular.svg#BLOKKRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: "BLOKK";
+      src: url("fonts/BLOKK/BLOKKNeue-Regular.svg") format("svg");
+    }
+  }
+  html { scroll-behavior:smooth }
+  .blokk * {
+    font-family: "BLOKK" !important;
+    color: #bac6d2 !important;
+    word-spacing: -1rem;
+  }
+  
+  .blokk * [class*=" gel-icon-"],
+  [class^="gel-icon-"] {
+    font-family: gel-icon !important;
+  }
+  .blokk .radio label, .blokk .checkbox>label{
+    font-family: "BLOKK" !important;
+  }
+  .blokk .viewport-detector *{
+    font-family: inherit!important;
+    word-spacing: normal;
+    color: #1d262d !important;
+  }
+
+  @mixin card-focus-state {
+    box-shadow: -5px 0 0 0rem $blue;
+    border-color: $blue;
+    transform: scale(1.01);
+    outline:0;
+  }
+
+/* *************************************** *\
+ *  The styling for GELMock site
+\* *************************************** */
+.lead {
+    line-height: 1.2;
+}
+#gel-navbar, #gel-header, .position-sticky{
+  position:-webkit-sticky;
+}
+#gel-navbar, #gel-header{
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+/* :target {
+    margin-top: 200px;
+} */
+.toc {
+    transition: all 0.3s ease 0s;
+    ol {
+        border-left: solid 1px $border-color;
+        li > a.active {
+            border-left: 3px solid $blue;
+            margin-left: -2px;
+            color: $blue !important;
+        }
+    }
+}
+
+.timeline{
+    height: calc(100vh - 152px);
+    overflow: auto;
+    display: block;
+ }
+
+// GELDoc
+.gel-doc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+
+    &-nav{
+        grid-column-start:1;
+        justify-self: end;
+        @include media-breakpoint-down(lg) {
+            justify-self: start;
+            grid-column: #{1}/#{2};
+
+            .open &{
+                display:none;
+            }
+        }
+        // iPad portrait down 
+        @include media-breakpoint-down(md) {
+            display:none;  
+        }
+    }
+    &-main {
+        grid-column: #{2}/#{4};
+        justify-self: center;
+        max-width:720px;
+        transition: all .5s ease 0s;
+        @include media-breakpoint-down(lg) {
+            grid-column: #{2}/#{5};
+            
+            .open &{
+                grid-column: #{1}/#{3};
+            }
+        }
+        // iPad portrait down
+        @include media-breakpoint-down(md) {
+            grid-column: #{1}/#{5};
+            .open &{
+                display:none; 
+            }
+        }
+    }
+    &-section{
+        transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
+ 
+         &:focus-within{
+            @include card-focus-state;
+         }
+         &:focus{
+            @include card-focus-state;
+         }
+     }
+    &-aside{
+        grid-column: #{4}/#{5};
+        margin: -2rem -1rem -2rem 0;
+        transform: translateX(100%);
+        transition: all .5s ease 0s;
+        position: sticky;
+        position:-webkit-sticky;
+        top: 0;
+        height: calc(100vh - 130px);
+
+        .knob{
+            position: absolute;
+            z-index: 1;
+            top:0.5rem;
+            left: 1rem;
+        }
+
+        .open &{
+            transform: translateX(0);
+        }
+
+        @include media-breakpoint-down(lg) {
+            display:none;
+            grid-column: #{3}/#{5};
+            height: calc(100vh - 77px - 60px);
+
+            .open &{
+                display:block;
+            }
+        }
+        // iPad portrait down
+        @include media-breakpoint-down(md) {
+            .open &{
+            margin:0;
+            position: fixed;
+            top: 0 !important;
+            left: 0;
+            z-index: 9999;
+            height: 100vh;
+            width: 100vw;
+            }
+        
+        }
+    }
+    &-footer {
+        transition: all .5s ease 0s;
+        position: sticky;
+        position:-webkit-sticky;
+        bottom: 0;
+        grid-column: #{1}/#{5};;
+        margin: 0 -15px -2rem -15px;
+        background-color: white;
+        border-top: 1px solid #bac6d2;
+        padding: 0.5rem 0;
+        
+        .open &{
+            grid-column:#{1}/#{4};;
+            margin-right: -30px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            .open &{
+              grid-column: #{1}/#{3};
+              margin-right: -30px;
+            }
+        }
+    }
+}
+
+ 
+@media print {
+
+}
