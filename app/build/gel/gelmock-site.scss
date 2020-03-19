@@ -66,10 +66,6 @@
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
 }
-
-/* :target {
-    margin-top: 200px;
-} */
 .toc {
     transition: all 0.3s ease 0s;
     ol {
@@ -109,6 +105,10 @@
         @include media-breakpoint-down(md) {
             display:none;  
         }
+        // print 
+        @media print {
+            display:none;
+        }
     }
     &-main {
         grid-column: #{2}/#{4};
@@ -128,6 +128,11 @@
             .open &{
                 display:none; 
             }
+        }
+         // print 
+        @media print {
+            grid-column: #{1}/#{5};
+            justify-self: normal;
         }
     }
     &-section{
@@ -209,7 +214,42 @@
     }
 }
 
- 
+/* *************************************** *\
+ *  The styling for Print
+\* *************************************** */
 @media print {
+    @page { margin: 2cm }
+    body::after {
+        content: "Brought you by PageUp";
+        display: block;
+        text-align: center;
+    }
+    h1, h2, h3, h4, h5, h6, th{
+        font-weight: 700;
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
+    }
+    .position-sticky{
+        position:-webkit-static !important;
+        position: static !important;
+    }
+    input.form-control, select.form-control{
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid $border-color;
+        padding: 0;
+        background: none;
+    }
+    // textarea{
+    //     height: auto;
+    //     overflow: visible!important;
+    //     page-break-inside: avoid !important;
+    // }
+    .gel-doc-section{
+        border:0;
+        padding: 0;
+    }
 
 }

@@ -45,9 +45,7 @@ html {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s; }
-/* :target {
- margin-top: 200px;
- } */
+
 .toc {
   transition: all 0.3s ease 0s; }
   .toc ol {
@@ -78,6 +76,9 @@ html {
     @media (max-width: 991.98px) {
   .gel-doc-nav {
     display: none; } }
+    @media print {
+  .gel-doc-nav {
+    display: none; } }
   .gel-doc-main {
     grid-column: 2/4;
     justify-self: center;
@@ -93,6 +94,10 @@ html {
     grid-column: 1/5; }
     .open .gel-doc-main {
       display: none; } }
+    @media print {
+  .gel-doc-main {
+    grid-column: 1/5;
+    justify-self: normal; } }
   .gel-doc-section {
     transition: all 0.1s cubic-bezier(0.4, 0, 1, 1) 0s; }
     .gel-doc-section:focus-within {
@@ -154,3 +159,32 @@ html {
   .open .gel-doc-footer {
     grid-column: 1/3;
     margin-right: -30px; } }
+/* *************************************** *\
+ *  The styling for Print
+ \* *************************************** */
+@media print {
+  body::after {
+    content: "PageUp";
+    display: block;
+    text-align: center; }
+
+  h1, h2, h3, h4, h5, h6, th {
+    font-weight: 700; }
+
+  a::after {
+    content: " (" attr(href) ")"; }
+
+  .position-sticky {
+    position: -webkit-static !important;
+    position: static !important; }
+
+  input.form-control, select.form-control {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #bac6d2;
+    padding: 0;
+    background: none; }
+
+  .gel-doc-section {
+    border: 0;
+    padding: 0; } }
