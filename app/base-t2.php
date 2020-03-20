@@ -49,6 +49,9 @@
       </div>
   </header>
   <?php endblock() ?>
+   <!-- ************  page sub pages ************ -->
+  <?php startblock('page-tabs') ?>
+  <?php endblock() ?>
   <!-- ************  page body  class="blokk" ************ -->
 	<main id="gel-main"  role="main" class="blokky">
     <?php startblock('page-top')?>

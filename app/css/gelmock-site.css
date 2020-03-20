@@ -163,8 +163,11 @@ html {
  *  The styling for Print
  \* *************************************** */
 @media print {
+  @page {
+    margin: 2cm; }
+
   body::after {
-    content: "PageUp";
+    content: "Brought you by PageUp";
     display: block;
     text-align: center; }
 
