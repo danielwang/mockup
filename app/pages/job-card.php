@@ -36,23 +36,23 @@
     <nav id="toc" role="navigation" aria-label="Table of content" class="toc position-sticky vh-70 overflow-auto" style="top: 15px;">
       <h4 aria-hidden="true">Content</h4>
       <ol>
-        <li><a Href="#section1" Class="" Aria-selected="False">Job Requisition Information </a></li>
+        <li><a href="#section1" class="" aria-selected="False">Job Requisition Information </a></li>
             
-        <li><a Href="#section2" Class="" Aria-selected="False">Position Budget </a></li>
+        <li><a href="#section2" class="" aria-selected="False">Position Budget </a></li>
             
-        <li><a Href="#section3" Class="" Aria-selected="False">Position Details </a></li>
+        <li><a href="#section3" class="" aria-selected="False">Position Details </a></li>
             
-        <li><a Href="#section4" Class="" Aria-selected="False">Job Duties </a></li>
+        <li><a href="#section4" class="" aria-selected="False">Job Duties </a></li>
             
-        <li><a Href="#section5" Class="" Aria-selected="False">Background Checks </a></li>
+        <li><a href="#section5" class="" aria-selected="False">Background Checks </a></li>
             
-        <li><a Href="#section6" Class="" Aria-selected="False">Search Committee </a></li>
+        <li><a href="#section6" class="" aria-selected="False">Search Committee </a></li>
             
-        <li><a Href="#section7" Class="" Aria-selected="False">Advertising Details </a></li>
+        <li><a href="#section7" class="" aria-selected="False">Advertising Details </a></li>
             
-        <li><a Href="#section8" Class="" Aria-selected="False">Human Resources Only </a></li>
+        <li><a href="#section8" class="" aria-selected="False">Human Resources Only </a></li>
             
-        <li><a Href="#section9" Class="" Aria-selected="False">sers & Approvals</a></li>
+        <li><a href="#section9" class="" aria-selected="False">Users & Approvals</a></li>
       </ol>
     </nav>
    </aside>

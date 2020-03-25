@@ -82,7 +82,7 @@ html {
   .gel-doc-main {
     grid-column: 2/4;
     justify-self: center;
-    max-width: 720px;
+    width: 720px;
     transition: all 0.5s ease 0s; }
     @media (max-width: 1199.98px) {
   .gel-doc-main {
@@ -110,6 +110,8 @@ html {
       border-color: #0063b0;
       transform: scale(1.01);
       outline: 0; }
+    .gel-doc-section-title {
+      margin-bottom: 1rem; }
   .gel-doc-aside {
     grid-column: 4/5;
     margin: -2rem -1rem -2rem 0;
