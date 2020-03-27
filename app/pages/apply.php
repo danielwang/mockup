@@ -13,8 +13,9 @@
   <!-- gel-doc-footer -->
   <footer class="gel-doc-footer d-print-none text-center">
       <section class="container">
-      <button type="button" class="btn btn-outline-primary">Close</button>
-      <button type="button" class="btn btn-primary">Save</button>
+      <button type="button" class="btn btn-outline-primary">Back</button>
+      <button type="button" class="btn btn-outline-primary">Save and Exit</button>
+      <button type="button" class="btn btn-primary" disabled>Continue</button>
       </section>
   </footer>
 </div>
