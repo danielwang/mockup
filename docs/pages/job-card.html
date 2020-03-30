@@ -1,5 +1,5 @@
 <!-- ******************
-*** T1 standard template ***
+*** T2 GEL Doc template ***
 ******************  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
       <meta name="author" content="daniel.wang" >
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://ui.pageuppeople.com/gel/rc/gel.min.css">
-      <link rel="stylesheet" href="../css/gel-site.css">
+      <link rel="stylesheet" href="../css/gelmock-site.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -32,75 +32,28 @@
       }
       </script>
     
-<div role="notification" class="mb-0 alert notification-info alert-dismissible fade show"><i aria-hidden="true" class="gel-icon-info gel-icon-lg"></i>
-    This is a info notification
-    <a href="#" class="notification-link">check it out!</a><button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button></div>
-
-   <!-- ************ navbar ************ -->
-   <nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
-       <div class="container-fluid">
-         <!-- logo  -->
-         <ul class="navbar-nav mr-auto">
-           <li class="nav-item"><a href="#" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i aria-hidden="true" class="gel-icon-menu gel-icon-lg"></i></a></li>
-           <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../site-images/pu-logo.png" width="135"/></a></li>
-         </ul>
-         <ul class="navbar-nav">
-           <li class="nav-item d-none d-xl-flex">
-  <a class="nav-link" href="jobs">Jobs</a>
-</li>
-<li class="nav-item d-none d-xl-flex">
-  <a class="nav-link" href="#">Applicants</a>
-</li>
-<li class="nav-item d-none d-xl-flex">
-  <a class="nav-link" href="#">Reports</a>
-</li>
-<li class="nav-item d-none d-xl-flex">
-  <a class="nav-link" href="settings">Settings</a>
-</li>
-<li class="nav-item">
-  <form class="search-group form-inline" role="search">
-    <label class="sr-only" for="quick-search" aria-label="Quick Search">
-      Quick Search</label>
-    <input id="quick-search" class="form-control" placeholder="Quick search" type="search">
-    <button class="btn-submit">
-      <i aria-hidden="true" class="gel-icon-search gel-icon-lg"></i>
-      <span class="sr-only">Quick Search</span>
-    </button>
-  </form>
-</li>
-<li class="nav-item recent-items">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Recent items</a>
-  <div class="dropdown-menu dropdown-menu-right">
-    <a title="Daniel Appllicant" class="dropdown-item" href="#" onclick="popupWindow('../pages/applicant-card')">
-      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
-      Mr Daniel Appllicant</a>
-    <a title="Elizabeth Appllicant" class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
-      Miss Elizabeth Appllicant</a>
-    <a title="Senior project manager" class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
-      Senior project manager</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Job" class="gel-icon-job"></i>
-      Administrator - Head Office</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
-      Bobby Employee</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Applicant" class="gel-icon-user"></i>
-      Miss Elizabeth Appllicant</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
-      Frank Employee</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Position Description" class="gel-icon-doc"></i>
-      Business Development Executive</a>
-    <a class="dropdown-item" href="#">
-      <i aria-hidden="true" title="Employee" class="gel-icon-employee"></i>
-      Alexsander Employee</a>
-  </div>
-</li>           <!-- user panel -->
-           <li id="nav-user-panel" class="nav-item user-panel">
+<!-- ************ navbar ************ -->
+<nav id="gel-navbar" class="navbar navbar-expand-sm navbar-dark bg-navy" role="navigation">
+  <div class="container-fluid">
+    <!-- logo  -->
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="logo" href="../"> <img alt="brand logo" src="../site-images/pu-logo.png" width="135"/></a></li>
+    </ul>
+    <div class="viewport-detector">
+    <span class="badge badge-warning d-sm-none"><i class="gel-icon-iphone"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> XS &lt; 576px </span> 
+    <span class="d-none badge badge-info d-sm-inline-block d-md-none"><i class="gel-icon-iphone rotate-90"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> - SM ≥ 576px
+    </span>
+    <span class="d-none badge badge-success d-md-inline-block d-lg-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet rotate-90"></i><i class="gel-icon-laptop disabled"></i> - MD ≥ 768px
+    </span>
+    <span class="d-none badge badge-danger d-lg-inline-block d-xl-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet"></i><i class="gel-icon-laptop disabled"></i> - LG ≥ 992px
+    </span>
+    <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop"></i> - XL ≥ 1200px
+    </span>
+    <span class="d-none badge badge-info d-xxl-inline-block"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop scale-x"></i> - XXL ≥ 1600px
+    </span>
+ </div>    <ul class="navbar-nav">
+      <!-- user panel -->
+      <li id="nav-user-panel" class="nav-item user-panel">
   <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="avatar" src="../site-images/avatar.svg" alt="John's profile">
     John
   </a>
@@ -132,8 +85,8 @@
         Log out</a>
     </footer>
   </div>
-</li>           <!-- help -->
-           <li id="nav-help" class="nav-help nav-item">
+</li>      <!-- help -->
+      <li id="nav-help" class="nav-help nav-item">
   <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" aria-label="Help">
     <i class="gel-icon-help gel-icon-lg" aria-hidden="true"></i>
     <span class="sr-only">Help</span></a>
@@ -155,210 +108,19 @@
       <i class="gel-icon-bullhorn" aria-hidden="true"></i>
       Raise support case</a>
   </div>
-</li>         </ul>
-       </div>
-     </nav>
-   <!-- ************ menu ************  -->
-  <aside id="gel-menu" role='menu'>
-         <a href="#" aria-label="Close menu" class="nav-toggle close" aria-expanded="false"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></a>
-
-         <a href="../" class="logo"> <img alt="brand logo" src="../site-images/pu-logo.png" width="100"/></a>
-         <article class="user-menu">
-  <header id="user-menu-hd" class="margin-bottom-none collapsed" data-toggle="collapse" data-target="#user-menu-ft">
-    <p><img class="avatar" src="../site-images/avatar.svg" alt="John's profile"/>
-      <strong>
-        John Smith
-      </strong>
-    </p>
-  </header>
-  <footer id="user-menu-ft" class="collapse">
-    <p>
-      <button type="button" class="btn btn-primary">
-        View Profile</button>
-    </p>
-    <ul>
-      <li>
-        <a class="dropdown-item" href="#">
-          <i aria-hidden="true" title="beta switch" class="gel-icon-logo"></i>
-          Switch to Live
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item" href="#">
-          <i aria-hidden="true" title="beta switch" class="gel-icon-beta-feedback"></i>
-          Beta Feedback
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i aria-hidden="true" title="beta switch" class="gel-icon-logout"></i>
-          Log Out</a>
-      </li>
-    </ul>
-  </footer>
-</article>
-         <menu class="scroll">
-           <ul>
-  <li class="submenu">
-    <h4>Dashboard</h4>
-    <ul>
-      <li>
-        <a href="dashboard">Recruiter Dashboard</a>
-      </li>
-      <li>
-        <a href="layout-hm">Hiring Manager Dashboard</a>
-      </li>
-      <li>
-        <a href="crm">CRM Dashboard</a>
-      </li>
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>Jobs</h4>
-    <ul>
-      <li>
-        <a href="#">New job</a>
-      </li>
-      <li>
-        <a href="#">New contractor job</a>
-      </li>
-      <li>
-        <a href="#">My panel jobs</a>
-      </li>
-      <li>
-        <a href="#">Manage jobs</a>
-      </li>
-      <li>
-        <a href="jobs">My jobs</a>
-      </li>
-      <li>
-        <a href="#">My sourced jobs</a>
-      </li>
-      <li>
-        <a href="#">My job approvals</a>
-      </li>
-      <li>
-        <a href="#">Manage job templates</a>
-      </li>
-      <li>
-        <a href="#">Manage forms</a>
-      </li>
-
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>Applicants</h4>
-    <ul>
-      <li>
-        <a href="#">New applicant</a>
-      </li>
-      <li>
-        <a href="#">Applicant search</a>
-      </li>
-      <li>
-        <a href="#">Talent search</a>
-      </li>
-      <li>
-        <a href="#">Manage applicant pool</a>
-      </li>
-      <li>
-        <a href="#">Manage applications</a>
-      </li>
-      <li>
-        <a href="#">My applicants</a>
-      </li>
-      <li>
-        <a href="#">Shortlisted applicants</a>
-      </li>
-      <li>
-        <a href="#">Manage offer approvals</a>
-      </li>
-      <li>
-        <a href="#">My new starters</a>
-      </li>
-      <li>
-        <a href="#">My new starter tasks</a>
-      </li>
-      <li>
-        <a href="#">My contracts</a>
-      </li>
-      <li>
-        <a title="Manage reference check requests" href="#">Manage reference check requests</a>
-      </li>
-      <li>
-        <a href="#">Communication centre</a>
-      </li>
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>Assessments</h4>
-    <ul>
-      <li>
-        <a href="#">Menu item one</a>
-      </li>
-      <li>
-        <a href="#">Menu item two</a>
-      </li>
-      <li>
-        <a href="#">Menu item three</a>
-      </li>
-      <li>
-        <a href="#">Menu item four</a>
-      </li>
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>Event</h4>
-    <ul>
-      <li>
-        <a href="#">Menu item one</a>
-      </li>
-      <li>
-        <a href="#">Menu item two</a>
-      </li>
-      <li>
-        <a href="#">Menu item three</a>
-      </li>
-      <li>
-        <a href="#">Menu item four</a>
-      </li>
-    </ul>
-  </li>
-  <li class="submenu">
-    <h4>More</h4>
-    <ul>
-      <li>
-        <a href="#">Menu item one</a>
-      </li>
-      <li>
-        <a href="#">Menu item two</a>
-      </li>
-      <li>
-        <a href="#">Menu item three</a>
-      </li>
-      <li>
-        <a href="#">Menu item four</a>
-      </li>
-    </ul>
-  </li>
-</ul>         </menu>
-       </aside>
-
-  <!-- ************  page header ************ -->
-        <header id="gel-header" role="banner">
-          <div class="container">
-            <div class="row">
-                            <div class="col-lg-8 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h1 class="page-title">Retail Customer Service Officer - Melbourne</h1>
-                <blockquote class="tagline"></blockquote>
-              </div>
-              <div class="page-actions col-lg-4 mt-2 mt-lg-0">
-                    <span class="item">
-    <a class="btn btn-primary" href="#_" title="Help">
-      View applications
-    </a>
-  </span>
-  <span class="item">
+</li>    </ul>
+  </div>
+</nav>
+<!-- ************  page header ************ -->
+  <header id="gel-header" class="position-sticky blokky" role="banner" style="z-index:1;">
+      <div class="container-fluid">
+        <div class="row">
+                    <div class="col-lg-8 order-2 order-lg-1 mt-3 mt-lg-0">
+            <h1 class="page-title">Retail Customer Service Officer - Melbourne</h1>
+            <blockquote class="tagline"></blockquote>
+          </div>
+          <div class="page-actions col-lg-4 mt-2 mt-lg-0">
+                <span class="item">
     <div class="btn-group show" data-toggle="tooltip" data-placement="top" data-original-title="More actions">
       <button type="button" class="btn btn-ctrl dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i aria-hidden="true" class="gel-icon-ellipsis"></i>
@@ -372,44 +134,557 @@
       </div>
     </div>
   </span>
-              </div>
-                        </div>
           </div>
-      </header>
-   <!-- ************  page sub pages ************ -->
-  <nav id="gel-subpages" role="navigation">
-   <div class="container">
-      <ul class="page-tabs nav" role="tablist">
-        <li class="nav-item"><a class="nav-link active" id="tab-1" data-toggle="tab" href="#applications" role="tab" aria-controls="Tab one" aria-selected="true">Applications</a></li>
-        <li class="nav-item"><a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Position Info</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Notes</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Documents</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Sourcing</a></li>
-        <li class="nav-item"><a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Reports</a></li>
-      </ul>
+                </div>
+      </div>
+  </header>
+     <!-- ************  page sub pages ************ -->
+  <nav id="gel-subpages" role="navigation" class="d-print-none">
+   <div class="container-fluid">
+      <nav class="page-tabs nav" role="tablist">
+        <a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="current-jobs" aria-selected="true">Position info</a>
+        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Applications (12)</a>
+        <a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Sourcing</a>
+        <a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Documents</a>
+        <a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Reports</a>
+      </nav>
     </div>
 </nav>
+  <!-- ************  page body  class="blokk" ************ -->
+	<main id="gel-main"  role="main" class="blokky">
+        		<section class="container-fluid">
+			<div class="gel-doc">
+   <!-- gel-doc-nav -->
+   <aside class="gel-doc-nav">
+    <nav id="toc" role="navigation" aria-label="Table of content" class="toc position-sticky vh-70 overflow-auto" style="top: 15px;">
+      <h4 aria-hidden="true">Content</h4>
+      <ol>
+        <li><a href="#section1" class="" aria-selected="False">Job Requisition Information </a></li>
+            
+        <li><a href="#section2" class="" aria-selected="False">Position Budget </a></li>
+            
+        <li><a href="#section3" class="" aria-selected="False">Position Details </a></li>
+            
+        <li><a href="#section4" class="" aria-selected="False">Job Duties </a></li>
+            
+        <li><a href="#section5" class="" aria-selected="False">Background Checks </a></li>
+            
+        <li><a href="#section6" class="" aria-selected="False">Search Committee </a></li>
+            
+        <li><a href="#section7" class="" aria-selected="False">Advertising Details </a></li>
+            
+        <li><a href="#section8" class="" aria-selected="False">Human Resources Only </a></li>
+            
+        <li><a href="#section9" class="" aria-selected="False">Users & Approvals</a></li>
+      </ol>
+    </nav>
+   </aside>
+   <!-- gel-doc-main -->
+   <main class="gel-doc-main">
+    <section class="gel-doc-section card mb-5" id="section1" tabindex="1">
+    <h3 class="gel-doc-section-title">Job Requisition Information</h3>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Recruitment Reason:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
 
-  <!-- ************  page body ************ -->
-	<main id="gel-main" role="main">
-		<section class="container">
-			<div class="card">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Job Family Framework Project
+            Submission:</label>
+        <div class="col-sm-7">
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio1" value="option1"
+                    name="radioInline1">
+                <label for="inlineRadio1">Yes</label>
+            </div>
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio2" value="option2"
+                    name="radioInline1" checked>
+                <label for="inlineRadio2">No</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Direct Appointment Type:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">OA re-employment pool:</label>
+        <div class="col-sm-7">
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio2-1" value="option1"
+                    name="radioInline2" checked>
+                <label for="inlineRadio2-1">Yes</label>
+            </div>
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio2-2" value="option2"
+                    name="radioInline2">
+                <label for="inlineRadio2-2">No</label>
+            </div>
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio2-3" value="option4"
+                    name="radioInline2">
+                <label for="inlineRadio2-3">N/A</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Internal Search Requested:</label>
+        <div class="col-sm-7">
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio3-1" value="option1"
+                    name="radioInline3" checked>
+                <label for="inlineRadio3-1">Yes</label>
+            </div>
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio3-2" value="option2"
+                    name="radioInline3">
+                <label for="inlineRadio3-2">No</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Requisition
+            No.:</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" placeholder="eg:
+                525340" />
+            <small id="emailHelp" class="form-text text-muted"> Leave blank to
+                automatically create a reference No.</small>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Posting
+            Title:* </label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="Retail
+                Customer Service Officer - Melbourne" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Position
+            Classification:</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text"
+                value="NonteachProf/Uncl 12mo .5+" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Rank:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
 
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">FTE:*
+        </label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="1.0" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5">Internal Search Requested:</label>
+        <div class="col-sm-7">
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio3-1" value="option1"
+                    name="radioInline3" checked>
+                <label for="inlineRadio3-1">9 Month</label>
+            </div>
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio3-2" value="option2"
+                    name="radioInline3">
+                <label for="inlineRadio3-2">12 Month</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Position
+            Number:</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="Interim
+                Coordinator LDCE" />
+        </div>
+    </div>
+</section>
+
+
+<section class="gel-doc-section card mb-5" id="section2" tabindex="1">
+    <h3 class="gel-doc-section-title">Position Budget</h3>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Budgeted
+            Salary:</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="$45,000"
+                />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Position
+            Funding:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Index:</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="QHLOPS" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Account Code:
+        </label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="10103" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Percentage:
+        </label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="100" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Explanation
+            (if needed):</label>
+        <div class="col-sm-7">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+</section>
+
+
+<section class="gel-doc-section card mb-5" id="section3" tabindex="1">
+    <h3 class="gel-doc-section-title">Position Details</h3>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Anticipated
+            Start Date:*</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="Jul 1,
+                2020" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">VP Area:*</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">School/College/Admin Unit:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Division/Admin Sub Unit:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Department or Program:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Timesheet
+            Org:</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="267105" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Site:</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="Eugene" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="title" class="col-sm-5 control-label required">Reports to
+            position:</label>
+        <div class="col-sm-7">
+            <input id="title" class="form-control" type="text" value="Associate
+                Dean of Students" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Type of Position:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Appointment Type:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Duration:</label>
+        <div class="select col-sm-7">
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">FLSA Exempt?: </label>
+        <div class="col-sm-7">
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio1" value="option1"
+                    name="radioInline1">
+                <label for="inlineRadio1">Yes</label>
+            </div>
+            <div class="radio radio-primary">
+                <input type="radio" id="inlineRadio2" value="option2"
+                    name="radioInline1" checked>
+                <label for="inlineRadio2">No</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Department Summary:</label>
+        <div class="col-sm-7">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Position Summary:</label>
+        <div class="col-sm-7">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Minimum Qualifications:</label>
+        <div class="col-sm-7">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Professional Competencies:</label>
+        <div class="col-sm-7">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-5 control-label">Preferred Qualifications:</label>
+        <div class="col-sm-7">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+</section>
+
+<section class="gel-doc-section card mb-5" id="section4" tabindex="1">
+    <h3 class="gel-doc-section-title">Job Duties</h3>
+    <div class="form-group row">
+        <label class="col-sm-5">Include job duties in performance reviews?</label>
+        <div class="col-sm-7">
+            <div class="toggle toggle-primary">
+                <label><input type="checkbox" checked="checked"><span>&nbsp;</span></label>
+            </div>
+        </div>
+    </div>
+    <table class="table table-borderless table-striped">
+        <thead>
+            <tr>
+                <th scope="col">% of time</th>
+                <th scope="col">Duties / Responsibilities</th>
+                <th scope="col">Essential / Incidental</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">15</th>
+                <td data-title="Column 1">Mark</td>
+                <td data-title="Column 2">Otto</td>
+                <td data-title="Column 3">@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td data-title="Column 1">Jacob</td>
+                <td data-title="Column 2">Thornton</td>
+                <td data-title="Column 3">@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td data-title="Column 1">Larry</td>
+                <td data-title="Column 2">Bird</td>
+                <td data-title="Column 3">@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="gel-doc-section card mb-5" id="section5" tabindex="1">
+    <h3 class="gel-doc-section-title">Background Checks</h3>
+    <p>All positions are subject to criminal background check. Additional checks
+        are noted below.</p>
+</section>
+<section class="gel-doc-section card mb-5" id="section6" tabindex="1">
+    <h3 class="gel-doc-section-title">Search Committee</h3>
+</section>
+<section class="gel-doc-section card mb-5" id="section7" tabindex="1">
+    <h3 class="gel-doc-section-title">Advertising Details</h3>
+</section> <section class="gel-doc-section card mb-5" id="section8"
+    tabindex="1">
+    <h3 class="gel-doc-section-title">Human Resources Only</h3>
+</section><section class="gel-doc-section card mb-5" id="section9" tabindex="1">
+    <h3 class="gel-doc-section-title">Users & Approvals</h3>
+</section>   </main>
+  <!-- gel-doc-footer -->
+  <footer class="gel-doc-footer d-print-none text-center">
+      <section class="container">
+      <button type="button" class="btn btn-outline-primary">Close</button>
+      <button type="button" class="btn btn-primary">Save</button>
+      </section>
+  </footer>
 </div>
-
     </section>
-  </main>
-  <!-- drawer -->
-<aside id="gel-drawer" role="complementary">
-    <div class="drawer-knob">
-        <button type="button" aria-label="Close drawer" class="btn btn-icon" aria-expanded="true">
+    <!-- BETA feedback -->
+<div class="modal fade" id="collaboratorsModal" tabindex="-1" role="dialog" aria-labelledby="collaboratorsModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Collaborators</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="gel-icon-close gel-icon-lg"></span>
         </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">
+          Add or remove collaborators from this position description
+        </p>
+         
+        <div class="d-flex align-items-center mb-3">
+            <div class="checkbox checkbox-default">
+                <input id="collaboratorscheckbox1" type="checkbox" checked />
+                <label for="collaboratorscheckbox1"></label>
+            </div>
+            <label for="collaboratorscheckbox1" class="mx-2 mb-0">
+                <img src="../site-images/avatar/users-1.svg" aria-hidden="true" class="avatar" />
+            </label>
+            <label for="collaboratorscheckbox1" class="mb-0">
+                <h5 class="mb-0">Daniel King 1</h5>
+                <span class="text-muted">Hiring Manager</span>
+            </label>
+        </div>
+         
+        <div class="d-flex align-items-center mb-3">
+            <div class="checkbox checkbox-default">
+                <input id="collaboratorscheckbox2" type="checkbox" checked />
+                <label for="collaboratorscheckbox2"></label>
+            </div>
+            <label for="collaboratorscheckbox2" class="mx-2 mb-0">
+                <img src="../site-images/avatar/users-2.svg" aria-hidden="true" class="avatar" />
+            </label>
+            <label for="collaboratorscheckbox2" class="mb-0">
+                <h5 class="mb-0">Daniel King 2</h5>
+                <span class="text-muted">Hiring Manager</span>
+            </label>
+        </div>
+         
+        <div class="d-flex align-items-center mb-3">
+            <div class="checkbox checkbox-default">
+                <input id="collaboratorscheckbox3" type="checkbox" checked />
+                <label for="collaboratorscheckbox3"></label>
+            </div>
+            <label for="collaboratorscheckbox3" class="mx-2 mb-0">
+                <img src="../site-images/avatar/users-3.svg" aria-hidden="true" class="avatar" />
+            </label>
+            <label for="collaboratorscheckbox3" class="mb-0">
+                <h5 class="mb-0">Daniel King 3</h5>
+                <span class="text-muted">Hiring Manager</span>
+            </label>
+        </div>
+         
+        <div class="d-flex align-items-center mb-3">
+            <div class="checkbox checkbox-default">
+                <input id="collaboratorscheckbox4" type="checkbox" checked />
+                <label for="collaboratorscheckbox4"></label>
+            </div>
+            <label for="collaboratorscheckbox4" class="mx-2 mb-0">
+                <img src="../site-images/avatar/users-4.svg" aria-hidden="true" class="avatar" />
+            </label>
+            <label for="collaboratorscheckbox4" class="mb-0">
+                <h5 class="mb-0">Daniel King 4</h5>
+                <span class="text-muted">Hiring Manager</span>
+            </label>
+        </div>
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary mr-auto" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
     </div>
-    <div class="drawer-inner">
-    </div>
-</aside> 
+  </div>
+</div>
+	</main>
   <!-- ************  page footer ************ -->
-<script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
+
+  <script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
 <script src="../js/gel.js"></script>
 </body>
 </html>

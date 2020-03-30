@@ -30,6 +30,14 @@ html { scroll-behavior:smooth }
 [class^="gel-icon-"] {
   font-family: gel-icon !important;
 }
+.blokk .radio label, .blokk .checkbox>label{
+  font-family: "BLOKK" !important;
+}
+.blokk .viewport-detector *{
+  font-family: inherit!important;
+  word-spacing: normal;
+  color: #1d262d !important;
+}
 
 #gel-menu.sg {
   width: 250px;
