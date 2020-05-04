@@ -1,9 +1,24 @@
-<div class="d-inline-flex flex-nowrap scroll-horizontal-shadow mb-3">
-    <?php for ($r=1; $r <= 10; $r++) {?>  
-    <div class="card mr-3" style="width: 280px">
-        <h5 class="card-title">Document title <?php echo $r ?> </h5>
-        <h6 class="card-subtitle
-            mb-2 text-muted">Creator</h6><p class="card-text">Some quick
-            example text to build ...</p></div>
-    <?php } ?>  
+<div class="d-flex mb-3">
+    <span class="order-1">
+        <button type="button" class="btn scroller-left-btn h-100 p-1 disabled d-none">
+            <i class="gel-icon-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Scroll left</span>
+        </button>
+    </span>
+    <span class="order-3">
+        <button type="button" class="btn scroller-right-btn h-100 p-1 d-none">
+            <i class="gel-icon-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Scroll right</span>
+        </button>
+    </span>
+    <div class="order-2 scroll-horizontal-shadow noscrollbar mx-1" data-control="scroller-wrapper">
+        <div class="d-inline-flex flex-nowrap" data-control="scroller-content">
+            <?php for ($r=1; $r <= 10; $r++) {?>  
+            <div class="card mr-3" style="width: 300px">
+                <a href="pd" class="stretched-link link-alt"><h5 class="card-title">Position Description Title <?php echo $r ?> </h5></a>
+                <p class="card-subtitle
+                    mb-2 text-muted text-sm">Updated 8 hours ago</p><p class="card-text">Incumbent Name</p></div>
+            <?php } ?>  
+        </div>
+    </div>
 </div>
