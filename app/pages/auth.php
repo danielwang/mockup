@@ -2,23 +2,23 @@
 
 <?php startblock('page-body');?>
 
-<section class="p-3 bg-navy vw-100 vh-100 d-flex align-items-center justify-content-center"> 
+<section class="p-3 vw-100 vh-100 d-flex align-items-center justify-content-center"> 
     <div class="row">
         <div class="col-md-6 d-flex align-items-center">
             <div class="text-center">
-                <p class="text-left"><img width="120" src="<?php echo ($resURL) ?>site-images/pageup-logo-white.svg"></p>
+                <p class="text-left"><img width="120" src="<?php echo ($resURL) ?>site-images/pageup-logo-navy.svg"></p>
                 <p><img width="280" src="<?php echo ($resURL) ?>images/illustrations/security.svg"></p>
-                <h1 class="text-white my-5">PageUp Auth</h1>
-                <p class="lead text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <h1 class="my-5">PageUp Auth</h1>
+                <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             </div>    
         </div>
         <div class="col-md-6"> 
             <div class="d-flex flex-column align-items-center"> 
                 <div class="card my-4" style="width:300px">
                     <p>Please login via Single Sign On</p>
-                    <button class="btn btn-info">SSO</button>
+                    <button class="btn btn-primary">SSO</button>
                 </div>
-                <p class="text-white text-center">OR</p>
+                <p class="text-center">OR</p>
                 <div class="card" style="width:300px">
                     <div class="form-group">
                         <label for="validationCustom01">Email</label>

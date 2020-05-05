@@ -54,7 +54,7 @@
     <?php include "partials/_form.html" ?>
    </main>
    <!-- gel-doc-aside -->
-   <aside class="gel-doc-aside border-left bg-white"> <!-- mt-n-5 mr-n-3  -->
+   <aside class="gel-doc-aside"> <!-- mt-n-5 mr-n-3  -->
       <button type="button" class="knob btn btn-icon" >
         <i aria-hidden="true" class="gel-icon-close gel-icon-2x"></i>
       </button>

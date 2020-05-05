@@ -1,4 +1,4 @@
-<?php $blokk = false;  $pageTitle = "Instructor – Automotive Technology"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
+<?php $blokk = true;  $pageTitle = "Instructor – Automotive Technology"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <?php startblock('page-actions') ?>
   <a href="#" data-toggle="modal" data-target="#collaboratorsModal">

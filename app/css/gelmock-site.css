@@ -115,6 +115,8 @@ html {
     .gel-doc-section-title {
       margin-bottom: 1rem; }
   .gel-doc-aside {
+    background: white;
+    border-left: 1px solid #bac6d2;
     grid-column: 4/5;
     margin: -2rem -1rem -2rem 0;
     transform: translateX(100%);
