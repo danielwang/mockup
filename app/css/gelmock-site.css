@@ -59,7 +59,9 @@ html {
   height: calc(100vh - 152px);
   overflow: auto;
   display: block; }
-
+/* *************************************** *\
+ *  The styling for GEL Doc
+ \* *************************************** */
 .gel-doc {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -100,8 +102,9 @@ html {
       display: none; } }
     @media print {
   .gel-doc-main {
-    grid-column: 1/5;
-    justify-self: normal; } }
+    grid-column: 1/5 !important;
+    justify-self: normal;
+    display: block !important; } }
   .gel-doc-section {
     transition: all 0.1s cubic-bezier(0.4, 0, 1, 1) 0s; }
     .gel-doc-section:focus-within {
@@ -116,6 +119,10 @@ html {
       outline: 0; }
     .gel-doc-section-title {
       margin-bottom: 1rem; }
+    @media print {
+  .gel-doc-section {
+    border: 0;
+    padding: 0; } }
   .gel-doc-aside {
     background: white;
     border-left: 1px solid #bac6d2;
@@ -150,6 +157,9 @@ html {
     z-index: 9999;
     height: 100vh;
     width: 100vw; } }
+    @media print {
+  .gel-doc-aside {
+    display: none !important; } }
   .gel-doc-footer {
     transition: all 0.5s ease 0s;
     position: sticky;
@@ -168,6 +178,9 @@ html {
   .open .gel-doc-footer {
     grid-column: 1/3;
     margin-right: -30px; } }
+    @media print {
+  .gel-doc-footer {
+    display: none; } }
 /* *************************************** *\
  *  The styling for Print
  \* *************************************** */
@@ -195,8 +208,4 @@ html {
     border: none;
     border-bottom: 1px solid #bac6d2;
     padding: 0;
-    background: none; }
-
-  .gel-doc-section {
-    border: 0;
-    padding: 0; } }
+    background: none; } }

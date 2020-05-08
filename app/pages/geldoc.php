@@ -1,4 +1,4 @@
-<?php $blokk = true;  $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
+<?php $blokk = false;  $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <?php startblock('page-actions') ?>
   <a href="#" data-toggle="modal" data-target="#collaboratorsModal">
@@ -76,7 +76,7 @@
       </div>  
    </aside>
   <!-- gel-doc-footer -->
-  <footer class="gel-doc-footer d-print-none text-center">
+  <footer class="gel-doc-footer">
       <section class="container">
       <button type="button" class="btn btn-outline-primary">Close</button>
       <button type="button" class="btn btn-primary">Save</button>
