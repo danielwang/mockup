@@ -1,7 +1,7 @@
 <?php $blokk = false;  $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <?php startblock('page-actions') ?>
-  <a href="#" data-toggle="modal" data-target="#collaboratorsModal">
+  <a href="#" data-toggle="modal" data-target="#collaboratorsModal" aria-label="Collaborators">
     <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="<?php echo ($resURL) ?>site-images/avatar/users-1.svg" /></span>
     <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="<?php echo ($resURL) ?>site-images/avatar/users-3.svg" /></span>
     <span aria-hidden="true"><img alt="Peter Parker" class="avatar" src="<?php echo ($resURL) ?>site-images/avatar/users-2.svg" /></span>
