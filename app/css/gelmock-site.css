@@ -170,7 +170,8 @@ html {
     background-color: white;
     border-top: 1px solid #bac6d2;
     padding: 0.5rem 0;
-    transform: translateY(100%); }
+    transform: translateY(100%);
+    text-align: center; }
     .open .gel-doc-footer {
       grid-column: 1/4;
       margin-right: -30px; }

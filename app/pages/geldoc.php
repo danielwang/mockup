@@ -1,4 +1,4 @@
-<?php $blokk = false;  $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
+<?php $blokk = true;  $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <?php startblock('page-actions') ?>
   <a href="#" data-toggle="modal" data-target="#collaboratorsModal" aria-label="Collaborators">
@@ -36,13 +36,14 @@
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
+
 <div class="gel-doc">
    <!-- gel-doc-nav -->
-   <aside class="gel-doc-nav">
+   <aside class="gel-doc-nav" role="Table of content">
     <?php include "partials/_toc.html" ?>
    </aside>
    <!-- gel-doc-main -->
-   <main class="gel-doc-main">
+   <main class="gel-doc-main" role="Main form">
     <!-- <div role="alert" class="alert alert-success alert-dismissible fade show">
         <i aria-hidden="true" class="gel-icon-info"></i>
         A simple primary alert with
@@ -54,7 +55,7 @@
     <?php include "partials/_form.html" ?>
    </main>
    <!-- gel-doc-aside -->
-   <aside class="gel-doc-aside"> <!-- mt-n-5 mr-n-3  -->
+   <aside class="gel-doc-aside" role="Collaboration panel"> <!-- mt-n-5 mr-n-3  -->
       <button type="button" class="knob btn btn-icon" >
         <i aria-hidden="true" class="gel-icon-close gel-icon-2x"></i>
       </button>
@@ -76,7 +77,7 @@
       </div>  
    </aside>
   <!-- gel-doc-footer -->
-  <footer class="gel-doc-footer">
+  <footer class="gel-doc-footer" role="Main form footer">
       <section class="container">
       <button type="button" class="btn btn-outline-primary">Close</button>
       <button type="button" class="btn btn-primary">Save</button>
