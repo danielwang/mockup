@@ -1,4 +1,4 @@
-<?php $blokk = true;  $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
+<?php $blokk = false;  $pageTitle = "GELDoc - Collaborative Form Template"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <?php startblock('page-actions') ?>
   <a href="#" data-toggle="modal" data-target="#collaboratorsModal" aria-label="Collaborators">
@@ -37,7 +37,7 @@
 
 <?php startblock('page-body');?>
 
-<div class="gel-doc">
+<div class="gel-doc blokk">
    <!-- gel-doc-nav -->
    <aside class="gel-doc-nav" role="Table of content">
     <?php include "partials/_toc.html" ?>
