@@ -36,8 +36,8 @@
 <?php endblock() ?>
 
 <?php startblock('page-body');?>
-
-<div class="gel-doc blokk">
+<form novalidate="novalidate" class="needs-validation">
+<div class="gel-doc">
    <!-- gel-doc-nav -->
    <aside class="gel-doc-nav" role="Table of content">
     <?php include "partials/_toc.html" ?>
@@ -80,10 +80,11 @@
   <footer class="gel-doc-footer" role="Main form footer">
       <section class="container">
       <button type="button" class="btn btn-outline-primary">Close</button>
-      <button type="button" class="btn btn-primary">Save</button>
+      <button type="submit" class="btn btn-primary">Save</button>
       </section>
   </footer>
 </div>
+</form>
 
 
 <script>

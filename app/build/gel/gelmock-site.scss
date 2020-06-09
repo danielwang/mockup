@@ -87,6 +87,33 @@
 /* *************************************** *\
  *  The styling for GEL Doc
 \* *************************************** */
+
+.form-group {
+    label{
+        display: inline;
+//        line-height: 1;
+        &.required{
+            &:after{
+                content:"*";
+                color: $red;
+                font-size: 1.25rem;
+                vertical-align: top;
+                font-family: Arial;
+                margin-top:-4px;
+                margin-left: 4px;
+                display: inline-block;
+            }
+        }
+        
+        + .info-icon{
+            color: $slate-500;
+        }
+    }
+
+    .form-text{
+        color: $slate-500;
+    }
+} 
 .gel-doc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -119,7 +146,7 @@
         width:720px;
         transition: all .5s ease 0s;
         @include media-breakpoint-down(xl) {
-            width: fit-content; 
+            width: 100%; 
         }
         @include media-breakpoint-down(lg) {
             grid-column: #{2}/#{5};
@@ -142,6 +169,13 @@
         }
     }
     &-section{
+        background: white;
+        border: 1px solid $border-color;
+        display: block;
+        min-width: 0;
+        border-radius: $border-radius;
+        padding: $spacer-4;
+        margin-bottom: $spacer-5;
         transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
         // display: grid;
         // grid-template-columns: 1fr 1fr;
