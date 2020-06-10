@@ -1,118 +1,160 @@
 
-<?php for ($r=1; $r <= 6; $r++) {?> 
-    <section class="gel-doc-section" id="section<?php echo $r ?>" tabindex="1">
+<?php for ($r=1; $r <= 6; $r++) {?>
+    <section class="gel-doc-section blokk" id="section<?php echo $r ?>" tabindex="1">
         <fieldset>
             <legend class="sr-only">Section Heading <?php echo $r ?></legend>
-            <h3 aria-hidden="true">Section Heading <?php echo $r ?></h3>
-            <div class="form-group row">
-                <div class="col-sm-5">
-                    <label for="field1" class="required">Budgeted Salary:</label>
-                </div>    
-                <div class="col-sm-7">
-                    <input id="field1" class="form-control" type="number" value=""/>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="field2" class="col-sm-5 control-label">Department </label> 
-                <div class="select col-sm-7">
-                    <select class="form-control" id="field2">
-                        <option></option>
-                        <option>option 2</option>
-                        <option>option 3</option>
-                        <option>option 4</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-5">
-                    <label for="field3" class="control-label required">Tax File Number</label>
-                    <a href="#" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." aria-label="help" class="info-icon"><i class="gel-icon-help-o"></i></a>
-                </div>
-                <div class="col-sm-7">
-                    <input id="field3" class="form-control" type="text" value="" aria-describedby="field3Help"/>
-                    <small id="field3Help" class="form-text text-muted">Number should be 9 digits, no dashes required</small>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="field4" class="col-sm-5 control-label">Effective date:
-                </label>
-                <div class="col-sm-7">
-                    <input id="field4" class="form-control" type="date" value=""/>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="field5" class="col-sm-5 control-label">Percentage:
-                </label>
-                <div class="col-sm-7">
-                    <div class="radio radio-primary">
-                        <input type="radio" id="inlineRadio1" value="option1" name="radioInline1">
-                        <label for="inlineRadio1">Yes</label>
+                <h3 aria-hidden="true">Section Heading <?php echo $r ?></h3>
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                            <label for="field1" class="required">Budgeted
+                                Salary:</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <input id="field1" class="form-control"
+                                type="number" value="" />
+                        </div>
                     </div>
-                    <div class="radio radio-primary">
-                        <input type="radio" id="inlineRadio2" value="option2" name="radioInline1" checked="">
-                        <label for="inlineRadio2">No</label>
+                    <div class="form-group row">
+                        <label for="field2" class="col-sm-5 control-label">Department
+                        </label>
+                        <div class="select col-sm-7">
+                            <select class="form-control" id="field2">
+                                <option></option>
+                                <option>option 2</option>
+                                <option>option 3</option>
+                                <option>option 4</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="field6" class="col-sm-5 control-label">Explanation
-                    (if needed):</label>
-                <div class="col-sm-7">
-                    <textarea id="field6" class="form-control"></textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="field6" class="col-sm-5 control-label">Explanation
-                    (if needed):</label>
-                <div class="col-sm-7">
-                        <div class="d-flex flex-wrap">
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                            <label for="field3" class="control-label required">Tax
+                                File Number</label>
+                            <a href="#" data-container="body"
+                                data-toggle="popover" data-placement="right"
+                                data-content="Vivamus sagittis lacus vel augue
+                                laoreet rutrum faucibus." aria-label="help"
+                                class="info-icon"><i class="gel-icon-help-o"></i></a>
+                        </div>
+                        <div class="col-sm-7">
+                            <input id="field3" class="form-control" type="text"
+                                value="" aria-describedby="field3Help" />
+                            <!-- <small id="field3Help" class="form-text text-muted">Number
+                                should be 9 digits, no dashes required</small> -->
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="field4" class="col-sm-5 control-label">Effective
+                            date:
+                        </label>
+                        <div class="col-sm-7">
+                            <input id="field4" class="form-control" type="date"
+                                value="" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="field5" class="col-sm-5 control-label">Percentage:
+                        </label>
+                        <div class="col-sm-7">
+                            <div class="radio radio-primary">
+                                <input type="radio" id="inlineRadio1"
+                                    value="option1" name="radioInline1">
+                                <label for="inlineRadio1">Yes</label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <input type="radio" id="inlineRadio2"
+                                    value="option2" name="radioInline1"
+                                    checked="">
+                                <label for="inlineRadio2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="field6" class="col-sm-5 control-label">Explanation
+                            (if needed):</label>
+                        <div class="col-sm-7">
+                            <textarea id="field6" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="field6" class="col-sm-5 control-label">Explanation
+                            (if needed):</label>
+                        <div class="col-sm-7">
+                            <div class="d-flex flex-wrap">
                                 <div class="w-50">
-                                   <div class="checkbox checkbox-default">
-                                      <input type="checkbox" id="1-1">
-                                      <label for="1-1">
-                                      Column 1-1                      </label>
-                                   </div>
+                                    <div class="checkbox checkbox-default">
+                                        <input type="checkbox" id="1-1">
+                                        <label for="1-1">
+                                            Column 1-1 </label>
+                                    </div>
                                 </div>
                                 <div class="w-50">
-                                   <div class="checkbox checkbox-default">
-                                      <input type="checkbox" id="1-2">
-                                      <label for="1-2">
-                                      Column 1-2                      </label>
-                                   </div>
+                                    <div class="checkbox checkbox-default">
+                                        <input type="checkbox" id="1-2">
+                                        <label for="1-2">
+                                            Column 1-2 </label>
+                                    </div>
                                 </div>
                                 <div class="w-50">
-                                   <div class="checkbox checkbox-default">
-                                      <input type="checkbox" id="1-3">
-                                      <label for="1-3">
-                                      Column 1-3                      </label>
-                                   </div>
+                                    <div class="checkbox checkbox-default">
+                                        <input type="checkbox" id="1-3">
+                                        <label for="1-3">
+                                            Column 1-3 </label>
+                                    </div>
                                 </div>
                                 <div class="w-50">
-                                   <div class="checkbox checkbox-default">
-                                      <input type="checkbox" id="1-4">
-                                      <label for="1-4">
-                                      Column 1-4                      </label>
-                                   </div>
+                                    <div class="checkbox checkbox-default">
+                                        <input type="checkbox" id="1-4">
+                                        <label for="1-4">
+                                            Column 1-4 </label>
+                                    </div>
                                 </div>
                                 <div class="w-50">
-                                   <div class="checkbox checkbox-default">
-                                      <input type="checkbox" id="1-5">
-                                      <label for="1-5">
-                                      Column 1-5                      </label>
-                                   </div>
+                                    <div class="checkbox checkbox-default">
+                                        <input type="checkbox" id="1-5">
+                                        <label for="1-5">
+                                            Column 1-5 </label>
+                                    </div>
                                 </div>
                                 <div class="w-50">
-                                   <div class="checkbox checkbox-default">
-                                      <input type="checkbox" id="1-6">
-                                      <label for="1-6">
-                                      Column 1-6                      </label>
-                                   </div>
+                                    <div class="checkbox checkbox-default">
+                                        <input type="checkbox" id="1-6">
+                                        <label for="1-6">
+                                            Column 1-6 </label>
+                                    </div>
                                 </div>
-                             </div>
-                </div>
-            </div>
-            
-        </fieldset>     
-    </section>    
-<?php } ?>      
-
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-5 required">Please indicate your tax
+                            file status by
+                            selecting an option below</label>
+                        <div class="col-sm-7">
+                            <div class="radio radio-primary">
+                                <input type="radio" id="inlineRadio2-1"
+                                    value="option1" name="radioInline2" required>
+                                <label for="inlineRadio2-1">I have made a separate
+                                    application/enquiry to the ATO for a new or
+                                    existing TFN.</label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <input type="radio" id="inlineRadio2-2"
+                                    value="option2" name="radioInline2">
+                                <label for="inlineRadio2-2">I am claiming an
+                                    exemption because I am
+                                    under 18 years of age and do not earn enough to
+                                    pay tax.</label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <input type="radio" id="inlineRadio2-3"
+                                    value="option4" name="radioInline2">
+                                <label for="inlineRadio2-3">I am claiming an
+                                    exemption because I am
+                                    in receipt of a pension benefit or allowance.</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <?php } ?>

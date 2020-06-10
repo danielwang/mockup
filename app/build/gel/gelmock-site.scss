@@ -89,8 +89,8 @@
 \* *************************************** */
 
 .form-group {
-    label{
-        display: inline;
+    &>label{
+ //       display: inline;
 //        line-height: 1;
         &.required{
             &:after{

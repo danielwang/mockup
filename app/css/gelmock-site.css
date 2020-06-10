@@ -62,17 +62,15 @@ html {
 /* *************************************** *\
  *  The styling for GEL Doc
  \* *************************************** */
-.form-group label {
-  display: inline; }
-  .form-group label.required:after {
-    content: "*";
-    color: #cd2f2f;
-    font-size: 1.25rem;
-    vertical-align: top;
-    font-family: Arial;
-    margin-top: -4px;
-    margin-left: 4px;
-    display: inline-block; }
+.form-group label.required:after {
+  content: "*";
+  color: #cd2f2f;
+  font-size: 1.25rem;
+  vertical-align: top;
+  font-family: Arial;
+  margin-top: -4px;
+  margin-left: 4px;
+  display: inline-block; }
   .form-group label + .info-icon {
     color: #8299ae; }
   .form-group .form-text {
