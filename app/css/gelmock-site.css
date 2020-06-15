@@ -60,22 +60,57 @@ html {
   overflow: auto;
   display: block; }
 /* *************************************** *\
- *  The styling for GEL Doc
+ *  The styling for GEL Form
  \* *************************************** */
-.form-group label.required:after {
-  content: "*";
+input[type="color"], input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
+  width: auto; }
+
+fieldset > .form-group:last-child {
+  margin-bottom: 0; }
+
+.form-group > label.required:after {
+  content: "*" / "";
   color: #cd2f2f;
   font-size: 1.25rem;
   vertical-align: top;
+  line-height: 1;
   font-family: Arial;
-  margin-top: -4px;
   margin-left: 4px;
-  display: inline-block; }
-  .form-group label + .info-icon {
+  display: inline-block;
+  speak: none; }
+  .form-group > label + .info-icon {
     color: #8299ae; }
   .form-group .form-text {
     color: #8299ae; }
 
+.gel-form-section {
+  background: white;
+  border: 1px solid #bac6d2;
+  display: block;
+  min-width: 0;
+  border-radius: 0.375rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.1s cubic-bezier(0.4, 0, 1, 1) 0s; }
+  .gel-form-section:focus-within {
+    box-shadow: -5px 0 0 0rem #0063b0;
+    border-color: #0063b0;
+    transform: scale(1.01);
+    outline: 0; }
+  .gel-form-section:focus {
+    box-shadow: -5px 0 0 0rem #0063b0;
+    border-color: #0063b0;
+    transform: scale(1.01);
+    outline: 0; }
+  .gel-form-section-title {
+    margin-bottom: 1rem; }
+  @media print {
+    .gel-form-section {
+      border: 0;
+      padding: 0; } }
+/* *************************************** *\
+ *  The styling for GEL Doc
+ \* *************************************** */
 .gel-doc {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -119,31 +154,6 @@ html {
       grid-column: 1/5 !important;
       justify-self: normal;
       display: block !important; } }
-  .gel-doc-section {
-    background: white;
-    border: 1px solid #bac6d2;
-    display: block;
-    min-width: 0;
-    border-radius: 0.375rem;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    transition: all 0.1s cubic-bezier(0.4, 0, 1, 1) 0s; }
-  .gel-doc-section:focus-within {
-    box-shadow: -5px 0 0 0rem #0063b0;
-    border-color: #0063b0;
-    transform: scale(1.01);
-    outline: 0; }
-  .gel-doc-section:focus {
-    box-shadow: -5px 0 0 0rem #0063b0;
-    border-color: #0063b0;
-    transform: scale(1.01);
-    outline: 0; }
-  .gel-doc-section-title {
-    margin-bottom: 1rem; }
-  @media print {
-    .gel-doc-section {
-      border: 0;
-      padding: 0; } }
   .gel-doc-aside {
     background: white;
     border-left: 1px solid #bac6d2;

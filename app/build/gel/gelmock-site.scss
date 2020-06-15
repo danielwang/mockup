@@ -44,13 +44,6 @@
     color: #1d262d !important;
   }
 
-  @mixin card-focus-state {
-    box-shadow: -5px 0 0 0rem $blue;
-    border-color: $blue;
-    transform: scale(1.01);
-    outline:0;
-  }
-
 /* *************************************** *\
  *  The styling for GELMock site
 \* *************************************** */
@@ -85,8 +78,18 @@
  }
 
 /* *************************************** *\
- *  The styling for GEL Doc
+ *  The styling for GEL Form
 \* *************************************** */
+
+input[type="color"], input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"]{
+    width: auto;
+}
+
+fieldset{
+    &> .form-group:last-child{
+        margin-bottom: 0;
+    }
+}
 
 .form-group {
     &>label{
@@ -94,14 +97,15 @@
 //        line-height: 1;
         &.required{
             &:after{
-                content:"*";
+                content:"*" / "";
                 color: $red;
                 font-size: 1.25rem;
                 vertical-align: top;
+                line-height: 1;
                 font-family: Arial;
-                margin-top:-4px;
                 margin-left: 4px;
                 display: inline-block;
+                speak: none
             }
         }
         
@@ -114,6 +118,46 @@
         color: $slate-500;
     }
 } 
+
+@mixin section-focus-state {
+    box-shadow: -5px 0 0 0rem $blue;
+    border-color: $blue;
+    transform: scale(1.01);
+    outline:0;
+}
+.gel-form{
+    &-section{
+        background: white;
+        border: 1px solid $border-color;
+        display: block;
+        min-width: 0;
+        border-radius: $border-radius;
+        padding: $spacer-4;
+        margin-bottom: $spacer-5;
+        transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
+
+         &:focus-within{
+            @include section-focus-state;
+         }
+         &:focus{
+            @include section-focus-state;
+         }
+
+         &-title{
+             margin-bottom: $spacer-3;
+         }
+        // print 
+        @media print {
+            border:0;
+            padding: 0;
+        }
+    }
+}
+
+
+/* *************************************** *\
+ *  The styling for GEL Doc
+\* *************************************** */
 .gel-doc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -168,42 +212,6 @@
             display: block !important;
         }
     }
-    &-section{
-        background: white;
-        border: 1px solid $border-color;
-        display: block;
-        min-width: 0;
-        border-radius: $border-radius;
-        padding: $spacer-4;
-        margin-bottom: $spacer-5;
-        transition: all .1s cubic-bezier(0.4, 0, 1, 1) 0s;
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
-        // grid-column-gap: 30px;
-
-         &:focus-within{
-            @include card-focus-state;
-         }
-         &:focus{
-            @include card-focus-state;
-         }
-
-         &-title{
-             margin-bottom: $spacer-3;
-         }
-         // offset top margin
-        //  &:target:before{
-        //      margin-top: -$spacer-4;
-        //      content: "";
-        //      height: $spacer-4;
-        //      background: rebeccapurple;
-        //  }
-        // print 
-        @media print {
-            border:0;
-            padding: 0;
-        }
-     }
     &-aside{
         background: white;
         border-left: 1px solid $border-color;

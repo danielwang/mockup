@@ -9,14 +9,12 @@
    <!-- gel-doc-main -->
    <main class="gel-doc-main">
     <?php include "partials/_form-apply.html" ?>
-   </main>
-  <!-- gel-doc-footer -->
-  <footer class="gel-doc-footer d-print-none text-center">
-      <section class="container">
-      <button type="button" class="btn btn-outline-primary">Back</button>
-      <button type="button" class="btn btn-outline-primary">Save and Exit</button>
-      <button type="button" class="btn btn-primary" disabled>Continue</button>
-      </section>
-  </footer>
+
+    <footer class="d-flex d-print-none">
+      <button type="button" class="btn btn-outline-primary mr-auto">Back</button>
+      <button type="button" class="btn btn-outline-primary mr-1">Save and Exit</button>
+      <button type="button" class="btn btn-primary">Continue</button>
+    </footer>
+   </main>  
 </div>
 <?php endblock()?>
