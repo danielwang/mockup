@@ -1,4 +1,4 @@
-<!-- <section class="gel-form-section">
+<!-- <section class="form-section">
     <div class="form-group">
         <label for="title" class="control-label">In what country wa?</label>
         <input id="title" class="form-control" type="text" value="">
@@ -131,10 +131,11 @@
 
 <div class="form-group">
     <label for="title" class="sr-only">Position description title</label>
-    <input id="title" class="form-control px-4 py-5 text-24" type="text" value=""
+    <input id="title" class="form-control px-4 py-5 text-24" type="text"
+        value=""
         placeholder="Untitled Position Description">
 </div>
-<fieldset id="section1" class="gel-form-section" tabindex="1">
+<fieldset id="section1" class="form-section" tabindex="1">
     <legend class="sr-only">Incumbent</legend>
     <h3 aria-hidden="true">Incumbent</h3>
     <div class="form-group">
@@ -143,7 +144,7 @@
         <input id="incumbent" class="form-control w-md-50" type="text" value="">
     </div>
 </fieldset>
-<fieldset id="section2" class="gel-form-section" tabindex="1">
+<fieldset id="section2" class="form-section" tabindex="1">
     <legend class="sr-only">Reason for Request</legend>
     <h3 aria-hidden="true">Reason for Request</h3>
     <div class="form-group">
@@ -156,13 +157,14 @@
         </select>
     </div>
 </fieldset>
-<fieldset id="section3" class="gel-form-section" tabindex="1">
+<fieldset id="section3" class="form-section" tabindex="1">
     <legend class="sr-only">Position Details</legend>
     <h3 aria-hidden="true">Position Details</h3>
     <div class="form-group">
         <label for="classification" class="control-label required">Position
             classification</label>
-        <input id="classification" class="form-control w-md-50" type="text" value=""
+        <input id="classification" class="form-control w-md-50" type="text"
+            value=""
             required />
     </div>
     <div class="form-group">
@@ -196,14 +198,14 @@
             for="root_positionDetails_effectiveDate">Effective date</label><input
             class="form-control" type="date"
             id="root_positionDetails_effectiveDate" label="Effective date"
-            placeholder="" value="2020-06-04"></div>
-    <div class="form-group"><label
+            placeholder="" value=""></div>
+    <div class="form-group w-md-25"><label
             for="root_positionDetails_salary" class="required">Salary</label><div
             class="input-group"><div class="input-group-prepend"><span
                     aria-hidden="true" class="input-group-text">$</span></div><input
-                class="form-control w-md-50" id="root_positionDetails_salary"
+                class="form-control" id="root_positionDetails_salary"
                 label="Salary" required="" type="text" step="any"
-                maxlength="19" value="96,255" required></div></div>
+                maxlength="19" value="" required></div></div>
     <div class="form-group"><label
             for="root_positionDetails_skillsKnowledge" class="required">Skills
             and knowledge</label><textarea
@@ -216,7 +218,8 @@
             class="form-control" placeholder="" rows="5"></textarea></div>
     <div class="form-group"><label
             for="root_positionDetails_appointmentType">Appointment type</label><input
-            class="form-control w-md-50" id="root_positionDetails_appointmentType"
+            class="form-control w-md-50"
+            id="root_positionDetails_appointmentType"
             label="Appointment type" placeholder="eg: Staff" type="text"
             value="Academic"></div><div class="form-group"><label
             for="root_positionDetails_workSchedule">Normal
@@ -227,10 +230,14 @@
                 8.30am - 3pm</option><option value="Variable">Variable</option></select></div>
 </fieldset>
 
-<fieldset id="section4" class="gel-form-section" tabindex="1">
-
+<fieldset id="section4" class="form-section" tabindex="1">
     <legend class="sr-only">Background Checks</legend>
-    <h3 aria-hidden="true">Background Checks</h3>
+    <div class="form-section-header">
+        <div>
+            <span class="h3" aria-hidden="true">Background Checks</span>
+        </div>
+    </div> 
+    <div class="form-section-body">               
     <div class="form-group"><label
             for="root_backgroundChecks_backgroundCheck">Standard background
             check</label><select id="root_backgroundChecks_backgroundCheck"
@@ -240,116 +247,178 @@
     <div class="form-group"><label
             for="root_backgroundChecks_backgroundCheck">Drug screen</label><select
             id="root_backgroundChecks_backgroundCheck" class="form-control
-             w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
+            w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
                 value="No">No</option><option value="N/A">N/A</option></select></div>
     <div class="form-group"><label
             for="root_backgroundChecks_backgroundCheck">MVR</label><a href="#_"
-            id="popover-mvr" class="info-icon" data-container="body" data-toggle="popover"
+            id="popover-mvr" class="info-icon" data-container="body"
+            data-toggle="popover"
             data-placement="right" data-content="An MVR check stands for “Motor
             Vehicle Report” check or “Motor Vehicle Record" aria-label="help"
             class="link-alt"><i class="gel-icon-help-o"></i></a> <select
             id="root_backgroundChecks_backgroundCheck" class="form-control
-             w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
+            w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
                 value="No">No</option><option value="N/A">N/A</option></select></div>
     <div class="form-group"><label
             for="root_backgroundChecks_backgroundCheck">Physical</label><select
             id="root_backgroundChecks_backgroundCheck" class="form-control
-             w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
+            w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
                 value="No">No</option><option value="N/A">N/A</option></select></div>
+                </div>
 </fieldset>
 
 
-<fieldset id="section5" class="gel-form-section" tabindex="1">
-    <legend class="sr-only">Physical Demands
-    </legend>
-    <div class="d-flex justify-content-between">
-        <h3 aria-hidden="true">Physical Demands
-        </h3>
-        <div class="mt-1">
+<fieldset id="section5" class="form-section" tabindex="1">
+    <legend class="sr-only">Physical Demands</legend>
+    <div class="form-section-header">
+        <div>
+            <span class="h3" aria-hidden="true">Physical Demands</span>
+            <a href="#_" class="info-icon" aria-label="Help info"><i
+                    class="gel-icon-help-o gel-icon-lg"></i></a>
+        </div>        
+        <span class="mt-1">
             <span>Required</span>
             <div class="toggle toggle-primary d-inline-block">
                 <label><input type="checkbox" checked="checked"><span>&nbsp;</span></label>
             </div>
-        </div>
+        </span>
     </div>
-    <div class="form-group" id="physical-list">
-        <label class="required">Please select physical demands from list
-            below</label>
+    <div class="form-section-body">  
+        <div class="form-group" id="physical-list">
+            <label class="required">Please select physical demands from list
+                below</label>
 
-        <div class="row" id="root_physicalDemands_demands"><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_0"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_0">Bending</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_1"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_1">Carrying</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_2"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_2">Climbing</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_3"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_3">Crawling</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_4"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_4">Driving</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_5"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_5">Grasping</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_6"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_6">Lifting</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_7"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_7">Pulling/Pushing</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_8"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_8">Reaching</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_9"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_9">Repetitive
-                        movements</label></div></div><div class="col-md-4"><div
-                    class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_10"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_10">Sitting</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_11"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_11">Squating/Kneeling</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_12"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_12">Standing</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_13"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_13">Twisting</label></div></div><div
-                class="col-md-4"><div class="checkbox checkbox-default"><input
-                        id="checkbox-root_physicalDemands_demands_14"
-                        type="checkbox"><label
-                        for="checkbox-root_physicalDemands_demands_14">Walking</label></div></div></div>
+            <div class="row" id="root_physicalDemands_demands"><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_0"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_0">Bending</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_1"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_1">Carrying</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_2"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_2">Climbing</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_3"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_3">Crawling</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_4"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_4">Driving</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_5"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_5">Grasping</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_6"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_6">Lifting</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_7"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_7">Pulling/Pushing</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_8"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_8">Reaching</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_9"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_9">Repetitive
+                            movements</label></div></div><div class="col-md-4"><div
+                        class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_10"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_10">Sitting</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_11"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_11">Squating/Kneeling</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_12"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_12">Standing</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_13"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_13">Twisting</label></div></div><div
+                    class="col-md-4"><div class="checkbox checkbox-default"><input
+                            id="checkbox-root_physicalDemands_demands_14"
+                            type="checkbox"><label
+                            for="checkbox-root_physicalDemands_demands_14">Walking</label></div></div></div>
+        </div>
+        <div class="form-group field field-string false"><label
+                for="root_physicalDemands_additionalPhysicalDemands">Additional
+                physical demands or work conditions</label><textarea
+                id="root_physicalDemands_additionalPhysicalDemands"
+                class="form-control" placeholder="" required="" rows="5"></textarea></div>
     </div>
-    <div class="form-group field field-string false"><label
-            for="root_physicalDemands_additionalPhysicalDemands">Additional
-            physical demands or work conditions</label><textarea
-            id="root_physicalDemands_additionalPhysicalDemands"
-            class="form-control" placeholder="" required="" rows="5"></textarea></div>
 </fieldset>
 
 
-<!-- <section class="gel-form-section" tabindex="1">
-    <fieldset>
-        <legend class="sr-only">Background Checks</legend>
-        <h3 aria-hidden="true">Background Checks</h3>
-    </fieldset>
-</section>    -->
+
+<fieldset class="form-section" tabindex="1">
+    <legend class="sr-only">Section Heading</legend>
+    <div class="form-section-header">
+        <span class="form-section-title">
+            <span class="h3" aria-hidden="true">Section Heading</span>
+            <a href="#_" class="info-icon" aria-label="Help info"><i
+                    class="gel-icon-help-o gel-icon-lg"></i></a>
+        </span>        
+        <span class="mt-1">
+            <span>Required</span>
+            <div class="toggle toggle-primary d-inline-block">
+                <label><input type="checkbox"><span>&nbsp;</span></label>
+            </div>
+        </span>
+    </div>
+</fieldset>
+
+<fieldset class="form-section" tabindex="1">
+    <legend class="sr-only">Section Heading</legend>
+    <div class="form-section-header">
+        <span class="form-section-title">
+            <span class="h3" aria-hidden="true">Section Heading</span>
+            <a href="#_" class="info-icon" aria-label="Help info"><i
+                    class="gel-icon-help-o gel-icon-lg"></i></a>
+        </span>        
+        <span class="mt-1">
+            <span>Required</span>
+            <div class="toggle toggle-primary d-inline-block">
+                <label><input type="checkbox" checked><span>&nbsp;</span></label>
+            </div>
+        </span>
+    </div>
+    <div class="form-section-body blokk">
+        <div class="form-group">
+            <label for="classification" class="control-label required">Position
+                classification</label>
+            <input id="classification" class="form-control w-md-50" type="text" value="" required="">
+        </div>
+    </div>
+</fieldset>
+
+    
+<!-- alternative way-->
+<section class="form-section" role="group" aria-labelledby="section-title-x" tabindex="1">
+    <div class="form-section-header">
+        <span class="form-section-title">
+            <span id="section-title-x" class="h3" aria-hidden="true">Background Checks 2</span>
+            <a href="#_" class="info-icon"><i
+                    class="gel-icon-help-o gel-icon-lg"></i></a>
+        </span>
+        <span class="mt-1">
+            <span>Required</span>
+            <div class="toggle toggle-primary d-inline-block">
+                <label><input type="checkbox" checked="checked"><span>&nbsp;</span></label>
+            </div>
+        </span>
+    </div>
+    <div class="form-section-body">  
+        ...
+    </div>
+</section>
