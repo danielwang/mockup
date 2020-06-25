@@ -10,10 +10,10 @@
    <main class="gel-doc-main">
     <?php include "partials/_form-apply.html" ?>
 
-    <footer class="d-flex d-print-none">
-      <button type="button" class="btn btn-outline-primary mr-auto">Back</button>
-      <button type="button" class="btn btn-outline-primary mr-1">Save and Exit</button>
+    <footer class="d-flex flex-row-reverse d-print-none">
       <button type="button" class="btn btn-primary">Continue</button>
+      <button type="button" class="btn btn-outline-primary mr-1">Save and Exit</button>
+      <button type="button" class="btn btn-outline-primary mr-auto">Back</button>
     </footer>
    </main>  
 </div>

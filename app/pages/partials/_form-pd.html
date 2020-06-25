@@ -133,9 +133,9 @@
     <label for="title" class="sr-only">Position description title</label>
     <input id="title" class="form-control px-4 py-5 text-24" type="text"
         value=""
-        placeholder="Untitled Position Description">
+        placeholder="Untitled Position Description" autofocus required/ >
 </div>
-<fieldset id="section1" class="form-section" tabindex="1">
+<fieldset id="section1" class="form-section" tabindex="0">
     <legend class="sr-only">Incumbent</legend>
     <h3 aria-hidden="true">Incumbent</h3>
     <div class="form-group">
@@ -144,7 +144,7 @@
         <input id="incumbent" class="form-control w-md-50" type="text" value="">
     </div>
 </fieldset>
-<fieldset id="section2" class="form-section" tabindex="1">
+<fieldset id="section2" class="form-section" tabindex="0">
     <legend class="sr-only">Reason for Request</legend>
     <h3 aria-hidden="true">Reason for Request</h3>
     <div class="form-group">
@@ -157,7 +157,7 @@
         </select>
     </div>
 </fieldset>
-<fieldset id="section3" class="form-section" tabindex="1">
+<fieldset id="section3" class="form-section" tabindex="0">
     <legend class="sr-only">Position Details</legend>
     <h3 aria-hidden="true">Position Details</h3>
     <div class="form-group">
@@ -230,52 +230,55 @@
                 8.30am - 3pm</option><option value="Variable">Variable</option></select></div>
 </fieldset>
 
-<fieldset id="section4" class="form-section" tabindex="1">
+<fieldset id="section4" class="form-section" tabindex="0">
     <legend class="sr-only">Background Checks</legend>
     <div class="form-section-header">
         <div>
             <span class="h3" aria-hidden="true">Background Checks</span>
         </div>
-    </div> 
-    <div class="form-section-body">               
-    <div class="form-group"><label
-            for="root_backgroundChecks_backgroundCheck">Standard background
-            check</label><select id="root_backgroundChecks_backgroundCheck"
-            class="form-control w-md-50"><option value="">Select</option><option
-                value="Yes">Yes</option><option value="No">No</option><option
-                value="N/A">N/A</option></select></div>
-    <div class="form-group"><label
-            for="root_backgroundChecks_backgroundCheck">Drug screen</label><select
-            id="root_backgroundChecks_backgroundCheck" class="form-control
-            w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
-                value="No">No</option><option value="N/A">N/A</option></select></div>
-    <div class="form-group"><label
-            for="root_backgroundChecks_backgroundCheck">MVR</label><a href="#_"
-            id="popover-mvr" class="info-icon" data-container="body"
-            data-toggle="popover"
-            data-placement="right" data-content="An MVR check stands for “Motor
-            Vehicle Report” check or “Motor Vehicle Record" aria-label="help"
-            class="link-alt"><i class="gel-icon-help-o"></i></a> <select
-            id="root_backgroundChecks_backgroundCheck" class="form-control
-            w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
-                value="No">No</option><option value="N/A">N/A</option></select></div>
-    <div class="form-group"><label
-            for="root_backgroundChecks_backgroundCheck">Physical</label><select
-            id="root_backgroundChecks_backgroundCheck" class="form-control
-            w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
-                value="No">No</option><option value="N/A">N/A</option></select></div>
-                </div>
+    </div>
+    <div class="form-section-body">
+        <div class="form-group"><label
+                for="root_backgroundChecks_backgroundCheck">Standard background
+                check</label><select id="root_backgroundChecks_backgroundCheck"
+                class="form-control w-md-50"><option value="">Select</option><option
+                    value="Yes">Yes</option><option value="No">No</option><option
+                    value="N/A">N/A</option></select></div>
+        <div class="form-group"><label
+                for="root_backgroundChecks_backgroundCheck">Drug screen</label><select
+                id="root_backgroundChecks_backgroundCheck" class="form-control
+                w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
+                    value="No">No</option><option value="N/A">N/A</option></select></div>
+        <div class="form-group"><label
+                for="root_backgroundChecks_backgroundCheck">MVR</label><a
+                href="#_"
+                id="popover-mvr" class="info-icon" data-container="body"
+                data-toggle="popover"
+                data-placement="right" data-content="An MVR check stands for
+                “Motor
+                Vehicle Report” check or “Motor Vehicle Record"
+                aria-label="help"
+                class="link-alt"><i class="gel-icon-help-o"></i></a> <select
+                id="root_backgroundChecks_backgroundCheck" class="form-control
+                w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
+                    value="No">No</option><option value="N/A">N/A</option></select></div>
+        <div class="form-group"><label
+                for="root_backgroundChecks_backgroundCheck">Physical</label><select
+                id="root_backgroundChecks_backgroundCheck" class="form-control
+                w-md-50"><option value="">Select</option><option value="Yes">Yes</option><option
+                    value="No">No</option><option value="N/A">N/A</option></select></div>
+    </div>
 </fieldset>
 
 
-<fieldset id="section5" class="form-section" tabindex="1">
+<fieldset id="section5" class="form-section" tabindex="0">
     <legend class="sr-only">Physical Demands</legend>
     <div class="form-section-header">
         <div>
             <span class="h3" aria-hidden="true">Physical Demands</span>
             <a href="#_" class="info-icon" aria-label="Help info"><i
                     class="gel-icon-help-o gel-icon-lg"></i></a>
-        </div>        
+        </div>
         <span class="mt-1">
             <span>Required</span>
             <div class="toggle toggle-primary d-inline-block">
@@ -283,11 +286,11 @@
             </div>
         </span>
     </div>
-    <div class="form-section-body">  
+    <div class="form-section-body">
         <div class="form-group" id="physical-list">
-            <label class="required">Please select physical demands from list
-                below</label>
-
+            <label class="required" aria-hidden="true">Please select physical demands from list below</label>
+            <fieldset>
+                <legend class="sr-only">Please select physical demands from list below</legend>    
             <div class="row" id="root_physicalDemands_demands"><div
                     class="col-md-4"><div class="checkbox checkbox-default"><input
                             id="checkbox-root_physicalDemands_demands_0"
@@ -350,7 +353,9 @@
                             id="checkbox-root_physicalDemands_demands_14"
                             type="checkbox"><label
                             for="checkbox-root_physicalDemands_demands_14">Walking</label></div></div></div>
-        </div>
+                        </fieldset>
+            </div>
+
         <div class="form-group field field-string false"><label
                 for="root_physicalDemands_additionalPhysicalDemands">Additional
                 physical demands or work conditions</label><textarea
@@ -361,14 +366,14 @@
 
 
 
-<fieldset class="form-section" tabindex="1">
+<fieldset class="form-section" tabindex="0">
     <legend class="sr-only">Section Heading</legend>
     <div class="form-section-header">
         <span class="form-section-title">
             <span class="h3" aria-hidden="true">Section Heading</span>
             <a href="#_" class="info-icon" aria-label="Help info"><i
                     class="gel-icon-help-o gel-icon-lg"></i></a>
-        </span>        
+        </span>
         <span class="mt-1">
             <span>Required</span>
             <div class="toggle toggle-primary d-inline-block">
@@ -378,47 +383,59 @@
     </div>
 </fieldset>
 
-<fieldset class="form-section" tabindex="1">
+<!-- native semantic html -->
+<fieldset class="form-section" tabindex="0" id="sectionID">
     <legend class="sr-only">Section Heading</legend>
     <div class="form-section-header">
         <span class="form-section-title">
             <span class="h3" aria-hidden="true">Section Heading</span>
-            <a href="#_" class="info-icon" aria-label="Help info"><i
-                    class="gel-icon-help-o gel-icon-lg"></i></a>
-        </span>        
-        <span class="mt-1">
+            <a href="#_" class="info-icon" aria-label="Help info">
+                <i class="gel-icon-help-o gel-icon-lg"></i></a>
+        </span>
+        <span class="form-section-switch">
             <span>Required</span>
             <div class="toggle toggle-primary d-inline-block">
                 <label><input type="checkbox" checked><span>&nbsp;</span></label>
             </div>
         </span>
     </div>
-    <div class="form-section-body blokk">
-        <div class="form-group">
-            <label for="classification" class="control-label required">Position
-                classification</label>
-            <input id="classification" class="form-control w-md-50" type="text" value="" required="">
-        </div>
+    <div class="form-section-body">
+        content ...
     </div>
 </fieldset>
 
-    
-<!-- alternative way-->
-<section class="form-section" role="group" aria-labelledby="section-title-x" tabindex="1">
+
+<!-- alternative way, aria markup-->
+<section class="form-section" role="group" aria-labelledby="section-title-x"
+    tabindex="0" id="sectionID">
     <div class="form-section-header">
         <span class="form-section-title">
-            <span id="section-title-x" class="h3" aria-hidden="true">Background Checks 2</span>
+            <span id="section-title-x" class="h3" aria-hidden="true">Section
+                Heading</span>
             <a href="#_" class="info-icon"><i
                     class="gel-icon-help-o gel-icon-lg"></i></a>
         </span>
-        <span class="mt-1">
+        <span class="form-section-switch">
             <span>Required</span>
             <div class="toggle toggle-primary d-inline-block">
                 <label><input type="checkbox" checked="checked"><span>&nbsp;</span></label>
             </div>
         </span>
     </div>
-    <div class="form-section-body">  
+    <div class="form-section-body">
         ...
     </div>
 </section>
+
+<label for="postcode" class="required">Postcode</label>
+<input 
+    class="form-control" 
+    id="postcode" 
+    type="text" 
+    aria-invalid="true" 
+    aria-describedby="hint-info error-msg" required />
+<span id="hint-info" class="form-text">Postcode is 6 digits</span>
+<span id="error-msg" class="invalid-feedback">
+    <i aria-hidden="true" class="gel-icon-error"></i> 
+    Please provide a valid postcode
+</span>

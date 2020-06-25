@@ -1,7 +1,7 @@
-<section class="gel-form-section">
+<section class="form-section" tabindex="1">
     <div class="form-group w-50">
-        <label for="title" class="control-label">In what country wa?</label>
-        <input id="title" class="form-control" type="text" value="">
+        <label for="title" class="required">In what country?</label>
+        <input id="title" class="form-control" type="text" value="" required />
     </div>
     <div class="form-group w-50">
         <label for="title" class="control-label">Date </label>
@@ -72,54 +72,54 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="field6" class="control-label">Explanation
-            (if needed):</label>
-        <div class="">
+        <label for="field6" class="required" aria-hidden="true">Select your favourite colours</label>
+        <fieldset>
+            <legend class="sr-only">Select your favourite colours <span>&nbsp;( required )</span></legend>
             <div class="row">
                 <div class="col-md-4">
                     <div class="checkbox checkbox-default">
                         <input type="checkbox" id="1-1">
                         <label for="1-1">
-                            Column 1-1 </label>
+                            aaa </label>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="checkbox checkbox-default">
                         <input type="checkbox" id="1-2">
                         <label for="1-2">
-                            Column 1-2 </label>
+                           bbb </label>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="checkbox checkbox-default">
                         <input type="checkbox" id="1-3">
                         <label for="1-3">
-                            Column 1-3 </label>
+                            ccc </label>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="checkbox checkbox-default">
                         <input type="checkbox" id="1-4">
                         <label for="1-4">
-                            Column 1-4 </label>
+                            ddd </label>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="checkbox checkbox-default">
                         <input type="checkbox" id="1-5">
                         <label for="1-5">
-                            Column 1-5 </label>
+                            fff </label>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="checkbox checkbox-default">
                         <input type="checkbox" id="1-6">
                         <label for="1-6">
-                            Column 1-6 </label>
+                            ggg </label>
                     </div>
                 </div>
             </div>
-        </div>
+        </fieldset>
     </div>
     <div class="form-group"><label for="exampleFormControlTextarea1">Introduction</label><a
             href="#" data-container="body" data-toggle="popover"
@@ -131,7 +131,7 @@
 
 
 <?php for ($r=1; $r <= 6; $r++) {?>
-    <section class="gel-form-section" id="section<?php echo $r ?>"
+    <section class="form-section" id="section<?php echo $r ?>"
         tabindex="1">
         <fieldset>
             <legend class="sr-only">Section Heading <?php echo $r ?></legend>
