@@ -1,4 +1,4 @@
-<?php $blokk = true;  $pageTitle = "Instructor – Automotive Technology"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
+<?php $blokk = false;  $pageTitle = "New Position Description"; $pageAction = true; $pageLayout="-fluid"; $parent = "adm"; include '../base-t2.php';?>
 
 <?php startblock('page-actions') ?>
   <a href="#" data-toggle="modal" data-target="#collaboratorsModal">
@@ -42,7 +42,7 @@
     <?php include "partials/_toc.html" ?>
    </aside>
    <!-- gel-doc-main -->
-   <main class="gel-doc-main w-100">
+   <main class="gel-doc-main" role="main document">
     <!-- <div role="alert" class="alert alert-success alert-dismissible fade show">
         <i aria-hidden="true" class="gel-icon-info"></i>
         A simple primary alert with
@@ -51,7 +51,7 @@
         <i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i>
         </button>
     </div> -->
-    <?php include "partials/_doc-readonly.html" ?>
+    <?php include "partials/_form-pd.html" ?>
    </main>
    <!-- gel-doc-aside -->
    <aside class="gel-doc-aside border-left bg-white"> <!-- mt-n-5 mr-n-3  -->
