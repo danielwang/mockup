@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="noindex">
-      <title>GEL Standard - MockUp</title>
+      <title>Form Builder - MockUp</title>
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
@@ -23,7 +23,7 @@
         <!-- IE fix: polyfill js must be in head, so IE render content properly-->
   	  <script type="text/javascript" src="../js/polyfill.min.js"></script>
   </head>
-  <body data-spy="scroll" data-target="#toc" data-offset="130"  class="blokk" >
+  <body data-spy="scroll" data-target="#toc" data-offset="130"   >
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
           <script>
       function popupWindow(url) {
@@ -292,76 +292,152 @@
 
   <!-- ************  page header ************ -->
         <header id="gel-header" role="banner">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
                             <div class="col-lg-8 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h1 class="page-title">GEL Standard</h1>
+                <h1 class="page-title">Form Builder</h1>
                 <blockquote class="tagline"></blockquote>
               </div>
               <div class="page-actions col-lg-4 mt-2 mt-lg-0">
-                    <span class="item">
-      <button type="button" class="btn btn-ctrl">Action</button>
-  </span>
-              </div>
+                      <div class="viewport-detector">
+    <span class="badge badge-warning d-sm-none"><i class="gel-icon-iphone"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> XS &lt; 576px </span> 
+    <span class="d-none badge badge-info d-sm-inline-block d-md-none"><i class="gel-icon-iphone rotate-90"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop disabled"></i> - SM ≥ 576px
+    </span>
+    <span class="d-none badge badge-success d-md-inline-block d-lg-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet rotate-90"></i><i class="gel-icon-laptop disabled"></i> - MD ≥ 768px
+    </span>
+    <span class="d-none badge badge-danger d-lg-inline-block d-xl-none"><i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet"></i><i class="gel-icon-laptop disabled"></i> - LG ≥ 992px
+    </span>
+    <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop"></i> - XL ≥ 1200px
+    </span>
+    <span class="d-none badge badge-info d-xxl-inline-block"> <i class="gel-icon-iphone disabled"></i><i class="gel-icon-tablet disabled"></i><i class="gel-icon-laptop scale-x"></i> - XXL ≥ 1600px
+    </span>
+ </div>              </div>
                         </div>
           </div>
       </header>
    <!-- ************  page sub pages ************ -->
-  <nav id="gel-subpages" role="navigation">
-   <div class="container">
-      <nav class="page-tabs nav" role="tablist">
-        <a class="nav-link active" id="tab-1" data-toggle="tab" href="#current-jobs" role="tab" aria-controls="current-jobs" aria-selected="true">Current Jobs</a>
-        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tasks" role="tab" aria-controls="Tab two" aria-selected="false">Tasks</a>
-        <a class="nav-link " id="tab-3" data-toggle="tab" href="#workbench" role="tab" aria-controls="Tab three" aria-selected="false">Workbench</a>
-        <a class="nav-link " id="tab-4" data-toggle="tab" href="#manager-activities" role="tab" aria-controls="Tab four" aria-selected="false">Manager Activities</a>
-        <a class="nav-link " id="tab-3" data-toggle="tab" href="#performed-actions" role="tab" aria-controls="Tab three" aria-selected="false">Action Performed</a>
-      </nav>
-    </div>
-</nav>
-
+  
   <!-- ************  page body ************ -->
 	<main id="gel-main" role="main">
-		<section class="container">
-			<div class="row">
-    <div class="col-lg-4 col-xxl-3">
-        <div class="vh-50 rounded demo-block-s d-flex justify-content-center mb-5 mb-md-0">
-            <h1 class="align-self-center text-muted">Sidebar
-                <span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                </span>
-                <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-12
-                </span>
-                <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-4
-                </span>
-                <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-4
-                </span>
-                <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-3
-                </span>
-            </h1>
+		<section class="container-fluid">
+			<div class="d-flex">
+    <!-- library -->
+    <aside class="bg-warning ml-n-3 flex-shrink-0 p-3 d-flex flex-column border-right">
+        <h5>CONTROLS LIBRARY</h5>
+        <div class="overflow-auto scroll blokk flex-grow-1 pr-2" >
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+                            <div class="p-3 bg-light mb-2 rounded">
+                    item
+                </div>    
+               
+        </div> 
+    </aside>
+    <!-- canvas wrapper-->
+    <main id="canvas-wrapper" class="bg-info flex-grow-1 d-flex flex-column pl-4">
+        <!-- toolbar -->
+        <div id="toolbar" class="sticky-top bg-green p-3 mb-4">
+            Toolbar
+        </div>
+        <!-- canvas -->
+        <div id="canvas" class="flex-grow-1">
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+                            <div class="card w-100 vh-20 mb-4">
+                </div>    
+              
+        </div>
+        <!-- sticky footer -->
+        <footer class="bg-red p-3">footer</footer>
+    </main>
+</div>                
 
-        </div>
-    </div>
-    <div class="col-lg-8 col-xxl-9">
-        <div class="vh-100 rounded demo-block d-flex justify-content-center">
-            <h1 class="align-self-center text-muted">Primary content
-                <span class="badge badge-warning d-sm-none"> col-12 </span> <span class="d-none badge badge-info d-sm-inline-block d-md-none"> col-sm-12
-                </span>
-                <span class="d-none badge badge-success d-md-inline-block d-lg-none"> col-md-12
-                </span>
-                <span class="d-none badge badge-danger d-lg-inline-block d-xl-none">col-lg-8
-                </span>
-                <span class="d-none badge badge-warning d-xl-inline-block d-xxl-none">col-xl-8
-                </span>
-                <span class="d-none badge badge-info d-xxl-inline-block">col-xxl-9
-                </span>
-            </h1>
-        </div>
-    </div>
-    </div>
-  <footer class="main-footer border-top fixed-bottom p-2 bg-white d-print-none text-center" style="z-index: 999">
-    <section class="container">
-      <button type="button" class="btn btn-primary">Save</button>
-    </section>
-  </footer>
     </section>
   </main>
   <!-- ************  page footer ************ -->
@@ -369,3 +445,36 @@
 <script src="../js/gel.js"></script>
 </body>
 </html></div>
+
+<style>
+
+#gel-navbar{
+    display:none;
+}
+#gel-header{
+    position:sticky;
+    top:0;
+}
+#gel-main{
+    padding:0;
+}
+aside{
+    width:300px;
+    flex-basis: 300px;
+    position: sticky;
+    top: 69px;
+    height: calc(100vh - 69px);
+}
+
+#canvas {
+    width: 694px
+}
+#toolbar{
+    position:sticky;
+    top:0;
+}
+footer{
+    position:sticky;
+    bottom:0;
+}
+</style>
