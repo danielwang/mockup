@@ -36,12 +36,7 @@
         <footer class="bg-red p-3">footer</footer>
     </main>
 </div>                
-
-<?php endblock()?>
-
-
 <style>
-
 #gel-navbar{
     display:none;
 }
@@ -72,3 +67,6 @@ footer{
     bottom:0;
 }
 </style>
+<?php endblock()?>
+
+
