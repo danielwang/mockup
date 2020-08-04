@@ -12,7 +12,8 @@
       <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" name="viewport">
       <meta name="description" content="PageUp GEL Templates">
       <meta name="author" content="daniel.wang" >
-      <link rel="stylesheet" href="../gel_css/gel.min.css">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://ui.pageuppeople.com/gel/rc/gel.min.css">
       <link rel="stylesheet" href="../css/gelmock-site.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -208,42 +209,42 @@
     <p>Proof of Australian working rights is demonstrated via the presentation of a Passport, or Australian birth certificate with photo ID, or Australian citizenship certificate with photo ID.</p>
 
     <div class="form-group">
-        <label class="control-label required">Are you currently authorised to work in Australia?</label>
+        <label class="control-label">Are you currently authorised to work in Australia?*</label>
         <div class="radio radio-primary">
             <input type="radio" id="inlineRadio1" value="option1" name="radioInline1">
             <label for="inlineRadio1">Yes, I am an Australian citizen</label>
         </div>
         <div class="radio radio-primary">
-            <input type="radio" id="inlineRadio2" value="option2" name="radioInline2">
+            <input type="radio" id="inlineRadio2" value="option2" name="radioInline1">
             <label for="inlineRadio2">Yes I am an Australian Permanent Resident</label>
         </div>
         <div class="radio radio-primary">
-            <input type="radio" id="inlineRadio3" value="option1" name="radioInline3">
-            <label for="inlineRadio3">Yes, I am a New Zealand citizen</label>
+            <input type="radio" id="inlineRadio1" value="option1" name="radioInline1">
+            <label for="inlineRadio1">Yes, I am a New Zealand citizen</label>
         </div>
         <div class="radio radio-primary">
-            <input type="radio" id="inlineRadio4" value="option2" name="radioInline4" checked>
-            <label for="inlineRadio4">Yes, I have a current Work Permit or Visa</label>
+            <input type="radio" id="inlineRadio2" value="option2" name="radioInline1" checked>
+            <label for="inlineRadio2">Yes, I have a current Work Permit or Visa</label>
         </div>
         <div class="radio radio-primary">
-            <input type="radio" id="inlineRadio5" value="option1" name="radioInline5">
-            <label for="inlineRadio5">No, I do not have a current Work Permit or Visa</label>
+            <input type="radio" id="inlineRadio1" value="option1" name="radioInline1">
+            <label for="inlineRadio1">No, I do not have a current Work Permit or Visa</label>
         </div>
     </div>
     <div class="form-group">
-        <label for="title1" class="control-label">In what country was your current passport issued?</label>
-        <input id="title1" class="col-md-6 form-control" type="text" value=""/>
+        <label for="title" class="control-label required">In what country was your current passport issued?*:</label>
+        <input id="title" class="col-md-6 form-control" type="text" value=""/>
     </div>
     <div class="form-group">
-        <label for="title2" class="control-label">Please provide your Passport number</label>
-        <input id="title2" class="col-md-6 form-control" type="text" value=""/>  
+        <label for="title" class="control-label required">Please provide your Passport number*</label>
+        <input id="title" class="col-md-6 form-control" type="text" value=""/>  
     </div>
     <div class="form-group">
-        <label for="title3" class="control-label">Please enter your Date of Birth</label>
-        <input id="title3" class="col-md-6 form-control" type="date" value="01/05/1980"/>  
+        <label for="title" class="control-label required">Please enter your Date of Birth*</label>
+        <input id="title" class="col-md-6 form-control" type="date" value="01/05/1980"/>  
     </div>
     <div class="form-group">
-        <label class="control-label required">Are you currently authorised to work in Australia?</label>
+        <label class="control-label">Are you currently authorised to work in Australia?*</label>
         <div class="radio radio-primary">
             <input type="radio" id="inlineRadio1" value="option1" name="radioInline1">
             <label for="inlineRadio1">Less than 20 hours per week or 40 hours a fortnight</label>
@@ -254,7 +255,7 @@
         </div>
     </div>  
     <div class="form-group">
-        <label class="control-label">Please confirm the type of work Visa that applies to you.</label>
+        <label class="control-label">Please confirm the type of work Visa that applies to you from the list below.*</label>
         <div class="radio radio-primary">
             <input type="radio" id="inlineRadio1" value="option1" name="radioInline1">
             <label for="inlineRadio1">Bridging</label>
@@ -273,13 +274,15 @@
         </div>
     </div>      
 </section>    
-
-    <footer class="d-flex flex-row-reverse">
-      <button type="button">Continue</button>
-      <button type="button">Save and Exit</button>
-      <button type="button" class="mr-auto">Back</button>
-    </footer>
-   </main>  
+   </main>
+  <!-- gel-doc-footer -->
+  <footer class="gel-doc-footer d-print-none text-center">
+      <section class="container">
+      <button type="button" class="btn btn-outline-primary">Back</button>
+      <button type="button" class="btn btn-outline-primary">Save and Exit</button>
+      <button type="button" class="btn btn-primary" disabled>Continue</button>
+      </section>
+  </footer>
 </div>
     </section>
     <!-- BETA feedback -->
@@ -368,22 +371,3 @@
 <script src="../js/gel.js"></script>
 </body>
 </html>
-
-
-<form>
-  <!-- Empty error message div already present in the DOM inside form tag-->
-  <div id="errors-msg" role="alert" aria-live="assertive" aria-atomic="true" class="alert alert-danger d-none">
-  </div>
-</form>
-
-<form>
-  <div id="errors-msg" role="alert" aria-live="assertive" aria-atomic="true" class="alert alert-danger">
-    <!-- insert erorrs messages -->
-    <i aria-hidden="true" class="gel-icon-error"></i>
-    There are items that require your attention
-    <ul>
-      <li>Sourcing channel has expired</li>
-      <li>Physical demand is required</li>
-    </ul>
-  </div>
-</form>

@@ -60,9 +60,6 @@ html {
   overflow: auto;
   display: block; }
 /* *************************************** *\
- *  The styling for GEL Form
- \* *************************************** */
-/* *************************************** *\
  *  The styling for GEL Doc
  \* *************************************** */
 .gel-doc {
@@ -92,7 +89,7 @@ html {
     transition: all 0.5s ease 0s; }
     @media (max-width: 1599.98px) {
   .gel-doc-main {
-    width: 100%; } }
+    width: fit-content; } }
     @media (max-width: 1199.98px) {
   .gel-doc-main {
     grid-column: 2/5; }
@@ -108,6 +105,24 @@ html {
     grid-column: 1/5 !important;
     justify-self: normal;
     display: block !important; } }
+  .gel-doc-section {
+    transition: all 0.1s cubic-bezier(0.4, 0, 1, 1) 0s; }
+    .gel-doc-section:focus-within {
+      box-shadow: -5px 0 0 0rem #0063b0;
+      border-color: #0063b0;
+      transform: scale(1.01);
+      outline: 0; }
+    .gel-doc-section:focus {
+      box-shadow: -5px 0 0 0rem #0063b0;
+      border-color: #0063b0;
+      transform: scale(1.01);
+      outline: 0; }
+    .gel-doc-section-title {
+      margin-bottom: 1rem; }
+    @media print {
+  .gel-doc-section {
+    border: 0;
+    padding: 0; } }
   .gel-doc-aside {
     background: white;
     border-left: 1px solid #bac6d2;
