@@ -55,4 +55,9 @@
   <div class="tab-pane d-print-block show" id="performed-actions" role="tabpanel" aria-labelledby="applications-tab">
     <?php include "partials/_action-performed.html" ?>
   </div>
+  <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+    <i class="gel-icon-tick-circle"></i> This is a success alert—check it out!
+      <button type="button" data-dismiss="alert" aria-label="Close" class="close"><i aria-hidden="true" class="gel-icon-close gel-icon-lg"></i></button>
+  </div>
+
 <?php endblock()?>
