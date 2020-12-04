@@ -224,14 +224,14 @@
  *  The styling for Print
 \* *************************************** */
 @media print {
-    @page { margin: 2cm }
+    // @page { margin: 2cm }
     body::after {
         content: "Brought you by PageUp";
         display: block;
         text-align: center;
     }
     h1, h2, h3, h4, h5, h6, th{
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 
     a::after {
