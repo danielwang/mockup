@@ -23,7 +23,7 @@
         <!-- IE fix: polyfill js must be in head, so IE render content properly-->
   	  <script type="text/javascript" src="../js/polyfill.min.js"></script>
   </head>
-  <body data-spy="scroll" data-target="#toc" data-offset="130"   >
+  <body data-spy="scroll" data-target="#toc" data-offset="130" >
     <a href="#gel-main" class="sr-only sr-only-focusable">Skip to main content</a>
           <script>
       function popupWindow(url) {
@@ -438,42 +438,41 @@
     </main>
 </div>                
 <style>
+#gel-navbar{
+    display:none;
+}
+#gel-header{
+    position:sticky;
+    top:0;
+}
+#gel-main{
+    padding:0;
+}
+aside{
+    width:300px;
+    flex-basis: 300px;
+    position: sticky;
+    top: 69px;
+    height: calc(100vh - 69px);
+}
 
-  #gel-navbar{
-      display:none;
-  }
-  #gel-header{
-      position:sticky;
-      top:0;
-  }
-  #gel-main{
-      padding:0;
-  }
-  aside{
-      width:300px;
-      flex-basis: 300px;
-      position: sticky;
-      top: 69px;
-      height: calc(100vh - 69px);
-  }
-  
-  #canvas {
-      width: 694px
-  }
-  #toolbar{
-      position:sticky;
-      top:0;
-  }
-  footer{
-      position:sticky;
-      bottom:0;
-  }
-  </style>
+#canvas {
+    width: 694px
+}
+#toolbar{
+    position:sticky;
+    top:0;
+}
+footer{
+    position:sticky;
+    bottom:0;
+}
+</style>
     </section>
   </main>
   <!-- ************  page footer ************ -->
 <script type="text/javascript" src="../js/bootstrap-native-v4.min.js"></script>
 <script src="../js/gel.js"></script>
 </body>
-</html><
+</html></div>
 
