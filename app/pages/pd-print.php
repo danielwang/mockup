@@ -9,7 +9,7 @@
     <button class="btn btn-primary" onclick="javascript: window.print();">Print</button>
 </div>
 <article class="card p-5">
-    <h1 class="display-4">Senior Research Officer (Science Faculty) <mark aria-hidden="true" class="badge badge-success watermark">Approved</mark></h1>
+    <h1 class="display-4 mb-0">Senior Research Officer (Science Faculty) <mark aria-hidden="true" class="badge badge-info align-middle watermark">Draft</mark></h1>
     <p class="mb-5">Version 3 approved 18 April 2020</p>
     
     <section class="mb-5">
@@ -149,7 +149,7 @@
       position: fixed;
       text-transform:uppercase;
       top: 30%;
-      right: 100px;
+      right: 30%;
       opacity: 0.25;
       z-index: 99;
       font-size:10rem;
